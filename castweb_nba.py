@@ -344,7 +344,7 @@ async def scrape_nba_league(default_logo: str) -> List[Dict]:
                             "url": stream_url,
                             "tvg_id": "NBA.Basketball.Dummy.us",
                             "tvg_logo": logo_url,
-                            "group": "NBAWebcast - Live Games",
+                            "group": "NBA Games - Live Games",
                             "ref": NBA_BASE_URL,
                             "custom_headers": NBA_CUSTOM_HEADERS,
                         })
