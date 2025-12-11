@@ -388,23 +388,7 @@ async def main():
     NBA_DEFAULT_LOGO = "https://i.postimg.cc/B6WMnCRT/basketball-sport-logo-minimalist-style-600nw-2484656797.jpg"
     
     tasks = [
-        scrape_league(
-            base_url=NFL_BASE_URL, channel_urls=NFL_CHANNEL_URLS, group_prefix="NFLWebcast",
-            default_id="NFL.Dummy.us", default_logo="https://i.postimg.cc/CLDMZMZC/nfl-logo-png-seeklogo-520492.png"
-        ),
-        scrape_league(
-            base_url=NHL_BASE_URL, channel_urls=NHL_CHANNEL_URLS, group_prefix="NHLWebcast",
-            default_id="NHL.Hockey.Dummy.us", default_logo="https://i.postimg.cc/4dqZdjsh/nhl-logo-png-seeklogo-196350.png"
-        ),
-        scrape_league(
-            base_url=MLB_BASE_URL, channel_urls=MLB_CHANNEL_URLS, group_prefix="MLBWebcast",
-            default_id="MLB.Baseball.Dummy.us", default_logo="https://i.postimg.cc/wBBdk9Bc/mlb-logo-png-seeklogo-250501.png"
-        ),
-        scrape_league(
-            base_url=MLS_BASE_URL, channel_urls=MLS_CHANNEL_URLS, group_prefix="MLSWebcast",
-            default_id="MLS.Soccer.Dummy.us", default_logo="https://i.postimg.cc/SRhTDGrm/MLS-Nola-Cox-811x900.png"
-        ),
-        scrape_nba_league(default_logo=NBA_DEFAULT_LOGO),
+       scrape_nba_league(default_logo=NBA_DEFAULT_LOGO),
     ]
     
     results = await asyncio.gather(*tasks)
