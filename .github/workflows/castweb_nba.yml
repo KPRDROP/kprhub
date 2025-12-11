@@ -30,7 +30,7 @@ jobs:
           playwright install --with-deps chromium
 
       - name: 🎯 Run scraping script
-        run: python castweb_nba
+        run: python castweb_nba.py
 
       - name: 💾 Commit & Safely Push if Playlist Changed
         env:
