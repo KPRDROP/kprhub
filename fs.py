@@ -207,7 +207,7 @@ async def main():
         html = await fetch_fstv_html()
         playlist_lines = build_playlist_from_html(html, CHANNEL_MAPPINGS)
 
-        with open("FSTV24.m3u8", "w", encoding="utf-8") as f:
+        with open("fs24.m3u8", "w", encoding="utf-8") as f:
             f.writelines(playlist_lines)
 
         print(f"✅ Generated playlist with {len(playlist_lines)//2} channels in FSTV24.m3u8")
