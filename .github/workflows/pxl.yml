@@ -5,7 +5,6 @@ on:
     # Run every 2 hours
     - cron: "0 */2 * * *"
   workflow_dispatch:
-    # Allow manual run from GitHub UI
 
 permissions:
   contents: write
@@ -23,25 +22,24 @@ jobs:
       - name: 🐍 Set up Python 3.11
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: "3.11"
 
       - name: 📦 Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
 
       - name: 🎯 Run Pxlsports scraper
         run: python pxl.py
 
-      - name: 💾 Commit & Push if Playlist Changed
+      - name: 💾 Commit & Push if Playlists Changed
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # --- MATCHES YOUR SCRIPT OUTPUT ---
-          git add pxl_vlc.m3u8
+          # Track BOTH output files
+          git add pxl_vlc.m3u8 pxl_tivimate.m3u8
 
           if git diff --cached --quiet; then
             echo "✅ No changes detected — skipping commit."
