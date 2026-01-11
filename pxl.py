@@ -1,11 +1,15 @@
 import json
 import urllib.request
 from urllib.error import URLError, HTTPError
+from urllib.parse import quote
 
 BASE = "https://pixelsport.tv"
 API_EVENTS = f"{BASE}/backend/liveTV/events"
 API_SLIDERS = f"{BASE}/backend/slider/getSliders"
-OUTPUT_FILE = "pxl_vlc.m3u8"
+
+# OUTPUT FILES
+OUTPUT_VLC = "pxl_vlc.m3u8"
+OUTPUT_TIVIMATE = "pxl_tivimate.m3u8"
 
 LIVE_TV_LOGO = "https://i.postimg.cc/3wvZ39KX/Pixel-Sport-Logo-1182b5f687c239810f6d.png"
 LIVE_TV_ID = "24.7.Dummy.us"
@@ -27,7 +31,6 @@ LEAGUE_INFO = {
 
 
 def fetch_json(url):
-    """Fetch JSON from URL with headers"""
     headers = {
         "User-Agent": VLC_USER_AGENT,
         "Referer": VLC_REFERER,
@@ -41,7 +44,6 @@ def fetch_json(url):
 
 
 def collect_links(obj, prefix=""):
-    """Collect valid stream links from object"""
     links = []
     if not obj:
         return links
@@ -54,49 +56,53 @@ def collect_links(obj, prefix=""):
 
 
 def get_league_info(name):
-    """Return league info tuple: (tvg-id, logo, group name)"""
     for key, (tvid, logo, group) in LEAGUE_INFO.items():
         if key.lower() in name.lower():
             return tvid, logo, group
     return ("Pxlsports.Dummy.us", LIVE_TV_LOGO, "Pxlsports")
 
 
-def build_m3u(events, sliders):
-    """Build the M3U playlist text"""
-    lines = ["#EXTM3U"]
+def build_playlists(events, sliders):
+    vlc_lines = ["#EXTM3U"]
+    tm_lines = ["#EXTM3U"]
+
+    ua_encoded = quote(VLC_USER_AGENT, safe="")
+    referer_encoded = quote(VLC_REFERER, safe="")
+
+    def add_entry(title, tvid, logo, group, link):
+        # VLC
+        vlc_lines.append(
+            f'#EXTINF:-1 tvg-id="{tvid}" tvg-logo="{logo}" group-title="Pxlsports - {group}",{title}'
+        )
+        vlc_lines.append(f"#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}")
+        vlc_lines.append(f"#EXTVLCOPT:http-referrer={VLC_REFERER}")
+        vlc_lines.append(f"#EXTVLCOPT:http-icy-metadata={VLC_ICY}")
+        vlc_lines.append(link)
+
+        # TiviMate
+        tm_lines.append(
+            f'#EXTINF:-1 tvg-id="{tvid}" tvg-logo="{logo}" group-title="Pxlsports - {group}",{title}'
+        )
+        tm_lines.append(
+            f"{link}|referer={VLC_REFERER}|user-agent={ua_encoded}|icy-metadata=1"
+        )
 
     for ev in events:
         title = ev.get("match_name", "Unknown Event").strip()
         logo = ev.get("competitors1_logo", LIVE_TV_LOGO)
         league = ev.get("channel", {}).get("TVCategory", {}).get("name", "Sports")
-        tvid, group_logo, group_display = get_league_info(league)
+        tvid, _, group = get_league_info(league)
         links = collect_links(ev.get("channel", {}))
-        if not links:
-            continue
-
         for link in links:
-            lines.append(f'#EXTINF:-1 tvg-id="{tvid}" tvg-logo="{logo}" group-title="Pxlsports - {group_display}",{title}')
-            lines.append(f"#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}")
-            lines.append(f"#EXTVLCOPT:http-referrer={VLC_REFERER}")
-            lines.append(f"#EXTVLCOPT:http-icy-metadata={VLC_ICY}")
-            lines.append(link)
+            add_entry(title, tvid, logo, group, link)
 
     for ch in sliders:
         title = ch.get("title", "Live Channel").strip()
-        live = ch.get("liveTV", {})
-        logo = LIVE_TV_LOGO  
-        links = collect_links(live)
-        if not links:
-            continue
-
+        links = collect_links(ch.get("liveTV", {}))
         for link in links:
-            lines.append(f'#EXTINF:-1 tvg-id="{LIVE_TV_ID}" tvg-logo="{logo}" group-title="Pxlsports - Live TV",{title}')
-            lines.append(f"#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}")
-            lines.append(f"#EXTVLCOPT:http-referrer={VLC_REFERER}")
-            lines.append(f"#EXTVLCOPT:http-icy-metadata={VLC_ICY}")
-            lines.append(link)
+            add_entry(title, LIVE_TV_ID, LIVE_TV_LOGO, "Live TV", link)
 
-    return "\n".join(lines)
+    return "\n".join(vlc_lines), "\n".join(tm_lines)
 
 
 def main():
@@ -107,11 +113,17 @@ def main():
         sliders_data = fetch_json(API_SLIDERS)
         sliders = sliders_data.get("data", []) if isinstance(sliders_data, dict) else []
 
-        playlist = build_m3u(events, sliders)
-        with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-            f.write(playlist)
+        vlc, tivimate = build_playlists(events, sliders)
 
-        print(f"[+] Saved: {OUTPUT_FILE} ({len(events)} events + {len(sliders)} live channels)")
+        with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
+            f.write(vlc)
+
+        with open(OUTPUT_TIVIMATE, "w", encoding="utf-8") as f:
+            f.write(tivimate)
+
+        print(f"[+] Saved: {OUTPUT_VLC}")
+        print(f"[+] Saved: {OUTPUT_TIVIMATE}")
+
     except Exception as e:
         print(f"[!] Error: {e}")
 
