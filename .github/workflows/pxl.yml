@@ -1,9 +1,11 @@
-name: ▶️ Update PixelSports Playlist
+name: ▶️ Update Pxlsports Playlist
 
 on:
   schedule:
-    - cron: '0 * * * *' 
+    # Run every 2 hours
+    - cron: "0 */2 * * *"
   workflow_dispatch:
+    # Allow manual run from GitHub UI
 
 permissions:
   contents: write
