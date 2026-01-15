@@ -1,9 +1,9 @@
-name: 🎯 Web Sports Playlist Updater
+name: ▶️ Web Sports Playlist Updater
 
 on:
   schedule:
-    # Runs every 2 hours
-    - cron: "0 */2 * * *"
+    # Every hour
+    - cron: "0 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -12,42 +12,28 @@ permissions:
 jobs:
   update-playlist:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: 📥 Checkout repository
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
-      - name: 🐍 Setup Python
+      - name: 🐍 Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: 🚀 Run Web Cast Updater
+      - name: 🚀 Run Web Sports playlist script
         env:
           WEB_SPORTS_M3U_URL: ${{ secrets.WEB_SPORTS_M3U_URL }}
         run: |
           python web_sports.py
 
-      - name: 📄 Check for changes
-        id: git_status
+      - name: 📤 Commit & push changes
         run: |
-          if git status --porcelain | grep .; then
-            echo "changed=true" >> $GITHUB_OUTPUT
-          else
-            echo "changed=false" >> $GITHUB_OUTPUT
-          fi
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
 
-      - name: 💾 Commit & push updated playlist
-        if: steps.git_status.outputs.changed == 'true'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add web_sports_tivimate.m3u8
-          git commit -m "🔄 Update PixelSport TiviMate playlist"
+          git commit -m "🔄 Auto-update Web Sports TiviMate playlist" || echo "No changes"
           git push
-
-      - name: ✅ No changes
-        if: steps.git_status.outputs.changed == 'false'
-        run: echo "No playlist changes detected"
