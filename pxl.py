@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
+import asyncio
 import json
-import urllib.request
 from urllib.parse import quote
+from playwright.async_api import async_playwright
 
 BASE = "https://pixelsport.tv"
 API_EVENTS = f"{BASE}/backend/liveTV/events"
@@ -10,25 +11,14 @@ API_SLIDERS = f"{BASE}/backend/slider/getSliders"
 OUTPUT_VLC = "pxl_vlc.m3u8"
 OUTPUT_TIVIMATE = "pxl_tivimate.m3u8"
 
-LIVE_TV_LOGO = "https://i.postimg.cc/3wvZ39KX/Pixel-Sport-Logo-1182b5f687c239810f6d.png"
-LIVE_TV_ID = "24.7.Dummy.us"
-
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/143.0.0.0 Safari/537.36"
 )
 
-HEADERS = {
-    "User-Agent": USER_AGENT,
-    "Accept": "application/json, text/plain, */*",
-    "Referer": BASE + "/",
-    "Origin": BASE,
-    "Sec-Fetch-Mode": "cors",
-    "Sec-Fetch-Site": "same-origin",
-    "Sec-Fetch-Dest": "empty",
-    "Connection": "close",
-}
+LIVE_TV_LOGO = "https://i.postimg.cc/3wvZ39KX/Pixel-Sport-Logo-1182b5f687c239810f6d.png"
+LIVE_TV_ID = "24.7.Dummy.us"
 
 LEAGUE_INFO = {
     "NFL": ("NFL.Dummy.us", "https://i.postimg.cc/76LYgtfV/nfl-logo-png-seeklogo-168592.png", "NFL"),
@@ -43,27 +33,6 @@ LEAGUE_INFO = {
 
 
 # -------------------------------------------------------
-def fetch_json(url):
-    req = urllib.request.Request(url, headers=HEADERS, method="GET")
-
-    # 🚫 Prevent urllib from sending If-None-Match
-    req.add_header("Cache-Control", "no-cache")
-    req.add_header("Pragma", "no-cache")
-
-    with urllib.request.urlopen(req, timeout=20) as resp:
-        raw = resp.read().decode("utf-8", "ignore")
-        return json.loads(raw)
-
-
-def collect_links(channel):
-    links = []
-    for i in range(1, 4):
-        u = channel.get(f"server{i}URL")
-        if u and u.lower() != "null":
-            links.append(u)
-    return links
-
-
 def league_info(name):
     for k, v in LEAGUE_INFO.items():
         if k.lower() in name.lower():
@@ -71,10 +40,32 @@ def league_info(name):
     return ("Pxlsports.Dummy.us", LIVE_TV_LOGO, "Pxlsports")
 
 
-def build(events, sliders):
+def collect_links(channel):
+    out = []
+    for i in range(1, 4):
+        u = channel.get(f"server{i}URL")
+        if u and u.lower() != "null":
+            out.append(u)
+    return out
+
+
+# -------------------------------------------------------
+async def fetch_json_via_browser(page, url):
+    resp = await page.context.request.get(
+        url,
+        headers={
+            "Accept": "application/json, text/plain, */*",
+            "Referer": BASE + "/",
+            "Origin": BASE,
+        },
+    )
+    return await resp.json()
+
+
+# -------------------------------------------------------
+def build_playlists(events, sliders):
     vlc = ["#EXTM3U"]
     tivi = ["#EXTM3U"]
-
     ua_enc = quote(USER_AGENT, safe="")
 
     def add(title, tvid, logo, group, url):
@@ -108,21 +99,34 @@ def build(events, sliders):
 
 
 # -------------------------------------------------------
-def main():
-    print("🚀 Running PixelSport scraper (direct JSON mode)")
+async def main():
+    print("🚀 Running PixelSport scraper (Cloudflare SAFE)")
 
-    events = fetch_json(API_EVENTS).get("events", [])
-    sliders = fetch_json(API_SLIDERS).get("data", [])
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(headless=True)
+        ctx = await browser.new_context(user_agent=USER_AGENT)
+        page = await ctx.new_page()
+
+        # 🔑 THIS CLEARS CLOUDFLARE
+        await page.goto(BASE, wait_until="networkidle")
+        await page.wait_for_timeout(3000)
+
+        events_data = await fetch_json_via_browser(page, API_EVENTS)
+        sliders_data = await fetch_json_via_browser(page, API_SLIDERS)
+
+        await browser.close()
+
+    events = events_data.get("events", [])
+    sliders = sliders_data.get("data", [])
 
     if not events and not sliders:
         print("❌ No data captured")
         return
 
-    vlc, tivi = build(events, sliders)
+    vlc, tivi = build_playlists(events, sliders)
 
     with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
         f.write(vlc)
-
     with open(OUTPUT_TIVIMATE, "w", encoding="utf-8") as f:
         f.write(tivi)
 
@@ -131,4 +135,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
