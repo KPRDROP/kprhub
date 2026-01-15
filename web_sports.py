@@ -14,7 +14,6 @@ USER_AGENT_RAW = (
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/143.0.0.0 Safari/537.36"
 )
-
 USER_AGENT_ENC = quote(USER_AGENT_RAW, safe="")
 
 SOURCE_URL = os.getenv("WEB_SPORTS_M3U_URL")
@@ -24,7 +23,7 @@ if not SOURCE_URL:
 # -------------------------------------------------
 # HELPERS
 # -------------------------------------------------
-def clean_title(text: str) -> str:
+def clean_text(text: str) -> str:
     return text.replace("@", "vs").strip()
 
 def fetch_m3u(url: str) -> str:
@@ -40,9 +39,9 @@ def fetch_m3u(url: str) -> str:
         return resp.read().decode("utf-8", errors="ignore")
 
 # -------------------------------------------------
-# MAIN PARSER
+# PARSER
 # -------------------------------------------------
-def convert_playlist(m3u: str) -> str:
+def convert_to_tivimate(m3u: str) -> str:
     lines = m3u.splitlines()
     out = ["#EXTM3U"]
 
@@ -53,28 +52,33 @@ def convert_playlist(m3u: str) -> str:
         if line.startswith("#EXTINF"):
             info = line
 
-            # Read stream URL (next non-empty line)
+            # ---- find stream URL (skip EXTVLCOPT) ----
             j = i + 1
-            while j < len(lines) and not lines[j].strip():
-                j += 1
-            if j >= len(lines):
+            while j < len(lines):
+                candidate = lines[j].strip()
+                if not candidate:
+                    j += 1
+                    continue
+                if candidate.startswith("#"):
+                    j += 1
+                    continue
+                stream_url = candidate
                 break
+            else:
+                i += 1
+                continue
 
-            stream_url = lines[j].strip()
-
-            # Parse EXTINF attributes
+            # ---- parse EXTINF attributes ----
             attrs = dict(re.findall(r'(\w+?)="(.*?)"', info))
 
-            tvg_id = attrs.get("tvg-id", "").strip()
-            tvg_logo = attrs.get("tvg-logo", "").strip()
-            group = attrs.get("group-title", "").strip()
+            tvg_id = attrs.get("tvg-id", "")
+            tvg_logo = attrs.get("tvg-logo", "")
+            group = attrs.get("group-title", "")
 
-            title = info.split(",", 1)[-1].strip()
-            title = clean_title(title)
+            title = clean_text(info.split(",", 1)[-1])
+            tvg_name = clean_text(attrs.get("tvg-name", title))
 
-            tvg_name = clean_title(attrs.get("tvg-name", title))
-
-            # Write EXTINF
+            # ---- output EXTINF ----
             out.append(
                 f'#EXTINF:-1 tvg-id="{tvg_id}" '
                 f'tvg-name="{tvg_name}" '
@@ -82,7 +86,7 @@ def convert_playlist(m3u: str) -> str:
                 f'group-title="{group}",{title}'
             )
 
-            # Preserve referer/origin if present
+            # ---- extract params if any ----
             params = []
 
             if "|" in stream_url:
@@ -107,9 +111,10 @@ def convert_playlist(m3u: str) -> str:
 # RUN
 # -------------------------------------------------
 def main():
-    print("🚀 Running Web Sports playlist updater")
+    print("🚀 Running Web Sports TiviMate playlist updater")
+
     raw = fetch_m3u(SOURCE_URL)
-    converted = convert_playlist(raw)
+    converted = convert_to_tivimate(raw)
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write(converted)
