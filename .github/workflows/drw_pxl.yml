@@ -35,7 +35,7 @@ jobs:
     - name: Run update script
       id: update
       env:
-       AX1S_SOURCE_URL: ${{ secrets.DRWPXL_SOURCE_URL }}
+       DRWPXL_SOURCE_URL: ${{ secrets.DRWPXL_SOURCE_URL }}
       run: |
         # Print current directory and files for debugging
         pwd
