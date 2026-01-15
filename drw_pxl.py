@@ -1,77 +1,104 @@
-import requests
+#!/usr/bin/env python3
 import os
-import re
-import tempfile
-import shutil
-from datetime import datetime
-from urllib3.util.retry import Retry
-from requests.adapters import HTTPAdapter
+import sys
+import urllib.request
+from urllib.parse import quote
 
-def update_playlist():
-    # Get M3U URL from environment variable
-    m3u_url = os.getenv('DRWPXL_SOURCE_URL')
-    if not m3u_url:
-        raise ValueError("DRWPXL_SOURCE_URL environment variable not set")
-    
-    # Configure retry strategy
-    retry_strategy = Retry(
-        total=3,
-        backoff_factor=1,
-        status_forcelist=[429, 500, 502, 503, 504],
-        allowed_methods=["GET"]
+# =========================
+# CONFIG
+# =========================
+
+SOURCE_ENV = "DRW_PXL_M3U_URL"
+OUTPUT_FILE = "drw_pxl_tivimate.m3u8"
+
+REFERER = "https://pixelsport.tv/"
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+ICY_METADATA = "1"
+
+UA_ENCODED = quote(USER_AGENT, safe="")
+
+# =========================
+# FETCH SOURCE M3U
+# =========================
+
+def fetch_m3u(url: str) -> list[str]:
+    req = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": USER_AGENT,
+            "Accept": "*/*",
+        },
     )
-    adapter = HTTPAdapter(max_retries=retry_strategy)
-    http = requests.Session()
-    http.mount("https://", adapter)
-    http.mount("http://", adapter)
+    with urllib.request.urlopen(req, timeout=30) as resp:
+        content = resp.read().decode("utf-8", errors="ignore")
+        return content.splitlines()
 
-    try:
-        # Fetch the M3U content with timeout
-        response = http.get(
-            m3u_url,
-            timeout=30,  # 30 seconds timeout
-            headers={'User-Agent': 'M3U-Playlist-Updater/1.0'}
-        )
-        response.raise_for_status()  # Raise an exception for bad status codes
-        
-        # Use the content as-is since it already includes the EPG URL and header
-        m3u_content = response.text
-        
-        # Write to the repository root
-        output_filename = "drw_pxl.m3u8"
-        # Use the current working directory (repository root)
-        output_path = os.path.join(os.getcwd(), output_filename)
-        print(f"Writing to: {output_path}")
-        
-        # Write directly to the output file
-        try:
-            with open(output_path, 'w', encoding='utf-8') as f:
-                f.write(m3u_content)
-            
-            # Verify the file was written
-            if not os.path.exists(output_path):
-                raise Exception(f"Failed to create {output_filename}")
-                
-            file_size = os.path.getsize(output_path)
-            if file_size == 0:
-                raise Exception(f"Created empty file {output_filename}")
-                
-            print(f"Successfully updated {output_filename}")
-            print(f"File size: {file_size} bytes")
-            
-        except Exception as e:
-            print(f"Error writing to {output_path}: {str(e)}")
-            if os.path.exists(output_path):
-                os.remove(output_path)
-            raise
-            
-        return True  # Success
-        
-    except Exception as e:
-        print(f"Error updating M3U playlist: {str(e)}")
-        import traceback
-        traceback.print_exc()
-        return False
+
+# =========================
+# CONVERT VLC → TIVIMATE
+# =========================
+
+def convert_to_tivimate(lines: list[str]) -> list[str]:
+    out = ["#EXTM3U"]
+    last_extinf = None
+
+    for line in lines:
+        line = line.strip()
+        if not line:
+            continue
+
+        # Keep EXTINF as-is
+        if line.startswith("#EXTINF"):
+            last_extinf = line
+            out.append(line)
+            continue
+
+        # Skip VLC-only options
+        if line.startswith("#EXTVLCOPT"):
+            continue
+
+        # Stream URL
+        if line.startswith("http"):
+            url = (
+                f"{line}"
+                f"|referer={REFERER}"
+                f"|user-agent={UA_ENCODED}"
+                f"|icy-metadata={ICY_METADATA}"
+            )
+            out.append(url)
+            continue
+
+    return out
+
+
+# =========================
+# MAIN
+# =========================
+
+def main():
+    print("🚀 Running drw_pxl playlist updater")
+
+    src_url = os.getenv(SOURCE_ENV)
+    if not src_url:
+        print(f"❌ Missing environment variable: {SOURCE_ENV}")
+        sys.exit(1)
+
+    print(f"📥 Fetching source playlist")
+    lines = fetch_m3u(src_url)
+
+    if not lines:
+        print("❌ Empty playlist received")
+        sys.exit(1)
+
+    print("🔄 Converting to TiviMate format")
+    tivimate_lines = convert_to_tivimate(lines)
+
+    with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
+        f.write("\n".join(tivimate_lines))
+
+    print(f"✅ Saved: {OUTPUT_FILE}")
+    print(f"📊 Entries: {sum(1 for l in tivimate_lines if l.startswith('#EXTINF'))}")
+
 
 if __name__ == "__main__":
-    update_playlist()
+    main()
