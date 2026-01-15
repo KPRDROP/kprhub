@@ -10,7 +10,7 @@ from requests.adapters import HTTPAdapter
 def update_playlist():
     # Get M3U URL from environment variable
     m3u_url = os.getenv('DRWPXL_SOURCE_URL')
-    if not m3u8_url:
+    if not m3u_url:
         raise ValueError("DRWPXL_SOURCE_URL environment variable not set")
     
     # Configure retry strategy
