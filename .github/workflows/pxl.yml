@@ -27,6 +27,8 @@ jobs:
       - name: 📦 Install dependencies
         run: |
           python -m pip install --upgrade pip
+          playwright install
+          playwright install-deps
 
       - name: 🎯 Run Pxlsports scraper
         run: python pxl.py
