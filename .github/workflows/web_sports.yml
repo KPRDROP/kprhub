@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: 🚀 Run drw_pxl updater
+      - name: 🚀 Run Web Cast Updater
         env:
           WEB_SPORTS_M3U_URL: ${{ secrets.WEB_SPORTS_M3U_URL }}
         run: |
