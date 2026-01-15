@@ -26,7 +26,7 @@ jobs:
 
       - name: 🚀 Run drw_pxl updater
         env:
-          PIXELSPORT_M3U_URL: ${{ secrets.DRW_PXL_M3U_URL }}
+          DRW_PXL_M3U_URL: ${{ secrets.DRW_PXL_M3U_URL }}
         run: |
           python drw_pxl.py
 
