@@ -4,122 +4,106 @@ import re
 import urllib.request
 from urllib.parse import quote
 
-# -------------------------------------------------
+# --------------------------------------------------
 # CONFIG
-# -------------------------------------------------
+# --------------------------------------------------
+SOURCE_URL = os.getenv("WEB_SPORTS_M3U_URL")
+if not SOURCE_URL:
+    raise RuntimeError("WEB_SPORTS_M3U_URL secret not set")
+
 OUTPUT_FILE = "web_sports_tivimate.m3u8"
 
-USER_AGENT_RAW = (
+UA_RAW = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/143.0.0.0 Safari/537.36"
 )
-USER_AGENT_ENC = quote(USER_AGENT_RAW, safe="")
+UA_ENC = quote(UA_RAW, safe="")
 
-SOURCE_URL = os.getenv("WEB_SPORTS_M3U_URL")
-if not SOURCE_URL:
-    raise RuntimeError("❌ WEB_SPORTS_M3U_URL secret not set")
+# --------------------------------------------------
+# LEAGUE RULES (AUTHORITATIVE)
+# --------------------------------------------------
+LEAGUES = {
+    "NHL": {
+        "tvg_id": "NHL.Hockey.Dummy.us",
+        "group": "NHLWebcast - Live Games",
+        "logo": "https://i.postimg.cc/nV1jq3zQ/1280px-National-Hockey-League-shield-svg.png",
+        "headers": lambda url: f"{url}|user-agent={UA_ENC}",
+    },
+    "NBA": {
+        "tvg_id": "NBA.Basketball.Dummy.us",
+        "group": "NBAWebcast - Live Games",
+        "logo": "https://i.postimg.cc/43bZjFjY/images-q-tbn-ANd9Gc-QVIb-Y0Xaig-Di-N2XT1f-Kivwp-Nuz1r-KIYGsq-w-s.png",
+        "headers": lambda url: (
+            f"{url}"
+            f"|referer=https://streamingonembed.pro/"
+            f"|origin=https://streamingonembed.pro"
+            f"|user-agent={UA_ENC}"
+        ),
+    },
+}
 
-# -------------------------------------------------
-# HELPERS
-# -------------------------------------------------
-def clean_text(text: str) -> str:
-    return text.replace("@", "vs").strip()
+# --------------------------------------------------
+def normalize_title(title: str) -> str:
+    title = title.replace("@", "vs")
+    title = re.sub(r"\s+", " ", title).strip()
+    return title
 
-def fetch_m3u(url: str) -> str:
-    req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": USER_AGENT_RAW,
-            "Accept": "*/*",
-            "Connection": "close",
-        },
-    )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read().decode("utf-8", errors="ignore")
+# --------------------------------------------------
+def detect_league(title: str):
+    t = title.lower()
+    if "nhl" in t or "hockey" in t:
+        return LEAGUES["NHL"]
+    if "nba" in t or "basketball" in t:
+        return LEAGUES["NBA"]
+    return None
 
-# -------------------------------------------------
-# PARSER
-# -------------------------------------------------
-def convert_to_tivimate(m3u: str) -> str:
-    lines = m3u.splitlines()
+# --------------------------------------------------
+def fetch_m3u(url: str) -> list[str]:
+    with urllib.request.urlopen(url, timeout=30) as r:
+        return r.read().decode("utf-8", "ignore").splitlines()
+
+# --------------------------------------------------
+def main():
+    print("🚀 Running Web Sports playlist normalizer")
+
+    lines = fetch_m3u(SOURCE_URL)
+
     out = ["#EXTM3U"]
 
-    i = 0
-    while i < len(lines):
-        line = lines[i].strip()
+    current_title = None
+
+    for line in lines:
+        line = line.strip()
 
         if line.startswith("#EXTINF"):
-            info = line
+            raw_title = line.split(",", 1)[-1].strip()
+            current_title = normalize_title(raw_title)
 
-            # ---- find stream URL (skip EXTVLCOPT) ----
-            j = i + 1
-            while j < len(lines):
-                candidate = lines[j].strip()
-                if not candidate:
-                    j += 1
-                    continue
-                if candidate.startswith("#"):
-                    j += 1
-                    continue
-                stream_url = candidate
-                break
-            else:
-                i += 1
+        elif line.startswith("http") and current_title:
+            league = detect_league(current_title)
+            if not league:
+                current_title = None
                 continue
 
-            # ---- parse EXTINF attributes ----
-            attrs = dict(re.findall(r'(\w+?)="(.*?)"', info))
-
-            tvg_id = attrs.get("tvg-id", "")
-            tvg_logo = attrs.get("tvg-logo", "")
-            group = attrs.get("group-title", "")
-
-            title = clean_text(info.split(",", 1)[-1])
-            tvg_name = clean_text(attrs.get("tvg-name", title))
-
-            # ---- output EXTINF ----
             out.append(
-                f'#EXTINF:-1 tvg-id="{tvg_id}" '
-                f'tvg-name="{tvg_name}" '
-                f'tvg-logo="{tvg_logo}" '
-                f'group-title="{group}",{title}'
+                f'#EXTINF:-1 '
+                f'tvg-id="{league["tvg_id"]}" '
+                f'tvg-name="{current_title}" '
+                f'tvg-logo="{league["logo"]}" '
+                f'group-title="{league["group"]}",'
+                f'{current_title}'
             )
 
-            # ---- extract params if any ----
-            params = []
+            out.append(league["headers"](line))
 
-            if "|" in stream_url:
-                base, param_str = stream_url.split("|", 1)
-                stream_url = base
-                for p in param_str.split("|"):
-                    if p.startswith(("referer=", "origin=")):
-                        params.append(p)
-
-            params.append(f"user-agent={USER_AGENT_ENC}")
-
-            out.append(stream_url + "|" + "|".join(params))
-
-            i = j + 1
-            continue
-
-        i += 1
-
-    return "\n".join(out) + "\n"
-
-# -------------------------------------------------
-# RUN
-# -------------------------------------------------
-def main():
-    print("🚀 Running Web Sports TiviMate playlist updater")
-
-    raw = fetch_m3u(SOURCE_URL)
-    converted = convert_to_tivimate(raw)
+            current_title = None
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write(converted)
+        f.write("\n".join(out))
 
     print(f"✅ Saved {OUTPUT_FILE}")
 
+# --------------------------------------------------
 if __name__ == "__main__":
     main()
