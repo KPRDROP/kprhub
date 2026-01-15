@@ -27,8 +27,11 @@ jobs:
       - name: 📦 Install dependencies
         run: |
           python -m pip install --upgrade pip
-          playwright install
-          playwright install-deps
+          pip install playwright
+
+      - name: Install Playwright Chromium
+        run: |
+           playwright install chromium   
 
       - name: 🎯 Run Pxlsports scraper
         run: python pxl.py
