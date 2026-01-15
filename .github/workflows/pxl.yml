@@ -31,7 +31,12 @@ jobs:
 
       - name: Install Playwright Chromium
         run: |
-           playwright install chromium   
+           playwright install chromium
+
+      - name: Install system dependencies (optional)
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libgbm1 libnss3 libxshmfence1
 
       - name: 🎯 Run Pxlsports scraper
         run: python pxl.py
