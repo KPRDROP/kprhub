@@ -18,59 +18,72 @@ USER_AGENT = (
 )
 
 LIVE_TV_LOGO = "https://i.postimg.cc/3wvZ39KX/Pixel-Sport-Logo-1182b5f687c239810f6d.png"
-LIVE_TV_ID = "24.7.Dummy.us"
 
 
 # -------------------------------------------------------
-async def fetch_json_js(page, url):
-    try:
-        return await page.evaluate(
+async def fetch_json_text_safe(page, url, retries=3):
+    for attempt in range(1, retries + 1):
+        text = await page.evaluate(
             """(u) => fetch(u, {
-                method: 'GET',
                 credentials: 'include',
-                headers: { 'Accept': 'application/json' }
-            }).then(r => r.json())""",
+                headers: { 'Accept': 'application/json, text/plain, */*' }
+            }).then(r => r.text())""",
             url,
         )
-    except Exception as e:
-        print(f"❌ JS fetch failed: {url}")
-        raise e
+
+        if not text:
+            print(f"⚠️ Empty response (attempt {attempt})")
+            await page.wait_for_timeout(1500)
+            continue
+
+        # HTML fallback → Cloudflare soft block
+        if text.lstrip().startswith("<"):
+            print(f"⚠️ HTML returned instead of JSON (attempt {attempt})")
+            await page.wait_for_timeout(2000)
+            continue
+
+        try:
+            return json.loads(text)
+        except json.JSONDecodeError:
+            print(f"⚠️ Invalid JSON (attempt {attempt})")
+            await page.wait_for_timeout(1500)
+
+    raise RuntimeError(f"❌ Failed to fetch valid JSON from {url}")
 
 
 # -------------------------------------------------------
 def collect_links(channel):
-    out = []
+    links = []
     for i in range(1, 4):
         u = channel.get(f"server{i}URL")
         if u and u.lower() != "null":
-            out.append(u)
-    return out
+            links.append(u)
+    return links
 
 
 # -------------------------------------------------------
 async def main():
-    print("🚀 Running PixelSport scraper (JS-context SAFE)")
+    print("🚀 Running PixelSport scraper (HTML-safe mode)")
 
     async with async_playwright() as p:
         browser = await p.chromium.launch(headless=True)
         ctx = await browser.new_context(user_agent=USER_AGENT)
         page = await ctx.new_page()
 
-        # 🔑 Cloudflare + session init
+        # Warm session
         await page.goto(BASE, wait_until="networkidle")
         await page.wait_for_timeout(4000)
 
-        # ✅ FETCH VIA PAGE JS (NOT context.request)
-        events_data = await fetch_json_js(page, API_EVENTS)
-        sliders_data = await fetch_json_js(page, API_SLIDERS)
+        events_data = await fetch_json_text_safe(page, API_EVENTS)
+        sliders_data = await fetch_json_text_safe(page, API_SLIDERS)
 
         await browser.close()
 
     events = events_data.get("events", [])
     sliders = sliders_data.get("data", [])
 
-    if not events and not sliders:
-        print("❌ No events or channels returned")
+    if not events:
+        print("❌ No events found")
         return
 
     ua_enc = quote(USER_AGENT, safe="")
