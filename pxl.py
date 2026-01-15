@@ -1,57 +1,26 @@
 #!/usr/bin/env python3
-import asyncio
 import json
 from urllib.parse import quote
-from playwright.async_api import async_playwright
+from pathlib import Path
 
-BASE = "https://pixelsport.tv"
-API_EVENTS = f"{BASE}/backend/liveTV/events"
-API_SLIDERS = f"{BASE}/backend/slider/getSliders"
+EVENTS_FILE = "events.json"
+SLIDERS_FILE = "sliders.json"
 
 OUTPUT_VLC = "pxl_vlc.m3u8"
 OUTPUT_TIVIMATE = "pxl_tivimate.m3u8"
 
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/143.0.0.0 Safari/537.36"
-)
-
+USER_AGENT = "Mozilla/5.0"
+BASE = "https://pixelsport.tv"
 LIVE_TV_LOGO = "https://i.postimg.cc/3wvZ39KX/Pixel-Sport-Logo-1182b5f687c239810f6d.png"
 
 
-# -------------------------------------------------------
-async def fetch_json_text_safe(page, url, retries=3):
-    for attempt in range(1, retries + 1):
-        text = await page.evaluate(
-            """(u) => fetch(u, {
-                credentials: 'include',
-                headers: { 'Accept': 'application/json, text/plain, */*' }
-            }).then(r => r.text())""",
-            url,
-        )
-
-        if not text:
-            print(f"⚠️ Empty response (attempt {attempt})")
-            await page.wait_for_timeout(1500)
-            continue
-
-        # HTML fallback → Cloudflare soft block
-        if text.lstrip().startswith("<"):
-            print(f"⚠️ HTML returned instead of JSON (attempt {attempt})")
-            await page.wait_for_timeout(2000)
-            continue
-
-        try:
-            return json.loads(text)
-        except json.JSONDecodeError:
-            print(f"⚠️ Invalid JSON (attempt {attempt})")
-            await page.wait_for_timeout(1500)
-
-    raise RuntimeError(f"❌ Failed to fetch valid JSON from {url}")
+def load_json(path):
+    if not Path(path).exists():
+        raise FileNotFoundError(f"Missing required file: {path}")
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
 
-# -------------------------------------------------------
 def collect_links(channel):
     links = []
     for i in range(1, 4):
@@ -61,32 +30,17 @@ def collect_links(channel):
     return links
 
 
-# -------------------------------------------------------
-async def main():
-    print("🚀 Running PixelSport scraper (HTML-safe mode)")
+def main():
+    print("🚀 Running PixelSport scraper (LOCAL JSON MODE)")
 
-    async with async_playwright() as p:
-        browser = await p.chromium.launch(headless=True)
-        ctx = await browser.new_context(user_agent=USER_AGENT)
-        page = await ctx.new_page()
-
-        # Warm session
-        await page.goto(BASE, wait_until="networkidle")
-        await page.wait_for_timeout(4000)
-
-        events_data = await fetch_json_text_safe(page, API_EVENTS)
-        sliders_data = await fetch_json_text_safe(page, API_SLIDERS)
-
-        await browser.close()
+    events_data = load_json(EVENTS_FILE)
+    sliders_data = load_json(SLIDERS_FILE) if Path(SLIDERS_FILE).exists() else {}
 
     events = events_data.get("events", [])
     sliders = sliders_data.get("data", [])
 
-    if not events:
-        print("❌ No events found")
-        return
-
     ua_enc = quote(USER_AGENT, safe="")
+
     vlc = ["#EXTM3U"]
     tivi = ["#EXTM3U"]
 
@@ -108,12 +62,12 @@ async def main():
 
     with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
         f.write("\n".join(vlc))
+
     with open(OUTPUT_TIVIMATE, "w", encoding="utf-8") as f:
         f.write("\n".join(tivi))
 
-    print(f"✅ Saved {OUTPUT_VLC}")
-    print(f"✅ Saved {OUTPUT_TIVIMATE}")
+    print("✅ Playlists generated successfully")
 
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
