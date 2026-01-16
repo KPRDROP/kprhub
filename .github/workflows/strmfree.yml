@@ -1,0 +1,53 @@
+name: 📺 Strm Free Playlist Updater
+
+on:
+  schedule:
+    # Runs every 2 hours
+    - cron: "0 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 🚀 Run drw_pxl updater
+        env:
+          STRM_FREE_M3U_URL: ${{ secrets.STRM_FREE_M3U_URL }}
+        run: |
+          python strmfree.py
+
+      - name: 📄 Check for changes
+        id: git_status
+        run: |
+          if git status --porcelain | grep .; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 💾 Commit & push updated playlist
+        if: steps.git_status.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add strm_free_tivimate.m3u8
+          git commit -m "🔄 Update PixelSport TiviMate playlist"
+          git push
+
+      - name: ✅ No changes
+        if: steps.git_status.outputs.changed == 'false'
+        run: echo "No playlist changes detected"
