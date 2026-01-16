@@ -1,125 +1,132 @@
-#!/usr/bin/env python3
 import os
 import re
 import urllib.request
 from urllib.parse import quote
 
-SOURCE_URL = os.environ.get("STRM_FREE_M3U_URL")
-OUTPUT_FILE = "strm_free_tivimate.m3u8"
+# ================= CONFIG =================
 
-UA_RAW = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) "
-    "Gecko/20100101 Firefox/146.0"
-)
-UA_ENCODED = quote(UA_RAW, safe="")
+SOURCE_URL = os.environ.get("STRM_FREE_M3U_URL")  # GitHub Secret
+OUTPUT_FILE = "strm_free_tivimate.m3u8"
 
 REFERER = "https://streamfree.to/"
 ORIGIN = "https://streamfree.to"
+USER_AGENT_RAW = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) "
+    "Gecko/20100101 Firefox/146.0"
+)
+USER_AGENT = quote(USER_AGENT_RAW, safe="")
 
-# -------------------------
-# League detection
-# -------------------------
-LEAGUES = {
-    "ligue 1": "Ligue 1",
-    "premier league": "Premier League",
-    "la liga": "La Liga",
-    "serie a": "Serie A",
-    "bundesliga": "Bundesliga",
-    "champions": "Champions League",
-    "nba": "NBA",
-    "nhl": "NHL",
-    "nfl": "NFL",
-    "mlb": "MLB",
-}
+# =========================================
 
-def detect_league(title: str) -> str:
-    t = title.lower()
-    for k, v in LEAGUES.items():
-        if k in t:
-            return v
-    return "StrmFree"
 
-def detect_quality(text: str) -> str:
-    m = re.search(r"(360|480|520|540|720|1080)p", text)
-    return f"{m.group(1)}p" if m else "Auto"
-
-def build_logo(title: str) -> str:
-    slug = re.sub(r"[^a-z0-9\-]", "", title.lower().replace(" vs ", "-vs-").replace(" ", "-"))
-    pretty = "_".join([w.capitalize() for w in slug.replace("-", " ").split()])
-    return f"https://streamfree.to/thumbnails/soccer_{slug}_{pretty}"
-
-def fetch_source():
-    if not SOURCE_URL:
-        raise RuntimeError("❌ STRM_FREE_M3U_URL secret not set")
-
+def fetch_playlist(url: str) -> list[str]:
     req = urllib.request.Request(
-        SOURCE_URL,
-        headers={"User-Agent": UA_RAW}
+        url,
+        headers={"User-Agent": USER_AGENT_RAW},
     )
     with urllib.request.urlopen(req, timeout=30) as r:
-        return r.read().decode("utf-8", errors="ignore")
+        return r.read().decode("utf-8", errors="ignore").splitlines()
 
-def clean_stream_url(url: str) -> str:
-    # remove ANY existing headers
-    return url.split("|")[0].strip()
+
+def extract_logo_from_extinf(line: str) -> str | None:
+    m = re.search(r'tvg-logo="([^"]+)"', line, re.IGNORECASE)
+    return m.group(1) if m else None
+
+
+def detect_category(title: str) -> str:
+    t = title.lower()
+    if any(x in t for x in ["nba", "basketball"]):
+        return "basketball"
+    if any(x in t for x in ["nhl", "hockey"]):
+        return "hockey"
+    if any(x in t for x in ["tennis", "atp", "wta"]):
+        return "tennis"
+    return "soccer"
+
+
+def build_logo(title: str, category: str) -> str:
+    slug = (
+        title.lower()
+        .replace("@", " vs ")
+        .replace(" vs ", "-vs-")
+        .replace(" ", "-")
+    )
+    slug = re.sub(r"[^a-z0-9\-]", "", slug)
+    pretty = "_".join(w.capitalize() for w in slug.replace("-", " ").split())
+    return f"https://streamfree.to/thumbnails/{category}_{slug}_{pretty}"
+
+
+def extract_quality(title: str) -> str:
+    m = re.search(r"\[(\d{3,4}p)\]", title)
+    return m.group(1) if m else "Auto"
+
+
+def build_group(title: str) -> str:
+    quality = extract_quality(title)
+    return f"StrmFree - {quality}"
+
+
+def normalize_title(title: str) -> str:
+    return title.replace("@", " vs ").strip()
+
 
 def main():
-    print("🚀 Running StreamFree → TiviMate converter (CLEAN MODE)")
+    if not SOURCE_URL:
+        raise RuntimeError("❌ STRM_FREE_M3U_URL secret is missing")
 
-    raw = fetch_source()
-    lines = [l.strip() for l in raw.splitlines() if l.strip()]
+    lines = fetch_playlist(SOURCE_URL)
 
     output = ["#EXTM3U"]
-    added = 0
-    i = 0
+    current_extinf = None
+    current_logo = None
+    current_title = None
 
-    while i < len(lines):
-        line = lines[i]
+    for line in lines:
+        line = line.strip()
 
         if line.startswith("#EXTINF"):
-            title = line.split(",", 1)[-1].strip()
-            league = detect_league(title)
-            quality = detect_quality(title)
-            logo = build_logo(title)
+            current_extinf = line
 
-            # find next stream URL
-            url = None
-            j = i + 1
-            while j < len(lines):
-                if lines[j].startswith("http") and ".m3u8" in lines[j]:
-                    url = clean_stream_url(lines[j])
-                    break
-                j += 1
+            title_match = re.search(r",(.+)$", line)
+            if not title_match:
+                continue
 
-            if url:
-                group = f"StrmFree | {league} | {quality}"
+            current_title = normalize_title(title_match.group(1))
 
-                output.append(
-                    '#EXTINF:-1 '
-                    f'tvg-logo="{logo}" '
-                    f'group-title="{group}",'
-                    f'{title}'
-                )
+            source_logo = extract_logo_from_extinf(line)
+            if source_logo:
+                current_logo = source_logo
+            else:
+                category = detect_category(current_title)
+                current_logo = build_logo(current_title, category)
 
-                output.append(
-                    f"{url}"
-                    f"|Referer={REFERER}"
-                    f"|Origin={ORIGIN}"
-                    f"|User-Agent={UA_ENCODED}"
-                )
-                added += 1
+        elif line.startswith("http") and current_extinf:
+            group = build_group(current_title)
 
-            i = j
-        else:
-            i += 1
+            output.append(
+                f'#EXTINF:-1 tvg-logo="{current_logo}" '
+                f'group-title="{group}",{current_title}'
+            )
 
-    if added == 0:
-        raise RuntimeError("❌ No streams parsed — source format may have changed")
+            output.append(
+                f"{line}"
+                f"|Referer={REFERER}"
+                f"|Origin={ORIGIN}"
+                f"|User-Agent={USER_AGENT}"
+            )
+
+            current_extinf = None
+            current_title = None
+            current_logo = None
+
+    if len(output) <= 1:
+        raise RuntimeError("❌ Output playlist is empty")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(output))
 
-    print(f"✅ {added} streams written to {OUTPUT_FILE}")
+    print(f"✅ Saved {OUTPUT_FILE} ({len(output) - 1} entries)")
+
 
 if __name__ == "__main__":
     main()
