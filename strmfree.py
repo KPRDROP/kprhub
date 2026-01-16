@@ -4,7 +4,7 @@ import re
 import urllib.request
 from urllib.parse import quote
 
-SOURCE_URL = os.environ.get("STREAMFREE_M3U_URL")
+SOURCE_URL = os.environ.get("STRM_FREE_M3U_URL")
 OUTPUT_FILE = "strm_free_tivimate.m3u8"
 
 UA_RAW = (
@@ -50,7 +50,7 @@ def build_logo(title: str) -> str:
 
 def fetch_source():
     if not SOURCE_URL:
-        raise RuntimeError("❌ STREAMFREE_M3U_URL secret not set")
+        raise RuntimeError("❌ STRM_FREE_M3U_URL secret not set")
 
     req = urllib.request.Request(
         SOURCE_URL,
