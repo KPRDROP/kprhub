@@ -5,11 +5,12 @@ from urllib.parse import quote
 
 # ================= CONFIG =================
 
-SOURCE_URL = os.environ.get("STRM_FREE_M3U_URL")  # GitHub Secret
+SOURCE_URL = os.environ.get("STRM_FREE_M3U_URL")
 OUTPUT_FILE = "strm_free_tivimate.m3u8"
 
 REFERER = "https://streamfree.to/"
 ORIGIN = "https://streamfree.to"
+
 USER_AGENT_RAW = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) "
     "Gecko/20100101 Firefox/146.0"
@@ -20,10 +21,7 @@ USER_AGENT = quote(USER_AGENT_RAW, safe="")
 
 
 def fetch_playlist(url: str) -> list[str]:
-    req = urllib.request.Request(
-        url,
-        headers={"User-Agent": USER_AGENT_RAW},
-    )
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT_RAW})
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read().decode("utf-8", errors="ignore").splitlines()
 
@@ -61,13 +59,15 @@ def extract_quality(title: str) -> str:
     return m.group(1) if m else "Auto"
 
 
-def build_group(title: str) -> str:
-    quality = extract_quality(title)
-    return f"StrmFree - {quality}"
-
-
 def normalize_title(title: str) -> str:
     return title.replace("@", " vs ").strip()
+
+
+def clean_stream_url(url: str) -> str:
+    """
+    Remove ALL existing |headers from source playlist
+    """
+    return url.split("|", 1)[0]
 
 
 def main():
@@ -77,45 +77,42 @@ def main():
     lines = fetch_playlist(SOURCE_URL)
 
     output = ["#EXTM3U"]
-    current_extinf = None
-    current_logo = None
     current_title = None
+    current_logo = None
 
     for line in lines:
         line = line.strip()
 
         if line.startswith("#EXTINF"):
-            current_extinf = line
-
             title_match = re.search(r",(.+)$", line)
             if not title_match:
                 continue
 
             current_title = normalize_title(title_match.group(1))
 
-            source_logo = extract_logo_from_extinf(line)
-            if source_logo:
-                current_logo = source_logo
+            logo = extract_logo_from_extinf(line)
+            if logo:
+                current_logo = logo
             else:
                 category = detect_category(current_title)
                 current_logo = build_logo(current_title, category)
 
-        elif line.startswith("http") and current_extinf:
-            group = build_group(current_title)
+        elif line.startswith("http") and current_title:
+            base_url = clean_stream_url(line)
+            quality = extract_quality(current_title)
 
             output.append(
                 f'#EXTINF:-1 tvg-logo="{current_logo}" '
-                f'group-title="{group}",{current_title}'
+                f'group-title="StrmFree - {quality}",{current_title}'
             )
 
             output.append(
-                f"{line}"
+                f"{base_url}"
                 f"|Referer={REFERER}"
                 f"|Origin={ORIGIN}"
                 f"|User-Agent={USER_AGENT}"
             )
 
-            current_extinf = None
             current_title = None
             current_logo = None
 
