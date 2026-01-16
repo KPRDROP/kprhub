@@ -1,104 +1,85 @@
 #!/usr/bin/env python3
 import os
-import sys
 import urllib.request
 from urllib.parse import quote
 
-# =========================
-# CONFIG
-# =========================
-
-SOURCE_ENV = "STRM_FREE_M3U_URL"
+SOURCE_URL = os.environ.get("STRM_FREE_M3U_URL")
 OUTPUT_FILE = "strm_free_tivimate.m3u8"
+
+UA_RAW = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) "
+    "Gecko/20100101 Firefox/146.0"
+)
+UA_ENCODED = quote(UA_RAW, safe="")
 
 REFERER = "https://streamfree.to/"
 ORIGIN = "https://streamfree.to"
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0"
 
-UA_ENCODED = quote(USER_AGENT, safe="")
+def fetch_source():
+    if not SOURCE_URL:
+        raise RuntimeError("❌ STRM_FREE_M3U_URL secret not set")
 
-# =========================
-# FETCH SOURCE M3U
-# =========================
-
-def fetch_m3u(url: str) -> list[str]:
     req = urllib.request.Request(
-        url,
-        headers={
-            "User-Agent": USER_AGENT,
-            "Accept": "*/*",
-        },
+        SOURCE_URL,
+        headers={"User-Agent": UA_RAW}
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        content = resp.read().decode("utf-8", errors="ignore")
-        return content.splitlines()
 
-
-# =========================
-# CONVERT VLC → TIVIMATE
-# =========================
-
-def convert_to_tivimate(lines: list[str]) -> list[str]:
-    out = ["#EXTM3U"]
-    last_extinf = None
-
-    for line in lines:
-        line = line.strip()
-        if not line:
-            continue
-
-        # Keep EXTINF as-is
-        if line.startswith("#EXTINF"):
-            last_extinf = line
-            out.append(line)
-            continue
-
-        # Skip VLC-only options
-        if line.startswith("#EXTVLCOPT"):
-            continue
-
-        # Stream URL
-        if line.startswith("http"):
-            url = (
-                f"{line}"
-                f"|referer={REFERER}"
-                f"|origin={ORIGIN}"
-                f"|user-agent={UA_ENCODED}"
-            )
-            out.append(url)
-            continue
-
-    return out
-
-
-# =========================
-# MAIN
-# =========================
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read().decode("utf-8", errors="ignore")
 
 def main():
-    print("🚀 Running strm free playlist updater")
+    print("🚀 Running Strm Free → TiviMate converter")
 
-    src_url = os.getenv(SOURCE_ENV)
-    if not src_url:
-        print(f"❌ Missing environment variable: {SOURCE_ENV}")
-        sys.exit(1)
+    raw = fetch_source()
+    lines = [l.strip() for l in raw.splitlines() if l.strip()]
 
-    print(f"📥 Fetching source playlist")
-    lines = fetch_m3u(src_url)
+    output = ["#EXTM3U"]
+    added = 0
+    i = 0
 
-    if not lines:
-        print("❌ Empty playlist received")
-        sys.exit(1)
+    while i < len(lines):
+        line = lines[i]
 
-    print("🔄 Converting to TiviMate format")
-    tivimate_lines = convert_to_tivimate(lines)
+        if line.startswith("#EXTINF"):
+            title = line.split(",", 1)[-1].strip()
+
+            # find next stream URL
+            url = None
+            j = i + 1
+            while j < len(lines):
+                if lines[j].startswith("http") and ".m3u8" in lines[j]:
+                    url = lines[j]
+                    break
+                j += 1
+
+            if url:
+                extinf = (
+                    '#EXTINF:-1 '
+                    'tvg-logo="" '
+                    'group-title="StrmFree",'
+                    f'{title}'
+                )
+                output.append(extinf)
+
+                output.append(
+                    f"{url}"
+                    f"|Referer={REFERER}"
+                    f"|Origin={ORIGIN}"
+                    f"|User-Agent={UA_ENCODED}"
+                )
+                added += 1
+
+            i = j
+        else:
+            i += 1
+
+    if added == 0:
+        raise RuntimeError("❌ No streams parsed — source format may have changed")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(tivimate_lines))
+        f.write("\n".join(output))
 
-    print(f"✅ Saved: {OUTPUT_FILE}")
-    print(f"📊 Entries: {sum(1 for l in tivimate_lines if l.startswith('#EXTINF'))}")
-
+    print(f"✅ {added} streams written to {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()
