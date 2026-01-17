@@ -1,26 +1,27 @@
 #!/usr/bin/env python3
 
+import sys
+from pathlib import Path
+
+# -------------------------------------------------
+# HARD IMPORT FIX (GitHub Actions + Local + Module)
+THIS_FILE = Path(__file__).resolve()
+PROJECT_ROOT = THIS_FILE.parent
+PARENT_ROOT = PROJECT_ROOT.parent
+
+for p in (PROJECT_ROOT, PARENT_ROOT):
+    if str(p) not in sys.path:
+        sys.path.insert(0, str(p))
+
+from utils import Cache, Time, get_logger, leagues, network
+# -------------------------------------------------
+
 import base64
 import re
 from functools import partial
 from datetime import datetime, timezone
-
 from selectolax.parser import HTMLParser
 
-# -------------------------------------------------
-# SAFE IMPORT FIX (CI + LOCAL)
-try:
-    from utils import Cache, Time, get_logger, leagues, network
-except ModuleNotFoundError:
-    import sys
-    from pathlib import Path
-
-    ROOT = Path(__file__).resolve().parent
-    sys.path.insert(0, str(ROOT))
-
-    from utils import Cache, Time, get_logger, leagues, network
-
-# -------------------------------------------------
 log = get_logger(__name__)
 
 TAG = "iSTRMEAST"
@@ -31,7 +32,7 @@ CACHE_FILE = Cache(f"{TAG.lower()}.json", exp=10_800)
 urls: dict[str, dict[str, str | float]] = {}
 
 # -------------------------------------------------
-# Schedule filtering
+# Schedule-aware filtering
 INCLUDE_LIVE = True
 INCLUDE_UPCOMING_MINUTES = 180
 
@@ -42,7 +43,7 @@ def is_event_active(time_text: str | None) -> bool:
 
     t = time_text.lower().strip()
 
-    if INCLUDE_LIVE and any(k in t for k in ("live", "now", "in progress")):
+    if INCLUDE_LIVE and any(x in t for x in ("live", "now", "in progress")):
         return True
 
     m = re.search(r"(\d+)\s+minute", t)
@@ -63,24 +64,22 @@ def is_event_active(time_text: str | None) -> bool:
 # -------------------------------------------------
 async def process_event(url: str, url_num: int) -> str | None:
     if not (event_data := await network.request(url, log=log)):
-        log.info(f"URL {url_num}) Failed to load url.")
+        log.info(f"URL {url_num}) Failed to load page")
         return None
 
     soup = HTMLParser(event_data.content)
 
     iframe = soup.css_first("iframe#wp_player")
     if not iframe:
-        log.warning(f"URL {url_num}) No iframe found.")
+        log.warning(f"URL {url_num}) No iframe")
         return None
 
     iframe_src = iframe.attributes.get("src")
     if not iframe_src:
-        log.warning(f"URL {url_num}) No iframe src.")
         return None
 
     iframe_data = await network.request(iframe_src, log=log)
     if not iframe_data:
-        log.info(f"URL {url_num}) Failed to load iframe.")
         return None
 
     pattern = re.compile(
@@ -88,13 +87,13 @@ async def process_event(url: str, url_num: int) -> str | None:
         re.IGNORECASE
     )
 
-    match = pattern.search(iframe_data.text)
-    if not match:
-        log.warning(f"URL {url_num}) No encoded stream found.")
+    m = pattern.search(iframe_data.text)
+    if not m:
+        log.warning(f"URL {url_num}) No encoded stream")
         return None
 
     log.info(f"URL {url_num}) Captured M3U8")
-    return base64.b64decode(match[1]).decode("utf-8")
+    return base64.b64decode(m[1]).decode("utf-8")
 
 
 # -------------------------------------------------
@@ -108,12 +107,13 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
     soup = HTMLParser(html_data.content)
 
     for link in soup.css("li.f1-podium--item > a.f1-podium--link"):
-        li_item = link.parent
+        li = link.parent
 
-        rank_elem = li_item.css_first(".f1-podium--rank")
-        time_elem = li_item.css_first(".SaatZamanBilgisi")
+        rank = li.css_first(".f1-podium--rank")
+        time_elem = li.css_first(".SaatZamanBilgisi")
+        driver = li.css_first(".f1-podium--driver")
 
-        if not rank_elem or not time_elem:
+        if not rank or not time_elem or not driver:
             continue
 
         time_text = (
@@ -124,14 +124,10 @@ async def get_events(cached_keys: list[str]) -> list[dict[str, str]]:
         if not is_event_active(time_text):
             continue
 
-        sport = rank_elem.text(strip=True)
+        sport = rank.text(strip=True)
 
-        driver_elem = li_item.css_first(".f1-podium--driver")
-        if not driver_elem:
-            continue
-
-        event_name = driver_elem.text(strip=True)
-        if inner := driver_elem.css_first("span.d-md-inline"):
+        event_name = driver.text(strip=True)
+        if inner := driver.css_first("span.d-md-inline"):
             event_name = inner.text(strip=True)
 
         key = f"[{sport}] {event_name} ({TAG})"
@@ -158,11 +154,11 @@ async def scrape() -> None:
 
     urls.update(cached_urls)
 
-    log.info(f"Loaded {cached_count} cached event(s)")
+    log.info(f"Loaded {cached_count} cached events")
     log.info(f'Scraping from "{BASE_URL}"')
 
     events = await get_events(list(cached_urls.keys()))
-    log.info(f"Processing {len(events)} active event(s)")
+    log.info(f"Processing {len(events)} active events")
 
     if not events:
         log.info("No active events found")
@@ -171,11 +167,7 @@ async def scrape() -> None:
     now = Time.clean(Time.now()).timestamp()
 
     for i, ev in enumerate(events, start=1):
-        handler = partial(
-            process_event,
-            url=ev["link"],
-            url_num=i,
-        )
+        handler = partial(process_event, ev["link"], i)
 
         url = await network.safe_process(
             handler,
@@ -201,10 +193,10 @@ async def scrape() -> None:
             "link": link,
         }
 
-    new_count = len(cached_urls) - cached_count
-    log.info(f"Collected {new_count} new event(s)" if new_count else "No new events")
-
     CACHE_FILE.write(cached_urls)
+
+    new = len(cached_urls) - cached_count
+    log.info(f"Collected {new} new events" if new else "No new events")
 
 
 # -------------------------------------------------
