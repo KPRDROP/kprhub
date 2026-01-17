@@ -1,181 +1,205 @@
+#!/usr/bin/env python3
+
+import asyncio
 import base64
+import json
+import os
 import re
-from functools import partial
+import time
 from urllib.parse import quote_plus
 
+import aiohttp
 from selectolax.parser import HTMLParser
 
-from .utils import Cache, Time, get_logger, leagues, network
+# ================= CONFIG =================
 
-log = get_logger(__name__)
-
-TAG = "iSTRMEAST"
 BASE_URL = "https://istreameast.app"
-
-CACHE_FILE = Cache("istreameast.json", exp=10_800)
 OUTPUT_FILE = "istreameast.m3u"
 
-urls: dict[str, dict] = {}
-
-HEADERS_PIPE = (
-    "|referer=https://gooz.aapmains.net/"
-    "|origin=https://gooz.aapmains.net"
-    "|user-agent=Agent=" + quote_plus(
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0"
-    )
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) "
+    "Gecko/20100101 Firefox/146.0"
 )
 
+ENCODED_UA = quote_plus(f"Agent={USER_AGENT}")
 
-# ---------------- STREAM EXTRACTION ---------------- #
+REFERER = "https://gooz.aapmains.net/"
+ORIGIN = "https://gooz.aapmains.net"
 
-async def process_event(url: str, url_num: int) -> str | None:
-    resp = await network.request(url, log=log)
-    if not resp:
-        log.warning(f"URL {url_num}) Failed to load event page")
-        return None
+TVG_ID = "Live.Event.us"
+TAG = "iSTRMEAST"
 
-    soup = HTMLParser(resp.content)
+CACHE_FILE = "istreameast_cache.json"
+CACHE_EXP = 3 * 60 * 60  # 3 hours
 
-    # 1️⃣ DIRECT PLAYLIST URL
-    direct = re.search(
-        r"https://pfl\d+\.ascendastro\.space/playlist/\d+/load-playlist",
-        resp.text,
-    )
-    if direct:
-        log.info(f"URL {url_num}) Direct playlist found")
-        return direct.group(0)
+DEFAULT_LOGO = "https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png"
 
-    # 2️⃣ iframe → atob()
-    iframe = soup.css_first("iframe")
-    if iframe and (src := iframe.attributes.get("src")):
-        iframe_resp = await network.request(src, log=log)
-        if iframe_resp:
-            # atob('...')
-            match = re.search(
-                r"atob\(\s*['\"]([^'\"]+)['\"]\s*\)",
-                iframe_resp.text,
-                re.I,
-            )
-            if match:
-                log.info(f"URL {url_num}) Base64 stream decoded")
-                return base64.b64decode(match.group(1)).decode("utf-8")
+# ================= HELPERS =================
 
-            # fallback direct playlist in iframe
-            direct = re.search(
-                r"https://pfl\d+\.ascendastro\.space/playlist/\d+/load-playlist",
-                iframe_resp.text,
-            )
-            if direct:
-                log.info(f"URL {url_num}) Playlist found in iframe")
-                return direct.group(0)
+def log(msg):
+    print(msg, flush=True)
 
-    log.warning(f"URL {url_num}) No stream found")
+
+def load_cache():
+    if not os.path.exists(CACHE_FILE):
+        return {}
+    try:
+        with open(CACHE_FILE, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+def save_cache(data):
+    with open(CACHE_FILE, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2)
+
+
+async def fetch(session, url):
+    try:
+        async with session.get(url, timeout=20) as r:
+            if r.status == 200:
+                return await r.text()
+    except Exception:
+        pass
     return None
 
 
-# ---------------- EVENT DISCOVERY ---------------- #
+# ================= SCRAPER =================
 
-async def get_events(cached_keys: list[str]) -> list[dict]:
+async def extract_stream(session, event_url):
+    html = await fetch(session, event_url)
+    if not html:
+        return None
+
+    soup = HTMLParser(html)
+
+    iframe = soup.css_first("iframe")
+    if not iframe:
+        return None
+
+    iframe_src = iframe.attributes.get("src")
+    if not iframe_src:
+        return None
+
+    iframe_html = await fetch(session, iframe_src)
+    if not iframe_html:
+        return None
+
+    m = re.search(r"window\.atob\(['\"]([^'\"]+)['\"]\)", iframe_html)
+    if not m:
+        return None
+
+    try:
+        decoded = base64.b64decode(m.group(1)).decode("utf-8")
+        return decoded
+    except Exception:
+        return None
+
+
+async def get_events(session):
+    html = await fetch(session, BASE_URL)
+    if not html:
+        return []
+
+    soup = HTMLParser(html)
     events = []
 
-    html = await network.request(BASE_URL, log=log)
-    if not html:
-        return events
-
-    soup = HTMLParser(html.content)
-
-    for a in soup.css("li.f1-podium--item > a.f1-podium--link"):
-        li = a.parent
-
-        sport_el = li.css_first(".f1-podium--rank")
-        name_el = li.css_first("span.d-md-inline")
-
-        if not sport_el or not name_el:
-            continue
-
-        sport = sport_el.text(strip=True)
-        event = name_el.text(strip=True)
-
-        key = f"[{sport}] {event} ({TAG})"
-        if key in cached_keys:
-            continue
-
-        href = a.attributes.get("href")
+    for link in soup.css("li.f1-podium--item a.f1-podium--link"):
+        href = link.attributes.get("href")
         if not href:
             continue
 
-        events.append(
-            {
-                "sport": sport,
-                "event": event,
-                "link": href,
-            }
-        )
+        li = link.parent
+
+        sport_el = li.css_first(".f1-podium--rank")
+        title_el = li.css_first("span.d-md-inline")
+
+        if not sport_el or not title_el:
+            continue
+
+        sport = sport_el.text(strip=True)
+        title = title_el.text(strip=True)
+
+        events.append({
+            "sport": sport,
+            "title": title,
+            "url": href
+        })
 
     return events
 
 
-# ---------------- SCRAPER ---------------- #
+# ================= MAIN =================
 
-async def scrape() -> None:
-    cached = CACHE_FILE.load()
-    urls.update(cached)
+async def main():
+    log("🚀 Starting iStreamEast scraper...")
 
-    log.info(f"Loaded {len(cached)} cached events")
-    log.info(f"Scraping from {BASE_URL}")
+    cache = load_cache()
+    now = int(time.time())
 
-    events = await get_events(cached.keys())
-    log.info(f"Processing {len(events)} new events")
+    headers = {"User-Agent": USER_AGENT}
 
-    now = Time.clean(Time.now()).timestamp()
+    async with aiohttp.ClientSession(headers=headers) as session:
+        events = await get_events(session)
+        log(f"📌 Found {len(events)} events")
 
-    for i, ev in enumerate(events, start=1):
-        handler = partial(process_event, ev["link"], i)
-        stream = await network.safe_process(
-            handler,
-            url_num=i,
-            semaphore=network.HTTP_S,
-            log=log,
-        )
+        entries = []
 
-        if not stream:
-            continue
+        for i, ev in enumerate(events, 1):
+            key = f"[{ev['sport']}] {ev['title']} ({TAG})"
 
-        sport, event = ev["sport"], ev["event"]
-        key = f"[{sport}] {event} ({TAG})"
+            if key in cache and now - cache[key]["ts"] < CACHE_EXP:
+                entries.append(cache[key]["entry"])
+                continue
 
-        tvg_id, logo = leagues.get_tvg_info(sport, event)
+            log(f"🔎 [{i}/{len(events)}] {key}")
 
-        urls[key] = cached[key] = {
-            "url": stream,
-            "logo": logo,
-            "id": tvg_id or "Live.Event.us",
-            "sport": sport,
-            "event": event,
-            "timestamp": now,
-        }
+            stream = await extract_stream(session, ev["url"])
+            if not stream:
+                log("  ⚠️ No stream found")
+                continue
 
-    CACHE_FILE.write(cached)
-    write_m3u()
+            log(f"  ✅ STREAM FOUND: {stream}")
 
+            entry = {
+                "name": key,
+                "url": stream,
+                "logo": DEFAULT_LOGO,
+            }
 
-# ---------------- M3U OUTPUT ---------------- #
+            cache[key] = {
+                "ts": now,
+                "entry": entry
+            }
 
-def write_m3u():
-    lines = ["#EXTM3U"]
+            entries.append(entry)
 
-    for title, data in urls.items():
-        name = f"[{data['sport']}] {data['event']} ({TAG})"
-        logo = data.get("logo", "")
-        tvg_id = data.get("id", "Live.Event.us")
+    if not entries:
+        log("❌ No streams collected")
+        return
 
-        lines.append(
-            f'#EXTINF:-1 tvg-id="{tvg_id}" tvg-name="{name}" '
-            f'tvg-logo="{logo}" group-title="Live Events",{name}'
-        )
-        lines.append(data["url"] + HEADERS_PIPE)
+    # ================= WRITE M3U =================
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-        f.write("\n".join(lines))
+        f.write("#EXTM3U\n")
+        for e in entries:
+            f.write(
+                f'#EXTINF:-1 tvg-id="{TVG_ID}" '
+                f'tvg-name="{e["name"]}" '
+                f'tvg-logo="{e["logo"]}" '
+                f'group-title="Live Events",{e["name"]}\n'
+            )
+            f.write(
+                f'{e["url"]}'
+                f'|referer={REFERER}'
+                f'|origin={ORIGIN}'
+                f'|user-agent={ENCODED_UA}\n'
+            )
 
-    log.info(f"Saved {len(urls)} events to {OUTPUT_FILE}")
+    save_cache(cache)
+    log("✅ istreameast.m3u saved")
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
