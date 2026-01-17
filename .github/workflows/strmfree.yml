@@ -2,7 +2,8 @@ name: 🔄 Update Strm Free TiviMate Playlist
 
 on:
   schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes
+    # Run every 2 hours
+    - cron: "0 */2 * * *"
   workflow_dispatch:
 
 permissions:
