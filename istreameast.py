@@ -7,9 +7,20 @@ from datetime import datetime, timezone
 
 from selectolax.parser import HTMLParser
 
-# ---- FIXED IMPORT (NO RELATIVE IMPORT ERROR) ----
-from utils import Cache, Time, get_logger, leagues, network
+# -------------------------------------------------
+# SAFE IMPORT FIX (CI + LOCAL)
+try:
+    from utils import Cache, Time, get_logger, leagues, network
+except ModuleNotFoundError:
+    import sys
+    from pathlib import Path
 
+    ROOT = Path(__file__).resolve().parent
+    sys.path.insert(0, str(ROOT))
+
+    from utils import Cache, Time, get_logger, leagues, network
+
+# -------------------------------------------------
 log = get_logger(__name__)
 
 TAG = "iSTRMEAST"
@@ -20,16 +31,12 @@ CACHE_FILE = Cache(f"{TAG.lower()}.json", exp=10_800)
 urls: dict[str, dict[str, str | float]] = {}
 
 # -------------------------------------------------
-# Schedule filtering (SAFE DEFAULTS)
+# Schedule filtering
 INCLUDE_LIVE = True
-INCLUDE_UPCOMING_MINUTES = 180  # next 3 hours
+INCLUDE_UPCOMING_MINUTES = 180
 
 # -------------------------------------------------
 def is_event_active(time_text: str | None) -> bool:
-    """
-    Returns True if event is LIVE or upcoming.
-    Fails open if parsing fails.
-    """
     if not time_text:
         return True
 
@@ -185,7 +192,7 @@ async def scrape() -> None:
 
         tvg_id, logo = leagues.get_tvg_info(sport, event)
 
-        entry = {
+        urls[key] = cached_urls[key] = {
             "url": url,
             "logo": logo,
             "base": "https://gooz.aapmains.net",
@@ -193,8 +200,6 @@ async def scrape() -> None:
             "id": tvg_id or "Live.Event.us",
             "link": link,
         }
-
-        urls[key] = cached_urls[key] = entry
 
     new_count = len(cached_urls) - cached_count
     log.info(f"Collected {new_count} new event(s)" if new_count else "No new events")
