@@ -1,14 +1,13 @@
 import os
 import re
 import urllib.request
-from urllib.parse import quote, urlparse
+from urllib.parse import quote
 
 # ================= CONFIG =================
 
 SOURCE_URL = os.environ.get("STRM_FREE_M3U_URL")
 OUTPUT_FILE = "strm_free_tivimate.m3u8"
 
-# Origin stays the same (as requested)
 ORIGIN = "https://streamfree.to"
 
 USER_AGENT_RAW = (
@@ -18,11 +17,6 @@ USER_AGENT_RAW = (
 USER_AGENT = quote(USER_AGENT_RAW, safe="")
 
 # =========================================
-
-
-def derive_referer(url: str) -> str:
-    p = urlparse(url)
-    return f"{p.scheme}://{p.netloc}/"
 
 
 def fetch_playlist(url: str) -> list[str]:
@@ -68,18 +62,21 @@ def normalize_title(title: str) -> str:
     return title.replace("@", " vs ").strip()
 
 
-def clean_stream_url(url: str) -> str:
+def extract_base_url_and_referer(line: str) -> tuple[str, str]:
     """
-    Remove ALL existing |headers from source playlist
+    Extract base m3u8 URL and ORIGINAL Referer from source playlist.
     """
-    return url.split("|", 1)[0]
+    base_url = line.split("|", 1)[0]
+
+    m = re.search(r"Referer=([^|]+)", line, re.IGNORECASE)
+    referer = m.group(1) if m else "https://streamfree.to/"
+
+    return base_url, referer
 
 
 def main():
     if not SOURCE_URL:
         raise RuntimeError("❌ STRM_FREE_M3U_URL secret is missing")
-
-    REFERER = derive_referer(SOURCE_URL)
 
     lines = fetch_playlist(SOURCE_URL)
 
@@ -105,7 +102,7 @@ def main():
                 current_logo = build_logo(current_title, category)
 
         elif line.startswith("http") and current_title:
-            base_url = clean_stream_url(line)
+            base_url, referer = extract_base_url_and_referer(line)
             quality = extract_quality(current_title)
 
             output.append(
@@ -115,7 +112,7 @@ def main():
 
             output.append(
                 f"{base_url}"
-                f"|Referer={REFERER}"
+                f"|Referer={referer}"
                 f"|Origin={ORIGIN}"
                 f"|User-Agent={USER_AGENT}"
             )
