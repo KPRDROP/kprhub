@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="NFL Redzone" tvg-logo="http://drewlive2423.duckdns.org:9000/Logos/Am-Football2.png" group-title="SharkStreams - NFL",NFL Redzone
+https://cdn1.hkfile.cfd/live/cdn1/playlist.m3u8?expires=1768607461&token=6725c4fc90a2f4ba7b3e665372836e9ec1b321de37cae8d3b1261090d8540543|User-Agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F144.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="New Orleans Pelicans vs Indiana Pacers" tvg-logo="http://drewlive2423.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",New Orleans Pelicans vs Indiana Pacers
 https://cdn1.hkfile.cfd/live/cdn1/playlist.m3u8?expires=1768607465&token=85789066b0fbca6fd94838885cc027e9ca3b2f8b9c0577be221aa572fc3d5ea1|User-Agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F144.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-name="Cleveland Cavaliers vs Philadelphia 76ers" tvg-logo="http://drewlive2423.duckdns.org:9000/Logos/Basketball5.png" group-title="SharkStreams - NBA",Cleveland Cavaliers vs Philadelphia 76ers
