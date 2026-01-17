@@ -1,14 +1,14 @@
 import os
 import re
 import urllib.request
-from urllib.parse import quote
+from urllib.parse import quote, urlparse
 
 # ================= CONFIG =================
 
 SOURCE_URL = os.environ.get("STRM_FREE_M3U_URL")
 OUTPUT_FILE = "strm_free_tivimate.m3u8"
 
-REFERER = "https://streamfree.to/"
+# Origin stays the same (as requested)
 ORIGIN = "https://streamfree.to"
 
 USER_AGENT_RAW = (
@@ -18,6 +18,11 @@ USER_AGENT_RAW = (
 USER_AGENT = quote(USER_AGENT_RAW, safe="")
 
 # =========================================
+
+
+def derive_referer(url: str) -> str:
+    p = urlparse(url)
+    return f"{p.scheme}://{p.netloc}/"
 
 
 def fetch_playlist(url: str) -> list[str]:
@@ -73,6 +78,8 @@ def clean_stream_url(url: str) -> str:
 def main():
     if not SOURCE_URL:
         raise RuntimeError("❌ STRM_FREE_M3U_URL secret is missing")
+
+    REFERER = derive_referer(SOURCE_URL)
 
     lines = fetch_playlist(SOURCE_URL)
 
