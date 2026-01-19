@@ -7,40 +7,22 @@ from urllib.parse import quote
 SOURCE_URL = os.environ.get("MULTISPORT_URL")
 OUTPUT_FILE = "multisports.m3u"
 
-NEW_EPG = "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
-
-USER_AGENT_RAW = (
+DEFAULT_USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
     "AppleWebKit/537.36 (KHTML, like Gecko) "
     "Chrome/144.0.0.0 Safari/537.36"
 )
-USER_AGENT = quote(USER_AGENT_RAW, safe="")
 
 # =========================================
 
 
 def fetch_playlist(url: str) -> list[str]:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT_RAW})
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": DEFAULT_USER_AGENT},
+    )
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read().decode("utf-8", errors="ignore").splitlines()
-
-
-def normalize_extm3u(line: str) -> str:
-    if line.startswith("#EXTM3U"):
-        if "url-tvg=" in line:
-            return f'#EXTM3U url-tvg="{NEW_EPG}"'
-        return f'#EXTM3U url-tvg="{NEW_EPG}"'
-    return line
-
-
-def normalize_title(line: str) -> str:
-    if line.startswith("#EXTINF"):
-        return line.replace("@", "vs")
-    return line
-
-
-def clean_stream_url(line: str) -> str:
-    return line.split("|", 1)[0]
 
 
 def main():
@@ -49,35 +31,66 @@ def main():
 
     lines = fetch_playlist(SOURCE_URL)
 
-    output = []
-    pending_extinf = None
+    output = ["#EXTM3U"]
+
+    current_extinf = None
+    referrer = None
+    origin = None
+    user_agent = None
 
     for line in lines:
         line = line.strip()
-
         if not line:
             continue
 
-        if line.startswith("#EXTM3U"):
-            output.append(normalize_extm3u(line))
-            continue
-
+        # EXTINF (copy exactly)
         if line.startswith("#EXTINF"):
-            pending_extinf = normalize_title(line)
-            output.append(pending_extinf)
+            current_extinf = line
+            referrer = None
+            origin = None
+            user_agent = None
+            output.append(line)
             continue
 
-        if line.startswith("http") and pending_extinf:
-            base_url = clean_stream_url(line)
-            output.append(f"{base_url}|User-Agent={USER_AGENT}")
-            pending_extinf = None
+        # VLC headers
+        if line.startswith("#EXTVLCOPT:http-referrer="):
+            referrer = line.split("=", 1)[1].strip()
             continue
 
-        # Copy any other metadata lines exactly
+        if line.startswith("#EXTVLCOPT:http-origin="):
+            origin = line.split("=", 1)[1].strip()
+            continue
+
+        if line.startswith("#EXTVLCOPT:http-user-agent="):
+            ua_raw = line.split("=", 1)[1].strip()
+            user_agent = quote(ua_raw, safe="")
+            continue
+
+        # Stream URL
+        if line.startswith("http") and current_extinf:
+            base_url = line.split("|", 1)[0]
+
+            headers = []
+            if referrer:
+                headers.append(f"referer={referrer}")
+            if origin:
+                headers.append(f"origin={origin}")
+            if user_agent:
+                headers.append(f"user-agent={user_agent}")
+
+            if headers:
+                output.append(base_url + "|" + "|".join(headers))
+            else:
+                output.append(base_url)
+
+            current_extinf = None
+            continue
+
+        # Copy other metadata lines untouched
         if line.startswith("#"):
             output.append(line)
 
-    if len(output) < 2:
+    if len(output) <= 1:
         raise RuntimeError("❌ Output playlist is empty")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
