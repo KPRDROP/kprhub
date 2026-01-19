@@ -2,8 +2,10 @@ name: 🏟️ Update MultiSports Playlist
 
 on:
   schedule:
-    - cron: "0 */2 * * *"
+    # Run every 30 minutes
+    - cron: "*/30 * * * *"
   workflow_dispatch:
+    # Allow manual run from GitHub UI
 
 permissions:
   contents: write
