@@ -23,7 +23,7 @@ jobs:
 
       - name: 📦 Install deps
         run: |
-          pip install selectolax
+          pip install selectolax playwright httpx[http2] pytz
 
       - name: 🦈 Run scraper
         env:
