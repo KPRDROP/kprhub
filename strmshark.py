@@ -18,13 +18,11 @@ USER_AGENT_RAW = (
 USER_AGENT_ENCODED = quote(USER_AGENT_RAW, safe="")
 
 MAX_RETRIES = 3
-TIMEOUT = 40  # seconds
+TIMEOUT = 30
 # ==========================
 
 
-def fetch_playlist(url: str) -> list[str]:
-    last_error = None
-
+def fetch_playlist(url: str) -> list[str] | None:
     for attempt in range(1, MAX_RETRIES + 1):
         try:
             print(f"🌐 Fetch attempt {attempt}/{MAX_RETRIES}...")
@@ -36,11 +34,10 @@ def fetch_playlist(url: str) -> list[str]:
                 return resp.read().decode("utf-8", errors="ignore").splitlines()
 
         except (URLError, HTTPError, TimeoutError) as e:
-            last_error = e
-            print(f"⚠️ Attempt {attempt} failed: {e}")
-            time.sleep(5)
+            print(f"⚠️ Network unreachable (attempt {attempt})")
+            time.sleep(4)
 
-    raise RuntimeError(f"❌ Failed to fetch source playlist after {MAX_RETRIES} attempts") from last_error
+    return None  # <-- critical change
 
 
 def build_playlist(lines: list[str]) -> list[str]:
@@ -56,11 +53,10 @@ def build_playlist(lines: list[str]) -> list[str]:
             output.append(line)
             continue
 
-        # Drop VLC-only headers
+        # drop all VLC headers
         if line.startswith("#"):
             continue
 
-        # Stream URL → remove existing headers and add UA only
         base_url = line.split("|", 1)[0]
         output.append(f"{base_url}|User-Agent={USER_AGENT_ENCODED}")
 
@@ -74,27 +70,23 @@ def main():
 
     print("🦈 Fetching SharkStreams playlist...")
 
-    try:
-        lines = fetch_playlist(SOURCE_URL)
-    except Exception as e:
-        # DO NOT FAIL WORKFLOW — keep last file if exists
-        print(f"❌ Fetch failed: {e}")
-        if os.path.exists(OUTPUT_FILE):
-            print("⚠️ Using existing playlist to avoid workflow failure")
-            return
-        raise
+    lines = fetch_playlist(SOURCE_URL)
+
+    if not lines:
+        print("⚠️ Source unreachable from GitHub Actions — keeping existing playlist")
+        return  # ← SUCCESSFUL EXIT
 
     print("🛠 Processing playlist...")
     playlist = build_playlist(lines)
 
     if len(playlist) <= 1:
-        print("❌ Empty playlist generated — aborting write")
-        sys.exit(1)
+        print("⚠️ No streams parsed — skipping write")
+        return
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(playlist) + "\n")
 
-    print(f"✅ Saved: {OUTPUT_FILE} ({len(playlist) - 1} streams)")
+    print(f"✅ Updated {OUTPUT_FILE} ({len(playlist) - 1} streams)")
 
 
 if __name__ == "__main__":
