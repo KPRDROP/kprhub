@@ -13,7 +13,7 @@ OUT_TIVI = Path("pxl_tivimate.m3u8")
 
 REFERER = "https://pixelsport.tv/"
 ORIGIN = "https://pixelsport.tv"
-ICY-METADATA = "=1"
+ICY-METADATA = "icy-metadata=1"
 
 UA_RAW = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
