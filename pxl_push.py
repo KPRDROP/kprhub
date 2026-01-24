@@ -13,7 +13,6 @@ OUT_TIVI = Path("pxl_tivimate.m3u8")
 
 REFERER = "https://pixelsport.tv/"
 ORIGIN = "https://pixelsport.tv"
-ICY-METADATA = "icy-metadata=1"
 
 UA_RAW = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
@@ -58,7 +57,6 @@ def convert_to_tivimate(m3u: str) -> str:
             f"|referer={REFERER}"
             f"|origin={ORIGIN}"
             f"|user-agent={UA_ENC}"
-            f"|icy-metadata={ICY-METADATA}"
         )
 
     return "\n".join(out) + "\n"
