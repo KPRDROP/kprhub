@@ -1,132 +1,147 @@
+#!/usr/bin/env python3
+
+import asyncio
 import json
+import os
+import sys
 import urllib.request
-from urllib.error import URLError, HTTPError
+from datetime import datetime, timedelta
 from urllib.parse import quote
+from urllib.error import URLError, HTTPError
+import requests
+
+# ---------------- CONFIG ---------------- #
 
 BASE = "https://pixelsport.tv"
-API_EVENTS = f"{BASE}/backend/liveTV/events"
-API_SLIDERS = f"{BASE}/backend/slider/getSliders"
 
-# OUTPUT FILES
-OUTPUT_VLC = "pxl_vlc.m3u8"
-OUTPUT_TIVIMATE = "pxl_tivimate.m3u8"
+# 🔐 API URL MUST come from env (GitHub Secrets / Variables)
+API_EVENTS = os.getenv("PXL_API_URL")
 
-LIVE_TV_LOGO = "https://i.postimg.cc/3wvZ39KX/Pixel-Sport-Logo-1182b5f687c239810f6d.png"
-LIVE_TV_ID = "24.7.Dummy.us"
+OUT_VLC = "pxl_vlc.m3u8"
+OUT_TIVI = "pxl_tivimate.m3u8"
 
-VLC_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
-VLC_REFERER = f"{BASE}/"
-VLC_ICY = "1"
+UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:144.0) Gecko/20100101 Firefox/144.0"
+UA_ENC = quote(UA, safe="")
 
-LEAGUE_INFO = {
-    "NFL": ("NFL.Dummy.us", "https://i.postimg.cc/76LYgtfV/nfl-logo-png-seeklogo-168592.png", "NFL"),
-    "MLB": ("MLB.Baseball.Dummy.us", "https://i.postimg.cc/y6g3tW89/mlb-logo-png-seeklogo-250501.png", "MLB"),
-    "NHL": ("NHL.Hockey.Dummy.us", "https://i.postimg.cc/qRtqPZ4v/nhl-logo-png-seeklogo-196350.png", "NHL"),
-    "NBA": ("NBA.Basketball.Dummy.us", "https://i.postimg.cc/pXMrSZ7v/nba-logo-png-seeklogo-247736.png", "NBA"),
-    "NASCAR": ("Racing.Dummy.us", "https://i.postimg.cc/9QJfrjf4/nascar-logo-png-seeklogo-294566.png", "NASCAR"),
-    "UFC": ("UFC.Fight.Pass.Dummy.us", "https://i.postimg.cc/LXZ4CY3f/ufc-logo-png-seeklogo-272931.png", "UFC"),
-    "SOCCER": ("Soccer.Dummy.us", "https://i.postimg.cc/Kv5GHyBw/soccer-ball-logo-png-seeklogo-480250.png", "Soccer"),
-    "BOXING": ("PPV.EVENTS.Dummy.us", "https://i.postimg.cc/brhPm6vF/boxing-zone-logo-png-seeklogo-244856.png", "Boxing"),
-}
+# ---------------- SAFETY ---------------- #
 
+def log(*a):
+    print(*a)
+    sys.stdout.flush()
 
-def fetch_json(url):
-    headers = {
-        "User-Agent": VLC_USER_AGENT,
-        "Referer": VLC_REFERER,
-        "Accept": "*/*",
-        "Connection": "close",
-        "Icy-MetaData": VLC_ICY,
-    }
-    req = urllib.request.Request(url, headers=headers)
-    with urllib.request.urlopen(req, timeout=10) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+if not API_EVENTS:
+    log("❌ Missing API URL. Set PXL_API_URL env variable.")
+    sys.exit(1)
 
+# ---------------- TIME HELPERS ---------------- #
 
-def collect_links(obj, prefix=""):
-    links = []
-    if not obj:
-        return links
-    for i in range(1, 4):
-        key = f"{prefix}server{i}URL" if prefix else f"server{i}URL"
-        url = obj.get(key)
-        if url and url.lower() != "null":
-            links.append(url)
-    return links
+def utc_to_et(utc_str: str) -> str:
+    try:
+        dt = datetime.fromisoformat(utc_str.replace("Z", "+00:00"))
+        # US Eastern DST approx
+        offset = -4 if 3 <= dt.month <= 11 else -5
+        et = dt + timedelta(hours=offset)
+        return et.strftime("%I:%M %p ET %m/%d/%Y").replace(" 0", " ")
+    except Exception:
+        return ""
 
+# ---------------- API FETCH ---------------- #
 
-def get_league_info(name):
-    for key, (tvid, logo, group) in LEAGUE_INFO.items():
-        if key.lower() in name.lower():
-            return tvid, logo, group
-    return ("Pxlsports.Dummy.us", LIVE_TV_LOGO, "Pxlsports")
+def fetch_events() -> list:
+    log("[*] Fetching PixelSports events API…")
 
-
-def build_playlists(events, sliders):
-    vlc_lines = ["#EXTM3U"]
-    tm_lines = ["#EXTM3U"]
-
-    ua_encoded = quote(VLC_USER_AGENT, safe="")
-    referer_encoded = quote(VLC_REFERER, safe="")
-
-    def add_entry(title, tvid, logo, group, link):
-        # VLC
-        vlc_lines.append(
-            f'#EXTINF:-1 tvg-id="{tvid}" tvg-logo="{logo}" group-title="Pxlsports - {group}",{title}'
+    try:
+        r = requests.get(
+            API_EVENTS,
+            headers={
+                "User-Agent": UA,
+                "Accept": "application/json",
+                "Referer": BASE + "/"
+            },
+            timeout=15
         )
-        vlc_lines.append(f"#EXTVLCOPT:http-user-agent={VLC_USER_AGENT}")
-        vlc_lines.append(f"#EXTVLCOPT:http-referrer={VLC_REFERER}")
-        vlc_lines.append(f"#EXTVLCOPT:http-icy-metadata={VLC_ICY}")
-        vlc_lines.append(link)
+        r.raise_for_status()
+    except Exception as e:
+        log("❌ API request failed:", e)
+        return []
 
-        # TiviMate
-        tm_lines.append(
-            f'#EXTINF:-1 tvg-id="{tvid}" tvg-logo="{logo}" group-title="Pxlsports - {group}",{title}'
-        )
-        tm_lines.append(
-            f"{link}|referer={VLC_REFERER}|user-agent={ua_encoded}|icy-metadata=1"
-        )
+    raw = r.text.strip()
+
+    if not raw.startswith("{") and not raw.startswith("["):
+        log("❌ API did not return JSON")
+        log(raw[:200])
+        return []
+
+    try:
+        data = json.loads(raw)
+    except Exception as e:
+        log("❌ JSON parse failed:", e)
+        log(raw[:200])
+        return []
+
+    events = data.get("events", [])
+    if not isinstance(events, list):
+        log("❌ Invalid API format")
+        return []
+
+    return events
+
+# ---------------- PLAYLIST BUILD ---------------- #
+
+def build_playlist(events: list, tivimate: bool = False) -> str:
+    out = ["#EXTM3U"]
 
     for ev in events:
-        title = ev.get("match_name", "Unknown Event").strip()
-        logo = ev.get("competitors1_logo", LIVE_TV_LOGO)
-        league = ev.get("channel", {}).get("TVCategory", {}).get("name", "Sports")
-        tvid, _, group = get_league_info(league)
-        links = collect_links(ev.get("channel", {}))
-        for link in links:
-            add_entry(title, tvid, logo, group, link)
+        title = ev.get("match_name", "Live Event")
+        logo = ev.get("logo", "")
+        time_et = utc_to_et(ev.get("date", ""))
 
-    for ch in sliders:
-        title = ch.get("title", "Live Channel").strip()
-        links = collect_links(ch.get("liveTV", {}))
-        for link in links:
-            add_entry(title, LIVE_TV_ID, LIVE_TV_LOGO, "Live TV", link)
+        if time_et:
+            title = f"{title} - {time_et}"
 
-    return "\n".join(vlc_lines), "\n".join(tm_lines)
+        channels = ev.get("channel", {})
 
+        for idx, label in [(1, "Home"), (2, "Away"), (3, "Alt")]:
+            url = channels.get(f"server{idx}URL")
+            if not url or url == "null":
+                continue
 
-def main():
-    try:
-        print("[*] Fetching PixelSport data...")
-        events_data = fetch_json(API_EVENTS)
-        events = events_data.get("events", []) if isinstance(events_data, dict) else []
-        sliders_data = fetch_json(API_SLIDERS)
-        sliders = sliders_data.get("data", []) if isinstance(sliders_data, dict) else []
+            extinf = f'#EXTINF:-1 group-title="PixelSport"'
+            if logo:
+                extinf += f' tvg-logo="{logo}"'
+            extinf += f",{title} ({label})"
 
-        vlc, tivimate = build_playlists(events, sliders)
+            out.append(extinf)
 
-        with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
-            f.write(vlc)
+            if tivimate:
+                out.append(
+                    f"{url}|user-agent={UA_ENC}|referer={BASE}/|origin={BASE}|icy-metadata=1"
+                )
+            else:
+                out.append(f"#EXTVLCOPT:http-user-agent={UA}")
+                out.append(f"#EXTVLCOPT:http-referrer={BASE}/")
+                out.append(url)
 
-        with open(OUTPUT_TIVIMATE, "w", encoding="utf-8") as f:
-            f.write(tivimate)
+    return "\n".join(out)
 
-        print(f"[+] Saved: {OUTPUT_VLC}")
-        print(f"[+] Saved: {OUTPUT_TIVIMATE}")
+# ---------------- MAIN ---------------- #
 
-    except Exception as e:
-        print(f"[!] Error: {e}")
+async def main():
+    events = fetch_events()
 
+    if not events:
+        log("❌ No events found")
+        return
+
+    with open(OUT_VLC, "w", encoding="utf-8") as f:
+        f.write(build_playlist(events, tivimate=False))
+
+    with open(OUT_TIVI, "w", encoding="utf-8") as f:
+        f.write(build_playlist(events, tivimate=True))
+
+    log(f"✔ Generated {len(events)} events")
+    log(f"✔ {OUT_VLC}")
+    log(f"✔ {OUT_TIVI}")
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
