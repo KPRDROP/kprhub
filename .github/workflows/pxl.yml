@@ -1,62 +1,41 @@
-name: PXL Playlist Generator
+name: 📺 PixelSports Playlists Updater
 
 on:
   schedule:
-    - cron: '0 * * * *'   # Every hour
+    - cron: "*/30 * * * *"   # every 30 minutes
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
-  build:
+  update:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
 
     steps:
-      - name: Checkout repository
+      - name: 📥 Checkout repo
         uses: actions/checkout@v4
 
-      - name: Setup Python
+      - name: 🐍 Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: Install system dependencies (Playwright)
+      - name: 📦 Install deps
         run: |
-          sudo apt-get update
-          sudo apt-get install -y \
-            libnss3 \
-            libxss1 \
-            libatk-bridge2.0-0 \
-            libgtk-3-0 \
-            libdrm2 \
-            libgbm1 \
-            libasound2t64 \
-            libxshmfence1
-
-      - name: Install Python dependencies
-        run: |
-          pip install --upgrade pip
           pip install requests
-          pip install playwright
-          playwright install firefox
 
-      - name: Run PixelSport scraper
+      - name: ▶️ PXL Generate playlists
         env:
-          PIXELSPORTS_API_URL: ${{ secrets.PXL_API_URL }}
+          PXL_BASE_URL: ${{ secrets.PXL_BASE_URL }}
         run: |
-          echo "🚀 Running PixelSport scraper..."
-          python pxl.py
+          python pxl_push.py
 
-      - name: Commit and push playlists
+      - name: 💾 Commit & push
         run: |
           git config user.name "github-actions"
-          git config user.email "actions@github.com"
+          git config user.email "github-actions@github.com"
 
-          git add pxl_vlc.m3u8 pxl_tivimate.m3u8 || true
-
-          if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "🔄 Update PixelSport playlists"
-            git push
-          fi
+          git add pxl_vlc.m3u8 pxl_tivimate.m3u8
+          git diff --cached --quiet || git commit -m "📺 Update PixelSports playlists"
+          git push
