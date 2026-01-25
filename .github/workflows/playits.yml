@@ -3,53 +3,51 @@ name: ▶️ Update PLAYITS
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
-    permissions:
-      contents: write
 
     steps:
-      - name: Checkout repository
+      - name: 📥 Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Essential for rebasing
+          fetch-depth: 0   # required for rebase-safe pushing
 
-      - name: Set up Python
+      - name: 🐍 Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: "3.10"
 
-      - name: Install dependencies
+      - name: 📦 Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install requests zstandard beautifulsoup4
 
-      - name: Run script
-        run: python playits.py
-
-      - name: Commit and Safely Push
+      - name: ▶️ Run PLAYITS scraper
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          
+          python playits.py
+          ls -lh playits_vlc.m3u8
+
+      - name: 📤 Commit and push playlist
+        run: |
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+
           git add playits_vlc.m3u8
-          
-          # Only commit if there are actually changes
+
+          # Exit cleanly if nothing changed
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "✅ No changes detected"
             exit 0
           fi
-          
-          git commit -m "Automated M3U Update with EPG tags: $(date)"
-          
-          # This is the fix: if the push is rejected, pull the latest changes 
-          # from the other script and put our changes on top.
-          if ! git push origin main; then
-            echo "Push rejected. Syncing with other workflow changes..."
-            git pull origin main --rebase
-            git push origin main
-          fi
+
+          git commit -m "📺 Auto-update PLAYITS playlist ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+
+          # Rebase-safe push (handles other workflows modifying repo)
+          git pull origin main --rebase --autostash
+          git push origin main
