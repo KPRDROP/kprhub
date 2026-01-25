@@ -13,41 +13,38 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
-          fetch-depth: 0   # required for rebase-safe pushing
+          fetch-depth: 0
 
-      - name: 🐍 Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
           python-version: "3.10"
 
-      - name: 📦 Install dependencies
+      - name: Install deps
         run: |
-          python -m pip install --upgrade pip
+          pip install --upgrade pip
           pip install requests zstandard beautifulsoup4
 
-      - name: ▶️ Run PLAYITS scraper
+      - name: Run scraper
+        env:
+          ISTPLAY_API_URL: ${{ secrets.ISTPLAY_API_URL }}
         run: |
           python playits.py
           ls -lh playits_vlc.m3u8
 
-      - name: 📤 Commit and push playlist
+      - name: Commit & push
         run: |
-          git config user.email "github-actions[bot]@users.noreply.github.com"
           git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
           git add playits_vlc.m3u8
 
-          # Exit cleanly if nothing changed
           if git diff --cached --quiet; then
             echo "✅ No changes detected"
             exit 0
           fi
 
-          git commit -m "📺 Auto-update PLAYITS playlist ($(date -u +'%Y-%m-%d %H:%M UTC'))"
-
-          # Rebase-safe push (handles other workflows modifying repo)
+          git commit -m "📺 Update PLAYITS VLC playlist"
           git pull origin main --rebase --autostash
           git push origin main
