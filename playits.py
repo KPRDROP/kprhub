@@ -154,7 +154,7 @@ def main():
             output_lines.append(line)
             found_streams_count += 1
 
-    with open("istplay_streams.m3u", "w", encoding="utf-8") as f:
+    with open("playits_vlc.m3u8", "w", encoding="utf-8") as f:
         f.write("\n".join(output_lines))
     print(f"💾 M3U saved ({found_streams_count} streams).")
 
