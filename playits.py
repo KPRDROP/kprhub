@@ -84,25 +84,36 @@ def main():
 
     response = requests.get(url_list, headers=headers, timeout=15)
     parsed = json.loads(decompress_content_istplay(response))
+    parsed = json.loads(data)
+    except Exception as e:
+        print(f"❌ [IstPlay] Error: {e}", file=sys.stderr)
+        return
 
     all_events = []
     sports_data = parsed.get("sports", {})
     for sport_key, sport_category in sports_data.items():
+        if not isinstance(sport_category, dict): continue
         events = sport_category.get("events", {})
-        for _, event in events.items():
-            if event.get("stream_id"):
-                all_events.append((sport_key, event))
+        iterable = events.items() if isinstance(events, dict) else [(str(i), e) for i, e in enumerate(events)]
+        for event_id, event_data in iterable:
+            stream_id = event_data.get("stream_id")
+            if stream_id:
+                all_events.append((sport_key, event_id, event_data))
+
+    if not all_events:
+        print("ℹ️ [IstPlay] No events found.")
+        return
 
     print(f"🔗 [IstPlay] Fetching links for {len(all_events)} events...")
-
-    with ThreadPoolExecutor(max_workers=20) as ex:
-        futures = {
-            ex.submit(get_m3u8_istplay, e["stream_id"], headers): e
-            for _, e in all_events
-        }
-        for f in as_completed(futures):
-            _, url = f.result()
-            futures[f]["m3u8_url"] = url
+    with ThreadPoolExecutor(max_workers=20) as executor:
+        future_to_event = {executor.submit(get_m3u8_istplay, ev[2]['stream_id'], headers): ev for ev in all_events}
+        for future in as_completed(future_to_event):
+            sport_key, event_id, event_data = future_to_event[future]
+            try:
+                sid, m3u8_url = future.result()
+                event_data["m3u8_url"] = m3u8_url
+            except Exception as e:
+                print(f"⚠️ Future error: {e}", file=sys.stderr)
 
     ua = urllib.parse.quote("VLC/3.0.21 LibVLC/3.0.21")
     output = ['#EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"', ""]
