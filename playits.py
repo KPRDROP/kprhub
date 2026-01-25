@@ -39,7 +39,32 @@ DEFAULT_LOGO = "https://cdn-icons-png.flaticon.com/512/531/531313.png"
 FALLBACK_EPG = "Sports.Dummy.us"
 
 # (UNCHANGED sport map – kept intact)
-SPORT_TRANSLATION_ISTPLAY = { **SPORT_TRANSLATION_ISTPLAY** }
+SPORT_TRANSLATION_ISTPLAY = {
+    "HORSE_RACING": {"name": "HORSE RACING", "logo": "https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg", "epg": "Racing.Dummy.us"},
+    "FOOTBALL"    : {"name": "FOOTBALL", "logo": "https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg", "epg": "Football.Dummy.us"},
+    "BASKETBALL"  : {"name": "BASKETBALL", "logo": "https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg", "epg": "Basketball.Dummy.us"},
+    "TENNIS"      : {"name": "TENNIS", "logo": "https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg", "epg": "Tennis.Dummy.us"},
+    "ICE_HOCKEY"  : {"name": "ICE HOCKEY", "logo": "https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg", "epg": "NHL.Hockey.Dummy.us"},
+    "TABLE_TENNIS": {"name": "TABLE TENNIS", "logo": "https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg", "epg": "Sports.Dummy.us"},
+    "VOLLEYBALL"  : {"name": "VOLLEYBALL", "logo": "https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg", "epg": "Volleyball.Dummy.us"},
+    "BADMINTON"   : {"name": "BADMINTON", "logo": "https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg", "epg": "Sports.Dummy.us"},
+    "CRICKET"     : {"name": "CRICKET", "logo": "https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg", "epg": "Cricket.Dummy.us"},
+    "HANDBALL"    : {"name": "HANDBALL", "logo": "https://image.fanatik.com.tr/i/fanatik/75/0x410/6282949745d2a051587ed23b.jpg", "epg": "Sports.Dummy.us"},
+    "BASEBALL"    : {"name": "BASEBALL", "logo": "https://seyler.ekstat.com/img/max/800/d/dqOJz5N8jLORqVaA-636783298725804088.jpg", "epg": "Baseball.Dummy.us"},
+    "SNOOKER"     : {"name": "SNOOKER", "logo": "https://cdn.shopify.com/s/files/1/0644/5685/1685/files/pool-table-graphic-1.jpg", "epg": "BilliardTV.Dummy.us"},
+    "BILLIARDS"   : {"name": "BILLIARDS", "logo": "https://www.bilardo.org.tr/image/be2a4809f1c796e4453b45ccf0d9740c.jpg", "epg": "BilliardTV.Dummy.us"},
+    "BICYCLE"     : {"name": "CYCLING", "logo": "https://www.gazetekadikoy.com.tr/Uploads/gazetekadikoy.com.tr/202204281854011-img.jpg", "epg": "Sports.Dummy.us"},
+    "BOXING"      : {"name": "BOXING", "logo": "https://www.sportsmith.co/wp-content/uploads/2023/04/Thumbnail-scaled.jpg", "epg": "PPV.EVENTS.Dummy.us"},
+    "AMERICAN_FOOTBALL": {"name": "AMERICAN FOOTBALL", "logo": "https://wallpaperaccess.com/full/301292.jpg", "epg": "NFL.Dummy.us"},
+    "MOTORSPORT"       : {"name": "MOTORSPORT", "logo": "https://wallpapercave.com/wp/wp4034220.jpg", "epg": "Racing.Dummy.us"},
+    "ESPORTS"          : {"name": "ESPORTS", "logo": "https://wallpaperaccess.com/full/438210.jpg", "epg": "Sports.Dummy.us"},
+    "DARTS"            : {"name": "DARTS", "logo": "https://images.alphacoders.com/520/520864.jpg", "epg": "Darts.Dummy.us"},
+    "RUGBY"            : {"name": "RUGBY", "logo": "https://wallpapercave.com/wp/wp1810625.jpg", "epg": "Rugby.Dummy.us"},
+    "GOLF"             : {"name": "GOLF", "logo": "https://wallpaperaccess.com/full/1126425.jpg", "epg": "Golf.Dummy.us"},
+    "FIGHT"            : {"name": "UFC/MMA", "logo": "https://wallpapercave.com/wp/wp1833446.jpg", "epg": "UFC.Fight.Pass.Dummy.us"},
+    "FORMULA_1"        : {"name": "FORMULA 1", "logo": "https://wallpaperaccess.com/full/1154341.jpg", "epg": "Racing.Dummy.us"},
+    "AUSTRALIAN_RULES" : {"name": "AUS RULES", "logo": "https://cdn-icons-png.flaticon.com/512/531/531313.png", "epg": "AUS.Rules.Football.Dummy.us"},
+}
 
 def main():
     print("📢 [IstPlay] Fetching stream list...")
