@@ -84,10 +84,6 @@ def main():
 
     response = requests.get(url_list, headers=headers, timeout=15)
     parsed = json.loads(decompress_content_istplay(response))
-    parsed = json.loads(data)
-    except Exception as e:
-        print(f"❌ [IstPlay] Error: {e}", file=sys.stderr)
-        return
 
     all_events = []
     sports_data = parsed.get("sports", {})
