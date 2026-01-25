@@ -16,6 +16,8 @@ USER_AGENT = (
     "Chrome/120.0.0.0 Safari/537.36"
 )
 
+NEW_EPG = 'url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"'
+
 def main():
     if not SOURCE_URL:
         print("❌ Missing LIVECDN_PLAYLIST_URL secret", file=sys.stderr)
@@ -35,19 +37,20 @@ def main():
     while i < len(lines):
         line = lines[i].strip()
 
-        # Copy EXTM3U header
+        # --- EXTM3U HEADER (EPG REPLACEMENT ONLY) ---
         if line.startswith("#EXTM3U"):
+            if "url-tvg=" in line:
+                line = "#EXTM3U " + NEW_EPG
             vlc_out.append(line)
             tivi_out.append(line)
             i += 1
             continue
 
-        # EXTINF block
+        # --- EXTINF BLOCK ---
         if line.startswith("#EXTINF"):
             extinf = line
             stream_url = None
 
-            # Find next URL line
             j = i + 1
             while j < len(lines):
                 if lines[j].startswith("http"):
@@ -59,14 +62,14 @@ def main():
                 i += 1
                 continue
 
-            # --- VLC output ---
+            # VLC output
             vlc_out.append(extinf)
             vlc_out.append(f"#EXTVLCOPT:http-origin={ORIGIN}")
             vlc_out.append(f"#EXTVLCOPT:http-referrer={REFERER}")
             vlc_out.append(f"#EXTVLCOPT:http-user-agent={USER_AGENT}")
             vlc_out.append(stream_url)
 
-            # --- TiviMate output ---
+            # TiviMate output
             tivi_out.append(extinf)
             tivi_out.append(
                 f"{stream_url}"
