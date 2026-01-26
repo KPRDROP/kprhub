@@ -8,14 +8,6 @@ SOURCE_URL = os.environ.get("LIVECDN_PLAYLIST_URL")
 OUTPUT_VLC = "livecdn_vlc.m3u8"
 OUTPUT_TIVI = "livecdn_tivimate.m3u8"
 
-ORIGIN = "https://cdn-live.tv"
-REFERER = "https://cdn-live.tv/"
-USER_AGENT = (
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-    "AppleWebKit/537.36 (KHTML, like Gecko) "
-    "Chrome/120.0.0.0 Safari/537.36"
-)
-
 NEW_EPG = 'url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"'
 
 def main():
@@ -30,8 +22,6 @@ def main():
 
     vlc_out = []
     tivi_out = []
-
-    encoded_ua = urllib.parse.quote(USER_AGENT, safe="")
 
     i = 0
     while i < len(lines):
@@ -49,34 +39,62 @@ def main():
         # --- EXTINF BLOCK ---
         if line.startswith("#EXTINF"):
             extinf = line
-            stream_url = None
+            meta = {
+                "origin": None,
+                "referer": None,
+                "user-agent": None,
+            }
 
             j = i + 1
+            stream_url = None
+
             while j < len(lines):
-                if lines[j].startswith("http"):
-                    stream_url = lines[j].strip()
+                l = lines[j].strip()
+
+                if l.startswith("#EXTVLCOPT:http-origin="):
+                    meta["origin"] = l.split("=", 1)[1]
+
+                elif l.startswith("#EXTVLCOPT:http-referrer="):
+                    meta["referer"] = l.split("=", 1)[1]
+
+                elif l.startswith("#EXTVLCOPT:http-user-agent="):
+                    meta["user-agent"] = l.split("=", 1)[1]
+
+                elif l.startswith("http"):
+                    stream_url = l
                     break
+
                 j += 1
 
             if not stream_url:
                 i += 1
                 continue
 
-            # VLC output
+            # --- VLC OUTPUT (COPY EXACT METADATA) ---
             vlc_out.append(extinf)
-            vlc_out.append(f"#EXTVLCOPT:http-origin={ORIGIN}")
-            vlc_out.append(f"#EXTVLCOPT:http-referrer={REFERER}")
-            vlc_out.append(f"#EXTVLCOPT:http-user-agent={USER_AGENT}")
+
+            if meta["origin"]:
+                vlc_out.append(f"#EXTVLCOPT:http-origin={meta['origin']}")
+            if meta["referer"]:
+                vlc_out.append(f"#EXTVLCOPT:http-referrer={meta['referer']}")
+            if meta["user-agent"]:
+                vlc_out.append(f"#EXTVLCOPT:http-user-agent={meta['user-agent']}")
+
             vlc_out.append(stream_url)
 
-            # TiviMate output
+            # --- TIVIMATE OUTPUT (PIPE FORMAT) ---
             tivi_out.append(extinf)
-            tivi_out.append(
-                f"{stream_url}"
-                f"|referer={REFERER}"
-                f"|origin={ORIGIN}"
-                f"|user-agent={encoded_ua}"
-            )
+
+            pipe_url = stream_url
+            if meta["referer"]:
+                pipe_url += f"|referer={meta['referer']}"
+            if meta["origin"]:
+                pipe_url += f"|origin={meta['origin']}"
+            if meta["user-agent"]:
+                ua = urllib.parse.quote(meta["user-agent"], safe="")
+                pipe_url += f"|user-agent={ua}"
+
+            tivi_out.append(pipe_url)
 
             i = j + 1
             continue
