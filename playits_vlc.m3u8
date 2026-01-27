@@ -1,142 +1,154 @@
 #EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_DUMMY_CHANNELS.xml.gz"
 
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Colombia - Primera B
-https://e2-22.n4154.xyz/36443597.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Brazil Campeonato Paulista
-https://e3-22.n4154.xyz/36443599.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Mexico - Liga MX (W)
-https://e4-22.n4154.xyz/36443623.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Chile. Penalolen Night Championship
-https://e3-22.n4154.xyz/36443833.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Brazil Campeonato Cearense
-https://e1-22.n4154.xyz/36443849.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Brazil Campeonato Carioca
-https://e4-22.n4154.xyz/36443873.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Mexico - Liga MX (W)
-https://e3-22.n4154.xyz/36444055.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Urugvay
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Uruguay. Leo Burgers Cup
 https://e4-22.n4154.xyz/36444263.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",College Basketball (M)
-https://e4-22.n4154.xyz/36443679.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",College Basketball (M)
-https://e1-22.n4154.xyz/36443691.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",Uruguay Liga
-https://e2-22.n4154.xyz/36443749.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",Uruguay Liga
-https://e3-22.n4154.xyz/36443753.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",Uruguay Liga
-https://e1-22.n4154.xyz/36443761.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",Argentina. LNB
-https://e1-22.n4154.xyz/36443875.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Costa Rica Segunda
+https://e4-22.n4154.xyz/36444399.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Colombia. Liga La Estrella
+https://e4-22.n4154.xyz/36444477.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Mexico - Liga MX (W)
+https://e2-22.n4154.xyz/36444419.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Chile. Penalolen Night Championship
+https://e2-22.n4154.xyz/36444657.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Costa Rica - Primera Div
+https://e1-22.n4154.xyz/36444793.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",Uruguay. Leo Burgers Cup
+https://e2-22.n4154.xyz/36444825.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Football.Dummy.us" tvg-logo="https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg" group-title="FOOTBALL",India. RFDL U21
+https://e2-22.n4154.xyz/36444855.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",NBA
-https://e3-22.n4154.xyz/36444011.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",College Basketball (M)
-https://e2-22.n4154.xyz/36444093.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",NBA G League
-https://e1-22.n4154.xyz/36444095.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",Argentina. TNA
-https://e2-22.n4154.xyz/36444097.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",Argentina. TNA
-https://e1-22.n4154.xyz/36444101.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",College Basketball (M)
-https://e2-22.n4154.xyz/36444131.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",Argentina Championship. Women
-https://e3-22.n4154.xyz/36444133.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",College Basketball (M)
-https://e1-22.n4154.xyz/36444165.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",College Basketball (M)
-https://e2-22.n4154.xyz/36444183.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",Hayv 3h3 (zhen) - Lunar Ouls 3h3 (zhen)
-https://e2-22.n4154.xyz/36444201.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",College Basketball (M)
-https://e3-22.n4154.xyz/36444233.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",WNCAA
-https://e1-22.n4154.xyz/36444249.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",Argentina LLF Women
-https://e1-22.n4154.xyz/36444337.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",IPBL. Prime Division
-https://e3-22.n4154.xyz/36444345.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",IPBL. Pro Division
-https://e3-22.n4154.xyz/36444393.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",04:00 NBA
 https://e4-22.n4154.xyz/36444409.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",04:00 NBA
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",NBA
 https://e1-22.n4154.xyz/36444411.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",04:00 NBA
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",NBA
 https://e1-22.n4154.xyz/36444437.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",ITF W100 San Diego, CA Qualifiers
-https://e4-22.n4154.xyz/36442729.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",ITF W100 San Diego, CA Qualifiers
-https://e1-22.n4154.xyz/36443721.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",College Basketball (M)
+https://e4-22.n4154.xyz/36444525.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",Argentina. TNA
+https://e3-22.n4154.xyz/36444613.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",SShA
+https://e3-22.n4154.xyz/36444805.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",IPBL. Prime Division
+https://e3-22.n4154.xyz/36444857.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",NBA G League
+https://e2-22.n4154.xyz/36444919.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",College Basketball (M)
+https://e1-22.n4154.xyz/36444951.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",NBA
+https://e4-22.n4154.xyz/36445017.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",IPBL. Pro Division
+https://e3-22.n4154.xyz/36445171.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",IPBL. Pro Division
+https://e1-22.n4154.xyz/36445195.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Basketball.Dummy.us" tvg-logo="https://minio.yalispor.com.tr/sneakscloud/blog/basketbol-hakkinda-bilmen-gereken-kurallar_5e53ae3fdd3fc.jpg" group-title="BASKETBALL",IPBL. Pro Division. Women
+https://e2-22.n4154.xyz/36445231.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",UTR - Yokohama
+https://e2-22.n4154.xyz/36444491.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",Challenger Quals. - San Diego
-https://e2-22.n4154.xyz/36443883.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",ITF Quals. - Vero Beach (W)
-https://e2-22.n4154.xyz/36443923.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",Challenger San Diego
-https://e3-22.n4154.xyz/36443927.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+https://e3-22.n4154.xyz/36444561.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",Australian Open Doubles (W)
+https://e3-22.n4154.xyz/36444685.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",ATT. Togliatti
+https://e3-22.n4154.xyz/36444887.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",ATT. Minsk. Women
+https://e4-22.n4154.xyz/36444889.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",UTR - Yokohama
+https://e4-22.n4154.xyz/36444915.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",UTR - Newport Beach  (W)
+https://e3-22.n4154.xyz/36445113.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",Australian Open (M)
+https://e1-22.n4154.xyz/36445147.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",UTR - Yokohama
+https://e1-22.n4154.xyz/36445163.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",UTR - Yokohama (W)
+https://e4-22.n4154.xyz/36445203.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",ATT. Minsk
-https://e1-22.n4154.xyz/36444075.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",ITF W100 San Diego, CA Qualifiers
-https://e4-22.n4154.xyz/36444139.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",Australian Open Mixed Doubles
-https://e3-22.n4154.xyz/36444157.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",Australian Open (W)
-https://e1-22.n4154.xyz/36444225.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",ATT. Minsk
-https://e1-22.n4154.xyz/36444267.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",3:55
-https://e2-22.n4154.xyz/36444431.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",3:33
-https://e2-22.n4154.xyz/36444441.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" group-title="ICE HOCKEY",NHL
-https://e1-22.n4154.xyz/36443917.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" group-title="ICE HOCKEY",ECHL
-https://e1-22.n4154.xyz/36443969.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" group-title="ICE HOCKEY",NHL
-https://e3-22.n4154.xyz/36443915.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" group-title="ICE HOCKEY",NHL
-https://e4-22.n4154.xyz/36443921.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+https://e3-22.n4154.xyz/36445235.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",UTR - Newport Beach (M)
+https://e2-22.n4154.xyz/36445261.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",6:00
+https://e1-22.n4154.xyz/36445269.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",6:00
+https://e2-22.n4154.xyz/36445273.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",6:00
+https://e1-22.n4154.xyz/36445291.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Tennis.Dummy.us" tvg-logo="https://calista.com.tr/media/c2sl3pug/calista-resort-hotel-blog-tenis-banner.jpg" group-title="TENNIS",6:00
+https://e3-22.n4154.xyz/36445309.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" group-title="ICE HOCKEY",5:00
+https://e3-22.n4154.xyz/36444821.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" group-title="ICE HOCKEY",Russia. MNHL
+https://e2-22.n4154.xyz/36445167.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" group-title="ICE HOCKEY",RHL
+https://e2-22.n4154.xyz/36445197.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" group-title="ICE HOCKEY",RHL
+https://e1-22.n4154.xyz/36445209.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="NHL.Hockey.Dummy.us" tvg-logo="https://istanbulbbsk.org/uploads/medias/public-4b3b1703-c744-4631-8c42-8bab9be542bc.jpg" group-title="ICE HOCKEY",3HL League
-https://e3-22.n4154.xyz/36444433.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Belarus
-https://e4-22.n4154.xyz/36444187.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+https://e4-22.n4154.xyz/36445311.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Russia
-https://e1-22.n4154.xyz/36444191.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Poland
-https://e1-22.n4154.xyz/36444291.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Belarus
-https://e2-22.n4154.xyz/36444297.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Poland
-https://e2-22.n4154.xyz/36444317.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Argentina
-https://e3-22.n4154.xyz/36444319.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+https://e2-22.n4154.xyz/36445053.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Russia
-https://e2-22.n4154.xyz/36444343.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Poland
-https://e4-22.n4154.xyz/36444353.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Spain
-https://e1-22.n4154.xyz/36444355.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Poland
-https://e2-22.n4154.xyz/36444359.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+https://e4-22.n4154.xyz/36445067.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Russia
+https://e4-22.n4154.xyz/36445115.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Russia. Women
-https://e3-22.n4154.xyz/36444367.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+https://e2-22.n4154.xyz/36445123.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Poland
+https://e3-22.n4154.xyz/36445137.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Poland
+https://e4-22.n4154.xyz/36445141.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Argentina
+https://e3-22.n4154.xyz/36445199.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Belarus
-https://e2-22.n4154.xyz/36444383.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",03:55 Ukraina
-https://e4-22.n4154.xyz/36444435.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters
-https://e3-22.n4154.xyz/36444443.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" group-title="VOLLEYBALL",Brazil Cup
-https://e4-22.n4154.xyz/36443615.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+https://e2-22.n4154.xyz/36445211.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Poland
+https://e3-22.n4154.xyz/36445215.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Spain
+https://e4-22.n4154.xyz/36445217.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Belarus
+https://e4-22.n4154.xyz/36445239.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Masters. Poland
+https://e1-22.n4154.xyz/36445249.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",06:00 Ukraina
+https://e3-22.n4154.xyz/36445265.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",05:55 Ukraina
+https://e4-22.n4154.xyz/36445267.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",06:00 Moldova
+https://e4-22.n4154.xyz/36445283.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://tossfed.gov.tr/storage/2022/03/1399486-masa-tenisinde-3-lig-2-nisan-da-baslayacak-60642719b43dd.jpg" group-title="TABLE TENNIS",Aleksandr Maslov (Ukr) - Sergey Handetskiy (Ukr)
+https://e1-22.n4154.xyz/36445321.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" group-title="VOLLEYBALL",Philippines. NCAA
+https://e1-22.n4154.xyz/36444467.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Volleyball.Dummy.us" tvg-logo="https://www.sidasturkiye.com/images/aktiviteler/alt-aktiviteler_voleybol4.jpg" group-title="VOLLEYBALL",Ledi Kardinals (zhen) - SSK-R Stags (zhen)
+https://e3-22.n4154.xyz/36445279.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg" group-title="BADMINTON",5:10
+https://e2-22.n4154.xyz/36444977.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg" group-title="BADMINTON",5:50
+https://e2-22.n4154.xyz/36445149.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg" group-title="BADMINTON",6:00
+https://e4-22.n4154.xyz/36445161.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://sporium.net/wp-content/uploads/2017/12/badminton-malatya-il-sampiyonasi-9178452_8314_o.jpg" group-title="BADMINTON",5:50
+https://e2-22.n4154.xyz/36445293.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" group-title="CRICKET",Chennai daily cricket
-https://e3-22.n4154.xyz/36444185.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+https://e2-22.n4154.xyz/36444741.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" group-title="CRICKET",Thailand Super League U19. Women
+https://e2-22.n4154.xyz/36444905.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" group-title="CRICKET",Chennai daily cricket
-https://e4-22.n4154.xyz/36444369.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+https://e3-22.n4154.xyz/36444965.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="Cricket.Dummy.us" tvg-logo="https://storage.acerapps.io/app-1358/kriket-nedir-nasil-oynanir-kriket-kurallari-nelerdir-sporsepeti-sportsfly-spor-kutuphanesi.jpg" group-title="CRICKET",India. Indoor Series
-https://e1-22.n4154.xyz/36444375.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+https://e4-22.n4154.xyz/36445183.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
 #EXTINF:-1 tvg-id="Golf.Dummy.us" tvg-logo="https://wallpaperaccess.com/full/1126425.jpg" group-title="GOLF",TGL. 2026
 https://e3-22.n4154.xyz/36443975.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-logo="https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg" group-title="HORSE RACING",Chile. Santiago
-https://e2-22.n4154.xyz/36444033.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
-#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-logo="https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg" group-title="HORSE RACING",Brazil. Gavea
-https://e4-22.n4154.xyz/36444099.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-logo="https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg" group-title="HORSE RACING",Japan. Oi
+https://e2-22.n4154.xyz/36444879.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-logo="https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg" group-title="HORSE RACING",Australia. Goulburn
+https://e1-22.n4154.xyz/36445097.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-logo="https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg" group-title="HORSE RACING",Japan. Himeji
+https://e2-22.n4154.xyz/36445105.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-logo="https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg" group-title="HORSE RACING",Japan. Oi
+https://e1-22.n4154.xyz/36445219.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-logo="https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg" group-title="HORSE RACING",Australia. Goulburn
+https://e2-22.n4154.xyz/36445303.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Racing.Dummy.us" tvg-logo="https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg" group-title="HORSE RACING",Japan. Himeji
+https://e2-22.n4154.xyz/36445331.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
+#EXTINF:-1 tvg-id="Sports.Dummy.us" tvg-logo="https://cdn-icons-png.flaticon.com/512/531/531313.png" group-title="hockey",NHL
+https://e1-22.n4154.xyz/36444579.m3u8|user-agent=VLC/3.0.21%20LibVLC/3.0.21
