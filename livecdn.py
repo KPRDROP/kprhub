@@ -1,0 +1,115 @@
+import os
+import sys
+import requests
+import urllib.parse
+
+SOURCE_URL = os.environ.get("LIVECDN_PLAYLIST_URL")
+
+OUTPUT_VLC = "livecdn_vlc.m3u8"
+OUTPUT_TIVI = "livecdn_tivimate.m3u8"
+
+NEW_EPG = 'url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"'
+
+def main():
+    if not SOURCE_URL:
+        print("❌ Missing LIVECDN_PLAYLIST_URL secret", file=sys.stderr)
+        sys.exit(1)
+
+    print("📥 Fetching source playlist...")
+    r = requests.get(SOURCE_URL, timeout=20)
+    r.raise_for_status()
+    lines = r.text.splitlines()
+
+    vlc_out = []
+    tivi_out = []
+
+    i = 0
+    while i < len(lines):
+        line = lines[i].strip()
+
+        # --- EXTM3U HEADER (EPG REPLACEMENT ONLY) ---
+        if line.startswith("#EXTM3U"):
+            if "url-tvg=" in line:
+                line = "#EXTM3U " + NEW_EPG
+            vlc_out.append(line)
+            tivi_out.append(line)
+            i += 1
+            continue
+
+        # --- EXTINF BLOCK ---
+        if line.startswith("#EXTINF"):
+            extinf = line
+            meta = {
+                "origin": None,
+                "referer": None,
+                "user-agent": None,
+            }
+
+            j = i + 1
+            stream_url = None
+
+            while j < len(lines):
+                l = lines[j].strip()
+
+                if l.startswith("#EXTVLCOPT:http-origin="):
+                    meta["origin"] = l.split("=", 1)[1]
+
+                elif l.startswith("#EXTVLCOPT:http-referrer="):
+                    meta["referer"] = l.split("=", 1)[1]
+
+                elif l.startswith("#EXTVLCOPT:http-user-agent="):
+                    meta["user-agent"] = l.split("=", 1)[1]
+
+                elif l.startswith("http"):
+                    stream_url = l
+                    break
+
+                j += 1
+
+            if not stream_url:
+                i += 1
+                continue
+
+            # --- VLC OUTPUT (COPY EXACT METADATA) ---
+            vlc_out.append(extinf)
+
+            if meta["origin"]:
+                vlc_out.append(f"#EXTVLCOPT:http-origin={meta['origin']}")
+            if meta["referer"]:
+                vlc_out.append(f"#EXTVLCOPT:http-referrer={meta['referer']}")
+            if meta["user-agent"]:
+                vlc_out.append(f"#EXTVLCOPT:http-user-agent={meta['user-agent']}")
+
+            vlc_out.append(stream_url)
+
+            # --- TIVIMATE OUTPUT (PIPE FORMAT) ---
+            tivi_out.append(extinf)
+
+            pipe_url = stream_url
+            if meta["referer"]:
+                pipe_url += f"|referer={meta['referer']}"
+            if meta["origin"]:
+                pipe_url += f"|origin={meta['origin']}"
+            if meta["user-agent"]:
+                ua = urllib.parse.quote(meta["user-agent"], safe="")
+                pipe_url += f"|user-agent={ua}"
+
+            tivi_out.append(pipe_url)
+
+            i = j + 1
+            continue
+
+        i += 1
+
+    with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
+        f.write("\n".join(vlc_out) + "\n")
+
+    with open(OUTPUT_TIVI, "w", encoding="utf-8") as f:
+        f.write("\n".join(tivi_out) + "\n")
+
+    print("✅ Playlists generated:")
+    print(f"   - {OUTPUT_VLC}")
+    print(f"   - {OUTPUT_TIVI}")
+
+if __name__ == "__main__":
+    main()

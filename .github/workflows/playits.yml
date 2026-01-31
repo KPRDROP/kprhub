@@ -1,0 +1,50 @@
+name: ▶️ Update PLAYITS
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install deps
+        run: |
+          pip install --upgrade pip
+          pip install requests zstandard beautifulsoup4
+
+      - name: Run scraper
+        env:
+          ISTPLAY_API_URL: ${{ secrets.ISTPLAY_API_URL }}
+        run: |
+          python playits.py
+          ls -lh playits_vlc.m3u8
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add playits_vlc.m3u8
+
+          if git diff --cached --quiet; then
+            echo "✅ No changes detected"
+            exit 0
+          fi
+
+          git commit -m "📺 Update PLAYITS VLC playlist"
+          git pull origin main --rebase --autostash
+          git push origin main
