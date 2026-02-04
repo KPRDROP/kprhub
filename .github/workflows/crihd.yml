@@ -2,7 +2,7 @@ name: CricHD Playlist Updater
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 jobs:
