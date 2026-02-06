@@ -3444,6 +3444,16 @@ https://hd.pixelhd.online:443/play/pAVJjXWDXadNqa4ml_eoyJSO2iA8oqrCm7aKbssPYac/.
 #EXTVLCOPT:http-referrer=https://pixelsport.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
 https://hd.pixelhd.online:443/play/pAVJjXWDXadNqa4ml_eoyJSO2iA8oqrCm7aKbssPYac/.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_amf_active.webp" group-title="AMERICAN FOOTBALL (ST)",NFL Honors (09:00PM 02/05/26)
+#EXTVLCOPT:http-origin=https://streams.center
+#EXTVLCOPT:http-referrer=https://streams.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://edgestreams.pro/hls/JHDAJBDnjdna30.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_amf_active.webp" group-title="AMERICAN FOOTBALL (ST)",Seattle Seahawks vs New England Patriots (06:30PM 02/08/26)
+#EXTVLCOPT:http-origin=https://streams.center
+#EXTVLCOPT:http-referrer=https://streams.center/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://mainstreams.pro/hls/JHDAJBDnjdna30.m3u8
 #EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/basketball_golden-state-warriors-vs-phoenix-suns_Golden_State_Warriors_vs_Phoen" group-title="BASKETBALL (SF)",Golden State Warriors vs Phoenix Suns (NBA) (540p - CDN) (02/05/26 10:00PM)
 #EXTVLCOPT:http-origin=https://streamfree.to
 #EXTVLCOPT:http-referrer=https://streamfree.to/
@@ -3504,110 +3514,55 @@ https://indiasmellsverybad.xyz/live/philadelphia-76ers-vs-los-angeles-lakers1080
 #EXTVLCOPT:http-referrer=https://streamfree.to/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
 https://streamfree.to/live/philadelphia-76ers-vs-los-angeles-lakers1080p/index.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/basketball_san-antonio-spurs-vs-dallas-mavericks_San_Antonio_Spurs_vs_Dallas_Ma" group-title="BASKETBALL (SF)",San Antonio Spurs vs Dallas Mavericks (NBA) (540p - CDN) (02/05/26 08:30PM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://indiasmellsverybad.xyz/live/san-antonio-spurs-vs-dallas-mavericks540p/index.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/basketball_san-antonio-spurs-vs-dallas-mavericks_San_Antonio_Spurs_vs_Dallas_Ma" group-title="BASKETBALL (SF)",San Antonio Spurs vs Dallas Mavericks (NBA) (540p - MAIN) (02/05/26 08:30PM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://streamfree.to/live/san-antonio-spurs-vs-dallas-mavericks540p/index.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/basketball_san-antonio-spurs-vs-dallas-mavericks_San_Antonio_Spurs_vs_Dallas_Ma" group-title="BASKETBALL (SF)",San Antonio Spurs vs Dallas Mavericks (NBA) (720p - CDN) (02/05/26 08:30PM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://indiasmellsverybad.xyz/live/san-antonio-spurs-vs-dallas-mavericks720p/index.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/basketball_san-antonio-spurs-vs-dallas-mavericks_San_Antonio_Spurs_vs_Dallas_Ma" group-title="BASKETBALL (SF)",San Antonio Spurs vs Dallas Mavericks (NBA) (720p - MAIN) (02/05/26 08:30PM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://streamfree.to/live/san-antonio-spurs-vs-dallas-mavericks720p/index.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/basketball_san-antonio-spurs-vs-dallas-mavericks_San_Antonio_Spurs_vs_Dallas_Ma" group-title="BASKETBALL (SF)",San Antonio Spurs vs Dallas Mavericks (NBA) (1080p - CDN) (02/05/26 08:30PM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://indiasmellsverybad.xyz/live/san-antonio-spurs-vs-dallas-mavericks1080p/index.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/basketball_san-antonio-spurs-vs-dallas-mavericks_San_Antonio_Spurs_vs_Dallas_Ma" group-title="BASKETBALL (SF)",San Antonio Spurs vs Dallas Mavericks (NBA) (1080p - MAIN) (02/05/26 08:30PM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://streamfree.to/live/san-antonio-spurs-vs-dallas-mavericks1080p/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Brooklyn Nets vs Orlando Magic (07:00PM 02/05/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edge2caster.pro/hls/wfazgsqtrezu66.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Charlotte Hornets vs Houston Rockets (08:00PM 02/05/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edge2caster.pro/hls/zeafwqvhfe69.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Chicago Bulls vs Toronto Raptors (07:30PM 02/05/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edgestreams.pro/hls/zayrtezafgvdv68.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Golden State Warriors vs Phoenix Suns (10:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://mainstreams.pro/hls/ztyarueaghj71.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://edgestreams.pro/hls/ztyarueaghj71.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Indiana Pacers vs Milwaukee Bucks (08:00PM 02/06/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edgestreams.pro/hls/hfsdqtaxvb67.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://mainstreams.pro/hls/hfsdqtaxvb67.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",LA Clippers vs Sacramento Kings (10:00PM 02/06/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edgestreams.pro/hls/bvnsqdfvgha70.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://mainstreams.pro/hls/bvnsqdfvgha70.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Memphis Grizzlies vs Portland Trail Blazers (10:00PM 02/06/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edge2caster.pro/hls/zeafwqvhfe69.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://mainstreams.pro/hls/zeafwqvhfe69.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Miami Heat vs Boston Celtics (07:30PM 02/06/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://mainstreams.pro/hls/mlkijfezag65.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://edgestreams.pro/hls/mlkijfezag65.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",New Orleans Pelicans vs Minnesota Timberwolves (08:00PM 02/06/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edge2caster.pro/hls/zayrtezafgvdv68.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://mainstreams.pro/hls/zayrtezafgvdv68.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",New York Knicks vs Detroit Pistons (07:30PM 02/06/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edge2caster.pro/hls/wfazgsqtrezu66.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://mainstreams.pro/hls/wfazgsqtrezu66.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Philadelphia 76ers vs Los Angeles Lakers (10:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://mainstreams.pro/hls/pllmazjkdzajh72.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://edgestreams.pro/hls/pllmazjkdzajh72.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",San Antonio Spurs vs Dallas Mavericks (08:30PM 02/05/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edge2caster.pro/hls/bvnsqdfvgha70.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Utah Jazz vs Atlanta Hawks (07:30PM 02/05/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edge2caster.pro/hls/hfsdqtaxvb67.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Washington Wizards vs Detroit Pistons (07:00PM 02/05/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edge2caster.pro/hls/mlkijfezag65.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://edgestreams.pro/hls/bvnsqdfvgha70.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_fit_active.webp" group-title="FIGHT MMA (ST)",Bautista vs. Oliveira (05:00PM 02/07/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
 https://edgestreams.pro/hls/zeuryuegn48.m3u8
 #EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/hockey_los-angeles-kings-vs-vegas-golden-knights_Los_Angeles_Kings_vs_Vegas_Gol" group-title="HOCKEY (SF)",Los Angeles Kings vs Vegas Golden Knights (NHL) (540p - CDN) (02/05/26 10:00PM)
 #EXTVLCOPT:http-origin=https://streamfree.to
@@ -3639,81 +3594,41 @@ https://indiasmellsverybad.xyz/live/los-angeles-kings-vs-vegas-golden-knights108
 #EXTVLCOPT:http-referrer=https://streamfree.to/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
 https://streamfree.to/live/los-angeles-kings-vs-vegas-golden-knights1080p/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_hok_active.webp" group-title="HOCKEY (ST)",Carolina Hurricanes vs New York Rangers (07:00PM 02/05/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edge2caster.pro/hls/lmdsjkfgv52.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_hok_active.webp" group-title="HOCKEY (ST)",Florida Panthers vs Tampa Bay Lightning (07:30PM 02/05/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edgestreams.pro/hls/sdezqfza55.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_hok_active.webp" group-title="HOCKEY (ST)",Los Angeles Kings vs Vegas Golden Knights (10:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://mainstreams.pro/hls/poiryezafv56.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_hok_active.webp" group-title="HOCKEY (ST)",Nashville Predators vs Washington Capitals (07:00PM 02/05/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://mainstreams.pro/hls/bnvcxwhfg54.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_hok_active.webp" group-title="HOCKEY (ST)",New York Islanders vs New Jersey Devils (07:00PM 02/05/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edge2caster.pro/hls/hjksgdfauzy51.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_hok_active.webp" group-title="HOCKEY (ST)",Ottawa Senators vs Philadelphia Flyers (07:00PM 02/05/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edgestreams.pro/hls/rtzaeyvhb53.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_hok_active.webp" group-title="HOCKEY (ST)",Pittsburgh Penguins vs Buffalo Sabres (07:00PM 02/05/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 Edg/118.0.0.0
-https://edgestreams.pro/hls/uyopzarf50.m3u8
-#EXTINF:-1 group-title="LIGA BETPLAY DIMAYOR (BO)",Millonarios - Pereira (WINsport+) (02:00AM 02/06/26)
-#EXTVLCOPT:http-origin=https://hoca6.com
-#EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
-https://d13.epicquesthero.com:999/hls/wsmkmlfeed81.m3u8?md5=He6sxI2I6x1hBUOeQvV3vw&expires=1770356617
-#EXTINF:-1 group-title="LIGA MX WOMEN (BO)",Juarez W - Club America W (FOX Deportes) (02:06AM 02/06/26)
-#EXTVLCOPT:http-origin=https://hoca6.com
-#EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
-https://d14.epicquesthero.com:999/hls/wsmkmlfeed70.m3u8?md5=qAxVxNHWPOCynJBlLU4zWw&expires=1770356617
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36
+https://edge2caster.pro/hls/poiryezafv56.m3u8
 #EXTINF:-1 group-title="LIGA MX WOMEN (BO)",Tigres UANL W - Cruz Azul W (FOX Deportes) (04:00AM 02/06/26)
 #EXTVLCOPT:http-origin=https://hoca6.com
 #EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
-https://d14.epicquesthero.com:999/hls/wsmkmlfeed70.m3u8?md5=qAxVxNHWPOCynJBlLU4zWw&expires=1770356617
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+https://d11.epicquesthero.com:999/hls/wsmkmlfeed70.m3u8?md5=FmpgFYPQ-t87bokYAZ-2Yw&expires=1770361924
 #EXTINF:-1 group-title="MLB (EH)",Baltimore Orioles - New York Yankees (01:05PM 02/20/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d12.epicquesthero.com:999/hls/mbaltimoreorioles.m3u8?md5=KZ4DvLa3MFHibg7GoqVkQw&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d15.epicquesthero.com:999/hls/mbaltimoreorioles.m3u8?md5=HNyxnkcB-VWSss_mWZgCdQ&expires=1770361924
 #EXTINF:-1 group-title="MLB (EH)",Chicago Cubs - Chicago White Sox (03:05PM 02/20/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/mchicagocubs.m3u8?md5=-CtUfPb5X0fNGoPxoN2WeA&expires=1770356622
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d11.epicquesthero.com:999/hls/mchicagocubs.m3u8?md5=8_QykWUf-vMaayQ7VTJrfw&expires=1770361924
 #EXTINF:-1 group-title="MLB (EH)",Colorado Rockies - Arizona Diamondbacks (03:10PM 02/20/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/mcoloradorockies.m3u8?md5=6pxpkBRDxAG718EyvbXP6Q&expires=1770356622
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/mcoloradorockies.m3u8?md5=j-KTyMN3Hc_8EfjwUnthxg&expires=1770361924
 #EXTINF:-1 group-title="MLB (EH)",Seattle Mariners - San Diego Padres (03:10PM 02/20/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d14.epicquesthero.com:999/hls/mseattlemariners.m3u8?md5=DPIpVB5E4KgQN466JHVOSw&expires=1770356622
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d13.epicquesthero.com:999/hls/mseattlemariners.m3u8?md5=yi3GcjKD3Y7moNzPw0HpqQ&expires=1770361924
 #EXTINF:-1 group-title="MLB (EH)",Texas Rangers - Kansas City Royals (03:05PM 02/20/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/mtexasrangers.m3u8?md5=ASTv8HbLRTFt1bqitDfZmQ&expires=1770356626
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d15.epicquesthero.com:999/hls/mtexasrangers.m3u8?md5=IduVoHFc71w_q_55rnua7g&expires=1770361924
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bas_active.webp" group-title="MLB (PX)",Arizona Diamondbacks - Colorado Rockies (AWAY) (2/20/26 3:10PM) [AWAY]
 #EXTVLCOPT:http-origin=https://pixelsport.tv
 #EXTVLCOPT:http-referrer=https://pixelsport.tv/
@@ -3764,26 +3679,16 @@ https://locked.pixelpanel.online/hdstream/embed/433.m3u8
 #EXTVLCOPT:http-referrer=https://pixelsport.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
 https://locked.pixelpanel.online/hdstream/embed/417.m3u8
-#EXTINF:-1 group-title="NBA (BO)",Dallas Mavericks - San Antonio Spurs (EXTRA SPORT32) (02:30AM 02/06/26)
-#EXTVLCOPT:http-origin=https://hoca6.com
-#EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
-https://d15.epicquesthero.com:999/hls/wsmkmlfeed185.m3u8?md5=tMqicRNkmNsRt7KBDCMYvw&expires=1770356617
-#EXTINF:-1 group-title="NBA (BO)",Houston Rockets - Charlotte Hornets (EXTRA SPORT31) (02:00AM 02/06/26)
-#EXTVLCOPT:http-origin=https://hoca6.com
-#EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
-https://d11.epicquesthero.com:999/hls/wsmkmlfeed184.m3u8?md5=jIu8QDYZMUbFVN_xgS1UOg&expires=1770356617
 #EXTINF:-1 group-title="NBA (BO)",Los Angeles Lakers - Philadelphia 76ers (EXTRA SPORT33) (04:00AM 02/06/26)
 #EXTVLCOPT:http-origin=https://hoca6.com
 #EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
-https://d13.epicquesthero.com:999/hls/wsmkmlfeed186.m3u8?md5=uIp835iWzLG_nN1G0HmvPA&expires=1770356617
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+https://d13.epicquesthero.com:999/hls/wsmkmlfeed186.m3u8?md5=nu0SozFOsYDdbQ9-c9ZjMA&expires=1770361924
 #EXTINF:-1 group-title="NBA (BO)",Phoenix Suns - Golden State Warriors (EXTRA SPORT34) (04:00AM 02/06/26)
 #EXTVLCOPT:http-origin=https://hoca6.com
 #EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
-https://d14.epicquesthero.com:999/hls/wsmkmlfeed187.m3u8?md5=09o0deEe7iatEgKLJFtAng&expires=1770356617
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+https://d15.epicquesthero.com:999/hls/wsmkmlfeed187.m3u8?md5=8egfO6mGzpnwtF2TIFubIQ&expires=1770361924
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Atlanta Hawks vs Utah Jazz (NBA League Pass 3) (7:30PM 2/5/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -3847,123 +3752,123 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTINF:-1 group-title="NBA (EH)",Atlanta Hawks - Charlotte Hornets (07:30PM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/matlantahawks.m3u8?md5=9PMi-ow9YTqKYeRGvlEV6Q&expires=1770356625
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d11.epicquesthero.com:999/hls/matlantahawks.m3u8?md5=HH3I6EerfJMMiH8akAu1-Q&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Atlanta Hawks - Utah Jazz (07:30PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/matlantahawks.m3u8?md5=9PMi-ow9YTqKYeRGvlEV6Q&expires=1770356625
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d11.epicquesthero.com:999/hls/matlantahawks.m3u8?md5=HH3I6EerfJMMiH8akAu1-Q&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Boston Celtics - Miami Heat (07:30PM 02/06/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d14.epicquesthero.com:999/hls/mbostonceltics.m3u8?md5=ydcFpGljA-0ly3J5E3jMog&expires=1770356626
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d14.epicquesthero.com:999/hls/mbostonceltics.m3u8?md5=lOpn6d1HFKCpYJCnmsa39w&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Brooklyn Nets - Washington Wizards (03:00PM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/mbrooklynnets.m3u8?md5=1GrY9tvIDZNd1urdIho3vQ&expires=1770356624
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/mbrooklynnets.m3u8?md5=obcFKVNd1L99hbXCJSglLg&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Chicago Bulls - Denver Nuggets (08:00PM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/mchicagobulls.m3u8?md5=btR6rIW2aNfhjGKjH27rJg&expires=1770356622
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d11.epicquesthero.com:999/hls/mchicagobulls.m3u8?md5=SLDjpJhdjPM18vHthVqU9Q&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Dallas Mavericks - San Antonio Spurs (08:30PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d12.epicquesthero.com:999/hls/mdallasmavericks.m3u8?md5=oCZtfxL8OwhAGRrqNpV_5Q&expires=1770356622
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d14.epicquesthero.com:999/hls/mdallasmavericks.m3u8?md5=bZUDTLc3DdElFgTQqA9twQ&expires=1770361923
 #EXTINF:-1 group-title="NBA (EH)",Detroit Pistons - New York Knicks (07:30PM 02/06/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d14.epicquesthero.com:999/hls/mdetroitpistons.m3u8?md5=RmAjidBIF-NQj_DflXlrhw&expires=1770356615
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/mdetroitpistons.m3u8?md5=o7m6j6SVCjHq0jpuD_gN2Q&expires=1770361923
 #EXTINF:-1 group-title="NBA (EH)",Detroit Pistons - Washington Wizards (07:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d14.epicquesthero.com:999/hls/mdetroitpistons.m3u8?md5=RmAjidBIF-NQj_DflXlrhw&expires=1770356615
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/mdetroitpistons.m3u8?md5=o7m6j6SVCjHq0jpuD_gN2Q&expires=1770361923
 #EXTINF:-1 group-title="NBA (EH)",Houston Rockets - Charlotte Hornets (08:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d12.epicquesthero.com:999/hls/mhoustonrockets.m3u8?md5=BVvRlnhVVVMLpAyPSyxpDQ&expires=1770356622
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d13.epicquesthero.com:999/hls/mhoustonrockets.m3u8?md5=RqdbrAPt_BcsMHBaLgLQ5g&expires=1770361923
 #EXTINF:-1 group-title="NBA (EH)",Los Angeles Lakers - Golden State Warriors (08:30PM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/mlosangeleslakers.m3u8?md5=L7W_RBdEd8B3tqPlnSr4wg&expires=1770356621
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d14.epicquesthero.com:999/hls/mlosangeleslakers.m3u8?md5=kF4NDX9Flgh79pgBHto4nw&expires=1770361918
 #EXTINF:-1 group-title="NBA (EH)",Los Angeles Lakers - Philadelphia 76ers (10:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/mlosangeleslakers.m3u8?md5=L7W_RBdEd8B3tqPlnSr4wg&expires=1770356621
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d14.epicquesthero.com:999/hls/mlosangeleslakers.m3u8?md5=kF4NDX9Flgh79pgBHto4nw&expires=1770361918
 #EXTINF:-1 group-title="NBA (EH)",Milwaukee Bucks - Indiana Pacers (08:00PM 02/06/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d14.epicquesthero.com:999/hls/mmilwaukeebucks.m3u8?md5=ZXkZ2Eqd2NZe6oEI-F-BvA&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/mmilwaukeebucks.m3u8?md5=QU-Nb2wkNEeBeBFBtfNtEw&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Minnesota Timberwolves - New Orleans Pelicans (08:00PM 02/06/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d12.epicquesthero.com:999/hls/mminnesotatimberwolves.m3u8?md5=Fmmqnap5LqAC1Uw2gehZRw&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/mminnesotatimberwolves.m3u8?md5=BLq9wA6DPnVWp-0ZZfzTEg&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Oklahoma City Thunder - Houston Rockets (03:30PM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/moklahomacitythunder.m3u8?md5=MnIzNTb950MEaaNOQOhB-w&expires=1770356626
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d15.epicquesthero.com:999/hls/moklahomacitythunder.m3u8?md5=yww0445mmoNc8dDdZnuFjA&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Orlando Magic - Brooklyn Nets (07:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/morlandomagic.m3u8?md5=WSxGDmItpnyb1FBe1yyrrQ&expires=1770356619
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/morlandomagic.m3u8?md5=WwYfwy3MBi17WgQpXCnMYA&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Orlando Magic - Utah Jazz (07:00PM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/morlandomagic.m3u8?md5=WSxGDmItpnyb1FBe1yyrrQ&expires=1770356619
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/morlandomagic.m3u8?md5=WwYfwy3MBi17WgQpXCnMYA&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Phoenix Suns - Golden State Warriors (10:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d14.epicquesthero.com:999/hls/mphoenixsuns.m3u8?md5=MOTFEMgxN4de1pE2DqG2ew&expires=1770356624
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/mphoenixsuns.m3u8?md5=PBbV28CO_AhPeJPQ6cGfIg&expires=1770361920
 #EXTINF:-1 group-title="NBA (EH)",Phoenix Suns - Philadelphia 76ers (09:00PM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d14.epicquesthero.com:999/hls/mphoenixsuns.m3u8?md5=MOTFEMgxN4de1pE2DqG2ew&expires=1770356624
-#EXTINF:-1 group-title="NBA (EH)",Portland Trail Blazers - Memphis Grizzlies (10:00PM 02/07/26)
-#EXTVLCOPT:http-origin=https://exposestrat.com
-#EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d12.epicquesthero.com:999/hls/mportlandtrailblazers.m3u8?md5=TIU20bsyanA7zEVlzXB3aQ&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/mphoenixsuns.m3u8?md5=PBbV28CO_AhPeJPQ6cGfIg&expires=1770361920
 #EXTINF:-1 group-title="NBA (EH)",Portland Trail Blazers - Memphis Grizzlies (10:00PM 02/06/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d12.epicquesthero.com:999/hls/mportlandtrailblazers.m3u8?md5=TIU20bsyanA7zEVlzXB3aQ&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/mportlandtrailblazers.m3u8?md5=ZzRzg2UuqRBYn4snKE-aBQ&expires=1770361923
+#EXTINF:-1 group-title="NBA (EH)",Portland Trail Blazers - Memphis Grizzlies (10:00PM 02/07/26)
+#EXTVLCOPT:http-origin=https://exposestrat.com
+#EXTVLCOPT:http-referrer=https://exposestrat.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/mportlandtrailblazers.m3u8?md5=ZzRzg2UuqRBYn4snKE-aBQ&expires=1770361923
 #EXTINF:-1 group-title="NBA (EH)",Sacramento Kings - Cleveland Cavaliers (10:00PM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/msacramentokings.m3u8?md5=WXYo8gxRwwR-HgSy2kaHTA&expires=1770356622
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d14.epicquesthero.com:999/hls/msacramentokings.m3u8?md5=iq38viENEKEOs2wBOZnKcQ&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Sacramento Kings - LA Clippers (10:00PM 02/06/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/msacramentokings.m3u8?md5=WXYo8gxRwwR-HgSy2kaHTA&expires=1770356622
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d14.epicquesthero.com:999/hls/msacramentokings.m3u8?md5=iq38viENEKEOs2wBOZnKcQ&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",San Antonio Spurs - Dallas Mavericks (06:00PM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/msanantoniospurs.m3u8?md5=CO8jmXowl51iZhdP4LP7sA&expires=1770356624
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d11.epicquesthero.com:999/hls/msanantoniospurs.m3u8?md5=nKvhEqMa-3kOWEOWbxDUhw&expires=1770361924
 #EXTINF:-1 group-title="NBA (EH)",Toronto Raptors - Chicago Bulls (07:30PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/mtorontoraptors.m3u8?md5=UpU6CodAwUJsZqDu2jFNPg&expires=1770356617
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d14.epicquesthero.com:999/hls/mtorontoraptors.m3u8?md5=fsra9QPe3HzOUgLGffgIXw&expires=1770361924
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (PX)",Brooklyn Nets - Orlando Magic (AWAY) (2/05/26 7:00PM) [AWAY]
 #EXTVLCOPT:http-origin=https://pixelsport.tv
 #EXTVLCOPT:http-referrer=https://pixelsport.tv/
@@ -4087,8 +3992,8 @@ https://cdn2.bnfiles.cfd/live/cdn2/chunks.m3u8
 #EXTINF:-1 group-title="NFL (EH)",New England Patriots - Seattle Seahawks (06:30PM 02/08/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d11.epicquesthero.com:999/hls/mnewenglandpatriots.m3u8?md5=SUac8Sr6IiPeBj91DFU7mw&expires=1770356624
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d15.epicquesthero.com:999/hls/mnewenglandpatriots.m3u8?md5=qf0-Hu5rV4FoYM179wiaow&expires=1770361923
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_amf_active.webp" group-title="NFL (PX)",Seattle Seahawks - New England Patriots (AWAY) (2/08/26 6:30PM) [AWAY]
 #EXTVLCOPT:http-origin=https://pixelsport.tv
 #EXTVLCOPT:http-referrer=https://pixelsport.tv/
@@ -4107,13 +4012,13 @@ https://cdn1.hkfile.cfd/live/cdn1/chunks.m3u8
 #EXTINF:-1 group-title="NHL (BO)",Vegas Golden Knights - Los Angeles Kings (beIN max 5) (04:00AM 02/06/26)
 #EXTVLCOPT:http-origin=https://hoca6.com
 #EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
-https://d12.epicquesthero.com:999/hls/wsmkmlfeed05.m3u8?md5=qOfoA0w_WbZ4iD0g3cP1aQ&expires=1770356617
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+https://d14.epicquesthero.com:999/hls/wsmkmlfeed05.m3u8?md5=HaiE7jPuabc01JQRoskkzg&expires=1770361924
 #EXTINF:-1 group-title="NHL (BO)",Vegas Golden Knights - Los Angeles Kings (EXTRA SPORT41) (04:00AM 02/06/26)
 #EXTVLCOPT:http-origin=https://hoca6.com
 #EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_7_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36
-https://d15.epicquesthero.com:999/hls/wsmkmlfeed194.m3u8?md5=cwE6XUVyA3GKUuZ8m67wRg&expires=1770356617
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+https://d11.epicquesthero.com:999/hls/wsmkmlfeed194.m3u8?md5=DP6vqyMKs5INo5QWEhUivg&expires=1770361924
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_hok_active.webp" group-title="NHL (CD)", Carolina Hurricanes vs New York Rangers (MSG) (7:00PM 2/5/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -4252,38 +4157,38 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTINF:-1 group-title="NHL (EH)",Buffalo Sabres - Pittsburgh Penguins (07:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d12.epicquesthero.com:999/hls/mbuffalosabres.m3u8?md5=jOdptLeOKPxP8L8bRa4Ipw&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d11.epicquesthero.com:999/hls/mbuffalosabres.m3u8?md5=GjdXRIcfv8hZR8Sk56BUMg&expires=1770361923
 #EXTINF:-1 group-title="NHL (EH)",New Jersey Devils - New York Islanders (07:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/mnewjerseydevils.m3u8?md5=COrkPa3Ot0O7qHIcbuXgNQ&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/mnewjerseydevils.m3u8?md5=mTURlNGIm_T9HHS_Eesc9w&expires=1770361923
 #EXTINF:-1 group-title="NHL (EH)",New York Rangers - Carolina Hurricanes (07:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/mnewyorkrangers.m3u8?md5=Sh7JA4Ng6wP_jVY1iznP3A&expires=1770356625
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d15.epicquesthero.com:999/hls/mnewyorkrangers.m3u8?md5=D58xuGV01WTzXEodYWgUqQ&expires=1770361923
 #EXTINF:-1 group-title="NHL (EH)",Philadelphia Flyers - Ottawa Senators (07:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d14.epicquesthero.com:999/hls/mphiladelphiaflyers.m3u8?md5=LUz3B1jRJb29WYWGiVYGRQ&expires=1770356626
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d11.epicquesthero.com:999/hls/mphiladelphiaflyers.m3u8?md5=iTrJ8JtQdhIQlG_uWlAbTA&expires=1770361914
 #EXTINF:-1 group-title="NHL (EH)",Tampa Bay Lightning - Florida Panthers (07:30PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d11.epicquesthero.com:999/hls/mtampabaylightning.m3u8?md5=JVzFIoGo_UUMsTRZKguNOA&expires=1770356624
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d11.epicquesthero.com:999/hls/mtampabaylightning.m3u8?md5=0vcGGZ4l_vMjQjgWn1dJKg&expires=1770361923
 #EXTINF:-1 group-title="NHL (EH)",Vegas Golden Knights - Los Angeles Kings (10:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d12.epicquesthero.com:999/hls/mvegasgoldenknights.m3u8?md5=DwPKSd_CdPPTPaAQpRqxjw&expires=1770356627
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d15.epicquesthero.com:999/hls/mvegasgoldenknights.m3u8?md5=jRmvKZlysGnZPQbwDSmV8A&expires=1770361924
 #EXTINF:-1 group-title="NHL (EH)",Washington Capitals - Nashville Predators (07:00PM 02/05/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/mwashingtoncapitals.m3u8?md5=AAqpZrsSKqSYgKxZUWNDEQ&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d15.epicquesthero.com:999/hls/mwashingtoncapitals.m3u8?md5=6h93F9dE5ZF0Blo7qeItJg&expires=1770361923
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_hok_active.webp" group-title="NHL (PX)",Carolina Hurricanes - New York Rangers (AWAY) (2/05/26 7:00PM) [AWAY]
 #EXTVLCOPT:http-origin=https://pixelsport.tv
 #EXTVLCOPT:http-referrer=https://pixelsport.tv/
@@ -4357,63 +4262,63 @@ https://hd.bestlive.top:443/play/pAVJjXWDXadNqa4ml_eoyNsvHql5ltXBlVcW0TS8CvM/.m3
 #EXTINF:-1 group-title="OLYMPIC GAMES 2026 (EH)",Slovakia - Finland (10:40AM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/mevent10.m3u8?md5=jZjwWfk9_DDiIM_JxjgYdA&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d14.epicquesthero.com:999/hls/mevent10.m3u8?md5=_qhEFonN67rvOUzaQen5gQ&expires=1770361924
 #EXTINF:-1 group-title="OLYMPIC GAMES 2026 (EH)",Sweden - Italy (03:10PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/mevent10.m3u8?md5=jZjwWfk9_DDiIM_JxjgYdA&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d14.epicquesthero.com:999/hls/mevent10.m3u8?md5=_qhEFonN67rvOUzaQen5gQ&expires=1770361924
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",AFC Bournemouth - Aston Villa (10:00AM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/nafcbournemouth.m3u8?md5=JbmslLNSRLrIF3T0hL5f0w&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/nafcbournemouth.m3u8?md5=fdW1_nP0wlgQIcupNyGUbQ&expires=1770361924
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Arsenal - Sunderland (10:00AM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d12.epicquesthero.com:999/hls/narsenal.m3u8?md5=mUfD3iIXMrchFwyd8H7irA&expires=1770356622
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/narsenal.m3u8?md5=2yo3kDcrwXYwHg5F-Ib9-A&expires=1770361924
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Brighton & Hove Albion - Crystal Palace (09:00AM 02/08/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/nbrighton.m3u8?md5=9Pi1oKbn-5HrMVeMBwXdqg&expires=1770356626
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/nbrighton.m3u8?md5=GnhPp4YEMQDVQOc6rJLj3w&expires=1770361924
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Burnley - West Ham United (10:00AM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d15.epicquesthero.com:999/hls/nburnley.m3u8?md5=QBXx-zl1GEe7jp9cl-YFiQ&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d13.epicquesthero.com:999/hls/nburnley.m3u8?md5=RghUn0i_LqM1FGMrtlJAJA&expires=1770361924
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Fulham - Everton (10:00AM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d11.epicquesthero.com:999/hls/nfulham.m3u8?md5=lVw97bhq_LtzB0Q2_d5KgQ&expires=1770356623
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d11.epicquesthero.com:999/hls/nfulham.m3u8?md5=5QsFs5p3WrRlrLN8-X_nTA&expires=1770361924
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Leeds United - Nottingham Forest (03:00PM 02/06/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/nleedsunited.m3u8?md5=7RXxqny5lAqLsDKWPyf6KA&expires=1770356627
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d14.epicquesthero.com:999/hls/nleedsunited.m3u8?md5=iQDqZwbnwsm7z-bmhtbxrg&expires=1770361924
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Liverpool - Manchester City (11:30AM 02/08/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d11.epicquesthero.com:999/hls/nliverpool.m3u8?md5=6FGdJr-IlVcJ4MnDoZSbiQ&expires=1770356625
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d11.epicquesthero.com:999/hls/nliverpool.m3u8?md5=UFB3vGQL4D9gywWqcvz3og&expires=1770361924
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Manchester United - Tottenham Hotspur (07:30AM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d13.epicquesthero.com:999/hls/nmanchesterunited.m3u8?md5=2zdf7ZginuZL5F915_KbPg&expires=1770356627
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/nmanchesterunited.m3u8?md5=lkdbjqtYWU6hrWXFAmMP_Q&expires=1770361924
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Newcastle United - Brentford (12:30PM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d11.epicquesthero.com:999/hls/nnewcastleunited.m3u8?md5=R2ppg9RW2O_w7HuSvqRriA&expires=1770356629
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/nnewcastleunited.m3u8?md5=FHAqykuoJlGJSZN-E-1rfw&expires=1770361924
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Wolverhampton Wanderers - Chelsea (10:00AM 02/07/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:128.5.0) Gecko/20100101 Firefox/128.5.0
-https://d14.epicquesthero.com:999/hls/nwolverhamptonwanderers.m3u8?md5=6resbtMZeF03hmjVMKJuJQ&expires=1770356624
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 11.5; rv:108.0) Gecko/20100101 Firefox/108.0
+https://d12.epicquesthero.com:999/hls/nwolverhamptonwanderers.m3u8?md5=sCpVophycN3HXrlvLCmOVA&expires=1770361924
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Al Akhdoud vs Al Hilal (Cosmote Sport 7) (12:30PM 2/6/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -4838,39 +4743,39 @@ https://streamfree.to/live/skysportstennis1080p/index.m3u8
 #EXTVLCOPT:http-origin=https://hiteasport.info
 #EXTVLCOPT:http-referrer=https://hiteasport.info/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-https://play.streameast.asia/playlist/stream_nba3.m3u8?md5=e3zGYSsOIZPleRfBPf6suQ&expires=1770353018
+https://play.streameast.asia/playlist/stream_nba1.m3u8?md5=tP-60Vz4pFWMI55q3NGmXA&expires=1770358323
 #EXTINF:-1 tvg-logo="https://artwork.espncdn.com/categories/7b3729c9-7f69-308a-bf8a-ee15a6aba154/logo/original_20191002200202.svg" group-title="UNKNOWN (SB)",Unknown Match
 #EXTVLCOPT:http-origin=https://hiteasport.info
 #EXTVLCOPT:http-referrer=https://hiteasport.info/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-https://play.streameast.asia/playlist/stream_nba6.m3u8?md5=rDYUHMcgLX5fS-qv2LJU1Q&expires=1770353018
+https://play.streameast.asia/playlist/stream_nba3.m3u8?md5=ma0di9V0QsCmpKSe53lGEw&expires=1770358323
 #EXTINF:-1 tvg-logo="https://artwork.espncdn.com/categories/7b3729c9-7f69-308a-bf8a-ee15a6aba154/logo/original_20191002200202.svg" group-title="UNKNOWN (SB)",Unknown Match
 #EXTVLCOPT:http-origin=https://hiteasport.info
 #EXTVLCOPT:http-referrer=https://hiteasport.info/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-https://play.streameast.asia/playlist/stream_nba7.m3u8?md5=2LjUenoUH0feOuWm242hAQ&expires=1770353018
+https://play.streameast.asia/playlist/stream_nba6.m3u8?md5=ykFvvKva6wRkwBfS3myWsA&expires=1770358323
 #EXTINF:-1 tvg-logo="https://artwork.espncdn.com/categories/7b3729c9-7f69-308a-bf8a-ee15a6aba154/logo/original_20191002200202.svg" group-title="UNKNOWN (SB)",Unknown Match
 #EXTVLCOPT:http-origin=https://hiteasport.info
 #EXTVLCOPT:http-referrer=https://hiteasport.info/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-https://play.streameast.asia/playlist/stream_nba8.m3u8?md5=DPSw9fai7pYOo4JMC1rtGQ&expires=1770353018
+https://play.streameast.asia/playlist/stream_nba5.m3u8?md5=Bs_GJ6dcpQ0VoY4EEnMXpg&expires=1770358323
 #EXTINF:-1 tvg-logo="https://artwork.espncdn.com/categories/7b3729c9-7f69-308a-bf8a-ee15a6aba154/logo/original_20191002200202.svg" group-title="UNKNOWN (SB)",Unknown Match
 #EXTVLCOPT:http-origin=https://hiteasport.info
 #EXTVLCOPT:http-referrer=https://hiteasport.info/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-https://play.streameast.asia/playlist/stream_nba4.m3u8?md5=VG0KOoPriGdn0-ECwN2Q5Q&expires=1770353018
+https://play.streameast.asia/playlist/stream_nba2.m3u8?md5=-Uk6OsVYszPhQNrJr3m7Ng&expires=1770358323
 #EXTINF:-1 tvg-logo="https://artwork.espncdn.com/categories/7b3729c9-7f69-308a-bf8a-ee15a6aba154/logo/original_20191002200202.svg" group-title="UNKNOWN (SB)",Unknown Match
 #EXTVLCOPT:http-origin=https://hiteasport.info
 #EXTVLCOPT:http-referrer=https://hiteasport.info/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-https://play.streameast.asia/playlist/stream_nba1.m3u8?md5=1TDJw1KxSW_KqgOuQKs2Eg&expires=1770353018
+https://play.streameast.asia/playlist/stream_nba8.m3u8?md5=6pGjjYRHLFWWhz9ulXoTug&expires=1770358323
 #EXTINF:-1 tvg-logo="https://artwork.espncdn.com/categories/7b3729c9-7f69-308a-bf8a-ee15a6aba154/logo/original_20191002200202.svg" group-title="UNKNOWN (SB)",Unknown Match
 #EXTVLCOPT:http-origin=https://hiteasport.info
 #EXTVLCOPT:http-referrer=https://hiteasport.info/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-https://play.streameast.asia/playlist/stream_nba2.m3u8?md5=03NEpD5AQbK41UGVLTzL_w&expires=1770353018
+https://play.streameast.asia/playlist/stream_nba4.m3u8?md5=aLSF3L4srJdlNMtbNgqCpA&expires=1770358323
 #EXTINF:-1 tvg-logo="https://artwork.espncdn.com/categories/7b3729c9-7f69-308a-bf8a-ee15a6aba154/logo/original_20191002200202.svg" group-title="UNKNOWN (SB)",Unknown Match
 #EXTVLCOPT:http-origin=https://hiteasport.info
 #EXTVLCOPT:http-referrer=https://hiteasport.info/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36
-https://play.streameast.asia/playlist/stream_nba5.m3u8?md5=KzjSxbvFKja-wYYXzJf1MQ&expires=1770353018
+https://play.streameast.asia/playlist/stream_nba7.m3u8?md5=3LhURr2LI_j9l4SvTBpCLQ&expires=1770358323
