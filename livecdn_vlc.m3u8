@@ -2519,11 +2519,6 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2oj5skuuutmrmfauu7tgtw64gipv7ldad6kfqz453dmzpe6zcqvbiu2s2ql6kzatkylrljvjvfpm/index.m3u8
-#EXTINF:-1 tvg-logo="https://api.cdn-live.tv/api/v1/channels/images6318/portugal/sport-tv-7.svg" group-title="24/7 CHANNELS (CD)", Sport TV 1 Option 2 PT
-#EXTVLCOPT:http-origin=https://cdn-live.tv
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2oj5skuuutkfrknh5erwhh65d2pg3l3mlok5fvnllhncnvwus6vkpu4s2psnovstc4njrfdkkvysyxw53mpheicvk7/index.m3u8
 #EXTINF:-1 tvg-id="SPORT.TV1.HD.pt" tvg-logo="https://api.cdn-live.tv/api/v1/channels/images6318/portugal/sport-tv-1.svg" group-title="24/7 CHANNELS (CD)", Sport TV 1 PT
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -2554,6 +2549,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2oj5skuuutkfrknhu7tgtw64gipn73dad6kfqz453dmzpe6zcqvbiu2s2ql6kzatkylrljvjvfpm/index.m3u8
+#EXTINF:-1 tvg-id="Sport.TV.7.HD.pt" tvg-logo="https://api.cdn-live.tv/api/v1/channels/images6318/portugal/sport-tv-7.svg" group-title="24/7 CHANNELS (CD)", Sport TV 7 PT
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2oj5skuuutkfrknhm7tgtw64gipn73dad6kfqz453dmzpe6zcqvbiu2s2ql6kzatkylrljvjvfpm/index.m3u8
 #EXTINF:-1 tvg-id="SPORT.TV+.HD.pt" tvg-logo="https://api.cdn-live.tv/api/v1/channels/images6318/portugal/sport-tv-plus.svg" group-title="24/7 CHANNELS (CD)", Sport TV PT
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -3742,228 +3742,198 @@ https://streamfree.to/live/washington-wizards-vs-cleveland-cavaliers1080p/index.
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Atlanta Hawks vs Charlotte Hornets (07:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edgestreams.pro/hls/mlkijfezag65.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://edge2caster.pro/hls/mlkijfezag65.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Chicago Bulls vs Boston Celtics (07:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
 https://mainstreams.pro/hls/zayrtezafgvdv68.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Detroit Pistons vs Toronto Raptors (07:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
 https://mainstreams.pro/hls/ztyarueaghj71.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Indiana Pacers vs Brooklyn Nets (07:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
 https://edge2caster.pro/hls/zeafwqvhfe69.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",LA Clippers vs Houston Rockets (08:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
 https://edge2caster.pro/hls/pllmazjkdzajh72.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Memphis Grizzlies vs Denver Nuggets (09:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://mainstreams.pro/hls/rteztryzathc77.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://edge2caster.pro/hls/rteztryzathc77.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Miami Heat vs New Orleans Pelicans (08:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
 https://edge2caster.pro/hls/yjtzafghvjza74.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Milwaukee Bucks vs Orlando Magic (07:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edge2caster.pro/hls/hfsdqtaxvb67.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://mainstreams.pro/hls/hfsdqtaxvb67.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",New York Knicks vs Philadelphia 76ers (07:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://mainstreams.pro/hls/bvnsqdfvgha70.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://edgestreams.pro/hls/bvnsqdfvgha70.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Oklahoma City Thunder vs Phoenix Suns (09:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edge2caster.pro/hls/sqhdghzavbxu75.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://mainstreams.pro/hls/sqhdghzavbxu75.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Portland Trail Blazers vs Minnesota Timberwolves (08:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edgestreams.pro/hls/fdgsqdfawa73.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://edge2caster.pro/hls/fdgsqdfawa73.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Sacramento Kings vs Utah Jazz (09:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edgestreams.pro/hls/xcsfadafgzfg76.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://edge2caster.pro/hls/xcsfadafgzfg76.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",San Antonio Spurs vs Golden State Warriors (10:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://mainstreams.pro/hls/bvsdgayiqf78.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://edgestreams.pro/hls/bvsdgayiqf78.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="BASKETBALL (ST)",Washington Wizards vs Cleveland Cavaliers (07:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edgestreams.pro/hls/wfazgsqtrezu66.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://mainstreams.pro/hls/wfazgsqtrezu66.m3u8
 #EXTINF:-1 group-title="FA CUP (EH)",Arsenal - Wigan Athletic (11:30AM 02/15/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d3.merichunidya.com:1686/hls/mevent14.m3u8?md5=sfH_jzPViwS_LA4HIqW8tw&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d4.merichunidya.com:1686/hls/mevent14.m3u8?md5=CM7Dqn_vk6nOGTr3PNyDKA&expires=1770846289
 #EXTINF:-1 group-title="FA CUP (EH)",Aston Villa - Newcastle United (12:45PM 02/14/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d8.merichunidya.com:1686/hls/mevent16.m3u8?md5=Sg_5dOD1N4ejN9QIx0UrfQ&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d13.epicquesthero.com:999/hls/mevent16.m3u8?md5=3mEsaUMwf09G88I5xOGNsg&expires=1770846289
 #EXTINF:-1 group-title="FA CUP (EH)",Birmingham City - Leeds United (07:00AM 02/15/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d9.merichunidya.com:1686/hls/mevent10.m3u8?md5=DBcy0PFbbTc-dE1xxQU5FA&expires=1770839651
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d3.merichunidya.com:1686/hls/mevent10.m3u8?md5=pFvqzzVWUuMP2zKIGmbJCw&expires=1770846288
 #EXTINF:-1 group-title="FA CUP (EH)",Burnley - Mansfield Town (10:00AM 02/14/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d10.merichunidya.com:1686/hls/mevent11.m3u8?md5=sDlRwM-XdiWQ6B5WnGpjuQ&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d13.epicquesthero.com:999/hls/mevent11.m3u8?md5=NiZduf5G9WTIbdK2N6xKQg&expires=1770846289
 #EXTINF:-1 group-title="FA CUP (EH)",Burton Albion - West Ham United (07:15AM 02/14/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d9.merichunidya.com:1686/hls/mevent10.m3u8?md5=DBcy0PFbbTc-dE1xxQU5FA&expires=1770839651
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d3.merichunidya.com:1686/hls/mevent10.m3u8?md5=pFvqzzVWUuMP2zKIGmbJCw&expires=1770846288
 #EXTINF:-1 group-title="FA CUP (EH)",Grimsby Town - Wolverhampton Wanderers (08:30AM 02/15/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d10.merichunidya.com:1686/hls/mevent11.m3u8?md5=sDlRwM-XdiWQ6B5WnGpjuQ&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d13.epicquesthero.com:999/hls/mevent11.m3u8?md5=NiZduf5G9WTIbdK2N6xKQg&expires=1770846289
 #EXTINF:-1 group-title="FA CUP (EH)",Hull City - Chelsea (02:45PM 02/13/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d9.merichunidya.com:1686/hls/mevent10.m3u8?md5=DBcy0PFbbTc-dE1xxQU5FA&expires=1770839651
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d3.merichunidya.com:1686/hls/mevent10.m3u8?md5=pFvqzzVWUuMP2zKIGmbJCw&expires=1770846288
 #EXTINF:-1 group-title="FA CUP (EH)",Liverpool - Brighton & Hove Albion (03:00PM 02/14/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d8.merichunidya.com:1686/hls/mevent17.m3u8?md5=k08Uvuog3MUwsqCU3v-H4Q&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d4.merichunidya.com:1686/hls/mevent17.m3u8?md5=1XRa9aOOQtNW34YK3unQIA&expires=1770846289
 #EXTINF:-1 group-title="FA CUP (EH)",Manchester City - Salford City (10:00AM 02/14/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d1.merichunidya.com:1686/hls/mevent12.m3u8?md5=9Ls6Jb_WfHxGcbooqAvKJw&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d4.merichunidya.com:1686/hls/mevent12.m3u8?md5=IPRq5SYacnfvrBgkhTirsw&expires=1770846289
 #EXTINF:-1 group-title="FA CUP (EH)",Norwich City - West Bromwich Albion (10:00AM 02/14/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d11.epicquesthero.com:999/hls/mevent13.m3u8?md5=vWXX-6Zd_AzKtqwGFtVSxg&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d8.merichunidya.com:1686/hls/mevent13.m3u8?md5=EeJXs_OVIid2lnAW5-L_Pg&expires=1770846289
 #EXTINF:-1 group-title="FA CUP (EH)",Oxford United - Sunderland (09:00AM 02/15/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d1.merichunidya.com:1686/hls/mevent12.m3u8?md5=9Ls6Jb_WfHxGcbooqAvKJw&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d4.merichunidya.com:1686/hls/mevent12.m3u8?md5=IPRq5SYacnfvrBgkhTirsw&expires=1770846289
 #EXTINF:-1 group-title="FA CUP (EH)",Port Vale - Bristol City (10:00AM 02/14/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d3.merichunidya.com:1686/hls/mevent14.m3u8?md5=sfH_jzPViwS_LA4HIqW8tw&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d4.merichunidya.com:1686/hls/mevent14.m3u8?md5=CM7Dqn_vk6nOGTr3PNyDKA&expires=1770846289
 #EXTINF:-1 group-title="FA CUP (EH)",Southampton - Leicester City (10:00AM 02/14/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d12.epicquesthero.com:999/hls/mevent15.m3u8?md5=alxNVizrUGf1OFSfW0P_YA&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d2.merichunidya.com:1686/hls/mevent15.m3u8?md5=kss0JCR2v7MkQ6HQTApG9g&expires=1770846289
 #EXTINF:-1 group-title="FA CUP (EH)",Stoke City - Fulham (09:00AM 02/15/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d11.epicquesthero.com:999/hls/mevent13.m3u8?md5=vWXX-6Zd_AzKtqwGFtVSxg&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d8.merichunidya.com:1686/hls/mevent13.m3u8?md5=EeJXs_OVIid2lnAW5-L_Pg&expires=1770846289
 #EXTINF:-1 group-title="FA CUP (EH)",Wrexham - Ipswich Town (02:45PM 02/13/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d10.merichunidya.com:1686/hls/mevent11.m3u8?md5=sDlRwM-XdiWQ6B5WnGpjuQ&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d13.epicquesthero.com:999/hls/mevent11.m3u8?md5=NiZduf5G9WTIbdK2N6xKQg&expires=1770846289
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="FOOTBALL (ST)",Arsenal vs Brentford (03:00PM 02/12/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edge2caster.pro/hls/24SDAZFcsqnj24.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://mainstreams.pro/hls/24SDAZFcsqnj24.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="FOOTBALL (ST)",Barcelona vs Atlético Madrid (03:00PM 02/12/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://mainstreams.pro/hls/377qj1h2727.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://edge2caster.pro/hls/377qj1h2727.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="FOOTBALL (ST)",Brighton & Hove Albion vs Aston Villa (02:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edgestreams.pro/hls/b0h5fNwDKH.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://mainstreams.pro/hls/b0h5fNwDKH.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="FOOTBALL (ST)",Burnley vs Crystal Palace (02:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
 https://mainstreams.pro/hls/griogoehvn2.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="FOOTBALL (ST)",Fulham vs Manchester City (02:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
 https://mainstreams.pro/hls/sqdahach1ax.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="FOOTBALL (ST)",Lazio vs Bologna (03:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edgestreams.pro/hls/syaLqucEne4k.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://mainstreams.pro/hls/syaLqucEne4k.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="FOOTBALL (ST)",Liverpool vs Sunderland (03:15PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
 https://edge2caster.pro/hls/24SDAZFcsqnj24.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="FOOTBALL (ST)",RB Leipzig vs Bayern Munich (02:45PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://mainstreams.pro/hls/ueyeztrazb4.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://edge2caster.pro/hls/ueyeztrazb4.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="FOOTBALL (ST)",Real Sociedad vs Athletic Club (03:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
 https://edgestreams.pro/hls/377qj1h2727.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="FOOTBALL (ST)",Wolverhampton Wanderers vs Nottingham Forest (02:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edge2caster.pro/hls/eJmauBDCIf.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/hockey_finland-vs-slovakia_Finland_vs_Slovakia" group-title="HOCKEY (SF)",Finland vs Slovakia (Olympics) (540p - CDN) (02/11/26 10:40AM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://indiasmellsverybad.xyz/live/finland-vs-slovakia540p/index.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/hockey_finland-vs-slovakia_Finland_vs_Slovakia" group-title="HOCKEY (SF)",Finland vs Slovakia (Olympics) (540p - MAIN) (02/11/26 10:40AM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://streamfree.to/live/finland-vs-slovakia540p/index.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/hockey_finland-vs-slovakia_Finland_vs_Slovakia" group-title="HOCKEY (SF)",Finland vs Slovakia (Olympics) (720p - CDN) (02/11/26 10:40AM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://indiasmellsverybad.xyz/live/finland-vs-slovakia720p/index.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/hockey_finland-vs-slovakia_Finland_vs_Slovakia" group-title="HOCKEY (SF)",Finland vs Slovakia (Olympics) (720p - MAIN) (02/11/26 10:40AM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://streamfree.to/live/finland-vs-slovakia720p/index.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/hockey_finland-vs-slovakia_Finland_vs_Slovakia" group-title="HOCKEY (SF)",Finland vs Slovakia (Olympics) (1080p - CDN) (02/11/26 10:40AM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://indiasmellsverybad.xyz/live/finland-vs-slovakia1080p/index.m3u8
-#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/hockey_finland-vs-slovakia_Finland_vs_Slovakia" group-title="HOCKEY (SF)",Finland vs Slovakia (Olympics) (1080p - MAIN) (02/11/26 10:40AM)
-#EXTVLCOPT:http-origin=https://streamfree.to
-#EXTVLCOPT:http-referrer=https://streamfree.to/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://streamfree.to/live/finland-vs-slovakia1080p/index.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://mainstreams.pro/hls/eJmauBDCIf.m3u8
 #EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/hockey_italy-vs-sweden_Italy_vs_Sweden" group-title="HOCKEY (SF)",Italy vs Sweden (Olympics) (540p - CDN) (02/11/26 03:10PM)
 #EXTVLCOPT:http-origin=https://streamfree.to
 #EXTVLCOPT:http-referrer=https://streamfree.to/
@@ -3994,41 +3964,36 @@ https://indiasmellsverybad.xyz/live/italy-vs-sweden1080p/index.m3u8
 #EXTVLCOPT:http-referrer=https://streamfree.to/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
 https://streamfree.to/live/italy-vs-sweden1080p/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_hok_active.webp" group-title="HOCKEY (ST)",Finland vs Slovakia (10:40AM 02/11/26)
-#EXTVLCOPT:http-origin=https://streams.center
-#EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edgestreams.pro/hls/dazhfiach15.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_hok_active.webp" group-title="HOCKEY (ST)",Italy vs Sweden (03:10PM 02/11/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edge2caster.pro/hls/16yuitzaerghbhc16.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://mainstreams.pro/hls/16yuitzaerghbhc16.m3u8
 #EXTINF:-1 group-title="MLB (EH)",Baltimore Orioles - New York Yankees (01:05PM 02/20/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d13.epicquesthero.com:999/hls/mbaltimoreorioles.m3u8?md5=7oamhTg8tkvlxcxvcKHXcg&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d10.merichunidya.com:1686/hls/mbaltimoreorioles.m3u8?md5=yHoQXS0DS6QBBCQ_LQ3hhA&expires=1770846289
 #EXTINF:-1 group-title="MLB (EH)",Chicago Cubs - Chicago White Sox (03:05PM 02/20/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d14.epicquesthero.com:999/hls/mchicagocubs.m3u8?md5=w8_i3vWoW9Zw60n-7y1K1A&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d6.merichunidya.com:1686/hls/mchicagocubs.m3u8?md5=mIe9gqJuGbUUb-zipoEtQQ&expires=1770846289
 #EXTINF:-1 group-title="MLB (EH)",Colorado Rockies - Arizona Diamondbacks (03:10PM 02/20/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d13.epicquesthero.com:999/hls/mcoloradorockies.m3u8?md5=6-6Kw88NO46CZc6Dp5YPJw&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d13.epicquesthero.com:999/hls/mcoloradorockies.m3u8?md5=1Z7T1D34X9e93o2tMcoxpw&expires=1770846309
 #EXTINF:-1 group-title="MLB (EH)",Seattle Mariners - San Diego Padres (03:10PM 02/20/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d6.merichunidya.com:1686/hls/mseattlemariners.m3u8?md5=O23egKMZLz-w6GOYs8KEZA&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d15.epicquesthero.com:999/hls/mseattlemariners.m3u8?md5=Jmze8aaWegFytr50dd1iuQ&expires=1770846289
 #EXTINF:-1 group-title="MLB (EH)",Texas Rangers - Kansas City Royals (03:05PM 02/20/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d15.epicquesthero.com:999/hls/mtexasrangers.m3u8?md5=GhgELmEuFoEnW1ms_ctVIg&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d14.epicquesthero.com:999/hls/mtexasrangers.m3u8?md5=CzA-s9ehZtRRmU3R8fAG0Q&expires=1770846289
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bas_active.webp" group-title="MLB (PX)",Arizona Diamondbacks - Colorado Rockies (AWAY) (2/20/26 3:10PM) [AWAY]
 #EXTVLCOPT:http-origin=https://pixelsport.tv
 #EXTVLCOPT:http-referrer=https://pixelsport.tv/
@@ -4082,28 +4047,23 @@ https://locked.pixelpanel.online/hdstream/embed/417.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_moto_active.webp" group-title="MOTOR SPORT (ST)",F1 Bahrain Grand prix Testing Day 2 (10:00AM 02/12/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edge2caster.pro/hls/hbfkazbkaznc49.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://edgestreams.pro/hls/hbfkazbkaznc49.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_moto_active.webp" group-title="MOTOR SPORT (ST)",F1 Bahrain Grand prix Testing Day 3 (10:00AM 02/13/26)
 #EXTVLCOPT:http-origin=https://streams.center
 #EXTVLCOPT:http-referrer=https://streams.center/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36 Edg/127.0.0.0
-https://edgestreams.pro/hls/hbfkazbkaznc49.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Boston Celtics vs Chicago Bulls (Sky Sport 253) (7:30PM 2/10/2026)
-#EXTVLCOPT:http-origin=https://cdn-live.tv
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnf3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 14_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36 Edg/129.0.0.0
+https://edge2caster.pro/hls/hbfkazbkaznc49.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Boston Celtics vs Chicago Bulls (Sport TV 1) (7:30PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2oj5skuuutkfrknh47tgtw64gipn73dad6kfqz453dmzpe6zcqvbiu2s2ql6kzatkylrljvjvfpm/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Brooklyn Nets vs Indiana Pacers (Sky Sport 251) (7:30PM 2/10/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Brooklyn Nets vs Indiana Pacers (Sky Sport 253) (7:30PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmng3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnf3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Brooklyn Nets vs Indiana Pacers (Sport 5 Live) (7:30PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -4114,16 +4074,16 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2ulrifc2crkfqwuytek2nxu33qzcah5mmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Charlotte Hornets vs Atlanta Hawks (Sky Sport 3) (7:00PM 2/10/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Charlotte Hornets vs Atlanta Hawks (Sky Sport 251) (7:00PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmmk2nxu33qzbxxbmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Denver Nuggets vs Memphis Grizzlies (Sky Sport Premier League) (9:00PM 2/10/2026)
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmng3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Denver Nuggets vs Memphis Grizzlies (Sky Sport Bundesliga 2) (9:00PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gknvkqxq5dqpw3ho4dmj5ofnrc2kfouxfc5sonfaus6vkmvwuk6mbhwvkmopj6x67weysyxwwsqjowwks2r/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gk3uoug64d6o52he3fwtsgvq62tk6leyxe3unswaumwvfjfyyslnbqu3dmmp57mjrfrpn3wywfemoawo/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Denver Nuggets vs Memphis Grizzlies (Sport 5) (9:00PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -4179,11 +4139,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3akjiy5iclnbigbi23vjqia7tqpxeh4735kfie453hkfhvyuu2l6newy3cr2mwazs4/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Golden State Warriors vs San Antonio Spurs (Sky Sport 256) (10:00PM 2/10/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Golden State Warriors vs San Antonio Spurs (Sky Sport 2) (10:00PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnilc3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlk2nxu33qzbxxbmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Golden State Warriors vs San Antonio Spurs (Sport Klub 1) (10:00PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -4219,11 +4179,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gk3uoug64d6o52he3fwukgvq62tk6leyxe3unswaumwvfjfyyslnbqu3dmmp57mjrfrpn3wywfemoawo/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Orlando Magic vs Milwaukee Bucks (Sky Sport 254) (7:00PM 2/10/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Orlando Magic vs Milwaukee Bucks (Sky Sport 255) (7:00PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnjlc3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmni3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Philadelphia 76ers vs New York Knicks (Arena 1 Premium) (7:30PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -4279,6 +4239,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3ikjofmw2xmfhzqw2mk2ix44d5zb7h67lqjvkgq6somzgwdge2kzsgoyddlnifkti/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Philadelphia 76ers vs New York Knicks (Sky Sport 3) (7:30PM 2/10/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmmk2nxu33qzbxxbmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Philadelphia 76ers vs New York Knicks (Sky Sport 252) (7:30PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -4304,106 +4269,101 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2oj5skuus3m5hu7gmmmzhlc3t2n5ymq3tmsbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Toronto Raptors vs Detroit Pistons (Sky Sport 254) (7:30PM 2/10/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnjlc3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Toronto Raptors vs Detroit Pistons (TSN 4) (7:30PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2pkjrvdeuqlrmv6s42tgo3dad6ob64q7t7lrgfu7lkmrsges2ql6n2ct3fs5ukst2tjm/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Utah Jazz vs Sacramento Kings (Sky Sport 257) (9:00PM 2/10/2026)
-#EXTVLCOPT:http-origin=https://cdn-live.tv
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnh3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (CD)", Washington Wizards vs Cleveland Cavaliers (Sky Sport 2) (7:00PM 2/10/2026)
-#EXTVLCOPT:http-origin=https://cdn-live.tv
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlk2nxu33qzbxxbmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
 #EXTINF:-1 group-title="NBA (EH)",Boston Celtics - Chicago Bulls (07:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d8.merichunidya.com:1686/hls/mbostonceltics.m3u8?md5=wAJ0yAEKX_kQE5VzY1N1FQ&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d5.merichunidya.com:1686/hls/mbostonceltics.m3u8?md5=GEpueM6x_LVD9e7wlHL2mw&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Brooklyn Nets - Indiana Pacers (07:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d6.merichunidya.com:1686/hls/mbrooklynnets.m3u8?md5=xJszGPk9_7sl5y5iwxu00Q&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d14.epicquesthero.com:999/hls/mbrooklynnets.m3u8?md5=ENpznUMfjRf11y3lnPxrfw&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Charlotte Hornets - Atlanta Hawks (07:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d5.merichunidya.com:1686/hls/mcharlottehornets.m3u8?md5=nqAtTEl9r9bNfaje0i_-og&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d14.epicquesthero.com:999/hls/mcharlottehornets.m3u8?md5=eDJaMwMGCEiEh7aLs3LmCQ&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Cleveland Cavaliers - Washington Wizards (07:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d2.merichunidya.com:1686/hls/mclevelandcavaliers.m3u8?md5=JOZN0XlrlS1Tn6R6AUsnKw&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d6.merichunidya.com:1686/hls/mclevelandcavaliers.m3u8?md5=ca_OQpOAryIU-tuGUEXM3Q&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Denver Nuggets - Memphis Grizzlies (09:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d13.epicquesthero.com:999/hls/mdenvernuggets.m3u8?md5=Dv8Bh9DTgRHrTwG3r7nBFQ&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d12.epicquesthero.com:999/hls/mdenvernuggets.m3u8?md5=78WXUaJPkNHSyoiFbqKVKQ&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Golden State Warriors - San Antonio Spurs (10:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d2.merichunidya.com:1686/hls/mgoldenstatewarriors.m3u8?md5=P099ofUimR15mvhCCxT-_Q&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d10.merichunidya.com:1686/hls/mgoldenstatewarriors.m3u8?md5=T9bVabdTCP4ji5rF8ysW6w&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Houston Rockets - LA Clippers (08:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d9.merichunidya.com:1686/hls/mhoustonrockets.m3u8?md5=dD-4JpV9Jkqd8eEI7nYLIA&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d1.merichunidya.com:1686/hls/mhoustonrockets.m3u8?md5=3DGePuSr1f-nKc8fTnSeMg&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Los Angeles Lakers - Dallas Mavericks (10:00PM 02/12/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d3.merichunidya.com:1686/hls/mlosangeleslakers.m3u8?md5=iHLAs-UxzWlTy5p1XQn3bw&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d1.merichunidya.com:1686/hls/mlosangeleslakers.m3u8?md5=NlOCb9_MYoH4Wn-MrVwvKw&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Minnesota Timberwolves - Portland Trail Blazers (08:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d2.merichunidya.com:1686/hls/mminnesotatimberwolves.m3u8?md5=saGmMxZ5Z-y1JAptgxw52Q&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d1.merichunidya.com:1686/hls/mminnesotatimberwolves.m3u8?md5=hyyqAl0_qBIyOXdxMtKa-w&expires=1770846296
 #EXTINF:-1 group-title="NBA (EH)",New Orleans Pelicans - Miami Heat (08:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d14.epicquesthero.com:999/hls/mneworleanspelicans.m3u8?md5=fj51Ws44KXLBfHNBzmGCOw&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d8.merichunidya.com:1686/hls/mneworleanspelicans.m3u8?md5=OtE78IwctBE7Kn9rnmB6rA&expires=1770846296
 #EXTINF:-1 group-title="NBA (EH)",Oklahoma City Thunder - Milwaukee Bucks (07:30PM 02/12/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d2.merichunidya.com:1686/hls/moklahomacitythunder.m3u8?md5=IFZVp_3IoG9_Z_jwYR1Vlg&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d6.merichunidya.com:1686/hls/moklahomacitythunder.m3u8?md5=IhHfhVaNipmVd8KpdNW84Q&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Orlando Magic - Milwaukee Bucks (07:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d11.epicquesthero.com:999/hls/morlandomagic.m3u8?md5=DIgsmfphG0FDDLutrty0jw&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d1.merichunidya.com:1686/hls/morlandomagic.m3u8?md5=velnQ_aLkgg2ibaTCkQ4WA&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Philadelphia 76ers - New York Knicks (07:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d8.merichunidya.com:1686/hls/mphiladelphia76ers.m3u8?md5=XsgzEKgrxIOmcwGubwi6oQ&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d3.merichunidya.com:1686/hls/mphiladelphia76ers.m3u8?md5=DAd5Zy1DMeCqiyg2LhSwEQ&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Phoenix Suns - Oklahoma City Thunder (09:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d12.epicquesthero.com:999/hls/mphoenixsuns.m3u8?md5=7RwJtGiFAbsvuh7fQYMM5Q&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d9.merichunidya.com:1686/hls/mphoenixsuns.m3u8?md5=fnMDBDblYh0CMYZCkm7E3A&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Toronto Raptors - Detroit Pistons (07:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d4.merichunidya.com:1686/hls/mtorontoraptors.m3u8?md5=Remjje4vHQ2HD_VXALPL6Q&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d12.epicquesthero.com:999/hls/mtorontoraptors.m3u8?md5=LWzkwoqaHvO64Q5rG4M6xQ&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Utah Jazz - Portland Trail Blazers (09:00PM 02/12/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d3.merichunidya.com:1686/hls/mutahjazz.m3u8?md5=apLd75sKLta0cuenPA6IQA&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d5.merichunidya.com:1686/hls/mutahjazz.m3u8?md5=wIsanpEGcdAgFWZqVVq6_g&expires=1770846289
 #EXTINF:-1 group-title="NBA (EH)",Utah Jazz - Sacramento Kings (09:00PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d3.merichunidya.com:1686/hls/mutahjazz.m3u8?md5=apLd75sKLta0cuenPA6IQA&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d5.merichunidya.com:1686/hls/mutahjazz.m3u8?md5=wIsanpEGcdAgFWZqVVq6_g&expires=1770846289
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_bsk_active.webp" group-title="NBA (PX)",Atlanta Hawks - Charlotte Hornets (AWAY) (2/11/26 7:00PM) [AWAY]
 #EXTVLCOPT:http-origin=https://pixelsport.tv
 #EXTVLCOPT:http-referrer=https://pixelsport.tv/
@@ -4692,48 +4652,43 @@ https://hd.bestlive.top:443/play/pAVJjXWDXadNqa4ml_eoyEJrJFF4t2841N8lofM-x7U/.m3
 #EXTINF:-1 group-title="OLYMPIC GAMES 2026 (EH)",Slovakia - Finland (10:40AM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d9.merichunidya.com:1686/hls/mevent10.m3u8?md5=DBcy0PFbbTc-dE1xxQU5FA&expires=1770839651
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d3.merichunidya.com:1686/hls/mevent10.m3u8?md5=pFvqzzVWUuMP2zKIGmbJCw&expires=1770846288
 #EXTINF:-1 group-title="OLYMPIC GAMES 2026 (EH)",Sweden - Italy (03:10PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d9.merichunidya.com:1686/hls/mevent10.m3u8?md5=DBcy0PFbbTc-dE1xxQU5FA&expires=1770839651
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d3.merichunidya.com:1686/hls/mevent10.m3u8?md5=pFvqzzVWUuMP2zKIGmbJCw&expires=1770846288
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Aston Villa - Brighton & Hove Albion (02:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d9.merichunidya.com:1686/hls/nastonvilla.m3u8?md5=l8VruLzi3yrD_QDqx1S__Q&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d15.epicquesthero.com:999/hls/nastonvilla.m3u8?md5=5DcixEcRCoggCIjPNIsXKQ&expires=1770846293
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Brentford - Arsenal (03:00PM 02/12/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d12.epicquesthero.com:999/hls/nbrentford.m3u8?md5=TipYUcnwYDyhqCb4EPtFgQ&expires=1770839656
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d12.epicquesthero.com:999/hls/nbrentford.m3u8?md5=oM9OCtQTkj-v7nR3TravUg&expires=1770846308
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Crystal Palace - Burnley (02:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d3.merichunidya.com:1686/hls/ncrystalpalace.m3u8?md5=WIo2voIZzWrZLd8Pifzy3A&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d4.merichunidya.com:1686/hls/ncrystalpalace.m3u8?md5=zFULknGReC2E5aodfjxVWA&expires=1770846289
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Manchester City - Fulham (02:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d15.epicquesthero.com:999/hls/nmanchestercity.m3u8?md5=tYeXeGgAtghdK0uMdHFMEQ&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d14.epicquesthero.com:999/hls/nmanchestercity.m3u8?md5=3CLVaVIVkTfjR68hamGiOQ&expires=1770846295
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Nottingham Forest - Wolverhampton Wanderers (02:30PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d1.merichunidya.com:1686/hls/nnottinghamforest.m3u8?md5=xFitsFjD7y4XmN7fxv_vTg&expires=1770839655
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d12.epicquesthero.com:999/hls/nnottinghamforest.m3u8?md5=E31-aXR5GxOd4zLAWiTvUQ&expires=1770846289
 #EXTINF:-1 group-title="PREMIER LEAGUE (EH)",Sunderland - Liverpool (03:15PM 02/11/26)
 #EXTVLCOPT:http-origin=https://exposestrat.com
 #EXTVLCOPT:http-referrer=https://exposestrat.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Ubuntu; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
-https://d10.merichunidya.com:1686/hls/nsunderland.m3u8?md5=M-nm-7X-38wmXJTxTeDYGQ&expires=1770839655
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Alcione vs Ospitaletto (Sky Sport 253) (12:00PM 2/11/2026)
-#EXTVLCOPT:http-origin=https://cdn-live.tv
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnf3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+https://d15.epicquesthero.com:999/hls/nsunderland.m3u8?md5=tFqP6vQJk6-kJviofn-DSw&expires=1770846296
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Alianza Lima vs 2 de Mayo (beIN SPORTS 2) (7:30PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -4759,11 +4714,16 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3akjiy5iclnbigbi23vjqia7tqpxeh4735kfie453hkfhvyuu2l6newy3cr2mwazs4/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", APOEL vs Enosis (Sky Sport 3) (11:00AM 2/11/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Alianza Lima vs 2 de Mayo (Sky Sport 4) (7:30PM 2/10/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmmk2nxu33qzbxxbmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmrk2nxu33qzbxxbmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", APOEL vs Enosis (Sky Sport 251) (11:00AM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmng3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Arkadag vs Al Nassr (beIN SPORTS 2) (8:45AM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -4819,6 +4779,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh27mbly5i43t5gwutdclohh7mmapzyh3sd6mjqvnckmmvivkuknvgnzjhkrrrovrgtcmrqa/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Aston Villa vs Brighton & Hove Albion (Hub Premier 3) (2:30PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3djrpvcts4mjlwis2lkff3c3t2n5ymq4tnsbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Aston Villa vs Brighton & Hove Albion (Nova Sport) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -4834,16 +4799,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmok2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Aston Villa vs Brighton & Hove Albion (Sky Sport 255) (2:30PM 2/11/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Aston Villa vs Brighton & Hove Albion (Sky Sport 2) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmni3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Aston Villa vs Brighton & Hove Albion (Sky Sport 256) (2:30PM 2/11/2026)
-#EXTVLCOPT:http-origin=https://cdn-live.tv
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnilc3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlk2nxu33qzbxxbmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Aston Villa vs Brighton & Hove Albion (SuperSport PSL) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -4989,6 +4949,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2lkfpiwzkrjoku4ydivkjh5nv4wfxhu33qvfhfprdemvpgffcqurtgaydgvfhfos3aj2tzmvuoo5whtsebor5q/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Bayern München vs RB Leipzig (Sky Sport 257) (2:45PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnh3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Bayern München vs RB Leipzig (Sky Sport Mix) (2:45PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5104,6 +5069,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh27mbly5i43t5gwutdcloqx5mmapzyh3sd6mjqvnckmmvivkuknvgnzjhkrrrovrgtcmrqa/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Crystal Palace vs Burnley (Hub Premier 4) (2:30PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3djrpvcts4mjlwis2lkfjlc3t2n5ymq4tnsbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Crystal Palace vs Burnley (Italia 1) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5119,16 +5089,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlk2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Crystal Palace vs Burnley (Sky Sport 2) (2:30PM 2/11/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Crystal Palace vs Burnley (Sky Sport 3) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlk2nxu33qzbxxbmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Crystal Palace vs Burnley (Sky Sport Premier League) (2:30PM 2/11/2026)
-#EXTVLCOPT:http-origin=https://cdn-live.tv
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gknvkqxq5dqpw3ho4dmj5ofnrc2kfouxfc5sonfaus6vkmvwuk6mbhwvkmopj6x67weysyxwwsqjowwks2r/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmmk2nxu33qzbxxbmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Crystal Palace vs Burnley (SuperSport Action) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5139,6 +5104,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh26lbgzoucvjrjwuvvevghhu7l7p23lzmlok5fvnlk2lonvwus6vkpu4s2psnovstc4njrfdkkvysyxw53mpheicvk7/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Dolomiti Bellunesi vs Pergolettese (Sky Sport 254) (12:00PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnjlc3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Empoli vs Juve Stabia (FOX Soccer Plus) (2:00PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5164,6 +5134,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2oj5skuuutmrmfauvenfqg46tpodeh27vrmfrfm6e4mvgwexdcrnsuwzspurf2lfusjnkf5dszqf2hw/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Giana Erminio vs Lecco (Sky Sport 254) (2:30PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnjlc3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Go Ahead Eagles vs Heerenveen (ESPN) (12:45PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5179,11 +5154,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2snbrvcydbkfhguve7tgtw64ginz5ldad6kfqz453dmzpe6zcqvbiu2s2ql6kzatkylrljvjvfpm/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Inter II vs Lumezzane (Sky Sport 251) (2:30PM 2/11/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Inter II vs Lumezzane (Sky Sport 253) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmng3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnf3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Levadiakos vs OFI (Arena Sport 2) (10:00AM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5239,6 +5214,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3akjiy5iclnbigbi23vjqia7tqpxeh4735kfie453hkfhvyuu2l6newy3cr2mwazs4/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Manchester City vs Fulham (Hub Premier 6) (2:30PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3djrpvcts4mjlwis2lkfilc3t2n5ymq4tnsbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Manchester City vs Fulham (Nova Sports 2) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5249,11 +5229,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2olrpfmw2xmfhzqtdek2ix44d5zb7h67lqjvkgq6somzgwdge2kzsgoyddlnifkti/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Manchester City vs Fulham (Sky Sport 257) (2:30PM 2/11/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Manchester City vs Fulham (Sky Sport 1) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnh3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmok2nxu33qzbxxbmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Manchester City vs Fulham (SuperSport Premier League) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5359,21 +5339,26 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3akjiy5i43t5gwutdclooh3mmapzyh3sd6mjqvnckmmvivkuknvgnzjhkrrrovrgtcmrqa/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Nottingham Forest vs Wolverhampton Wanderers (Hub Premier 5) (2:30PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3djrpvcts4mjlwis2lkfi3c3t2n5ymq4tnsbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Nottingham Forest vs Wolverhampton Wanderers (Nova Sports 4) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3jmzfzpi23jvmu2xcmkfjlc3t2n5ymq4t5sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Nottingham Forest vs Wolverhampton Wanderers (Sky Sport 4) (2:30PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmrk2nxu33qzbxxbmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Nottingham Forest vs Wolverhampton Wanderers (Sky Sport 9) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmwk2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Nottingham Forest vs Wolverhampton Wanderers (Sky Sport Bundesliga 4) (2:30PM 2/11/2026)
-#EXTVLCOPT:http-origin=https://cdn-live.tv
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gk3uoug64d6o52he3fwukgvq62tk6leyxe3unswaumwvfjfyyslnbqu3dmmp57mjrfrpn3wywfemoawo/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Nottingham Forest vs Wolverhampton Wanderers (SuperSport Football) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5384,11 +5369,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2rvjikqz24kgkwcvliusogy53xwfxhu33qvfrfnrdemvpgffcqurtgaydgvfhfos3aj2tzmvuoo5whtsebor5q/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Novara vs AlbinoLeffe (Sky Sport 251) (12:00PM 2/11/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Novara vs AlbinoLeffe (Sky Sport 253) (12:00PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmng3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnf3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Novara vs AlbinoLeffe (Sky Sport Max) (12:00PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5399,16 +5384,11 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh26mziiwz3cmkku4ydivkjlnpfrnz5g64gij5qzg5lkk5h2gusnvjlvyzcqvbtvyuk5sstz7kfknr44ralupm/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Pro Patria vs Cittadella (Sky Sport 254) (2:30PM 2/11/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Pro Patria vs Cittadella (Sky Sport 255) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnjlc3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Pro Vercelli vs Vicenza (Sky Sport 253) (2:30PM 2/11/2026)
-#EXTVLCOPT:http-origin=https://cdn-live.tv
-#EXTVLCOPT:http-referrer=https://cdn-live.tv/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmnf3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmlmni3c3t2n5ymq5d7sbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Pro Vercelli vs Vicenza (Sky Sport Calcio) (2:30PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5449,6 +5429,26 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3jmzfzpi23jvmu2xe7tgtw64ginvzldad6kfqz453dmzpe6zcqvbiu2s2ql6kzatkylrljvjvfpm/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Simulcast vs Simulcast (Canal Sport360) (2:30PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh26mbrzo2utjroguysrnfilxmlopjxxbsdrlsgwm52um2lgcs2psnjwqusrrvggetfdsshe3de5pheic5d3/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Simulcast vs Simulcast (Hub Premier 1) (2:30PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3djrpvcts4mjlwis2lkfg3c3t2n5ymq4tnsbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Simulcast vs Simulcast (Sky Sport 8) (2:30PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gmvk2nxu33qzb4ylmmalnggpllknbhuwydgvfsguuknvgk2lh24m5hwow4qor5q/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Simulcast vs Simulcast (Sport 2) (2:30PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2oj5skuuutrojf4vlbsnmxi55rqb7ha7oilnnwpbkyj5igazspurszjge3vbve2z5hkflu2/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Sunderland vs Liverpool (Arena 2 Premium) (3:15PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5514,16 +5514,21 @@ https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgng
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3akjiy5iclnbigbi26vjqia7tqpxeh4735kfie453hkfhvyuu2l6newy3cr2mwazs4/index.m3u8
-#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Sunderland vs Liverpool (NBC Universo) (3:15PM 2/11/2026)
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Sunderland vs Liverpool (Hub Premier 2) (3:15PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
-https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3jmfqfcukymzrgaysmrvqg46tpodeia7vrmfrfm6e4mvgwexdcrnsuwzspurf2lfusjnkf5dszqf2hw/index.m3u8
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3djrpvcts4mjlwis2lkfglc3t2n5ymq4tnsbogrbljt5ifyuk6s5hu4t3evjjfxfvdufqgtf5izcaxi6y/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Sunderland vs Liverpool (Nova Sports Prime) (3:15PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
 https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh3jmzfzpi23jvmu2xcmkghh25dyocyw46tpkgsfi6evm5iewumwvfue2xdcrnfv42c6j5qzmx3apn3wy6oiqf2hw/index.m3u8
+#EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Sunderland vs Liverpool (Sky Sport Premier League) (3:15PM 2/11/2026)
+#EXTVLCOPT:http-origin=https://cdn-live.tv
+#EXTVLCOPT:http-referrer=https://cdn-live.tv/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+https://cd.shinzillaaaaa.workers.dev/cd/p/on7x6623vgglwwsymojwg2vgk6uuws2nlvpgngkrt6ujtjtmpf4xa536xj5vuudcqvuzdfcwmbtjhh2onjnfcs26nbpe7gknvkqxq5dqpw3ho4dmj5ofnrc2kfouxfc5sonfaus6vkmvwuk6mbhwvkmopj6x67weysyxwwsqjowwks2r/index.m3u8
 #EXTINF:-1 tvg-logo="https://statics2.tcgfs39a2.xyz/img/webp/icon_st_ftb_active.webp" group-title="SOCCER (CD)", Sunderland vs Liverpool (Sky Sport Select) (3:15PM 2/11/2026)
 #EXTVLCOPT:http-origin=https://cdn-live.tv
 #EXTVLCOPT:http-referrer=https://cdn-live.tv/
@@ -5679,6 +5684,36 @@ https://indiasmellsverybad.xyz/live/fulham-vs-manchester-city1080p/index.m3u8
 #EXTVLCOPT:http-referrer=https://streamfree.to/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
 https://streamfree.to/live/fulham-vs-manchester-city1080p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_lazio-vs-bologna_Lazio_vs_Bologna" group-title="SOCCER (SF)",Lazio vs Bologna (Coppa Italia) (540p - CDN) (02/11/26 03:00PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://indiasmellsverybad.xyz/live/lazio-vs-bologna540p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_lazio-vs-bologna_Lazio_vs_Bologna" group-title="SOCCER (SF)",Lazio vs Bologna (Coppa Italia) (540p - MAIN) (02/11/26 03:00PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://streamfree.to/live/lazio-vs-bologna540p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_lazio-vs-bologna_Lazio_vs_Bologna" group-title="SOCCER (SF)",Lazio vs Bologna (Coppa Italia) (720p - CDN) (02/11/26 03:00PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://indiasmellsverybad.xyz/live/lazio-vs-bologna720p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_lazio-vs-bologna_Lazio_vs_Bologna" group-title="SOCCER (SF)",Lazio vs Bologna (Coppa Italia) (720p - MAIN) (02/11/26 03:00PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://streamfree.to/live/lazio-vs-bologna720p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_lazio-vs-bologna_Lazio_vs_Bologna" group-title="SOCCER (SF)",Lazio vs Bologna (Coppa Italia) (1080p - CDN) (02/11/26 03:00PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://indiasmellsverybad.xyz/live/lazio-vs-bologna1080p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_lazio-vs-bologna_Lazio_vs_Bologna" group-title="SOCCER (SF)",Lazio vs Bologna (Coppa Italia) (1080p - MAIN) (02/11/26 03:00PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://streamfree.to/live/lazio-vs-bologna1080p/index.m3u8
 #EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_liverpool-vs-sunderland_Liverpool_vs_Sunderland" group-title="SOCCER (SF)",Liverpool vs Sunderland (Premier League) (540p - CDN) (02/11/26 03:15PM)
 #EXTVLCOPT:http-origin=https://streamfree.to
 #EXTVLCOPT:http-referrer=https://streamfree.to/
@@ -5709,6 +5744,36 @@ https://indiasmellsverybad.xyz/live/liverpool-vs-sunderland1080p/index.m3u8
 #EXTVLCOPT:http-referrer=https://streamfree.to/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
 https://streamfree.to/live/liverpool-vs-sunderland1080p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_rb-leipzig-vs-bayern-munich_RB_Leipzig_vs_Bayern_Munich" group-title="SOCCER (SF)",RB Leipzig vs Bayern Munich (DFB-Pokal) (540p - CDN) (02/11/26 02:45PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://indiasmellsverybad.xyz/live/rb-leipzig-vs-bayern-munich540p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_rb-leipzig-vs-bayern-munich_RB_Leipzig_vs_Bayern_Munich" group-title="SOCCER (SF)",RB Leipzig vs Bayern Munich (DFB-Pokal) (540p - MAIN) (02/11/26 02:45PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://streamfree.to/live/rb-leipzig-vs-bayern-munich540p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_rb-leipzig-vs-bayern-munich_RB_Leipzig_vs_Bayern_Munich" group-title="SOCCER (SF)",RB Leipzig vs Bayern Munich (DFB-Pokal) (720p - CDN) (02/11/26 02:45PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://indiasmellsverybad.xyz/live/rb-leipzig-vs-bayern-munich720p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_rb-leipzig-vs-bayern-munich_RB_Leipzig_vs_Bayern_Munich" group-title="SOCCER (SF)",RB Leipzig vs Bayern Munich (DFB-Pokal) (720p - MAIN) (02/11/26 02:45PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://streamfree.to/live/rb-leipzig-vs-bayern-munich720p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_rb-leipzig-vs-bayern-munich_RB_Leipzig_vs_Bayern_Munich" group-title="SOCCER (SF)",RB Leipzig vs Bayern Munich (DFB-Pokal) (1080p - CDN) (02/11/26 02:45PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://indiasmellsverybad.xyz/live/rb-leipzig-vs-bayern-munich1080p/index.m3u8
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_rb-leipzig-vs-bayern-munich_RB_Leipzig_vs_Bayern_Munich" group-title="SOCCER (SF)",RB Leipzig vs Bayern Munich (DFB-Pokal) (1080p - MAIN) (02/11/26 02:45PM)
+#EXTVLCOPT:http-origin=https://streamfree.to
+#EXTVLCOPT:http-referrer=https://streamfree.to/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://streamfree.to/live/rb-leipzig-vs-bayern-munich1080p/index.m3u8
 #EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_real-sociedad-vs-athletic-club_Real_Sociedad_vs_Athletic_Club" group-title="SOCCER (SF)",Real Sociedad vs Athletic Club (Copa del Rey) (540p - CDN) (02/11/26 03:00PM)
 #EXTVLCOPT:http-origin=https://streamfree.to
 #EXTVLCOPT:http-referrer=https://streamfree.to/
