@@ -16,4 +16,5 @@ DISCLAIMER: The scripts and links provided on this GitHub page are for informati
 [![MultiSports Updater](https://github.com/KPRDROP/kprhub/actions/workflows/multisports.yml/badge.svg)](https://github.com/KPRDROP/kprhub/actions/workflows/multisports.yml)
 </div>
 
+<div align="center">
 [![PLAYITS Updater](https://github.com/KPRDROP/kprhub/actions/workflows/playits.yml/badge.svg)](https://github.com/KPRDROP/kprhub/actions/workflows/playits.yml)
