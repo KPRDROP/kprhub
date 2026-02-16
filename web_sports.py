@@ -54,7 +54,7 @@ def fetch_source():
         return r.read().decode("utf-8", errors="ignore")
 
 def main():
-    print("🚀 Running Web Sports playlist converter")
+    print("Running Web Sports playlist converter")
 
     raw = fetch_source()
     lines = [l.strip() for l in raw.splitlines() if l.strip()]
@@ -104,12 +104,12 @@ def main():
             i += 1
 
     if added == 0:
-        raise RuntimeError("❌ No streams parsed — source format changed")
+        raise RuntimeError("No streams parsed — source format changed")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(out))
 
-    print(f"✅ {added} streams written to {OUTPUT_FILE}")
+    print(f"{added} streams written to {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()
