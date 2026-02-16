@@ -106,7 +106,7 @@ def main():
     print("✍ Writing TiviMate playlist...")
     OUT_TIVI.write_text(build_tivimate_playlist(raw), encoding="utf-8")
 
-    print("✅ Done:")
+    print("Done:")
     print(f" - {OUT_VLC}")
     print(f" - {OUT_TIVI}")
 
