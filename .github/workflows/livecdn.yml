@@ -1,4 +1,4 @@
-name: 📡 Update LiveCDN Playlists
+name: LiveCDN Updater
 
 on:
   workflow_dispatch:
@@ -18,24 +18,24 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 🐍 Setup Python
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
 
-      - name: 📦 Install deps
+      - name: Install deps
         run: |
           pip install --upgrade pip
           pip install requests
 
-      - name: 🚀 Run LiveCDN updater
+      - name: Run LiveCDN updater
         env:
           LIVECDN_PLAYLIST_URL: ${{ secrets.LIVECDN_PLAYLIST_URL }}
         run: |
           python livecdn.py
           ls -lh livecdn_*.m3u8
 
-      - name: 📤 Commit & Push
+      - name: Commit & Push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -43,10 +43,10 @@ jobs:
           git add livecdn_vlc.m3u8 livecdn_tivimate.m3u8
 
           if git diff --cached --quiet; then
-            echo "✅ No changes to commit"
+            echo "No changes to commit"
             exit 0
           fi
 
-          git commit -m "📡 Update LiveCDN playlists"
+          git commit -m "Update LiveCDN playlists"
           git pull origin main --rebase || true
           git push origin main
