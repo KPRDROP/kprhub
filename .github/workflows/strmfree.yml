@@ -1,4 +1,4 @@
-name: 🔄 Update Strm Free TiviMate Playlist
+name: Strm Free Updater
 
 on:
   schedule:
@@ -14,10 +14,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: 🐍 Setup Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -27,16 +27,16 @@ jobs:
           pip install playwright selectolax httpx[http2] pytz
           playwright install chromium
 
-      - name: ▶️ Run StreamFree scraper
+      - name: Run StreamFree scraper
         env:
           STRM_FREE_M3U_URL: ${{ secrets.STRM_FREE_M3U_URL }}
         run: |
           python strmfree.py
 
-      - name: 💾 Commit & push if changed
+      - name: Commit & push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add strm_free_tivimate.m3u8
-          git diff --cached --quiet || git commit -m "🔄 Update StreamFree TiviMate playlist"
+          git diff --cached --quiet || git commit -m "Update StreamFree TiviMate playlist"
           git push
