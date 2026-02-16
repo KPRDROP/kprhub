@@ -1,4 +1,4 @@
-name: ▶️ Update PLAYITS
+name: PLAYITS Updater
 
 on:
   workflow_dispatch:
@@ -41,7 +41,7 @@ jobs:
           git add playits_vlc.m3u8
 
           if git diff --cached --quiet; then
-            echo "✅ No changes detected"
+            echo "No changes detected"
             exit 0
           fi
 
