@@ -6,3 +6,12 @@ DISCLAIMER: The scripts and links provided on this GitHub page are for informati
 
 &nbsp;
 <div align="center">
+
+[![CricHD Updater](https://github.com/KPRDROP/kprhub/actions/workflows/crihd.yml/badge.svg)](https://github.com/KPRDROP/kprhub/actions/workflows/crihd.yml)
+&nbsp;
+[![iStream Updater](https://github.com/KPRDROP/kprhub/actions/workflows/istreameast.yml/badge.svg)](https://github.com/KPRDROP/kprhub/actions/workflows/istreameast.yml)
+&nbsp;
+[![LiveCDN Updater](https://github.com/KPRDROP/kprhub/actions/workflows/livecdn.yml/badge.svg)](https://github.com/KPRDROP/kprhub/actions/workflows/livecdn.yml)
+&nbsp;
+[![MultiSports Updater](https://github.com/KPRDROP/kprhub/actions/workflows/multisports.yml/badge.svg)](https://github.com/KPRDROP/kprhub/actions/workflows/multisports.yml)
+</div>
