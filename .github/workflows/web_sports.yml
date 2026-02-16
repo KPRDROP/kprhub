@@ -1,4 +1,4 @@
-name: ▶️ Web Sports Playlist Updater
+name: Web Sports Updater
 
 on:
   schedule:
@@ -15,25 +15,25 @@ jobs:
     timeout-minutes: 10
 
     steps:
-      - name: 📥 Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: 🐍 Set up Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: 🚀 Run Web Sports playlist script
+      - name: Run Web Sports playlist script
         env:
           WEB_SPORTS_M3U_URL: ${{ secrets.WEB_SPORTS_M3U_URL }}
         run: |
           python web_sports.py
 
-      - name: 📤 Commit & push changes
+      - name: Commit & push changes
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
 
           git add web_sports_tivimate.m3u8
-          git commit -m "🔄 Auto-update Web Sports TiviMate playlist" || echo "No changes"
+          git commit -m "Auto-update Web Sports TiviMate playlist" || echo "No changes"
           git push
