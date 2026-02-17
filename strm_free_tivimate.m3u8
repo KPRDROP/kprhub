@@ -1,4 +1,10 @@
 #EXTM3U
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_juventus-vs-galatasaray_Juventus_vs_Galatasaray" group-title="StrmFree - 540p",[02/17 12:45 PM] Juventus vs Galatasaray [540p]
+https://streamfree.to/live/juventus-vs-galatasaray540p/index.m3u8|Referer=https://streamfree.to/embed/soccer/juventus-vs-galatasaray?server=origin&quality=540p|Origin=https://streamfree.to|User-Agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A146.0%29%20Gecko%2F20100101%20Firefox%2F146.0
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_juventus-vs-galatasaray_Juventus_vs_Galatasaray" group-title="StrmFree - 720p",[02/17 12:45 PM] Juventus vs Galatasaray [720p]
+https://streamfree.to/live/juventus-vs-galatasaray720p/index.m3u8|Referer=https://streamfree.to/embed/soccer/juventus-vs-galatasaray?server=origin&quality=720p|Origin=https://streamfree.to|User-Agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A146.0%29%20Gecko%2F20100101%20Firefox%2F146.0
+#EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/soccer_juventus-vs-galatasaray_Juventus_vs_Galatasaray" group-title="StrmFree - 1080p",[02/17 12:45 PM] Juventus vs Galatasaray [1080p]
+https://streamfree.to/live/juventus-vs-galatasaray1080p/index.m3u8|Referer=https://streamfree.to/embed/soccer/juventus-vs-galatasaray?server=origin&quality=1080p|Origin=https://streamfree.to|User-Agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A146.0%29%20Gecko%2F20100101%20Firefox%2F146.0
 #EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/hockey_france-vs-germany_France_vs_Germany" group-title="StrmFree - 540p",[02/17 06:10 AM] France vs Germany [540p]
 https://streamfree.to/live/france-vs-germany540p/index.m3u8|Referer=https://streamfree.to/embed/hockey/france-vs-germany?server=origin&quality=540p|Origin=https://streamfree.to|User-Agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%3B%20rv%3A146.0%29%20Gecko%2F20100101%20Firefox%2F146.0
 #EXTINF:-1 tvg-logo="https://streamfree.to/thumbnails/hockey_france-vs-germany_France_vs_Germany" group-title="StrmFree - 720p",[02/17 06:10 AM] France vs Germany [720p]
