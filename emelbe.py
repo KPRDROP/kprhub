@@ -14,8 +14,8 @@ USER_AGENT = (
 )
 
 BASE = "https://mlbwebcast.com/"
-OUTPUT_VLC = "emelbecast_VLC.m3u8"
-OUTPUT_TIVI = "emelbecast_TiviMate.m3u8"
+OUTPUT_VLC = "NHLWebcast_VLC.m3u8"
+OUTPUT_TIVI = "NHLWebcast_TiviMate.m3u8"
 HEADERS = {
     "referer": BASE,
     "origin": BASE,
@@ -267,9 +267,9 @@ async def main():
         fallback = set(re.findall(r'https?://mlbwebcast\.com/[-\w/]+', homepage_html))
         if fallback:
             event_links = [(u, "") for u in fallback]
-            log(f"Found {len(event_links)} fallback links via regex.")
+            log(f"ℹ️ Found {len(event_links)} fallback links via regex.")
     if not event_links:
-        log("No streams captured.")
+        log("❌ No streams captured.")
         return
 
     found_entries = []
