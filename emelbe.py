@@ -102,7 +102,7 @@ async def fetch_events_via_playwright(playwright):
 
         event_name = title_attr.strip() if title_attr else normalize_vs(raw_text)
         if not event_name:
-            event_name = "NFL Game"
+            event_name = "MLB Game"
 
         # ---- LOGO ----
         logo = DEFAULT_LOGO
