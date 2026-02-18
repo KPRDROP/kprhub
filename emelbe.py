@@ -66,7 +66,7 @@ async def fetch_events_via_playwright(playwright):
     # -------------------------------------------------
     # PRIMARY SELECTORS (robust)
     selectors = [
-        "a[href*='nflwebcast.com'][href*='live']",
+        "a[href*='mlbwebcast.com'][href*='live']",
         "a[href*='live']",
         "a.dracula-style-link",
         "a[href*='online-free']",
