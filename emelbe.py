@@ -196,7 +196,7 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=25000):
                     pass
 
         # -------------------------------
-        # BASE64 FALLBACK (NFLWebcast uses this)
+        # BASE64 FALLBACK (MLB Web uses this)
         # -------------------------------
         if not captured:
             blobs = re.findall(r'["\']([A-Za-z0-9+/=]{40,200})["\']', html)
