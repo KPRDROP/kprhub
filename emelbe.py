@@ -228,7 +228,7 @@ def write_playlists(entries):
         for title, url in entries:
             f.write(
                 f'#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" '
-                f'tvg-name="MLS" tvg-logo="{VLC_LOGO}" '
+                f'tvg-name="MLB" tvg-logo="{VLC_LOGO}" '
                 f'group-title="MLB GAME",{title}\n'
             )
             f.write(f"#EXTVLCOPT:http-referrer={HEADERS['referer']}\n")
@@ -250,7 +250,7 @@ def write_playlists(entries):
 
 
 async def main():
-    log("Starting MLS Webcast scraper (rebuilt)...")
+    log("Starting MLB Web updater (rebuilt)...")
 
     try:
         resp = requests.get(BASE, headers={"User-Agent": USER_AGENT}, timeout=15)
@@ -264,7 +264,7 @@ async def main():
     log(f"🔍 Found {len(event_links)} event page(s) from homepage.")
 
     if not event_links:
-        fallback = set(re.findall(r'https?://mlswebcast\.com/[-\w/]+', homepage_html))
+        fallback = set(re.findall(r'https?://mlbwebcast\.com/[-\w/]+', homepage_html))
         if fallback:
             event_links = [(u, "") for u in fallback]
             log(f"Found {len(event_links)} fallback links via regex.")
