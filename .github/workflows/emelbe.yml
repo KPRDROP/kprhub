@@ -5,6 +5,10 @@ on:
     - cron: "0 */2 * * *"
   workflow_dispatch:
 
+concurrency:
+  group: nhl-webcast-playlists
+  cancel-in-progress: true
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -12,6 +16,8 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
@@ -20,39 +26,39 @@ jobs:
 
       - name: Install Python dependencies
         run: |
+          pip install --upgrade pip
           pip install requests beautifulsoup4 lxml playwright
 
-      - name: Install Playwright Browsers (Firefox)
+      - name: Install Playwright Browsers (Firefox & Chromium)
         run: |
-          python -m playwright install firefox
+          python -m playwright install firefox chromium
+          python -m playwright install-deps firefox chromium
 
       - name: Run Webcast Updater
         run: |
-          echo "Starting MLB Web updater..."
+          echo "Starting MLB Web Updater..."
           python emelbe.py
 
-      - name: Check if playlist files exist
+      - name: Show outputs
         run: |
-          if [ ! -f emelbecast_VLC.m3u8 ]; then
-            echo "emelbecast_VLC.m3u8 not generated"
-            exit 1
-          fi
-          if [ ! -f emelbebcast_TiviMate.m3u8 ]; then
-            echo "emelbebcast_TiviMate.m3u8 not generated"
-            exit 1
-          fi
+          echo "----- emelbecast_VLC.m3u8 -----"
+          cat emelbecast_VLC.m3u8 || true
+          echo "----- emelbecast_TiviMate.m3u8 -----"
+          cat emelbecast_TiviMate.m3u8 || true
 
-      - name: Commit and Push Updated Playlists
+      - name: Commit and Push Updated Playlists (safe)
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          git add emelbebcast_TiviMate.m3u8 emelbebcast_TiviMate.m3u8
+          git add emelbecast_VLC.m3u8 emelbecast_TiviMate.m3u8 || true
 
           if git diff --cached --quiet; then
             echo "No changes to commit."
-          else
-            echo "Committing updated playlist files..."
-            git commit -m "Update MLB Web Playlists $(date +'%Y-%m-%d %H:%M:%S')"
-            git push
+            exit 0
           fi
+
+          git commit -m "Update MLBL Web playlists [auto]"
+
+          git pull --rebase origin main
+          git push origin main
