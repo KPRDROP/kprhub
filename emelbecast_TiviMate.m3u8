@@ -77,6 +77,8 @@ https://live.webcastserver.online/newz/newz/391.m3u8|referer=https://mlbwebcast.
 https://live.webcastserver.online/newz/newz/370.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Chicago-Cubs.svg",MLB Game
 https://live.webcastserver.online/newz/newz/625.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-San-Diego-Padres.svg",MLB Game
+https://live.webcastserver.online/newz/newz/386.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Seattle-Mariners.svg",MLB Game
 https://live.webcastserver.online/newz/newz/110.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Arizona-Diamondbacks.svg",MLB Game
