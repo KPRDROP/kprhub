@@ -1,21 +1,51 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="World vs Team Stars" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Team-Stars-Logo.svg" group-title="NBA Games - Live Games",World vs Team Stars
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Houston Rockets vs Charlotte Hornets" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Charlotte-Hornets-Logo.svg" group-title="NBA Games - Live Games",Houston Rockets vs Charlotte Hornets
 #EXTVLCOPT:http-origin=https://playembed.top
 #EXTVLCOPT:http-referrer=https://playembed.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/stars/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="TBD vs Team Stripes" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Team-Stripes-Logo.svg" group-title="NBA Games - Live Games",TBD vs Team Stripes
+https://gg.poocloud.in/hornets/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Brooklyn Nets vs Cleveland Cavaliers" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Cleveland-Cavaliers-Logo.svg" group-title="NBA Games - Live Games",Brooklyn Nets vs Cleveland Cavaliers
 #EXTVLCOPT:http-origin=https://playembed.top
 #EXTVLCOPT:http-referrer=https://playembed.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/stripes/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="TBD vs Team Stripes" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Team-Stripes-Logo.svg" group-title="NBA Games - Live Games",TBD vs Team Stripes
+https://gg.poocloud.in/cavaliers/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Atlanta Hawks vs Philadelphia 76ers" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Philadelphia-76ers-Logo.svg" group-title="NBA Games - Live Games",Atlanta Hawks vs Philadelphia 76ers
 #EXTVLCOPT:http-origin=https://playembed.top
 #EXTVLCOPT:http-referrer=https://playembed.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/stripes/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="TBD vs TBD" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/TBD-Logo.svg" group-title="NBA Games - Live Games",TBD vs TBD
+https://gg.poocloud.in/76ers/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Indiana Pacers vs Washington Wizards" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Washington-Wizards-Logo.svg" group-title="NBA Games - Live Games",Indiana Pacers vs Washington Wizards
 #EXTVLCOPT:http-origin=https://playembed.top
 #EXTVLCOPT:http-referrer=https://playembed.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/tbd/index.m3u8
+https://gg.poocloud.in/wizards/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Detroit Pistons vs New York Knicks" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/New-York-Knicks-Logo.svg" group-title="NBA Games - Live Games",Detroit Pistons vs New York Knicks
+#EXTVLCOPT:http-origin=https://playembed.top
+#EXTVLCOPT:http-referrer=https://playembed.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://gg.poocloud.in/knicks/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Toronto Raptors vs Chicago Bulls" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Chicago-Bulls-Logo.svg" group-title="NBA Games - Live Games",Toronto Raptors vs Chicago Bulls
+#EXTVLCOPT:http-origin=https://playembed.top
+#EXTVLCOPT:http-referrer=https://playembed.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://gg.poocloud.in/bulls/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Phoenix Suns vs San Antonio Spurs" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/San-Antonio-Spurs-Logo.svg" group-title="NBA Games - Live Games",Phoenix Suns vs San Antonio Spurs
+#EXTVLCOPT:http-origin=https://playembed.top
+#EXTVLCOPT:http-referrer=https://playembed.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://gg.poocloud.in/spurs/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Boston Celtics vs Golden State Warriors" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Golden-State-Warriors-Logo.svg" group-title="NBA Games - Live Games",Boston Celtics vs Golden State Warriors
+#EXTVLCOPT:http-origin=https://playembed.top
+#EXTVLCOPT:http-referrer=https://playembed.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://gg.poocloud.in/warriors/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Orlando Magic vs Sacramento Kings" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Sacramento-Kings-Logo.svg" group-title="NBA Games - Live Games",Orlando Magic vs Sacramento Kings
+#EXTVLCOPT:http-origin=https://playembed.top
+#EXTVLCOPT:http-referrer=https://playembed.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://gg.poocloud.in/kings/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Denver Nuggets vs LA Clippers" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/LA-Clippers-Logo.svg" group-title="NBA Games - Live Games",Denver Nuggets vs LA Clippers
+#EXTVLCOPT:http-origin=https://playembed.top
+#EXTVLCOPT:http-referrer=https://playembed.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://gg.poocloud.in/clippers/index.m3u8
