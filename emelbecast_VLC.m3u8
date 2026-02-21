@@ -141,7 +141,7 @@ https://live.webcastserver.online/newz/newz/113.m3u8
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://live.webcastserver.online/newz/newz/117.m3u8
+https://live.webcastserver.online/newz/newz/126.m3u8
 
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="San Francisco Giants Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-San-Francisco-Giants.svg" group-title="MLB GAME",San Francisco Giants Live Stream
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
