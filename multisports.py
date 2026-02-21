@@ -27,7 +27,7 @@ def fetch_playlist(url: str) -> list[str]:
 
 def main():
     if not SOURCE_URL:
-        raise RuntimeError("❌ MULTISPORT_URL secret is missing")
+        raise RuntimeError("MULTISPORT_URL secret is missing")
 
     lines = fetch_playlist(SOURCE_URL)
 
@@ -91,12 +91,12 @@ def main():
             output.append(line)
 
     if len(output) <= 1:
-        raise RuntimeError("❌ Output playlist is empty")
+        raise RuntimeError("Output playlist is empty")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(output))
 
-    print(f"✅ Saved {OUTPUT_FILE} ({len(output)} lines)")
+    print(f"Saved {OUTPUT_FILE} ({len(output)} lines)")
 
 
 if __name__ == "__main__":

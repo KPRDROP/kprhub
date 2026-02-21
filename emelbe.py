@@ -1,0 +1,291 @@
+#!/usr/bin/env python3
+
+import asyncio
+import re
+import sys
+from urllib.parse import urljoin, quote_plus
+
+from bs4 import BeautifulSoup
+from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
+
+# -------------------------------------------------
+USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) "
+    "Gecko/20100101 Firefox/146.0"
+)
+
+HOMEPAGE = "https://mlbwebcast.com/"
+
+OUTPUT_VLC = "emelbecast_VLC.m3u8"
+OUTPUT_TIVI = "emelbecast_TiviMate.m3u8"
+
+DEFAULT_LOGO = "https://i.postimg.cc/15QtFw4G/imageedit-1-2301834695.png"
+
+TVG_ID = "MLB.Baseball.Dummy.us"
+GROUP_TITLE = "MLB GAME"
+
+# -------------------------------------------------
+def log(*a):
+    print(*a)
+    sys.stdout.flush()
+
+# -------------------------------------------------
+def normalize_vs(text: str) -> str:
+    text = re.sub(r"\s*@\s*", " vs ", text, flags=re.I)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+# -------------------------------------------------
+async def fetch_events_via_playwright(playwright):
+    browser = await playwright.firefox.launch(headless=True)
+    context = await browser.new_context(user_agent=USER_AGENT)
+    page = await context.new_page()
+
+    log("Loading homepage…")
+
+    try:
+        await page.goto(HOMEPAGE, wait_until="domcontentloaded", timeout=30000)
+
+        # ⏳ allow JS to inject content
+        for _ in range(6):
+            await page.wait_for_timeout(1000)
+            anchors = await page.locator("a[href]").count()
+            if anchors > 20:
+                break
+
+        html = await page.content()
+
+    finally:
+        await page.close()
+        await context.close()
+        await browser.close()
+
+    soup = BeautifulSoup(html, "lxml")
+    events = []
+
+    # -------------------------------------------------
+    # PRIMARY SELECTORS (robust)
+    selectors = [
+        "a[href*='mlbwebcast.com'][href*='live']",
+        "a[href*='live']",
+        "a.dracula-style-link",
+        "a[href*='online-free']",
+    ]
+
+    anchors = []
+    for sel in selectors:
+        anchors.extend(soup.select(sel))
+
+    # -------------------------------------------------
+    # FALLBACK: regex scan (last resort)
+    if not anchors:
+        for m in re.finditer(r'https?://\.mlbwebcast\.com/[^"\']+', html):
+            anchors.append({"href": m.group(0)})
+
+    seen = set()
+
+    for a in anchors:
+        href = a.get("href") if hasattr(a, "get") else a["href"]
+        if not href:
+            continue
+
+        url = urljoin(HOMEPAGE, href)
+        if url in seen:
+            continue
+        seen.add(url)
+
+        # ---- TITLE ----
+        title_attr = a.get("title") if hasattr(a, "get") else None
+        raw_text = ""
+        if hasattr(a, "get_text"):
+            raw_text = a.get_text(" ", strip=True)
+
+        event_name = title_attr.strip() if title_attr else normalize_vs(raw_text)
+        if not event_name:
+            event_name = "MLB Game"
+
+        # ---- LOGO ----
+        logo = DEFAULT_LOGO
+        if hasattr(a, "find"):
+            img = a.find("img")
+            if img and img.get("src"):
+                logo = img["src"]
+
+        events.append({
+            "url": url,
+            "event": event_name,
+            "logo": logo
+        })
+
+    return events
+
+# -------------------------------------------------
+async def capture_m3u8_from_page(playwright, url, timeout_ms=25000):
+    browser = await playwright.firefox.launch(headless=True)
+    context = await browser.new_context(user_agent=USER_AGENT)
+    page = await context.new_page()
+
+    captured = None
+
+    # CRITICAL: capture from ALL frames
+    def on_request(req):
+        nonlocal captured
+        try:
+            if ".m3u8" in req.url and not captured:
+                captured = req.url
+        except Exception:
+            pass
+
+    context.on("requestfinished", on_request)
+
+    try:
+        try:
+            await page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
+        except PlaywrightTimeoutError:
+            pass
+
+        # Allow iframe + delayed JS
+        await page.wait_for_timeout(5000)
+
+        # -------------------------------
+        # CLICK MAIN PAGE
+        # -------------------------------
+        for _ in range(2):
+            try:
+                await page.mouse.click(400, 300)
+                await asyncio.sleep(1)
+            except Exception:
+                pass
+
+        # -------------------------------
+        # CLICK INSIDE IFRAMES
+        # -------------------------------
+        for frame in page.frames:
+            try:
+                await frame.click("body", timeout=1500)
+                await asyncio.sleep(1)
+            except Exception:
+                pass
+
+        # -------------------------------
+        # WAIT FOR STREAM (LONGER)
+        # -------------------------------
+        waited = 0.0
+        while waited < 25 and not captured:
+            await asyncio.sleep(0.8)
+            waited += 0.8
+
+        # -------------------------------
+        # HTML FALLBACK (PAGE + IFRAMES)
+        # -------------------------------
+        if not captured:
+            html = await page.content()
+            m = re.search(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', html)
+            if m:
+                captured = m.group(0)
+
+        if not captured:
+            for frame in page.frames:
+                try:
+                    fhtml = await frame.content()
+                    m = re.search(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', fhtml)
+                    if m:
+                        captured = m.group(0)
+                        break
+                except Exception:
+                    pass
+
+        # -------------------------------
+        # BASE64 FALLBACK (MLB Web uses this)
+        # -------------------------------
+        if not captured:
+            blobs = re.findall(r'["\']([A-Za-z0-9+/=]{40,200})["\']', html)
+            for b in blobs:
+                try:
+                    import base64
+                    dec = base64.b64decode(b).decode("utf-8", "ignore")
+                    if ".m3u8" in dec:
+                        captured = dec.strip()
+                        break
+                except Exception:
+                    pass
+
+    finally:
+        try:
+            context.remove_listener("requestfinished", on_request)
+        except Exception:
+            pass
+        try:
+            await page.close()
+            await context.close()
+            await browser.close()
+        except Exception:
+            pass
+
+    return captured
+
+# -------------------------------------------------
+def write_playlists(entries):
+    with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for e in entries:
+            f.write(
+                f'#EXTINF:-1 tvg-id="{TVG_ID}" '
+                f'tvg-name="{e["event"]}" '
+                f'tvg-logo="{e["logo"]}" '
+                f'group-title="{GROUP_TITLE}",{e["event"]}\n'
+            )
+            f.write(f"#EXTVLCOPT:http-referrer={HOMEPAGE}\n")
+            f.write(f"#EXTVLCOPT:http-origin={HOMEPAGE}\n")
+            f.write(f"#EXTVLCOPT:http-user-agent={USER_AGENT}\n")
+            f.write(f"{e['m3u8']}\n\n")
+
+    ua = quote_plus(USER_AGENT)
+    with open(OUTPUT_TIVI, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for e in entries:
+            f.write(
+                f'#EXTINF:-1 tvg-id="{TVG_ID}" '
+                f'tvg-name="{e["event"]}" '
+                f'tvg-logo="{e["logo"]}",{e["event"]}\n'
+            )
+            f.write(
+                f"{e['m3u8']}|referer={HOMEPAGE}|origin={HOMEPAGE}|user-agent={ua}\n"
+            )
+
+    log("Playlists saved")
+
+# -------------------------------------------------
+async def main():
+    log("Starting MLB Webcast Updater...")
+
+    async with async_playwright() as p:
+        events = await fetch_events_via_playwright(p)
+        log(f"Found {len(events)} events")
+
+        if not events:
+            log("No events detected")
+            return
+
+        collected = []
+
+        for i, ev in enumerate(events, 1):
+            log(f"[{i}/{len(events)}] {ev['event']}")
+            m3u8 = await capture_m3u8_from_page(p, ev["url"])
+
+            if m3u8:
+                log(f"STREAM FOUND: {m3u8}")
+                ev["m3u8"] = m3u8
+                collected.append(ev)
+            else:
+                log("  No streams found")
+
+    if not collected:
+        log("No streams captured.")
+        return
+
+    write_playlists(collected)
+
+# -------------------------------------------------
+if __name__ == "__main__":
+    asyncio.run(main())

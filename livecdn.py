@@ -12,7 +12,7 @@ NEW_EPG = 'url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1
 
 def main():
     if not SOURCE_URL:
-        print("❌ Missing LIVECDN_PLAYLIST_URL secret", file=sys.stderr)
+        print("Missing LIVECDN_PLAYLIST_URL secret", file=sys.stderr)
         sys.exit(1)
 
     print("📥 Fetching source playlist...")
@@ -107,7 +107,7 @@ def main():
     with open(OUTPUT_TIVI, "w", encoding="utf-8") as f:
         f.write("\n".join(tivi_out) + "\n")
 
-    print("✅ Playlists generated:")
+    print("Playlists generated:")
     print(f"   - {OUTPUT_VLC}")
     print(f"   - {OUTPUT_TIVI}")
 

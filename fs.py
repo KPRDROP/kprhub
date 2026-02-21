@@ -146,7 +146,7 @@ async def fetch_fstv_html():
                 await page.wait_for_selector(".item-channel", timeout=15000)
                 break  # success
             except Exception as e:
-                print(f"⚠️ Attempt {attempt + 1} failed: {e}")
+                print(f"Attempt {attempt + 1} failed: {e}")
                 if attempt == 2:
                     raise
 
@@ -210,9 +210,9 @@ async def main():
         with open("fs24.m3u8", "w", encoding="utf-8") as f:
             f.writelines(playlist_lines)
 
-        print(f"✅ Generated playlist with {len(playlist_lines)//2} channels in FSTV24.m3u8")
+        print(f"Generated playlist with {len(playlist_lines)//2} channels in FSTV24.m3u8")
     except Exception as e:
-        print(f"❌ Failed to generate playlist: {e}")
+        print(f"Failed to generate playlist: {e}")
 
 if __name__ == "__main__":
     asyncio.run(main())

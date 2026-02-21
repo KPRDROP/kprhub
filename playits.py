@@ -31,13 +31,13 @@ def get_m3u8_istplay(stream_id, headers):
         if source and source.get("src"):
             return stream_id, source["src"]
     except Exception as e:
-        print(f"⚠️ Error (stream_id={stream_id}): {e}", file=sys.stderr)
+        print(f"Error (stream_id={stream_id}): {e}", file=sys.stderr)
     return stream_id, None
 
 DEFAULT_LOGO = "https://cdn-icons-png.flaticon.com/512/531/531313.png"
 FALLBACK_EPG = "Sports.Dummy.us"
 
-# ✅ RESTORED EXACT MAP (UNCHANGED)
+# RESTORED EXACT MAP (UNCHANGED)
 SPORT_TRANSLATION_ISTPLAY = {
     "HORSE_RACING": {"name": "HORSE RACING", "logo": "https://medya-cdn.tjk.org/haberftp/2022/ayyd12082022.jpg", "epg": "Racing.Dummy.us"},
     "FOOTBALL": {"name": "FOOTBALL", "logo": "https://thepfsa.co.uk/wp-content/uploads/2022/06/Playing-Football.jpg", "epg": "Football.Dummy.us"},
@@ -66,11 +66,11 @@ SPORT_TRANSLATION_ISTPLAY = {
 }
 
 def main():
-    print("📢 [IstPlay] Fetching stream list...")
+    print("[IstPlay] Fetching stream list...")
 
     url_list = os.environ.get("ISTPLAY_API_URL")
     if not url_list:
-        print("❌ Missing ISTPLAY_API_URL secret", file=sys.stderr)
+        print("Missing ISTPLAY_API_URL secret", file=sys.stderr)
         return
 
     headers = {
@@ -101,7 +101,7 @@ def main():
             if event.get("stream_id"):
                 all_events.append((sport_key, event))
 
-    print(f"🔗 [IstPlay] Fetching links for {len(all_events)} events...")
+    print(f"[IstPlay] Fetching links for {len(all_events)} events...")
 
     with ThreadPoolExecutor(max_workers=20) as ex:
         futures = {
@@ -136,7 +136,7 @@ def main():
     with open("playits_vlc.m3u8", "w", encoding="utf-8") as f:
         f.write("\n".join(output))
 
-    print(f"💾 M3U saved ({count} streams).")
+    print(f"M3U saved ({count} streams).")
 
 if __name__ == "__main__":
     main()

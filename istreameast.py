@@ -157,10 +157,10 @@ async def main():
 
             stream = await extract_stream(session, ev["url"])
             if not stream:
-                log("  ⚠️ No stream found")
+                log("No stream found")
                 continue
 
-            log(f"  ✅ STREAM FOUND: {stream}")
+            log(f"  STREAM FOUND: {stream}")
 
             entry = {
                 "name": key,
@@ -176,7 +176,7 @@ async def main():
             entries.append(entry)
 
     if not entries:
-        log("❌ No streams collected")
+        log("No streams collected")
         return
 
     # ================= WRITE M3U =================
@@ -198,7 +198,7 @@ async def main():
             )
 
     save_cache(cache)
-    log("✅ istreameast.m3u saved")
+    log("istreameast.m3u saved")
 
 
 if __name__ == "__main__":

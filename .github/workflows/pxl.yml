@@ -1,4 +1,4 @@
-name: 📺 PixelSports Playlists Updater
+name: Pixel Updater
 
 on:
   schedule:
@@ -14,25 +14,25 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Checkout repo
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: 🐍 Setup Python
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
-      - name: 📦 Install deps
+      - name: Install deps
         run: |
           pip install requests
 
-      - name: ▶️ PXL Generate playlists
+      - name: PXL Generate playlists
         env:
           PXL_BASE_URL: ${{ secrets.PXL_BASE_URL }}
         run: |
           python pxl_push.py
 
-      - name: 💾 Commit & push
+      - name: Commit & push
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"

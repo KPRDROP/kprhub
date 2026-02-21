@@ -76,7 +76,7 @@ def extract_base_url_and_referer(line: str) -> tuple[str, str]:
 
 def main():
     if not SOURCE_URL:
-        raise RuntimeError("❌ STRM_FREE_M3U_URL secret is missing")
+        raise RuntimeError("STRM_FREE_M3U_URL secret is missing")
 
     lines = fetch_playlist(SOURCE_URL)
 
@@ -121,12 +121,12 @@ def main():
             current_logo = None
 
     if len(output) <= 1:
-        raise RuntimeError("❌ Output playlist is empty")
+        raise RuntimeError("Output playlist is empty")
 
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(output))
 
-    print(f"✅ Saved {OUTPUT_FILE} ({len(output) - 1} entries)")
+    print(f"Saved {OUTPUT_FILE} ({len(output) - 1} entries)")
 
 
 if __name__ == "__main__":
