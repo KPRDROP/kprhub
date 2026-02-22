@@ -29,8 +29,6 @@ https://live.webcastserver.online/newz/newz/117.m3u8|referer=https://mlbwebcast.
 https://live.webcastserver.online/newz/newz/106.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Los Angeles Dodgers Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Los-Angeles-Dodgers.svg",Los Angeles Dodgers Live Stream
 https://live.webcastserver.online/newz/newz/133.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Miami Marlins Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Miami-Marlins.svg",Miami Marlins Live Stream
-https://live.webcastserver.online/newz/newz/111.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Milwaukee Brewers Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Milwaukee-Brewers.svg",Milwaukee Brewers Live Stream
 https://live.webcastserver.online/newz/newz/130.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Minnesota Twins Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Minnesota-Twins.svg",Minnesota Twins Live Stream
@@ -74,7 +72,7 @@ https://live.webcastserver.online/newz/newz/132.m3u8|referer=https://mlbwebcast.
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Houston-Astros.svg",MLB Game
 https://live.webcastserver.online/newz/newz/127.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Tampa-Bay-Rays.svg",MLB Game
-https://live.webcastserver.online/newz/newz/115.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+https://live.webcastserver.online/newz/newz/113.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Pittsburgh-Pirates.svg",MLB Game
 https://live.webcastserver.online/newz/newz/113.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Toronto-Blue-Jays.svg",MLB Game
