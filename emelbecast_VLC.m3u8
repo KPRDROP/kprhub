@@ -27,7 +27,7 @@ https://live.webcastserver.online/newz/newz/237.m3u8
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://live.webcastserver.online/newz/newz/120.m3u8
+https://live.webcastserver.online/newz/newz/121.m3u8
 
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Chicago Cubs Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Chicago-Cubs.svg" group-title="MLB GAME",Chicago Cubs Live Stream
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
