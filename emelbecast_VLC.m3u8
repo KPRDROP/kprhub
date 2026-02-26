@@ -197,6 +197,66 @@ https://pro.packcast.top/newz/newz/135.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 https://live.webcastserver.online/newz/newz/434.m3u8
 
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Detroit-Tigers.svg" group-title="MLB GAME",MLB Game
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://live.webcastserver.online/newz/newz/122.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Baltimore-Orioles.svg" group-title="MLB GAME",MLB Game
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://live.webcastserver.online/newz/newz/237.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Tampa-Bay-Rays.svg" group-title="MLB GAME",MLB Game
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://live.webcastserver.online/newz/newz/115.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Boston-Red-Sox.svg" group-title="MLB GAME",MLB Game
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://live.webcastserver.online/newz/newz/120.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-New-York-Mets.svg" group-title="MLB GAME",MLB Game
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://live.webcastserver.online/newz/newz/109.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Houston-Astros.svg" group-title="MLB GAME",MLB Game
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://live.webcastserver.online/newz/newz/127.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Atlanta-Braves.svg" group-title="MLB GAME",MLB Game
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://live.webcastserver.online/newz/newz/129.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-New-York-Yankees.svg" group-title="MLB GAME",MLB Game
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://live.webcastserver.online/newz/newz/124.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Washington-Nationals.svg" group-title="MLB GAME",MLB Game
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://live.webcastserver.online/newz/newz/112.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Philadelphia-Phillies.svg" group-title="MLB GAME",MLB Game
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://live.webcastserver.online/newz/newz/114.m3u8
+
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Minnesota-Twins.svg" group-title="MLB GAME",MLB Game
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
@@ -208,12 +268,6 @@ https://live.webcastserver.online/newz/newz/121.m3u8
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 https://live.webcastserver.online/newz/newz/113.m3u8
-
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Houston-Astros.svg" group-title="MLB GAME",MLB Game
-#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
-#EXTVLCOPT:http-origin=https://mlbwebcast.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://live.webcastserver.online/newz/newz/127.m3u8
 
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB Game" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-St-Louis-Cardinals.svg" group-title="MLB GAME",MLB Game
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
