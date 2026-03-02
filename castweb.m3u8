@@ -1,56 +1,21 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="San Antonio Spurs vs New York Knicks" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/New-York-Knicks-Logo.svg" group-title="NBA Games - Live Games",San Antonio Spurs vs New York Knicks
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Houston Rockets vs Washington Wizards" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Washington-Wizards-Logo.svg" group-title="NBA Games - Live Games",Houston Rockets vs Washington Wizards
 #EXTVLCOPT:http-origin=https://playembed.top
 #EXTVLCOPT:http-referrer=https://playembed.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/knicks/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Cleveland Cavaliers vs Brooklyn Nets" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Brooklyn-Nets-Logo.svg" group-title="NBA Games - Live Games",Cleveland Cavaliers vs Brooklyn Nets
+https://gg.poocloud.in/wizards/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Boston Celtics vs Milwaukee Bucks" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Milwaukee-Bucks-Logo.svg" group-title="NBA Games - Live Games",Boston Celtics vs Milwaukee Bucks
 #EXTVLCOPT:http-origin=https://playembed.top
 #EXTVLCOPT:http-referrer=https://playembed.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/nets/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Milwaukee Bucks vs Chicago Bulls" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Chicago-Bulls-Logo.svg" group-title="NBA Games - Live Games",Milwaukee Bucks vs Chicago Bulls
+https://gg.poocloud.in/bucks/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Denver Nuggets vs Utah Jazz" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Utah-Jazz-Logo.svg" group-title="NBA Games - Live Games",Denver Nuggets vs Utah Jazz
 #EXTVLCOPT:http-origin=https://playembed.top
 #EXTVLCOPT:http-referrer=https://playembed.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/bulls/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Minnesota Timberwolves vs Denver Nuggets" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Denver-Nuggets-Logo.svg" group-title="NBA Games - Live Games",Minnesota Timberwolves vs Denver Nuggets
+https://gg.poocloud.in/jazz/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="LA Clippers vs Golden State Warriors" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Golden-State-Warriors-Logo.svg" group-title="NBA Games - Live Games",LA Clippers vs Golden State Warriors
 #EXTVLCOPT:http-origin=https://playembed.top
 #EXTVLCOPT:http-referrer=https://playembed.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/nuggets/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Memphis Grizzlies vs Indiana Pacers" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Indiana-Pacers-Logo.svg" group-title="NBA Games - Live Games",Memphis Grizzlies vs Indiana Pacers
-#EXTVLCOPT:http-origin=https://playembed.top
-#EXTVLCOPT:http-referrer=https://playembed.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/pacers/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Portland Trail Blazers vs Atlanta Hawks" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Atlanta-Hawks-Logo.svg" group-title="NBA Games - Live Games",Portland Trail Blazers vs Atlanta Hawks
-#EXTVLCOPT:http-origin=https://playembed.top
-#EXTVLCOPT:http-referrer=https://playembed.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/hawks/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Detroit Pistons vs Orlando Magic" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Orlando-Magic-Logo.svg" group-title="NBA Games - Live Games",Detroit Pistons vs Orlando Magic
-#EXTVLCOPT:http-origin=https://playembed.top
-#EXTVLCOPT:http-referrer=https://playembed.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/magic/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Philadelphia 76ers vs Boston Celtics" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Boston-Celtics-Logo.svg" group-title="NBA Games - Live Games",Philadelphia 76ers vs Boston Celtics
-#EXTVLCOPT:http-origin=https://playembed.top
-#EXTVLCOPT:http-referrer=https://playembed.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/celtics/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Oklahoma City Thunder vs Dallas Mavericks" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Dallas-Mavericks-Logo.svg" group-title="NBA Games - Live Games",Oklahoma City Thunder vs Dallas Mavericks
-#EXTVLCOPT:http-origin=https://playembed.top
-#EXTVLCOPT:http-referrer=https://playembed.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/mavericks/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="New Orleans Pelicans vs LA Clippers" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/LA-Clippers-Logo.svg" group-title="NBA Games - Live Games",New Orleans Pelicans vs LA Clippers
-#EXTVLCOPT:http-origin=https://playembed.top
-#EXTVLCOPT:http-referrer=https://playembed.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/clippers/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Sacramento Kings vs Los Angeles Lakers" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Los-Angeles-Lakers-Logo.svg" group-title="NBA Games - Live Games",Sacramento Kings vs Los Angeles Lakers
-#EXTVLCOPT:http-origin=https://playembed.top
-#EXTVLCOPT:http-referrer=https://playembed.top/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/lakers/index.m3u8
+https://gg.poocloud.in/warriors/index.m3u8
