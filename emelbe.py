@@ -10,7 +10,7 @@ from playwright.async_api import async_playwright, TimeoutError as PlaywrightTim
 
 # from utils import Cache, Time, get_logger, leagues, network
 
-log = get_logger(__name__)
+# log = get_logger(__name__)
 
 # --------------------------------------------------
 # CONFIG
