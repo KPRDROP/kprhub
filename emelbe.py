@@ -21,7 +21,7 @@ OUTPUT_TIVI = "emelbecast_TiviMate.m3u8"
 
 DEFAULT_LOGO = "https://i.postimg.cc/7L220Lmn/baseball4k.png"
 
-TVG_ID = "NFL.Dummy.us"
+TVG_ID = "MLB.Baseball.Dummy.us"
 GROUP_TITLE = "MLB TEAM GAME"
 
 # -------------------------------------------------
