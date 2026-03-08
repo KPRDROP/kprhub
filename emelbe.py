@@ -31,8 +31,8 @@ USER_AGENT = (
 
 UA_ENC = quote(USER_AGENT)
 
-OUT_VLC = Path("webtv_vlc.m3u8")
-OUT_TIVI = Path("webtv_tivimate.m3u8")
+OUT_VLC = Path("emelbecast_vlc.m3u8")
+OUT_TIVI = Path("emelbecast_tivimate.m3u8")
 
 CACHE_FILE = Cache(TAG, exp=19_800)
 
