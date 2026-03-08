@@ -8,7 +8,7 @@ from urllib.parse import urljoin, quote
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 
-from utils import Cache, Time, get_logger, leagues, network
+# from utils import Cache, Time, get_logger, leagues, network
 
 log = get_logger(__name__)
 
