@@ -1,66 +1,56 @@
+#!/usr/bin/env python3
+
 import asyncio
-import os
 import re
-from functools import partial
-from pathlib import Path
-from urllib.parse import urljoin, quote
+import sys
+from urllib.parse import urljoin, quote_plus
 
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 
-# from utils import Cache, Time, get_logger, leagues, network
-
-# log = get_logger(__name__)
-
-# --------------------------------------------------
-# CONFIG
-# --------------------------------------------------
-
-TAG = "WEBCAST"
-
-BASE_URL = os.environ.get("WEBTV_MLB_BASE_URL")
-if not BASE_URL:
-    raise RuntimeError("Missing WEBTV_MLB_BASE_URL secret")
-
-BASE_URL = BASE_URL.rstrip("/") + "/"
-
+# -------------------------------------------------
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) "
     "Gecko/20100101 Firefox/146.0"
 )
 
-UA_ENC = quote(USER_AGENT)
+HOMEPAGE = "https://mlbwebcast.com/"
 
-OUT_VLC = Path("emelbecast_vlc.m3u8")
-OUT_TIVI = Path("emelbecast_tivimate.m3u8")
+OUTPUT_VLC = "emelbecast_VLC.m3u8"
+OUTPUT_TIVI = "emelbecast_TiviMate.m3u8"
 
-CACHE_FILE = Cache(TAG, exp=19_800)
+DEFAULT_LOGO = "https://i.postimg.cc/7L220Lmn/baseball4k.png"
 
-urls: dict[str, dict[str, str | float]] = {}
+TVG_ID = "NFL.Dummy.us"
+GROUP_TITLE = "MLB TEAM GAME"
 
-# --------------------------------------------------
+# -------------------------------------------------
+def log(*a):
+    print(*a)
+    sys.stdout.flush()
 
-def fix_event(s: str) -> str:
-    return " vs ".join(map(str.strip, s.split("@")))
+# -------------------------------------------------
+def normalize_vs(text: str) -> str:
+    text = re.sub(r"\s*@\s*", " vs ", text, flags=re.I)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
 
-# --------------------------------------------------
-# PLAYWRIGHT EVENT FETCHER (REPLACES OLD get_events)
-# --------------------------------------------------
-
-async def get_events(playwright, cached_keys: list[str]):
-
+# -------------------------------------------------
+async def fetch_events_via_playwright(playwright):
     browser = await playwright.firefox.launch(headless=True)
     context = await browser.new_context(user_agent=USER_AGENT)
     page = await context.new_page()
 
-    log("Loading homepage via browser...")
+    log("Loading homepage…")
 
     try:
-        await page.goto(BASE_URL, wait_until="domcontentloaded", timeout=30000)
+        await page.goto(HOMEPAGE, wait_until="domcontentloaded", timeout=30000)
 
+        # allow JS to inject content
         for _ in range(6):
             await page.wait_for_timeout(1000)
-            if await page.locator("a[href]").count() > 20:
+            anchors = await page.locator("a[href]").count()
+            if anchors > 20:
                 break
 
         html = await page.content()
@@ -71,72 +61,105 @@ async def get_events(playwright, cached_keys: list[str]):
         await browser.close()
 
     soup = BeautifulSoup(html, "lxml")
-
     events = []
+
+    # -------------------------------------------------
+    # PRIMARY SELECTORS (robust)
+    selectors = [
+        "a[href*='mlbwebcast.com'][href*='live']",
+        "a[href*='-live-']",
+        "a.dracula-style-link",
+        "a[href*='online-free']",
+    ]
+
+    anchors = []
+    for sel in selectors:
+        anchors.extend(soup.select(sel))
+
+    # -------------------------------------------------
+    # FALLBACK: regex scan (last resort)
+    if not anchors:
+        for m in re.finditer(r'https://live\.mlbwebcast\.com/[^"\']+', html):
+            anchors.append({"href": m.group(0)})
+
     seen = set()
 
-    for a in soup.select("a[href*='live']"):
-        href = a.get("href")
+    for a in anchors:
+        href = a.get("href") if hasattr(a, "get") else a["href"]
         if not href:
             continue
 
-        url = urljoin(BASE_URL, href)
-
+        url = urljoin(HOMEPAGE, href)
         if url in seen:
             continue
         seen.add(url)
 
-        raw_text = a.get_text(" ", strip=True)
-        event_name = fix_event(raw_text) if raw_text else "MLB Game"
+        # ---- TITLE ----
+        title_attr = a.get("title") if hasattr(a, "get") else None
+        raw_text = ""
+        if hasattr(a, "get_text"):
+            raw_text = a.get_text(" ", strip=True)
 
-        key = f"[MLB] {event_name} ({TAG})"
+        event_name = title_attr.strip() if title_attr else normalize_vs(raw_text)
+        if not event_name:
+            event_name = "NFL Game"
 
-        if key in cached_keys:
-            continue
+        # ---- LOGO ----
+        logo = DEFAULT_LOGO
+        if hasattr(a, "find"):
+            img = a.find("img")
+            if img and img.get("src"):
+                logo = img["src"]
 
         events.append({
-            "sport": "MLB",
+            "url": url,
             "event": event_name,
-            "link": url,
+            "logo": logo
         })
 
     return events
 
-# --------------------------------------------------
-# PLAYWRIGHT STREAM CAPTURE
-# --------------------------------------------------
-
-async def process_event(playwright, url: str, url_num: int) -> str | None:
-
+# -------------------------------------------------
+async def capture_m3u8_from_page(playwright, url, timeout_ms=25000):
     browser = await playwright.firefox.launch(headless=True)
     context = await browser.new_context(user_agent=USER_AGENT)
     page = await context.new_page()
 
     captured = None
 
-    def handle_request(request):
+    # CRITICAL: capture from ALL frames
+    def on_request(req):
         nonlocal captured
-        if ".m3u8" in request.url and not captured:
-            captured = request.url
+        try:
+            if ".m3u8" in req.url and not captured:
+                captured = req.url
+        except Exception:
+            pass
 
-    context.on("request", handle_request)
+    context.on("requestfinished", on_request)
 
     try:
         try:
-            await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            await page.goto(url, wait_until="domcontentloaded", timeout=timeout_ms)
         except PlaywrightTimeoutError:
             pass
 
-        await page.wait_for_timeout(4000)
+        # Allow iframe + delayed JS
+        await page.wait_for_timeout(5000)
 
-        # momentum click
+        # -------------------------------
+        # CLICK MAIN PAGE
+        # -------------------------------
         for _ in range(2):
             try:
-                await page.mouse.click(500, 350)
+                await page.mouse.click(400, 300)
                 await asyncio.sleep(1)
             except Exception:
                 pass
 
+        # -------------------------------
+        # CLICK INSIDE IFRAMES
+        # -------------------------------
         for frame in page.frames:
             try:
                 await frame.click("body", timeout=1500)
@@ -144,118 +167,125 @@ async def process_event(playwright, url: str, url_num: int) -> str | None:
             except Exception:
                 pass
 
-        waited = 0
-        while waited < 20 and not captured:
-            await asyncio.sleep(1)
-            waited += 1
+        # -------------------------------
+        # WAIT FOR STREAM (LONGER)
+        # -------------------------------
+        waited = 0.0
+        while waited < 25 and not captured:
+            await asyncio.sleep(0.8)
+            waited += 0.8
 
+        # -------------------------------
+        # HTML FALLBACK (PAGE + IFRAMES)
+        # -------------------------------
         if not captured:
             html = await page.content()
             m = re.search(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', html)
             if m:
                 captured = m.group(0)
 
-    finally:
-        context.remove_listener("request", handle_request)
-        await page.close()
-        await context.close()
-        await browser.close()
+        if not captured:
+            for frame in page.frames:
+                try:
+                    fhtml = await frame.content()
+                    m = re.search(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', fhtml)
+                    if m:
+                        captured = m.group(0)
+                        break
+                except Exception:
+                    pass
 
-    if captured:
-        log.info(f"URL {url_num}) Captured M3U8")
-    else:
-        log.warning(f"URL {url_num}) No stream found")
+        # -------------------------------
+        # BASE64 FALLBACK (MLBWebcast)
+        # -------------------------------
+        if not captured:
+            blobs = re.findall(r'["\']([A-Za-z0-9+/=]{40,200})["\']', html)
+            for b in blobs:
+                try:
+                    import base64
+                    dec = base64.b64decode(b).decode("utf-8", "ignore")
+                    if ".m3u8" in dec:
+                        captured = dec.strip()
+                        break
+                except Exception:
+                    pass
+
+    finally:
+        try:
+            context.remove_listener("requestfinished", on_request)
+        except Exception:
+            pass
+        try:
+            await page.close()
+            await context.close()
+            await browser.close()
+        except Exception:
+            pass
 
     return captured
 
-# --------------------------------------------------
-# PLAYLIST BUILDER
-# --------------------------------------------------
+# -------------------------------------------------
+def write_playlists(entries):
+    with open(OUTPUT_VLC, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for e in entries:
+            f.write(
+                f'#EXTINF:-1 tvg-id="{TVG_ID}" '
+                f'tvg-name="{e["event"]}" '
+                f'tvg-logo="{e["logo"]}" '
+                f'group-title="{GROUP_TITLE}",{e["event"]}\n'
+            )
+            f.write(f"#EXTVLCOPT:http-referrer={HOMEPAGE}\n")
+            f.write(f"#EXTVLCOPT:http-origin={HOMEPAGE}\n")
+            f.write(f"#EXTVLCOPT:http-user-agent={USER_AGENT}\n")
+            f.write(f"{e['m3u8']}\n\n")
 
-def build_playlists(data: dict[str, dict]):
+    ua = quote_plus(USER_AGENT)
+    with open(OUTPUT_TIVI, "w", encoding="utf-8") as f:
+        f.write("#EXTM3U\n")
+        for e in entries:
+            f.write(
+                f'#EXTINF:-1 tvg-id="{TVG_ID}" '
+                f'tvg-name="{e["event"]}" '
+                f'tvg-logo="{e["logo"]}",{e["event"]}\n'
+            )
+            f.write(
+                f"{e['m3u8']}|referer={HOMEPAGE}|origin={HOMEPAGE}|user-agent={ua}\n"
+            )
 
-    vlc = ["#EXTM3U"]
-    tivimate = ["#EXTM3U"]
+    log("Playlists saved")
 
-    chno = 200
-
-    for name, e in data.items():
-
-        if not e.get("url"):
-            continue
-
-        chno += 1
-
-        vlc.extend([
-            f'#EXTINF:-1 tvg-chno="{chno}" tvg-id="{e["id"]}" '
-            f'tvg-name="{name}" tvg-logo="{e["logo"]}" '
-            f'group-title="Live Events",{name}',
-            f"#EXTVLCOPT:http-referrer={BASE_URL}",
-            f"#EXTVLCOPT:http-origin={BASE_URL}",
-            f"#EXTVLCOPT:http-user-agent={USER_AGENT}",
-            e["url"],
-        ])
-
-        tivimate.extend([
-            f'#EXTINF:-1 tvg-chno="{chno}" tvg-id="{e["id"]}" '
-            f'tvg-name="{name}" tvg-logo="{e["logo"]}" '
-            f'group-title="Live Events",{name}',
-            f'{e["url"]}|referer={BASE_URL}|origin={BASE_URL}|user-agent={UA_ENC}',
-        ])
-
-    OUT_VLC.write_text("\n".join(vlc), encoding="utf-8")
-    OUT_TIVI.write_text("\n".join(tivimate), encoding="utf-8")
-
-    log.info("Playlists written successfully")
-
-# --------------------------------------------------
-# MAIN SCRAPER
-# --------------------------------------------------
-
-async def scrape():
-
-    cached_urls = CACHE_FILE.load() or {}
-    cached_count = len(cached_urls)
-
-    log.info(f"Loaded {cached_count} event(s) from cache")
-    log.info(f'Scraping from "{BASE_URL}"')
+# -------------------------------------------------
+async def main():
+    log("Starting MLB Webcast Updater...")
 
     async with async_playwright() as p:
-
-        events = await get_events(p, list(cached_urls.keys()))
+        events = await fetch_events_via_playwright(p)
+        log(f"Found {len(events)} events")
 
         if not events:
-            log.info("No new events found")
-            CACHE_FILE.write(cached_urls)
-            build_playlists(cached_urls)
+            log("No events detected")
             return
 
-        now = Time.clean(Time.now())
+        collected = []
 
         for i, ev in enumerate(events, 1):
+            log(f"[{i}/{len(events)}] {ev['event']}")
+            m3u8 = await capture_m3u8_from_page(p, ev["url"])
 
-            stream_url = await process_event(p, ev["link"], i)
+            if m3u8:
+                log(f"STREAM FOUND: {m3u8}")
+                ev["m3u8"] = m3u8
+                collected.append(ev)
+            else:
+                log("No streams found")
 
-            if not stream_url:
-                continue
+    if not collected:
+        log("No streams captured.")
+        return
 
-            key = f"[MLB] {ev['event']} ({TAG})"
+    write_playlists(collected)
 
-            tvg_id, logo = leagues.get_tvg_info("MLB", ev["event"])
-
-            cached_urls[key] = {
-                "url": stream_url,
-                "logo": logo,
-                "base": BASE_URL,
-                "timestamp": now.timestamp(),
-                "id": tvg_id or "MLB.Baseball.Dummy.us",
-                "link": ev["link"],
-            }
-
-    CACHE_FILE.write(cached_urls)
-    build_playlists(cached_urls)
-
-# --------------------------------------------------
-
+# -------------------------------------------------
 if __name__ == "__main__":
-    asyncio.run(scrape())
+    asyncio.run(main())
