@@ -77,7 +77,7 @@ async def fetch_events_via_playwright(playwright):
         anchors.extend(soup.select(sel))
 
     # -------------------------------------------------
-    # FALLBACK: regex scan (last resort)
+    # FALLBACK: regex scan
     if not anchors:
         for m in re.finditer(r'https://live\.mlbwebcast\.com/[^"\']+', html):
             anchors.append({"href": m.group(0)})
