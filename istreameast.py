@@ -133,7 +133,7 @@ async def get_events(session):
 # ================= MAIN =================
 
 async def main():
-    log("🚀 Starting iStreamEast scraper...")
+    log("Starting iStreamEast updater...")
 
     cache = load_cache()
     now = int(time.time())
@@ -142,7 +142,7 @@ async def main():
 
     async with aiohttp.ClientSession(headers=headers) as session:
         events = await get_events(session)
-        log(f"📌 Found {len(events)} events")
+        log(f"Found {len(events)} events")
 
         entries = []
 
@@ -153,7 +153,7 @@ async def main():
                 entries.append(cache[key]["entry"])
                 continue
 
-            log(f"🔎 [{i}/{len(events)}] {key}")
+            log(f"[{i}/{len(events)}] {key}")
 
             stream = await extract_stream(session, ev["url"])
             if not stream:
