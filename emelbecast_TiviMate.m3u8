@@ -1,6 +1,8 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TV" tvg-logo="https://i.postimg.cc/7L220Lmn/baseball4k.png",MLB TV
 https://pro.packcast.top/newz/newz/135.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Arizona Diamondbacks Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Arizona-Diamondbacks.svg",Arizona Diamondbacks Live Stream
+https://live.webcastserver.online/newz/newz/134.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Atlanta Braves Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Atlanta-Braves.svg",Atlanta Braves Live Stream
 https://live.webcastserver.online/newz/newz/129.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Baltimore Orioles Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Baltimore-Orioles.svg",Baltimore Orioles Live Stream
