@@ -13,6 +13,8 @@ DEFAULT_USER_AGENT = (
     "Chrome/144.0.0.0 Safari/537.36"
 )
 
+NEW_EPG = "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
+
 # =========================================
 
 
@@ -31,10 +33,7 @@ def main():
 
     lines = fetch_playlist(SOURCE_URL)
 
-    # EPG
-    output = [
-        '#EXTM3U url-tvg="https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"'
-    ]
+    output = [f'#EXTM3U url-tvg="{NEW_EPG}"']
 
     current_extinf = None
     referrer = None
@@ -44,6 +43,9 @@ def main():
     for line in lines:
         line = line.strip()
         if not line:
+            continue
+
+        if line.startswith("#EXTM3U"):
             continue
 
         # EXTINF
