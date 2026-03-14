@@ -197,12 +197,6 @@ https://pro.packcast.top/newz/newz/135.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 https://live.webcastserver.online/newz/newz/434.m3u8
 
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Miami-Marlins.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
-#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
-#EXTVLCOPT:http-origin=https://mlbwebcast.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://live.webcastserver.online/newz/newz/111.m3u8
-
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Washington-Nationals.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
@@ -311,23 +305,11 @@ https://live.webcastserver.online/newz/newz/134.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 https://live.webcastserver.online/newz/newz/107.m3u8
 
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-San-Diego-Padres.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
-#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
-#EXTVLCOPT:http-origin=https://mlbwebcast.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://live.webcastserver.online/newz/newz/126.m3u8
-
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Chicago-Cubs.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 https://live.webcastserver.online/newz/newz/131.m3u8
-
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Colorado-Rockies.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
-#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
-#EXTVLCOPT:http-origin=https://mlbwebcast.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://live.webcastserver.online/newz/newz/119.m3u8
 
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Seattle-Mariners.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
