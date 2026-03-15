@@ -13,6 +13,8 @@ DEFAULT_USER_AGENT = (
     "Chrome/144.0.0.0 Safari/537.36"
 )
 
+NEW_EPG = "https://epgshare01.online/epgshare01/epg_ripper_ALL_SOURCES1.xml.gz"
+
 # =========================================
 
 
@@ -31,7 +33,7 @@ def main():
 
     lines = fetch_playlist(SOURCE_URL)
 
-    output = ["#EXTM3U"]
+    output = [f'#EXTM3U url-tvg="{NEW_EPG}"']
 
     current_extinf = None
     referrer = None
@@ -43,7 +45,10 @@ def main():
         if not line:
             continue
 
-        # EXTINF (copy exactly)
+        if line.startswith("#EXTM3U"):
+            continue
+
+        # EXTINF
         if line.startswith("#EXTINF"):
             current_extinf = line
             referrer = None
@@ -86,7 +91,6 @@ def main():
             current_extinf = None
             continue
 
-        # Copy other metadata lines untouched
         if line.startswith("#"):
             output.append(line)
 

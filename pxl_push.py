@@ -97,7 +97,7 @@ def build_tivimate_playlist(m3u: str) -> str:
 
 
 def main():
-    print("📡 Fetching PixelSports playlist...")
+    print("Fetching PixelSports playlist...")
     raw = fetch_playlist()
 
     print("✍ Writing VLC playlist...")

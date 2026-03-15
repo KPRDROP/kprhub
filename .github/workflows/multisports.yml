@@ -2,10 +2,9 @@ name: MultiSports Updater
 
 on:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '*/30 * * * *'
   workflow_dispatch:
-    # Allow manual run from GitHub UI
-
+  
 permissions:
   contents: write
 
