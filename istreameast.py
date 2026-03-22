@@ -27,7 +27,7 @@ REFERER = "https://gooz.aapmains.net/"
 ORIGIN = "https://gooz.aapmains.net"
 
 TVG_ID = "Live.Event.us"
-TAG = "iSTRMEAST"
+TAG = "iSTRM"
 
 CACHE_FILE = "istreameast_cache.json"
 CACHE_EXP = 3 * 60 * 60  # 3 hours
@@ -65,7 +65,7 @@ async def fetch(session, url):
     return None
 
 
-# ================= SCRAPER =================
+# ================= UPDATER =================
 
 async def extract_stream(session, event_url):
     html = await fetch(session, event_url)
@@ -133,7 +133,7 @@ async def get_events(session):
 # ================= MAIN =================
 
 async def main():
-    log("Starting iStreamEast updater...")
+    log("Starting iStrm updater...")
 
     cache = load_cache()
     now = int(time.time())
