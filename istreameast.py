@@ -27,7 +27,7 @@ REFERER = "https://gooz.aapmains.net/"
 ORIGIN = "https://gooz.aapmains.net"
 
 TVG_ID = "Live.Event.us"
-TAG = "iSTRMEAST"
+TAG = "iSTRM"
 
 CACHE_FILE = "istreameast_cache.json"
 CACHE_EXP = 3 * 60 * 60  # 3 hours
