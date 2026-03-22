@@ -18,5 +18,4 @@ DISCLAIMER: The scripts and links provided on this GitHub page are for informati
 
 <div align="center">
   
-[![PLAYITS Updater](https://github.com/KPRDROP/kprhub/actions/workflows/playits.yml/badge.svg)](https://github.com/KPRDROP/kprhub/actions/workflows/playits.yml)
 </div>
