@@ -11,7 +11,7 @@ from urllib.parse import quote
 # --------------------------------------------------
 API_URL = os.getenv("CRICHD_API_URL")
 if not API_URL:
-    print("❌ Missing CRICHD_API_URL secret")
+    print("Missing CRICHD_API_URL secret")
     sys.exit(1)
 
 OUT_FILE = Path("crihd_tivimate.m3u8")
@@ -63,7 +63,7 @@ def main():
     playlist = build_playlist(data)
     OUT_FILE.write_text(playlist, encoding="utf-8")
 
-    print("✅ Playlist written: crihd_tivimate.m3u8")
+    print("Playlist written: crihd_tivimate.m3u8")
 
 # --------------------------------------------------
 if __name__ == "__main__":
