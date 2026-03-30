@@ -1,4 +1,6 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Philadelphia 76ers vs Miami Heat" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Miami-Heat-Logo.svg" group-title="NBA Games - Live Games",Philadelphia 76ers vs Miami Heat
+https://gg.poocloud.in/heat/index.m3u8|referer=https://playembed.top/|origin=https://playembed.top|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F142.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Boston Celtics vs Atlanta Hawks" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Atlanta-Hawks-Logo.svg" group-title="NBA Games - Live Games",Boston Celtics vs Atlanta Hawks
 https://gg.poocloud.in/hawks/index.m3u8|referer=https://playembed.top/|origin=https://playembed.top|user-agent=Mozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome%2F142.0.0.0%20Safari%2F537.36
 #EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Phoenix Suns vs Memphis Grizzlies" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Memphis-Grizzlies-Logo.svg" group-title="NBA Games - Live Games",Phoenix Suns vs Memphis Grizzlies
