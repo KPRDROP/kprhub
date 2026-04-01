@@ -5,8 +5,6 @@ https://webcast-cdn.b-cdn.net/newz/newz/135.m3u8|referer=https://mlbwebcast.com/
 https://webcast-cdn.b-cdn.net/newz/newz/134.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Atlanta Braves Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Atlanta-Braves.svg",Atlanta Braves Live Stream
 https://webcast-cdn.b-cdn.net/newz/newz/129.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Baltimore Orioles Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Baltimore-Orioles.svg",Baltimore Orioles Live Stream
-https://webcast-cdn.b-cdn.net/newz/newz/237.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Boston Red Sox Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Boston-Red-Sox.svg",Boston Red Sox Live Stream
 https://webcast-cdn.b-cdn.net/newz/newz/120.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Chicago Cubs Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Chicago-Cubs.svg",Chicago Cubs Live Stream
@@ -47,8 +45,6 @@ https://webcast-cdn.b-cdn.net/newz/newz/114.m3u8|referer=https://mlbwebcast.com/
 https://webcast-cdn.b-cdn.net/newz/newz/113.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="San Diego Padres Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-San-Diego-Padres.svg",San Diego Padres Live Stream
 https://webcast-cdn.b-cdn.net/newz/newz/126.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="San Francisco Giants Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-San-Francisco-Giants.svg",San Francisco Giants Live Stream
-https://webcast-cdn.b-cdn.net/newz/newz/107.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Seattle Mariners Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Seattle-Mariners.svg",Seattle Mariners Live Stream
 https://webcast-cdn.b-cdn.net/newz/newz/110.m3u8|referer=https://mlbwebcast.com/|origin=https://mlbwebcast.com/|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="St Louis Cardinals Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-St-Louis-Cardinals.svg",St Louis Cardinals Live Stream
