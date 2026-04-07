@@ -197,18 +197,6 @@ https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/135.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/7.m3u8
 
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Chicago-Cubs.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
-#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
-#EXTVLCOPT:http-origin=https://mlbwebcast.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/131.m3u8
-
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Tampa-Bay-Rays.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
-#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
-#EXTVLCOPT:http-origin=https://mlbwebcast.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/115.m3u8
-
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Kansas-City-Royals.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
@@ -220,6 +208,30 @@ https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/117.m3u8
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/108.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Baltimore-Orioles.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/237.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Chicago-White-Sox.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/123.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Arizona-Diamondbacks.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/134.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-New-York-Mets.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/109.m3u8
 
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Cincinnati-Reds.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
@@ -245,6 +257,18 @@ https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/126.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/113.m3u8
 
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Chicago-Cubs.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/131.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Tampa-Bay-Rays.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/115.m3u8
+
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Milwaukee-Brewers.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
@@ -269,6 +293,18 @@ https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/132.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/112.m3u8
 
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Oakland-Athletics.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/128.m3u8
+
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-New-York-Yankees.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
+#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
+#EXTVLCOPT:http-origin=https://mlbwebcast.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
+https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/124.m3u8
+
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Los-Angeles-Dodgers.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
@@ -280,18 +316,6 @@ https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/133.m3u8
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
 https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/125.m3u8
-
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Baltimore-Orioles.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
-#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
-#EXTVLCOPT:http-origin=https://mlbwebcast.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/237.m3u8
-
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Chicago-White-Sox.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
-#EXTVLCOPT:http-referrer=https://mlbwebcast.com/
-#EXTVLCOPT:http-origin=https://mlbwebcast.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://webcast-cdn.b-cdn.net/newz/5xyJcnUCNM3JjTT2/123.m3u8
 
 #EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Detroit-Tigers.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
