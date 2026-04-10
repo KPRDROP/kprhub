@@ -1,7 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="MLB TEAM GAME" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Los-Angeles-Angels.svg" group-title="MLB TEAM GAME",MLB TEAM GAME
+#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="New York Yankees Live Stream" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-New-York-Yankees.svg" group-title="MLB TEAM GAME",New York Yankees Live Stream
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://webcast-origin.b-cdn.net/bcdn_token=jATMEqLJdYeoKnxbiHcRFFRdLAIWJG22Yq4ER_7tUYE&token_path=%2Fplay%2FAtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhHxJMlG-DpB7o74IHhyl3Og%2F&expires=1775841861/play/AtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhHxJMlG-DpB7o74IHhyl3Og/106.m3u8
+https://webcast-origin.b-cdn.net/bcdn_token=6xIWXH1h8H-cF41OIMUuji10djeYkBdNawE95IYjUUI&token_path=%2Fplay%2FAtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhFdY_2JwwLMXm_4wld0sOWG%2F&expires=1775854604/play/AtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhFdY_2JwwLMXm_4wld0sOWG/124.m3u8
 
