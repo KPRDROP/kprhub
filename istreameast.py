@@ -86,7 +86,7 @@ async def extract_stream(session, event_url):
     if not iframe_html:
         return None
 
-    m = re.search(r"window\.atob\(['\"]([^'\"]+)['\"]\)", iframe_html)
+    m = re.search(r'const\s+source\s+=\s+"([^"]*)"', re.I)", iframe_html)
     if not m:
         return None
 
