@@ -6,7 +6,7 @@ import json
 import os
 import re
 import time
-from urllib.parse import quote_plus
+from urllib.parse import quote_plus, urljoin
 
 import aiohttp
 from selectolax.parser import HTMLParser
@@ -65,7 +65,7 @@ async def fetch(session, url):
     return None
 
 
-# ================= UPDATER =================
+# ================= STREAM EXTRACTION =================
 
 async def extract_stream(session, event_url):
     html = await fetch(session, event_url)
@@ -82,20 +82,44 @@ async def extract_stream(session, event_url):
     if not iframe_src:
         return None
 
+    # FIX: handle relative iframe URLs
+    iframe_src = urljoin(BASE_URL, iframe_src)
+
     iframe_html = await fetch(session, iframe_src)
     if not iframe_html:
         return None
 
-    m = re.search(r'const\s+source\s+=\s+"([^"]*)"', iframe_html, re.I)
-    if not m:
-        return None
+    # ================= PATTERNS =================
 
-    try:
-        decoded = base64.b64decode(m.group(1)).decode("utf-8")
-        return decoded
-    except Exception:
-        return None
+    # 1. Old base64 pattern
+    m = re.search(r'const\s+source\s*=\s*"([^"]+)"', iframe_html, re.I)
+    if m:
+        try:
+            decoded = base64.b64decode(m.group(1)).decode("utf-8")
+            if decoded.startswith("http"):
+                return decoded
+        except Exception:
+            pass
 
+    # 2. New playlist pattern (IMPORTANT FIX)
+    m = re.search(r'(https?://[^"\']+/playlist/\d+/load-playlist)', iframe_html)
+    if m:
+        return m.group(1)
+
+    # 3. Generic m3u8 fallback
+    m = re.search(r'(https?://[^"\']+\.m3u8[^"\']*)', iframe_html)
+    if m:
+        return m.group(1)
+
+    # 4. Generic fallback (any http stream)
+    m = re.search(r'(https?://[^"\']+)', iframe_html)
+    if m:
+        return m.group(1)
+
+    return None
+
+
+# ================= EVENTS =================
 
 async def get_events(session):
     html = await fetch(session, BASE_URL)
@@ -109,6 +133,8 @@ async def get_events(session):
         href = link.attributes.get("href")
         if not href:
             continue
+
+        href = urljoin(BASE_URL, href)
 
         li = link.parent
 
