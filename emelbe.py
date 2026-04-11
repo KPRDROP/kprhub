@@ -30,12 +30,6 @@ def log(*a):
     sys.stdout.flush()
 
 # -------------------------------------------------
-def normalize_vs(text: str) -> str:
-    text = re.sub(r"\s*@\s*", " vs ", text, flags=re.I)
-    text = re.sub(r"\s+", " ", text)
-    return text.strip()
-
-# -------------------------------------------------
 async def fetch_events_via_playwright(playwright):
     browser = await playwright.firefox.launch(headless=True)
     context = await browser.new_context(user_agent=USER_AGENT)
@@ -45,13 +39,7 @@ async def fetch_events_via_playwright(playwright):
 
     try:
         await page.goto(HOMEPAGE, wait_until="domcontentloaded", timeout=30000)
-
-        # allow JS to inject content
-        for _ in range(6):
-            await page.wait_for_timeout(1000)
-            anchors = await page.locator("a[href]").count()
-            if anchors > 20:
-                break
+        await page.wait_for_timeout(4000)
 
         html = await page.content()
 
@@ -63,23 +51,16 @@ async def fetch_events_via_playwright(playwright):
     soup = BeautifulSoup(html, "lxml")
     events = []
 
-    # -------------------------------------------------
-    # PRIMARY SELECTORS (robust)
-    selectors = [
-        "a[href*='mlbwebcast.com'][href*='live']",
-        "a[href*='-live-']",
-        "a.dracula-style-link",
-        "a[href*='online-free']",
-    ]
+    # ✅ FIXED SELECTOR (MAIN)
+    anchors = soup.select("li.team-logo a[href]")
 
-    anchors = []
-    for sel in selectors:
-        anchors.extend(soup.select(sel))
-
-    # -------------------------------------------------
-    # FALLBACK: regex scan
+    # ✅ FALLBACK SELECTOR
     if not anchors:
-        for m in re.finditer(r'https://live\.mlbwebcast\.com/[^"\']+', html):
+        anchors = soup.select("a[href*='-live']")
+
+    # ✅ REGEX FALLBACK (UPDATED DOMAIN)
+    if not anchors:
+        for m in re.finditer(r'https://mlbwebcast\.com/[a-z0-9\-]+-live', html):
             anchors.append({"href": m.group(0)})
 
     seen = set()
@@ -90,50 +71,45 @@ async def fetch_events_via_playwright(playwright):
             continue
 
         url = urljoin(HOMEPAGE, href)
+
         if url in seen:
             continue
         seen.add(url)
 
-        # ---- TITLE ----
-        title_attr = a.get("title") if hasattr(a, "get") else None
-        raw_text = ""
-        if hasattr(a, "get_text"):
-            raw_text = a.get_text(" ", strip=True)
+        # ✅ TITLE (FIXED)
+        title = ""
+        if hasattr(a, "get"):
+            title = a.get("title", "").strip()
 
-        event_name = title_attr.strip() if title_attr else normalize_vs(raw_text)
-        if not event_name:
-            event_name = "MLB TEAM GAME"
+        if not title:
+            title = "MLB TEAM GAME"
 
-        # ---- LOGO ----
-        logo = DEFAULT_LOGO
-        if hasattr(a, "find"):
-            img = a.find("img")
-            if img and img.get("src"):
-                logo = img["src"]
+        # clean title
+        title = title.replace(" Live Stream", "").strip()
 
         events.append({
             "url": url,
-            "event": event_name,
-            "logo": logo
+            "event": title,
+            "logo": DEFAULT_LOGO
         })
 
     return events
 
 # -------------------------------------------------
-async def capture_m3u8_from_page(playwright, url, timeout_ms=25000):
+async def capture_m3u8_from_page(playwright, url, timeout_ms=30000):
     browser = await playwright.firefox.launch(headless=True)
     context = await browser.new_context(user_agent=USER_AGENT)
     page = await context.new_page()
 
     captured = None
 
-    # CRITICAL: capture from ALL frames
+    # ✅ CAPTURE NETWORK (STRONGER)
     def on_request(req):
         nonlocal captured
         try:
             if ".m3u8" in req.url and not captured:
                 captured = req.url
-        except Exception:
+        except:
             pass
 
     context.on("requestfinished", on_request)
@@ -144,46 +120,50 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=25000):
         except PlaywrightTimeoutError:
             pass
 
-        # Allow iframe + delayed JS
         await page.wait_for_timeout(5000)
 
-        # -------------------------------
-        # CLICK MAIN PAGE
-        # -------------------------------
-        for _ in range(2):
+        # ✅ CLICK MAIN PAGE MULTIPLE TIMES
+        for _ in range(3):
             try:
                 await page.mouse.click(400, 300)
                 await asyncio.sleep(1)
-            except Exception:
+            except:
                 pass
 
-        # -------------------------------
-        # CLICK INSIDE IFRAMES
-        # -------------------------------
+        # ✅ CLICK IFRAMES (IMPORTANT)
         for frame in page.frames:
             try:
-                await frame.click("body", timeout=1500)
+                await frame.click("body", timeout=2000)
                 await asyncio.sleep(1)
-            except Exception:
+            except:
                 pass
 
-        # -------------------------------
-        # WAIT FOR STREAM (LONGER)
-        # -------------------------------
-        waited = 0.0
-        while waited < 25 and not captured:
-            await asyncio.sleep(0.8)
-            waited += 0.8
+        # ✅ WAIT LONGER FOR STREAM
+        waited = 0
+        while waited < 30 and not captured:
+            await asyncio.sleep(1)
+            waited += 1
 
         # -------------------------------
-        # HTML FALLBACK (PAGE + IFRAMES)
+        # HTML FALLBACK
         # -------------------------------
         if not captured:
             html = await page.content()
+
+            # direct m3u8
             m = re.search(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', html)
             if m:
                 captured = m.group(0)
 
+            # playlist fallback
+            if not captured:
+                m = re.search(r'https?://[^"\']+/playlist/\d+/load-playlist', html)
+                if m:
+                    captured = m.group(0)
+
+        # -------------------------------
+        # FRAME FALLBACK
+        # -------------------------------
         if not captured:
             for frame in page.frames:
                 try:
@@ -192,35 +172,18 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=25000):
                     if m:
                         captured = m.group(0)
                         break
-                except Exception:
-                    pass
-
-        # -------------------------------
-        # BASE64 FALLBACK (MLBWebcast)
-        # -------------------------------
-        if not captured:
-            blobs = re.findall(r'["\']([A-Za-z0-9+/=]{40,200})["\']', html)
-            for b in blobs:
-                try:
-                    import base64
-                    dec = base64.b64decode(b).decode("utf-8", "ignore")
-                    if ".m3u8" in dec:
-                        captured = dec.strip()
-                        break
-                except Exception:
+                except:
                     pass
 
     finally:
         try:
             context.remove_listener("requestfinished", on_request)
-        except Exception:
+        except:
             pass
-        try:
-            await page.close()
-            await context.close()
-            await browser.close()
-        except Exception:
-            pass
+
+        await page.close()
+        await context.close()
+        await browser.close()
 
     return captured
 
@@ -241,6 +204,7 @@ def write_playlists(entries):
             f.write(f"{e['m3u8']}\n\n")
 
     ua = quote_plus(USER_AGENT)
+
     with open(OUTPUT_TIVI, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for e in entries:
@@ -271,6 +235,7 @@ async def main():
 
         for i, ev in enumerate(events, 1):
             log(f"[{i}/{len(events)}] {ev['event']}")
+
             m3u8 = await capture_m3u8_from_page(p, ev["url"])
 
             if m3u8:
