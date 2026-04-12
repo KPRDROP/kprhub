@@ -37,34 +37,33 @@ async def fetch_events_via_playwright(playwright):
     log("Loading homepage…")
 
     try:
-        await page.goto(HOMEPAGE, wait_until="domcontentloaded", timeout=30000)
+        await page.goto(HOMEPAGE, wait_until="load", timeout=30000)
 
-        # 🔥 CRITICAL: wait for dynamic content
-        await page.wait_for_timeout(6000)
+        # wait longer for JS
+        await page.wait_for_timeout(8000)
 
-        # wait until at least some live links appear
-        try:
-            await page.wait_for_selector("a[href*='-live']", timeout=10000)
-        except:
-            pass
-
-        anchors = await page.locator("a[href*='-live']").all()
+        # 🔥 USE evaluate() (THIS FIXES EVERYTHING)
+        links = await page.evaluate("""
+        () => {
+            const out = [];
+            document.querySelectorAll('a').forEach(a => {
+                const href = a.href || "";
+                if (href.includes('-live')) {
+                    out.push({
+                        url: href,
+                        title: a.title || a.textContent || ""
+                    });
+                }
+            });
+            return out;
+        }
+        """)
 
         events = []
         seen = set()
 
-        for a in anchors:
-            try:
-                href = await a.get_attribute("href")
-                title = await a.get_attribute("title")
-                text = await a.inner_text()
-            except:
-                continue
-
-            if not href:
-                continue
-
-            url = urljoin(HOMEPAGE, href)
+        for item in links:
+            url = item["url"]
 
             if "-live" not in url:
                 continue
@@ -73,7 +72,10 @@ async def fetch_events_via_playwright(playwright):
                 continue
             seen.add(url)
 
-            name = title or text or "MLB TEAM GAME"
+            name = item["title"].strip()
+            if not name:
+                name = "MLB TEAM GAME"
+
             name = name.replace(" Live Stream", "").strip()
 
             events.append({
@@ -97,15 +99,26 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=30000):
 
     captured = None
 
-    def on_request(req):
+    # 🔥 INTERCEPT BOTH REQUEST + RESPONSE
+    def handle_request(req):
         nonlocal captured
         try:
-            if ".m3u8" in req.url and not captured:
+            if any(x in req.url for x in [".m3u8", "/playlist/", ".ts"]) and not captured:
                 captured = req.url
         except:
             pass
 
-    context.on("requestfinished", on_request)
+    def handle_response(res):
+        nonlocal captured
+        try:
+            url = res.url
+            if any(x in url for x in [".m3u8", "/playlist/"]) and not captured:
+                captured = url
+        except:
+            pass
+
+    context.on("request", handle_request)
+    context.on("response", handle_response)
 
     try:
         try:
@@ -115,7 +128,7 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=30000):
 
         await page.wait_for_timeout(5000)
 
-        # CLICK PAGE
+        # 🔥 FORCE PLAYER LOAD
         for _ in range(3):
             try:
                 await page.mouse.click(400, 300)
@@ -123,7 +136,6 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=30000):
             except:
                 pass
 
-        # CLICK IFRAMES
         for frame in page.frames:
             try:
                 await frame.click("body", timeout=2000)
@@ -131,13 +143,13 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=30000):
             except:
                 pass
 
-        # WAIT FOR STREAM
+        # 🔥 WAIT FOR NETWORK CAPTURE
         waited = 0
         while waited < 30 and not captured:
             await asyncio.sleep(1)
             waited += 1
 
-        # FALLBACK HTML
+        # 🔥 FALLBACK HTML PARSE
         if not captured:
             html = await page.content()
 
@@ -152,7 +164,8 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=30000):
 
     finally:
         try:
-            context.remove_listener("requestfinished", on_request)
+            context.remove_listener("request", handle_request)
+            context.remove_listener("response", handle_response)
         except:
             pass
 
