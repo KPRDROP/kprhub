@@ -5,7 +5,6 @@ import re
 import sys
 from urllib.parse import urljoin, quote_plus
 
-from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
 
 # -------------------------------------------------
@@ -39,73 +38,56 @@ async def fetch_events_via_playwright(playwright):
 
     try:
         await page.goto(HOMEPAGE, wait_until="domcontentloaded", timeout=30000)
-        await page.wait_for_timeout(5000)
 
-        html = await page.content()
+        # 🔥 CRITICAL: wait for dynamic content
+        await page.wait_for_timeout(6000)
+
+        # wait until at least some live links appear
+        try:
+            await page.wait_for_selector("a[href*='-live']", timeout=10000)
+        except:
+            pass
+
+        anchors = await page.locator("a[href*='-live']").all()
+
+        events = []
+        seen = set()
+
+        for a in anchors:
+            try:
+                href = await a.get_attribute("href")
+                title = await a.get_attribute("title")
+                text = await a.inner_text()
+            except:
+                continue
+
+            if not href:
+                continue
+
+            url = urljoin(HOMEPAGE, href)
+
+            if "-live" not in url:
+                continue
+
+            if url in seen:
+                continue
+            seen.add(url)
+
+            name = title or text or "MLB TEAM GAME"
+            name = name.replace(" Live Stream", "").strip()
+
+            events.append({
+                "url": url,
+                "event": name,
+                "logo": DEFAULT_LOGO
+            })
+
+        return events
 
     finally:
         await page.close()
         await context.close()
         await browser.close()
-
-    soup = BeautifulSoup(html, "lxml")
-    events = []
-
-    # -------------------------------------------------
-    # ✅ MULTI-SELECTOR STRATEGY (FIXED)
-    anchors = []
-
-    # 1. Primary (team blocks)
-    anchors.extend(soup.select("li a[href*='-live']"))
-
-    # 2. Backup (any link with 'live')
-    anchors.extend(soup.select("a[href*='live']"))
-
-    # 3. Backup (title-based)
-    anchors.extend(soup.select("a[title*='Live']"))
-
-    # 4. FINAL fallback regex (UPDATED DOMAIN)
-    if not anchors:
-        for m in re.finditer(r'https://mlbwebcast\.com/[a-z0-9\-]+-live', html):
-            anchors.append({"href": m.group(0)})
-
-    seen = set()
-
-    for a in anchors:
-        href = a.get("href") if hasattr(a, "get") else a["href"]
-        if not href:
-            continue
-
-        url = urljoin(HOMEPAGE, href)
-
-        # filter only valid team pages
-        if "-live" not in url:
-            continue
-
-        if url in seen:
-            continue
-        seen.add(url)
-
-        # ---- TITLE ----
-        title = ""
-        if hasattr(a, "get"):
-            title = a.get("title", "").strip()
-
-        if not title and hasattr(a, "get_text"):
-            title = a.get_text(strip=True)
-
-        if not title:
-            title = "MLB TEAM GAME"
-
-        title = title.replace(" Live Stream", "").strip()
-
-        events.append({
-            "url": url,
-            "event": title,
-            "logo": DEFAULT_LOGO
-        })
-
-    return events
 
 # -------------------------------------------------
 async def capture_m3u8_from_page(playwright, url, timeout_ms=30000):
@@ -133,7 +115,7 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=30000):
 
         await page.wait_for_timeout(5000)
 
-        # CLICK MAIN PAGE
+        # CLICK PAGE
         for _ in range(3):
             try:
                 await page.mouse.click(400, 300)
@@ -155,7 +137,7 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=30000):
             await asyncio.sleep(1)
             waited += 1
 
-        # HTML fallback
+        # FALLBACK HTML
         if not captured:
             html = await page.content()
 
@@ -167,18 +149,6 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=30000):
                 m = re.search(r'https?://[^"\']+/playlist/\d+/load-playlist', html)
                 if m:
                     captured = m.group(0)
-
-        # iframe fallback
-        if not captured:
-            for frame in page.frames:
-                try:
-                    fhtml = await frame.content()
-                    m = re.search(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', fhtml)
-                    if m:
-                        captured = m.group(0)
-                        break
-                except:
-                    pass
 
     finally:
         try:
