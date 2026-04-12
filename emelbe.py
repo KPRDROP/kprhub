@@ -2,12 +2,11 @@
 
 import asyncio
 import re
-import sys
 import base64
 from urllib.parse import urljoin, quote_plus
 
-from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
+from selectolax.parser import HTMLParser
 
 # -------------------------------------------------
 USER_AGENT = (
@@ -28,11 +27,14 @@ GROUP_TITLE = "MLB TEAM GAME"
 # -------------------------------------------------
 def log(*a):
     print(*a)
-    sys.stdout.flush()
+
+# -------------------------------------------------
+def fix_event(s: str) -> str:
+    return " vs ".join(s.split("@"))
 
 # -------------------------------------------------
 async def fetch_events_via_playwright(playwright):
-    """Extract team events from homepage using DOM selectors"""
+    """Extract events from homepage using selectolax"""
     browser = await playwright.firefox.launch(headless=True)
     context = await browser.new_context(user_agent=USER_AGENT)
     page = await context.new_page()
@@ -40,78 +42,51 @@ async def fetch_events_via_playwright(playwright):
     log("Loading homepage…")
 
     try:
-        await page.goto(HOMEPAGE, wait_until="networkidle", timeout=30000)
-        
-        # Wait for team logos to load
-        await page.wait_for_selector("li.team-logo a", timeout=10000)
-        
-        # Get all team links with their titles
-        team_elements = await page.query_selector_all("li.team-logo a")
-        
-        events = []
-        for element in team_elements:
-            href = await element.get_attribute("href")
-            title = await element.get_attribute("title")
-            
-            if not href:
-                continue
-            
-            # Get logo image src
-            img = await element.query_selector("img")
-            logo = DEFAULT_LOGO
-            if img:
-                logo_src = await img.get_attribute("src")
-                if logo_src:
-                    logo = logo_src
-            
-            url = urljoin(HOMEPAGE, href)
-            
-            # Clean up event name
-            event_name = title or ""
-            event_name = re.sub(r'\s*Live\s*Stream\s*$', '', event_name, flags=re.I)
-            event_name = event_name.strip()
-            
-            if not event_name:
-                event_name = "MLB Team Game"
-            
-            events.append({
-                "url": url,
-                "event": event_name,
-                "logo": logo
-            })
-        
-        # Also check for any additional links with "-live" pattern
-        live_links = await page.query_selector_all("a[href*='-live']")
-        for element in live_links:
-            href = await element.get_attribute("href")
-            if not href:
-                continue
-            
-            url = urljoin(HOMEPAGE, href)
-            
-            # Skip if already in events
-            if any(e["url"] == url for e in events):
-                continue
-            
-            title = await element.get_attribute("title") or await element.inner_text()
-            event_name = re.sub(r'\s*Live\s*Stream\s*$', '', title, flags=re.I).strip()
-            
-            events.append({
-                "url": url,
-                "event": event_name,
-                "logo": DEFAULT_LOGO
-            })
-        
-        return events
-    
+        await page.goto(HOMEPAGE, wait_until="domcontentloaded", timeout=30000)
+        await page.wait_for_timeout(3000)
+        html = await page.content()
+
     finally:
         await page.close()
         await context.close()
         await browser.close()
 
+    soup = HTMLParser(html)
+    events = []
+
+    for row in soup.css("tr.singele_match_date"):
+        if not (vs_node := row.css_first("td.teamvs a")):
+            continue
+
+        event_name = vs_node.text(strip=True)
+
+        # Remove date from event name
+        for span in vs_node.css("span.mtdate"):
+            date = span.text(strip=True)
+            event_name = event_name.replace(date, "").strip()
+
+        if not (href := vs_node.attributes.get("href")):
+            continue
+
+        event = fix_event(event_name)
+        
+        # Get logo from teamlogo td
+        logo = DEFAULT_LOGO
+        if logo_td := row.css_first("td.teamlogo img"):
+            if src := logo_td.attributes.get("src"):
+                logo = src
+
+        events.append({
+            "url": urljoin(HOMEPAGE, href),
+            "event": event,
+            "logo": logo
+        })
+
+    return events
+
 # -------------------------------------------------
 async def capture_m3u8_from_page(playwright, url, timeout_ms=60000):
-    """Capture m3u8 stream URL from team page by monitoring network"""
+    """Capture m3u8 stream URL from team page"""
     browser = await playwright.firefox.launch(headless=True)
     context = await browser.new_context(
         user_agent=USER_AGENT,
@@ -120,25 +95,19 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=60000):
     page = await context.new_page()
     
     captured = None
-    all_requests = []
     
-    # Monitor ALL network requests
-    def on_request(request):
+    # Monitor network requests for m3u8
+    def on_response(response):
         nonlocal captured
-        req_url = request.url
-        all_requests.append(req_url)
-        
-        # Check for m3u8 in URL
-        if '.m3u8' in req_url.lower() and not captured:
-            captured = req_url
-            log(f"  ✓ CAPTURED: {captured[:120]}...")
-        
-        # Also check for CDN patterns
-        elif 'b-cdn.net' in req_url.lower() and '.m3u8' in req_url.lower() and not captured:
-            captured = req_url
-            log(f"  ✓ CDN CAPTURED: {captured[:120]}...")
+        try:
+            req_url = response.url
+            if '.m3u8' in req_url.lower() and not captured:
+                captured = req_url
+                log(f"  ✓ CAPTURED: {captured[:100]}...")
+        except Exception:
+            pass
     
-    context.on("request", on_request)
+    context.on("response", on_response)
     
     try:
         log(f"  Loading: {url}")
@@ -147,12 +116,29 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=60000):
         try:
             await page.goto(url, wait_until="domcontentloaded", timeout=30000)
         except PlaywrightTimeoutError:
-            log(f"  Timeout on load, continuing...")
+            pass
         
-        # Wait for page to settle
-        await page.wait_for_timeout(3000)
+        await page.wait_for_timeout(5000)
         
-        # Find and click the video player
+        # Find and click any iframe or player element
+        # Look for iframes that might contain the stream
+        iframes = await page.query_selector_all("iframe")
+        log(f"  Found {len(iframes)} iframes")
+        
+        for iframe in iframes:
+            try:
+                src = await iframe.get_attribute("src")
+                if src and ("stream" in src.lower() or "player" in src.lower() or "embed" in src.lower()):
+                    log(f"  Found stream iframe: {src[:80]}")
+                    
+                    # Navigate to iframe src directly
+                    await page.goto(src, wait_until="domcontentloaded", timeout=30000)
+                    await page.wait_for_timeout(5000)
+                    break
+            except Exception:
+                pass
+        
+        # Try to click on video player
         click_selectors = [
             "video",
             ".player-container",
@@ -163,9 +149,8 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=60000):
             ".stream-player",
             "#player",
             ".jwplayer",
-            ".video-player",
-            "iframe",
-            ".elementor-video"
+            ".vjs-control-bar",
+            ".mejs__playpause-button"
         ]
         
         for selector in click_selectors:
@@ -174,71 +159,56 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=60000):
                 if element:
                     await element.click(timeout=3000)
                     log(f"  Clicked: {selector}")
-                    await page.wait_for_timeout(2000)
+                    await page.wait_for_timeout(3000)
                     break
             except Exception:
                 pass
         
-        # Try clicking on the body to trigger autoplay
+        # Click body to trigger autoplay
         try:
             await page.mouse.click(500, 400)
-            await page.wait_for_timeout(1000)
+            await page.wait_for_timeout(2000)
         except Exception:
             pass
         
-        # Check all iframes for content
-        frames = page.frames
-        log(f"  Found {len(frames)} frames")
-        
-        for frame in frames:
-            try:
-                # Click inside iframe
-                await frame.click("body", timeout=2000)
-                await page.wait_for_timeout(1000)
-            except Exception:
-                pass
-        
-        # Monitor for m3u8 with longer timeout
+        # Monitor for m3u8
         waited = 0
-        check_interval = 2
-        max_wait = timeout_ms / 1000
-        
-        log(f"  Monitoring network for m3u8 (max {max_wait}s)...")
-        
-        while waited < max_wait and not captured:
-            await asyncio.sleep(check_interval)
-            waited += check_interval
+        while waited < 45 and not captured:
+            await asyncio.sleep(2)
+            waited += 2
             
-            # Periodically check page source for m3u8
+            # Check page content for m3u8
             if waited % 6 == 0:
                 html = await page.content()
+                
+                # Look for m3u8 URLs
                 m3u8_matches = re.findall(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', html)
                 for match in m3u8_matches:
                     if not captured:
                         captured = match
-                        log(f"  ✓ HTML capture: {captured[:120]}...")
+                        log(f"  ✓ HTML capture: {captured[:100]}...")
                         break
                 
-                # Also look for base64 encoded
-                b64_matches = re.findall(r'["\']([A-Za-z0-9+/=]{50,300})["\']', html)
+                # Look for base64 encoded streams
+                b64_matches = re.findall(r'["\']([A-Za-z0-9+/=]{80,500})["\']', html)
                 for b64_str in b64_matches:
                     try:
                         decoded = base64.b64decode(b64_str).decode('utf-8', errors='ignore')
                         url_match = re.search(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', decoded)
                         if url_match and not captured:
                             captured = url_match.group(0)
-                            log(f"  ✓ Base64 capture: {captured[:120]}...")
+                            log(f"  ✓ Base64 capture: {captured[:100]}...")
                             break
                     except Exception:
                         pass
-        
-        # If still no capture, check all collected requests
-        if not captured and all_requests:
-            for req in all_requests:
-                if '.m3u8' in req.lower():
-                    captured = req
-                    log(f"  ✓ Request capture: {captured[:120]}...")
-                    break
+                
+                # Look for b-cdn.net patterns
+                bcdn_matches = re.findall(r'https?://[^\s"\'<>]*b-cdn\.net[^\s"\'<>]*\.m3u8[^\s"\'<>]*', html)
+                for match in bcdn_matches:
+                    if not captured:
+                        captured = match
+                        log(f"  ✓ CDN capture: {captured[:100]}...")
+                        break
     
     except Exception as e:
         log(f"  Error: {str(e)[:100]}")
