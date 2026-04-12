@@ -42,8 +42,19 @@ async def fetch_events_via_playwright(playwright):
     log("Loading homepage…")
 
     try:
-        await page.goto(HOMEPAGE, wait_until="domcontentloaded", timeout=30000)
+        # Navigate and wait for network to be idle
+        await page.goto(HOMEPAGE, wait_until="networkidle", timeout=30000)
+        
+        # Wait for the match table to load
+        try:
+            await page.wait_for_selector("table#mtable, tr.singele_match_date", timeout=15000)
+        except Exception:
+            # If selector not found, wait a bit more
+            await page.wait_for_timeout(5000)
+        
+        # Additional wait for dynamic content
         await page.wait_for_timeout(3000)
+        
         html = await page.content()
 
     finally:
@@ -53,8 +64,13 @@ async def fetch_events_via_playwright(playwright):
 
     soup = HTMLParser(html)
     events = []
-
-    for row in soup.css("tr.singele_match_date"):
+    
+    # Find all match rows
+    rows = soup.css("tr.singele_match_date")
+    log(f"Found {len(rows)} match rows")
+    
+    for row in rows:
+        # Get the vs node which contains the link and event name
         if not (vs_node := row.css_first("td.teamvs a")):
             continue
 
@@ -81,6 +97,8 @@ async def fetch_events_via_playwright(playwright):
             "event": event,
             "logo": logo
         })
+        
+        log(f"  Found event: {event}")
 
     return events
 
@@ -103,7 +121,7 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=60000):
             req_url = response.url
             if '.m3u8' in req_url.lower() and not captured:
                 captured = req_url
-                log(f"  ✓ CAPTURED: {captured[:100]}...")
+                log(f"  ✓ CAPTURED via network: {captured[:100]}...")
         except Exception:
             pass
     
@@ -112,33 +130,49 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=60000):
     try:
         log(f"  Loading: {url}")
         
-        # Navigate to page
+        # Navigate to page and wait for network idle
         try:
-            await page.goto(url, wait_until="domcontentloaded", timeout=30000)
+            await page.goto(url, wait_until="networkidle", timeout=30000)
         except PlaywrightTimeoutError:
-            pass
+            # Fallback to domcontentloaded if networkidle times out
+            await page.goto(url, wait_until="domcontentloaded", timeout=30000)
         
         await page.wait_for_timeout(5000)
         
-        # Find and click any iframe or player element
-        # Look for iframes that might contain the stream
+        # Find and interact with iframes
         iframes = await page.query_selector_all("iframe")
         log(f"  Found {len(iframes)} iframes")
         
+        stream_iframe = None
         for iframe in iframes:
             try:
                 src = await iframe.get_attribute("src")
-                if src and ("stream" in src.lower() or "player" in src.lower() or "embed" in src.lower()):
-                    log(f"  Found stream iframe: {src[:80]}")
-                    
-                    # Navigate to iframe src directly
-                    await page.goto(src, wait_until="domcontentloaded", timeout=30000)
-                    await page.wait_for_timeout(5000)
-                    break
+                if src:
+                    log(f"  Iframe src: {src[:100]}")
+                    if "stream" in src.lower() or "player" in src.lower() or "embed" in src.lower():
+                        stream_iframe = iframe
+                        break
             except Exception:
                 pass
         
-        # Try to click on video player
+        # If we found a stream iframe, try to interact with it
+        if stream_iframe:
+            try:
+                frame = await stream_iframe.content_frame()
+                if frame:
+                    # Try to click in the iframe
+                    await frame.click("body", timeout=3000)
+                    await page.wait_for_timeout(2000)
+                    
+                    # Try to find video elements in iframe
+                    video_elements = await frame.query_selector_all("video")
+                    for video in video_elements:
+                        await video.click(timeout=2000)
+                        await page.wait_for_timeout(2000)
+            except Exception:
+                pass
+        
+        # Try to click on video player elements in main page
         click_selectors = [
             "video",
             ".player-container",
@@ -150,7 +184,9 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=60000):
             "#player",
             ".jwplayer",
             ".vjs-control-bar",
-            ".mejs__playpause-button"
+            ".mejs__playpause-button",
+            ".play-btn",
+            ".start-button"
         ]
         
         for selector in click_selectors:
@@ -171,44 +207,51 @@ async def capture_m3u8_from_page(playwright, url, timeout_ms=60000):
         except Exception:
             pass
         
-        # Monitor for m3u8
+        # Monitor for m3u8 with longer timeout
         waited = 0
+        check_interval = 2
+        
+        log(f"  Monitoring for stream (max 45s)...")
+        
         while waited < 45 and not captured:
-            await asyncio.sleep(2)
-            waited += 2
+            await asyncio.sleep(check_interval)
+            waited += check_interval
             
-            # Check page content for m3u8
-            if waited % 6 == 0:
+            # Check page content for m3u8 periodically
+            if waited % 4 == 0:
                 html = await page.content()
                 
-                # Look for m3u8 URLs
-                m3u8_matches = re.findall(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', html)
-                for match in m3u8_matches:
-                    if not captured:
-                        captured = match
-                        log(f"  ✓ HTML capture: {captured[:100]}...")
+                # Look for m3u8 URLs in various patterns
+                patterns = [
+                    r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*',
+                    r'https?://[^\s"\'<>]*b-cdn\.net[^\s"\'<>]*\.m3u8[^\s"\'<>]*',
+                    r'https?://[^\s"\'<>]*cloudfront\.net[^\s"\'<>]*\.m3u8[^\s"\'<>]*',
+                    r'["\'](https?://[^"\']+\.m3u8[^"\']*)["\']'
+                ]
+                
+                for pattern in patterns:
+                    matches = re.findall(pattern, html, re.IGNORECASE)
+                    for match in matches:
+                        if not captured:
+                            captured = match
+                            log(f"  ✓ CAPTURED via HTML: {captured[:100]}...")
+                            break
+                    if captured:
                         break
                 
                 # Look for base64 encoded streams
-                b64_matches = re.findall(r'["\']([A-Za-z0-9+/=]{80,500})["\']', html)
-                for b64_str in b64_matches:
-                    try:
-                        decoded = base64.b64decode(b64_str).decode('utf-8', errors='ignore')
-                        url_match = re.search(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', decoded)
-                        if url_match and not captured:
-                            captured = url_match.group(0)
-                            log(f"  ✓ Base64 capture: {captured[:100]}...")
-                            break
-                    except Exception:
-                        pass
-                
-                # Look for b-cdn.net patterns
-                bcdn_matches = re.findall(r'https?://[^\s"\'<>]*b-cdn\.net[^\s"\'<>]*\.m3u8[^\s"\'<>]*', html)
-                for match in bcdn_matches:
-                    if not captured:
-                        captured = match
-                        log(f"  ✓ CDN capture: {captured[:100]}...")
-                        break
+                if not captured:
+                    b64_matches = re.findall(r'["\']([A-Za-z0-9+/=]{80,500})["\']', html)
+                    for b64_str in b64_matches:
+                        try:
+                            decoded = base64.b64decode(b64_str).decode('utf-8', errors='ignore')
+                            url_match = re.search(r'https?://[^\s"\'<>]+\.m3u8[^\s"\'<>]*', decoded)
+                            if url_match and not captured:
+                                captured = url_match.group(0)
+                                log(f"  ✓ CAPTURED via base64: {captured[:100]}...")
+                                break
+                        except Exception:
+                            pass
     
     except Exception as e:
         log(f"  Error: {str(e)[:100]}")
@@ -266,7 +309,7 @@ async def main():
     
     async with async_playwright() as p:
         events = await fetch_events_via_playwright(p)
-        log(f"Found {len(events)} events")
+        log(f"Found {len(events)} total events")
         
         if not events:
             log("No events detected")
