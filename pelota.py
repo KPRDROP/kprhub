@@ -26,7 +26,7 @@ PELOTA1_URL    = "https://www.pelotalibre1.pe/"
 # Directorio del repo local
 REPO_DIR       = Path(__file__).parent
 EVENT_FILE     = "eventos.m3u"
-TIVIMATE_FILE  = "pelota_tivimate.m3u"
+TIVIMATE_FILE  = "eventos_tivimate.m3u"
 CDN_URL        = f"https://raw.githubusercontent.com/KPRDROP/kprhub/main/{EVENT_FILE}"
 SLOW_WAIT      = 4
 
