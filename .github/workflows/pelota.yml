@@ -70,7 +70,7 @@ jobs:
         
     - name: Commit and push changes
       run: |
-        git add eventos.m3u pelota_tivimate.m3u playlist.m3u playlist_tivimate.m3u
+        git add eventos.m3u eventos_tivimate.m3u playlist.m3u playlist_tivimate.m3u
         if git diff --cached --quiet; then
           echo "No changes to commit"
         else
