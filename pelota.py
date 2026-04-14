@@ -326,26 +326,20 @@ def main():
             title = f"{hora} {liga} – {partido}"
             entries.append(f'#EXTINF:-1 tvg-name="{chan}" group-title="{liga}", {title} – {chan}')
             
-            # Add VLC specific headers
-            referer = result.get("referer") or result.get("referrer")
-            if referer:
-                entries.append(f'#EXTVLCOPT:http-referrer={referer}')
-
-             user_agent = result.get("userAgent") or result.get("useragent") or result.get("user_agent")
-            if user_agent:
-                entries.append(f'#EXTVLCOPT:http-user-agent={user_agent}')
-
-            
-            # Use keys from the new extract_m3u8 (user_agent, referer)
+            # Use keys from the extract_m3u8 (user_agent, referer, origin, cookie)
             ref = result.get("referer")
             origin = result.get("origin")
             ua = result.get("user_agent")
             cookie = result.get("cookie")
             
-            if ref: entries.append(f'#EXTVLCOPT:http-referrer={ref}')
-            if origin: entries.append(f'#EXTVLCOPT:http-origin={origin}')
-            if ua: entries.append(f'#EXTVLCOPT:http-user-agent={ua}')
-            if cookie: entries.append(f'#EXTVLCOPT:http-cookie={cookie}')
+            if ref: 
+                entries.append(f'#EXTVLCOPT:http-referrer={ref}')
+            if origin: 
+                entries.append(f'#EXTVLCOPT:http-origin={origin}')
+            if ua: 
+                entries.append(f'#EXTVLCOPT:http-user-agent={ua}')
+            if cookie: 
+                entries.append(f'#EXTVLCOPT:http-cookie={cookie}')
             
             entries.append(result["url"])
             processed_count += 1
@@ -381,10 +375,14 @@ def main():
             ua = result.get("user_agent")
             cookie = result.get("cookie")
             
-            if ref: fixed_entries.append(f'#EXTVLCOPT:http-referrer={ref}')
-            if origin: fixed_entries.append(f'#EXTVLCOPT:http-origin={origin}')
-            if ua: fixed_entries.append(f'#EXTVLCOPT:http-user-agent={ua}')
-            if cookie: fixed_entries.append(f'#EXTVLCOPT:http-cookie={cookie}')
+            if ref: 
+                fixed_entries.append(f'#EXTVLCOPT:http-referrer={ref}')
+            if origin: 
+                fixed_entries.append(f'#EXTVLCOPT:http-origin={origin}')
+            if ua: 
+                fixed_entries.append(f'#EXTVLCOPT:http-user-agent={ua}')
+            if cookie: 
+                fixed_entries.append(f'#EXTVLCOPT:http-cookie={cookie}')
             
             fixed_entries.append(result["url"])
             
