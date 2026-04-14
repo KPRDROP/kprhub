@@ -15,6 +15,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+from urllib.parse import quote
 
 # ───────────── Configuración ─────────────
 ROJA_URL       = "https://www.rojadirectaenvivo.pl/"
@@ -25,6 +26,7 @@ PELOTA1_URL    = "https://www.pelotalibre1.pe/"
 # Directorio del repo local
 REPO_DIR       = Path(__file__).parent
 EVENT_FILE     = "eventos.m3u"
+TIVIMATE_FILE  = "pelota_tivimate.m3u"
 CDN_URL        = f"https://raw.githubusercontent.com/KPRDROP/kprhub/main/{EVENT_FILE}"
 SLOW_WAIT      = 4
 
@@ -286,6 +288,48 @@ def extract_m3u8(url: str) -> dict:
         driver.quit()
     return stream_data
 
+# ───────────── Helper para generar entradas ─────────────
+
+def generate_vlc_headers(result: dict) -> list:
+    """Genera las líneas de headers VLC para una entrada M3U"""
+    headers = []
+    ref = result.get("referer")
+    origin = result.get("origin")
+    ua = result.get("user_agent")
+    cookie = result.get("cookie")
+    
+    if ref: 
+        headers.append(f'#EXTVLCOPT:http-referrer={ref}')
+    if origin: 
+        headers.append(f'#EXTVLCOPT:http-origin={origin}')
+    if ua: 
+        headers.append(f'#EXTVLCOPT:http-user-agent={ua}')
+    if cookie: 
+        headers.append(f'#EXTVLCOPT:http-cookie={cookie}')
+    
+    return headers
+
+def generate_tivimate_url(result: dict) -> str:
+    """Genera la URL con parámetros pipe para TiviMate"""
+    url = result.get("url", "")
+    ref = result.get("referer", "")
+    origin = result.get("origin", "")
+    ua = result.get("user_agent", "")
+    
+    params = []
+    if ref:
+        params.append(f"referer={ref}")
+    if origin:
+        params.append(f"origin={origin}")
+    if ua:
+        # URL encode the user agent for TiviMate compatibility
+        encoded_ua = quote(ua, safe='')
+        params.append(f"user-agent={encoded_ua}")
+    
+    if params:
+        return f"{url}|{'|'.join(params)}"
+    return url
+
 # ───────────── Main ─────────────
 
 def main():
@@ -308,6 +352,7 @@ def main():
 
     # 3. Generar archivo eventos
     entries = ["#EXTM3U"]
+    tivimate_entries = ["#EXTM3U"]
     print(f"Total raw events found: {len(all_events)}")
     
     # Ordenar
@@ -324,24 +369,16 @@ def main():
         result = extract_m3u8(url)
         if result:
             title = f"{hora} {liga} – {partido}"
+            
+            # VLC Entry
             entries.append(f'#EXTINF:-1 tvg-name="{chan}" group-title="{liga}", {title} – {chan}')
-            
-            # Use keys from the extract_m3u8 (user_agent, referer, origin, cookie)
-            ref = result.get("referer")
-            origin = result.get("origin")
-            ua = result.get("user_agent")
-            cookie = result.get("cookie")
-            
-            if ref: 
-                entries.append(f'#EXTVLCOPT:http-referrer={ref}')
-            if origin: 
-                entries.append(f'#EXTVLCOPT:http-origin={origin}')
-            if ua: 
-                entries.append(f'#EXTVLCOPT:http-user-agent={ua}')
-            if cookie: 
-                entries.append(f'#EXTVLCOPT:http-cookie={cookie}')
-            
+            entries.extend(generate_vlc_headers(result))
             entries.append(result["url"])
+            
+            # TiviMate Entry
+            tivimate_entries.append(f'#EXTINF:-1 tvg-name="{chan}" group-title="{liga}", {title} – {chan}')
+            tivimate_entries.append(generate_tivimate_url(result))
+            
             processed_count += 1
         else:
             print("  -> No stream found")
@@ -350,9 +387,14 @@ def main():
     out_file.write_text("\n".join(entries), encoding="utf-8")
     print(f"Guardado {out_file} con {processed_count} eventos.")
     
+    tivimate_file = REPO_DIR / TIVIMATE_FILE
+    tivimate_file.write_text("\n".join(tivimate_entries), encoding="utf-8")
+    print(f"Guardado {tivimate_file} con {processed_count} eventos (formato TiviMate).")
+    
     # 4. Canales Fijos (LibrePelota)
     fixed_channels = get_fixed_channels(LIBPEL_URL)
     fixed_entries = []
+    fixed_tivimate_entries = []
     print(f"Procesando {len(fixed_channels)} canales fijos...")
     
     names_count = {}
@@ -367,26 +409,17 @@ def main():
                 display_name = f"{name} {names_count[name]}"
             else:
                 names_count[name] = 1
-                
+            
+            # VLC Fixed Entry
             fixed_entries.append(f'#EXTINF:-1 group-title="Fijos", {display_name}')
-            
-            ref = result.get("referer")
-            origin = result.get("origin")
-            ua = result.get("user_agent")
-            cookie = result.get("cookie")
-            
-            if ref: 
-                fixed_entries.append(f'#EXTVLCOPT:http-referrer={ref}')
-            if origin: 
-                fixed_entries.append(f'#EXTVLCOPT:http-origin={origin}')
-            if ua: 
-                fixed_entries.append(f'#EXTVLCOPT:http-user-agent={ua}')
-            if cookie: 
-                fixed_entries.append(f'#EXTVLCOPT:http-cookie={cookie}')
-            
+            fixed_entries.extend(generate_vlc_headers(result))
             fixed_entries.append(result["url"])
             
-    # 5. Combinar Playlist
+            # TiviMate Fixed Entry
+            fixed_tivimate_entries.append(f'#EXTINF:-1 group-title="Fijos", {display_name}')
+            fixed_tivimate_entries.append(generate_tivimate_url(result))
+            
+    # 5. Combinar Playlist (VLC)
     combo_entries = ["#EXTM3U"]
     combo_entries.extend(fixed_entries) # Primero fijos
     if len(entries) > 1:
@@ -394,13 +427,23 @@ def main():
         
     combo_file = REPO_DIR / "playlist.m3u"
     combo_file.write_text("\n".join(combo_entries), encoding="utf-8")
-    print("Playlist combinada generada.")
+    print("Playlist VLC combinada generada.")
     
-    # 6. Git Push
+    # 6. Combinar Playlist (TiviMate)
+    combo_tivimate_entries = ["#EXTM3U"]
+    combo_tivimate_entries.extend(fixed_tivimate_entries) # Primero fijos
+    if len(tivimate_entries) > 1:
+        combo_tivimate_entries.extend(tivimate_entries[1:]) # Luego eventos
+        
+    combo_tivimate_file = REPO_DIR / "playlist_tivimate.m3u"
+    combo_tivimate_file.write_text("\n".join(combo_tivimate_entries), encoding="utf-8")
+    print("Playlist TiviMate combinada generada.")
+    
+    # 7. Git Push
     try:
         repo = Repo(REPO_DIR)
-        repo.index.add([str(out_file), str(combo_file)])
-        repo.index.commit(f'Update playlist: {processed_count} events + {len(fixed_entries)//2} fixed')
+        repo.index.add([str(out_file), str(combo_file), str(tivimate_file), str(combo_tivimate_file)])
+        repo.index.commit(f'Update playlists: {processed_count} events + {len(fixed_entries)//2} fixed')
         repo.remote('origin').push()
         print("Pushed to GitHub.")
     except Exception as e:
