@@ -1,0 +1,79 @@
+name: Auto Update Sports Playlist
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+    
+  workflow_dispatch: # Permitir ejecución manual
+  push:
+  
+    branches: [ main ]
+    paths: 
+      - 'pelota.py'
+
+jobs:
+  update-playlist:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+        
+    - name: Install Chrome and ChromeDriver
+      run: |
+        # Install Chrome
+        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable xvfb
+        
+        # Get Chrome version and install matching ChromeDriver
+        CHROME_VERSION=$(google-chrome --version | cut -d " " -f3 | cut -d "." -f1-3)
+        echo "Chrome version: $CHROME_VERSION"
+        
+        # Download and install ChromeDriver using webdriver-manager approach
+        mkdir -p /home/runner/.wdm/drivers/chromedriver/linux64/
+        
+    - name: Install Python dependencies
+      run: |
+        pip install --upgrade pip
+        pip install requests beautifulsoup4 GitPython selenium-wire==5.1.0 blinker==1.7.0 webdriver-manager
+        
+    - name: Configure git
+      run: |
+        git config --global user.name 'GitHub Actions Bot'
+        git config --global user.email 'actions@github.com'
+        
+    - name: Run playlist updater
+      env:
+        DISPLAY: :99
+      run: |
+        # Start virtual display
+        export DISPLAY=:99
+        Xvfb :99 -screen 0 1920x1080x24 > /dev/null 2>&1 &
+        sleep 3
+        
+        # Install ChromeDriver using webdriver-manager
+        python3 -c "from webdriver_manager.chrome import ChromeDriverManager; ChromeDriverManager().install()"
+        
+        # Run the script
+        python3 pelota.py
+        
+    - name: Commit and push changes
+      run: |
+        git add eventos.m3u playlist.m3u
+        if git diff --cached --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "Pelota updater - $(date -u +%Y-%m-%d\ %H:%M\ UTC)"
+          git push
+        fi
