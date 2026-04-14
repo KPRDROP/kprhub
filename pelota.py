@@ -25,7 +25,7 @@ PELOTA1_URL    = "https://www.pelotalibre1.pe/"
 # Directorio del repo local
 REPO_DIR       = Path(__file__).parent
 EVENT_FILE     = "eventos.m3u"
-CDN_URL        = f"https://raw.githubusercontent.com/felamachado/canalesTV/main/{EVENT_FILE}"
+CDN_URL        = f"https://raw.githubusercontent.com/KPRDROP/kprhub/main/{EVENT_FILE}"
 SLOW_WAIT      = 4
 
 # Ligas a incluir/excluir
@@ -275,8 +275,8 @@ def extract_m3u8(url: str) -> dict:
             stream_data = {
                 "url": found_req.url,
                 "referer": headers.get("Referer", ""),
-                "user_agent": headers.get("User-Agent", ""),
                 "origin": headers.get("Origin", ""),
+                "user_agent": headers.get("User-Agent", ""),
                 "cookie": headers.get("Cookie", "")
             }
                     
@@ -327,22 +327,24 @@ def main():
             entries.append(f'#EXTINF:-1 tvg-name="{chan}" group-title="{liga}", {title} – {chan}')
             
             # Add VLC specific headers
-            if result.get("userAgent"): # Normalize key if needed, using lower camelCase in dict
-                entries.append(f'#EXTVLCOPT:http-user-agent={result["userAgent"]}')
-            if result.get("referer"):
-                entries.append(f'#EXTVLCOPT:http-referrer={result["referer"]}')
-            elif result.get("referrer"): # Typo handling
-                 entries.append(f'#EXTVLCOPT:http-referrer={result["referrer"]}')
+            referer = result.get("referer") or result.get("referrer")
+            if referer:
+                entries.append(f'#EXTVLCOPT:http-referrer={referer}')
+
+             user_agent = result.get("userAgent") or result.get("useragent") or result.get("user_agent")
+            if user_agent:
+                entries.append(f'#EXTVLCOPT:http-user-agent={user_agent}')
+
             
             # Use keys from the new extract_m3u8 (user_agent, referer)
-            ua = result.get("user_agent")
             ref = result.get("referer")
             origin = result.get("origin")
+            ua = result.get("user_agent")
             cookie = result.get("cookie")
             
-            if ua: entries.append(f'#EXTVLCOPT:http-user-agent={ua}')
             if ref: entries.append(f'#EXTVLCOPT:http-referrer={ref}')
             if origin: entries.append(f'#EXTVLCOPT:http-origin={origin}')
+            if ua: entries.append(f'#EXTVLCOPT:http-user-agent={ua}')
             if cookie: entries.append(f'#EXTVLCOPT:http-cookie={cookie}')
             
             entries.append(result["url"])
@@ -374,14 +376,14 @@ def main():
                 
             fixed_entries.append(f'#EXTINF:-1 group-title="Fijos", {display_name}')
             
-            ua = result.get("user_agent")
             ref = result.get("referer")
             origin = result.get("origin")
+            ua = result.get("user_agent")
             cookie = result.get("cookie")
             
-            if ua: fixed_entries.append(f'#EXTVLCOPT:http-user-agent={ua}')
             if ref: fixed_entries.append(f'#EXTVLCOPT:http-referrer={ref}')
             if origin: fixed_entries.append(f'#EXTVLCOPT:http-origin={origin}')
+            if ua: fixed_entries.append(f'#EXTVLCOPT:http-user-agent={ua}')
             if cookie: fixed_entries.append(f'#EXTVLCOPT:http-cookie={cookie}')
             
             fixed_entries.append(result["url"])
