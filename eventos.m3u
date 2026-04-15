@@ -1,12 +1,8 @@
 #EXTM3U
-#EXTINF:-1 tvg-name="Capo Deportes 4" group-title="Saudi Pro League", 13:00 Saudi Pro League – Al Nassr vs Al Ettifaq – Capo Deportes 4
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=o1aRnEWkhSqJ0_zxC7NTTg&expires=1776286927
 #EXTINF:-1 tvg-name="Canal 6" group-title="Saudi Pro League", 13:00 Saudi Pro League – Al Nassr vs Al Ettifaq – Canal 6
 #EXTVLCOPT:http-referrer=https://eveningbad.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/47vpt.m3u8?s=vfQnwtnga7ye5Oi_L7-FYw&e=1776301354
+https://3n4x5t25.80386851.net:8443/hls/47vpt.m3u8?s=vjwxUAy1ox4FXWN7u48rZA&e=1776307195
 #EXTINF:-1 tvg-name="Canal 7 (HD)" group-title="Saudi Pro League", 13:00 Saudi Pro League – Al Nassr vs Al Ettifaq – Canal 7 (HD)
 #EXTVLCOPT:http-referrer=https://www.capoplay.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
@@ -14,15 +10,15 @@ https://otte-netskrt.live.pv-cdn.net/lhr-nitro/live/clients/dash/enc/vkpoljjpkj/
 #EXTINF:-1 tvg-name="Canal 8 (HD)" group-title="Saudi Pro League", 13:00 Saudi Pro League – Al Nassr vs Al Ettifaq – Canal 8 (HD)
 #EXTVLCOPT:http-referrer=https://streamx550.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://244pl.streamingtv339.com/foxone1/tracks-v1a1/mono.m3u8?ip=20.163.82.243&token=94f26a3a59286c8b44861d7c9e307bb709411e7a-0c-1776324799-1776270799
+https://244pl.streamingtv339.com/foxone1/tracks-v1a1/mono.m3u8?ip=52.154.132.161&token=76ec59887c22729e29ba897508a8f34b0ce249ec-37-1776330624-1776276624
 #EXTINF:-1 tvg-name="Canal 1" group-title="UEFA Champions League", 14:00 UEFA Champions League – Bayern Munich vs Real Madrid – Canal 1
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=fDmwvleK0EcEIEbCSc3v1Q&expires=1776287007
+https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=fPgBICCpPs1NVvPAP97AmA&expires=1776292835
 #EXTINF:-1 tvg-name="Canal 2" group-title="UEFA Champions League", 14:00 UEFA Champions League – Bayern Munich vs Real Madrid – Canal 2
 #EXTVLCOPT:http-referrer=https://eveningbad.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/a31q9.m3u8?s=nII3L7NsROwYiDaO0UoYOQ&e=1776301428
+https://3n4x5t25.80386851.net:8443/hls/a31q9.m3u8?s=u9fBEVeOdZwlprhOE1P7og&e=1776307249
 #EXTINF:-1 tvg-name="Canal 3 (HD)" group-title="UEFA Champions League", 14:00 UEFA Champions League – Bayern Munich vs Real Madrid – Canal 3 (HD)
 #EXTVLCOPT:http-referrer=https://www.capoplay.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
@@ -30,7 +26,7 @@ https://live-pv-ta.amazon.fastly-edge.com/gru-nitro/live/clients/dash/enc/mjl28z
 #EXTINF:-1 tvg-name="Canal 4 (HD)" group-title="UEFA Champions League", 14:00 UEFA Champions League – Bayern Munich vs Real Madrid – Canal 4 (HD)
 #EXTVLCOPT:http-referrer=https://streamtpnew.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://24a1.streameasthd.net/espn/tracks-v1a1/mono.m3u8?ip=20.163.82.243&token=c161a5ed3429b85fc28f72f0e386902d59998c9b-ec-1776324880-1776270880
+https://pecdl1.streameasthd.net/espn/tracks-v1a1/mono.m3u8?ip=52.154.132.161&token=7b7a0fe9b2576fc89872d89d87612ced50e0540a-10-1776330688-1776276688
 #EXTINF:-1 tvg-name="Canal 5 (HD)" group-title="UEFA Champions League", 14:00 UEFA Champions League – Bayern Munich vs Real Madrid – Canal 5 (HD)
 #EXTVLCOPT:http-referrer=https://www.capoplay.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
@@ -38,23 +34,27 @@ https://live-pv-ta.amazon.fastly-edge.com/gru-nitro/live/clients/dash/enc/mjl28z
 #EXTINF:-1 tvg-name="Canal 6 (HD)" group-title="UEFA Champions League", 14:00 UEFA Champions League – Bayern Munich vs Real Madrid – Canal 6 (HD)
 #EXTVLCOPT:http-referrer=https://streamx550.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cc324.streamingtv339.com/disney1/tracks-v1a1/mono.m3u8?ip=20.163.82.243&token=3737389c6c0a4c29535fcb59995b3dffb6892620-fd-1776324911-1776270911
+https://244pl.streamingtv339.com/disney1/tracks-v1a1/mono.m3u8?ip=52.154.132.161&token=7950f5bf29a6565efff4fbcffe904f0a997d4bff-df-1776330723-1776276723
+#EXTINF:-1 tvg-name="Canal 7 (HD)" group-title="UEFA Champions League", 14:00 UEFA Champions League – Bayern Munich vs Real Madrid – Canal 7 (HD)
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=CmA5jqJedlBQpsQVTUWkyA&expires=1776292935
 #EXTINF:-1 tvg-name="Canal 1" group-title="UEFA Champions League", 14:00 UEFA Champions League – Arsenal vs Sporting CP – Canal 1
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=99WhyNVVffkHI53Cce9BMQ&expires=1776287133
+https://n4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=Zt6hj_oigqJYwBloDPhwYw&expires=1776292942
 #EXTINF:-1 tvg-name="Canal 2" group-title="UEFA Champions League", 14:00 UEFA Champions League – Arsenal vs Sporting CP – Canal 2
 #EXTVLCOPT:http-referrer=https://eveningbad.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/pu1sgwiscq0e.m3u8?s=ySfD3pVM6FmctmvxdOlnhg&e=1776301566
+https://3n4x5t25.80386851.net:8443/hls/pu1sgwiscq0e.m3u8?s=MU1MNzNFZMvTcsyGi4Cvqg&e=1776307360
 #EXTINF:-1 tvg-name="Canal 3 (HD)" group-title="UEFA Champions League", 14:00 UEFA Champions League – Arsenal vs Sporting CP – Canal 3 (HD)
 #EXTVLCOPT:http-referrer=https://www.capoplay.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://d3r8pf1u64jsoc.cloudfront.net/out/v1/efe2396f3d2d49559edb992c14909e42/index/index_8_0.m3u8
+https://d3r8pf1u64jsoc.cloudfront.net/out/v1/efe2396f3d2d49559edb992c14909e42/index/index_2.m3u8
 #EXTINF:-1 tvg-name="Canal 4 (HD)" group-title="UEFA Champions League", 14:00 UEFA Champions League – Arsenal vs Sporting CP – Canal 4 (HD)
 #EXTVLCOPT:http-referrer=https://streamtpnew.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://24a1.streameasthd.net/espn2/tracks-v1a1/mono.m3u8?ip=20.163.82.243&token=933c79e339ed442d4892a228bc4a9217095ab62a-d1-1776325007-1776271007
+https://51a1.streameasthd.net/espn2/tracks-v1a1/mono.m3u8?ip=52.154.132.161&token=3525f103af8ea17e047faae2826a6df21b93d2dd-22-1776330782-1776276782
 #EXTINF:-1 tvg-name="Canal 5 (HD)" group-title="UEFA Champions League", 14:00 UEFA Champions League – Arsenal vs Sporting CP – Canal 5 (HD)
 #EXTVLCOPT:http-referrer=https://www.capoplay.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
@@ -62,97 +62,117 @@ https://a171live-pv-ta-amazon.akamaized.net/gru-nitro/live/clients/dash/enc/zmt5
 #EXTINF:-1 tvg-name="Canal 6 (HD)" group-title="UEFA Champions League", 14:00 UEFA Champions League – Arsenal vs Sporting CP – Canal 6 (HD)
 #EXTVLCOPT:http-referrer=https://streamx550.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cc324.streamingtv339.com/disney2/tracks-v1a1/mono.m3u8?ip=20.163.82.243&token=de6f9980cef2282d67edb3c5905a38628c6066d2-40-1776325048-1776271048
-#EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Argentina", 17:15 Copa Argentina – Gimnasia Mendoza vs Gimnasia y Tiro – FutbolLibre Stream
-#EXTVLCOPT:http-referrer=https://builddiamond.net/
+https://cc324.streamingtv339.com/disney2/tracks-v1a1/mono.m3u8?ip=52.154.132.161&token=d566e34455567eddc55536ce72a7ea0a6a8c881c-17-1776330816-1776276816
+#EXTINF:-1 tvg-name="Canal 7 (HD)" group-title="UEFA Champions League", 14:00 UEFA Champions League – Arsenal vs Sporting CP – Canal 7 (HD)
+#EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/nvc4ghiqsoun7c.m3u8?s=qkwJkbNQQekxcgjL5fQM6w&e=1776301718
+https://n3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=utrCwk1Tvi5L_aHptLKfQw&expires=1776293023
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Argentina", 17:15 Copa Argentina – Gimnasia Mendoza vs Gimnasia y Tiro – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://x4bnd7lq.fubohd.com/tycinternacional/mono.m3u8?token=c18cd540fd6428510000a0aaf17c04f8c6e76e1e-ab-1776297235-1776279235
+https://tyg2mnl9.fubohd.com/tycsports/mono.m3u8?token=33c7f39fb2f289894c711b00afa9b2acde3da65d-f7-1776302941-1776284941
+#EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Argentina", 17:15 Copa Argentina – Gimnasia Mendoza vs Gimnasia y Tiro – FutbolLibre Stream
+#EXTVLCOPT:http-referrer=https://builddiamond.net/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://3n4x5t25.80386851.net:8443/hls/nvc4ghiqsoun7c.m3u8?s=LkdWaWKa2WpAYQItx1tC6g&e=1776307454
+#EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Argentina", 17:15 Copa Argentina – Gimnasia Mendoza vs Gimnasia y Tiro – FutbolLibre Stream
+#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://bgfuzq.fubohd.com/tycinternacional/mono.m3u8?token=ee025f9f45a52a9220814b4ab3a6bac0d48ee5e1-e2-1776302965-1776284965
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Copa Argentina", 17:15 Copa Argentina – Gimnasia Mendoza vs Gimnasia y Tiro – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://qzv4jmsc.fubohd.com/tycinternacional/mono.m3u8?token=65cd40c073020b28d01c4e384fdb03de2873c9e9-9d-1776297287-1776279287
+https://a2vlca.fubohd.com/tycsports/mono.m3u8?token=bbd00f52c43e020265700969e0910e8c76f3006c-c3-1776302976-1776284976
+#EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Copa Argentina", 17:15 Copa Argentina – Gimnasia Mendoza vs Gimnasia y Tiro – LibrePelota Stream
+#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://c2nvdxq.fubohd.com/tycinternacional/mono.m3u8?token=0fca14ae59150ea0f10bd469ce3a0f6ccd5cefa3-33-1776302996-1776284996
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Argentina", 17:15 Copa Argentina – Gimnasia Mendoza vs Gimnasia y Tiro – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://rm8zcvk3.fubohd.com/tycsports/mono.m3u8?token=a0b2b5e74eb03a5c170d25feab1d2e3d0d785fe6-34-1776297301-1776279301
+https://qzv4jmsc.fubohd.com/tycsports/mono.m3u8?token=090a5e29acf2cf0a4faeeeac339e7331a460bb8e-d1-1776303007-1776285007
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Argentina", 17:15 Copa Argentina – Gimnasia Mendoza vs Gimnasia y Tiro – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/nvc4ghiqsoun7c.m3u8?s=Bh-LbGQIAlS0BS0Cw1nl0w&e=1776301815
+https://3n4x5t25.80386851.net:8443/hls/nvc4ghiqsoun7c.m3u8?s=snUwmJTqz0VUUL5KFE2yJw&e=1776307520
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Argentina", 17:15 Copa Argentina – Gimnasia Mendoza vs Gimnasia y Tiro – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://wp9xqedt.fubohd.com/tycinternacional/mono.m3u8?token=4e1e11c6ef791a00b9877ff155667c67faabd72f-c4-1776297326-1776279326
+https://aw1wcm92zq.fubohd.com/tycinternacional/mono.m3u8?token=05c19979915c35c60ef5f5e185ade83b42f9c611-ed-1776303032-1776285032
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Liga Profesional Saudí", 18:00 Liga Profesional Saudí – Al Nassr vs Al Ittifaq – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cgxheq.fubohd.com/foxdeportes/mono.m3u8?token=12f21eef0a5c6cb1fa5b6db9994d253f8b94872f-2b-1776297563-1776279563
+https://a2vlca.fubohd.com/foxdeportes/mono.m3u8?token=b7bf917dc51cf6aaa84bf5cb2508785bc4ff57ac-53-1776303157-1776285157
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Liga Profesional Saudí", 18:00 Liga Profesional Saudí – Al Nassr vs Al Ittifaq – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/o4kexbz18fc5kj.m3u8?s=owABmYJaoOJdlWOqn3aidg&e=1776302079
+https://3n4x5t25.80386851.net:8443/hls/o4kexbz18fc5kj.m3u8?s=ozGXvTSrDFVGng0467gaSw&e=1776307670
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Liga Profesional Saudí", 18:00 Liga Profesional Saudí – Al Nassr vs Al Ittifaq – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://rm8zcvk3.fubohd.com/foxdeportes/mono.m3u8?token=61f28851c15d7b0c825f46c7db1fbc5f60db5458-25-1776297596-1776279596
+https://cgxheq.fubohd.com/foxdeportes/mono.m3u8?token=a28a5720c0d1a0af64612c6c764ca3ec3fa4ee0b-2b-1776303181-1776285181
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Liga Profesional Saudí", 18:00 Liga Profesional Saudí – Al Nassr vs Al Ittifaq – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://rm8zcvk3.fubohd.com/foxdeportes/mono.m3u8?token=1ab5d32b230e76872535945b0745628b17eea8c2-f9-1776297617-1776279617
+https://bgfuzq.fubohd.com/foxdeportes/mono.m3u8?token=46735165250b7ec2939617e6ebe65974cd78a10d-61-1776303202-1776285202
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Liga Profesional Saudí", 18:00 Liga Profesional Saudí – Al Nassr vs Al Ittifaq – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/o4kexbz18fc5kj.m3u8?s=8boS7BUBFzNa2udg6insog&e=1776302130
+https://3n4x5t25.80386851.net:8443/hls/o4kexbz18fc5kj.m3u8?s=6TRxHsi8r00sPX7Nml3wxg&e=1776307715
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – FutbolLibre Stream
-#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-referrer=https://tiogolhd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
 https://live-pv-ta.amazon.fastly-edge.com/syd-nitro/live/clients/dash/enc/fb6jy4pxts/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://ym9yzq.fubohd.com/espn/mono.m3u8?token=e340eea9595f7ce2682c3d2df4b75feb959abda7-bf-1776297681-1776279681
-#EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – FutbolLibre Stream
-#EXTVLCOPT:http-referrer=https://builddiamond.net/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/tyh9ei.m3u8?s=u0xyS1DPkxUYInFSmlZ3qw&e=1776302206
+https://live-pv-ta.amazon.fastly-edge.com/gru-nitro/live/clients/dash/enc/mjl28zz5rj/out/v1/8e4dbe981d574983a5a0c96b874cc5b9/cenc.mpd
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://c2nvdxq.fubohd.com/tudn/mono.m3u8?token=e1d6c67e4869529646e0223a5c087fc322f546a4-1a-1776297717-1776279717
-#EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – FutbolLibre Stream
-#EXTVLCOPT:http-referrer=https://builddiamond.net/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/l0uhgx6r4cm.m3u8?s=NzYoxAN5Ito__G9FEIbnJQ&e=1776302230
+https://ym9yzq.fubohd.com/espn/mono.m3u8?token=fc49d50259c7246088fbdc2461c97dbf491ada1d-31-1776303249-1776285249
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://c2nvdxq.fubohd.com/foxsports/mono.m3u8?token=05bc1d0823dea8052e8da6df424253bf1ac50e80-14-1776297747-1776279747
+https://qzv4jmsc.fubohd.com/disney1/mono.m3u8?token=0ab72c86f8035c3786ee6dae35b59878152fe213-56-1776303261-1776285261
+#EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – FutbolLibre Stream
+#EXTVLCOPT:http-referrer=https://builddiamond.net/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://3n4x5t25.80386851.net:8443/hls/tyh9ei.m3u8?s=ilZqwlBVq2I65lWRQfOUlw&e=1776307774
+#EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – FutbolLibre Stream
+#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://ag9wzq.fubohd.com/tudn/mono.m3u8?token=bcf9b1f2804598d935d646124e48284c48c082f1-38-1776303285-1776285285
+#EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – FutbolLibre Stream
+#EXTVLCOPT:http-referrer=https://builddiamond.net/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://3n4x5t25.80386851.net:8443/hls/l0uhgx6r4cm.m3u8?s=iNTbxUKqYtAFFUy3EWYT1g&e=1776307799
+#EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – FutbolLibre Stream
+#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://wp9xqedt.fubohd.com/foxsports/mono.m3u8?token=266a6b1f8a62b6fb8b561369cdef290e55f827dd-54-1776303311-1776285311
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – FutbolLibre Stream
-#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-referrer=https://tiogolhd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
 https://live-pv-ta.amazon.fastly-edge.com/syd-nitro/live/clients/dash/enc/cllekigzzn/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – FutbolLibre Stream
-#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-referrer=https://tiogolhd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
 https://d3r8pf1u64jsoc.cloudfront.net/out/v1/efe2396f3d2d49559edb992c14909e42/index/index_1.m3u8
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://aw1wcm92zq.fubohd.com/espn2/mono.m3u8?token=69b3c9b84027125cdcaaab553dc55ebbc6d2d2de-9-1776297797-1776279797
+https://agvyby.fubohd.com/espn2/mono.m3u8?token=921c6f31316d22c4d46ff2277c4568d64a0274c7-86-1776303345-1776285345
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://qzv4jmsc.fubohd.com/disney2/mono.m3u8?token=eb4a38b35b4ab1f828cd7fae398976c32f6e8df8-b-1776297808-1776279808
+https://aw1wcm92zq.fubohd.com/disney2/mono.m3u8?token=6f48ea91a6994157c8442c2cd1fb2b5d10247bdc-85-1776303356-1776285356
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/ecef5nnc.m3u8?s=8K07oD29p0N8doQPllVt7Q&e=1776302324
+https://3n4x5t25.80386851.net:8443/hls/ecef5nnc.m3u8?s=FZe8ukdVSWF9SMpWKvjYBA&e=1776307870
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – LibrePelota Stream
-#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-referrer=https://tiogolhd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
 https://live-pv-ta.amazon.fastly-edge.com/syd-nitro/live/clients/dash/enc/fb6jy4pxts/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – LibrePelota Stream
@@ -162,212 +182,244 @@ https://live-pv-ta.amazon.fastly-edge.com/gru-nitro/live/clients/dash/enc/mjl28z
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://ym9yzq.fubohd.com/disney1/mono.m3u8?token=0effda5672e1b93b1c78ec156df42da988da15fc-18-1776297893-1776279893
+https://aw1wcm92zq.fubohd.com/espn/mono.m3u8?token=55e82e9e54dc0d7a73939f79815182f55992eab2-62-1776303404-1776285404
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://qzv4jmsc.fubohd.com/tudn/mono.m3u8?token=ef88755e042b9fddc1db0cc59079b88a0fac38db-5b-1776297915-1776279915
+https://a2vlca.fubohd.com/disney1/mono.m3u8?token=d64dba0d136b2e75c502876831b09bbe7f3d8e1d-f1-1776303415-1776285415
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://ag9wzq.fubohd.com/foxsports/mono.m3u8?token=ef27e2fbc03862f7e4432581995814c962fdac37-89-1776297939-1776279939
-#EXTINF:-1 tvg-name="LibrePelota Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – LibrePelota Stream
+https://bgfuzq.fubohd.com/tudn/mono.m3u8?token=2edeb5daf89fb1124ea3dfedf3fdcd38c69faf0e-d4-1776303435-1776285435
+#EXTINF:-1 tvg-name="LibrePelota Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://rm8zcvk3.fubohd.com/foxsports/mono.m3u8?token=99ff1856d95aa378466558e26ecf9453387f18ad-21-1776303455-1776285455
+#EXTINF:-1 tvg-name="LibrePelota Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – LibrePelota Stream
+#EXTVLCOPT:http-referrer=https://tiogolhd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
 https://live-pv-ta.amazon.fastly-edge.com/syd-nitro/live/clients/dash/enc/cllekigzzn/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – LibrePelota Stream
-#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-referrer=https://tiogolhd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://d3r8pf1u64jsoc.cloudfront.net/out/v1/efe2396f3d2d49559edb992c14909e42/index/index_6_0.m3u8
+https://d3r8pf1u64jsoc.cloudfront.net/out/v1/efe2396f3d2d49559edb992c14909e42/index/index_1.m3u8
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://ym9yzq.fubohd.com/espn2/mono.m3u8?token=29a3546e135ba03286cfc3768682eab10710f9ba-d5-1776297973-1776279973
+https://x4bnd7lq.fubohd.com/espn2/mono.m3u8?token=d2743276bb50534d460765981c4f23823924a3ec-26-1776303489-1776285489
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://ag9wzq.fubohd.com/disney2/mono.m3u8?token=029ff594584b7c7635c9ea59df5c1433ae6cd914-3-1776297987-1776279987
+https://c2nvdxq.fubohd.com/disney2/mono.m3u8?token=f3d04a58e526500af7d01e396e65bbf920bcaff5-a3-1776303500-1776285500
+#EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – PelotaLibre1 Stream
+#EXTVLCOPT:http-referrer=https://tiogolhd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://live-pv-ta.amazon.fastly-edge.com/syd-nitro/live/clients/dash/enc/fb6jy4pxts/out/v1/f8fa17f087564f51aa4d5c700be43ec4/cenc.mpd
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://ym9yzq.fubohd.com/espn/mono.m3u8?token=c8f18f442add0463754a88e9e5caed8c066ecc4e-f9-1776298061-1776280061
+https://live-pv-ta.amazon.fastly-edge.com/gru-nitro/live/clients/dash/enc/mjl28zz5rj/out/v1/8e4dbe981d574983a5a0c96b874cc5b9/cenc.mpd
+#EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – PelotaLibre1 Stream
+#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://x4bnd7lq.fubohd.com/espn/mono.m3u8?token=9f2e69a23f57876028c3e7b2cedafe5730a74ede-72-1776303544-1776285544
+#EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – PelotaLibre1 Stream
+#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://rm8zcvk3.fubohd.com/disney1/mono.m3u8?token=872f454798bfd2f63f165a385b5733debd67831b-47-1776303555-1776285555
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/tyh9ei.m3u8?s=W75jeOO5NIBNNq9oOPzPEw&e=1776302601
+https://3n4x5t25.80386851.net:8443/hls/tyh9ei.m3u8?s=lcYrPbTFAJ3Mo_qEEqDvnQ&e=1776308069
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://agvyby.fubohd.com/tudn/mono.m3u8?token=051f77b36c74292223e1915647889f6a63e738f3-aa-1776298116-1776280116
+https://agvyby.fubohd.com/tudn/mono.m3u8?token=f2c1b3a8e2da044b53b1860ef7067be670d74e8a-c3-1776303581-1776285581
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/l0uhgx6r4cm.m3u8?s=psldnSvmfhsn86ojYIRJzA&e=1776302629
+https://3n4x5t25.80386851.net:8443/hls/l0uhgx6r4cm.m3u8?s=aleZhVLU-QdTl8u3jAKYAw&e=1776308094
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Bayern München vs Real Madrid – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://x4bnd7lq.fubohd.com/foxsports/mono.m3u8?token=921cebea6735062eac72e54f59313b68e8ed32f2-80-1776298146-1776280146
+https://ag9wzq.fubohd.com/foxsports/mono.m3u8?token=2e9688ae778c4b795e0c4d2b3403d771597635d1-bb-1776303605-1776285605
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – PelotaLibre1 Stream
-#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-referrer=https://tiogolhd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
 https://live-pv-ta.amazon.fastly-edge.com/syd-nitro/live/clients/dash/enc/cllekigzzn/out/v1/bd3b0c314fff4bb1ab4693358f3cd2d3/cenc.mpd
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – PelotaLibre1 Stream
-#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-referrer=https://tiogolhd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://d3r8pf1u64jsoc.cloudfront.net/out/v1/efe2396f3d2d49559edb992c14909e42/index/index_5.m3u8
+https://d3r8pf1u64jsoc.cloudfront.net/out/v1/efe2396f3d2d49559edb992c14909e42/index/index_1.m3u8
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://x4bnd7lq.fubohd.com/espn2/mono.m3u8?token=f07f1d99d33b1ce6152839bc40c4b915bac7f198-75-1776298187-1776280187
+https://anvtcax.fubohd.com/espn2/mono.m3u8?token=1b7845691e5c5311ccfd934623529b67e6e850dc-ee-1776303640-1776285640
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://agvyby.fubohd.com/disney2/mono.m3u8?token=37a52700870f4f1cbd4876aa96a03225ad87a481-5e-1776298198-1776280198
+https://rm8zcvk3.fubohd.com/disney2/mono.m3u8?token=93d9c3528c6d91774dc36a6758c105c63c42a8b3-a4-1776303651-1776285651
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="UEFA Champions League", 19:00 UEFA Champions League – Arsenal vs Sporting CP – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/ecef5nnc.m3u8?s=-4rZHtih5cY9fnGWMlZNtA&e=1776302710
+https://3n4x5t25.80386851.net:8443/hls/ecef5nnc.m3u8?s=vFnKsMgj_MmvFY3NnDzblA&e=1776308164
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Liga 1", 20:00 Liga 1 – UTC Cajamarca vs Sport Huancayo – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://tyg2mnl9.fubohd.com/liga1max/mono.m3u8?token=3dc1c5a27377980d838ae50666a79d6397a3735d-72-1776298222-1776280222
+https://ym9yzq.fubohd.com/liga1max/mono.m3u8?token=d3ed8b71b8165c6ccc15edc6b7a3b2562183bfd8-d4-1776303675-1776285675
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Liga 1", 20:00 Liga 1 – UTC Cajamarca vs Sport Huancayo – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://eveningbad.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/oz76nw0fy.m3u8?s=RPSEtkD1j8EIzQq5ZLEuQQ&e=1776302736
+https://3n4x5t25.80386851.net:8443/hls/oz76nw0fy.m3u8?s=Kccg2GmpDz00YutpC6IO8Q&e=1776308188
+#EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Liga 1", 20:00 Liga 1 – UTC Cajamarca vs Sport Huancayo – LibrePelota Stream
+#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://ag9wzq.fubohd.com/liga1max/mono.m3u8?token=b83923bec0240f7b50ca9f8e958da47d2bedbf25-23-1776303700-1776285700
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Liga 1", 20:00 Liga 1 – UTC Cajamarca vs Sport Huancayo – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://rm8zcvk3.fubohd.com/liga1max/mono.m3u8?token=13f1a02da1bbeaceff0d4ce11c28b72fd4cfb2c4-9d-1776298284-1776280284
+https://ym9yzq.fubohd.com/liga1max/mono.m3u8?token=a8243d44779bc88acc8ead7a212de779d7b716c2-44-1776303721-1776285721
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Liga 1", 20:00 Liga 1 – UTC Cajamarca vs Sport Huancayo – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://eveningbad.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/oz76nw0fy.m3u8?s=FPkKdbu9N7wS9ogmKHL6Gg&e=1776302797
+https://3n4x5t25.80386851.net:8443/hls/oz76nw0fy.m3u8?s=LnivikHSRqtce0SP7U94Dg&e=1776308240
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Cruzeiro vs Universidad Católica – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://agvyby.fubohd.com/espn2/mono.m3u8?token=45cac1ae1845144defcc23e322252f23b0792587-b6-1776298308-1776280308
+https://ym9yzq.fubohd.com/espn2/mono.m3u8?token=10fdca5549197344f9e5aa44c33bcb4acbea186f-f3-1776303751-1776285751
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Cruzeiro vs Universidad Católica – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/ecef5nnc.m3u8?s=dHG46ee4cLe0BJpY9XSzDA&e=1776302834
+https://3n4x5t25.80386851.net:8443/hls/ecef5nnc.m3u8?s=DbD47R3Sagi2UofrfnAa4Q&e=1776308276
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Cruzeiro vs Universidad Católica – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://wp9xqedt.fubohd.com/foxsports3/mono.m3u8?token=e5c7780161b4aefb68217665fce16c7e77be5d1a-3e-1776298347-1776280347
+https://cgxheq.fubohd.com/foxsports3/mono.m3u8?token=e5767816a67df3883134381849fd8b097b58a333-40-1776303787-1776285787
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Cruzeiro vs Universidad Católica – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://tyg2mnl9.fubohd.com/espn2mx/mono.m3u8?token=fc8a470d367ea62b2b68892fe1d186a82ead918f-ed-1776298358-1776280358
+https://c2nvdxq.fubohd.com/espn2mx/mono.m3u8?token=8b5820ed0e65fa374db61dec6277a746a9379f72-d7-1776303798-1776285798
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://aw1wcm92zq.fubohd.com/espn/mono.m3u8?token=14112637629adef116ee37fc7b1888603cee52fe-e3-1776298371-1776280371
+https://tyg2mnl9.fubohd.com/espn/mono.m3u8?token=ce92b248d9ada4f7417e0ada8df79277ecbe9185-1c-1776303809-1776285809
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/tyh9ei.m3u8?s=GfaQMi99VCHCipvNxjg8sQ&e=1776302895
+https://3n4x5t25.80386851.net:8443/hls/tyh9ei.m3u8?s=ESq2KBVCeeMcxvXFynm4Nw&e=1776308333
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://ag9wzq.fubohd.com/foxsports/mono.m3u8?token=4b6c7391ea6716dd6d502916804dcf1c4a83fb2e-c7-1776298406-1776280406
+https://agvyby.fubohd.com/foxsports/mono.m3u8?token=d84221243d764c66b719c609314caa78ae82d7c2-82-1776303844-1776285844
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cgxheq.fubohd.com/telefe/mono.m3u8?token=682352138f43d630b2582b806c1b25c7d5e73ab9-a7-1776298416-1776280416
+https://agvyby.fubohd.com/telefe/mono.m3u8?token=e60aadbd5715f5b548ea77cea1d1fd8e604233b7-66-1776303855-1776285855
+#EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – FutbolLibre Stream
+#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://agvyby.fubohd.com/beinsportes/mono.m3u8?token=53786ad2672f00d36da6dc12ed58086fb5cedf90-d1-1776303866-1776285866
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Cruzeiro vs Universidad Católica – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://ym9yzq.fubohd.com/espn2/mono.m3u8?token=dc8c699eb9f4e2ebbe5f12ace91b9c11cfddb76a-da-1776298438-1776280438
+https://aw1wcm92zq.fubohd.com/espn2/mono.m3u8?token=2057992a2a7d8342a38717a8dee59a1b0ea2b95d-55-1776303877-1776285877
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Cruzeiro vs Universidad Católica – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://aw1wcm92zq.fubohd.com/foxsports3/mono.m3u8?token=33427ad287d0f26b2c0f9a61941f70960325abef-a6-1776298469-1776280469
+https://cgxheq.fubohd.com/foxsports3/mono.m3u8?token=65cba08932ec4b6ad4f36644c363d3c3343cedba-38-1776303909-1776285909
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Cruzeiro vs Universidad Católica – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://agvyby.fubohd.com/espn2mx/mono.m3u8?token=2b92f2a11ad96f6c793d3e112f200fb5719a5f5a-ad-1776298480-1776280480
+https://bgfuzq.fubohd.com/espn2mx/mono.m3u8?token=86b4615f6e135ceb772c58bf20110ca459b59612-22-1776303920-1776285920
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://anvtcax.fubohd.com/espn/mono.m3u8?token=5f3df70a45f42bda2ab137ecdbb901c8858ca648-fb-1776298491-1776280491
+https://cgxheq.fubohd.com/espn/mono.m3u8?token=b5c6af36eaed68d6360eb0c528ea413dc73f7691-ba-1776303931-1776285931
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://tyg2mnl9.fubohd.com/telefe/mono.m3u8?token=e7646877c72d899034a744be06f1c4e4714b3aa4-a3-1776298533-1776280533
+https://cgxheq.fubohd.com/foxsports/mono.m3u8?token=0ff18df9a22b01bd4b1e128dcb6c657d0f1dc002-2a-1776303962-1776285962
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://c2nvdxq.fubohd.com/beinsportes/mono.m3u8?token=60c85a77f29dcd7e5c73c8304b54515640bdb99e-36-1776298543-1776280543
+https://qzv4jmsc.fubohd.com/telefe/mono.m3u8?token=b26620dc1f1e7708dca20aecb7142a1a3113a722-91-1776303973-1776285973
+#EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – LibrePelota Stream
+#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://ym9yzq.fubohd.com/beinsportes/mono.m3u8?token=fb975920498547397608188444ad72b185603d44-52-1776303984-1776285984
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Cruzeiro vs Universidad Católica – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://bgfuzq.fubohd.com/espn2/mono.m3u8?token=20f578c156e15efe53154fbc5955fa5cbd3b0f8d-8f-1776298554-1776280554
+https://ym9yzq.fubohd.com/espn2/mono.m3u8?token=4f3c469328ff08bc6747e3f34c86a40771f8c88f-62-1776303995-1776285995
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Cruzeiro vs Universidad Católica – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/ecef5nnc.m3u8?s=d9VpW7gO0qOctYNUD-NgdA&e=1776303079
+https://3n4x5t25.80386851.net:8443/hls/ecef5nnc.m3u8?s=hy1cpzggxCM7UsPFDcw--Q&e=1776308520
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Cruzeiro vs Universidad Católica – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://anvtcax.fubohd.com/foxsports3/mono.m3u8?token=12a40081215e281f9241ee83eee8c23248fab4cd-6a-1776298590-1776280590
+https://qzv4jmsc.fubohd.com/foxsports3/mono.m3u8?token=fce5462c5c1599a1d01767e3c0732914999106a7-a-1776304031-1776286031
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Cruzeiro vs Universidad Católica – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://tyg2mnl9.fubohd.com/espn2mx/mono.m3u8?token=1136de41fcb8d05a0269d9abcfdb209ccc5d73cc-9b-1776298601-1776280601
+https://x4bnd7lq.fubohd.com/espn2mx/mono.m3u8?token=0858cc31d4ff721209eb04845e0a62cf8e77eb1b-59-1776304043-1776286043
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://aw1wcm92zq.fubohd.com/espn/mono.m3u8?token=caa2866d4af2f10d9f7d48087e4c39af5a1b501d-37-1776298612-1776280612
+https://qzv4jmsc.fubohd.com/espn/mono.m3u8?token=aa80f84642743e580b5a05736ccd7c81220f5df7-dd-1776304054-1776286054
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/tyh9ei.m3u8?s=zS47x0-d2uDn0f7IluM7oQ&e=1776303136
+https://3n4x5t25.80386851.net:8443/hls/tyh9ei.m3u8?s=kDbXlufN0i5UTIz4a8xpMg&e=1776308578
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://ym9yzq.fubohd.com/foxsports/mono.m3u8?token=1c5308864d7ffd971692aea602bb4a4d7d372633-17-1776298647-1776280647
+https://ag9wzq.fubohd.com/foxsports/mono.m3u8?token=1f10d074a17ae02f4b4f312c4419316e0ea48470-ee-1776304090-1776286090
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://ag9wzq.fubohd.com/telefe/mono.m3u8?token=0eefbc6c71ce9423083c801c9781d7733b843df0-aa-1776298657-1776280657
+https://cgxheq.fubohd.com/telefe/mono.m3u8?token=f859766063a2f533ddba32eb60c3152c905f156b-f2-1776304101-1776286101
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Libertadores", 22:00 Copa Libertadores – Libertad vs Rosario Central – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cgxheq.fubohd.com/beinsportes/mono.m3u8?token=007acdb7e3c0ef29f348aa4c1afe1783f476bd6b-8f-1776298668-1776280668
+https://aw1wcm92zq.fubohd.com/beinsportes/mono.m3u8?token=af10e40ef82952674df49bf95a6bf3e551b34c5b-c9-1776304112-1776286112
+#EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Sudamericana", 22:00 Copa Sudamericana – Racing Club vs Botafogo – FutbolLibre Stream
+#EXTVLCOPT:http-referrer=https://la14hd.com/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://c2nvdxq.fubohd.com/dsports/mono.m3u8?token=adaff6cab921f303400d3e64523d77633cb83357-7c-1776304124-1776286124
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Sudamericana", 22:00 Copa Sudamericana – Racing Club vs Botafogo – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/b2273e5.m3u8?s=XgEc4pYH_L10vioe1N41BQ&e=1776303192
+https://3n4x5t25.80386851.net:8443/hls/b2273e5.m3u8?s=GQZBa9cACBku108ZWTpxZQ&e=1776308637
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Sudamericana", 22:00 Copa Sudamericana – Caracas vs Independiente Petrolero – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://ag9wzq.fubohd.com/espn3/mono.m3u8?token=4ee518f049e8c4a1b1b178a042866ffa2cbf23ec-af-1776298704-1776280704
+https://ag9wzq.fubohd.com/espn3/mono.m3u8?token=80aac113dd3db869c728409f66fa2d59d4f672e8-c0-1776304148-1776286148
 #EXTINF:-1 tvg-name="FutbolLibre Stream" group-title="Copa Sudamericana", 22:00 Copa Sudamericana – Caracas vs Independiente Petrolero – FutbolLibre Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/63kzk25.m3u8?s=IJfTigRX6zhFsFm1q1qnDQ&e=1776303228
+https://3n4x5t25.80386851.net:8443/hls/63kzk25.m3u8?s=6r9keVfEYLma27acjsfocw&e=1776308673
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Copa Sudamericana", 22:00 Copa Sudamericana – Racing Club vs Botafogo – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://aw1wcm92zq.fubohd.com/dsports/mono.m3u8?token=5d2193193d74971093f5cf9d916d9e9760445dac-28-1776298750-1776280750
+https://a2vlca.fubohd.com/dsports/mono.m3u8?token=cb3895af969d8540a5e7cc76f2e48ac288d47b5e-f6-1776304195-1776286195
 #EXTINF:-1 tvg-name="LibrePelota Stream" group-title="Copa Sudamericana", 22:00 Copa Sudamericana – Caracas vs Independiente Petrolero – LibrePelota Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://qzv4jmsc.fubohd.com/espn3/mono.m3u8?token=98d0e1c592d1a3025c0137eb16616de7fd2e0714-d8-1776298771-1776280771
+https://tyg2mnl9.fubohd.com/espn3/mono.m3u8?token=9763975dacdf0cf73a97e07e21da819e4dd473ba-1c-1776304216-1776286216
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Sudamericana", 22:00 Copa Sudamericana – Racing Club vs Botafogo – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://aw1wcm92zq.fubohd.com/dsports/mono.m3u8?token=5c09205e4dc97da08087d27cc57828409d3909c6-9e-1776298813-1776280813
+https://bgfuzq.fubohd.com/dsports/mono.m3u8?token=92e7a460977103faac033840495a34b74d129058-8e-1776304258-1776286258
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Sudamericana", 22:00 Copa Sudamericana – Racing Club vs Botafogo – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/b2273e5.m3u8?s=jNctIp66EkKiEDVZ5DQzoA&e=1776303326
+https://3n4x5t25.80386851.net:8443/hls/b2273e5.m3u8?s=6vfF_dJOKnBG2BgGU6Ki3g&e=1776308771
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Sudamericana", 22:00 Copa Sudamericana – Caracas vs Independiente Petrolero – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://la14hd.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://c2nvdxq.fubohd.com/espn3/mono.m3u8?token=580a00a40f2dcdde7d9db79aef545a1721421f45-54-1776298837-1776280837
+https://bgfuzq.fubohd.com/espn3/mono.m3u8?token=882f4813447d298368ecd3ca835190328a56861e-2d-1776304282-1776286282
 #EXTINF:-1 tvg-name="PelotaLibre1 Stream" group-title="Copa Sudamericana", 22:00 Copa Sudamericana – Caracas vs Independiente Petrolero – PelotaLibre1 Stream
 #EXTVLCOPT:http-referrer=https://builddiamond.net/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://y44kn4nu.83870203.net:8443/hls/63kzk25.m3u8?s=ILyqbywX-zYg0zDmZU7I_Q&e=1776303361
+https://3n4x5t25.80386851.net:8443/hls/63kzk25.m3u8?s=gLRbuX_IiWPh9Dh_oBo4sA&e=1776308806
