@@ -6,7 +6,6 @@ on:
     
   workflow_dispatch:
   push:
-  
     branches: [ main ]
     paths: 
       - 'pelota.py'
@@ -22,26 +21,27 @@ jobs:
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+        fetch-depth: 0
         
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.10'
         
-    - name: Install Chrome and ChromeDriver
+    - name: Install Chrome and dependencies
       run: |
+        # Install required packages
+        sudo apt-get update
+        sudo apt-get install -y wget xvfb unzip
+        
         # Install Chrome
-        wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
         sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
         sudo apt-get update
-        sudo apt-get install -y google-chrome-stable xvfb
+        sudo apt-get install -y google-chrome-stable
         
-        # Get Chrome version and install matching ChromeDriver
-        CHROME_VERSION=$(google-chrome --version | cut -d " " -f3 | cut -d "." -f1-3)
-        echo "Chrome version: $CHROME_VERSION"
-        
-        # Download and install ChromeDriver using webdriver-manager approach
-        mkdir -p /home/runner/.wdm/drivers/chromedriver/linux64/
+        # Verify Chrome installation
+        google-chrome --version
         
     - name: Install Python dependencies
       run: |
@@ -50,16 +50,16 @@ jobs:
         
     - name: Configure git
       run: |
-        git config --global user.name 'GitHub Actions Bot'
-        git config --global user.email 'actions@github.com'
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
         
     - name: Run playlist updater
       env:
         DISPLAY: :99
       run: |
         # Start virtual display
-        export DISPLAY=:99
         Xvfb :99 -screen 0 1920x1080x24 > /dev/null 2>&1 &
+        export DISPLAY=:99
         sleep 3
         
         # Install ChromeDriver using webdriver-manager
@@ -70,10 +70,25 @@ jobs:
         
     - name: Commit and push changes
       run: |
-        git add eventos.m3u eventos_tivimate.m3u playlist.m3u playlist_tivimate.m3u
+        # Pull latest changes first to avoid conflicts
+        git pull origin main --rebase || true
+        
+        # Stage the playlist files
+        git add eventos.m3u eventos_tivimate.m3u playlist.m3u playlist_tivimate.m3u || true
+        
+        # Check if there are changes to commit
         if git diff --cached --quiet; then
           echo "No changes to commit"
         else
-          git commit -m "Pelota updater - $(date -u +%Y-%m-%d\ %H:%M\ UTC)"
-          git push
+          # Force commit even if there are no detected changes
+          git commit -m "Pelota updater - $(date -u '+%Y-%m-%d %H:%M UTC')" || true
+          git push origin main || git push --force origin main
         fi
+        
+    - name: Force push if needed
+      if: failure()
+      run: |
+        # If previous step failed, force add and commit
+        git add eventos.m3u eventos_tivimate.m3u playlist.m3u playlist_tivimate.m3u
+        git commit -m "Pelota updater (forced) - $(date -u '+%Y-%m-%d %H:%M UTC')" || true
+        git push origin main --force
