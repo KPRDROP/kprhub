@@ -30,7 +30,6 @@ jobs:
         
     - name: Install Chrome and dependencies
       run: |
-        # Install required packages
         sudo apt-get update
         sudo apt-get install -y wget xvfb unzip
         
@@ -40,7 +39,6 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
         
-        # Verify Chrome installation
         google-chrome --version
         
     - name: Install Python dependencies
@@ -57,38 +55,25 @@ jobs:
       env:
         DISPLAY: :99
       run: |
-        # Start virtual display
         Xvfb :99 -screen 0 1920x1080x24 > /dev/null 2>&1 &
         export DISPLAY=:99
         sleep 3
         
-        # Install ChromeDriver using webdriver-manager
         python3 -c "from webdriver_manager.chrome import ChromeDriverManager; ChromeDriverManager().install()"
         
-        # Run the script
         python3 pelota.py
         
-    - name: Commit and push changes
+    - name: Commit and push (ALWAYS)
       run: |
-        # Pull latest changes first to avoid conflicts
-        git pull origin main --rebase || true
+        # Ensure latest base (avoid conflicts)
+        git fetch origin main
+        git reset --soft origin/main
         
-        # Stage the playlist files
-        git add eventos.m3u eventos_tivimate.m3u playlist.m3u playlist_tivimate.m3u || true
+        # Stage files (always)
+        git add -A
         
-        # Check if there are changes to commit
-        if git diff --cached --quiet; then
-          echo "No changes to commit"
-        else
-          # Force commit even if there are no detected changes
-          git commit -m "Pelota updater - $(date -u '+%Y-%m-%d %H:%M UTC')" || true
-          git push origin main || git push --force origin main
-        fi
+        # ALWAYS create commit (even if no changes)
+        git commit --allow-empty -m "Pelota auto-update - $(date -u '+%Y-%m-%d %H:%M UTC')"
         
-    - name: Force push if needed
-      if: failure()
-      run: |
-        # If previous step failed, force add and commit
-        git add eventos.m3u eventos_tivimate.m3u playlist.m3u playlist_tivimate.m3u
-        git commit -m "Pelota updater (forced) - $(date -u '+%Y-%m-%d %H:%M UTC')" || true
-        git push origin main --force
+        # Push safely (force-with-lease avoids overwriting others unexpectedly)
+        git push origin main --force-with-lease
