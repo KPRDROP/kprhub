@@ -26,10 +26,11 @@ REPO_DIR = Path(__file__).parent
 EVENT_FILE = "eventos.m3u"
 TIVIMATE_FILE = "eventos_tivimate.m3u"
 
-MAX_WORKERS = 4  # ⚡ parallel threads (safe limit)
+MAX_WORKERS = 4  # parallel threads (safe limit)
 
 EXCLUDED_LEAGUES = [
-    "Super Lig","Liga Endesa","Super League","Bundesliga","MLS","NBA"
+    "Super Lig","Liga Endesa","Super League","Bundesliga","MLS",
+    #"NBA"
 ]
 
 # ───────── DRIVER ─────────
@@ -132,7 +133,7 @@ def extract_m3u8(url):
         drv.get(url)
         time.sleep(3)
 
-        drv.requests.clear()  # 🔥 important
+        drv.requests.clear()  # important
 
         click_play(drv)
 
@@ -145,7 +146,7 @@ def extract_m3u8(url):
             except:
                 pass
 
-        # 🔥 wait loop instead of static sleep
+        # wait loop instead of static sleep
         for _ in range(10):
             for req in drv.requests:
                 if req.response and req.response.status_code == 200:
@@ -191,7 +192,7 @@ def main():
 
     print(f"Raw events: {len(events)}")
 
-    # 🔥 REMOVE DUPLICATES
+    # REMOVE DUPLICATES
     unique = {}
     for liga, hora, partido, chan, url in events:
         key = (hora, partido)
@@ -220,7 +221,7 @@ def main():
             try:
                 r = f.result()
                 if not r:
-                    print(f"❌ No stream: {partido}")
+                    print(f"No stream: {partido}")
                     continue
 
                 title = f"{hora} {liga} - {partido}"
@@ -232,7 +233,7 @@ def main():
                 tivimate.append(f'#EXTINF:-1 group-title="{liga}", {title}')
                 tivimate.append(tivimate_url(r))
 
-                print(f"✅ {partido}")
+                print(f"{partido}")
 
             except:
                 continue
@@ -241,7 +242,7 @@ def main():
     (REPO_DIR / EVENT_FILE).write_text("\n".join(entries))
     (REPO_DIR / TIVIMATE_FILE).write_text("\n".join(tivimate))
 
-    # 🔥 FORCE CHANGE (guarantee commit)
+    # FORCE CHANGE (guarantee commit)
     with open(REPO_DIR / EVENT_FILE, "a") as f:
         f.write(f"\n# updated {time.time()}")
 
