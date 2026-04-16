@@ -1,37 +1,42 @@
 #EXTM3U
-#EXTINF:-1 group-title="UEFA Europa Conference League", 14:00 UEFA Europa Conference League - AEK Athens vs Rayo Vallecano14:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=asm7ZzVxf-fFWyJFmSg5-w&expires=1776373164
-#EXTINF:-1 group-title="UEFA Europa League", 11:45 UEFA Europa League - Celta Vigo vs Freiburg11:45
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=01UT_mGX2OsMyMuOPv40qA&expires=1776373161
 #EXTINF:-1 group-title="UEFA Europa Conference League", 11:45 UEFA Europa Conference League - AZ Alkmaar vs Shakhtar Donetsk11:45
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=exDDDq10OYPTvIx9AdIY_A&expires=1776373158
+https://n5.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=zm0e7gsF18z1UWGIEVvjpw&expires=1776376838
+#EXTINF:-1 group-title="UEFA Europa League", 11:45 UEFA Europa League - Celta Vigo vs Freiburg11:45
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=8qtcb1Gb5D7lfjzAMC2VYA&expires=1776376848
+#EXTINF:-1 group-title="UEFA Europa Conference League", 14:00 UEFA Europa Conference League - AEK Athens vs Rayo Vallecano14:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n5.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=HsnBrmDjuTJpPbxKlTg2Yg&expires=1776376839
 #EXTINF:-1 group-title="UEFA Europa Conference League", 14:00 UEFA Europa Conference League - Fiorentina vs Crystal Palace14:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=exDDDq10OYPTvIx9AdIY_A&expires=1776373158
+https://n5.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=zm0e7gsF18z1UWGIEVvjpw&expires=1776376838
 #EXTINF:-1 group-title="UEFA Europa Conference League", 14:00 UEFA Europa Conference League - Strasbourg vs Mainz 0514:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capocampeones8.m3u8?md5=GxNuahp8tf9LI6AiZ26ZXw&expires=1776373170
+https://n2.zohanayaan.com:1686/hls/capocampeones8.m3u8?md5=q7Hx2GWDSVJENUJVyj7tug&expires=1776376858
 #EXTINF:-1 group-title="UEFA Europa League", 14:00 UEFA Europa League - Aston Villa vs Bologna14:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=dowYNwalZyzUI6dDQdbmXQ&expires=1776373174
+https://n3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=kw8zHV6WM8lp6OBtRNXbyw&expires=1776376863
+#EXTINF:-1 group-title="UEFA Europa League", 14:00 UEFA Europa League - Real Betis vs Sporting Braga14:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=atL6ilq7I0wla8i-9yj1uw&expires=1776376858
 #EXTINF:-1 group-title="UEFA Europa League", 14:00 UEFA Europa League - Nottingham Forest vs Porto14:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=JtJjPS4UXvdxEhrJ6LZiEw&expires=1776373177
-# updated 1776366112.0740526
+https://n3.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=wJoO0_hVTfAQ0LZ0qo4VgA&expires=1776376864
+# updated 1776369675.2359824
