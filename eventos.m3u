@@ -1,12 +1,27 @@
 #EXTM3U
-#EXTINF:-1 group-title="CONCACAF Champions Cup", 22:30 CONCACAF Champions Cup - Seattle Sounders vs Tigres UANL22:30
+#EXTINF:-1 group-title="UEFA Europa Conference League", 14:00 UEFA Europa Conference League - AEK Athens vs Rayo Vallecano14:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=IcmA6aHzZ_X6LG51Nfr8Rg&expires=1776359986
-#EXTINF:-1 group-title="CONCACAF Champions Cup", 20:00 CONCACAF Champions Cup - LA Galaxy vs Toluca20:00
+https://n2.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=EJQ7QL48aOQoNFZbLCB_Cg&expires=1776366257
+#EXTINF:-1 group-title="UEFA Europa Conference League", 14:00 UEFA Europa Conference League - Fiorentina vs Crystal Palace14:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=8g3fd2RoBGa-f2_LcuiKuA&expires=1776359944
-# updated 1776352798.4937298
+https://n2.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=v1D7PLH4UcnBWskh8LeSkQ&expires=1776366257
+#EXTINF:-1 group-title="UEFA Europa League", 11:45 UEFA Europa League - Celta Vigo vs Freiburg11:45
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=PsfVlrZi93S3xMocuvcG5w&expires=1776366253
+#EXTINF:-1 group-title="UEFA Europa Conference League", 11:45 UEFA Europa Conference League - AZ Alkmaar vs Shakhtar Donetsk11:45
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n2.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=v1D7PLH4UcnBWskh8LeSkQ&expires=1776366257
+#EXTINF:-1 group-title="UEFA Europa League", 14:00 UEFA Europa League - Real Betis vs Sporting Braga14:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=YUXHgg63yY72eSBD-3_F4A&expires=1776366274
+# updated 1776359099.4925954
