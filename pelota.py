@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-pelota.py – Generador de eventos.m3u desde múltiples fuentes
-"""
+
 import re
 import time
 import os
 from pathlib import Path
-from git import Repo, exc as git_exc
+from git import Repo
 import requests
 from bs4 import BeautifulSoup
 from seleniumwire import webdriver
@@ -16,438 +14,248 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from urllib.parse import quote
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-# ───────────── Configuración ─────────────
-ROJA_URL       = "https://www.rojadirectaenvivo.pl/"
-FUTLIB_URL     = "https://futbollibre.mx/"
-LIBPEL_URL     = "https://librepelota.com/"
-PELOTA1_URL    = "https://www.pelotalibre1.pe/"
+# ───────── CONFIG ─────────
+ROJA_URL = "https://www.rojadirectaenvivo.pl/"
+FUTLIB_URL = "https://futbollibre.mx/"
+LIBPEL_URL = "https://librepelota.com/"
+PELOTA1_URL = "https://www.pelotalibre1.pe/"
 
-# Directorio del repo local
-REPO_DIR       = Path(__file__).parent
-EVENT_FILE     = "eventos.m3u"
-TIVIMATE_FILE  = "eventos_tivimate.m3u"
-CDN_URL        = f"https://raw.githubusercontent.com/KPRDROP/kprhub/main/{EVENT_FILE}"
-SLOW_WAIT      = 4
+REPO_DIR = Path(__file__).parent
+EVENT_FILE = "eventos.m3u"
+TIVIMATE_FILE = "eventos_tivimate.m3u"
 
-# Ligas a incluir/excluir
-INCLUDE_LEAGUES = []
+MAX_WORKERS = 4  # ⚡ parallel threads (safe limit)
+
 EXCLUDED_LEAGUES = [
-    "Super Lig", "Liga Endesa", "Super League", "Bundesliga",
-    "Liga de Peru", "Liga de Ecuador", "Ligue 1", "Liga de Colombia",
-    "Liga de Chile", "MLS", "Liga de Portugal", "NBA",
-    "Liga Expansion MX", "Liga de Paraguay", "Liga MX"
+    "Super Lig","Liga Endesa","Super League","Bundesliga","MLS","NBA"
 ]
 
-# ───────────── Drivers ─────────────
-def init_driver() -> webdriver.Chrome:
+# ───────── DRIVER ─────────
+def init_driver():
     opts = Options()
     opts.add_argument("--headless=new")
-    opts.add_argument("--disable-gpu")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-dev-shm-usage")
-    opts.add_argument("--disable-web-security")
-    opts.add_argument("--disable-features=VizDisplayCompositor")
+    opts.add_argument("--disable-gpu")
     opts.add_argument("--window-size=1920,1080")
-    
-    # Try multiple paths for chromedriver
-    paths = [
-        '/home/felipe/.wdm/drivers/chromedriver/linux64/143.0.7499.192/chromedriver-linux64/chromedriver',
-        '/home/felipe/.wdm/drivers/chromedriver/linux64/139.0.7258.138/chromedriver-linux64/chromedriver',
-        '/usr/bin/chromedriver'
-    ]
-    
-    service = None
-    for p in paths:
-        if os.path.exists(p) and os.access(p, os.X_OK):
-            try:
-                service = Service(p)
-                break
-            except:
-                pass
-                
-    if not service:
-        # Fallback to webdriver-manager
-        try:
-            service = Service(ChromeDriverManager().install())
-        except Exception as e:
-            print(f"Warning: WebDriver Manager failed: {e}")
-            pass
 
-    return webdriver.Chrome(service=service, options=opts) if service else webdriver.Chrome(options=opts)
+    try:
+        service = Service(ChromeDriverManager().install())
+        return webdriver.Chrome(service=service, options=opts)
+    except:
+        return webdriver.Chrome(options=opts)
 
-# ───────────── Scrapers de Eventos ─────────────
-
-def normalize(url: str) -> str:
+# ───────── HELPERS ─────────
+def normalize(url):
     if not url or url.startswith('#'): return ''
     if url.startswith("//"): return "https:" + url
-    if not url.startswith("http"): return "https://" + url.lstrip("/")
+    if not url.startswith("http"): return "https://" + url
     return url
 
-def get_roja_events() -> list:
-    """Scraper original de RojaDirecta (basado en HTML estatico si es posible)"""
+# ───────── SCRAPERS ─────────
+def get_roja_events():
     events = []
     try:
-        print(f"Scraping RojaDirecta: {ROJA_URL}")
-        resp = requests.get(ROJA_URL, timeout=10)
-        soup = BeautifulSoup(resp.text, "html.parser")
-        
+        r = requests.get(ROJA_URL, timeout=10)
+        soup = BeautifulSoup(r.text, "html.parser")
+
         for li in soup.select("ul.menu > li"):
             t = li.find("span", class_="t")
             if not t: continue
             hora = t.text.strip()
+
             link = li.find("a", recursive=False)
-            if not link or not link.contents: continue
-            raw = link.contents[0].strip()
+            if not link: continue
+
+            raw = link.text.strip()
             if ":" not in raw: continue
+
             liga, partido = map(str.strip, raw.split(":", 1))
-            
-            for chan_link in li.select("ul > li > a"):
-                href = normalize(chan_link.get("href", "").strip())
-                if not href: continue
-                chan_name = chan_link.text.strip()
-                events.append((liga, hora, partido, chan_name, href))
-    except Exception as e:
-        print(f"Error scraping RojaDirecta: {e}")
+
+            for a in li.select("ul > li > a"):
+                href = normalize(a.get("href"))
+                if href:
+                    events.append((liga, hora, partido, "Roja", href))
+    except:
+        pass
     return events
 
-def get_futbollibre_style_events(url: str, source_name: str) -> list:
-    """Scraper para sitios tipo FutbolLibre/LibrePelota usando Selenium"""
+def get_futbollibre_style_events(url, name):
     events = []
-    driver = init_driver()
+    drv = init_driver()
     try:
-        print(f"Scraping {source_name}: {url}")
-        driver.get(url)
-        time.sleep(5) # Esperar carga de JS
-        
-        # Buscar enlaces que contengan un tiempo
-        # Estrategia: Buscar todos los 'a', chequear si tienen hijo 'time' o texto tipo XX:XX
-        links = driver.find_elements(By.TAG_NAME, "a")
-        
-        for a in links:
+        drv.get(url)
+        time.sleep(5)
+
+        for a in drv.find_elements(By.TAG_NAME, "a"):
             try:
                 href = a.get_attribute("href")
-                if not href or "#" in href or "whatsapp" in href: continue
-                
-                # Check for time element or text
-                text = a.text
-                match = re.search(r'(\d{2}:\d{2})', text)
-                
-                # Si no encuentra hora en el enlace, buscar en padres (traversal)
-                if not match:
-                    el = a
-                    for _ in range(3): # Subir hasta 3 niveles
-                        try:
-                            el = el.find_element(By.XPATH, "..")
-                            p_txt = el.text
-                            match = re.search(r'(\d{2}:\d{2})', p_txt)
-                            if match:
-                                text = p_txt # Usar texto del contenedor padre
-                                break
-                        except:
-                            break
-                
+                txt = a.text
+                if not href or not txt: continue
+
+                match = re.search(r'(\d{2}:\d{2})', txt)
                 if match:
                     hora = match.group(1)
-                    # Limpiar texto para obtener titulo
-                    full_text = text.replace(hora, "").replace("\n", " ").strip()
-                    
-                    if ":" in full_text:
-                        parts = full_text.split(":", 1)
-                        liga = parts[0].strip()
-                        partido = parts[1].strip()
+                    clean = txt.replace(hora, "").strip()
+
+                    if ":" in clean:
+                        liga, partido = clean.split(":", 1)
                     else:
-                        liga = "Varios"
-                        partido = full_text
-                    
-                    chan_name = f"{source_name} Stream"
-                    events.append((liga, hora, partido, chan_name, href))
+                        liga, partido = "Varios", clean
+
+                    events.append((liga.strip(), hora, partido.strip(), name, href))
             except:
                 continue
-                
-    except Exception as e:
-        print(f"Error scraping {source_name}: {e}")
     finally:
-        driver.quit()
+        drv.quit()
+
     return events
 
-def get_fixed_channels(url: str) -> list:
-    """Obtiene canales fijos de LibrePelota (barra navegación)"""
-    channels = []
-    driver = init_driver()
+# ───────── CLICK PLAY ─────────
+def click_play(d):
+    for _ in range(2):
+        try:
+            btns = d.find_elements(By.CSS_SELECTOR, "button, .play, .vjs-big-play-button")
+            for b in btns:
+                if b.is_displayed():
+                    d.execute_script("arguments[0].click()", b)
+                    time.sleep(0.5)
+        except:
+            pass
+
+# ───────── STREAM EXTRACTION (IMPROVED) ─────────
+def extract_m3u8(url):
+    drv = init_driver()
     try:
-        print(f"Scraping Fixed Channels from: {url}")
-        driver.get(url)
+        drv.get(url)
         time.sleep(3)
-        
-        links = driver.find_elements(By.TAG_NAME, "a")
-        seen = set()
-        
-        for a in links:
+
+        drv.requests.clear()  # 🔥 important
+
+        click_play(drv)
+
+        # Try iframes
+        for frame in drv.find_elements(By.TAG_NAME, "iframe")[:2]:
             try:
-                href = a.get_attribute("href")
-                txt = a.text.strip()
-                if not href: continue
-                
-                # Criterio: URL contiene 'en-vivo' y el texto es corto (nombre de canal)
-                if "/en-vivo/" in href and len(txt) > 2 and len(txt) < 30 and "partido" not in txt.lower() and "ver" not in txt.lower():
-                    if txt not in seen:
-                        # Crear entrada M3U provisional (sin stream URL aun)
-                        channels.append((txt, href))
-                        seen.add(txt)
+                drv.switch_to.frame(frame)
+                click_play(drv)
+                drv.switch_to.default_content()
+            except:
+                pass
+
+        # 🔥 wait loop instead of static sleep
+        for _ in range(10):
+            for req in drv.requests:
+                if req.response and req.response.status_code == 200:
+                    if ".m3u8" in req.url and "google" not in req.url:
+                        headers = req.headers
+                        return {
+                            "url": req.url,
+                            "referer": headers.get("Referer",""),
+                            "origin": headers.get("Origin",""),
+                            "user_agent": headers.get("User-Agent",""),
+                        }
+            time.sleep(1)
+
+    except:
+        pass
+    finally:
+        drv.quit()
+
+    return None
+
+# ───────── HEADERS ─────────
+def vlc_headers(r):
+    h=[]
+    if r["referer"]: h.append(f'#EXTVLCOPT:http-referrer={r["referer"]}')
+    if r["origin"]: h.append(f'#EXTVLCOPT:http-origin={r["origin"]}')
+    if r["user_agent"]: h.append(f'#EXTVLCOPT:http-user-agent={r["user_agent"]}')
+    return h
+
+def tivimate_url(r):
+    params=[]
+    if r["referer"]: params.append(f"referer={r['referer']}")
+    if r["origin"]: params.append(f"origin={r['origin']}")
+    if r["user_agent"]: params.append(f"user-agent={quote(r['user_agent'])}")
+    return r["url"] + "|" + "|".join(params) if params else r["url"]
+
+# ───────── MAIN ─────────
+def main():
+    events = []
+    events += get_roja_events()
+    events += get_futbollibre_style_events(FUTLIB_URL, "FutbolLibre")
+    events += get_futbollibre_style_events(LIBPEL_URL, "LibrePelota")
+    events += get_futbollibre_style_events(PELOTA1_URL, "Pelota1")
+
+    print(f"Raw events: {len(events)}")
+
+    # 🔥 REMOVE DUPLICATES
+    unique = {}
+    for liga, hora, partido, chan, url in events:
+        key = (hora, partido)
+        if key not in unique:
+            unique[key] = (liga, hora, partido, chan, url)
+
+    events = list(unique.values())
+    print(f"Unique events: {len(events)}")
+
+    # FILTER
+    events = [e for e in events if not any(x.lower() in e[0].lower() for x in EXCLUDED_LEAGUES)]
+
+    # SORT
+    events.sort(key=lambda x: (x[1], x[0]))
+
+    entries = ["#EXTM3U"]
+    tivimate = ["#EXTM3U"]
+
+    # ⚡ PARALLEL PROCESSING
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as ex:
+        futures = {ex.submit(extract_m3u8, e[4]): e for e in events}
+
+        for f in as_completed(futures):
+            liga, hora, partido, chan, url = futures[f]
+
+            try:
+                r = f.result()
+                if not r:
+                    print(f"❌ No stream: {partido}")
+                    continue
+
+                title = f"{hora} {liga} - {partido}"
+
+                entries.append(f'#EXTINF:-1 group-title="{liga}", {title}')
+                entries += vlc_headers(r)
+                entries.append(r["url"])
+
+                tivimate.append(f'#EXTINF:-1 group-title="{liga}", {title}')
+                tivimate.append(tivimate_url(r))
+
+                print(f"✅ {partido}")
+
             except:
                 continue
-    except Exception as e:
-        print(f"Error scraping fixed channels: {e}")
-    finally:
-        driver.quit()
-    return channels
 
-# ───────────── Extracción de Stream (M3U8) ─────────────
+    # WRITE FILES (ALWAYS)
+    (REPO_DIR / EVENT_FILE).write_text("\n".join(entries))
+    (REPO_DIR / TIVIMATE_FILE).write_text("\n".join(tivimate))
 
-def click_play_buttons(drv):
-    """Intenta hacer clic en botones de play"""
-    try:
-        selectors = [
-            "button[aria-label*='play']", ".play-button", ".vjs-play-control", 
-            ".jw-display-icon-container", ".plyr__control--overlaid", 
-            "button.vjs-big-play-button", "div[class*='play']", "svg[class*='play']"
-        ]
-        elements = drv.find_elements(By.CSS_SELECTOR, ", ".join(selectors))
-        count = 0
-        for el in elements:
-            if count >= 2: break
-            try:
-                if el.is_displayed():
-                    drv.execute_script("arguments[0].click();", el)
-                    time.sleep(0.5)
-                    count += 1
-            except: pass
-    except: pass
+    # 🔥 FORCE CHANGE (guarantee commit)
+    with open(REPO_DIR / EVENT_FILE, "a") as f:
+        f.write(f"\n# updated {time.time()}")
 
-def extract_m3u8(url: str) -> dict:
-    """Extrae el m3u8 de una URL usando Selenium Wire y clics inteligentes. Retorna dict con url y headers."""
-    driver = init_driver()
-    stream_data = None
-    
-    try:
-        driver.set_page_load_timeout(20)
-        try:
-            driver.get(url)
-        except: pass
-        
-        time.sleep(3)
-        click_play_buttons(driver)
-        
-        # Buscar iframes
-        iframes = driver.find_elements(By.TAG_NAME, "iframe")
-        for i in range(min(len(iframes), 3)):
-            try:
-                driver.switch_to.default_content()
-                iframes = driver.find_elements(By.TAG_NAME, "iframe") # refresh
-                if i < len(iframes):
-                    driver.switch_to.frame(iframes[i])
-                    click_play_buttons(driver)
-                    # Nested
-                    nested = driver.find_elements(By.TAG_NAME, "iframe")
-                    if nested:
-                        driver.switch_to.frame(nested[0])
-                        click_play_buttons(driver)
-            except: pass
-            
-        driver.switch_to.default_content()
-        time.sleep(4)
-        
-        # Capturar requests - Priorizar requests exitosos (status 200)
-        candidates = []
-        for req in driver.requests:
-            if req.response and ('.m3u8' in req.url or '.mpd' in req.url):
-                # Filter out master playlists if we can find a specific chunklist, 
-                # but many times master is what we want. 
-                # Just avoid duplicates and 404s.
-                if req.response.status_code in [200, 206]:
-                   candidates.append(req)
-        
-        # Prefer the last successful request (most likely the playing one)
-        found_req = candidates[-1] if candidates else None
-        
-        if found_req:
-            # Capture relevant headers for VLC
-            headers = found_req.headers
-            stream_data = {
-                "url": found_req.url,
-                "referer": headers.get("Referer", ""),
-                "origin": headers.get("Origin", ""),
-                "user_agent": headers.get("User-Agent", ""),
-                "cookie": headers.get("Cookie", "")
-            }
-                    
-    except Exception as e:
-        print(f"Error extracting stream from {url}: {e}")
-    finally:
-        driver.quit()
-    return stream_data
+    print("Files written.")
 
-# ───────────── Helper para generar entradas ─────────────
-
-def generate_vlc_headers(result: dict) -> list:
-    """Genera las líneas de headers VLC para una entrada M3U"""
-    headers = []
-    ref = result.get("referer")
-    origin = result.get("origin")
-    ua = result.get("user_agent")
-    cookie = result.get("cookie")
-    
-    if ref: 
-        headers.append(f'#EXTVLCOPT:http-referrer={ref}')
-    if origin: 
-        headers.append(f'#EXTVLCOPT:http-origin={origin}')
-    if ua: 
-        headers.append(f'#EXTVLCOPT:http-user-agent={ua}')
-    if cookie: 
-        headers.append(f'#EXTVLCOPT:http-cookie={cookie}')
-    
-    return headers
-
-def generate_tivimate_url(result: dict) -> str:
-    """Genera la URL con parámetros pipe para TiviMate"""
-    url = result.get("url", "")
-    ref = result.get("referer", "")
-    origin = result.get("origin", "")
-    ua = result.get("user_agent", "")
-    
-    params = []
-    if ref:
-        params.append(f"referer={ref}")
-    if origin:
-        params.append(f"origin={origin}")
-    if ua:
-        # URL encode the user agent for TiviMate compatibility
-        encoded_ua = quote(ua, safe='')
-        params.append(f"user-agent={encoded_ua}")
-    
-    if params:
-        return f"{url}|{'|'.join(params)}"
-    return url
-
-# ───────────── Main ─────────────
-
-def main():
-    all_events = []
-    
-    # 1. Obtener eventos de todas las fuentes
-    all_events.extend(get_roja_events())
-    all_events.extend(get_futbollibre_style_events(FUTLIB_URL, "FutbolLibre"))
-    all_events.extend(get_futbollibre_style_events(LIBPEL_URL, "LibrePelota"))
-    all_events.extend(get_futbollibre_style_events(PELOTA1_URL, "PelotaLibre1"))
-    
-    # 2. Filtrar y ordenar
-    unique_events = {} # Key: (hora, partido) -> data
-    
-    for liga, hora, partido, chan, url in all_events:
-        # Filtros Ligas
-        if any(exc.lower() in liga.lower() for exc in EXCLUDED_LEAGUES): continue
-        if INCLUDE_LEAGUES and not any(inc.lower() in liga.lower() for inc in INCLUDE_LEAGUES): continue
-        pass
-
-    # 3. Generar archivo eventos
-    entries = ["#EXTM3U"]
-    tivimate_entries = ["#EXTM3U"]
-    print(f"Total raw events found: {len(all_events)}")
-    
-    # Ordenar
-    all_events.sort(key=lambda x: (x[1], x[0])) # Hora, Liga
-    
-    # Procesar streams (ESTO LLEVA TIEMPO)
-    processed_count = 0
-    for liga, hora, partido, chan, url in all_events:
-        # Re-aplicar filtro por seguridad
-        if any(exc.lower() in liga.lower() for exc in EXCLUDED_LEAGUES): continue
-        if INCLUDE_LEAGUES and not any(inc.lower() in liga.lower() for inc in INCLUDE_LEAGUES): continue
-        
-        print(f"Procesando: {hora} {liga} - {partido}")
-        result = extract_m3u8(url)
-        if result:
-            title = f"{hora} {liga} – {partido}"
-            
-            # VLC Entry
-            entries.append(f'#EXTINF:-1 tvg-name="{chan}" group-title="{liga}", {title} – {chan}')
-            entries.extend(generate_vlc_headers(result))
-            entries.append(result["url"])
-            
-            # TiviMate Entry
-            tivimate_entries.append(f'#EXTINF:-1 tvg-name="{chan}" group-title="{liga}", {title} – {chan}')
-            tivimate_entries.append(generate_tivimate_url(result))
-            
-            processed_count += 1
-        else:
-            print("  -> No stream found")
-
-    out_file = REPO_DIR / EVENT_FILE
-    out_file.write_text("\n".join(entries), encoding="utf-8")
-    print(f"Guardado {out_file} con {processed_count} eventos.")
-    
-    tivimate_file = REPO_DIR / TIVIMATE_FILE
-    tivimate_file.write_text("\n".join(tivimate_entries), encoding="utf-8")
-    print(f"Guardado {tivimate_file} con {processed_count} eventos (formato TiviMate).")
-    
-    # 4. Canales Fijos (LibrePelota)
-    fixed_channels = get_fixed_channels(LIBPEL_URL)
-    fixed_entries = []
-    fixed_tivimate_entries = []
-    print(f"Procesando {len(fixed_channels)} canales fijos...")
-    
-    names_count = {}
-    for name, url in fixed_channels:
-        print(f"  Fixed: {name}")
-        result = extract_m3u8(url)
-        if result:
-            # Handle duplicate names if any
-            display_name = name
-            if name in names_count:
-                names_count[name] += 1
-                display_name = f"{name} {names_count[name]}"
-            else:
-                names_count[name] = 1
-            
-            # VLC Fixed Entry
-            fixed_entries.append(f'#EXTINF:-1 group-title="Fijos", {display_name}')
-            fixed_entries.extend(generate_vlc_headers(result))
-            fixed_entries.append(result["url"])
-            
-            # TiviMate Fixed Entry
-            fixed_tivimate_entries.append(f'#EXTINF:-1 group-title="Fijos", {display_name}')
-            fixed_tivimate_entries.append(generate_tivimate_url(result))
-            
-    # 5. Combinar Playlist (VLC)
-    combo_entries = ["#EXTM3U"]
-    combo_entries.extend(fixed_entries) # Primero fijos
-    if len(entries) > 1:
-        combo_entries.extend(entries[1:]) # Luego eventos
-        
-    combo_file = REPO_DIR / "playlist.m3u"
-    combo_file.write_text("\n".join(combo_entries), encoding="utf-8")
-    print("Playlist VLC combinada generada.")
-    
-    # 6. Combinar Playlist (TiviMate)
-    combo_tivimate_entries = ["#EXTM3U"]
-    combo_tivimate_entries.extend(fixed_tivimate_entries) # Primero fijos
-    if len(tivimate_entries) > 1:
-        combo_tivimate_entries.extend(tivimate_entries[1:]) # Luego eventos
-        
-    combo_tivimate_file = REPO_DIR / "playlist_tivimate.m3u"
-    combo_tivimate_file.write_text("\n".join(combo_tivimate_entries), encoding="utf-8")
-    print("Playlist TiviMate combinada generada.")
-    
-    # 7. Git Push
+    # PUSH
     try:
         repo = Repo(REPO_DIR)
-        repo.index.add([str(out_file), str(combo_file), str(tivimate_file), str(combo_tivimate_file)])
-        repo.index.commit(f'Update playlists: {processed_count} events + {len(fixed_entries)//2} fixed')
-        repo.remote('origin').push()
-        print("Pushed to GitHub.")
+        repo.git.add(A=True)
+        repo.index.commit(f"Auto update {time.time()}")
+        repo.remote().push()
+        print("Pushed.")
     except Exception as e:
-        print(f"Git Error: {e}")
+        print("Git error:", e)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
