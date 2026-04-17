@@ -1,3 +1,31 @@
 #EXTM3U
-#EXTINF:-1 group-title="Copa Sudamericana", 21:00 Copa Sudamericana - Cienciano del Cusco vs Academia Puerto Cabello21:00
-https://n5.zohanayaan.com:1686/hls/capocampeones3.m3u8?md5=nx-pe3UhaGclyQjDEt18JA&expires=1776454910|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Serie A", 11:30 Serie A - Sassuolo vs Como11:30
+https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=RU8OEKpWegJPSMvQ4vwkXQ&expires=1776458633|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Ligue 1", 13:45 Ligue 1 - Lens vs Toulouse13:45
+https://n4.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=NIJimkIIKBbwkM_la4xU-Q&expires=1776458643|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga 2", 13:30 LaLiga 2 - Real Sociedad B vs Racing Santander13:30
+https://n4.zohanayaan.com:1686/hls/capoplus2.m3u8?md5=9FpbT_rlZDrzJwQYenRP9g&expires=1776458635|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Championship", 14:00 Championship - Blackburn Rovers vs Coventry City14:00
+https://n4.zohanayaan.com:1686/hls/capocampeones5.m3u8?md5=gKwyLm3RIDjKMLcdT0S-0Q&expires=1776458655|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Peru", 15:00 Liga de Peru - Los Chankas vs Atletico Grau15:00
+https://n2.zohanayaan.com:1686/hls/capligamax.m3u8?md5=N5PdZh55wfeABG81ZomKVA&expires=1776458661|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga 2", 14:00 LaLiga 2 - Las Palmas vs Leganes14:00
+https://n5.zohanayaan.com:1686/hls/capoplus.m3u8?md5=zy2MHMYG5zZR2DzYHzqYbg&expires=1776458662|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Serie A", 13:45 Serie A - Inter Milan vs Cagliari13:45
+https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=6pcnZqbts3bIPC7ePE1afg&expires=1776458643|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Colombia", 16:00 Liga de Colombia - Jaguares de Cordoba vs Deportivo Pasto16:00
+https://n2.zohanayaan.com:1686/hls/winsports.m3u8?md5=BEsSzk6TooeuUQIDek4yzw&expires=1776458678|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Colombia", 16:00 Liga de Colombia - Boyaca Chico vs Deportivo Cali16:00
+https://n5.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=tAzXDyqhj_MdMMlHKPV__w&expires=1776458679|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Chile", 19:00 Liga de Chile - Deportes Limache vs Universidad de Concepcion19:00
+https://n5.zohanayaan.com:1686/hls/captntchil.m3u8?md5=3colCf1nY37F-fe2e_pOhQ&expires=1776458724|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Ecuador", 19:30 Liga de Ecuador - Emelec vs Guayaquil City19:30
+https://n5.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=d56dkDE_flmHTqZ53WkHew&expires=1776458733|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Argentina", 18:30 Liga de Argentina - Union Santa Fe vs Newell's Old Boys18:30
+https://n3.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=KAz9oll16idurIbx9ewFcg&expires=1776458701|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga MX", 20:00 Liga MX - Atletico San Luis vs Pumas UNAM20:00
+https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=kIatOdDpRBdqdmDG0OioxA&expires=1776458733|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga MX", 20:00 Liga MX - Mazatlan FC vs Queretaro20:00
+https://n5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=cGmGKSAgfSjOskBFLdGuhA&expires=1776458750|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga Expansion MX", 22:00 Liga Expansion MX - Dorados de Sinaloa vs Tapatio22:00
+https://tx5nushj.83870203.net:8443/hls/3kw4ij.m3u8?s=SE8XZKG9axx0oxlH-z1wjA&e=1776473161|referer=https://eveningbad.net/|origin=https://eveningbad.net|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
