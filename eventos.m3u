@@ -1,47 +1,17 @@
 #EXTM3U
-#EXTINF:-1 group-title="Copa Sudamericana", 17:00 Copa Sudamericana - Atletico Mineiro vs Juventud17:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=VYRH7NpRF_KwiWnTYyv7SA&expires=1776396463
-#EXTINF:-1 group-title="Copa Sudamericana", 17:00 Copa Sudamericana - Tigre vs Macara17:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=TZKf8CCE3d4jergaJUqgfg&expires=1776396461
-#EXTINF:-1 group-title="Copa Libertadores", 17:00 Copa Libertadores - Lanus vs Always Ready17:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=t4kdB8PSS2Xo3Ul-_cGtjQ&expires=1776396463
 #EXTINF:-1 group-title="Copa Libertadores", 17:00 Copa Libertadores - Palmeiras vs Sporting Cristal17:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=0XSxJeMeXFxz1pZgmFzT3A&expires=1776396464
-#EXTINF:-1 group-title="Copa Sudamericana", 19:30 Copa Sudamericana - San Lorenzo vs Deportivo Cuenca19:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=vbbX7VTXe5oZ6Z865dyPNA&expires=1776396473
-#EXTINF:-1 group-title="Copa Libertadores", 19:30 Copa Libertadores - Peñarol vs Platense19:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=ehJMf4h8RRGTDALghhdJDg&expires=1776396474
-#EXTINF:-1 group-title="Copa Sudamericana", 19:30 Copa Sudamericana - Red Bull Bragantino vs Blooming19:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=XE1XUguAZD_P3TNBDfTBTw&expires=1776396478
+https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=T3MUlf4U06M7U_ZxlAMlvg&expires=1776408148
 #EXTINF:-1 group-title="Copa Libertadores", 19:30 Copa Libertadores - Flamengo vs Independiente Medellin19:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=jIjyrP3EXmBUdRtedmwxJQ&expires=1776396474
+https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=osJlobpByH-K2k3tJCBmXA&expires=1776408160
 #EXTINF:-1 group-title="Copa Sudamericana", 21:00 Copa Sudamericana - Cienciano del Cusco vs Academia Puerto Cabello21:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capocampeones3.m3u8?md5=tBh7e4BAHV69Pwk-YE7olQ&expires=1776396487
-# updated 1776389296.8155274
+https://n4.zohanayaan.com:1686/hls/capocampeones3.m3u8?md5=JdO6GtHV43yRxupwXpj44g&expires=1776408174
+# updated 1776400991.9947343
