@@ -1,17 +1,7 @@
 #EXTM3U
-#EXTINF:-1 group-title="Copa Libertadores", 17:00 Copa Libertadores - Palmeiras vs Sporting Cristal17:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=NE040V7QK5yw1CvGkhMhBQ&expires=1776451442
-#EXTINF:-1 group-title="Copa Libertadores", 19:30 Copa Libertadores - Flamengo vs Independiente Medellin19:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=lno-iqHUQNeqDdivEFpg1w&expires=1776451464
 #EXTINF:-1 group-title="Copa Sudamericana", 21:00 Copa Sudamericana - Cienciano del Cusco vs Academia Puerto Cabello21:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capocampeones3.m3u8?md5=3e6Yw74_7zxvLQ-ArDtZWA&expires=1776451478
-# updated 1776444294.490532
+https://n5.zohanayaan.com:1686/hls/capocampeones3.m3u8?md5=nx-pe3UhaGclyQjDEt18JA&expires=1776454910
+# updated 1776447716.4769604
