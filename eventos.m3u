@@ -1,32 +1,32 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Ecuador", 17:00 Liga de Ecuador - Leones vs Aucas17:00
-#EXTVLCOPT:http-referrer=https://clerkopera.net/
-#EXTVLCOPT:http-origin=https://clerkopera.net
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://s25examj.58103793.net:8443/hls/robqzyh3cy.m3u8?s=18sJ1rBT5y7-klnYQvkljg&e=1776526781
 #EXTINF:-1 group-title="Liga de Colombia", 16:00 Liga de Colombia - Jaguares de Cordoba vs Deportivo Pasto16:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/winsports.m3u8?md5=i7XWSWQ6uWzsm_ploggHLw&expires=1776512376
+https://n5.zohanayaan.com:1686/hls/winsports.m3u8?md5=q_pHPYsYAjV9-RJHHp9htA&expires=1776515559
+#EXTINF:-1 group-title="Liga de Ecuador", 17:00 Liga de Ecuador - Leones vs Aucas17:00
+#EXTVLCOPT:http-referrer=https://clerkopera.net/
+#EXTVLCOPT:http-origin=https://clerkopera.net
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://eyk4pqe8.04334746.net:8443/hls/robqzyh3cy.m3u8?s=TYlrrdkaMduWJ9e5NS2zyw&e=1776529962
 #EXTINF:-1 group-title="Liga de Colombia", 16:00 Liga de Colombia - Boyaca Chico vs Deportivo Cali16:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=jUIQUCp5keZB2pbmWaXY1A&expires=1776512377
-#EXTINF:-1 group-title="Liga de Chile", 19:00 Liga de Chile - Deportes Limache vs Universidad de Concepcion19:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/captntchil.m3u8?md5=-TuftWkgteAFUCBVYC-aTg&expires=1776512392
+https://n5.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=KXiNrwH3ShvqtxReO6uHFw&expires=1776515559
 #EXTINF:-1 group-title="Liga de Argentina", 18:30 Liga de Argentina - Union Santa Fe vs Newell's Old Boys18:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=6uNur8HvVmdNhxQmZ24P1w&expires=1776512391
+https://n5.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=OBgZa0LtgsCD6fLyX0WhhA&expires=1776515573
+#EXTINF:-1 group-title="Liga de Chile", 19:00 Liga de Chile - Deportes Limache vs Universidad de Concepcion19:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n2.zohanayaan.com:1686/hls/captntchil.m3u8?md5=SQ7rRRItmrFUPFgJmgEnGw&expires=1776515576
 #EXTINF:-1 group-title="Liga MX", 20:00 Liga MX - Atletico San Luis vs Pumas UNAM20:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=091hvHsWYIN7oMo2Azc1AA&expires=1776512401
-# updated 1776505242.25976
+https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=3sP_Q7S9oLlUsuyAp2jRmQ&expires=1776515590
+# updated 1776508424.047516
