@@ -1,27 +1,37 @@
 #EXTM3U
-#EXTINF:-1 group-title="Championship", 06:30 Championship - Portsmouth vs Leicester City06:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTINF:-1 group-title="Championship", 09:00 Championship - Hull City vs Birmingham City09:00
+#EXTVLCOPT:http-referrer=https://streamx550.com/
+#EXTVLCOPT:http-origin=null
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capocampeones5.m3u8?md5=wQKj8SQefI2K9lyPRHS14Q&expires=1776523158
-#EXTINF:-1 group-title="Serie A", 08:00 Serie A - Udinese vs Parma08:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=9MsaV-n1nfQUkLaxz7VlaA&expires=1776523158
+https://cc324.streamingtv339.com/fox1ar/index.m3u8?token=5c74353ff8d96e7a6c0c0ca2a9f58c119a5b1d30-0f-1776565583-1776511583&ip=172.208.127.198
 #EXTINF:-1 group-title="Premier League", 06:30 Premier League - Brentford vs Fulham06:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=Fq4I-wsRpPb1c7OO6LAKTA&expires=1776523158
+https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=POJ_RAdSsFOWxeGXzoCMOg&expires=1776527778
+#EXTINF:-1 group-title="Serie A", 08:00 Serie A - Udinese vs Parma08:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n4.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=2hw7FpF3eITUv5F402Xv4w&expires=1776527781
+#EXTINF:-1 group-title="Championship", 06:30 Championship - Portsmouth vs Leicester City06:30
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n5.zohanayaan.com:1686/hls/capocampeones5.m3u8?md5=KD3nOAPWQBAVj2yRdGmOCw&expires=1776527783
 #EXTINF:-1 group-title="Premier League", 09:00 Premier League - Leeds United vs Wolverhampton Wanderers09:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=EaZD1EKmzMsA8kpGLoBFMw&expires=1776523168
+https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=HfGjagpGHuYlPymKS6whyA&expires=1776527791
+#EXTINF:-1 group-title="Premier League", 09:00 Premier League - Newcastle United vs Bournemouth09:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=0RqhXlqkBEOWM1pFPMpYUw&expires=1776527795
 #EXTINF:-1 group-title="LaLiga 2", 09:15 LaLiga 2 - Real Zaragoza vs Ceuta09:15
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capoplus.m3u8?md5=DrXrdVglNGo0RGCNhFSgzA&expires=1776523185
-# updated 1776516014.9135907
+https://n4.zohanayaan.com:1686/hls/capoplus.m3u8?md5=Tsu3pfiuK5-T_JsuvW0-cQ&expires=1776527798
+# updated 1776520603.674717
