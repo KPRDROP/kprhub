@@ -1,13 +1,11 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Ecuador", 17:00 Liga de Ecuador - Leones vs Aucas17:00
-https://sea3mr6j.83870203.net:8443/hls/robqzyh3cy.m3u8?s=lVoPDSAlBfFtAU6ZIjmYiw&e=1776533276|referer=https://clerkopera.net/|origin=https://clerkopera.net|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Colombia", 16:00 Liga de Colombia - Jaguares de Cordoba vs Deportivo Pasto16:00
-https://n3.zohanayaan.com:1686/hls/winsports.m3u8?md5=bBKBwlvt4WkGcqAnl99ykg&expires=1776518875|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Colombia", 16:00 Liga de Colombia - Boyaca Chico vs Deportivo Cali16:00
-https://n2.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=npnavXGLYcebna-NMgM1qg&expires=1776518876|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Argentina", 18:30 Liga de Argentina - Union Santa Fe vs Newell's Old Boys18:30
-https://n4.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=xPscyYeYKSBbVl2mxga7_w&expires=1776518890|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Chile", 19:00 Liga de Chile - Deportes Limache vs Universidad de Concepcion19:00
-https://n4.zohanayaan.com:1686/hls/captntchil.m3u8?md5=cdS8wZrmtPmSoep1rko7yA&expires=1776518893|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga MX", 20:00 Liga MX - Atletico San Luis vs Pumas UNAM20:00
-https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=v22_4nMZ2T35y8nve-T1Gg&expires=1776518909|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Championship", 06:30 Championship - Portsmouth vs Leicester City06:30
+https://n5.zohanayaan.com:1686/hls/capocampeones5.m3u8?md5=wQKj8SQefI2K9lyPRHS14Q&expires=1776523158|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Serie A", 08:00 Serie A - Udinese vs Parma08:00
+https://n2.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=9MsaV-n1nfQUkLaxz7VlaA&expires=1776523158|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Premier League", 06:30 Premier League - Brentford vs Fulham06:30
+https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=Fq4I-wsRpPb1c7OO6LAKTA&expires=1776523158|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Premier League", 09:00 Premier League - Leeds United vs Wolverhampton Wanderers09:00
+https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=EaZD1EKmzMsA8kpGLoBFMw&expires=1776523168|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga 2", 09:15 LaLiga 2 - Real Zaragoza vs Ceuta09:15
+https://n5.zohanayaan.com:1686/hls/capoplus.m3u8?md5=DrXrdVglNGo0RGCNhFSgzA&expires=1776523185|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
