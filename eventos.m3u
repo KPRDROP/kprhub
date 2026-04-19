@@ -1,117 +1,97 @@
 #EXTM3U
-#EXTINF:-1 group-title="Brasileirao", 16:30 Brasileirao - Vasco da Gama vs Sao Paulo16:30
-#EXTVLCOPT:http-referrer=https://streamtpnew.com/
-#EXTVLCOPT:http-origin=null
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://8c51.streameasthd.net/fanatiz7/index.m3u8?token=724d511723bc5dae503ca175cbb5c28dd2242833-99-1776599786-1776545786&ip=68.154.116.65
-#EXTINF:-1 group-title="Brasileirao", 16:30 Brasileirao - Chapecoense vs Botafogo16:30
-#EXTVLCOPT:http-referrer=https://streamtpnew.com/
-#EXTVLCOPT:http-origin=null
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://8c51.streameasthd.net/fanatiz6/index.m3u8?token=c5a0231f137916d488b3816c71c56b210b05af27-67-1776599786-1776545786&ip=68.154.116.65
-#EXTINF:-1 group-title="UFC Fight Night", 16:00 UFC Fight Night - Gilbert Burns vs Mike Malott16:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=UgRdI2HmPZMa-hFHlCem4g&expires=1776561981
-#EXTINF:-1 group-title="Liga de Chile", 16:30 Liga de Chile - Everton CD vs Universidad de Chile16:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/captntchil.m3u8?md5=Gn-BdANjlE9JRTRN4pkQoA&expires=1776561977
 #EXTINF:-1 group-title="NBA", 17:00 NBA - New York Knicks vs Atlanta Hawks17:00
-#EXTVLCOPT:http-referrer=https://streamtpnew.com/
-#EXTVLCOPT:http-origin=null
+#EXTVLCOPT:http-referrer=https://streamx550.com/
+#EXTVLCOPT:http-origin=https://streamx550.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://51a1.streameasthd.net/amazon3/index.m3u8?token=785e6d489a23f99f34ed2f8b067f773291f725e8-40-1776599796-1776545796&ip=68.154.116.65
-#EXTINF:-1 group-title="Liga de Ecuador", 16:30 Liga de Ecuador - Universidad Catolica vs Libertad16:30
-#EXTVLCOPT:http-referrer=https://clerkopera.net/
-#EXTVLCOPT:http-origin=https://clerkopera.net
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://mqf5dt2g.83870203.net:8443/hls/robqzyh3cy.m3u8?s=tpDXlao6re4AynsejovJMA&e=1776576397
-#EXTINF:-1 group-title="Liga de Argentina", 17:30 Liga de Argentina - Independiente vs Defensa y Justicia17:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=1wN_7z4o3w9uJiEqrhI-hQ&expires=1776562000
-#EXTINF:-1 group-title="Liga de Peru", 17:30 Liga de Peru - Sport Huancayo vs Deportivo Garcilaso17:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capligamax.m3u8?md5=StqTrHYwPsp0lzcOBwIcfw&expires=1776561997
+https://244pl.streamingtv339.com/mls3/index.m3u8?token=7606642370427e7895aa952aaa9e1790146b3ae8-c0-1776607277-1776553277&ip=4.236.159.145
 #EXTINF:-1 group-title="Brasileirao", 18:00 Brasileirao - Vitoria vs Corinthians18:00
 #EXTVLCOPT:http-referrer=https://streamtpnew.com/
 #EXTVLCOPT:http-origin=null
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://24a1.streameasthd.net/fanatiz10/index.m3u8?token=5894f5be3168959a8544d1726794a6eeda0b5e30-1b-1776599808-1776545808&ip=68.154.116.65
+https://8c51.streameasthd.net/fanatiz10/index.m3u8?token=3faba8e5c9431b0c97fd034fd5f184f7591baeec-cf-1776607277-1776553277&ip=4.236.159.145
+#EXTINF:-1 group-title="Liga de Peru", 17:30 Liga de Peru - Sport Huancayo vs Deportivo Garcilaso17:30
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n2.zohanayaan.com:1686/hls/capligamax.m3u8?md5=KRVaJjRUTxG9CdyQQbnv-g&expires=1776569473
+#EXTINF:-1 group-title="Liga de Argentina", 17:30 Liga de Argentina - Independiente vs Defensa y Justicia17:30
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n3.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=s6_-iIE9fOzt9qdF6OJHPQ&expires=1776569477
 #EXTINF:-1 group-title="Liga MX", 18:00 Liga MX - Cruz Azul vs Tijuana Xolos18:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=85KMj9oeRDmmmL2nkUP7AA&expires=1776562005
-#EXTINF:-1 group-title="Brasileirao", 18:30 Brasileirao - Cruzeiro vs Gremio18:30
-#EXTVLCOPT:http-referrer=https://streamtpnew.com/
-#EXTVLCOPT:http-origin=null
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://doc1.streameasthd.net/fanatiz3/index.m3u8?token=54258176fd08a2346c3c3fd07bd86b8f0945df27-d9-1776599816-1776545816&ip=68.154.116.65
-#EXTINF:-1 group-title="Liga de Colombia", 18:10 Liga de Colombia - Deportes Tolima vs Deportivo Pereira18:10
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=FJcdm7rSEZYWBQ4k8Jb_fw&expires=1776562017
+https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=Gsq3yxl4PmMBT-Mzgn6-Lg&expires=1776569482
 #EXTINF:-1 group-title="Liga MX", 18:00 Liga MX - Necaxa vs Tigres UANL18:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=UtCUmGFU_KcLCzF0_0f9tw&expires=1776562011
+https://n2.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=NrC_7C8WfrS3Aj1jTUfllQ&expires=1776569479
+#EXTINF:-1 group-title="UFC Fight Night", 18:00 UFC Fight Night - Gilbert Burns vs Mike Malott18:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n2.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=1HCYBiXmytpCaUfDwkG5Pg&expires=1776569493
+#EXTINF:-1 group-title="Liga de Colombia", 18:10 Liga de Colombia - Deportes Tolima vs Deportivo Pereira18:10
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n3.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=Y_t_ckGNot_BSdZuymlIDQ&expires=1776569485
+#EXTINF:-1 group-title="Brasileirao", 18:30 Brasileirao - Cruzeiro vs Gremio18:30
+#EXTVLCOPT:http-referrer=https://streamtpnew.com/
+#EXTVLCOPT:http-origin=null
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://pecdl1.streameasthd.net/fanatiz3/index.m3u8?token=72102c64611a2dd92b8639e55176743abe51fffe-e7-1776607302-1776553302&ip=4.236.159.145
 #EXTINF:-1 group-title="Liga de Chile", 19:00 Liga de Chile - Deportes Concepcion vs La Serena19:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/captntchil.m3u8?md5=UW6hBI4zH2EFBSClxismmg&expires=1776562021
-#EXTINF:-1 group-title="Liga de Ecuador", 19:00 Liga de Ecuador - Orense vs Delfin19:00
-#EXTVLCOPT:http-referrer=https://clerkopera.net/
-#EXTVLCOPT:http-origin=https://clerkopera.net
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://mqf5dt2g.83870203.net:8443/hls/robqzyh3cy.m3u8?s=BRDQPbjjWdFY97C6IdFbbw&e=1776576429
-#EXTINF:-1 group-title="Liga de Argentina", 19:45 Liga de Argentina - Argentinos Juniors vs Atletico Tucuman19:45
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/captntarg.m3u8?md5=R2W7XC-OirsbiiCjR5m_bA&expires=1776562031
+https://n2.zohanayaan.com:1686/hls/captntchil.m3u8?md5=yItIJ7CesxlqivNxJeKXwg&expires=1776569502
 #EXTINF:-1 group-title="NBA", 19:30 NBA - Los Angeles Lakers vs Houston Rockets19:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=93z7HAjl6QXpi8wNzyNX0Q&expires=1776562024
+https://n5.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=i8_ddPmzXgeGQiXbMz_9NA&expires=1776569500
+#EXTINF:-1 group-title="Liga de Ecuador", 19:00 Liga de Ecuador - Orense vs Delfin19:00
+#EXTVLCOPT:http-referrer=https://hoca6.com/
+#EXTVLCOPT:http-origin=https://hoca6.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n2.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=JAr_xAxZ_7ycTEvrae_nrw&expires=1776569504
+#EXTINF:-1 group-title="Liga de Argentina", 19:45 Liga de Argentina - Argentinos Juniors vs Atletico Tucuman19:45
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n2.zohanayaan.com:1686/hls/captntarg.m3u8?md5=BNh2dtNeQBYCRJ-Nd6t2BA&expires=1776569507
 #EXTINF:-1 group-title="Liga de Peru", 20:00 Liga de Peru - Alianza Lima vs Cusco FC20:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capligamax.m3u8?md5=zL0YIMySoMYoj8cEQOnPuA&expires=1776562039
+https://n5.zohanayaan.com:1686/hls/capligamax.m3u8?md5=sOPBebgWPSUniJr2ftkoSA&expires=1776569516
 #EXTINF:-1 group-title="Liga MX", 20:05 Liga MX - Monterrey Rayados vs Pachuca20:05
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=cW3o3C-9QAvUzy2fKdu3JA&expires=1776562037
-#EXTINF:-1 group-title="Liga de Colombia", 20:30 Liga de Colombia - Fortaleza vs Aguilas Doradas20:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=swxnBs1AjnYJZOPtKx1NVA&expires=1776562039
+https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=nNopMCK49yJMND-Q2xBRxQ&expires=1776569515
 #EXTINF:-1 group-title="Liga MX", 20:07 Liga MX - Guadalajara Chivas vs Puebla20:07
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=Sglm-B1Sdh1h32StADyu0g&expires=1776562042
+https://n5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=v7eQYnmduaJEuLpcf5m76Q&expires=1776569521
+#EXTINF:-1 group-title="Liga de Colombia", 20:30 Liga de Colombia - Fortaleza vs Aguilas Doradas20:30
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n2.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=1kjD-D0mGTH5xqdJyHhDTA&expires=1776569519
 #EXTINF:-1 group-title="Liga MX", 22:06 Liga MX - Leon vs FC Juarez22:06
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=pp1cqZL0ZfK64zCAxvrMgg&expires=1776562054
+https://n2.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=r9R4PlsAZN2nbVsuPTTEqg&expires=1776569531
 #EXTINF:-1 group-title="Liga MX", 22:10 Liga MX - America vs Toluca22:10
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=trwF4aIlI3XaStQ0wNA0zQ&expires=1776562057
-# updated 1776554863.8833618
+https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=dKx2RYsL0fhuARoowu347Q&expires=1776569537
+# updated 1776562343.5953567
