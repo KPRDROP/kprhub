@@ -1,15 +1,27 @@
 #EXTM3U
-#EXTINF:-1 group-title="Ligue 1", 08:00 Ligue 1 - AS Monaco vs AJ Auxerre08:00
-https://cc324.streamingtv339.com/foxone1/index.m3u8?token=ff3efe5a9f1d2a80431b1f41d70dc396fee9cfc4-c7-1776654299-1776600299&ip=172.182.195.130|referer=https://streamx550.com/|origin=https://streamx550.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Premier League", 08:00 Premier League - Everton vs Liverpool08:00
-https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=Utgu99XCW8HzXKH1yA6VIQ&expires=1776616490|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Uruguay", 08:00 Liga de Uruguay - Cerro vs Montevideo City Torque08:00
-https://n5.zohanayaan.com:1686/hls/wsmkmlfeed109.m3u8?md5=7J4ZabbB2YzQ6-6uDJRvLw&expires=1776616502|referer=https://hoca6.com/|origin=https://hoca6.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga 2", 07:00 LaLiga 2 - Andorra vs Real Valladolid07:00
-https://n2.zohanayaan.com:1686/hls/capoplus.m3u8?md5=VOIXegNRbPpuzWgAh8XL6A&expires=1776616499|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Serie A", 08:00 Serie A - Hellas Verona vs AC Milan08:00
-https://n5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=ilkjLaIgfx6m3S6EW_et8g&expires=1776616517|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Brasileirao", 09:00 Brasileirao - Internacional vs Mirassol09:00
-https://n3.zohanayaan.com:1686/hls/winsports.m3u8?md5=viwYzF_2sKXICZ03ClC5Bg&expires=1776616519|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
 #EXTINF:-1 group-title="LaLiga 2", 09:15 LaLiga 2 - Sporting Gijon vs Cadiz09:15
-https://n3.zohanayaan.com:1686/hls/capoplus.m3u8?md5=xBVXiJy6KWkWJRuVw5oyEg&expires=1776616520|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+https://n2.zohanayaan.com:1686/hls/capoplus.m3u8?md5=JilgOE9LW5yW8R6llRf4-g&expires=1776619822|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Brasileirao", 09:00 Brasileirao - Internacional vs Mirassol09:00
+https://n5.zohanayaan.com:1686/hls/winsports.m3u8?md5=Vr0nLAKRFqksaK2DDDFHDg&expires=1776619829|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Ligue 1", 10:15 Ligue 1 - Strasbourg vs Stade Rennais10:15
+https://n3.zohanayaan.com:1686/hls/capocampeones4.m3u8?md5=Cvj51Y_kMwrt5Cr1RslpIA&expires=1776619829|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Premier League", 10:30 Premier League - Manchester City vs Arsenal10:30
+https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=9LXC3ASSvczmA1yp_tfbxw&expires=1776619834|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Peru", 11:00 Liga de Peru - Sporting Cristal vs UTC Cajamarca11:00
+https://n5.zohanayaan.com:1686/hls/capligamax.m3u8?md5=HcxnDPrOQIcleOD1Mi9hZQ&expires=1776619843|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Serie A", 11:00 Serie A - Pisa vs Genoa11:00
+https://n4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=aTvgLnOS2k6fIAG0eq77Tg&expires=1776619842|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga 2", 11:30 LaLiga 2 - Eibar vs Huesca11:30
+https://n5.zohanayaan.com:1686/hls/capoplus2.m3u8?md5=0o1Lplj32kqClw-lFU550A&expires=1776619854|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga 2", 11:30 LaLiga 2 - Albacete vs Granada11:30
+https://n5.zohanayaan.com:1686/hls/capoplus.m3u8?md5=OWImfnJ14280jwyEHWttAw&expires=1776619849|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Argentina", 11:30 Liga de Argentina - Aldosivi vs Racing Club11:30
+https://n3.zohanayaan.com:1686/hls/captntarg.m3u8?md5=AwZfaKOsOZ0tOct8N4P4FA&expires=1776619850|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Chile", 11:30 Liga de Chile - Coquimbo Unido vs Ñublense11:30
+https://n5.zohanayaan.com:1686/hls/captntchil.m3u8?md5=GUNisfhSfhLsKanqss5cyw&expires=1776619862|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga Portugal", 12:00 Liga Portugal - Sporting CP vs Benfica12:00
+https://s25examj.58103793.net:8443/hls/hmsa6df9.m3u8?s=AVajIPtNTBJSHFKYi_mYzQ&e=1776634266|referer=https://eveningbad.net/|origin=https://eveningbad.net|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Ecuador", 13:00 Liga de Ecuador - Manta FC vs Deportivo Cuenca13:00
+https://n3.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=cdJTv2UCoLmriCwxdsAxYA&expires=1776619871|referer=https://hoca6.com/|origin=https://hoca6.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Serie A", 13:45 Serie A - Juventus Turin vs Bologna13:45
+https://n4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=JJpjOD2gKajpW3Gg0g8w7w&expires=1776619869|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
