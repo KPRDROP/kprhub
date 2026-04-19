@@ -3,35 +3,35 @@
 #EXTVLCOPT:http-referrer=https://streamx550.com/
 #EXTVLCOPT:http-origin=https://streamx550.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cc324.streamingtv339.com/foxone1/index.m3u8?token=1f5544e4ff79816ff2b691cd487f58f45feec697-ad-1776651875-1776597875&ip=172.203.212.195
-#EXTINF:-1 group-title="LaLiga 2", 07:00 LaLiga 2 - Andorra vs Real Valladolid07:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capoplus.m3u8?md5=beLmxzMlsUJnVAmlKVY6xQ&expires=1776614075
-#EXTINF:-1 group-title="Liga de Uruguay", 08:00 Liga de Uruguay - Cerro vs Montevideo City Torque08:00
-#EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-origin=https://hoca6.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/wsmkmlfeed109.m3u8?md5=EZQvxRIe2ULUVjATpwptKw&expires=1776614078
+https://cc324.streamingtv339.com/foxone1/index.m3u8?token=ff3efe5a9f1d2a80431b1f41d70dc396fee9cfc4-c7-1776654299-1776600299&ip=172.182.195.130
 #EXTINF:-1 group-title="Premier League", 08:00 Premier League - Everton vs Liverpool08:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=a2OU2V038CBgO2OyeVNVCg&expires=1776614076
+https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=Utgu99XCW8HzXKH1yA6VIQ&expires=1776616490
+#EXTINF:-1 group-title="Liga de Uruguay", 08:00 Liga de Uruguay - Cerro vs Montevideo City Torque08:00
+#EXTVLCOPT:http-referrer=https://hoca6.com/
+#EXTVLCOPT:http-origin=https://hoca6.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n5.zohanayaan.com:1686/hls/wsmkmlfeed109.m3u8?md5=7J4ZabbB2YzQ6-6uDJRvLw&expires=1776616502
+#EXTINF:-1 group-title="LaLiga 2", 07:00 LaLiga 2 - Andorra vs Real Valladolid07:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n2.zohanayaan.com:1686/hls/capoplus.m3u8?md5=VOIXegNRbPpuzWgAh8XL6A&expires=1776616499
 #EXTINF:-1 group-title="Serie A", 08:00 Serie A - Hellas Verona vs AC Milan08:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=rm_XlFZX8zt9V10nfWjivw&expires=1776614091
+https://n5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=ilkjLaIgfx6m3S6EW_et8g&expires=1776616517
 #EXTINF:-1 group-title="Brasileirao", 09:00 Brasileirao - Internacional vs Mirassol09:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/winsports.m3u8?md5=kK-6oBW0HdkyBRkMGmr85A&expires=1776614091
+https://n3.zohanayaan.com:1686/hls/winsports.m3u8?md5=viwYzF_2sKXICZ03ClC5Bg&expires=1776616519
 #EXTINF:-1 group-title="LaLiga 2", 09:15 LaLiga 2 - Sporting Gijon vs Cadiz09:15
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capoplus.m3u8?md5=7J1BF-t9F1r3Qn_KnfIOkw&expires=1776614101
-# updated 1776606908.8692548
+https://n3.zohanayaan.com:1686/hls/capoplus.m3u8?md5=xBVXiJy6KWkWJRuVw5oyEg&expires=1776616520
+# updated 1776609345.860188
