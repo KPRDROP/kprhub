@@ -1,37 +1,37 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Peru", 20:00 Liga de Peru - Alianza Lima vs Cusco FC20:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capligamax.m3u8?md5=TJAxaTOzj_3k2PLuNQMgZA&expires=1776605309
 #EXTINF:-1 group-title="Liga de Argentina", 19:45 Liga de Argentina - Argentinos Juniors vs Atletico Tucuman19:45
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/captntarg.m3u8?md5=yyBDbhV49pM1BtBePZ3Ajw&expires=1776605308
-#EXTINF:-1 group-title="Liga MX", 20:05 Liga MX - Monterrey Rayados vs Pachuca20:05
+https://n2.zohanayaan.com:1686/hls/captntarg.m3u8?md5=R854cmrmjNwU43AptPS3lg&expires=1776609482
+#EXTINF:-1 group-title="Liga de Peru", 20:00 Liga de Peru - Alianza Lima vs Cusco FC20:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=nSzoLpjLheVZw0SRCyzmow&expires=1776605325
+https://n5.zohanayaan.com:1686/hls/capligamax.m3u8?md5=NrldtvUUzNzvaJY2AyIPng&expires=1776609482
 #EXTINF:-1 group-title="Liga MX", 20:07 Liga MX - Guadalajara Chivas vs Puebla20:07
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=aqeTOqCWRB3X3apA4Tharg&expires=1776605326
+https://n2.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=JeVlroYI_S0_OB2B0wEzAQ&expires=1776609501
 #EXTINF:-1 group-title="Liga de Colombia", 20:30 Liga de Colombia - Fortaleza vs Aguilas Doradas20:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=r1aJRGweCwYqXOyYPoZGyg&expires=1776605337
-#EXTINF:-1 group-title="Liga MX", 22:10 Liga MX - America vs Toluca22:10
+https://n3.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=OKiEW6FqiT2MtYKIQ5p37Q&expires=1776609513
+#EXTINF:-1 group-title="Liga MX", 20:05 Liga MX - Monterrey Rayados vs Pachuca20:05
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=1fcyJnReiHL3axZrIYUEUQ&expires=1776605338
+https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=l63wJLR0ecQmzzJXRbYmuw&expires=1776609498
 #EXTINF:-1 group-title="Liga MX", 22:06 Liga MX - Leon vs FC Juarez22:06
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=lLnWARK8PSdLkxvDCc6_-A&expires=1776605339
-# updated 1776598146.846561
+https://n5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=eEmaGNmN2pGP0BMOHxcR7A&expires=1776609511
+#EXTINF:-1 group-title="Liga MX", 22:10 Liga MX - America vs Toluca22:10
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=U5oo8VjOXqwvCgmo2aXXaw&expires=1776609527
+# updated 1776602333.2788217
