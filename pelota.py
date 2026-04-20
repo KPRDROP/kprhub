@@ -23,8 +23,8 @@ LIBPEL_URL = "https://librepelota.com/"
 PELOTA1_URL = "https://www.pelotalibre1.pe/"
 
 REPO_DIR = Path(__file__).parent
-EVENT_FILE = "eventos.m3u"
-TIVIMATE_FILE = "eventos_tivimate.m3u"
+EVENT_FILE = "eventos.m3u8"
+TIVIMATE_FILE = "eventos_tivimate.m3u8"
 
 MAX_WORKERS = 4  # parallel threads (safe limit)
 
