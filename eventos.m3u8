@@ -3,55 +3,70 @@
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capoplus.m3u8?md5=HDJZkzcQkZbmeKBc0EFatA&expires=1776715070
+https://n4.zohanayaan.com:1686/hls/capoplus.m3u8?md5=CVjZL11DD5MvT_eSSsEEqA&expires=1776718899
 #EXTINF:-1 group-title="AFC Champions League", 13:45 AFC Champions League - Vissel Kobe vs Al Ahli13:45
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=q5ba8M4XRTgfkAt4f71WZg&expires=1776715067
-#EXTINF:-1 group-title="Liga de Uruguay", 15:00 Liga de Uruguay - Boston River vs Cerro Largo15:00
-#EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-origin=https://hoca6.com
+https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=a06hKkZBPoosuSPqJMDljw&expires=1776718900
+#EXTINF:-1 group-title="Serie A", 13:45 Serie A - Lecce vs Fiorentina13:45
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/wsmkmlfeed109.m3u8?md5=HPd6-6IaO445saf3AJWGKg&expires=1776715096
+https://n4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=ew2t-hS_IIpSzsDCL-pBKg&expires=1776718893
+#EXTINF:-1 group-title="Premier League", 14:00 Premier League - Crystal Palace vs West Ham United14:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=87CnVxGmYI4LNgQW0tckDA&expires=1776718910
 #EXTINF:-1 group-title="Liga de Argentina", 15:15 Liga de Argentina - Central Cordoba vs Platense15:15
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/captntarg.m3u8?md5=EP0NBAvgEYY--pS8v52FMA&expires=1776715110
+https://n5.zohanayaan.com:1686/hls/captntarg.m3u8?md5=snWZBa3F-MCwj_ma-mStMg&expires=1776718907
+#EXTINF:-1 group-title="Liga de Uruguay", 15:00 Liga de Uruguay - Boston River vs Cerro Largo15:00
+#EXTVLCOPT:http-referrer=https://hoca6.com/
+#EXTVLCOPT:http-origin=https://hoca6.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n4.zohanayaan.com:1686/hls/wsmkmlfeed109.m3u8?md5=vjTpod1OHJFf1qOGRE8azA&expires=1776718916
 #EXTINF:-1 group-title="Liga de Argentina", 17:30 Liga de Argentina - San Lorenzo vs Velez Sarsfield17:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/captntarg.m3u8?md5=EP0NBAvgEYY--pS8v52FMA&expires=1776715110
+https://n4.zohanayaan.com:1686/hls/captntarg.m3u8?md5=7n2OYWQLRyKUjBg9UdEk1A&expires=1776718927
+#EXTINF:-1 group-title="NBA", 18:00 NBA - Cleveland Cavaliers (1) vs (0) Toronto Raptors18:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n1.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=_jOcH3QOrXh1fw0QdJpoDg&expires=1776718925
 #EXTINF:-1 group-title="Liga de Colombia", 18:20 Liga de Colombia - Once Caldas vs Internacional Bogota18:20
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n1.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=ItQHVo7YosZeD_t4pYWdeQ&expires=1776715122
+https://n1.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=VGWat42oqMfUhav7s6am9g&expires=1776718928
 #EXTINF:-1 group-title="NBA", 19:00 NBA - New York Knicks (1) vs (0) Atlanta Hawks19:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=B2WuFYXjkyLeyQwyepmvqQ&expires=1776715150
+https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=V1lYIEO2wRJEHXQXXfuVcg&expires=1776718931
 #EXTINF:-1 group-title="Liga de Chile", 19:30 Liga de Chile - Universidad Catolica vs Union La Calera19:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/captntchil.m3u8?md5=lR0K1QSGXW9JVzIAmiRRAw&expires=1776715154
+https://n3.zohanayaan.com:1686/hls/captntchil.m3u8?md5=zU6ermgVoljaiDoJI-WGjw&expires=1776718940
 #EXTINF:-1 group-title="Liga de Argentina", 19:45 Liga de Argentina - Tigre vs Huracan19:45
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n1.zohanayaan.com:1686/hls/captntarg.m3u8?md5=bgPqDcQQKLYibf1Z69R4zQ&expires=1776715171
+https://n3.zohanayaan.com:1686/hls/captntarg.m3u8?md5=HHYK2xhXvy3CH3Sapl_4ag&expires=1776718952
 #EXTINF:-1 group-title="Liga de Colombia", 20:30 Liga de Colombia - Atletico Nacional vs Bucaramanga20:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=zjUjWxSbXJa1V4GQgMvibA&expires=1776715177
+https://n1.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=jwdGbi2c7nmXWB7qVlHlyw&expires=1776718950
 #EXTINF:-1 group-title="NBA", 21:30 NBA - Denver Nuggets (1) vs (0) Minnesota Timberwolves21:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=wgqNi_opN-ec2mfpEUui4w&expires=1776715177
-# updated 1776707995.533342
+https://n1.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=-ESLVWxREOdFNCZVOVz-8w&expires=1776718961
+# updated 1776711770.7362494
