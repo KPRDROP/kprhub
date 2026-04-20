@@ -29,7 +29,7 @@ TIVIMATE_FILE = "eventos_tivimate.m3u8"
 MAX_WORKERS = 4  # parallel threads (safe limit)
 
 EXCLUDED_LEAGUES = [
-    "Super Lig","Liga Endesa","Super League","Bundesliga","MLS",
+    "Super Lig","Liga Endesa","Super League","Bundesliga",#"MLS",
     #"NBA"
 ]
 
