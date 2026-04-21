@@ -1,5 +1,13 @@
 #EXTM3U
-#EXTINF:-1 group-title="LaLiga", 12:00 LaLiga - Mallorca vs Valencia12:00
-https://n3.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=9aFHZDbnbIJq97tb2YDBpw&expires=1776801365|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga", 12:00 LaLiga - Athletic Club vs Osasuna12:00
-https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=tHeLBDv9fdU11qZkwwsefg&expires=1776801365|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga", 14:30 LaLiga - Real Madrid vs Deportivo Alaves14:30
+https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=E41hyxA1UZxk8-eAPKgdrg&expires=1776805318|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Copa Italia", 14:00 Copa Italia - Inter Milan vs Como14:00
+https://n3.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=2aW5nEY_BME4QtYjG2l_1Q&expires=1776805318|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Premier League", 14:00 Premier League - Brighton & Hove Albion vs Chelsea14:00
+https://n3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=dr-DT6rb6rCOyUaz-hU_HA&expires=1776805318|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Copa de Francia", 14:10 Copa de Francia - Lens vs Toulouse14:10
+https://n5.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=RyxCXFSHi2XsgM55ynGttw&expires=1776805318|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Copa Do Brazil", 15:00 Copa Do Brazil - Botafogo vs Chapecoense15:00
+https://doc1.streameasthd.net/max4/index.m3u8?token=62e871d41cae1b6f9d1e4e1f155ca85b57b33ce1-8b-1776843137-1776789137&ip=64.236.200.115|referer=https://streamtpnew.com/|origin=null|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga", 14:30 LaLiga - Girona vs Real Betis14:30
+https://n3.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=oYx2l1fPj9OFdyNwkYKg1A&expires=1776805336|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28X11%3B%20Linux%20x86_64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome/147.0.0.0%20Safari/537.36
