@@ -1,3 +1,9 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[WWE] Monday Night Raw:6 hours ago (APPTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[WWE] Monday Night Raw:6 hours ago (APPTV)
-https://chatgpt.hereisman.net/playlist/49321/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Premier League] Brighton & Hove Albion vs Chelsea (APPTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Premier League] Brighton & Hove Albion vs Chelsea (APPTV)
+https://chatgpt.hereisman.net/playlist/49340/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[LaLiga] Girona FC vs Real Betis (APPTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[LaLiga] Girona FC vs Real Betis (APPTV)
+https://chatgpt.hereisman.net/playlist/49342/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[LaLiga] Real Madrid vs Deportivo Alavés (APPTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[LaLiga] Real Madrid vs Deportivo Alavés (APPTV)
+https://chatgpt.hereisman.net/playlist/49338/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Coppa Italia] Inter vs Como (APPTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Coppa Italia] Inter vs Como (APPTV)
+https://chatgpt.hereisman.net/playlist/49343/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
