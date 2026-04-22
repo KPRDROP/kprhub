@@ -3,50 +3,50 @@
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=-MZiBG-3gwz3VvASw66uaA&expires=1776897929
-#EXTINF:-1 group-title="Liga de Ecuador", 13:00 Liga de Ecuador - Delfin vs Independiente del Valle13:00
-#EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-origin=https://hoca6.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=tI2MS55TE9NOXQsM-WMJ-Q&expires=1776897913
+https://n4.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=qqJpsab6QWoDfdDBNO4G_A&expires=1776901493
 #EXTINF:-1 group-title="Copa de Alemania", 13:45 Copa de Alemania - Bayer Leverkusen vs Bayern Munich13:45
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=OJkCYNwCnjSH6_4t5F-s9Q&expires=1776897930
+https://n2.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=IUOZxlc7qrLH7UNPYIjDSw&expires=1776901494
+#EXTINF:-1 group-title="Liga de Ecuador", 13:00 Liga de Ecuador - Delfin vs Independiente del Valle13:00
+#EXTVLCOPT:http-referrer=https://hoca6.com/
+#EXTVLCOPT:http-origin=https://hoca6.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=r600PvGm7cmozdTHbWKhag&expires=1776901489
 #EXTINF:-1 group-title="Copa Italia", 14:00 Copa Italia - Atalanta vs Lazio Roma14:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=YhgRb0fvGZt6ABSvoillCA&expires=1776897942
-#EXTINF:-1 group-title="Premier League", 14:00 Premier League - Bournemouth vs Leeds United14:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n4.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=Hrw83XLF3RR_fPdHDy-FDA&expires=1776897943
+https://n4.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=RGzk1gHRGz1kESs4s6ZO0Q&expires=1776901506
 #EXTINF:-1 group-title="Premier League", 14:00 Premier League - Burnley vs Manchester City14:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=tv59ul6BNH37VQQgshBsRg&expires=1776897944
+https://n5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=XhB5-PGumJ0MkHXFmKpbjw&expires=1776901508
+#EXTINF:-1 group-title="Premier League", 14:00 Premier League - Bournemouth vs Leeds United14:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n2.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=9Z10XWCva0rgQ0yI8RCgKQ&expires=1776901509
 #EXTINF:-1 group-title="Copa de Francia", 14:10 Copa de Francia - Racing Estrasburgo vs Niza14:10
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capocampeones8.m3u8?md5=6WQvMMQwm2KjMx9Qs7dIpg&expires=1776897953
-#EXTINF:-1 group-title="LaLiga", 14:30 LaLiga - Barcelona vs Celta Vigo14:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=iLLLvfYupxyineTxfSJ96g&expires=1776897957
+https://n4.zohanayaan.com:1686/hls/capocampeones8.m3u8?md5=GZO93YBFLYWj50zTKwA_5Q&expires=1776901520
 #EXTINF:-1 group-title="Taca de Portugal", 14:45 Taca de Portugal - Porto vs Sporting Lisboa14:45
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=gT1W5wp0tyMmjtQZI91FGg&expires=1776897957
+https://n5.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=cM0zImcwSowr4cmiJew76w&expires=1776901521
+#EXTINF:-1 group-title="LaLiga", 14:30 LaLiga - Barcelona vs Celta Vigo14:30
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=lFLmXbj8GiDxgV6zquw-yA&expires=1776901521
 #EXTINF:-1 group-title="Liga de Ecuador", 15:30 Liga de Ecuador - Deportivo Cuenca vs Orense15:30
 #EXTVLCOPT:http-referrer=https://hoca6.com/
 #EXTVLCOPT:http-origin=https://hoca6.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=_x8IDu4ITf8ry3uBXxklbQ&expires=1776897953
-# updated 1776890776.969109
+https://cdn1.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=JxUPylZHShT8G86BkQvJxw&expires=1776901529
+# updated 1776894362.0206952
