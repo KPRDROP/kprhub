@@ -1,11 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Orlando Magic vs Detroit Pistons" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Detroit-Pistons-Logo.svg" group-title="NBA Games - Live Games",Orlando Magic vs Detroit Pistons
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="New York Knicks vs Atlanta Hawks" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Atlanta-Hawks-Logo.svg" group-title="NBA Games - Live Games",New York Knicks vs Atlanta Hawks
 #EXTVLCOPT:http-origin=https://playembed.top
 #EXTVLCOPT:http-referrer=https://playembed.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/pistons/index.m3u8
-#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Phoenix Suns vs Oklahoma City Thunder" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Oklahoma-City-Thunder-Logo.svg" group-title="NBA Games - Live Games",Phoenix Suns vs Oklahoma City Thunder
+https://gg.poocloud.in/hawks/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Cleveland Cavaliers vs Toronto Raptors" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Toronto-Raptors-Logo.svg" group-title="NBA Games - Live Games",Cleveland Cavaliers vs Toronto Raptors
 #EXTVLCOPT:http-origin=https://playembed.top
 #EXTVLCOPT:http-referrer=https://playembed.top/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
-https://gg.poocloud.in/thunder/index.m3u8
+https://gg.poocloud.in/raptors/index.m3u8
+#EXTINF:-1 tvg-id="NBA.Basketball.Dummy.us" tvg-name="Denver Nuggets vs Minnesota Timberwolves" tvg-logo="https://nbawebcast.top/wp-content/uploads/2025/11/Minnesota-Timberwolves-Logo.svg" group-title="NBA Games - Live Games",Denver Nuggets vs Minnesota Timberwolves
+#EXTVLCOPT:http-origin=https://playembed.top
+#EXTVLCOPT:http-referrer=https://playembed.top/
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36
+https://gg.poocloud.in/timberwolves/index.m3u8
