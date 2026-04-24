@@ -3,40 +3,45 @@
 #EXTVLCOPT:http-referrer=https://streamx550.com/
 #EXTVLCOPT:http-origin=null
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://bg622.streamingtv339.com/premiere1/index.m3u8?token=2e5d67b3174654b32b3a67e4869630d7eca7c8ed-d1-1777077103-1777023103&ip=4.246.135.195
+https://bg622.streamingtv339.com/premiere1/index.m3u8?token=3b6393edb0d5f9f86a93c9c001ad59312e8f689a-db-1777086001-1777032001&ip=172.208.154.18
+#EXTINF:-1 group-title="Copa Do Brazil", 17:30 Copa Do Brazil - Palmeiras vs Jacuipense17:30
+#EXTVLCOPT:http-referrer=https://streamx550.com/
+#EXTVLCOPT:http-origin=null
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://bg622.streamingtv339.com/amazon1/index.m3u8?token=8d22981a143486d8e93a2413637083d0e94899a6-ba-1777086001-1777032001&ip=172.208.154.18
 #EXTINF:-1 group-title="Liga de Peru", 15:00 Liga de Peru - Los Chankas vs Cienciano del Cusco15:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/capligamax.m3u8?md5=s-kZWiK3pgyH9ZaCFsxB-w&expires=1777039303
+https://cdn8.zohanayaan.com:1686/hls/capligamax.m3u8?md5=ZvcEB3IVqAkwLmNG-BudFg&expires=1777048201
 #EXTINF:-1 group-title="Liga de Colombia", 18:00 Liga de Colombia - Deportivo Pasto vs Independiente Santa Fe18:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn15.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=Mx8Lmw8UWodJSRMUslea8A&expires=1777039311
+https://cdn13.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=ZO3AeAJSg7vXu9Niy3QSrw&expires=1777048213
 #EXTINF:-1 group-title="NBA", 18:00 NBA - Atlanta Hawks (1) vs (1) New York Knicks18:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=t0YmZZVVDmZb-MmHckiF2w&expires=1777039317
+https://cdn14.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=w0MvP0JBK1AVJfqyDYqWEQ&expires=1777048214
 #EXTINF:-1 group-title="Liga de Chile", 19:00 Liga de Chile - Palestino vs Deportes Concepcion19:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn11.zohanayaan.com:1686/hls/captntchil.m3u8?md5=6aYROwDulLspDhm9tNK2iQ&expires=1777039322
+https://cdn12.zohanayaan.com:1686/hls/captntchil.m3u8?md5=GRr3KmbWQHSWNImjLtZgbA&expires=1777048215
 #EXTINF:-1 group-title="Copa Do Brazil", 19:30 Copa Do Brazil - Atletico Paranaense vs Atletico Goianiense19:30
 #EXTVLCOPT:http-referrer=https://streamx550.com/
 #EXTVLCOPT:http-origin=null
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://pr745.streamingtv339.com/premiere1/index.m3u8?token=18e22d7815f7ebdfe9027f655ece10bf33a7937b-ca-1777077135-1777023135&ip=4.246.135.195
+https://pr745.streamingtv339.com/premiere1/index.m3u8?token=396413dc11ba88c713b3d849aa8f8abc74727da9-58-1777086034-1777032034&ip=172.208.154.18
 #EXTINF:-1 group-title="Liga de Colombia", 20:00 Liga de Colombia - Millonarios vs Deportes Tolima20:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=VBW43APtYa1-l5nNttbMpw&expires=1777039344
+https://cdn11.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=hEKLfW-5B_a_WlMJNSsO2Q&expires=1777048243
 #EXTINF:-1 group-title="NBA", 20:30 NBA - Minnesota Timberwolves (1) vs (1) Denver Nuggets20:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=5PUF3rQ2SZs_gwvMI_prcQ&expires=1777039354
-# updated 1777032159.26464
+https://cdn13.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=MLKpnwhnBG3kg74z8r-1UQ&expires=1777048255
+# updated 1777041075.009396
