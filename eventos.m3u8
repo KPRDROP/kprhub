@@ -3,30 +3,40 @@
 #EXTVLCOPT:http-referrer=https://streamx550.com/
 #EXTVLCOPT:http-origin=null
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://bg622.streamingtv339.com/premiere1/index.m3u8?token=02f5d5a4dcdac638cd2060365c0ff343078ca515-c3-1777051382-1776997382&ip=135.232.201.233
+https://bg622.streamingtv339.com/premiere1/index.m3u8?token=6a34e2230e905ab0591df7b136f2c506231d69a7-18-1777059152-1777005152&ip=40.76.239.100
 #EXTINF:-1 group-title="Liga de Peru", 15:00 Liga de Peru - Los Chankas vs Cienciano del Cusco15:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/capligamax.m3u8?md5=yjrpztRTdH26x7wPF0Xh1Q&expires=1777013582
+https://cdn14.zohanayaan.com:1686/hls/capligamax.m3u8?md5=x3HeL5VeuXIiNDfzTweZ-Q&expires=1777021352
+#EXTINF:-1 group-title="Liga de Colombia", 18:00 Liga de Colombia - Deportivo Pasto vs Independiente Santa Fe18:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=jaFr3fb2x7bHHmPWJ6X8pw&expires=1777021360
 #EXTINF:-1 group-title="NBA", 18:00 NBA - Atlanta Hawks (1) vs (1) New York Knicks18:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=tCrzdRxEBhgiyL1b_2h5hg&expires=1777013596
+https://cdn8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=PdmGSPOE0cGOYyPX-9JQuw&expires=1777021367
 #EXTINF:-1 group-title="Liga de Chile", 19:00 Liga de Chile - Palestino vs Deportes Concepcion19:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn15.zohanayaan.com:1686/hls/captntchil.m3u8?md5=J9Q4CVDzQh40VpceDEG3yQ&expires=1777013604
+https://cdn11.zohanayaan.com:1686/hls/captntchil.m3u8?md5=1sgzmaDo5ppSQ7XGf9Coug&expires=1777021373
 #EXTINF:-1 group-title="Copa Do Brazil", 19:30 Copa Do Brazil - Atletico Paranaense vs Atletico Goianiense19:30
 #EXTVLCOPT:http-referrer=https://streamx550.com/
 #EXTVLCOPT:http-origin=null
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://bg622.streamingtv339.com/premiere1/index.m3u8?token=b2f49332b5d40e5237ed71d618fb9ddd8bcb52f8-9f-1777051416-1776997416&ip=135.232.201.233
+https://bg622.streamingtv339.com/premiere1/index.m3u8?token=17f905e8c94212c0c7f881ef05cc5dca86c27663-8c-1777059185-1777005185&ip=40.76.239.100
+#EXTINF:-1 group-title="Liga de Colombia", 20:00 Liga de Colombia - Millonarios vs Deportes Tolima20:00
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://cdn9.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=obuKvg57h9bAyd9ciDVZoQ&expires=1777021395
 #EXTINF:-1 group-title="NBA", 20:30 NBA - Minnesota Timberwolves (1) vs (1) Denver Nuggets20:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=UYm--X-ZcZDj6kh8UH6sAA&expires=1777013634
-# updated 1777006444.5129986
+https://cdn11.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=6mWpJAvRFUm3NGFDbZ7XWA&expires=1777021402
+# updated 1777014207.3881302
