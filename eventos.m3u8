@@ -1,67 +1,12 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Argentina", 15:00 Liga de Argentina - Deportivo Riestra vs Independiente15:00
+#EXTINF:-1 group-title="LaLiga", 07:00 LaLiga - Deportivo Alaves vs Mallorca07:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=2OIJOydimbAc2xUJV6CpAQ&expires=1777120683
-#EXTINF:-1 group-title="Liga de Chile", 17:00 Liga de Chile - Union La Calera vs Coquimbo Unido17:00
+https://cdn7.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=y7nvejVRo-Kd_Y_73hdL0g&expires=1777124059
+#EXTINF:-1 group-title="Premier League", 06:30 Premier League - Fulham vs Aston Villa06:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/captntchil.m3u8?md5=v_tAqzTkJ67E3fZTZyg23A&expires=1777120683
-#EXTINF:-1 group-title="Liga de Colombia", 16:00 Liga de Colombia - Cucuta Deportivo vs Atletico Junior16:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn14.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=MPZCAVlUXlMXVD6bnXiz8g&expires=1777120683
-#EXTINF:-1 group-title="Liga de Argentina", 17:15 Liga de Argentina - Estudiantes de Rio Cuarto vs Rosario Central17:15
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn12.zohanayaan.com:1686/hls/captntarg.m3u8?md5=aMyiBTVPXdsQJTvJNd6Pyg&expires=1777120683
-#EXTINF:-1 group-title="NBA", 18:00 NBA - Philadelphia 76ers (1) vs (1) Boston Celtics18:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=UcsCqUtxLDpmAOTPMqAJSQ&expires=1777120710
-#EXTINF:-1 group-title="Liga de Argentina", 17:15 Liga de Argentina - Lanus vs Central Cordoba17:15
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn15.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=KkiszoaDCVHfsvVecyjRWg&expires=1777120703
-#EXTINF:-1 group-title="Liga de Argentina", 19:30 Liga de Argentina - Racing Club vs Barracas Central19:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn13.zohanayaan.com:1686/hls/captntarg.m3u8?md5=0mTeMewPrv2hT8LraPUUpA&expires=1777120725
-#EXTINF:-1 group-title="Liga de Uruguay", 17:30 Liga de Uruguay - Montevideo City Torque vs Boston River17:30
-#EXTVLCOPT:http-referrer=https://hoca6.com/
-#EXTVLCOPT:http-origin=https://hoca6.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/wsmkmlfeed109.m3u8?md5=8H4hI1OXEjnh9MDal3k-5g&expires=1777120705
-#EXTINF:-1 group-title="NBA", 19:00 NBA - Houston Rockets (0) vs (2) Los Angeles Lakers19:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn12.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=WcaktM1StaDX8EPsKrlFcw&expires=1777120717
-#EXTINF:-1 group-title="Liga de Argentina", 19:30 Liga de Argentina - Platense vs San Lorenzo19:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=DcdQknDmsmmM3RkFAx-9iw&expires=1777120735
-#EXTINF:-1 group-title="Liga de Chile", 19:30 Liga de Chile - Audax Italiano vs Deportes Limache19:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn14.zohanayaan.com:1686/hls/captntchil.m3u8?md5=M2c9S-jtRVcwoMP3BXT6_g&expires=1777120742
-#EXTINF:-1 group-title="NBA", 21:30 NBA - Portland Trail Blazers (1) vs (1) San Antonio Spurs21:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=rPkUwX3X5ezgWmr7U-vdCQ&expires=1777120743
-#EXTINF:-1 group-title="Liga MX", 22:00 Liga MX - Puebla vs Queretaro22:00
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://cdn12.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=V1gO8XT0TS0bgFd2X9RlsQ&expires=1777120753
-# updated 1777113562.1288514
+https://cdn8.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=S9Pmp39divozMRVoRES6PA&expires=1777124059
+# updated 1777116879.4111948
