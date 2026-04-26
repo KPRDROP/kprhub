@@ -1,42 +1,42 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga MX", 20:05 Liga MX - Toluca vs Leon20:05
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=oJ5xwECTCi3PPNXQJyV0Kg&expires=1777200786
-#EXTINF:-1 group-title="NBA", 19:30 NBA - Minnesota Timberwolves (2) vs (1) Denver Nuggets19:30
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n8.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=bzG2HdvuxNRioxbwSQMz4g&expires=1777200784
 #EXTINF:-1 group-title="Liga Expansion MX", 20:00 Liga Expansion MX - Atletico Morelia vs Mineros de Zacatecas20:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n7.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=xTFe-OB606IfiGbWqi9roQ&expires=1777200786
+https://n4.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=wxXfp4ga_YMrCwaYgU-wEQ&expires=1777204061
+#EXTINF:-1 group-title="NBA", 19:30 NBA - Minnesota Timberwolves (2) vs (1) Denver Nuggets19:30
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n5.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=wwHUgCeWNsV-Yrp0mInBsQ&expires=1777204061
+#EXTINF:-1 group-title="Liga MX", 20:05 Liga MX - Toluca vs Leon20:05
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
+https://n8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=qhjvyiZRFH5iALdV4fMpdg&expires=1777204068
 #EXTINF:-1 group-title="Liga MX", 20:07 Liga MX - Guadalajara Chivas vs Tijuana Xolos20:07
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n8.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=UsA3hKrAhfBfNa40gCihpg&expires=1777200790
+https://n4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=gJnRe1L2MJTJ1SlTAEtxRg&expires=1777204068
 #EXTINF:-1 group-title="Liga de Colombia", 20:30 Liga de Colombia - Independiente Medellin vs Fortaleza20:30
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n3.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=HsXs0GG8gzvqY_-U3y0DQw&expires=1777200798
+https://n7.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=GR9UwXuQtjjxvJ5fF1CSKg&expires=1777204079
 #EXTINF:-1 group-title="Liga Expansion MX", 22:00 Liga Expansion MX - CA La Paz vs Club Jaiba Brava22:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n6.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=TGoclPDQxO2nQ4ijnpktAA&expires=1777200806
+https://n4.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=XmRAZVWSplwWd8VZQI2HIQ&expires=1777204087
 #EXTINF:-1 group-title="Liga MX", 22:00 Liga MX - Juarez vs Atletico San Luis22:00
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n6.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=DNpEGw3wv8-7_6D_0LJ_aA&expires=1777200810
+https://n2.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=N-27XBvAHw1du2id_SxHkQ&expires=1777204094
 #EXTINF:-1 group-title="Liga MX", 22:10 Liga MX - America vs Atlas22:10
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/147.0.0.0 Safari/537.36
-https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=_2OkBbHkUTgyUvCQoWyGGg&expires=1777200818
-# updated 1777193624.0808647
+https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=jeQhhZaDq3P4rfQL4EOBPw&expires=1777204102
+# updated 1777196910.3280175
