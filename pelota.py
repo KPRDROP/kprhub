@@ -337,45 +337,38 @@ def main():
     print(f"Time: {current_time}")
     print("=" * 60)
     
-    # Get events
+    # Get ALL events (no filtering)
     all_events = get_roja_events()
     
     if not all_events:
         print("No events found!")
         return
     
-    # Filter events that are live or starting soon
-    live_events = [e for e in all_events if is_event_live_or_soon(e['time_obj'])]
+    print(f"\nTotal events found: {len(all_events)}")
     
-    # If no live events, take the next upcoming ones
-    if not live_events:
-        print("\nNo live events found. Taking next upcoming events...")
-        future_events = [e for e in all_events if e['time_obj'] and e['time_obj'] > datetime.now()]
-        future_events.sort(key=lambda x: x['time_obj'])
-        events_to_process = future_events[:MAX_EVENTS]
-    else:
-        events_to_process = live_events[:MAX_EVENTS]
-    
-    # Filter excluded leagues
+    # OPTIONAL: filter excluded leagues
     if EXCLUDED_LEAGUES:
-        events_to_process = [e for e in events_to_process 
-                           if not any(x.lower() in e['liga'].lower() for x in EXCLUDED_LEAGUES)]
+        all_events = [
+            e for e in all_events
+            if not any(x.lower() in e['liga'].lower() for x in EXCLUDED_LEAGUES)
+        ]
     
-    # Sort by time then by league
-    events_to_process.sort(key=lambda x: (x['hora'], x['liga']))
+    # Sort by time
+    all_events.sort(key=lambda x: (x['hora'], x['liga']))
     
-    # Remove duplicate matches (keep first channel per match)
+    # REMOVE duplicate matches (keep first channel only)
     seen_matches = set()
     unique_events = []
-    for e in events_to_process:
+    
+    for e in all_events:
         match_key = (e['hora'], e['liga'], e['partido'])
         if match_key not in seen_matches:
             seen_matches.add(match_key)
             unique_events.append(e)
     
-    events_to_process = unique_events
+    # Limit total processed events (optional safety)
+    events_to_process = unique_events[:MAX_EVENTS]
     
-    print(f"\nLive events: {len(live_events)}")
     print(f"Events to process: {len(events_to_process)}")
     
     if not events_to_process:
@@ -384,7 +377,7 @@ def main():
         (REPO_DIR / TIVIMATE_FILE).write_text("#EXTM3U\n", encoding='utf-8')
         return
     
-    # Show events to process
+    # Show events
     for e in events_to_process:
         print(f"  {e['hora']} | {e['liga']}: {e['partido']} -> {e['channel']}")
     
@@ -392,9 +385,9 @@ def main():
     entries = ["#EXTM3U"]
     tivimate = ["#EXTM3U"]
     
-    # Process events
     successful = 0
     
+    # ───── PROCESS ALL EVENTS ─────
     for idx, event in enumerate(events_to_process, 1):
         print(f"\n[{idx}/{len(events_to_process)}] {event['hora']} - {event['partido']} ({event['channel']})")
         
@@ -408,59 +401,41 @@ def main():
                 
                 title = f"{hora} {liga} - {partido}"
                 
-                # VLC format
+                # VLC
                 entries.append(f'#EXTINF:-1 group-title="{liga}",{title}')
                 entries += vlc_headers(result)
                 entries.append(result["url"])
                 
-                # Tivimate format
+                # Tivimate
                 tivimate.append(f'#EXTINF:-1 group-title="{liga}",{title}')
-                tivimate_url_str = tivimate_url(result)
-                tivimate.append(tivimate_url_str)
+                tivimate.append(tivimate_url(result))
                 
                 successful += 1
-                print(f"  ✓ Added to playlist with capo7play headers")
+                print(f"  ✓ Added")
             else:
-                print(f"  ✗ No stream found")
+                print(f"  ✗ No stream")
                 
         except Exception as e:
             print(f"  ✗ Error: {str(e)[:100]}")
         
-        # Delay between events to avoid rate limiting
         time.sleep(2)
     
-    # Write files
+    # ───── SAVE FILES ─────
     print(f"\n{'=' * 60}")
     print(f"Results: {successful}/{len(events_to_process)} streams captured")
     
     try:
-        vlc_content = "\n".join(entries)
-        tivimate_content = "\n".join(tivimate)
-        
-        (REPO_DIR / EVENT_FILE).write_text(vlc_content, encoding='utf-8')
-        (REPO_DIR / TIVIMATE_FILE).write_text(tivimate_content, encoding='utf-8')
+        (REPO_DIR / EVENT_FILE).write_text("\n".join(entries), encoding='utf-8')
+        (REPO_DIR / TIVIMATE_FILE).write_text("\n".join(tivimate), encoding='utf-8')
         
         print(f"Files written:")
-        print(f"  - {EVENT_FILE} ({len(entries)-1} streams)")
-        print(f"  - {TIVIMATE_FILE} ({len(tivimate)-1} streams)")
+        print(f"  - {EVENT_FILE}")
+        print(f"  - {TIVIMATE_FILE}")
         
-        # Show sample Tivimate output
-        if successful > 0:
-            print(f"\nSample Tivimate output:")
-            for i, line in enumerate(tivimate[-4:], 1):
-                if line.startswith("#EXTINF"):
-                    print(f"  {line}")
-                elif "|" in line:
-                    print(f"  URL with headers:")
-                    parts = line.split("|")
-                    print(f"    Stream: {parts[0][:80]}...")
-                    for part in parts[1:]:
-                        print(f"    {part}")
-            
     except Exception as e:
         print(f"Error writing files: {e}")
     
-    # Git push
+    # ───── GIT PUSH ─────
     if successful > 0:
         try:
             repo = Repo(REPO_DIR)
