@@ -31,7 +31,7 @@ async def extract_m3u8():
 
             if ".m3u8" in url or ".ts" in url:
                 if "token" in url or ".m3u8" in url:
-                    print(f"🎯 FOUND STREAM: {url}")
+                    print(f"FOUND STREAM: {url}")
                     m3u8_url = url
 
         page.on("response", handle_response)
