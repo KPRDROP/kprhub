@@ -27,7 +27,7 @@ jobs:
       - name: Install Python dependencies
         run: |
           pip install --upgrade pip
-          pip install requests beautifulsoup4 lxml playwright
+          pip install requests selectolax lxml playwright
 
       - name: Install Playwright Browsers (Firefox & Chromium)
         run: |

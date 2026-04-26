@@ -100,10 +100,10 @@ def main():
     print("Fetching PixelSports playlist...")
     raw = fetch_playlist()
 
-    print("✍ Writing VLC playlist...")
+    print("Writing VLC playlist...")
     OUT_VLC.write_text(build_vlc_playlist(raw), encoding="utf-8")
 
-    print("✍ Writing TiviMate playlist...")
+    print("Writing TiviMate playlist...")
     OUT_TIVI.write_text(build_tivimate_playlist(raw), encoding="utf-8")
 
     print("Done:")
