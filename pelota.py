@@ -22,18 +22,22 @@ warnings.filterwarnings("ignore")
 ROJA_URL = "https://www.rojadirectaenvivo.pl/"
 ROJA_BASE = "https://rojadirectablog.com"
 
+# Forced headers for all streams
+FORCED_REFERER = "https://capo7play.com/"
+FORCED_ORIGIN = "https://capo7play.com"
+
 REPO_DIR = Path(__file__).parent
 EVENT_FILE = "eventos.m3u8"
 TIVIMATE_FILE = "eventos_tivimate.m3u8"
 
-MAX_EVENTS = 10  # Process only first N upcoming events
+MAX_EVENTS = 15  # Process more events since we scan all channels
 STREAM_TIMEOUT = 25  # Max seconds to wait for stream per event
 
 # Default user agent (will be URL encoded for Tivimate)
 DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
 
 EXCLUDED_LEAGUES = [
-    "NBA"
+    #"NBA"
 ]
 
 # ───────── DRIVER ─────────
@@ -75,14 +79,6 @@ def normalize(url, base=ROJA_BASE):
         return base + "/" + url
     return url
 
-def extract_domain(url):
-    """Extract domain from URL"""
-    try:
-        parsed = urlparse(url)
-        return f"{parsed.scheme}://{parsed.netloc}"
-    except:
-        return url
-
 def parse_time(time_str):
     """Parse time string to datetime object"""
     try:
@@ -106,7 +102,7 @@ def is_event_live_or_soon(event_time, threshold_minutes=30):
 
 # ───────── SCRAPER ─────────
 def get_roja_events():
-    """Extract events from RojaDirecta page"""
+    """Extract ALL first channel links from each event"""
     events = []
     try:
         print(f"Fetching events from: {ROJA_URL}")
@@ -146,24 +142,28 @@ def get_roja_events():
                 
             liga, partido = parts[0].strip(), parts[1].strip()
 
-            # Get ONLY the first channel link from <ul>
-            first_channel = li.select_one("ul > li.subitem1 > a")
-            if not first_channel:
+            # Get ALL first channel links (subitem1) from <ul>
+            subitem_links = li.select("ul > li.subitem1 > a")
+            if not subitem_links:
                 continue
-                
-            href = normalize(first_channel.get("href"))
-            channel_name = first_channel.text.strip()
             
-            if href:
-                event_time = parse_time(hora)
-                events.append({
-                    'liga': liga,
-                    'hora': hora,
-                    'partido': partido,
-                    'channel': channel_name,
-                    'url': href,
-                    'time_obj': event_time
-                })
+            # Process each subitem1 link
+            for channel_link in subitem_links:
+                href = normalize(channel_link.get("href"))
+                channel_name = channel_link.text.strip()
+                
+                if href:
+                    event_time = parse_time(hora)
+                    events.append({
+                        'liga': liga,
+                        'hora': hora,
+                        'partido': partido,
+                        'channel': channel_name,
+                        'url': href,
+                        'time_obj': event_time
+                    })
+
+        print(f"Extracted {len(events)} stream links")
 
     except Exception as e:
         print(f"Error scraping: {e}")
@@ -172,16 +172,17 @@ def get_roja_events():
 
 # ───────── STREAM EXTRACTION ─────────
 def extract_m3u8(event_info):
-    """Extract m3u8 stream from event URL with correct headers"""
+    """Extract m3u8 stream with forced capo7play headers"""
     url = event_info['url']
     partido = event_info['partido']
+    channel = event_info['channel']
     
     drv = None
     try:
-        print(f"  Loading page...")
+        print(f"  [{channel}] Loading page...")
         drv = init_driver()
         drv.get(url)
-        time.sleep(4)
+        time.sleep(3)
         
         # Clear any previous requests
         try:
@@ -189,69 +190,66 @@ def extract_m3u8(event_info):
         except:
             pass
         
-        # Find the actual streaming iframe to get correct referer
-        stream_domain = None
-        try:
-            iframes = drv.find_elements(By.TAG_NAME, "iframe")
-            for iframe in iframes:
-                src = iframe.get_attribute("src")
-                if src and any(x in src.lower() for x in ['capo', 'play', 'stream', 'video', 'embed']):
-                    stream_domain = extract_domain(src)
-                    print(f"  Found streaming iframe: {stream_domain}")
-                    break
-        except:
-            pass
-        
-        # Click play buttons
-        for attempt in range(3):
+        # Click play buttons aggressively
+        for attempt in range(4):
             try:
-                # Try clicking play buttons
+                # Try multiple selectors for play buttons
                 selectors = [
                     "button[class*='play']",
                     ".vjs-big-play-button", 
                     "button",
                     "video",
                     "[class*='play']",
-                    ".play-button"
+                    ".play-button",
+                    "div[class*='play']",
+                    "[onclick*='play']"
                 ]
                 
                 for selector in selectors:
                     try:
                         elements = drv.find_elements(By.CSS_SELECTOR, selector)
-                        for el in elements[:2]:
+                        for el in elements[:3]:
                             if el.is_displayed():
                                 drv.execute_script("arguments[0].click();", el)
-                                time.sleep(0.5)
+                                time.sleep(0.3)
                     except:
                         pass
                 
-                # Try clicking inside iframes
+                # Handle iframes - switch and click inside
                 iframes = drv.find_elements(By.TAG_NAME, "iframe")
                 for iframe in iframes:
                     try:
                         drv.switch_to.frame(iframe)
-                        # Click any video/play elements
+                        # Try to play video or click buttons inside iframe
                         drv.execute_script("""
                             var videos = document.querySelectorAll('video');
                             videos.forEach(function(v) { 
                                 v.play(); 
                                 v.click();
+                                v.muted = true;
                             });
-                            var buttons = document.querySelectorAll('button, [class*="play"], .vjs-big-play-button');
-                            buttons.forEach(function(b) { b.click(); });
+                            var buttons = document.querySelectorAll('button, [class*="play"], .vjs-big-play-button, div[onclick]');
+                            buttons.forEach(function(b) { 
+                                b.click(); 
+                            });
+                            // Try to click anywhere on the page
+                            document.body.click();
                         """)
                         drv.switch_to.default_content()
+                        time.sleep(1)
                     except:
                         drv.switch_to.default_content()
                         
             except:
                 pass
             
-            time.sleep(2)
+            time.sleep(1.5)
         
         # Search for m3u8 requests
-        print(f"  Searching for stream...")
+        print(f"  [{channel}] Searching for stream...")
         start_time = time.time()
+        found_urls = set()
+        
         while time.time() - start_time < STREAM_TIMEOUT:
             try:
                 for req in drv.requests:
@@ -259,50 +257,42 @@ def extract_m3u8(event_info):
                         continue
                         
                     req_url = req.url
-                    if ".m3u8" in req_url:
-                        # Filter out unwanted URLs
-                        if any(x in req_url.lower() for x in ['google', 'analytics', 'facebook', 'doubleclick']):
-                            continue
+                    
+                    # Only process m3u8 URLs
+                    if ".m3u8" not in req_url:
+                        continue
                         
-                        # Determine correct referer and origin
-                        if stream_domain:
-                            referer = stream_domain + "/"
-                            origin = stream_domain
-                        else:
-                            # Fallback to extracting from the m3u8 URL domain
-                            m3u8_domain = extract_domain(req_url)
-                            referer = m3u8_domain + "/"
-                            origin = m3u8_domain
-                        
-                        # Get actual headers from request if available
-                        headers = {}
-                        try:
-                            if hasattr(req, 'headers') and req.headers:
-                                headers = dict(req.headers)
-                        except:
-                            pass
-                        
-                        result = {
-                            "url": req_url,
-                            "referer": headers.get("Referer", referer),
-                            "origin": headers.get("Origin", origin),
-                            "user_agent": headers.get("User-Agent", DEFAULT_USER_AGENT),
-                        }
-                        
-                        print(f"  ✓ Stream found!")
-                        print(f"    URL: {req_url[:80]}...")
-                        print(f"    Referer: {result['referer']}")
-                        print(f"    Origin: {result['origin']}")
-                        
-                        return result
+                    # Filter out unwanted URLs
+                    if any(x in req_url.lower() for x in ['google', 'analytics', 'facebook', 'doubleclick', 'googletagmanager']):
+                        continue
+                    
+                    # Skip duplicates
+                    if req_url in found_urls:
+                        continue
+                    
+                    found_urls.add(req_url)
+                    
+                    # Use FORCED headers
+                    result = {
+                        "url": req_url,
+                        "referer": FORCED_REFERER,
+                        "origin": FORCED_ORIGIN,
+                        "user_agent": DEFAULT_USER_AGENT,
+                    }
+                    
+                    print(f"  [{channel}] ✓ Stream found!")
+                    print(f"    URL: {req_url[:100]}")
+                    
+                    return result
+                    
             except:
                 pass
             time.sleep(1)
         
-        print(f"  ✗ Timeout - no stream found")
+        print(f"  [{channel}] ✗ Timeout - no stream found")
         
     except Exception as e:
-        print(f"  Error: {str(e)[:100]}")
+        print(f"  [{channel}] Error: {str(e)[:100]}")
     finally:
         if drv:
             try:
@@ -371,8 +361,19 @@ def main():
         events_to_process = [e for e in events_to_process 
                            if not any(x.lower() in e['liga'].lower() for x in EXCLUDED_LEAGUES)]
     
-    # Sort by time
-    events_to_process.sort(key=lambda x: x['hora'])
+    # Sort by time then by league
+    events_to_process.sort(key=lambda x: (x['hora'], x['liga']))
+    
+    # Remove duplicate matches (keep first channel per match)
+    seen_matches = set()
+    unique_events = []
+    for e in events_to_process:
+        match_key = (e['hora'], e['liga'], e['partido'])
+        if match_key not in seen_matches:
+            seen_matches.add(match_key)
+            unique_events.append(e)
+    
+    events_to_process = unique_events
     
     print(f"\nLive events: {len(live_events)}")
     print(f"Events to process: {len(events_to_process)}")
@@ -383,9 +384,9 @@ def main():
         (REPO_DIR / TIVIMATE_FILE).write_text("#EXTM3U\n", encoding='utf-8')
         return
     
-    # Show events
+    # Show events to process
     for e in events_to_process:
-        print(f"  {e['hora']} | {e['liga']}: {e['partido']}")
+        print(f"  {e['hora']} | {e['liga']}: {e['partido']} -> {e['channel']}")
     
     # Prepare output
     entries = ["#EXTM3U"]
@@ -395,7 +396,7 @@ def main():
     successful = 0
     
     for idx, event in enumerate(events_to_process, 1):
-        print(f"\n[{idx}/{len(events_to_process)}] {event['hora']} - {event['partido']}")
+        print(f"\n[{idx}/{len(events_to_process)}] {event['hora']} - {event['partido']} ({event['channel']})")
         
         try:
             result = extract_m3u8(event)
@@ -418,15 +419,15 @@ def main():
                 tivimate.append(tivimate_url_str)
                 
                 successful += 1
-                print(f"  ✓ Added to playlist")
+                print(f"  ✓ Added to playlist with capo7play headers")
             else:
                 print(f"  ✗ No stream found")
                 
         except Exception as e:
             print(f"  ✗ Error: {str(e)[:100]}")
         
-        # Delay between events
-        time.sleep(3)
+        # Delay between events to avoid rate limiting
+        time.sleep(2)
     
     # Write files
     print(f"\n{'=' * 60}")
@@ -443,11 +444,18 @@ def main():
         print(f"  - {EVENT_FILE} ({len(entries)-1} streams)")
         print(f"  - {TIVIMATE_FILE} ({len(tivimate)-1} streams)")
         
-        # Show sample of Tivimate output
+        # Show sample Tivimate output
         if successful > 0:
-            print(f"\nSample Tivimate entry:")
-            for line in tivimate[-2:]:
-                print(f"  {line[:120]}...")
+            print(f"\nSample Tivimate output:")
+            for i, line in enumerate(tivimate[-4:], 1):
+                if line.startswith("#EXTINF"):
+                    print(f"  {line}")
+                elif "|" in line:
+                    print(f"  URL with headers:")
+                    parts = line.split("|")
+                    print(f"    Stream: {parts[0][:80]}...")
+                    for part in parts[1:]:
+                        print(f"    {part}")
             
     except Exception as e:
         print(f"Error writing files: {e}")
