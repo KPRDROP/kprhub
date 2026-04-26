@@ -1,16 +1,21 @@
 #EXTM3U
 #EXTINF:-1 group-title="Liga Expansion MX",20:00 Liga Expansion MX - Cancun FC vs Tapatio
-#EXTVLCOPT:http-referrer=https://www.capoplay.net/
-#EXTVLCOPT:http-origin=https://www.capoplay.net
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://pecdl1.streameasthd.net/tntsports/tracks-v1a1/mono.m3u8?ip=52.224.244.100&token=5cc11d6538b678233a52f085b063bd969444d670-27-1777280521-1777226521
+https://14c51.streameasthd.net/tntsports/tracks-v1a1/mono.m3u8?ip=135.232.201.34&token=457a08c3948d80d0ddca89e1ab79873e2d0b6a2e-8e-1777281787-1777227787
 #EXTINF:-1 group-title="Liga MX",20:05 Liga MX - Cruz Azul vs Necaxa
-#EXTVLCOPT:http-referrer=https://www.capoplay.net/
-#EXTVLCOPT:http-origin=https://www.capoplay.net
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=_fA-4z90qXmTqgoCRvBOmQ&expires=1777242737
+https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=5b5wvTWxLzC8qOv3uJyPdw&expires=1777244009
 #EXTINF:-1 group-title="Liga de Colombia",20:20 Liga de Colombia - Internacional de Bogota vs Boyaca Chico
-#EXTVLCOPT:http-referrer=https://www.capoplay.net/
-#EXTVLCOPT:http-origin=https://www.capoplay.net
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n2.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=LNFUpWGERudYc-F4DBoG3w&expires=1777242760
+https://n1.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=9wAXew7RXJ4E1S0r4fL7Og&expires=1777244031
+#EXTINF:-1 group-title="NBA",20:30 NBA - Houston Rockets (0) vs (3) Los Angeles Lakers
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n4.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=9HhRd718syDtGFoH5muKrw&expires=1777244054
