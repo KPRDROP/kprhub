@@ -4,7 +4,7 @@
 import re
 import time
 import os
-import signal
+from datetime import datetime, timedelta
 from pathlib import Path
 from git import Repo
 import requests
@@ -15,7 +15,6 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from urllib.parse import quote
-from concurrent.futures import ThreadPoolExecutor, as_completed
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -27,10 +26,12 @@ REPO_DIR = Path(__file__).parent
 EVENT_FILE = "eventos.m3u8"
 TIVIMATE_FILE = "eventos_tivimate.m3u8"
 
-MAX_WORKERS = 2  # Reduced to avoid memory issues
-MAX_EVENTS = 15   # Process only first N upcoming events
+MAX_EVENTS = 10  # Process only first N upcoming events
+STREAM_TIMEOUT = 20  # Max seconds to wait for stream per event
 
-EXCLUDED_LEAGUES = []
+EXCLUDED_LEAGUES = [
+    "NBA"  # Optional: exclude if not needed
+]
 
 # ───────── DRIVER ─────────
 def init_driver():
@@ -44,25 +45,19 @@ def init_driver():
     opts.add_argument("--disable-extensions")
     opts.add_argument("--disable-logging")
     opts.add_argument("--log-level=3")
-    opts.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
-    
-    # Performance optimizations
     opts.add_argument("--disable-background-networking")
     opts.add_argument("--disable-sync")
     opts.add_argument("--disable-translate")
-    opts.add_argument("--disable-default-apps")
     opts.add_argument("--mute-audio")
-    opts.add_argument("--disable-features=TranslateUI,BlinkGenPropertyTrees")
-    opts.add_argument("--disable-ipc-flooding-protection")
+    opts.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36")
     
     try:
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=opts)
-        driver.set_page_load_timeout(30)
-        driver.set_script_timeout(30)
+        driver.set_page_load_timeout(20)
+        driver.set_script_timeout(20)
         return driver
-    except Exception as e:
-        print(f"Error init driver: {e}")
+    except:
         return webdriver.Chrome(options=opts)
 
 # ───────── HELPERS ─────────
@@ -76,6 +71,27 @@ def normalize(url, base=ROJA_BASE):
     if not url.startswith("http"):
         return base + "/" + url
     return url
+
+def parse_time(time_str):
+    """Parse time string to datetime object"""
+    try:
+        now = datetime.now()
+        hour, minute = map(int, time_str.split(':'))
+        event_time = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
+        return event_time
+    except:
+        return None
+
+def is_event_live_or_soon(event_time, threshold_minutes=30):
+    """Check if event is live or starting soon"""
+    if not event_time:
+        return False
+    
+    now = datetime.now()
+    diff = (event_time - now).total_seconds() / 60
+    
+    # Event is within threshold (started within last 120 min or starts within threshold)
+    return -120 <= diff <= threshold_minutes
 
 # ───────── SCRAPER ─────────
 def get_roja_events():
@@ -91,7 +107,7 @@ def get_roja_events():
 
         # Find all menu items
         menu_items = soup.select("ul.menu > li")
-        print(f"Found {len(menu_items)} events")
+        print(f"Found {len(menu_items)} events on page")
         
         for li in menu_items:
             # Get time
@@ -128,14 +144,15 @@ def get_roja_events():
             channel_name = first_channel.text.strip()
             
             if href:
+                event_time = parse_time(hora)
                 events.append({
                     'liga': liga,
                     'hora': hora,
                     'partido': partido,
                     'channel': channel_name,
-                    'url': href
+                    'url': href,
+                    'time_obj': event_time
                 })
-                print(f"  {hora} | {liga}: {partido} -> {channel_name}")
 
     except Exception as e:
         print(f"Error scraping: {e}")
@@ -150,32 +167,32 @@ def extract_m3u8(event_info):
     
     drv = None
     try:
-        print(f"\n  Loading: {partido}")
         drv = init_driver()
         drv.get(url)
-        time.sleep(4)  # Initial load wait
+        time.sleep(3)
         
         # Clear any previous requests
-        del drv.requests
+        try:
+            del drv.requests
+        except:
+            pass
         
-        # Try to click play button multiple times
-        for attempt in range(3):
+        # Try to click play button
+        for attempt in range(2):
             try:
-                # Try different play button selectors
+                # Try clicking play buttons
                 selectors = [
                     "button[class*='play']",
                     ".vjs-big-play-button", 
-                    ".play-button",
                     "button",
-                    "[onclick*='play']",
                     "video",
-                    ".video-js button"
+                    "[class*='play']"
                 ]
                 
                 for selector in selectors:
                     try:
                         elements = drv.find_elements(By.CSS_SELECTOR, selector)
-                        for el in elements[:3]:  # Only first few
+                        for el in elements[:2]:
                             if el.is_displayed():
                                 drv.execute_script("arguments[0].click();", el)
                                 time.sleep(0.5)
@@ -187,32 +204,29 @@ def extract_m3u8(event_info):
                 for iframe in iframes[:2]:
                     try:
                         drv.switch_to.frame(iframe)
-                        # Click anything clickable
                         drv.execute_script("""
                             var videos = document.querySelectorAll('video');
                             videos.forEach(function(v) { v.play(); });
-                            var buttons = document.querySelectorAll('button, [class*="play"]');
-                            buttons.forEach(function(b) { b.click(); });
                         """)
                         drv.switch_to.default_content()
                     except:
                         drv.switch_to.default_content()
                         
-            except Exception as e:
+            except:
                 pass
             
-            time.sleep(2)
+            time.sleep(1.5)
         
         # Search for m3u8 requests
-        print(f"  Searching for stream...")
-        for _ in range(12):  # Wait up to 12 seconds
+        start_time = time.time()
+        while time.time() - start_time < STREAM_TIMEOUT:
             try:
                 for req in drv.requests:
                     if not req.response:
                         continue
                         
                     req_url = req.url
-                    if ".m3u8" in req_url or ".ts?" in req_url:
+                    if ".m3u8" in req_url:
                         # Filter out unwanted URLs
                         if any(x in req_url.lower() for x in ['google', 'analytics', 'facebook', 'doubleclick']):
                             continue
@@ -232,21 +246,17 @@ def extract_m3u8(event_info):
                             "user_agent": headers.get("User-Agent", ""),
                         }
                         
-                        print(f"  ✓ Stream found: {req_url[:100]}...")
                         return result
             except:
                 pass
             time.sleep(1)
         
-        print(f"  ✗ No stream found for {partido}")
-        
     except Exception as e:
-        print(f"  Error: {e}")
+        print(f"  Error: {str(e)[:100]}")
     finally:
         if drv:
             try:
                 drv.quit()
-                time.sleep(0.5)
             except:
                 pass
 
@@ -282,31 +292,61 @@ def tivimate_url(r):
 def main():
     print("=" * 60)
     print("ROJADIRECTA STREAM SCRAPER")
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    print(f"Time: {current_time}")
     print("=" * 60)
     
     # Get events
-    events = get_roja_events()
+    all_events = get_roja_events()
     
-    if not events:
+    if not all_events:
         print("No events found!")
         return
     
-    # Sort by time
-    events.sort(key=lambda x: x['hora'])
+    # Filter events that are live or starting soon
+    live_events = [e for e in all_events if is_event_live_or_soon(e['time_obj'])]
     
-    # Limit to first N events
-    events = events[:MAX_EVENTS]
-    print(f"\nProcessing {len(events)} events")
+    # If no live events, take the next upcoming ones
+    if not live_events:
+        print("\nNo live events found. Taking next upcoming events...")
+        # Sort by time and take earliest
+        future_events = [e for e in all_events if e['time_obj'] and e['time_obj'] > datetime.now()]
+        future_events.sort(key=lambda x: x['time_obj'])
+        events_to_process = future_events[:MAX_EVENTS]
+    else:
+        events_to_process = live_events[:MAX_EVENTS]
+    
+    # Filter excluded leagues
+    if EXCLUDED_LEAGUES:
+        events_to_process = [e for e in events_to_process 
+                           if not any(x.lower() in e['liga'].lower() for x in EXCLUDED_LEAGUES)]
+    
+    # Sort by time
+    events_to_process.sort(key=lambda x: x['hora'])
+    
+    print(f"\nLive/Upcoming events: {len(live_events)}")
+    print(f"Events to process: {len(events_to_process)}")
+    
+    if not events_to_process:
+        print("No events to process!")
+        # Still write empty files
+        (REPO_DIR / EVENT_FILE).write_text("#EXTM3U\n", encoding='utf-8')
+        (REPO_DIR / TIVIMATE_FILE).write_text("#EXTM3U\n", encoding='utf-8')
+        return
+    
+    # Show events
+    for e in events_to_process:
+        print(f"  {e['hora']} | {e['liga']}: {e['partido']}")
     
     # Prepare output
     entries = ["#EXTM3U"]
     tivimate = ["#EXTM3U"]
     
-    # Process events sequentially for stability
+    # Process events
     successful = 0
     
-    for idx, event in enumerate(events[:MAX_EVENTS], 1):
-        print(f"\n[{idx}/{min(len(events), MAX_EVENTS)}] ", end="")
+    for idx, event in enumerate(events_to_process, 1):
+        print(f"\n[{idx}/{len(events_to_process)}] {event['hora']} - {event['partido']}")
         
         try:
             result = extract_m3u8(event)
@@ -328,44 +368,41 @@ def main():
                 tivimate.append(tivimate_url(result))
                 
                 successful += 1
-                print(f"  ✓ Added: {title}")
+                print(f"  ✓ SUCCESS")
             else:
-                print(f"  ✗ Failed: {event['partido']}")
+                print(f"  ✗ No stream found")
                 
         except Exception as e:
-            print(f"  ✗ Error processing {event['partido']}: {e}")
+            print(f"  ✗ Error: {str(e)[:100]}")
         
         # Small delay between events
-        time.sleep(2)
+        time.sleep(3)
     
     # Write files
     print(f"\n{'=' * 60}")
-    print(f"Results: {successful}/{len(events)} streams captured")
+    print(f"Results: {successful}/{len(events_to_process)} streams captured")
     
-    if entries:
+    try:
         (REPO_DIR / EVENT_FILE).write_text("\n".join(entries), encoding='utf-8')
         (REPO_DIR / TIVIMATE_FILE).write_text("\n".join(tivimate), encoding='utf-8')
         print(f"Files written:")
         print(f"  - {EVENT_FILE} ({len(entries)-1} streams)")
         print(f"  - {TIVIMATE_FILE} ({len(tivimate)-1} streams)")
-    
-    # Git push
-    try:
-        repo = Repo(REPO_DIR)
-        repo.git.add(A=True)
-        repo.index.commit(f"Auto update {time.strftime('%Y-%m-%d %H:%M:%S')} - {successful} streams")
-        repo.remote().push()
-        print("✓ Pushed to git")
     except Exception as e:
-        print(f"Git error: {e}")
+        print(f"Error writing files: {e}")
+    
+    # Git push only if we have new streams
+    if successful > 0:
+        try:
+            repo = Repo(REPO_DIR)
+            repo.git.add(A=True)
+            repo.index.commit(f"Update {current_time} - {successful} streams")
+            repo.remote().push()
+            print("✓ Pushed to git")
+        except Exception as e:
+            print(f"Git error: {e}")
+    else:
+        print("No streams to push")
 
 if __name__ == "__main__":
-    # Set timeout for entire script
-    signal.alarm(300)  # 5 minutes max
-    
-    try:
-        main()
-    except KeyboardInterrupt:
-        print("\nInterrupted by user")
-    except Exception as e:
-        print(f"Fatal error: {e}")
+    main()
