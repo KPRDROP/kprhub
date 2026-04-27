@@ -1,1 +1,76 @@
 #EXTM3U
+#EXTINF:-1 group-title="Liga de Uruguay",17:00 Liga de Uruguay - Montevideo Wanderers vs Peñarol
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=PwOS8cJtqkcHlMoXZfTGzw&expires=1777254944
+#EXTINF:-1 group-title="Liga Expansion MX",18:00 Liga Expansion MX - Tepatitlan FC vs Atlante
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://tyg2mnl9.fubohd.com/espndeportes/mono.m3u8?token=c937e0b7dea5160489e19ca5ddaa54b10c506c0d-d-1777264867-1777246867
+#EXTINF:-1 group-title="Liga MX",18:00 Liga MX - Santos Laguna vs Monterrey Rayados
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=X_z_tEuYT1rxlsasbY3fAQ&expires=1777254998
+#EXTINF:-1 group-title="Liga de Argentina",18:00 Liga de Argentina - Atletico Tucuman vs Banfield
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n7.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=4svjhHOVltXn5W-5DmPUtA&expires=1777255020
+#EXTINF:-1 group-title="Liga de Ecuador",18:00 Liga de Ecuador - Orense vs Barcelona SC
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n2.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=EmxteIxeFoZNHtwstA2IWg&expires=1777255041
+#EXTINF:-1 group-title="Liga de Peru",18:00 Liga de Peru - Universitario vs Alianza Atletico
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n1.zohanayaan.com:1686/hls/capligamax.m3u8?md5=8tu8SYRLJ4VoXA3j2ABKrg&expires=1777255060
+#EXTINF:-1 group-title="MLS",18:00 MLS - LA Galaxy vs Real Salt Lake
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://pr745.streamingtv339.com/mls1/tracks-v1a1/mono.m3u8?ip=64.236.133.97&token=131e794b3af12a119d55095c5295d6fb164d0ee9-c6-1777292879-1777238879
+#EXTINF:-1 group-title="NBA",18:00 NBA - Philadelphia 76ers (1) vs (2) Boston Celtics
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n1.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=lUclHSTfohRoGUKsoUDMWg&expires=1777255101
+#EXTINF:-1 group-title="Liga de Colombia",18:10 Liga de Colombia - Llaneros vs Alianza FC
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n8.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=jTuXuH7PinfWI0rx4_NMMQ&expires=1777255123
+#EXTINF:-1 group-title="Brasileirao",18:30 Brasileirao - Atletico Mineiro vs Flamengo
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n8.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=aEKo9DpffMlJw1ppnUPZjQ&expires=1777255144
+#EXTINF:-1 group-title="Brasileirao",18:30 Brasileirao - Fluminense vs Chapecoense
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://pr745.streamingtv339.com/fanatiz7/tracks-v1a1/mono.m3u8?ip=64.236.133.97&token=7b93b177ab1f54722280db50fcb2bef413e7e5a2-83-1777292966-1777238966
+#EXTINF:-1 group-title="Liga Expansion MX",20:00 Liga Expansion MX - Cancun FC vs Tapatio
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://14c51.streameasthd.net/tntsports/tracks-v1a1/mono.m3u8?ip=64.236.133.97&token=ab5e57e8af0b43bc31ffc8b95ab7243f4db13d38-f2-1777292988-1777238988
+#EXTINF:-1 group-title="Liga MX",20:05 Liga MX - Cruz Azul vs Necaxa
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n6.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=H8_Gb5O0ARrWRDG19MPLAA&expires=1777255211
+#EXTINF:-1 group-title="Liga de Colombia",20:20 Liga de Colombia - Internacional de Bogota vs Boyaca Chico
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n7.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=yb0rKRvkcIyuGoEAm1BrCQ&expires=1777255233
+#EXTINF:-1 group-title="NBA",20:30 NBA - Houston Rockets (0) vs (3) Los Angeles Lakers
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=Wqtinuzvp5cVYPxhuRyJPw&expires=1777255259
