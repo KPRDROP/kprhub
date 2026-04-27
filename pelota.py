@@ -30,7 +30,7 @@ REPO_DIR = Path(__file__).parent
 EVENT_FILE = "eventos.m3u8"
 TIVIMATE_FILE = "eventos_tivimate.m3u8"
 
-MAX_EVENTS = 15  # Process more events since we scan all channels
+MAX_EVENTS = 20  # Process more events since we scan all channels
 STREAM_TIMEOUT = 25  # Max seconds to wait for stream per event
 
 # Default user agent (will be URL encoded for Tivimate)
