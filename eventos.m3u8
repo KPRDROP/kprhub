@@ -1,16 +1,21 @@
 #EXTM3U
-#EXTINF:-1 group-title="Serie A",11:30 Serie A - Cagliari vs Atalanta
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=RpXyDMEkWU0-Bb3Vy7y8Eg&expires=1777320130
-#EXTINF:-1 group-title="Super Lig",12:00 Super Lig - Besiktas vs Fatih Karagumruk
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=tCR-h7XFzKmawtFGe6y__A&expires=1777320152
 #EXTINF:-1 group-title="Serie A",13:45 Serie A - Lazio Roma vs Udinese
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n2.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=md29cRv9zrVWqMeYz6s5zw&expires=1777320216
+https://n2.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=ESxSjswsW2ZYFf51aTFJXA&expires=1777327554
+#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Espanyol vs Levante
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n1.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=IFH7uSUfLB2VnHPnppxVnA&expires=1777327576
+#EXTINF:-1 group-title="Premier League",14:00 Premier League - Manchester United vs Brentford
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n1.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=HRZFjeIeoRiYmh0Ko-Jq0Q&expires=1777327597
+#EXTINF:-1 group-title="Liga de Argentina",16:45 Liga de Argentina - Velez Sarsfield vs Union Santa Fe
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n4.zohanayaan.com:1686/hls/captntarg.m3u8?md5=VPJTe0i7UFY05oWgYPWYhw&expires=1777327699
