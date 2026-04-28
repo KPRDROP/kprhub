@@ -1,6 +1,31 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Argentina",16:45 Liga de Argentina - Velez Sarsfield vs Union Santa Fe
+#EXTINF:-1 group-title="Liga de Argentina",19:00 Liga de Argentina - Huracan vs Argentinos Juniors
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n7.zohanayaan.com:1686/hls/captntarg.m3u8?md5=rWCfQrh0VNLdxZFvEP2jxA&expires=1777340754
+https://n5.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=zREPLXnfVsEtUEuGWlEp7w&expires=1777349384
+#EXTINF:-1 group-title="Liga de Ecuador",19:00 Liga de Ecuador - Aucas vs Delfin
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n7.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=qLYJB1nMmahnLLtQKXtj_A&expires=1777349407
+#EXTINF:-1 group-title="Liga de Peru",19:00 Liga de Peru - Deportivo Garcilaso vs Melgar
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n6.zohanayaan.com:1686/hls/capligamax.m3u8?md5=Z065gSUtbVqiIkENYG5WhQ&expires=1777349426
+#EXTINF:-1 group-title="NBA",19:00 NBA - Orlando Magic (1) vs (2) Detroit Pistons
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n7.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=YM1MzbvkbUxYhbJlI0ypKA&expires=1777349446
+#EXTINF:-1 group-title="NBA",20:30 NBA - Phoenix Suns (1) vs (2) Oklahoma City Thunder
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n8.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=HFKyVQeWJN0o06Xpr8k9Lg&expires=1777349468
+#EXTINF:-1 group-title="NBA",21:30 NBA - Denver Nuggets (1) vs (2) Minnesota Timberwolves
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://n8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=qc1nz8CFLhAJHtMYDeLrnQ&expires=1777349490
