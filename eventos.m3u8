@@ -1,31 +1,11 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Argentina",19:00 Liga de Argentina - Huracan vs Argentinos Juniors
+#EXTINF:-1 group-title="Saudi Pro League",13:00 Saudi Pro League - Al Hilal vs Damac
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n6.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=Km2ZA0vsnBMbvZntc6taxA&expires=1777396989
-#EXTINF:-1 group-title="Liga de Ecuador",19:00 Liga de Ecuador - Aucas vs Delfin
+https://n2.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=TKhzmpGWNAKKLp8wxjHdeQ&expires=1777405281
+#EXTINF:-1 group-title="UEFA Champions League",14:00 UEFA Champions League - Paris Saint-Germain vs Bayern Munich
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn2.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=pU57hG4jRA1pfBIXbu_KqA&expires=1777397012
-#EXTINF:-1 group-title="Liga de Peru",19:00 Liga de Peru - Deportivo Garcilaso vs Melgar
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n3.zohanayaan.com:1686/hls/capligamax.m3u8?md5=AvpPU1jOmgrgxvXd_4xtUA&expires=1777397030
-#EXTINF:-1 group-title="NBA",19:00 NBA - Orlando Magic (1) vs (2) Detroit Pistons
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=qvWZPhVq9ri1wpCTKo3UnA&expires=1777397052
-#EXTINF:-1 group-title="NBA",20:30 NBA - Phoenix Suns (1) vs (2) Oklahoma City Thunder
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n8.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=d-s0dAZJp_7L-piIcakMEg&expires=1777397073
-#EXTINF:-1 group-title="NBA",21:30 NBA - Denver Nuggets (1) vs (2) Minnesota Timberwolves
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://n8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=hFv1A4-TPe6NMYkfulymwA&expires=1777397095
+https://n2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=CYJgZB7VitFej3Z1U-hf0g&expires=1777405302
