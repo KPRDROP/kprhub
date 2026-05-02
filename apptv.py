@@ -142,7 +142,7 @@ async def extract_from_iframe_url(session, iframe_url):
     match = re.search(pattern_playlist, iframe_html)
     if match:
         stream_url = match.group(1)
-        log(f"  ✓ Found playlist URL: {stream_url}")
+        log(f"   Found playlist URL: {stream_url}")
         return stream_url
 
     # 2. Alternative playlist pattern with different path
@@ -150,7 +150,7 @@ async def extract_from_iframe_url(session, iframe_url):
     match = re.search(pattern_playlist2, iframe_html)
     if match:
         stream_url = match.group(1)
-        log(f"  ✓ Found alternative playlist URL: {stream_url[:80]}...")
+        log(f"   Found alternative playlist URL: {stream_url[:80]}...")
         return stream_url
 
     # 3. Base64 encoded pattern
@@ -159,7 +159,7 @@ async def extract_from_iframe_url(session, iframe_url):
         try:
             decoded = base64.b64decode(match.group(1)).decode("utf-8")
             if decoded.startswith("http"):
-                log(f"  ✓ Found base64 encoded stream: {decoded[:80]}...")
+                log(f"   Found base64 encoded stream: {decoded[:80]}...")
                 return decoded
         except Exception:
             pass
@@ -168,7 +168,7 @@ async def extract_from_iframe_url(session, iframe_url):
     pattern_m3u8 = r'(https?://[^"\']+\.m3u8[^"\']*)'
     match = re.search(pattern_m3u8, iframe_html)
     if match:
-        log(f"  ✓ Found m3u8 stream: {match.group(1)[:80]}...")
+        log(f"   Found m3u8 stream: {match.group(1)[:80]}...")
         return match.group(1)
 
     # 5. JavaScript variable patterns
@@ -177,7 +177,7 @@ async def extract_from_iframe_url(session, iframe_url):
     if match:
         stream_url = match.group(1)
         if stream_url.startswith("http"):
-            log(f"  ✓ Found JS variable stream: {stream_url[:80]}...")
+            log(f"   Found JS variable stream: {stream_url[:80]}...")
             return stream_url
 
     # 6. Look for any HTTP URL containing m3u8 or playlist
@@ -185,7 +185,7 @@ async def extract_from_iframe_url(session, iframe_url):
     match = re.search(pattern_http, iframe_html, re.I)
     if match:
         stream_url = match.group(1)
-        log(f"  ✓ Found generic stream: {stream_url[:80]}...")
+        log(f"   Found generic stream: {stream_url[:80]}...")
         return stream_url
 
     # 7. Try to find any HTTP URL as last resort
@@ -193,10 +193,10 @@ async def extract_from_iframe_url(session, iframe_url):
     match = re.search(pattern_any, iframe_html)
     if match:
         stream_url = match.group(1)
-        log(f"  ⚠ Using fallback URL: {stream_url[:80]}...")
+        log(f"   Using fallback URL: {stream_url[:80]}...")
         return stream_url
 
-    log("  ✗ No stream found in iframe")
+    log("   No stream found in iframe")
     return None
 
 
@@ -346,7 +346,7 @@ async def main():
             stream = await extract_stream(session, ev["url"])
             
             if not stream:
-                log(f"  ✗ No stream found for: {key}")
+                log(f"   No stream found for: {key}")
                 continue
             
             # Add headers to stream URL
@@ -357,7 +357,7 @@ async def main():
                 f"|user-agent={ENCODED_UA}"
             )
             
-            log(f"  ✓ Stream URL: {stream[:80]}...")
+            log(f"   Stream URL: {stream[:80]}...")
             
             entry = {
                 "name": key,
