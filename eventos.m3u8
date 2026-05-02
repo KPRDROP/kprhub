@@ -1,36 +1,31 @@
 #EXTM3U
-#EXTINF:-1 group-title="Formula 1",15:30 Formula 1 - Gran Premio de Mexico, Clasificacion Sprint
+#EXTINF:-1 group-title="UFC Fight Night",06:00 UFC Fight Night - Jack Della Maddalena vs Carlos Prates
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn8.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=9MMEuxU30KtwGrl1U1k8MQ&expires=1777726526
-#EXTINF:-1 group-title="Liga de Ecuador",16:30 Liga de Ecuador - Universidad Catolica vs Independiente del Valle
+https://cdn10.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=sXxHSYR6AGcnZlWxiRX18A&expires=1777729209
+#EXTINF:-1 group-title="Championship",06:30 Championship - Ipswich Town vs Queens Park Rangers
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn15.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=c_newKYII_Bak_ckAbX8BA&expires=1777726547
-#EXTINF:-1 group-title="Liga de Colombia",18:00 Liga de Colombia - Once Caldas vs Atletico Nacional
+https://cdn3.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=5-U9bm1ZybbMzHynSr4RZg&expires=1777729231
+#EXTINF:-1 group-title="Championship",06:30 Championship - Wrexham vs Middlesbrough
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn3.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=csdfrY49mJP0G9_8wm4VZQ&expires=1777726566
-#EXTINF:-1 group-title="NBA",18:00 NBA - Orlando Magic vs Detroit Pistons
+https://cdn7.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=oSRcqPM0qT7iuTrK13V3uQ&expires=1777729251
+#EXTINF:-1 group-title="Championship",06:30 Championship - Millwall vs Oxford United
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn9.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=nL7Y7_DZi-NlwkRQgGSjAA&expires=1777726592
-#EXTINF:-1 group-title="NBA",18:30 NBA - Toronto Raptors vs Cleveland Cavaliers
+https://cdn2.zohanayaan.com:1686/hls/capocampeones8.m3u8?md5=9JvVaTbCAbbcfTUVppYzaQ&expires=1777729271
+#EXTINF:-1 group-title="LaLiga",07:00 LaLiga - Villarreal vs Levante
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=WMM3z2aEYi5-xunjIeujaQ&expires=1777726614
-#EXTINF:-1 group-title="Liga de Ecuador",19:00 Liga de Ecuador - Libertad vs Aucas
+https://cdn5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=bKer4W84-Ghhid4ikHmjoA&expires=1777729290
+#EXTINF:-1 group-title="Serie A",08:00 Serie A - Udinese vs Torino
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn14.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=ihWeMt0Cv5z1ehddP8RIPQ&expires=1777726637
-#EXTINF:-1 group-title="NBA",20:30 NBA - Houston Rockets vs Los Angeles Lakers
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn6.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=P0av7MbMQUiN0VP1PoIAzQ&expires=1777726657
+https://cdn2.zohanayaan.com:1686/hls/capocampeones9.m3u8?md5=bZaOKeWl3TmD65EM5XeZXQ&expires=1777729313
