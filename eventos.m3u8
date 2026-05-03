@@ -1,41 +1,76 @@
 #EXTM3U
-#EXTINF:-1 group-title="LaLiga",07:00 LaLiga - Celta Vigo vs Elche
+#EXTINF:-1 group-title="Ligue 1",10:15 Ligue 1 - AJ Auxerre vs Angers
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn9.zohanayaan.com:1686/hls/capocampeones2.m3u8?md5=9ezjb15yJx1ljYxHnkRD1Q&expires=1777829996
-#EXTINF:-1 group-title="LaLiga 2",07:00 LaLiga 2 - Racing Santander vs Huesca
+https://bg622.streamingtv339.com/foxone5/tracks-v1a1/mono.m3u8?ip=13.83.107.136&token=c92961977d93f16e8d91b9e7e804811df517435e-49-1777871445-1777817445
+#EXTINF:-1 group-title="Ligue 1",10:15 Ligue 1 - Paris FC vs Brest
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn5.zohanayaan.com:1686/hls/capoplus.m3u8?md5=GAiLywJ6Ceih3mm_btmIGg&expires=1777830023
-#EXTINF:-1 group-title="Eredivisie",07:30 Eredivisie - Fortuna Sittard vs Feyenoord Rotterdam
+https://bg622.streamingtv339.com/foxone3/tracks-v1a1/mono.m3u8?ip=13.83.107.136&token=42659dc2f5ece628284bea6a621757920e60c89c-85-1777871468-1777817468
+#EXTINF:-1 group-title="Ligue 1",10:15 Ligue 1 - Strasbourg vs Toulouse
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn6.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=EMwKX9kj555F6shrPKgIog&expires=1777830053
-#EXTINF:-1 group-title="Ligue 1",08:00 Ligue 1 - Lille vs Le Havre AC
+https://pr745.streamingtv339.com/foxone4/tracks-v1a1/mono.m3u8?ip=13.83.107.136&token=a47db065dba8d5e4d26775844efa91410d1af43f-17-1777871491-1777817491
+#EXTINF:-1 group-title="Bundesliga",10:30 Bundesliga - Borussia Monchengladbach vs Borussia Dortmund
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://a2vlca.fubohd.com/espndeportes/mono.m3u8?token=68aabe0a4ae41a733a6ffeef870495c287ff4702-74-1777840015-1777822015
-#EXTINF:-1 group-title="Premier League",08:00 Premier League - Bournemouth vs Crystal Palace
+https://pr745.streamingtv339.com/disney14/tracks-v1a1/mono.m3u8?ip=13.83.107.136&token=71ecaeed6e243dd233e05d8115d0e30d9789b0c6-b3-1777871513-1777817513
+#EXTINF:-1 group-title="Liga de Peru",11:00 Liga de Peru - Sporting Cristal vs Cusco FC
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn3.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=LhUl0Z6M4TABHbbfZrkJIA&expires=1777830147
-#EXTINF:-1 group-title="Serie A",08:00 Serie A - Sassuolo vs AC Milan
+https://cdn8.zohanayaan.com:1686/hls/capligamax.m3u8?md5=9u9RQ5jpqtBJlRRvKRcaFw&expires=1777833735
+#EXTINF:-1 group-title="Serie A",11:00 Serie A - Juventus Turin vs Hellas Verona
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=yc94jL0EVKHva3NTre94pg&expires=1777830169
-#EXTINF:-1 group-title="Bundesliga",08:30 Bundesliga - St. Pauli vs Mainz 05
+https://cdn1.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=bj7JgR-TtQffjRbWQUOz9A&expires=1777833755
+#EXTINF:-1 group-title="LaLiga",11:30 LaLiga - Real Betis vs Real Oviedo
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn1.zohanayaan.com:1686/hls/capocampeones5.m3u8?md5=wb1v9oWdNkgj05NxFNy5iA&expires=1777830191
-#EXTINF:-1 group-title="LaLiga",09:15 LaLiga - Getafe vs Rayo Vallecano
+https://cdn8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=Wlj5guLgWnK2GksAT56uog&expires=1777833778
+#EXTINF:-1 group-title="LaLiga 2",11:30 LaLiga 2 - Real Sociedad B vs Burgos
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn8.zohanayaan.com:1686/hls/capocampeones2.m3u8?md5=yegP9Rq2RMonHSKS1ZkCrA&expires=1777830213
+https://cdn8.zohanayaan.com:1686/hls/capoplus.m3u8?md5=QhdFmTH-yQcjcrvTMwdMsA&expires=1777833801
+#EXTINF:-1 group-title="Formula 1",12:00 Formula 1 - F1 Gran Premio de Miami, Carrera
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn8.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=HV3Kv2_Z0JZQS5FX3Nmj-g&expires=1777833889
+#EXTINF:-1 group-title="Liga de Ecuador",13:00 Liga de Ecuador - Macara vs Orense
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn11.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=5pYR1wnuAqSKqMITDfkDaA&expires=1777833961
+#EXTINF:-1 group-title="Premier League",13:00 Premier League - Aston Villa vs Tottenham Hotspur
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn8.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=iAzHyeGqmhrVksGtaQeGzg&expires=1777833980
+#EXTINF:-1 group-title="Saudi Pro League",13:00 Saudi Pro League - Al Qadsiah vs Al Nassr
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn3.zohanayaan.com:1686/hls/capocampeones9.m3u8?md5=DQYOe8Adhdq7kfCDYx8ppQ&expires=1777834000
+#EXTINF:-1 group-title="Saudi Pro League",13:00 Saudi Pro League - Al Ahli vs Al Okhdood
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn6.zohanayaan.com:1686/hls/capocampeones10.m3u8?md5=6eNPq1QAXKGq2SnrJagp_A&expires=1777834023
+#EXTINF:-1 group-title="Liga de Peru",13:15 Liga de Peru - Juan Pablo II vs Universitario
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn2.zohanayaan.com:1686/hls/capligamax.m3u8?md5=YwtKNHDagisjD9DXhqmCWQ&expires=1777834043
+#EXTINF:-1 group-title="Serie A",13:45 Serie A - Inter Milan vs Parma
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn7.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=LpFQ1H1Bv7rXpUhLzXCo-g&expires=1777834100
