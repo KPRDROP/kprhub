@@ -1,7 +1,23 @@
 #EXTM3U
-#EXTINF:-1 group-title="Serie A",05:30 Serie A - Bologna vs Cagliari
-https://cdn7.zohanayaan.com:1686/hls/capocampeones.m3u8?md5=lCsOrTDEG4gQthbCFjNu_A&expires=1777815431|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
-#EXTINF:-1 group-title="Boxeo",20:00 Boxeo - David Benavidez vs Gilberto Ramirez
-https://cdn5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=CS2SZjZya6Ltg8Vui5lROw&expires=1777815451|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
-#EXTINF:-1 group-title="Liga MX",22:15 Liga MX - Atlas vs Cruz Azul
-https://cdn5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=c9RjRM_qaQ3CR5TOqUboTA&expires=1777815473|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
+#EXTINF:-1 group-title="LaLiga",07:00 LaLiga - Celta Vigo vs Elche
+https://cdn5.zohanayaan.com:1686/hls/capocampeones2.m3u8?md5=dffCtAgWfOuaK9bLeN7PtQ&expires=1777819971|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
+#EXTINF:-1 group-title="LaLiga 2",07:00 LaLiga 2 - Racing Santander vs Huesca
+https://cdn8.zohanayaan.com:1686/hls/capoplus.m3u8?md5=Wx-KUsqAy59IZmW-UemO7A&expires=1777819992|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
+#EXTINF:-1 group-title="Eredivisie",07:30 Eredivisie - Fortuna Sittard vs Feyenoord Rotterdam
+https://cdn3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=ZdaxYx_tLt3jMJYRYwWOFQ&expires=1777820017|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
+#EXTINF:-1 group-title="Ligue 1",08:00 Ligue 1 - Lille vs Le Havre AC
+https://qzv4jmsc.fubohd.com/espndeportes/mono.m3u8?token=bc0c9bebed5da6cea257009d1c271a42446eec55-b2-1777829978-1777811978|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
+#EXTINF:-1 group-title="Premier League",08:00 Premier League - Bournemouth vs Crystal Palace
+https://cdn6.zohanayaan.com:1686/hls/mevent2.m3u8?md5=3ocBwEB7xKkGnAzbffOrAg&expires=1777820110|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
+#EXTINF:-1 group-title="Serie A",08:00 Serie A - Sassuolo vs AC Milan
+https://cdn8.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=xLxgpmw5ORBilyJ6xFj7DA&expires=1777820129|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
+#EXTINF:-1 group-title="Bundesliga",08:30 Bundesliga - St. Pauli vs Mainz 05
+https://cdn5.zohanayaan.com:1686/hls/capocampeones5.m3u8?md5=b6oeSlUVrIMnasPHEfnr8Q&expires=1777820150|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
+#EXTINF:-1 group-title="LaLiga",09:15 LaLiga - Getafe vs Rayo Vallecano
+https://cdn1.zohanayaan.com:1686/hls/capocampeones2.m3u8?md5=AUK2_U8HXSl1wb1spCmEqw&expires=1777820177|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
+#EXTINF:-1 group-title="LaLiga 2",09:15 LaLiga 2 - Sporting Gijon vs Ceuta
+https://cdn1.zohanayaan.com:1686/hls/capoplus.m3u8?md5=qXET9wUYIxVG0v2-GMtc5g&expires=1777820199|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
+#EXTINF:-1 group-title="Premier League",09:30 Premier League - Manchester United vs Liverpool
+https://cdn6.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=KIg-VRGD9O_LkkdVimSiCQ&expires=1777820218|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
+#EXTINF:-1 group-title="Eredivisie",09:45 Eredivisie - AZ Alkmaar vs FC Twente
+https://cdn6.zohanayaan.com:1686/hls/capocampeones8.m3u8?md5=9yO1yMiJxA_hIlJToRojiw&expires=1777820241|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/134.0.0.0%20Safari/537.36%20Edg/134.0.0.0
