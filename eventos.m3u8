@@ -1,91 +1,96 @@
 #EXTM3U
-#EXTINF:-1 group-title="Formula 1",12:00 Formula 1 - F1 Gran Premio de Miami, Carrera
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn8.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=uyS8GsY7ZdVk5uvN8Nm_aA&expires=1777844982
-#EXTINF:-1 group-title="Liga de Ecuador",13:00 Liga de Ecuador - Macara vs Orense
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn14.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=8PxVwVqmzh-bZ2sWsP7DIg&expires=1777845057
-#EXTINF:-1 group-title="Premier League",13:00 Premier League - Aston Villa vs Tottenham Hotspur
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn4.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=-4YcKYR4AzLHf0SBSt5d2Q&expires=1777845076
-#EXTINF:-1 group-title="Saudi Pro League",13:00 Saudi Pro League - Al Qadsiah vs Al Nassr
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn5.zohanayaan.com:1686/hls/capocampeones9.m3u8?md5=jVjoxca0EjRmJLZXC8YX6g&expires=1777845102
-#EXTINF:-1 group-title="Saudi Pro League",13:00 Saudi Pro League - Al Ahli vs Al Okhdood
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn8.zohanayaan.com:1686/hls/capocampeones10.m3u8?md5=gadqQ3-CTs1XDom3k4amSA&expires=1777845133
 #EXTINF:-1 group-title="Liga de Peru",13:15 Liga de Peru - Juan Pablo II vs Universitario
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn1.zohanayaan.com:1686/hls/capligamax.m3u8?md5=udeKHGEmeUp_5hj_wTZRaQ&expires=1777845161
+https://cdn9.zohanayaan.com:1686/hls/capligamax.m3u8?md5=WC-7WQSXGMxYOTvgcw_bRg&expires=1777847726
 #EXTINF:-1 group-title="Ligue 1",13:45 Ligue 1 - Olympique Lyon vs Stade Rennais
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn4.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=xBOIQRceSszUQyJXoW7yiA&expires=1777845226
+https://cdn10.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=Er1UzKFE90XKuDqBq29SvQ&expires=1777847789
 #EXTINF:-1 group-title="Serie A",13:45 Serie A - Inter Milan vs Parma
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn9.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=ZfA7Wn8vwj6rK7uHdvFwNw&expires=1777845249
+https://cdn3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=gnFMLOKaSRsysD0kJlII0w&expires=1777847811
 #EXTINF:-1 group-title="Brasileirao",14:00 Brasileirao - Sao Paulo vs Bahia
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn4.zohanayaan.com:1686/hls/capoplus3.m3u8?md5=xL2gVjaxd6J7KiembRBsLA&expires=1777845271
+https://cdn2.zohanayaan.com:1686/hls/capoplus3.m3u8?md5=GTraSjZ10q_4_uobAfYokQ&expires=1777847833
 #EXTINF:-1 group-title="Brasileirao",14:00 Brasileirao - Flamengo vs Vasco da Gama
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://pre.streameasthd.net/fanatiz10/tracks-v1a1/mono.m3u8?ip=172.184.209.150&token=2a9f1e712a3a61970aeec012daa74adb9ee167fc-dc-1777883093-1777829093
+https://pre.streameasthd.net/fanatiz10/tracks-v1a1/mono.m3u8?ip=135.119.238.192&token=a3ce2fc778fb35aaf51d1083f25c2b120c3c533c-c1-1777885660-1777831660
 #EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Espanyol vs Real Madrid
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn1.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=ZpeWbMxIfhmI2wKShVWS9Q&expires=1777845315
+https://cdn7.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=HJPTlvVg6yWul21qXtCnWA&expires=1777847882
 #EXTINF:-1 group-title="LaLiga 2",14:00 LaLiga 2 - Las Palmas vs Real Valladolid
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn10.zohanayaan.com:1686/hls/capoplus.m3u8?md5=HjIBnZd33IxC8IZ5NlC-lA&expires=1777845338
+https://cdn1.zohanayaan.com:1686/hls/capoplus.m3u8?md5=Uo8IkHR3RYh0MPp4OjDs0A&expires=1777847904
 #EXTINF:-1 group-title="Liga de Argentina",14:00 Liga de Argentina - Racing Club vs Huracan
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn4.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=GvMBVZ871gCvXU8niApBew&expires=1777845362
+https://cdn2.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=XKwNpBTyfy9sTxP72qkFJQ&expires=1777847934
 #EXTINF:-1 group-title="Liga de Argentina",14:00 Liga de Argentina - Rosario Central vs Tigre
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn9.zohanayaan.com:1686/hls/captntarg.m3u8?md5=ilwYIP7p5q6j9VlPUXm86A&expires=1777845384
+https://cdn10.zohanayaan.com:1686/hls/captntarg.m3u8?md5=blK008obnv5kjPDg_tMBIg&expires=1777847955
 #EXTINF:-1 group-title="Liga de Argentina",14:00 Liga de Argentina - Gimnasia La Plata vs Argentinos Juniors
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://pecdl1.streameasthd.net/fanatiz6/tracks-v1a1/mono.m3u8?ip=172.184.209.150&token=272af58e72530141437cfeb0c08abcf5e734474f-eb-1777883203-1777829203
+https://doc1.streameasthd.net/fanatiz6/tracks-v1a1/mono.m3u8?ip=135.119.238.192&token=c758d2c622397dad8a17340c3af107b43d2fbc90-10-1777885778-1777831778
 #EXTINF:-1 group-title="Liga de Argentina",14:00 Liga de Argentina - Belgrano vs Sarmiento
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://pre.streameasthd.net/fanatiz9/tracks-v1a1/mono.m3u8?ip=172.184.209.150&token=ff46d405a12f3eddf963d554642dee3ed422838e-4d-1777883226-1777829226
+https://ve.streameasthd.net/fanatiz9/tracks-v1a1/mono.m3u8?ip=135.119.238.192&token=281c73654c99cfd496ddd64a3aa9c86d4cf634d7-33-1777885801-1777831801
 #EXTINF:-1 group-title="MLS",14:30 MLS - New York City FC vs DC United
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://bg622.streamingtv339.com/mls1/tracks-v1a1/mono.m3u8?ip=172.184.209.150&token=f40f9a8c134cf7f0771209cdb916713cbd58171d-d8-1777883249-1777829249
+https://bg622.streamingtv339.com/mls1/tracks-v1a1/mono.m3u8?ip=135.119.238.192&token=6eec55e8d0d97dbb53925126f55102049363070e-90-1777885823-1777831823
 #EXTINF:-1 group-title="NBA",14:30 NBA - Detroit Pistons vs Orlando Magic
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn6.zohanayaan.com:1686/hls/capocampeones3.m3u8?md5=WHuWB9oIBoK23WvmA6L1cQ&expires=1777845471
+https://cdn9.zohanayaan.com:1686/hls/capocampeones4.m3u8?md5=uh8yjIHc6lfPaaIa2xhtYg&expires=1777848046
+#EXTINF:-1 group-title="Liga de Colombia",15:30 Liga de Colombia - Multipantalla Fecha 19 (Simultaneo)
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn4.zohanayaan.com:1686/hls/winsports.m3u8?md5=-LTITY2CniCBGK4o0ThnDw&expires=1777848068
+#EXTINF:-1 group-title="Liga de Colombia",15:30 Liga de Colombia - Alianza FC vs Millonarios
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn4.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=PrIucoOKW_BUNZfRUSPQ5Q&expires=1777848089
+#EXTINF:-1 group-title="Liga de Colombia",15:30 Liga de Colombia - Deportes Tolima vs Deportivo Cali
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn5.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=9v0SUai7qmNmZvRLkn9ZVg&expires=1777848114
+#EXTINF:-1 group-title="Liga de Colombia",15:30 Liga de Colombia - Independiente Santa Fe vs Internacional Bogota
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://ve.streameasthd.net/fanatiz16/tracks-v1a1/mono.m3u8?ip=135.119.238.192&token=16135ae68a60c22c116c3f7db10df5369bcb9381-45-1777885937-1777831937
+#EXTINF:-1 group-title="Liga de Colombia",15:30 Liga de Colombia - Independiente Medellin vs Aguilas Doradas
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://doc1.streameasthd.net/fanatiz13/tracks-v1a1/mono.m3u8?ip=135.119.238.192&token=458b6be8111ca5b88927a53640a5cb073d47e6e2-7a-1777885959-1777831959
+#EXTINF:-1 group-title="Liga de Colombia",15:30 Liga de Colombia - Fortaleza vs Bucaramanga
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://doc1.streameasthd.net/fanatiz14/tracks-v1a1/mono.m3u8?ip=135.119.238.192&token=9e0d8c8255d2b6e4a695cc86b48ae17ff86cdcb3-9a-1777885982-1777831982
