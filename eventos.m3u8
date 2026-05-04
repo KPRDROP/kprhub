@@ -3,4 +3,9 @@
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
-https://cdn4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=HiErzt5T1A4DqgxIXph6wQ&expires=1777914420
+https://cdn6.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=72SBHoneG5zU-6DIRzLBpQ&expires=1777922705
+#EXTINF:-1 group-title="Serie A",11:30 Serie A - Cremonese vs Lazio Roma
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0
+https://cdn1.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=NIAEFp1AwgAKnB0xxFPt5g&expires=1777922726
