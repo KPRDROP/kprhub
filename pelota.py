@@ -41,7 +41,7 @@ MAX_EVENTS = 20
 STREAM_TIMEOUT = 35  # Increased timeout
 
 # Default user agent
-DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
+DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
 
 EXCLUDED_LEAGUES = [
     #"NBA"
