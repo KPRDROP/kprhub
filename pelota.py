@@ -21,6 +21,10 @@ from urllib.parse import quote, urlparse
 import warnings
 warnings.filterwarnings("ignore")
 
+# Disable SSL warnings
+import urllib3
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 # ───────── CONFIG ─────────
 ROJA_URL = "https://www.rojadirectaenvivo.pl/"
 ROJA_BASE = "https://rojadirectablog.com"
@@ -34,9 +38,9 @@ EVENT_FILE = "eventos.m3u8"
 TIVIMATE_FILE = "eventos_tivimate.m3u8"
 
 MAX_EVENTS = 20
-STREAM_TIMEOUT = 30
+STREAM_TIMEOUT = 35  # Increased timeout
 
-# Default user agent (will be URL encoded for Tivimate)
+# Default user agent
 DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
 
 EXCLUDED_LEAGUES = [
@@ -62,10 +66,12 @@ def init_driver():
     opts.add_argument("--ignore-certificate-errors")
     opts.add_argument("--ignore-ssl-errors")
     opts.add_argument("--allow-running-insecure-content")
+    opts.add_argument("--disable-web-security")
+    opts.add_argument("--disable-features=VizDisplayCompositor")
     opts.add_argument(f"--user-agent={DEFAULT_USER_AGENT}")
     
-    # Enable performance logging to capture network requests
-    opts.set_capability("goog:loggingPrefs", {"performance": "ALL"})
+    # Enable performance logging
+    opts.set_capability("goog:loggingPrefs", {"performance": "ALL", "browser": "ALL"})
     
     try:
         service = Service(ChromeDriverManager().install())
@@ -98,19 +104,9 @@ def parse_time(time_str):
     except:
         return None
 
-def is_event_live_or_soon(event_time, threshold_minutes=30):
-    """Check if event is live or starting soon"""
-    if not event_time:
-        return False
-    
-    now = datetime.now()
-    diff = (event_time - now).total_seconds() / 60
-    
-    return -120 <= diff <= threshold_minutes
-
 # ───────── SCRAPER ─────────
 def get_roja_events():
-    """Extract ALL first channel links from each event"""
+    """Extract ALL first channel links (Canal 1 only) from each event"""
     events = []
     try:
         print(f"Fetching events from: {ROJA_URL}")
@@ -150,28 +146,27 @@ def get_roja_events():
                 
             liga, partido = parts[0].strip(), parts[1].strip()
 
-            # Get ALL first channel links (subitem1) from <ul>
-            subitem_links = li.select("ul > li.subitem1 > a")
-            if not subitem_links:
+            # Get ONLY the first channel link (Canal 1) - first subitem1
+            first_channel = li.select_one("ul > li.subitem1 > a")
+            if not first_channel:
                 continue
             
-            # Process each subitem1 link
-            for channel_link in subitem_links:
-                href = normalize(channel_link.get("href"))
-                channel_name = channel_link.text.strip()
-                
-                if href:
-                    event_time = parse_time(hora)
-                    events.append({
-                        'liga': liga,
-                        'hora': hora,
-                        'partido': partido,
-                        'channel': channel_name,
-                        'url': href,
-                        'time_obj': event_time
-                    })
+            href = normalize(first_channel.get("href"))
+            channel_name = first_channel.text.strip()
+            
+            # Only process "Canal 1" links
+            if href and "Canal 1" in channel_name:
+                event_time = parse_time(hora)
+                events.append({
+                    'liga': liga,
+                    'hora': hora,
+                    'partido': partido,
+                    'channel': channel_name,
+                    'url': href,
+                    'time_obj': event_time
+                })
 
-        print(f"Extracted {len(events)} stream links")
+        print(f"Extracted {len(events)} Canal 1 stream links")
 
     except Exception as e:
         print(f"Error scraping: {e}")
@@ -179,7 +174,7 @@ def get_roja_events():
     return events
 
 # ───────── STREAM EXTRACTION ─────────
-def get_network_requests(driver):
+def get_performance_logs(driver):
     """Extract all network requests from performance logs"""
     requests_list = []
     try:
@@ -190,115 +185,161 @@ def get_network_requests(driver):
                 message = log_data.get("message", {})
                 method = message.get("method", "")
                 
-                # Look for network responses
-                if method == "Network.responseReceived":
-                    response = message.get("params", {}).get("response", {})
-                    url = response.get("url", "")
-                    if url:
+                # Capture both requests and responses
+                if method in ["Network.requestWillBeSent", "Network.responseReceived"]:
+                    if method == "Network.requestWillBeSent":
+                        request_data = message.get("params", {}).get("request", {})
+                        url = request_data.get("url", "")
                         requests_list.append({
                             "url": url,
+                            "type": "request",
+                            "headers": request_data.get("headers", {})
+                        })
+                    elif method == "Network.responseReceived":
+                        response = message.get("params", {}).get("response", {})
+                        url = response.get("url", "")
+                        mime_type = response.get("mimeType", "")
+                        requests_list.append({
+                            "url": url,
+                            "type": "response",
                             "status": response.get("status", 0),
-                            "mimeType": response.get("mimeType", ""),
+                            "mimeType": mime_type,
                             "headers": response.get("headers", {})
                         })
             except:
                 continue
-    except:
-        pass
+    except Exception as e:
+        print(f"    Log error: {str(e)[:50]}")
     return requests_list
 
 def extract_m3u8(event_info):
-    """Extract m3u8 stream using performance logs"""
+    """Extract m3u8 stream from event page"""
     url = event_info['url']
     partido = event_info['partido']
     channel = event_info['channel']
     
     drv = None
     try:
-        print(f"  [{channel}] Loading page...")
+        print(f"  Loading: {url}")
         drv = init_driver()
         
         # Load the page
         try:
             drv.get(url)
         except Exception as e:
-            print(f"  [{channel}] Page load warning: {str(e)[:80]}")
+            print(f"  Page load warning: {str(e)[:80]}")
         
-        time.sleep(4)
+        # Wait for page to load
+        time.sleep(5)
         
-        # Clear performance logs from initial page load
+        # Clear initial logs
         try:
             drv.get_log("performance")
         except:
             pass
         
-        # Try to click play buttons
-        for attempt in range(4):
-            try:
-                # Try multiple selectors for play buttons
-                selectors = [
-                    "button[class*='play']",
-                    ".vjs-big-play-button", 
-                    "button",
-                    "video",
-                    "[class*='play']",
-                    ".play-button",
-                    "div[class*='play']"
-                ]
-                
-                for selector in selectors:
+        # Try to interact with the page to trigger video loading
+        try:
+            # Wait for iframe and switch to it
+            iframes = drv.find_elements(By.TAG_NAME, "iframe")
+            for i, iframe in enumerate(iframes[:5]):
+                try:
+                    src = iframe.get_attribute("src") or ""
+                    if src:
+                        print(f"  Found iframe {i}: {src[:100]}")
+                    
+                    drv.switch_to.frame(iframe)
+                    
+                    # Try to click play buttons
+                    selectors = [
+                        "button[class*='play']",
+                        ".vjs-big-play-button",
+                        "button",
+                        "video",
+                        "[class*='play']",
+                        ".play-button",
+                        "div[onclick]",
+                        "[aria-label='Play']",
+                        "[aria-label='play']"
+                    ]
+                    
+                    for selector in selectors:
+                        try:
+                            elements = drv.find_elements(By.CSS_SELECTOR, selector)
+                            for el in elements:
+                                try:
+                                    if el.is_displayed() and el.is_enabled():
+                                        drv.execute_script("arguments[0].click();", el)
+                                        time.sleep(1)
+                                except:
+                                    pass
+                        except:
+                            pass
+                    
+                    # Try to play video directly
                     try:
-                        elements = drv.find_elements(By.CSS_SELECTOR, selector)
-                        for el in elements[:3]:
-                            if el.is_displayed():
-                                drv.execute_script("arguments[0].click();", el)
-                                time.sleep(0.5)
-                    except:
-                        pass
-                
-                # Handle iframes
-                iframes = drv.find_elements(By.TAG_NAME, "iframe")
-                for iframe in iframes[:3]:
-                    try:
-                        drv.switch_to.frame(iframe)
                         drv.execute_script("""
                             var videos = document.querySelectorAll('video');
                             videos.forEach(function(v) { 
                                 v.play(); 
-                                v.click();
                                 v.muted = true;
+                                v.setAttribute('autoplay', 'true');
                             });
-                            var buttons = document.querySelectorAll('button, [class*="play"], .vjs-big-play-button');
+                            var buttons = document.querySelectorAll('button, [class*="play"], .vjs-big-play-button, [aria-label*="play" i]');
                             buttons.forEach(function(b) { b.click(); });
                         """)
-                        drv.switch_to.default_content()
-                        time.sleep(1)
                     except:
+                        pass
+                    
+                    drv.switch_to.default_content()
+                    time.sleep(1)
+                except:
+                    try:
                         drv.switch_to.default_content()
-                        
+                    except:
+                        pass
+            
+            # Also try on main page
+            try:
+                drv.execute_script("""
+                    var videos = document.querySelectorAll('video');
+                    videos.forEach(function(v) { 
+                        v.play(); 
+                        v.muted = true;
+                    });
+                    var buttons = document.querySelectorAll('button, [class*="play"], .vjs-big-play-button, [aria-label*="play" i]');
+                    buttons.forEach(function(b) { b.click(); });
+                """)
             except:
                 pass
-            
-            time.sleep(1.5)
+                
+        except Exception as e:
+            print(f"  Interaction error: {str(e)[:50]}")
         
-        # Search for m3u8 requests in performance logs
-        print(f"  [{channel}] Searching for stream...")
+        # Now search for m3u8 in performance logs
+        print(f"  Searching for m3u8 stream...")
         start_time = time.time()
         found_urls = set()
         
         while time.time() - start_time < STREAM_TIMEOUT:
             try:
-                network_requests = get_network_requests(driver=drv)
+                # Get fresh performance logs
+                network_requests = get_performance_logs(driver=drv)
                 
+                # Check for m3u8 URLs
                 for req in network_requests:
                     req_url = req.get("url", "")
                     
-                    # Look for m3u8 URLs
+                    # Look for m3u8, ts, or stream URLs
+                    if not (".m3u8" in req_url or ".ts" in req_url or "hls" in req_url.lower()):
+                        continue
+                    
+                    # Only care about m3u8 master playlists
                     if ".m3u8" not in req_url:
                         continue
-                        
+                    
                     # Filter out unwanted URLs
-                    if any(x in req_url.lower() for x in ['google', 'analytics', 'facebook', 'doubleclick', 'googletagmanager']):
+                    if any(x in req_url.lower() for x in ['google', 'analytics', 'facebook', 'doubleclick', 'googletagmanager', 'tag.min.js']):
                         continue
                     
                     # Skip duplicates
@@ -307,29 +348,56 @@ def extract_m3u8(event_info):
                     
                     found_urls.add(req_url)
                     
-                    # Get headers from the request if available
+                    # Get headers
                     req_headers = req.get("headers", {})
+                    
+                    # Use forced headers as defaults
+                    referer = req_headers.get("Referer", "") or req_headers.get("referer", "") or FORCED_REFERER
+                    origin = req_headers.get("Origin", "") or req_headers.get("origin", "") or FORCED_ORIGIN
+                    user_agent = req_headers.get("User-Agent", "") or req_headers.get("user-agent", "") or DEFAULT_USER_AGENT
                     
                     result = {
                         "url": req_url,
-                        "referer": req_headers.get("Referer", FORCED_REFERER) or FORCED_REFERER,
-                        "origin": req_headers.get("Origin", FORCED_ORIGIN) or FORCED_ORIGIN,
-                        "user_agent": req_headers.get("User-Agent", DEFAULT_USER_AGENT) or DEFAULT_USER_AGENT,
+                        "referer": referer,
+                        "origin": origin,
+                        "user_agent": user_agent,
                     }
                     
-                    print(f"  [{channel}] ✓ Stream found!")
-                    print(f"    URL: {req_url[:120]}")
+                    print(f"  ✓ Stream found!")
+                    print(f"    URL: {req_url}")
+                    print(f"    Referer: {referer}")
                     
                     return result
-                    
-            except:
-                pass
-            time.sleep(1)
+            
+            except Exception as e:
+                print(f"    Search error: {str(e)[:50]}")
+            
+            time.sleep(2)
         
-        print(f"  [{channel}] ✗ Timeout - no stream found")
+        # If no m3u8 found, try checking the page source for stream URLs
+        print(f"  Checking page source for stream URLs...")
+        try:
+            page_source = drv.page_source
+            m3u8_matches = re.findall(r'https?://[^"\'\s]+\.m3u8[^"\'\s]*', page_source)
+            if m3u8_matches:
+                for m3u8_url in m3u8_matches[:3]:
+                    if "google" not in m3u8_url.lower():
+                        result = {
+                            "url": m3u8_url,
+                            "referer": FORCED_REFERER,
+                            "origin": FORCED_ORIGIN,
+                            "user_agent": DEFAULT_USER_AGENT,
+                        }
+                        print(f"  ✓ Stream found in page source!")
+                        print(f"    URL: {m3u8_url}")
+                        return result
+        except:
+            pass
+        
+        print(f"  ✗ No stream found after {STREAM_TIMEOUT}s")
         
     except Exception as e:
-        print(f"  [{channel}] Error: {str(e)[:150]}")
+        print(f"  Error: {str(e)[:150]}")
     finally:
         if drv:
             try:
@@ -374,16 +442,16 @@ def main():
     print(f"Time: {current_time}")
     print("=" * 60)
     
-    # Get ALL events (no filtering)
+    # Get ALL events
     all_events = get_roja_events()
     
     if not all_events:
         print("No events found!")
         return
     
-    print(f"\nTotal events found: {len(all_events)}")
+    print(f"\nTotal Canal 1 events found: {len(all_events)}")
     
-    # OPTIONAL: filter excluded leagues
+    # Filter excluded leagues
     if EXCLUDED_LEAGUES:
         all_events = [
             e for e in all_events
@@ -393,7 +461,7 @@ def main():
     # Sort by time
     all_events.sort(key=lambda x: (x['hora'], x['liga']))
     
-    # REMOVE duplicate matches (keep first channel only)
+    # Remove duplicate matches (keep first occurrence)
     seen_matches = set()
     unique_events = []
     
@@ -403,7 +471,6 @@ def main():
             seen_matches.add(match_key)
             unique_events.append(e)
     
-    # Limit total processed events (optional safety)
     events_to_process = unique_events[:MAX_EVENTS]
     
     print(f"Events to process: {len(events_to_process)}")
@@ -416,7 +483,7 @@ def main():
     
     # Show events
     for e in events_to_process:
-        print(f"  {e['hora']} | {e['liga']}: {e['partido']} -> {e['channel']}")
+        print(f"  {e['hora']} | {e['liga']}: {e['partido']}")
     
     # Prepare output
     entries = ["#EXTM3U"]
@@ -424,9 +491,9 @@ def main():
     
     successful = 0
     
-    # ───── PROCESS ALL EVENTS ─────
+    # Process events
     for idx, event in enumerate(events_to_process, 1):
-        print(f"\n[{idx}/{len(events_to_process)}] {event['hora']} - {event['partido']} ({event['channel']})")
+        print(f"\n[{idx}/{len(events_to_process)}] {event['hora']} - {event['partido']}")
         
         try:
             result = extract_m3u8(event)
@@ -448,16 +515,16 @@ def main():
                 tivimate.append(tivimate_url(result))
                 
                 successful += 1
-                print(f"  ✓ Added")
+                print(f"  ✓ Added to playlist")
             else:
-                print(f"  ✗ No stream")
+                print(f"  ✗ No stream found")
                 
         except Exception as e:
             print(f"  ✗ Error: {str(e)[:100]}")
         
         time.sleep(3)
     
-    # ───── SAVE FILES ─────
+    # Save files
     print(f"\n{'=' * 60}")
     print(f"Results: {successful}/{len(events_to_process)} streams captured")
     
@@ -466,13 +533,19 @@ def main():
         (REPO_DIR / TIVIMATE_FILE).write_text("\n".join(tivimate), encoding='utf-8')
         
         print(f"Files written:")
-        print(f"  - {EVENT_FILE}")
-        print(f"  - {TIVIMATE_FILE}")
+        print(f"  - {EVENT_FILE} ({len(entries)-1} entries)")
+        print(f"  - {TIVIMATE_FILE} ({len(tivimate)-1} entries)")
+        
+        # Show sample output
+        if successful > 0:
+            print(f"\nSample output:")
+            for line in entries[1:6]:
+                print(f"  {line[:120]}")
         
     except Exception as e:
         print(f"Error writing files: {e}")
     
-    # ───── GIT PUSH ─────
+    # Git push
     if successful > 0:
         try:
             repo = Repo(REPO_DIR)
