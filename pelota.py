@@ -4,16 +4,19 @@
 import re
 import time
 import os
+import json
 from datetime import datetime, timedelta
 from pathlib import Path
 from git import Repo
 import requests
 from bs4 import BeautifulSoup
-from seleniumwire import webdriver
+from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import quote, urlparse
 import warnings
 warnings.filterwarnings("ignore")
@@ -30,8 +33,8 @@ REPO_DIR = Path(__file__).parent
 EVENT_FILE = "eventos.m3u8"
 TIVIMATE_FILE = "eventos_tivimate.m3u8"
 
-MAX_EVENTS = 20  # Process more events since we scan all channels
-STREAM_TIMEOUT = 25  # Max seconds to wait for stream per event
+MAX_EVENTS = 20
+STREAM_TIMEOUT = 30
 
 # Default user agent (will be URL encoded for Tivimate)
 DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 Edg/134.0.0.0"
@@ -56,13 +59,19 @@ def init_driver():
     opts.add_argument("--disable-sync")
     opts.add_argument("--disable-translate")
     opts.add_argument("--mute-audio")
+    opts.add_argument("--ignore-certificate-errors")
+    opts.add_argument("--ignore-ssl-errors")
+    opts.add_argument("--allow-running-insecure-content")
     opts.add_argument(f"--user-agent={DEFAULT_USER_AGENT}")
+    
+    # Enable performance logging to capture network requests
+    opts.set_capability("goog:loggingPrefs", {"performance": "ALL"})
     
     try:
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=opts)
-        driver.set_page_load_timeout(25)
-        driver.set_script_timeout(25)
+        driver.set_page_load_timeout(30)
+        driver.set_script_timeout(30)
         return driver
     except:
         return webdriver.Chrome(options=opts)
@@ -97,7 +106,6 @@ def is_event_live_or_soon(event_time, threshold_minutes=30):
     now = datetime.now()
     diff = (event_time - now).total_seconds() / 60
     
-    # Event is within threshold (started within last 120 min or starts within threshold)
     return -120 <= diff <= threshold_minutes
 
 # ───────── SCRAPER ─────────
@@ -109,7 +117,7 @@ def get_roja_events():
         headers = {
             'User-Agent': DEFAULT_USER_AGENT
         }
-        r = requests.get(ROJA_URL, timeout=15, headers=headers)
+        r = requests.get(ROJA_URL, timeout=15, headers=headers, verify=False)
         soup = BeautifulSoup(r.text, "html.parser")
 
         # Find all menu items
@@ -171,8 +179,36 @@ def get_roja_events():
     return events
 
 # ───────── STREAM EXTRACTION ─────────
+def get_network_requests(driver):
+    """Extract all network requests from performance logs"""
+    requests_list = []
+    try:
+        logs = driver.get_log("performance")
+        for entry in logs:
+            try:
+                log_data = json.loads(entry["message"])
+                message = log_data.get("message", {})
+                method = message.get("method", "")
+                
+                # Look for network responses
+                if method == "Network.responseReceived":
+                    response = message.get("params", {}).get("response", {})
+                    url = response.get("url", "")
+                    if url:
+                        requests_list.append({
+                            "url": url,
+                            "status": response.get("status", 0),
+                            "mimeType": response.get("mimeType", ""),
+                            "headers": response.get("headers", {})
+                        })
+            except:
+                continue
+    except:
+        pass
+    return requests_list
+
 def extract_m3u8(event_info):
-    """Extract m3u8 stream with forced capo7play headers"""
+    """Extract m3u8 stream using performance logs"""
     url = event_info['url']
     partido = event_info['partido']
     channel = event_info['channel']
@@ -181,16 +217,22 @@ def extract_m3u8(event_info):
     try:
         print(f"  [{channel}] Loading page...")
         drv = init_driver()
-        drv.get(url)
-        time.sleep(3)
         
-        # Clear any previous requests
+        # Load the page
         try:
-            del drv.requests
+            drv.get(url)
+        except Exception as e:
+            print(f"  [{channel}] Page load warning: {str(e)[:80]}")
+        
+        time.sleep(4)
+        
+        # Clear performance logs from initial page load
+        try:
+            drv.get_log("performance")
         except:
             pass
         
-        # Click play buttons aggressively
+        # Try to click play buttons
         for attempt in range(4):
             try:
                 # Try multiple selectors for play buttons
@@ -201,8 +243,7 @@ def extract_m3u8(event_info):
                     "video",
                     "[class*='play']",
                     ".play-button",
-                    "div[class*='play']",
-                    "[onclick*='play']"
+                    "div[class*='play']"
                 ]
                 
                 for selector in selectors:
@@ -211,16 +252,15 @@ def extract_m3u8(event_info):
                         for el in elements[:3]:
                             if el.is_displayed():
                                 drv.execute_script("arguments[0].click();", el)
-                                time.sleep(0.3)
+                                time.sleep(0.5)
                     except:
                         pass
                 
-                # Handle iframes - switch and click inside
+                # Handle iframes
                 iframes = drv.find_elements(By.TAG_NAME, "iframe")
-                for iframe in iframes:
+                for iframe in iframes[:3]:
                     try:
                         drv.switch_to.frame(iframe)
-                        # Try to play video or click buttons inside iframe
                         drv.execute_script("""
                             var videos = document.querySelectorAll('video');
                             videos.forEach(function(v) { 
@@ -228,12 +268,8 @@ def extract_m3u8(event_info):
                                 v.click();
                                 v.muted = true;
                             });
-                            var buttons = document.querySelectorAll('button, [class*="play"], .vjs-big-play-button, div[onclick]');
-                            buttons.forEach(function(b) { 
-                                b.click(); 
-                            });
-                            // Try to click anywhere on the page
-                            document.body.click();
+                            var buttons = document.querySelectorAll('button, [class*="play"], .vjs-big-play-button');
+                            buttons.forEach(function(b) { b.click(); });
                         """)
                         drv.switch_to.default_content()
                         time.sleep(1)
@@ -245,20 +281,19 @@ def extract_m3u8(event_info):
             
             time.sleep(1.5)
         
-        # Search for m3u8 requests
+        # Search for m3u8 requests in performance logs
         print(f"  [{channel}] Searching for stream...")
         start_time = time.time()
         found_urls = set()
         
         while time.time() - start_time < STREAM_TIMEOUT:
             try:
-                for req in drv.requests:
-                    if not req.response:
-                        continue
-                        
-                    req_url = req.url
+                network_requests = get_network_requests(driver=drv)
+                
+                for req in network_requests:
+                    req_url = req.get("url", "")
                     
-                    # Only process m3u8 URLs
+                    # Look for m3u8 URLs
                     if ".m3u8" not in req_url:
                         continue
                         
@@ -272,16 +307,18 @@ def extract_m3u8(event_info):
                     
                     found_urls.add(req_url)
                     
-                    # Use FORCED headers
+                    # Get headers from the request if available
+                    req_headers = req.get("headers", {})
+                    
                     result = {
                         "url": req_url,
-                        "referer": FORCED_REFERER,
-                        "origin": FORCED_ORIGIN,
-                        "user_agent": DEFAULT_USER_AGENT,
+                        "referer": req_headers.get("Referer", FORCED_REFERER) or FORCED_REFERER,
+                        "origin": req_headers.get("Origin", FORCED_ORIGIN) or FORCED_ORIGIN,
+                        "user_agent": req_headers.get("User-Agent", DEFAULT_USER_AGENT) or DEFAULT_USER_AGENT,
                     }
                     
                     print(f"  [{channel}] ✓ Stream found!")
-                    print(f"    URL: {req_url[:100]}")
+                    print(f"    URL: {req_url[:120]}")
                     
                     return result
                     
@@ -292,7 +329,7 @@ def extract_m3u8(event_info):
         print(f"  [{channel}] ✗ Timeout - no stream found")
         
     except Exception as e:
-        print(f"  [{channel}] Error: {str(e)[:100]}")
+        print(f"  [{channel}] Error: {str(e)[:150]}")
     finally:
         if drv:
             try:
@@ -418,7 +455,7 @@ def main():
         except Exception as e:
             print(f"  ✗ Error: {str(e)[:100]}")
         
-        time.sleep(2)
+        time.sleep(3)
     
     # ───── SAVE FILES ─────
     print(f"\n{'=' * 60}")
