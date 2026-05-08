@@ -82,322 +82,287 @@ def init_driver():
     except:
         return webdriver.Chrome(options=opts)
 
-# ───────── HELPERS ─────────
-def normalize(url, base=ROJA_BASE):
-    if not url or url.startswith('#'):
-        return ''
-    if url.startswith("//"):
-        return "https:" + url
-    if url.startswith("/"):
-        return base + url
-    if not url.startswith("http"):
-        return base + "/" + url
-    return url
+# ───────── DEEP STREAM HELPERS ─────────
 
-def parse_time(time_str):
-    """Parse time string to datetime object"""
-    try:
-        now = datetime.now()
-        hour, minute = map(int, time_str.split(':'))
-        event_time = now.replace(hour=hour, minute=minute, second=0, microsecond=0)
-        return event_time
-    except:
-        return None
+M3U8_REGEX = re.compile(
+    r'https?://[^"\']+\.m3u8(?:\?[^"\']+)?',
+    re.IGNORECASE
+)
 
-# ───────── SCRAPER ─────────
-def get_roja_events():
-    """Extract ALL first channel links (Canal 1 only) from each event"""
-    events = []
-    try:
-        print(f"Fetching events from: {ROJA_URL}")
-        headers = {
-            'User-Agent': DEFAULT_USER_AGENT
-        }
-        r = requests.get(ROJA_URL, timeout=15, headers=headers, verify=False)
-        soup = BeautifulSoup(r.text, "html.parser")
+BAD_DOMAINS = [
+    "google",
+    "doubleclick",
+    "facebook",
+    "analytics",
+    "googletagmanager",
+    "gstatic",
+]
 
-        # Find all menu items
-        menu_items = soup.select("ul.menu > li")
-        print(f"Found {len(menu_items)} events on page")
-        
-        for li in menu_items:
-            # Get time
-            t = li.find("span", class_="t")
-            if not t:
-                continue
-            hora = t.text.strip()
+def is_valid_m3u8(url):
+    if not url:
+        return False
 
-            # Get main event link
-            link = li.find("a", recursive=False)
-            if not link:
-                continue
+    if ".m3u8" not in url.lower():
+        return False
 
-            raw = link.text.strip()
-            if hora in raw:
-                raw = raw.replace(hora, "").strip()
+    if any(x in url.lower() for x in BAD_DOMAINS):
+        return False
 
-            if ":" not in raw:
-                continue
+    return True
 
-            # Split league and match
-            parts = raw.split(":", 1)
-            if len(parts) != 2:
-                continue
-                
-            liga, partido = parts[0].strip(), parts[1].strip()
 
-            # Get ONLY the first channel link (Canal 1) - first subitem1
-            first_channel = li.select_one("ul > li.subitem1 > a")
-            if not first_channel:
-                continue
-            
-            href = normalize(first_channel.get("href"))
-            channel_name = first_channel.text.strip()
-            
-            # Only process "Canal 1" links
-            if href and "Canal 1" in channel_name:
-                event_time = parse_time(hora)
-                events.append({
-                    'liga': liga,
-                    'hora': hora,
-                    'partido': partido,
-                    'channel': channel_name,
-                    'url': href,
-                    'time_obj': event_time
-                })
+def extract_m3u8_from_text(text):
+    found = []
 
-        print(f"Extracted {len(events)} Canal 1 stream links")
+    if not text:
+        return found
 
-    except Exception as e:
-        print(f"Error scraping: {e}")
-    
-    return events
+    matches = M3U8_REGEX.findall(text)
 
-# ───────── STREAM EXTRACTION ─────────
-def get_performance_logs(driver):
-    """Extract all network requests from performance logs"""
-    requests_list = []
+    for url in matches:
+        url = url.replace("\\/", "/")
+        url = url.strip()
+
+        if is_valid_m3u8(url):
+            found.append(url)
+
+    return list(dict.fromkeys(found))
+
+
+def inspect_browser_logs(driver):
+    urls = []
+
     try:
         logs = driver.get_log("performance")
+
         for entry in logs:
             try:
-                log_data = json.loads(entry["message"])
-                message = log_data.get("message", {})
-                method = message.get("method", "")
-                
-                # Capture both requests and responses
-                if method in ["Network.requestWillBeSent", "Network.responseReceived"]:
-                    if method == "Network.requestWillBeSent":
-                        request_data = message.get("params", {}).get("request", {})
-                        url = request_data.get("url", "")
-                        requests_list.append({
-                            "url": url,
-                            "type": "request",
-                            "headers": request_data.get("headers", {})
-                        })
-                    elif method == "Network.responseReceived":
-                        response = message.get("params", {}).get("response", {})
-                        url = response.get("url", "")
-                        mime_type = response.get("mimeType", "")
-                        requests_list.append({
-                            "url": url,
-                            "type": "response",
-                            "status": response.get("status", 0),
-                            "mimeType": mime_type,
-                            "headers": response.get("headers", {})
-                        })
-            except:
-                continue
-    except Exception as e:
-        print(f"    Log error: {str(e)[:50]}")
-    return requests_list
+                msg = json.loads(entry["message"])["message"]
 
-def extract_m3u8(event_info):
-    """Extract m3u8 stream from event page"""
-    url = event_info['url']
-    partido = event_info['partido']
-    channel = event_info['channel']
-    
-    drv = None
-    try:
-        print(f"  Loading: {url}")
-        drv = init_driver()
-        
-        # Load the page
-        try:
-            drv.get(url)
-        except Exception as e:
-            print(f"  Page load warning: {str(e)[:80]}")
-        
-        # Wait for page to load
-        time.sleep(5)
-        
-        # Clear initial logs
-        try:
-            drv.get_log("performance")
-        except:
-            pass
-        
-        # Try to interact with the page to trigger video loading
-        try:
-            # Wait for iframe and switch to it
-            iframes = drv.find_elements(By.TAG_NAME, "iframe")
-            for i, iframe in enumerate(iframes[:5]):
-                try:
-                    src = iframe.get_attribute("src") or ""
-                    if src:
-                        print(f"  Found iframe {i}: {src[:100]}")
-                    
-                    drv.switch_to.frame(iframe)
-                    
-                    # Try to click play buttons
-                    selectors = [
-                        "button[class*='play']",
-                        ".vjs-big-play-button",
-                        "button",
-                        "video",
-                        "[class*='play']",
-                        ".play-button",
-                        "div[onclick]",
-                        "[aria-label='Play']",
-                        "[aria-label='play']"
-                    ]
-                    
-                    for selector in selectors:
-                        try:
-                            elements = drv.find_elements(By.CSS_SELECTOR, selector)
-                            for el in elements:
-                                try:
-                                    if el.is_displayed() and el.is_enabled():
-                                        drv.execute_script("arguments[0].click();", el)
-                                        time.sleep(1)
-                                except:
-                                    pass
-                        except:
-                            pass
-                    
-                    # Try to play video directly
-                    try:
-                        drv.execute_script("""
-                            var videos = document.querySelectorAll('video');
-                            videos.forEach(function(v) { 
-                                v.play(); 
-                                v.muted = true;
-                                v.setAttribute('autoplay', 'true');
-                            });
-                            var buttons = document.querySelectorAll('button, [class*="play"], .vjs-big-play-button, [aria-label*="play" i]');
-                            buttons.forEach(function(b) { b.click(); });
-                        """)
-                    except:
-                        pass
-                    
-                    drv.switch_to.default_content()
-                    time.sleep(1)
-                except:
-                    try:
-                        drv.switch_to.default_content()
-                    except:
-                        pass
-            
-            # Also try on main page
-            try:
-                drv.execute_script("""
-                    var videos = document.querySelectorAll('video');
-                    videos.forEach(function(v) { 
-                        v.play(); 
-                        v.muted = true;
-                    });
-                    var buttons = document.querySelectorAll('button, [class*="play"], .vjs-big-play-button, [aria-label*="play" i]');
-                    buttons.forEach(function(b) { b.click(); });
-                """)
+                params = msg.get("params", {})
+
+                # request
+                request = params.get("request", {})
+                req_url = request.get("url", "")
+
+                if is_valid_m3u8(req_url):
+                    urls.append(req_url)
+
+                # response
+                response = params.get("response", {})
+                res_url = response.get("url", "")
+
+                if is_valid_m3u8(res_url):
+                    urls.append(res_url)
+
             except:
                 pass
-                
-        except Exception as e:
-            print(f"  Interaction error: {str(e)[:50]}")
-        
-        # Now search for m3u8 in performance logs
-        print(f"  Searching for m3u8 stream...")
-        start_time = time.time()
-        found_urls = set()
-        
-        while time.time() - start_time < STREAM_TIMEOUT:
+
+    except:
+        pass
+
+    return list(dict.fromkeys(urls))
+
+
+def inspect_page_source(driver):
+    urls = []
+
+    try:
+        source = driver.page_source
+        urls.extend(extract_m3u8_from_text(source))
+    except:
+        pass
+
+    return list(dict.fromkeys(urls))
+
+
+def inspect_scripts(driver):
+    urls = []
+
+    try:
+        scripts = driver.find_elements(By.TAG_NAME, "script")
+
+        for script in scripts:
             try:
-                # Get fresh performance logs
-                network_requests = get_performance_logs(driver=drv)
-                
-                # Check for m3u8 URLs
-                for req in network_requests:
-                    req_url = req.get("url", "")
-                    
-                    # Look for m3u8, ts, or stream URLs
-                    if not (".m3u8" in req_url or ".ts" in req_url or "hls" in req_url.lower()):
-                        continue
-                    
-                    # Only care about m3u8 master playlists
-                    if ".m3u8" not in req_url:
-                        continue
-                    
-                    # Filter out unwanted URLs
-                    if any(x in req_url.lower() for x in ['google', 'analytics', 'facebook', 'doubleclick', 'googletagmanager', 'tag.min.js']):
-                        continue
-                    
-                    # Skip duplicates
-                    if req_url in found_urls:
-                        continue
-                    
-                    found_urls.add(req_url)
-                    
-                    # Get headers
-                    req_headers = req.get("headers", {})
-                    
-                    # Use forced headers as defaults
-                    referer = req_headers.get("Referer", "") or req_headers.get("referer", "") or FORCED_REFERER
-                    origin = req_headers.get("Origin", "") or req_headers.get("origin", "") or FORCED_ORIGIN
-                    user_agent = req_headers.get("User-Agent", "") or req_headers.get("user-agent", "") or DEFAULT_USER_AGENT
-                    
-                    result = {
-                        "url": req_url,
-                        "referer": referer,
-                        "origin": origin,
-                        "user_agent": user_agent,
-                    }
-                    
-                    print(f"  ✓ Stream found!")
-                    print(f"    URL: {req_url}")
-                    print(f"    Referer: {referer}")
-                    
-                    return result
-            
-            except Exception as e:
-                print(f"    Search error: {str(e)[:50]}")
-            
-            time.sleep(2)
-        
-        # If no m3u8 found, try checking the page source for stream URLs
-        print(f"  Checking page source for stream URLs...")
+                content = script.get_attribute("innerHTML") or ""
+                urls.extend(extract_m3u8_from_text(content))
+            except:
+                pass
+
+    except:
+        pass
+
+    return list(dict.fromkeys(urls))
+
+
+def inspect_dom(driver):
+    urls = []
+
+    try:
+        html = driver.execute_script("""
+            return document.documentElement.outerHTML;
+        """)
+
+        urls.extend(extract_m3u8_from_text(html))
+    except:
+        pass
+
+    return list(dict.fromkeys(urls))
+
+
+def inspect_iframes_recursive(driver, depth=0, max_depth=4):
+    urls = []
+
+    if depth > max_depth:
+        return urls
+
+    try:
+        iframes = driver.find_elements(By.TAG_NAME, "iframe")
+
+        for iframe in iframes:
+            try:
+                src = iframe.get_attribute("src") or ""
+
+                if src:
+                    print(f"    iframe: {src[:120]}")
+
+                driver.switch_to.frame(iframe)
+
+                time.sleep(2)
+
+                # inspect inside iframe
+                urls.extend(inspect_page_source(driver))
+                urls.extend(inspect_scripts(driver))
+                urls.extend(inspect_dom(driver))
+                urls.extend(inspect_browser_logs(driver))
+
+                # recurse deeper
+                urls.extend(
+                    inspect_iframes_recursive(
+                        driver,
+                        depth + 1,
+                        max_depth
+                    )
+                )
+
+                driver.switch_to.parent_frame()
+
+            except:
+                try:
+                    driver.switch_to.default_content()
+                except:
+                    pass
+
+    except:
+        pass
+
+    return list(dict.fromkeys(urls))
+
+
+# ───────── STREAM EXTRACTION ─────────
+
+def extract_m3u8(event_info):
+    url = event_info['url']
+    partido = event_info['partido']
+
+    drv = None
+
+    try:
+        print(f"  Loading: {url}")
+
+        drv = init_driver()
+
+        drv.get(url)
+
+        # allow JS/player loading
+        time.sleep(8)
+
+        # autoplay attempt
         try:
-            page_source = drv.page_source
-            m3u8_matches = re.findall(r'https?://[^"\'\s]+\.m3u8[^"\'\s]*', page_source)
-            if m3u8_matches:
-                for m3u8_url in m3u8_matches[:3]:
-                    if "google" not in m3u8_url.lower():
-                        result = {
-                            "url": m3u8_url,
-                            "referer": FORCED_REFERER,
-                            "origin": FORCED_ORIGIN,
-                            "user_agent": DEFAULT_USER_AGENT,
-                        }
-                        print(f"  ✓ Stream found in page source!")
-                        print(f"    URL: {m3u8_url}")
-                        return result
+            drv.execute_script("""
+                var videos = document.querySelectorAll('video');
+
+                videos.forEach(function(v){
+                    try{
+                        v.muted = true;
+                        v.play();
+                    }catch(e){}
+                });
+
+                var els = document.querySelectorAll(
+                    'button, .play, .vjs-big-play-button, [onclick]'
+                );
+
+                els.forEach(function(el){
+                    try{
+                        el.click();
+                    }catch(e){}
+                });
+            """)
         except:
             pass
-        
+
+        print("  Searching for m3u8 stream...")
+
+        start = time.time()
+
+        found = []
+
+        while time.time() - start < STREAM_TIMEOUT:
+
+            # main page inspection
+            found.extend(inspect_browser_logs(drv))
+            found.extend(inspect_page_source(drv))
+            found.extend(inspect_scripts(drv))
+            found.extend(inspect_dom(drv))
+
+            # iframe inspection
+            found.extend(inspect_iframes_recursive(drv))
+
+            # remove duplicates
+            found = list(dict.fromkeys(found))
+
+            # prioritize tokenized URLs
+            prioritized = []
+
+            for u in found:
+                if "md5=" in u or "expires=" in u:
+                    prioritized.append(u)
+
+            if prioritized:
+                stream_url = prioritized[0]
+
+                print("  ✓ Signed stream found!")
+                print(f"    URL: {stream_url}")
+
+                return {
+                    "url": stream_url,
+                    "referer": FORCED_REFERER,
+                    "origin": FORCED_ORIGIN,
+                    "user_agent": DEFAULT_USER_AGENT,
+                }
+
+            # fallback any m3u8
+            if found:
+                stream_url = found[0]
+
+                print("  ✓ Stream found!")
+                print(f"    URL: {stream_url}")
+
+                return {
+                    "url": stream_url,
+                    "referer": FORCED_REFERER,
+                    "origin": FORCED_ORIGIN,
+                    "user_agent": DEFAULT_USER_AGENT,
+                }
+
+            time.sleep(2)
+
         print(f"  ✗ No stream found after {STREAM_TIMEOUT}s")
-        
+
     except Exception as e:
         print(f"  Error: {str(e)[:150]}")
+
     finally:
         if drv:
             try:
