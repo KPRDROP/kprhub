@@ -1,5 +1,4 @@
-name: Roja Stream Updater
-
+name: Pelota Stream Updater
 on:
   schedule:
     - cron: '*/30 * * * *'
