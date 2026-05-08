@@ -67,19 +67,36 @@ jobs:
       - name: Run scraper
         run: |
           xvfb-run --auto-servernum --server-args='-screen 0 1920x1080x24' python pelota.py
-        
-      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Stage and push output files
         if: always()
         run: |
+          # Configure git
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+          
+          # Set remote with token
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
-          git pull origin ${{ github.ref_name }} --rebase --allow-unrelated-histories || true
-          git add eventos.m3u8 eventos_tivimate.m3u8 || true
-          if git diff --staged --quiet; then
+          
+          # Stage the output files and caches
+          git add eventos.m3u8 eventos_tivimate.m3u8 caches/ || true
+          
+          # Check if there are changes
+          if git diff --staged --quiet && git diff --quiet; then
             echo "No changes to commit"
           else
-            git commit -m "Update streams $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
-            git push origin ${{ github.ref_name }}
-            echo "Successfully pushed"
+            # Pull latest with rebase to avoid conflicts
+            git pull origin ${{ github.ref_name }} --rebase --allow-unrelated-histories || true
+            
+            # Add again after pull in case of conflicts
+            git add eventos.m3u8 eventos_tivimate.m3u8 caches/ || true
+            
+            # Commit and push
+            git commit -m "Update streams $(date -u +'%Y-%m-%d %H:%M:%S UTC')" || echo "Nothing to commit"
+            git push origin ${{ github.ref_name }} || echo "Push failed (may already be up to date)"
+            echo "✓ Successfully pushed changes"
           fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
