@@ -1,8 +1,8 @@
-name:  Update Pelota Playlist
+name: RojaDirecta Stream Scraper
 
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -11,50 +11,87 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
-
+    timeout-minutes: 25
+    
     steps:
-      - name:  Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name:  Setup Python
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+          persist-credentials: true
+      
+      - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
-
-      - name:  Install Chrome
-        uses: browser-actions/setup-chrome@v1
-
-      - name:  Install dependencies
+          python-version: '3.11'
+      
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends \
+            libasound2t64 \
+            libgbm1 \
+            libxkbcommon0 \
+            libnspr4 \
+            libnss3 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxrandr2 \
+            libatk-bridge2.0-0 \
+            libatspi2.0-0 \
+            libcups2 \
+            libdrm2 \
+            libx11-xcb1 \
+            libxcb-dri3-0 \
+            libxcb1 \
+            libxfixes3 \
+            libxshmfence1 \
+            libwayland-client0 \
+            libpango-1.0-0 \
+            libcairo2 \
+            libgdk-pixbuf2.0-0 \
+            libgtk-3-0 \
+            xvfb || true
+      
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-
-          pip install \
-            playwright \
-            selectolax \
-            aiohttp
-
+          pip install playwright gitpython requests beautifulsoup4
+      
+      - name: Install Playwright browsers
+        run: |
           playwright install chromium
-
-      - name:  Start virtual display
+          playwright install-deps chromium || true
+      
+      - name: Run scraper
         run: |
-          Xvfb :99 -screen 0 1920x1080x24 > /dev/null 2>&1 &
-          echo "DISPLAY=:99" >> $GITHUB_ENV
-
-      - name:  Run scraper
-        env:
-          PYTHONUNBUFFERED: "1"
+          xvfb-run --auto-servernum --server-args='-screen 0 1920x1080x24' python pelota.py
+      
+      - name: Commit and push changes
+        if: always()
         run: |
-          python pelota.py
-
-      - name:  Push playlists
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-          git add *.m3u8
-
-          git diff --cached --quiet && echo "No changes" && exit 0
-
-          git commit -m "Update playlists"
-          git push
+          # Configure git
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          
+          # Set remote with token for authentication
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+          
+          # Stage the output files
+          git add eventos.m3u8 eventos_tivimate.m3u8
+          
+          # Check if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            # Commit
+            git commit -m "Update streams $(date -u +'%Y-%m-%d %H:%M:%S UTC')"
+            
+            # Pull with rebase (should be clean since we just committed)
+            git pull origin ${{ github.ref_name }} --rebase || true
+            
+            # Push
+            git push origin ${{ github.ref_name }}
+            echo "✓ Successfully pushed changes"
+          fi
