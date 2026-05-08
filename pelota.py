@@ -221,7 +221,12 @@ def get_roja_events():
 # ───────── DEEP STREAM HELPERS ─────────
 
 M3U8_REGEX = re.compile(
-    r'https?://[^"\']+\.m3u8(?:\?[^"\']+)?',
+    r'https?://[^"\']+?\.m3u8(?:\?[^"\']*)?',
+    re.IGNORECASE
+)
+
+LIVE_REGEX = re.compile(
+    r'live=([a-zA-Z0-9_-]+)',
     re.IGNORECASE
 )
 
@@ -232,10 +237,27 @@ BAD_DOMAINS = [
     "analytics",
     "googletagmanager",
     "gstatic",
+    "lijit",
+    "sharethis",
+    "crwdcntrl",
+    "intentiq",
+    "dtscout",
 ]
 
 
+def clean_url(url):
+    if not url:
+        return ""
+
+    url = url.replace("\\/", "/")
+    url = url.replace("&amp;", "&")
+    url = url.strip()
+
+    return url
+
+
 def is_valid_m3u8(url):
+
     if not url:
         return False
 
@@ -245,95 +267,81 @@ def is_valid_m3u8(url):
     if any(x in url.lower() for x in BAD_DOMAINS):
         return False
 
+    # important:
+    # only accept zohanayaan/cdn hls urls
+    if "zohanayaan" not in url.lower():
+        return False
+
     return True
 
 
-def clean_url(url):
-    url = url.replace("\\/", "/")
-    url = url.replace("&amp;", "&")
-    url = url.strip()
-
-    return url
-
-
 def extract_m3u8_from_text(text):
-    found = []
+
+    urls = []
 
     if not text:
-        return found
+        return urls
 
     matches = M3U8_REGEX.findall(text)
 
-    for url in matches:
-        url = clean_url(url)
+    for u in matches:
 
-        if is_valid_m3u8(url):
-            found.append(url)
+        u = clean_url(u)
 
-    return list(dict.fromkeys(found))
+        if is_valid_m3u8(u):
+            urls.append(u)
+
+    return list(dict.fromkeys(urls))
 
 
-def inspect_browser_logs(driver):
+def extract_live_name(text):
+
+    if not text:
+        return None
+
+    m = LIVE_REGEX.search(text)
+
+    if not m:
+        return None
+
+    return m.group(1)
+
+
+def inspect_performance_logs(driver):
+
     urls = []
 
     try:
         logs = driver.get_log("performance")
 
         for entry in logs:
+
             try:
-                msg = json.loads(entry["message"])["message"]
+                msg = json.loads(
+                    entry["message"]
+                )["message"]
 
                 params = msg.get("params", {})
 
-                request = params.get("request", {})
-                req_url = request.get("url", "")
+                # request url
+                req = params.get("request", {})
+                req_url = req.get("url", "")
 
-                if is_valid_m3u8(req_url):
-                    urls.append(clean_url(req_url))
+                # response url
+                res = params.get("response", {})
+                res_url = res.get("url", "")
 
-                response = params.get("response", {})
-                res_url = response.get("url", "")
+                # request post data
+                post_data = req.get("postData", "")
 
-                if is_valid_m3u8(res_url):
-                    urls.append(clean_url(res_url))
-
-            except:
-                pass
-
-    except:
-        pass
-
-    return list(dict.fromkeys(urls))
-
-
-def inspect_page_source(driver):
-    urls = []
-
-    try:
-        source = driver.page_source
-
-        urls.extend(
-            extract_m3u8_from_text(source)
-        )
-
-    except:
-        pass
-
-    return list(dict.fromkeys(urls))
-
-
-def inspect_scripts(driver):
-    urls = []
-
-    try:
-        scripts = driver.find_elements(By.TAG_NAME, "script")
-
-        for script in scripts:
-            try:
-                content = script.get_attribute("innerHTML") or ""
+                all_text = "\n".join([
+                    req_url,
+                    res_url,
+                    post_data
+                ])
 
                 urls.extend(
-                    extract_m3u8_from_text(content)
+                    extract_m3u8_from_text(all_text)
                 )
 
             except:
@@ -345,7 +353,25 @@ def inspect_scripts(driver):
     return list(dict.fromkeys(urls))
 
 
+def inspect_html(driver):
+
+    urls = []
+
+    try:
+        html = driver.page_source
+
+        urls.extend(
+            extract_m3u8_from_text(html)
+        )
+
+    except:
+        pass
+
+    return list(dict.fromkeys(urls))
+
+
 def inspect_dom(driver):
+
     urls = []
 
     try:
@@ -363,59 +389,122 @@ def inspect_dom(driver):
     return list(dict.fromkeys(urls))
 
 
-def inspect_iframes_recursive(driver, depth=0, max_depth=5):
+def inspect_scripts(driver):
+
+    urls = []
+
+    try:
+        scripts = driver.find_elements(By.TAG_NAME, "script")
+
+        for s in scripts:
+
+            try:
+                txt = s.get_attribute("innerHTML") or ""
+
+                urls.extend(
+                    extract_m3u8_from_text(txt)
+                )
+
+            except:
+                pass
+
+    except:
+        pass
+
+    return list(dict.fromkeys(urls))
+
+
+def inspect_video_elements(driver):
+
+    urls = []
+
+    try:
+
+        srcs = driver.execute_script("""
+            let out = [];
+
+            document.querySelectorAll('video').forEach(v => {
+                if(v.src) out.push(v.src);
+
+                if(v.currentSrc) out.push(v.currentSrc);
+            });
+
+            return out;
+        """)
+
+        for u in srcs:
+            if is_valid_m3u8(u):
+                urls.append(clean_url(u))
+
+    except:
+        pass
+
+    return list(dict.fromkeys(urls))
+
+
+def autoplay(driver):
+
+    try:
+        driver.execute_script("""
+            document.querySelectorAll('video').forEach(v => {
+                try{
+                    v.muted = true;
+                    v.volume = 0;
+                    v.play();
+                }catch(e){}
+            });
+
+            document.querySelectorAll(
+                'button,.play,.vjs-big-play-button,[onclick]'
+            ).forEach(el => {
+                try{
+                    el.click();
+                }catch(e){}
+            });
+        """)
+    except:
+        pass
+
+
+def inspect_iframes(driver, depth=0, max_depth=5):
+
     urls = []
 
     if depth > max_depth:
         return urls
 
     try:
-        iframes = driver.find_elements(By.TAG_NAME, "iframe")
+
+        iframes = driver.find_elements(
+            By.TAG_NAME,
+            "iframe"
+        )
 
         for iframe in iframes:
+
             try:
                 src = iframe.get_attribute("src") or ""
 
                 if src:
-                    print(f"    iframe[{depth}]: {src[:120]}")
+                    print(
+                        f"    iframe[{depth}]: "
+                        f"{src[:120]}"
+                    )
 
                 driver.switch_to.frame(iframe)
 
                 time.sleep(2)
 
-                urls.extend(inspect_page_source(driver))
-                urls.extend(inspect_scripts(driver))
+                autoplay(driver)
+
+                urls.extend(inspect_performance_logs(driver))
+                urls.extend(inspect_html(driver))
                 urls.extend(inspect_dom(driver))
-                urls.extend(inspect_browser_logs(driver))
+                urls.extend(inspect_scripts(driver))
+                urls.extend(inspect_video_elements(driver))
 
-                # autoplay inside iframe
-                try:
-                    driver.execute_script("""
-                        var videos = document.querySelectorAll('video');
-
-                        videos.forEach(function(v){
-                            try{
-                                v.muted = true;
-                                v.play();
-                            }catch(e){}
-                        });
-
-                        var els = document.querySelectorAll(
-                            'button, .play, .vjs-big-play-button, [onclick]'
-                        );
-
-                        els.forEach(function(el){
-                            try{
-                                el.click();
-                            }catch(e){}
-                        });
-                    """)
-                except:
-                    pass
-
-                # recursive deeper
                 urls.extend(
-                    inspect_iframes_recursive(
+                    inspect_iframes(
                         driver,
                         depth + 1,
                         max_depth
@@ -436,6 +525,7 @@ def inspect_iframes_recursive(driver, depth=0, max_depth=5):
     return list(dict.fromkeys(urls))
 
 # ───────── STREAM EXTRACTION ─────────
+
 def extract_m3u8(event_info):
 
     url = event_info["url"]
@@ -443,69 +533,56 @@ def extract_m3u8(event_info):
     drv = None
 
     try:
+
         print(f"  Loading: {url}")
 
         drv = init_driver()
 
         drv.get(url)
 
-        time.sleep(8)
+        time.sleep(6)
 
-        # autoplay
-        try:
-            drv.execute_script("""
-                var videos = document.querySelectorAll('video');
-
-                videos.forEach(function(v){
-                    try{
-                        v.muted = true;
-                        v.play();
-                    }catch(e){}
-                });
-
-                var els = document.querySelectorAll(
-                    'button, .play, .vjs-big-play-button, [onclick]'
-                );
-
-                els.forEach(function(el){
-                    try{
-                        el.click();
-                    }catch(e){}
-                });
-            """)
-        except:
-            pass
+        autoplay(drv)
 
         print("  Searching for m3u8 stream...")
 
-        start = time.time()
-
         found = []
+
+        start = time.time()
 
         while time.time() - start < STREAM_TIMEOUT:
 
-            # main page
-            found.extend(inspect_browser_logs(drv))
-            found.extend(inspect_page_source(drv))
-            found.extend(inspect_scripts(drv))
-            found.extend(inspect_dom(drv))
+            autoplay(drv)
 
-            # iframes
+            # main page inspections
+            found.extend(inspect_performance_logs(drv))
+            found.extend(inspect_html(drv))
+            found.extend(inspect_dom(drv))
+            found.extend(inspect_scripts(drv))
+            found.extend(inspect_video_elements(drv))
+
+            # iframe inspections
             found.extend(
-                inspect_iframes_recursive(drv)
+                inspect_iframes(drv)
             )
 
-            # deduplicate
+            # dedupe
             found = list(dict.fromkeys(found))
 
-            # prioritize signed URLs
+            # prioritize signed token urls
             signed = []
 
             for u in found:
-                if "md5=" in u or "expires=" in u:
+
+                if (
+                    "md5=" in u
+                    and
+                    "expires=" in u
+                ):
                     signed.append(u)
 
             if signed:
+
                 stream_url = signed[0]
 
                 print("  ✓ Signed stream found!")
@@ -520,6 +597,7 @@ def extract_m3u8(event_info):
 
             # fallback
             if found:
+
                 stream_url = found[0]
 
                 print("  ✓ Stream found!")
@@ -534,12 +612,17 @@ def extract_m3u8(event_info):
 
             time.sleep(2)
 
-        print(f"  ✗ No stream found after {STREAM_TIMEOUT}s")
+        print(
+            f"  ✗ No stream found "
+            f"after {STREAM_TIMEOUT}s"
+        )
 
     except Exception as e:
+
         print(f"  Error: {str(e)[:150]}")
 
     finally:
+
         if drv:
             try:
                 drv.quit()
