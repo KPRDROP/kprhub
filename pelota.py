@@ -391,6 +391,57 @@ def tivimate_url(r):
     if params:
         return r["url"] + "|" + "|".join(params)
     return r["url"]
+    
+
+# ───────── GIT PUSH ─────────
+def push_to_github(successful: int):
+    """Push generated files to GitHub repository.
+    When running in GitHub Actions, only stages files (workflow handles push).
+    When running locally, does full commit and push.
+    """
+    is_github_actions = os.getenv("GITHUB_ACTIONS") == "true"
+    
+    if is_github_actions:
+        # In GitHub Actions, just stage the files
+        # The workflow step will handle commit and push
+        print("Running in GitHub Actions - files will be pushed by workflow")
+        
+        # Stage files so workflow can commit them
+        try:
+            repo = Repo(REPO_DIR)
+            repo.git.add(str(EVENT_FILE.relative_to(REPO_DIR)))
+            repo.git.add(str(TIVIMATE_FILE.relative_to(REPO_DIR)))
+            
+            # Also add caches if they exist
+            caches_dir = REPO_DIR / "caches"
+            if caches_dir.exists():
+                repo.git.add(str(caches_dir.relative_to(REPO_DIR)))
+            
+            print("Files staged for workflow commit")
+        except Exception as e:
+            print(f"Stage error (non-fatal): {e}")
+    else:
+        # Running locally - do full commit and push
+        try:
+            repo = Repo(REPO_DIR)
+            current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            
+            # Add all files
+            repo.git.add(str(EVENT_FILE.relative_to(REPO_DIR)))
+            repo.git.add(str(TIVIMATE_FILE.relative_to(REPO_DIR)))
+            
+            caches_dir = REPO_DIR / "caches"
+            if caches_dir.exists():
+                repo.git.add(str(caches_dir.relative_to(REPO_DIR)))
+            
+            # Commit
+            repo.index.commit(f"Update {current_time} - {successful} streams")
+            
+            # Push
+            repo.remote("origin").push()
+            print("✓ Pushed to git")
+        except Exception as e:
+            print(f"Git error: {e}")
 
 
 # ───────── MAIN ─────────
