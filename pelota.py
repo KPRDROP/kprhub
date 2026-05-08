@@ -391,7 +391,7 @@ def tivimate_url(r):
     if params:
         return r["url"] + "|" + "|".join(params)
     return r["url"]
-    
+
 
 # ───────── GIT PUSH ─────────
 def push_to_github(successful: int):
@@ -510,16 +510,9 @@ async def main_async():
     except Exception as e:
         print(f"Error writing files: {e}")
     
-    # Git push
+    # Push to GitHub
     if successful > 0:
-        try:
-            repo = Repo(REPO_DIR)
-            repo.git.add(A=True)
-            repo.index.commit(f"Update {current_time} - {successful} streams")
-            repo.remote().push()
-            print("✓ Pushed to git")
-        except Exception as e:
-            print(f"Git error: {e}")
+        push_to_github(successful)
     else:
         print("No streams to push")
 
