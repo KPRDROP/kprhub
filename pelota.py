@@ -4,21 +4,15 @@
 import re
 import time
 import os
+import asyncio
 import json
-import subprocess
 from datetime import datetime, timedelta
 from pathlib import Path
 from git import Repo
 import requests
 from bs4 import BeautifulSoup
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import quote, urlparse
+from playwright.async_api import async_playwright, Browser, BrowserContext, Page
 import warnings
 warnings.filterwarnings("ignore")
 
@@ -39,82 +33,12 @@ EVENT_FILE = "eventos.m3u8"
 TIVIMATE_FILE = "eventos_tivimate.m3u8"
 
 MAX_EVENTS = 20
-STREAM_TIMEOUT = 45
+STREAM_TIMEOUT = 30  # seconds per event
 
 # Default user agent
 DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
 
 EXCLUDED_LEAGUES = []
-
-# ───────── DRIVER ─────────
-def get_chrome_version():
-    """Get installed Chrome version"""
-    try:
-        result = subprocess.run(['google-chrome', '--version'], capture_output=True, text=True)
-        version = result.stdout.strip()
-        match = re.search(r'(\d+)\.', version)
-        if match:
-            return match.group(1)
-    except:
-        pass
-    return None
-
-def init_driver():
-    """Initialize Chrome driver with correct version and network monitoring"""
-    opts = Options()
-    opts.add_argument("--headless=new")
-    opts.add_argument("--no-sandbox")
-    opts.add_argument("--disable-dev-shm-usage")
-    opts.add_argument("--disable-gpu")
-    opts.add_argument("--window-size=1920,1080")
-    opts.add_argument("--disable-blink-features=AutomationControlled")
-    opts.add_argument("--disable-extensions")
-    opts.add_argument("--disable-background-networking")
-    opts.add_argument("--disable-sync")
-    opts.add_argument("--disable-translate")
-    opts.add_argument("--mute-audio")
-    opts.add_argument("--ignore-certificate-errors")
-    opts.add_argument("--ignore-ssl-errors")
-    opts.add_argument("--allow-running-insecure-content")
-    opts.add_argument("--disable-web-security")
-    opts.add_argument("--autoplay-policy=no-user-gesture-required")
-    opts.add_argument(f"--user-agent={DEFAULT_USER_AGENT}")
-    
-    # Enable performance logging
-    opts.set_capability("goog:loggingPrefs", {"performance": "ALL"})
-    
-    # Prevent timeout issues
-    opts.add_argument("--disable-hang-monitor")
-    opts.add_argument("--disable-prompt-on-repost")
-    opts.add_argument("--disable-client-side-phishing-detection")
-    opts.add_argument("--disable-component-update")
-    opts.add_argument("--disable-default-apps")
-    opts.add_argument("--no-first-run")
-    opts.add_argument("--no-default-browser-check")
-    
-    try:
-        # Try using webdriver_manager with specific version matching
-        chrome_version = get_chrome_version()
-        if chrome_version:
-            print(f"    Chrome version: {chrome_version}")
-            driver_path = ChromeDriverManager(driver_version=f"{chrome_version}.0.7778.97").install()
-        else:
-            driver_path = ChromeDriverManager().install()
-        
-        service = Service(driver_path)
-        driver = webdriver.Chrome(service=service, options=opts)
-        driver.set_page_load_timeout(45)
-        driver.set_script_timeout(45)
-        return driver
-    except Exception as e:
-        print(f"    Driver error: {e}")
-        try:
-            # Fallback: try system chromedriver
-            return webdriver.Chrome(options=opts)
-        except:
-            # Last resort
-            opts.binary_location = "/usr/bin/google-chrome"
-            return webdriver.Chrome(options=opts)
 
 # ───────── HELPERS ─────────
 def normalize(url, base=ROJA_BASE):
@@ -139,6 +63,7 @@ def parse_time(time_str):
 
 # ───────── SCRAPER ─────────
 def get_roja_events():
+    """Extract ONLY first channel links (Canal 1) from each event"""
     events = []
     try:
         print(f"Fetching events from: {ROJA_URL}")
@@ -196,196 +121,151 @@ def get_roja_events():
     
     return events
 
-# ───────── M3U8 CAPTURE USING CDP ─────────
+# ───────── PLAYWRIGHT STREAM EXTRACTION ─────────
 
-def capture_m3u8_via_cdp(driver, url):
-    """Use Chrome DevTools Protocol to capture network requests"""
-    m3u8_urls = []
+async def capture_stream(page: Page, url: str) -> str | None:
+    """
+    Load the event page, navigate through iframes to capo7play,
+    click play, and capture the m3u8 URL from network requests.
+    """
+    captured_m3u8 = []
+    
+    async def handle_request(request):
+        """Intercept network requests to find m3u8"""
+        req_url = request.url
+        if ".m3u8" in req_url:
+            bad_domains = ["google", "doubleclick", "facebook", "analytics", "googletagmanager", "gstatic"]
+            if not any(x in req_url.lower() for x in bad_domains):
+                if req_url not in captured_m3u8:
+                    captured_m3u8.append(req_url)
+                    print(f"    Captured: {req_url[:150]}")
+    
+    async def handle_response(response):
+        """Also check responses for m3u8"""
+        resp_url = response.url
+        if ".m3u8" in resp_url:
+            bad_domains = ["google", "doubleclick", "facebook", "analytics", "googletagmanager", "gstatic"]
+            if not any(x in resp_url.lower() for x in bad_domains):
+                if resp_url not in captured_m3u8:
+                    captured_m3u8.append(resp_url)
+                    print(f"    Captured response: {resp_url[:150]}")
+    
+    # Attach network listeners
+    page.on("request", handle_request)
+    page.on("response", handle_response)
     
     try:
-        # Enable Network domain
-        driver.execute_cdp_cmd("Network.enable", {})
+        # Load the rojadirectablog event page
+        print(f"  Loading: {url}")
+        await page.goto(url, wait_until="domcontentloaded", timeout=30000)
         
-        # Load the page
-        driver.get(url)
-        time.sleep(5)
+        # Wait for iframes to load
+        await asyncio.sleep(3)
         
-        # Click play in iframes
-        click_play_in_iframes(driver)
-        
-        # Poll for network requests
-        start_time = time.time()
-        while time.time() - start_time < STREAM_TIMEOUT:
-            # Get all network requests
+        # Try to click play in all iframes
+        for attempt in range(8):
             try:
-                # Use JavaScript to get performance entries
-                requests_data = driver.execute_script("""
-                    var entries = window.performance.getEntriesByType('resource');
-                    var urls = [];
-                    for (var i = 0; i < entries.length; i++) {
-                        urls.push(entries[i].name);
-                    }
-                    return urls;
-                """)
+                # Get all frames (including nested ones)
+                frames = page.frames
                 
-                for req_url in requests_data or []:
-                    if ".m3u8" in req_url:
-                        bad = ["google", "doubleclick", "facebook", "analytics", "googletagmanager"]
-                        if not any(x in req_url.lower() for x in bad):
-                            if req_url not in m3u8_urls:
-                                m3u8_urls.append(req_url)
-                                print(f"    Found via Performance API: {req_url[:150]}")
-            except:
-                pass
-            
-            # Also check performance logs
-            try:
-                logs = driver.get_log("performance")
-                for entry in logs:
+                for frame in frames:
                     try:
-                        log_data = json.loads(entry["message"])
-                        message = log_data.get("message", {})
-                        params = message.get("params", {})
-                        
-                        # Check request
-                        req = params.get("request", {})
-                        req_url = req.get("url", "")
-                        if ".m3u8" in req_url:
-                            bad = ["google", "doubleclick", "facebook", "analytics", "googletagmanager"]
-                            if not any(x in req_url.lower() for x in bad):
-                                if req_url not in m3u8_urls:
-                                    m3u8_urls.append(req_url)
-                                    print(f"    Found via logs: {req_url[:150]}")
-                        
-                        # Check response
-                        resp = params.get("response", {})
-                        resp_url = resp.get("url", "")
-                        if ".m3u8" in resp_url:
-                            bad = ["google", "doubleclick", "facebook", "analytics", "googletagmanager"]
-                            if not any(x in resp_url.lower() for x in bad):
-                                if resp_url not in m3u8_urls:
-                                    m3u8_urls.append(resp_url)
-                                    print(f"    Found via logs: {resp_url[:150]}")
+                        # Try to click play buttons
+                        await frame.evaluate("""
+                            () => {
+                                // Play all videos
+                                var videos = document.querySelectorAll('video');
+                                videos.forEach(function(v) { 
+                                    v.muted = true; 
+                                    v.play();
+                                    v.setAttribute('autoplay', 'true');
+                                });
+                                
+                                // Click all possible play buttons
+                                var selectors = [
+                                    'button',
+                                    '[class*="play"]',
+                                    '.vjs-big-play-button',
+                                    '[aria-label*="play" i]',
+                                    '.plyr__control--overlaid',
+                                    'video',
+                                    '[onclick]',
+                                    'div[class*="player"]'
+                                ];
+                                
+                                selectors.forEach(function(sel) {
+                                    try {
+                                        var els = document.querySelectorAll(sel);
+                                        els.forEach(function(el) {
+                                            el.click();
+                                            el.dispatchEvent(new MouseEvent('click', {bubbles: true}));
+                                        });
+                                    } catch(e) {}
+                                });
+                                
+                                // Click center of page
+                                var el = document.elementFromPoint(window.innerWidth/2, window.innerHeight/2);
+                                if (el) {
+                                    el.click();
+                                    el.dispatchEvent(new MouseEvent('click', {bubbles: true}));
+                                }
+                            }
+                        """)
                     except:
                         pass
             except:
                 pass
-                
-            # If we have tokenized URLs, return immediately
-            tokenized = [u for u in m3u8_urls if "md5=" in u or "expires=" in u or "token=" in u]
+            
+            await asyncio.sleep(2)
+            
+            # Check if we already have tokenized m3u8
+            tokenized = [u for u in captured_m3u8 if "md5=" in u or "expires=" in u or "token=" in u]
             if tokenized:
                 return tokenized[0]
             
-            # If we have any m3u8 with query params, return
-            valid = [u for u in m3u8_urls if "?" in u]
+            # Check if we have any m3u8 with params
+            valid = [u for u in captured_m3u8 if "?" in u]
             if valid:
                 return valid[0]
-            
-            # Click play again
-            click_play_in_iframes(driver)
-            time.sleep(2)
         
-        # Return any m3u8 found
-        if m3u8_urls:
-            return m3u8_urls[0]
-            
+        # Wait additional time for streams to load
+        await asyncio.sleep(5)
+        
+        # Final check
+        tokenized = [u for u in captured_m3u8 if "md5=" in u or "expires=" in u or "token=" in u]
+        if tokenized:
+            return tokenized[0]
+        
+        valid = [u for u in captured_m3u8 if "?" in u]
+        if valid:
+            return valid[0]
+        
+        if captured_m3u8:
+            return captured_m3u8[0]
+        
+        print(f"  Total m3u8 found: {len(captured_m3u8)}")
+        for u in captured_m3u8:
+            print(f"    - {u[:150]}")
+        
     except Exception as e:
-        print(f"    CDP error: {str(e)[:100]}")
+        print(f"  Page error: {str(e)[:100]}")
     finally:
-        try:
-            driver.execute_cdp_cmd("Network.disable", {})
-        except:
-            pass
+        page.remove_listener("request", handle_request)
+        page.remove_listener("response", handle_response)
     
     return None
 
-def click_play_in_iframes(driver):
-    """Click play buttons in all iframes"""
-    try:
-        # Main page
-        driver.execute_script("""
-            var videos = document.querySelectorAll('video');
-            videos.forEach(function(v) { v.muted = true; v.play(); });
-            var buttons = document.querySelectorAll('button, [class*="play"], [onclick]');
-            buttons.forEach(function(b) { try { b.click(); } catch(e) {} });
-        """)
-    except:
-        pass
-    
-    # Iframes
-    try:
-        iframes = driver.find_elements(By.TAG_NAME, "iframe")
-        for iframe in iframes[:5]:
-            try:
-                src = iframe.get_attribute("src") or ""
-                driver.switch_to.frame(iframe)
-                
-                driver.execute_script("""
-                    var videos = document.querySelectorAll('video');
-                    videos.forEach(function(v) { 
-                        v.muted = true; 
-                        v.play();
-                        v.setAttribute('autoplay', 'true');
-                    });
-                    
-                    // Click all possible play elements
-                    var selectors = 'button, [class*="play"], .vjs-big-play-button, [aria-label*="play" i], .plyr__control--overlaid, video';
-                    var elements = document.querySelectorAll(selectors);
-                    elements.forEach(function(el) { 
-                        try { 
-                            el.click(); 
-                            var event = new MouseEvent('click', {bubbles: true});
-                            el.dispatchEvent(event);
-                        } catch(e) {} 
-                    });
-                    
-                    // Click center of page
-                    var el = document.elementFromPoint(window.innerWidth/2, window.innerHeight/2);
-                    if (el) {
-                        el.click();
-                        var event = new MouseEvent('click', {bubbles: true});
-                        el.dispatchEvent(event);
-                    }
-                """)
-                
-                # Check inside nested iframes
-                nested_iframes = driver.find_elements(By.TAG_NAME, "iframe")
-                for nested_iframe in nested_iframes[:2]:
-                    try:
-                        driver.switch_to.frame(nested_iframe)
-                        driver.execute_script("""
-                            var videos = document.querySelectorAll('video');
-                            videos.forEach(function(v) { v.muted = true; v.play(); });
-                            var buttons = document.querySelectorAll('button, [class*="play"]');
-                            buttons.forEach(function(b) { b.click(); });
-                        """)
-                        driver.switch_to.parent_frame()
-                    except:
-                        pass
-                
-                driver.switch_to.default_content()
-                time.sleep(0.5)
-            except:
-                try:
-                    driver.switch_to.default_content()
-                except:
-                    pass
-    except:
-        pass
 
-# ───────── STREAM EXTRACTION ─────────
-
-def extract_m3u8(event_info):
+async def extract_m3u8_async(context: BrowserContext, event_info: dict) -> dict | None:
+    """Extract m3u8 stream from event page using Playwright"""
     url = event_info['url']
     partido = event_info['partido']
-
-    drv = None
+    
+    page = None
     try:
-        print(f"  Loading: {url}")
-        drv = init_driver()
+        page = await context.new_page()
         
-        # Capture m3u8 using CDP
-        stream_url = capture_m3u8_via_cdp(drv, url)
+        stream_url = await capture_stream(page, url)
         
         if stream_url:
             print(f"  ✓ Stream captured!")
@@ -399,19 +279,97 @@ def extract_m3u8(event_info):
             }
         else:
             print(f"  ✗ No stream found")
-
+            
     except Exception as e:
         print(f"  Error: {str(e)[:150]}")
     finally:
-        if drv:
-            try:
-                drv.quit()
-            except:
-                pass
-
+        if page:
+            await page.close()
+    
     return None
 
-# ───────── HEADERS FORMAT ─────────
+
+async def process_all_events(events_to_process: list) -> tuple[list, list, int]:
+    """Process all events using a single browser instance"""
+    entries = ["#EXTM3U"]
+    tivimate = ["#EXTM3U"]
+    successful = 0
+    
+    async with async_playwright() as p:
+        # Launch browser with specific args for headless environment
+        browser = await p.chromium.launch(
+            headless=True,
+            args=[
+                '--no-sandbox',
+                '--disable-setuid-sandbox',
+                '--disable-dev-shm-usage',
+                '--disable-gpu',
+                '--disable-web-security',
+                '--ignore-certificate-errors',
+                '--autoplay-policy=no-user-gesture-required',
+                '--mute-audio',
+            ]
+        )
+        
+        context = await browser.new_context(
+            user_agent=DEFAULT_USER_AGENT,
+            viewport={'width': 1920, 'height': 1080},
+            ignore_https_errors=True,
+            bypass_csp=True,
+        )
+        
+        try:
+            for idx, event in enumerate(events_to_process, 1):
+                print(f"\n[{idx}/{len(events_to_process)}] {event['hora']} - {event['partido']}")
+                
+                result = await extract_m3u8_async(context, event)
+                
+                if result:
+                    liga = event['liga']
+                    hora = event['hora']
+                    partido = event['partido']
+                    title = f"{hora} {liga} - {partido}"
+                    
+                    # VLC format
+                    entries.append(f'#EXTINF:-1 group-title="{liga}",{title}')
+                    if result.get("referer"):
+                        entries.append(f'#EXTVLCOPT:http-referrer={result["referer"]}')
+                    if result.get("origin"):
+                        entries.append(f'#EXTVLCOPT:http-origin={result["origin"]}')
+                    if result.get("user_agent"):
+                        entries.append(f'#EXTVLCOPT:http-user-agent={result["user_agent"]}')
+                    entries.append(result["url"])
+                    
+                    # Tivimate format
+                    tivimate.append(f'#EXTINF:-1 group-title="{liga}",{title}')
+                    params = []
+                    if result.get("referer"):
+                        params.append(f"referer={result['referer']}")
+                    if result.get("origin"):
+                        params.append(f"origin={result['origin']}")
+                    if result.get("user_agent"):
+                        params.append(f"user-agent={quote(result['user_agent'])}")
+                    if params:
+                        tivimate.append(f'{result["url"]}|{"|".join(params)}')
+                    else:
+                        tivimate.append(result["url"])
+                    
+                    successful += 1
+                    print(f"  ✓ Added to playlist")
+                else:
+                    print(f"  ✗ No stream found")
+                
+                # Small delay between events
+                await asyncio.sleep(2)
+                
+        finally:
+            await context.close()
+            await browser.close()
+    
+    return entries, tivimate, successful
+
+
+# ───────── HEADERS FORMAT (kept for compatibility) ─────────
 def vlc_headers(r):
     h = []
     if r.get("referer"):
@@ -434,14 +392,16 @@ def tivimate_url(r):
         return r["url"] + "|" + "|".join(params)
     return r["url"]
 
+
 # ───────── MAIN ─────────
-def main():
+async def main_async():
     print("=" * 60)
-    print("ROJADIRECTA STREAM SCRAPER")
+    print("ROJADIRECTA STREAM SCRAPER (Playwright)")
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"Time: {current_time}")
     print("=" * 60)
     
+    # Get events
     all_events = get_roja_events()
     
     if not all_events:
@@ -450,11 +410,14 @@ def main():
     
     print(f"\nTotal Canal 1 events found: {len(all_events)}")
     
+    # Filter excluded leagues
     if EXCLUDED_LEAGUES:
         all_events = [e for e in all_events if not any(x.lower() in e['liga'].lower() for x in EXCLUDED_LEAGUES)]
     
+    # Sort by time
     all_events.sort(key=lambda x: (x['hora'], x['liga']))
     
+    # Remove duplicate matches
     seen_matches = set()
     unique_events = []
     for e in all_events:
@@ -475,38 +438,10 @@ def main():
     for e in events_to_process:
         print(f"  {e['hora']} | {e['liga']}: {e['partido']}")
     
-    entries = ["#EXTM3U"]
-    tivimate = ["#EXTM3U"]
-    successful = 0
+    # Process all events
+    entries, tivimate, successful = await process_all_events(events_to_process)
     
-    for idx, event in enumerate(events_to_process, 1):
-        print(f"\n[{idx}/{len(events_to_process)}] {event['hora']} - {event['partido']}")
-        
-        try:
-            result = extract_m3u8(event)
-            
-            if result:
-                liga = event['liga']
-                hora = event['hora']
-                partido = event['partido']
-                title = f"{hora} {liga} - {partido}"
-                
-                entries.append(f'#EXTINF:-1 group-title="{liga}",{title}')
-                entries += vlc_headers(result)
-                entries.append(result["url"])
-                
-                tivimate.append(f'#EXTINF:-1 group-title="{liga}",{title}')
-                tivimate.append(tivimate_url(result))
-                
-                successful += 1
-                print(f"  ✓ Added to playlist")
-            else:
-                print(f"  ✗ No stream found")
-        except Exception as e:
-            print(f"  ✗ Error: {str(e)[:100]}")
-        
-        time.sleep(2)
-    
+    # Save files
     print(f"\n{'=' * 60}")
     print(f"Results: {successful}/{len(events_to_process)} streams captured")
     
@@ -516,9 +451,15 @@ def main():
         print(f"Files written:")
         print(f"  - {EVENT_FILE} ({len(entries)-1} entries)")
         print(f"  - {TIVIMATE_FILE} ({len(tivimate)-1} entries)")
+        
+        if successful > 0:
+            print(f"\nSample output:")
+            for line in entries[1:6]:
+                print(f"  {line[:120]}")
     except Exception as e:
         print(f"Error writing files: {e}")
     
+    # Git push
     if successful > 0:
         try:
             repo = Repo(REPO_DIR)
@@ -530,6 +471,12 @@ def main():
             print(f"Git error: {e}")
     else:
         print("No streams to push")
+
+
+def main():
+    """Entry point for the script"""
+    asyncio.run(main_async())
+
 
 if __name__ == "__main__":
     main()
