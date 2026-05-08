@@ -3,9 +3,8 @@
 
 import re
 import time
-import os
 import json
-from datetime import datetime, timedelta
+from datetime import datetime
 from pathlib import Path
 from git import Repo
 import requests
@@ -15,10 +14,9 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from urllib.parse import quote, urlparse
+from urllib.parse import quote
 import warnings
+
 warnings.filterwarnings("ignore")
 
 # Disable SSL warnings
@@ -38,10 +36,14 @@ EVENT_FILE = "eventos.m3u8"
 TIVIMATE_FILE = "eventos_tivimate.m3u8"
 
 MAX_EVENTS = 20
-STREAM_TIMEOUT = 35  # Increased timeout
+STREAM_TIMEOUT = 35
 
 # Default user agent
-DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/144.0.0.0 Safari/537.36"
+DEFAULT_USER_AGENT = (
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) "
+    "Chrome/144.0.0.0 Safari/537.36"
+)
 
 EXCLUDED_LEAGUES = [
     #"NBA"
@@ -50,37 +52,171 @@ EXCLUDED_LEAGUES = [
 # ───────── DRIVER ─────────
 def init_driver():
     opts = Options()
+
     opts.add_argument("--headless=new")
     opts.add_argument("--no-sandbox")
     opts.add_argument("--disable-dev-shm-usage")
     opts.add_argument("--disable-gpu")
     opts.add_argument("--window-size=1920,1080")
+
     opts.add_argument("--disable-blink-features=AutomationControlled")
     opts.add_argument("--disable-extensions")
     opts.add_argument("--disable-logging")
     opts.add_argument("--log-level=3")
+
     opts.add_argument("--disable-background-networking")
     opts.add_argument("--disable-sync")
     opts.add_argument("--disable-translate")
     opts.add_argument("--mute-audio")
+
     opts.add_argument("--ignore-certificate-errors")
     opts.add_argument("--ignore-ssl-errors")
     opts.add_argument("--allow-running-insecure-content")
     opts.add_argument("--disable-web-security")
+
     opts.add_argument("--disable-features=VizDisplayCompositor")
+
     opts.add_argument(f"--user-agent={DEFAULT_USER_AGENT}")
-    
-    # Enable performance logging
-    opts.set_capability("goog:loggingPrefs", {"performance": "ALL", "browser": "ALL"})
-    
+
+    # Performance logs
+    opts.set_capability(
+        "goog:loggingPrefs",
+        {
+            "performance": "ALL",
+            "browser": "ALL"
+        }
+    )
+
     try:
         service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=opts)
-        driver.set_page_load_timeout(30)
-        driver.set_script_timeout(30)
-        return driver
     except:
-        return webdriver.Chrome(options=opts)
+        driver = webdriver.Chrome(options=opts)
+
+    driver.set_page_load_timeout(45)
+    driver.set_script_timeout(45)
+
+    return driver
+
+# ───────── HELPERS ─────────
+def normalize(url, base=ROJA_BASE):
+    if not url or url.startswith("#"):
+        return ""
+
+    if url.startswith("//"):
+        return "https:" + url
+
+    if url.startswith("/"):
+        return base + url
+
+    if not url.startswith("http"):
+        return base + "/" + url
+
+    return url
+
+
+def parse_time(time_str):
+    try:
+        now = datetime.now()
+
+        hour, minute = map(int, time_str.split(":"))
+
+        return now.replace(
+            hour=hour,
+            minute=minute,
+            second=0,
+            microsecond=0
+        )
+    except:
+        return None
+
+# ───────── EVENT SCRAPER ─────────
+def get_roja_events():
+    events = []
+
+    try:
+        print(f"Fetching events from: {ROJA_URL}")
+
+        headers = {
+            "User-Agent": DEFAULT_USER_AGENT
+        }
+
+        r = requests.get(
+            ROJA_URL,
+            timeout=20,
+            headers=headers,
+            verify=False
+        )
+
+        soup = BeautifulSoup(r.text, "html.parser")
+
+        menu_items = soup.select("ul.menu > li")
+
+        print(f"Found {len(menu_items)} events on page")
+
+        for li in menu_items:
+
+            t = li.find("span", class_="t")
+
+            if not t:
+                continue
+
+            hora = t.text.strip()
+
+            link = li.find("a", recursive=False)
+
+            if not link:
+                continue
+
+            raw = link.text.strip()
+
+            if hora in raw:
+                raw = raw.replace(hora, "").strip()
+
+            if ":" not in raw:
+                continue
+
+            parts = raw.split(":", 1)
+
+            if len(parts) != 2:
+                continue
+
+            liga = parts[0].strip()
+            partido = parts[1].strip()
+
+            # ONLY Canal 1
+            first_channel = li.select_one(
+                "ul > li.subitem1 > a"
+            )
+
+            if not first_channel:
+                continue
+
+            channel_name = first_channel.text.strip()
+
+            if "Canal 1" not in channel_name:
+                continue
+
+            href = normalize(first_channel.get("href"))
+
+            if not href:
+                continue
+
+            events.append({
+                "liga": liga,
+                "hora": hora,
+                "partido": partido,
+                "channel": channel_name,
+                "url": href,
+                "time_obj": parse_time(hora)
+            })
+
+        print(f"Extracted {len(events)} Canal 1 stream links")
+
+    except Exception as e:
+        print(f"Error scraping: {e}")
+
+    return events
 
 # ───────── DEEP STREAM HELPERS ─────────
 
@@ -98,6 +234,7 @@ BAD_DOMAINS = [
     "gstatic",
 ]
 
+
 def is_valid_m3u8(url):
     if not url:
         return False
@@ -111,6 +248,14 @@ def is_valid_m3u8(url):
     return True
 
 
+def clean_url(url):
+    url = url.replace("\\/", "/")
+    url = url.replace("&amp;", "&")
+    url = url.strip()
+
+    return url
+
+
 def extract_m3u8_from_text(text):
     found = []
 
@@ -120,8 +265,7 @@ def extract_m3u8_from_text(text):
     matches = M3U8_REGEX.findall(text)
 
     for url in matches:
-        url = url.replace("\\/", "/")
-        url = url.strip()
+        url = clean_url(url)
 
         if is_valid_m3u8(url):
             found.append(url)
@@ -141,19 +285,17 @@ def inspect_browser_logs(driver):
 
                 params = msg.get("params", {})
 
-                # request
                 request = params.get("request", {})
                 req_url = request.get("url", "")
 
                 if is_valid_m3u8(req_url):
-                    urls.append(req_url)
+                    urls.append(clean_url(req_url))
 
-                # response
                 response = params.get("response", {})
                 res_url = response.get("url", "")
 
                 if is_valid_m3u8(res_url):
-                    urls.append(res_url)
+                    urls.append(clean_url(res_url))
 
             except:
                 pass
@@ -169,7 +311,11 @@ def inspect_page_source(driver):
 
     try:
         source = driver.page_source
-        urls.extend(extract_m3u8_from_text(source))
+
+        urls.extend(
+            extract_m3u8_from_text(source)
+        )
+
     except:
         pass
 
@@ -185,7 +331,11 @@ def inspect_scripts(driver):
         for script in scripts:
             try:
                 content = script.get_attribute("innerHTML") or ""
-                urls.extend(extract_m3u8_from_text(content))
+
+                urls.extend(
+                    extract_m3u8_from_text(content)
+                )
+
             except:
                 pass
 
@@ -203,14 +353,17 @@ def inspect_dom(driver):
             return document.documentElement.outerHTML;
         """)
 
-        urls.extend(extract_m3u8_from_text(html))
+        urls.extend(
+            extract_m3u8_from_text(html)
+        )
+
     except:
         pass
 
     return list(dict.fromkeys(urls))
 
 
-def inspect_iframes_recursive(driver, depth=0, max_depth=4):
+def inspect_iframes_recursive(driver, depth=0, max_depth=5):
     urls = []
 
     if depth > max_depth:
@@ -224,19 +377,43 @@ def inspect_iframes_recursive(driver, depth=0, max_depth=4):
                 src = iframe.get_attribute("src") or ""
 
                 if src:
-                    print(f"    iframe: {src[:120]}")
+                    print(f"    iframe[{depth}]: {src[:120]}")
 
                 driver.switch_to.frame(iframe)
 
                 time.sleep(2)
 
-                # inspect inside iframe
                 urls.extend(inspect_page_source(driver))
                 urls.extend(inspect_scripts(driver))
                 urls.extend(inspect_dom(driver))
                 urls.extend(inspect_browser_logs(driver))
 
-                # recurse deeper
+                # autoplay inside iframe
+                try:
+                    driver.execute_script("""
+                        var videos = document.querySelectorAll('video');
+
+                        videos.forEach(function(v){
+                            try{
+                                v.muted = true;
+                                v.play();
+                            }catch(e){}
+                        });
+
+                        var els = document.querySelectorAll(
+                            'button, .play, .vjs-big-play-button, [onclick]'
+                        );
+
+                        els.forEach(function(el){
+                            try{
+                                el.click();
+                            }catch(e){}
+                        });
+                    """)
+                except:
+                    pass
+
+                # recursive deeper
                 urls.extend(
                     inspect_iframes_recursive(
                         driver,
@@ -258,12 +435,10 @@ def inspect_iframes_recursive(driver, depth=0, max_depth=4):
 
     return list(dict.fromkeys(urls))
 
-
 # ───────── STREAM EXTRACTION ─────────
-
 def extract_m3u8(event_info):
-    url = event_info['url']
-    partido = event_info['partido']
+
+    url = event_info["url"]
 
     drv = None
 
@@ -274,10 +449,9 @@ def extract_m3u8(event_info):
 
         drv.get(url)
 
-        # allow JS/player loading
         time.sleep(8)
 
-        # autoplay attempt
+        # autoplay
         try:
             drv.execute_script("""
                 var videos = document.querySelectorAll('video');
@@ -310,27 +484,29 @@ def extract_m3u8(event_info):
 
         while time.time() - start < STREAM_TIMEOUT:
 
-            # main page inspection
+            # main page
             found.extend(inspect_browser_logs(drv))
             found.extend(inspect_page_source(drv))
             found.extend(inspect_scripts(drv))
             found.extend(inspect_dom(drv))
 
-            # iframe inspection
-            found.extend(inspect_iframes_recursive(drv))
+            # iframes
+            found.extend(
+                inspect_iframes_recursive(drv)
+            )
 
-            # remove duplicates
+            # deduplicate
             found = list(dict.fromkeys(found))
 
-            # prioritize tokenized URLs
-            prioritized = []
+            # prioritize signed URLs
+            signed = []
 
             for u in found:
                 if "md5=" in u or "expires=" in u:
-                    prioritized.append(u)
+                    signed.append(u)
 
-            if prioritized:
-                stream_url = prioritized[0]
+            if signed:
+                stream_url = signed[0]
 
                 print("  ✓ Signed stream found!")
                 print(f"    URL: {stream_url}")
@@ -342,7 +518,7 @@ def extract_m3u8(event_info):
                     "user_agent": DEFAULT_USER_AGENT,
                 }
 
-            # fallback any m3u8
+            # fallback
             if found:
                 stream_url = found[0]
 
@@ -374,154 +550,246 @@ def extract_m3u8(event_info):
 
 # ───────── HEADERS FORMAT ─────────
 def vlc_headers(r):
-    """Format headers for VLC"""
     h = []
+
     if r.get("referer"):
-        h.append(f'#EXTVLCOPT:http-referrer={r["referer"]}')
+        h.append(
+            f'#EXTVLCOPT:http-referrer={r["referer"]}'
+        )
+
     if r.get("origin"):
-        h.append(f'#EXTVLCOPT:http-origin={r["origin"]}')
+        h.append(
+            f'#EXTVLCOPT:http-origin={r["origin"]}'
+        )
+
     if r.get("user_agent"):
-        h.append(f'#EXTVLCOPT:http-user-agent={r["user_agent"]}')
+        h.append(
+            f'#EXTVLCOPT:http-user-agent={r["user_agent"]}'
+        )
+
     return h
 
+
 def tivimate_url(r):
-    """Format URL with pipe headers for Tivimate"""
     params = []
+
     if r.get("referer"):
-        params.append(f"referer={r['referer']}")
+        params.append(
+            f'referer={r["referer"]}'
+        )
+
     if r.get("origin"):
-        params.append(f"origin={r['origin']}")
+        params.append(
+            f'origin={r["origin"]}'
+        )
+
     if r.get("user_agent"):
-        # URL encode the user agent
-        params.append(f"user-agent={quote(r['user_agent'])}")
-    
+        params.append(
+            f'user-agent={quote(r["user_agent"])}'
+        )
+
     if params:
         return r["url"] + "|" + "|".join(params)
+
     return r["url"]
 
 # ───────── MAIN ─────────
 def main():
+
     print("=" * 60)
     print("ROJADIRECTA STREAM SCRAPER")
-    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+    current_time = datetime.now().strftime(
+        "%Y-%m-%d %H:%M:%S"
+    )
+
     print(f"Time: {current_time}")
     print("=" * 60)
-    
-    # Get ALL events
+
     all_events = get_roja_events()
-    
+
     if not all_events:
         print("No events found!")
         return
-    
+
     print(f"\nTotal Canal 1 events found: {len(all_events)}")
-    
-    # Filter excluded leagues
+
+    # exclude leagues
     if EXCLUDED_LEAGUES:
         all_events = [
             e for e in all_events
-            if not any(x.lower() in e['liga'].lower() for x in EXCLUDED_LEAGUES)
+            if not any(
+                x.lower() in e["liga"].lower()
+                for x in EXCLUDED_LEAGUES
+            )
         ]
-    
-    # Sort by time
-    all_events.sort(key=lambda x: (x['hora'], x['liga']))
-    
-    # Remove duplicate matches (keep first occurrence)
-    seen_matches = set()
+
+    # sort
+    all_events.sort(
+        key=lambda x: (
+            x["hora"],
+            x["liga"]
+        )
+    )
+
+    # dedupe
+    seen = set()
     unique_events = []
-    
+
     for e in all_events:
-        match_key = (e['hora'], e['liga'], e['partido'])
-        if match_key not in seen_matches:
-            seen_matches.add(match_key)
+
+        key = (
+            e["hora"],
+            e["liga"],
+            e["partido"]
+        )
+
+        if key not in seen:
+            seen.add(key)
             unique_events.append(e)
-    
+
     events_to_process = unique_events[:MAX_EVENTS]
-    
+
     print(f"Events to process: {len(events_to_process)}")
-    
+
     if not events_to_process:
-        print("No events to process!")
-        (REPO_DIR / EVENT_FILE).write_text("#EXTM3U\n", encoding='utf-8')
-        (REPO_DIR / TIVIMATE_FILE).write_text("#EXTM3U\n", encoding='utf-8')
+
+        (REPO_DIR / EVENT_FILE).write_text(
+            "#EXTM3U\n",
+            encoding="utf-8"
+        )
+
+        (REPO_DIR / TIVIMATE_FILE).write_text(
+            "#EXTM3U\n",
+            encoding="utf-8"
+        )
+
         return
-    
-    # Show events
+
     for e in events_to_process:
-        print(f"  {e['hora']} | {e['liga']}: {e['partido']}")
-    
-    # Prepare output
+        print(
+            f'  {e["hora"]} | '
+            f'{e["liga"]}: '
+            f'{e["partido"]}'
+        )
+
     entries = ["#EXTM3U"]
     tivimate = ["#EXTM3U"]
-    
+
     successful = 0
-    
-    # Process events
+
     for idx, event in enumerate(events_to_process, 1):
-        print(f"\n[{idx}/{len(events_to_process)}] {event['hora']} - {event['partido']}")
-        
+
+        print(
+            f'\n[{idx}/{len(events_to_process)}] '
+            f'{event["hora"]} - {event["partido"]}'
+        )
+
         try:
             result = extract_m3u8(event)
-            
+
             if result:
-                liga = event['liga']
-                hora = event['hora']
-                partido = event['partido']
-                
+
+                liga = event["liga"]
+                hora = event["hora"]
+                partido = event["partido"]
+
                 title = f"{hora} {liga} - {partido}"
-                
+
                 # VLC
-                entries.append(f'#EXTINF:-1 group-title="{liga}",{title}')
+                entries.append(
+                    f'#EXTINF:-1 group-title="{liga}",{title}'
+                )
+
                 entries += vlc_headers(result)
+
                 entries.append(result["url"])
-                
+
                 # Tivimate
-                tivimate.append(f'#EXTINF:-1 group-title="{liga}",{title}')
-                tivimate.append(tivimate_url(result))
-                
+                tivimate.append(
+                    f'#EXTINF:-1 group-title="{liga}",{title}'
+                )
+
+                tivimate.append(
+                    tivimate_url(result)
+                )
+
                 successful += 1
-                print(f"  ✓ Added to playlist")
+
+                print("  ✓ Added to playlist")
+
             else:
-                print(f"  ✗ No stream found")
-                
+                print("  ✗ No stream found")
+
         except Exception as e:
             print(f"  ✗ Error: {str(e)[:100]}")
-        
+
         time.sleep(3)
-    
-    # Save files
+
+    # save files
     print(f"\n{'=' * 60}")
-    print(f"Results: {successful}/{len(events_to_process)} streams captured")
-    
+    print(
+        f"Results: "
+        f"{successful}/{len(events_to_process)} "
+        f"streams captured"
+    )
+
     try:
-        (REPO_DIR / EVENT_FILE).write_text("\n".join(entries), encoding='utf-8')
-        (REPO_DIR / TIVIMATE_FILE).write_text("\n".join(tivimate), encoding='utf-8')
-        
-        print(f"Files written:")
-        print(f"  - {EVENT_FILE} ({len(entries)-1} entries)")
-        print(f"  - {TIVIMATE_FILE} ({len(tivimate)-1} entries)")
-        
-        # Show sample output
+
+        (REPO_DIR / EVENT_FILE).write_text(
+            "\n".join(entries),
+            encoding="utf-8"
+        )
+
+        (REPO_DIR / TIVIMATE_FILE).write_text(
+            "\n".join(tivimate),
+            encoding="utf-8"
+        )
+
+        print("Files written:")
+        print(
+            f"  - {EVENT_FILE} "
+            f"({len(entries)-1} entries)"
+        )
+
+        print(
+            f"  - {TIVIMATE_FILE} "
+            f"({len(tivimate)-1} entries)"
+        )
+
         if successful > 0:
-            print(f"\nSample output:")
+
+            print("\nSample output:")
+
             for line in entries[1:6]:
                 print(f"  {line[:120]}")
-        
+
     except Exception as e:
         print(f"Error writing files: {e}")
-    
-    # Git push
+
+    # git push
     if successful > 0:
+
         try:
             repo = Repo(REPO_DIR)
+
             repo.git.add(A=True)
-            repo.index.commit(f"Update {current_time} - {successful} streams")
+
+            repo.index.commit(
+                f"Update {current_time} - "
+                f"{successful} streams"
+            )
+
             repo.remote().push()
+
             print("✓ Pushed to git")
+
         except Exception as e:
             print(f"Git error: {e}")
+
     else:
         print("No streams to push")
+
 
 if __name__ == "__main__":
     main()
