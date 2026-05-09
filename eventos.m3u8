@@ -1,21 +1,11 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Peru",15:00 Liga de Peru - UTC Cajamarca vs FC Cajamarca
+#EXTINF:-1 group-title="Premier League",06:30 Premier League - Liverpool vs Chelsea
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/capligamax.m3u8?md5=x7x_N5lP1dW2RZ1q8JhO1Q&expires=1778329950
-#EXTINF:-1 group-title="NBA",18:00 NBA - Philadelphia 76ers (0) vs (2) New York Knicks
+https://cdn5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=YcgtE6tVqbuVwK3L_6vluA&expires=1778334477
+#EXTINF:-1 group-title="LaLiga",07:00 LaLiga - Elche vs Deportivo Alaves
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=5RCtHcH2KSwXOJu8Ichyuw&expires=1778329983
-#EXTINF:-1 group-title="Liga de Ecuador",19:00 Liga de Ecuador - Orense vs Leones
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn12.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=9zWfWlW6-8ObsYFq9kr6pA&expires=1778329991
-#EXTINF:-1 group-title="NBA",20:30 NBA - Minnesota Timberwolves (1) vs (1) San Antonio Spurs
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=BqcvgZgLYpNR5V7xk7lOyA&expires=1778329998
+https://cdn7.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=ZVjIXd2CL2ymkXPP_hsjLg&expires=1778334484
