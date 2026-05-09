@@ -3,9 +3,19 @@
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=YcgtE6tVqbuVwK3L_6vluA&expires=1778334477
+https://cdn3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=1RfF3_Wpn2VKbT4qZ6Vi2Q&expires=1778339356
 #EXTINF:-1 group-title="LaLiga",07:00 LaLiga - Elche vs Deportivo Alaves
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=ZVjIXd2CL2ymkXPP_hsjLg&expires=1778334484
+https://cdn1.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=TEaZ3Vk5H9M4kbKOcaZZ2Q&expires=1778339363
+#EXTINF:-1 group-title="LaLiga 2",07:00 LaLiga 2 - Ceuta vs Castellon
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/capoplus.m3u8?md5=6CJwCt-j5HvDMSoXtKz5gQ&expires=1778339371
+#EXTINF:-1 group-title="Serie A",08:00 Serie A - Cagliari vs Udinese
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=pqO4FLYy-vgQG9Cf2CRSdA&expires=1778339378
