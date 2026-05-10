@@ -3,19 +3,39 @@
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/capocampeones2.m3u8?md5=Lsm-rA1aP3Obb4KqGFOBZg&expires=1778417931
+https://cdn9.zohanayaan.com:1686/hls/capocampeones2.m3u8?md5=POpglv4sKswkl8Aoj6mw1g&expires=1778421394
 #EXTINF:-1 group-title="Serie A",05:30 Serie A - Hellas Verona vs Como
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/capocampeones.m3u8?md5=WvmBk6b7V4Vfz4SzOl1w1w&expires=1778417938
-#EXTINF:-1 group-title="UFC 328",18:00 UFC 328 - Khamzat Chimaev vs Sean Strickland
+https://cdn9.zohanayaan.com:1686/hls/capocampeones.m3u8?md5=cDidWM7id9IAn6XVyF4xkw&expires=1778421401
+#EXTINF:-1 group-title="LaLiga",07:00 LaLiga - Mallorca vs Villarreal
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=uttSdPkQsv8xSq2NU8xuIQ&expires=1778417946
-#EXTINF:-1 group-title="Liga MX",22:15 Liga MX - Cruz Azul vs Atlas
+https://cdn9.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=1VF5bdWQjEwKlBM1PVkR_w&expires=1778421408
+#EXTINF:-1 group-title="LaLiga 2",07:00 LaLiga 2 - Andorra vs Las Palmas
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=thXrX4AWxiavfUANFM5Vvw&expires=1778417953
+https://cdn4.zohanayaan.com:1686/hls/capoplus.m3u8?md5=YkCGFmJGM5Q5K12zajZKYA&expires=1778421415
+#EXTINF:-1 group-title="Premier League",08:00 Premier League - Burnley vs Aston Villa
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=BzFdoVxtKZQO8ioTKfHwBg&expires=1778421423
+#EXTINF:-1 group-title="Premier League",08:00 Premier League - Nottingham Forest vs Newcastle United
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=gd74IZWiKbuHIAn5_BMNpw&expires=1778421430
+#EXTINF:-1 group-title="Premier League",08:00 Premier League - Crystal Palace vs Everton
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=XBthHGQ0K7p_e27OhwMjCQ&expires=1778421437
+#EXTINF:-1 group-title="Serie A",08:00 Serie A - Fiorentina vs Genoa
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=FxOAcz-V5osH9JmYWKwK8A&expires=1778421445
