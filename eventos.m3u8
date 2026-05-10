@@ -1,66 +1,41 @@
 #EXTM3U
-#EXTINF:-1 group-title="LaLiga",09:15 LaLiga - Athletic Club vs Valencia
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=vSemVXKCK25nNCPzII0yLQ&expires=1778442586
-#EXTINF:-1 group-title="LaLiga 2",09:15 LaLiga 2 - Leganes vs Racing Santander
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/capoplus.m3u8?md5=Yp_71ZhGquPot9F1NmpTiA&expires=1778442594
-#EXTINF:-1 group-title="Eredivisie",09:45 Eredivisie - Feyenoord Rotterdam vs AZ Alkmaar
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=yNuhwRljFoTtsAoaEZgcDg&expires=1778442601
-#EXTINF:-1 group-title="Bundesliga",10:30 Bundesliga - Cologne vs Heidenheim 1846
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/capocampeones5.m3u8?md5=0HyW3NJfr0h_26UVUiaXUA&expires=1778442608
-#EXTINF:-1 group-title="Premier League",10:30 Premier League - West Ham United vs Arsenal
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=4fY4dDJGipLhxVq7xLbH1w&expires=1778442616
-#EXTINF:-1 group-title="Serie A",11:00 Serie A - Parma vs AS Roma
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=dfVpY8oEatwGD4_UGHeP8A&expires=1778442623
-#EXTINF:-1 group-title="LaLiga",11:30 LaLiga - Real Oviedo vs Getafe
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=HqJZyXXEfADv4iMs465CTw&expires=1778442630
-#EXTINF:-1 group-title="LaLiga 2",11:30 LaLiga 2 - Cordoba vs Granada
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/capoplus.m3u8?md5=92tCx1j4e6rofMfYm2zW4A&expires=1778442638
-#EXTINF:-1 group-title="LaLiga 2",11:30 LaLiga 2 - Mirandes vs Eibar
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/capoplus2.m3u8?md5=Icf-zKU-J6QR5DTG5g1vUg&expires=1778442645
 #EXTINF:-1 group-title="Liga de Argentina",13:00 Liga de Argentina - Rosario Central vs Independiente
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=_HCPpPKHuuo7FUGGyNMbag&expires=1778442652
+https://cdn5.zohanayaan.com:1686/hls/capespnprem.m3u8?md5=vSJx9LVNOl_nib9qZCRCdw&expires=1778446647
 #EXTINF:-1 group-title="Liga de Peru",13:00 Liga de Peru - Sport Huancayo vs Juan Pablo II
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capligamax.m3u8?md5=FE4DFqpvwKqN2lL-Erprhw&expires=1778442660
+https://cdn3.zohanayaan.com:1686/hls/capligamax.m3u8?md5=tiyuXEEI9-uCjid4SqNwrA&expires=1778446655
 #EXTINF:-1 group-title="Saudi Pro League",13:00 Saudi Pro League - Al Ittihad vs Damac
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=CdS67pB_5UaAtTcQgcOAWA&expires=1778442667
+https://cdn6.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=YdKiIXkB7eZNudsXIRnPXQ&expires=1778446662
 #EXTINF:-1 group-title="Serie A",13:45 Serie A - AC Milan vs Atalanta
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=iXAVUw6VksMoq1jP1I4cIA&expires=1778442675
+https://cdn8.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=Ra6KfuS1aX1D_7k4lpZKzg&expires=1778446669
+#EXTINF:-1 group-title="Brasileirao",14:00 Brasileirao - Atletico Mineiro vs Botafogo
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/winsports.m3u8?md5=YnDs9E9_ECFW6ce4JZplQw&expires=1778446677
+#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Barcelona vs Real Madrid
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn10.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=PF23kmBN2WY5YR2F_dlkXQ&expires=1778446684
+#EXTINF:-1 group-title="Ligue 1",14:00 Ligue 1 - Paris Saint-Germain vs Brest
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=PPTFKbw4b-3ts0WAg7t98A&expires=1778446718
+#EXTINF:-1 group-title="NBA",14:30 NBA - Philadelphia 76ers (0) vs (3) New York Knicks
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn2.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=Ugpoqf26EG7ePl7zPlMJjw&expires=1778446725
