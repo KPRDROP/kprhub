@@ -1,11 +1,23 @@
 #EXTM3U
-#EXTINF:-1 group-title="NBA",19:00 NBA - Detroit Pistons (2) vs (2) Cleveland Cavaliers
-https://cdn10.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=UX340ogINW_7jEfsUuas1g&expires=1778780461|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Argentina",19:30 Liga de Argentina - River Plate vs Gimnasia La Plata
-https://cdn10.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=opZsm0Fj0ZbSH8DdjQqDqg&expires=1778780468|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Colombia",20:15 Liga de Colombia - Atletico Junior vs Once Caldas
-https://cdn9.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=rA8qem_RlW-ubziDC9Wu8Q&expires=1778780476|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="MLS",20:30 MLS - San Diego FC vs Austin FC
-https://cdn2.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=MegaMTk70tWm3PgoZS0eVQ&expires=1778780483|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga MX",21:00 Liga MX - Cruz Azul vs Guadalajara Chivas
-https://cdn3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=ztZKBvto57zBDbB0PnrZYA&expires=1778780490|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",12:00 LaLiga - Valencia vs Rayo Vallecano
+https://cdn7.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=AxbKW-t9ZO3Tqp5sxW9A1w&expires=1778788032|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",13:00 LaLiga - Girona vs Real Sociedad
+https://cdn8.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=VZulTY8eNJv7ZcKyHJXPdA&expires=1778788039|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",14:30 LaLiga - Real Madrid vs Real Oviedo
+https://cdn2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=62L-0HbwVW1q8LF-ZIRI_Q&expires=1778788046|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Copa Do Brazil",16:00 Copa Do Brazil - Chapecoense vs Botafogo
+https://gt7gapsu.39564828.net:8443/hls/22hothctx.m3u8?s=G6WFvrJQRr1Iz5AslI7jzQ&e=1778802455|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Copa Do Brazil",17:00 Copa Do Brazil - Atletico Goianiense vs Atletico Paranaense
+https://zb533.streamingtv339.com/global/espn2mx/index.m3u8?token=7c5199927c48ccc9bf10c8b501446be9bcd2d00c-da-1778825861-1778771861&ip=20.55.86.176|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Copa Do Brazil",17:00 Copa Do Brazil - Confianca vs Gremio
+https://dp744.streamingtv339.com/global/premiere2/index.m3u8?token=1a906fb50ac00e472fe8e52b0902b15e23400994-89-1778825869-1778771869&ip=20.55.86.176|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Copa Do Brazil",17:30 Copa Do Brazil - Corinthians vs Barra FC
+https://gt7gapsu.39564828.net:8443/hls/hojj5703cm0v2.m3u8?s=gUpeE3n9orMm4wJF8XPTEw&e=1778802477|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Copa Do Brazil",18:00 Copa Do Brazil - CRB vs Fortaleza
+https://zb533.streamingtv339.com/global/winplus2/index.m3u8?token=9af6e6db0e23e03a548f88d0aa1cfa392b34249b-7a-1778825883-1778771883&ip=20.55.86.176|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Copa Do Brazil",19:30 Copa Do Brazil - Vitoria vs Flamengo
+https://cdn2.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=bULMMZ_M8Kz8kFzAXeYZlg&expires=1778788091|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga MX",20:00 Liga MX - Pachuca vs Pumas UNAM
+https://cdn1.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=9budOjUh9aZceRnBvrt_rQ&expires=1778788098|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga MX Femenil",22:10 Liga MX Femenil - Monterrey vs America
+https://cdn6.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=tP295khYofn05RiH69DDoA&expires=1778788105|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
