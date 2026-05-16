@@ -1,51 +1,51 @@
 #EXTM3U
-#EXTINF:-1 group-title="FA Cup",09:00 FA Cup - Chelsea vs Manchester City
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=MmNnTYIgG3YwStC4TcPRuA&expires=1778961304
-#EXTINF:-1 group-title="LaLiga 2",09:15 LaLiga 2 - Ceuta vs Malaga
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/capoplus.m3u8?md5=hsU1ReGDfGapaBKfwMaUOA&expires=1778961311
-#EXTINF:-1 group-title="LaLiga 2",09:15 LaLiga 2 - Cultural Leonesa vs Eibar
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/capoplus2.m3u8?md5=V1r8t55mAdtOukpc3EmtHg&expires=1778961318
-#EXTINF:-1 group-title="Saudi Pro League",11:05 Saudi Pro League - Al Hilal vs Neom SC
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=Cn3_jfvYsdxAVh9UWw_CjQ&expires=1778961351
 #EXTINF:-1 group-title="LaLiga 2",11:30 LaLiga 2 - Racing Santander vs Real Valladolid
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/capoplus.m3u8?md5=6JujnqXbgw8VmrZeQc2JAA&expires=1778961359
+https://cdn10.zohanayaan.com:1686/hls/capoplus.m3u8?md5=-CuuyKjIKipNf4RjcgYCCA&expires=1778965192
 #EXTINF:-1 group-title="LaLiga 2",11:30 LaLiga 2 - Almeria vs Las Palmas
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/capoplus2.m3u8?md5=-Q_GT-mjYA1ElsCiGnWWJQ&expires=1778961366
+https://cdn6.zohanayaan.com:1686/hls/capoplus2.m3u8?md5=UDyR7bksjbqNipncPjIVHQ&expires=1778965199
 #EXTINF:-1 group-title="LaLiga 2",11:30 LaLiga 2 - Granada vs Burgos
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capoplus3.m3u8?md5=2ZdEQ0yQBJzTW96k81SMTA&expires=1778961373
+https://cdn9.zohanayaan.com:1686/hls/capoplus3.m3u8?md5=T8g5UhQBPROST-EojhXZTg&expires=1778965206
 #EXTINF:-1 group-title="AFC Champions League Two",12:45 AFC Champions League Two - Al Nassr vs Gamba Osaka
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=uItxQhSpvFFacNJ_MqxIKg&expires=1778961380
+https://cdn10.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=b7uZrtJy0NDWCn1P1eQXEQ&expires=1778965214
 #EXTINF:-1 group-title="Liga de Peru",13:00 Liga de Peru - Melgar vs Sport Huancayo
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/capligamax.m3u8?md5=gxFJJx7024O8o3O5SIaf5A&expires=1778961388
+https://cdn5.zohanayaan.com:1686/hls/capligamax.m3u8?md5=LFH-O178zVTX91o2XwfV5A&expires=1778965221
 #EXTINF:-1 group-title="Saudi Pro League",13:00 Saudi Pro League - Al Ahli vs Al Kholood
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=5X-vzAhu792KkRswpvO3kg&expires=1778961422
+https://cdn4.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=_WVuqyjW88ecAIqem6C88w&expires=1778965254
+#EXTINF:-1 group-title="Copa de la Reina",14:00 Copa de la Reina - Barcelona vs Atletico Madrid
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=bAw9L7jcQgoeIdAJCTL-sw&expires=1778965262
+#EXTINF:-1 group-title="Liga de Ecuador",14:00 Liga de Ecuador - Macara vs Independiente del Valle
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn2.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=UwiEiQmmL_-x1VtLMMpP3A&expires=1778965269
+#EXTINF:-1 group-title="Liga de Peru",15:15 Liga de Peru - Juan Pablo II vs Alianza Atletico
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn9.zohanayaan.com:1686/hls/capligamax.m3u8?md5=LQJ5_ozw7vmOGMkR-zNX4w&expires=1778965276
+#EXTINF:-1 group-title="Copa Colombia",15:30 Copa Colombia - Cucuta Deportivo vs Leones
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=ljprTGjCPG5xUyQL4cZHOw&expires=1778965284
