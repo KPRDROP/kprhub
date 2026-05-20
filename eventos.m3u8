@@ -1,66 +1,86 @@
 #EXTM3U
-#EXTINF:-1 group-title="Copa Libertadores",17:00 Copa Libertadores - Coquimbo Unido vs Deportes Tolima
+#EXTINF:-1 group-title="Saudi Pro League",13:00 Saudi Pro League - Al Khaleej vs Al Ahli
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=sCX6r7SrEJKyLcVp5OGbyA&expires=1779293170
-#EXTINF:-1 group-title="Copa Libertadores",17:00 Copa Libertadores - Fluminense vs Bolivar
+https://cdn9.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=6ItIpWsNGP5RWwlCSO_H7A&expires=1779305950
+#EXTINF:-1 group-title="UEFA Europa League",14:00 UEFA Europa League - Freiburg vs Aston Villa
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=cRDD34T9XS8j4CwvW6-wsA&expires=1779293177
-#EXTINF:-1 group-title="Copa Libertadores",17:00 Copa Libertadores - Rosario Central vs Universidad Central
+https://cdn3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=792vMAgngFTIIV2X7L_4cQ&expires=1779305957
+#EXTINF:-1 group-title="Copa Colombia",15:00 Copa Colombia - Fortaleza vs Orsomarso SC
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=KYk5rI_Cv1ai3Wsol13kCQ&expires=1779293184
-#EXTINF:-1 group-title="Copa Sudamericana",17:00 Copa Sudamericana - Audax Italiano vs Barracas Central
+https://cdn6.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=qN-zx_VdFIGkylIIFggTtw&expires=1779305964
+#EXTINF:-1 group-title="Copa Libertadores",17:00 Copa Libertadores - Nacional (Uru) vs Universitario
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capocampeones5.m3u8?md5=pN_uM_v1BrFfCx_gk0JgrA&expires=1779293192
-#EXTINF:-1 group-title="Copa Sudamericana",17:00 Copa Sudamericana - Montevideo City Torque vs Deportivo Riestra
+https://cdn3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=oVJveT1cSvdPaL4E4_rD1g&expires=1779305972
+#EXTINF:-1 group-title="Copa Sudamericana",17:00 Copa Sudamericana - Santos FC vs San Lorenzo
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=U43d03lGfnqdI1VW036KcQ&expires=1779293199
-#EXTINF:-1 group-title="Copa Libertadores",19:00 Copa Libertadores - Independiente Santa Fe vs Platense
+https://cdn10.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=jyJda_L0_EasR8BDhqddNg&expires=1779305979
+#EXTINF:-1 group-title="Copa Sudamericana",17:00 Copa Sudamericana - Boston River vs O'Higgins
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=x-6DhSFO2jGW7R6BqZcwxw&expires=1779293206
-#EXTINF:-1 group-title="Copa Libertadores",19:00 Copa Libertadores - Always Ready vs Mirassol
+https://cdn2.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=sDP9j_xkFF-z0F9MqjWrPQ&expires=1779305986
+#EXTINF:-1 group-title="Copa Sudamericana",17:00 Copa Sudamericana - Club Olimpia vs Vasco da Gama
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=dv29f3RCLysc8w4VEnOG0A&expires=1779293213
-#EXTINF:-1 group-title="NBA",19:00 NBA - New York Knicks (0) vs (0) Cleveland Cavaliers
+https://cdn6.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=TqoNEBMJFMHsLIweJ2ebpQ&expires=1779305993
+#EXTINF:-1 group-title="Copa Sudamericana",19:00 Copa Sudamericana - Independiente Petrolero vs Botafogo
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=dEHCTECiihGmkz7VYd7Ftw&expires=1779293221
-#EXTINF:-1 group-title="Copa Libertadores",19:30 Copa Libertadores - Boca Juniors vs Cruzeiro
+https://cdn9.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=p3ET6QInpqUWglwWzFuCbA&expires=1779306001
+#EXTINF:-1 group-title="Copa Sudamericana",19:00 Copa Sudamericana - Gremio vs Palestino
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=XkCH5RGCs3omy5vecTwLDQ&expires=1779293228
-#EXTINF:-1 group-title="Copa Sudamericana",19:30 Copa Sudamericana - Santos FC vs Millonarios
+https://cdn9.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=ZwLnneRyGueKd94GYnSBLw&expires=1779306009
+#EXTINF:-1 group-title="Copa Libertadores",19:30 Copa Libertadores - LDU Quito vs Lanus
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=3JGIJ2GDvWaTNI__aKnF_A&expires=1779293235
-#EXTINF:-1 group-title="Copa Libertadores",21:00 Copa Libertadores - Independiente del Valle vs Libertad
+https://cdn1.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=IDHCs0nsgeSbwPAcvrxibQ&expires=1779306016
+#EXTINF:-1 group-title="Copa Libertadores",19:30 Copa Libertadores - Flamengo vs Estudiantes de La Plata
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/capocampeones2.m3u8?md5=TOPowZ2zFXmOQbD8reKEEg&expires=1779293243
-#EXTINF:-1 group-title="Copa Sudamericana",21:00 Copa Sudamericana - America de Cali vs Tigre
+https://cdn6.zohanayaan.com:1686/hls/capocampeones7.m3u8?md5=tE7gMDlS0UTjt-EklN2fEw&expires=1779306024
+#EXTINF:-1 group-title="Copa Libertadores",19:30 Copa Libertadores - Palmeiras vs Cerro Porteño
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=yMwYYY1JpX4s4CrycB1PNA&expires=1779293250
-#EXTINF:-1 group-title="Copa Sudamericana",21:00 Copa Sudamericana - Deportivo Cuenca vs Deportivo Recoleta
+https://cdn9.zohanayaan.com:1686/hls/capocampeones5.m3u8?md5=CJh2AR8YVTjRY35b9y457g&expires=1779306031
+#EXTINF:-1 group-title="Copa Sudamericana",19:30 Copa Sudamericana - River Plate vs Red Bull Bragantino
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/capocampeones4.m3u8?md5=ip2MY8lENKgZQj-6Ws6_nQ&expires=1779293257
+https://cdn6.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=reFXWEQ4kPRs8j2hem2G6Q&expires=1779306039
+#EXTINF:-1 group-title="NBA",19:30 NBA - Oklahoma City Thunder (0) vs (1) San Antonio Spurs
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/capodeportes4.m3u8?md5=JC2Uh_V4ay8banRMkH6__w&expires=1779306046
+#EXTINF:-1 group-title="Copa Colombia",19:40 Copa Colombia - Deportivo Cali vs Alianza Valledupar
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=ZXkCQP-oMhyzUftuHTqbtg&expires=1779306053
+#EXTINF:-1 group-title="Copa Libertadores",21:00 Copa Libertadores - Atletico Junior vs Sporting Cristal
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=VsE_M4MH_ENaGTJ_4aZY8w&expires=1779306061
+#EXTINF:-1 group-title="Copa Libertadores",21:00 Copa Libertadores - Cusco FC vs Independiente Medellin
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn10.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=Uqh1xDWbhMzNpkS3hVg5pQ&expires=1779306068
