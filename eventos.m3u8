@@ -1,6 +1,46 @@
 #EXTM3U
-#EXTINF:-1 group-title="Formula 1",11:30 Formula 1 - Gran Premio de Canada, Practicas Libres
+#EXTINF:-1 group-title="Serie A",13:45 Serie A - Fiorentina vs Atalanta
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capocampeones2.m3u8?md5=QRYIN6Ot4IM_5oXcqrhDxg&expires=1779480869
+https://cdn7.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=LVVPD2lyMlvvuvGuqHx9Sg&expires=1779488341
+#EXTINF:-1 group-title="Copa de Francia",14:00 Copa de Francia - Lens vs Nice
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn2.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=Xo7YvLyf4eHStxyKmLVxYQ&expires=1779488348
+#EXTINF:-1 group-title="Liga de Chile",14:00 Liga de Chile - Everton Viña del Mar vs Coquimbo Unido
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/captntchil.m3u8?md5=mfyZDZf0WhEj55grY4148g&expires=1779488355
+#EXTINF:-1 group-title="Formula 1",14:30 Formula 1 - Gran Premio de Canada, Clasificacion Sprint
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=OrbJP3A_fmLXiPG34vz_kg&expires=1779488363
+#EXTINF:-1 group-title="Liga de Peru",15:00 Liga de Peru - Juan Pablo II vs Melgar
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/capligamax.m3u8?md5=zmE5J9zz39rhcM2m7MfsLw&expires=1779488370
+#EXTINF:-1 group-title="Copa Argentina",18:00 Copa Argentina - Union Santa Fe vs Independiente
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/capotyc.m3u8?md5=Qs0FBQvakxJh2uEmE8F2Wg&expires=1779488404
+#EXTINF:-1 group-title="Liga de Ecuador",19:00 Liga de Ecuador - Independiente del Valle vs Libertad
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=qW9fUNGHM7JXAQwizeckJw&expires=1779488412
+#EXTINF:-1 group-title="NBA",19:30 NBA - San Antonio Spurs (1) vs (1) Oklahoma City Thunder
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=TS2t14oR-07YlNziyYwZRA&expires=1779488418
+#EXTINF:-1 group-title="Amistoso Internacional",21:00 Amistoso Internacional - Mexico vs Ghana
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=Uzy7bGHN9lFa9BPrjYEKWw&expires=1779488425
