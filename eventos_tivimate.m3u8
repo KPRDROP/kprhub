@@ -1,19 +1,7 @@
 #EXTM3U
-#EXTINF:-1 group-title="Serie A",13:45 Serie A - Fiorentina vs Atalanta
-https://cdn7.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=vnHmZQDBoENlYqgHGKwp0g&expires=1779555481|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Copa de Francia",14:00 Copa de Francia - Lens vs Nice
-https://cdn2.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=L7_Bl_seOVPLtQ8aXxBbYg&expires=1779555488|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Chile",14:00 Liga de Chile - Everton Viña del Mar vs Coquimbo Unido
-https://cdn3.zohanayaan.com:1686/hls/captntchil.m3u8?md5=kxK_sRGqlNQAU1bFq_wKBA&expires=1779555496|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Formula 1",14:30 Formula 1 - Gran Premio de Canada, Clasificacion Sprint
-https://cdn4.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=y0qBGzQXvbOPM_Tr62aJaA&expires=1779555503|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Peru",15:00 Liga de Peru - Juan Pablo II vs Melgar
-https://cdn8.zohanayaan.com:1686/hls/capligamax.m3u8?md5=9kLQ980WpQh8qCHH7jRkAw&expires=1779555510|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Copa Argentina",18:00 Copa Argentina - Union Santa Fe vs Independiente
-https://cdn7.zohanayaan.com:1686/hls/capotyc.m3u8?md5=uLA2Dl6ULLnBKYDBkf1g8g&expires=1779555544|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Ecuador",19:00 Liga de Ecuador - Independiente del Valle vs Libertad
-https://cdn4.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=4_C1e4x7rarIS_7OVzLIoA&expires=1779555552|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="NBA",19:30 NBA - San Antonio Spurs (1) vs (1) Oklahoma City Thunder
-https://cdn1.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=NJeqoslu87otPH1zqBOkOA&expires=1779555558|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Amistoso Internacional",21:00 Amistoso Internacional - Mexico vs Ghana
-https://cdn9.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=Y0ZNe2pNb6-Wy-3MVxStnw&expires=1779555566|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Formula 1",11:00 Formula 1 - Gran Premio de Canada, Sprint
+https://cdn5.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=e8Sz7CELP5IBimXlbNXJTA&expires=1779559426|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Serie A",11:00 Serie A - Bologna vs Inter Milan
+https://cdn7.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=8ZuQ8uGlD4B5m_FI8C8Hjw&expires=1779559433|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="UEFA Champions League Femenil",11:00 UEFA Champions League Femenil - Barcelona vs OL Lyonnes
+https://cdn5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=Fotdmk9ywNB_yPQMHpkNDQ&expires=1779559440|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
