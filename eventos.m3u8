@@ -1,16 +1,96 @@
 #EXTM3U
-#EXTINF:-1 group-title="Formula 1",11:00 Formula 1 - Gran Premio de Canada, Sprint
-#EXTVLCOPT:http-referrer=https://capo7play.com/
-#EXTVLCOPT:http-origin=https://capo7play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=e8Sz7CELP5IBimXlbNXJTA&expires=1779559426
 #EXTINF:-1 group-title="Serie A",11:00 Serie A - Bologna vs Inter Milan
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=8ZuQ8uGlD4B5m_FI8C8Hjw&expires=1779559433
+https://cdn1.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=Fn-mEtXt6v3nNFVIfxzWkA&expires=1779564813
 #EXTINF:-1 group-title="UEFA Champions League Femenil",11:00 UEFA Champions League Femenil - Barcelona vs OL Lyonnes
 #EXTVLCOPT:http-referrer=https://capo7play.com/
 #EXTVLCOPT:http-origin=https://capo7play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=Fotdmk9ywNB_yPQMHpkNDQ&expires=1779559440
+https://cdn6.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=6KzOcYt-Prz57PdtoV8Wzw&expires=1779564820
+#EXTINF:-1 group-title="Liga de Chile",11:30 Liga de Chile - Audax Italiano vs Cobresal
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn10.zohanayaan.com:1686/hls/captntchil.m3u8?md5=apXfuB_Q_n3JYgT_6my8JQ&expires=1779564828
+#EXTINF:-1 group-title="Liga de Peru",12:45 Liga de Peru - Deportivo Moquegua vs Universitario
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/capligamax.m3u8?md5=8ZxN5uEtZv_UyN3Y3_kqnA&expires=1779564835
+#EXTINF:-1 group-title="Copa de Alemania",13:00 Copa de Alemania - Bayern Munich vs Stuttgart
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=NvkMLGtdNW8IrlPkCbi3tw&expires=1779564842
+#EXTINF:-1 group-title="MLS",13:45 MLS - St. Louis City vs Austin FC
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn2.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=BTO1wh2x2aKLaocwxOvFaQ&expires=1779564876
+#EXTINF:-1 group-title="Serie A",13:45 Serie A - Lazio Roma vs Pisa
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=G2SVw2j-MgkwJSVnb2Qy4w&expires=1779564883
+#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Real Madrid vs Athletic Club
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=RoJuBhEAQ4zeSYD4L1d5BQ&expires=1779564890
+#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Valencia vs Barcelona
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn10.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=AqYDl_iW9CStLnJXHKvOOw&expires=1779564897
+#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Celta Vigo vs Sevilla
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn9.zohanayaan.com:1686/hls/capocampeones4.m3u8?md5=w29hpSmQecGe43W6CbWcJg&expires=1779564905
+#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Real Betis vs Levante
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/capocampeones5.m3u8?md5=us8e4nrIIULYS-FMOXzh0Q&expires=1779564912
+#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Espanyol vs Real Sociedad
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn9.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=KK7s7gxpzLbVjxK3_F60Vw&expires=1779564919
+#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Girona vs Elche
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/capoplus2.m3u8?md5=lRJJumN-ln5xVp3H0r2XZQ&expires=1779564926
+#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Getafe vs Osasuna
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/capoplus3.m3u8?md5=sCfGtkHC_n9ItSLb8ccKQg&expires=1779564934
+#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Mallorca vs Real Oviedo
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/capoplus4.m3u8?md5=HPnxsbf9xHThSSVlVD4JHA&expires=1779564941
+#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Deportivo Alaves vs Rayo Vallecano
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn10.zohanayaan.com:1686/hls/capoplus5.m3u8?md5=rrnA--522zB_LPTJhA_7Pw&expires=1779564948
+#EXTINF:-1 group-title="Liga de Chile",14:00 Liga de Chile - Ñublense vs Universidad de Concepcion
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/captntchil.m3u8?md5=vYw4oU2nG1Dw4VJCrlwhTw&expires=1779564955
+#EXTINF:-1 group-title="Liga de Ecuador",14:00 Liga de Ecuador - Mushuc Runa vs Guayaquil City
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=309ns6kd8k0eBVpay8PHEg&expires=1779564963
+#EXTINF:-1 group-title="Formula 1",15:00 Formula 1 - Gran Premio de Canada, Clasificacion
+#EXTVLCOPT:http-referrer=https://capo7play.com/
+#EXTVLCOPT:http-origin=https://capo7play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=RJkb6kr629UjSyQSgtQPNw&expires=1779564970
