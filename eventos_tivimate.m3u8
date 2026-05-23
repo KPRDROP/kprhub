@@ -1,39 +1,29 @@
 #EXTM3U
-#EXTINF:-1 group-title="Serie A",11:00 Serie A - Bologna vs Inter Milan
-https://cdn3.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=a69D5HBLhkC1AYuf__oEHQ&expires=1779578089|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="UEFA Champions League Femenil",11:00 UEFA Champions League Femenil - Barcelona vs OL Lyonnes
-https://cdn9.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=EwqnKuVC7HnWgGhQtcVq_w&expires=1779578096|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Chile",11:30 Liga de Chile - Audax Italiano vs Cobresal
-https://cdn9.zohanayaan.com:1686/hls/captntchil.m3u8?md5=v9bQpQRCFfUMyi2Fk-hEkg&expires=1779578103|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Peru",12:45 Liga de Peru - Deportivo Moquegua vs Universitario
-https://cdn9.zohanayaan.com:1686/hls/capligamax.m3u8?md5=udHnYKqEV05qXySg3gf1Cg&expires=1779578111|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Copa de Alemania",13:00 Copa de Alemania - Bayern Munich vs Stuttgart
-https://cdn2.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=7cT0clsZDMczGiNbj4kX-A&expires=1779578118|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="MLS",13:45 MLS - St. Louis City vs Austin FC
-https://cdn5.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=BTQI2CBuiWQ4fyLZsR8MWg&expires=1779578152|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Serie A",13:45 Serie A - Lazio Roma vs Pisa
-https://cdn5.zohanayaan.com:1686/hls/capodeportes6.m3u8?md5=TqkysulPG5-BlmySfLjLqg&expires=1779578159|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Real Madrid vs Athletic Club
-https://cdn8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=n8kNLZI0g_YsqepsDTFpiw&expires=1779578166|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Valencia vs Barcelona
-https://cdn8.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=4ZKlIotZ4klqHtDez6TjKg&expires=1779578174|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Celta Vigo vs Sevilla
-https://cdn2.zohanayaan.com:1686/hls/capocampeones4.m3u8?md5=oXUnX-YweLNsEZgvGTfKcQ&expires=1779578181|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Real Betis vs Levante
-https://cdn9.zohanayaan.com:1686/hls/capocampeones5.m3u8?md5=D3qoQ2JSR4TD7g2ATmlWbg&expires=1779578188|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Espanyol vs Real Sociedad
-https://cdn2.zohanayaan.com:1686/hls/capocampeones6.m3u8?md5=i-5jAsJtkDh6tGqz-TnW7w&expires=1779578196|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Girona vs Elche
-https://cdn4.zohanayaan.com:1686/hls/capoplus2.m3u8?md5=Av57BVWyLa-csEziZvG4hw&expires=1779578203|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Getafe vs Osasuna
-https://cdn1.zohanayaan.com:1686/hls/capoplus3.m3u8?md5=TXZMb2FvQ8m87oIPkGNe6Q&expires=1779578210|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Mallorca vs Real Oviedo
-https://cdn2.zohanayaan.com:1686/hls/capoplus4.m3u8?md5=GP-p8iA40LzCbr2zuToGuw&expires=1779578218|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga",14:00 LaLiga - Deportivo Alaves vs Rayo Vallecano
-https://cdn8.zohanayaan.com:1686/hls/capoplus5.m3u8?md5=YGG5wQsB2EJLpZQtvdtgsQ&expires=1779578225|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Chile",14:00 Liga de Chile - Ñublense vs Universidad de Concepcion
-https://cdn5.zohanayaan.com:1686/hls/captntchil.m3u8?md5=6q8dhzrPnfttsjIZVC20fA&expires=1779578233|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Ecuador",14:00 Liga de Ecuador - Mushuc Runa vs Guayaquil City
-https://cdn7.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=YGp2UqvojUvAv29-JFHS1w&expires=1779578241|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Formula 1",15:00 Formula 1 - Gran Premio de Canada, Clasificacion
-https://cdn10.zohanayaan.com:1686/hls/capodeportes5.m3u8?md5=bYWVBgZU_nlA6Ugh0fi_5A&expires=1779578248|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Brasileirao",15:00 Brasileirao - Sao Paulo vs Botafogo
+https://cdn8.zohanayaan.com:1686/hls/winsports.m3u8?md5=QHLcWVjp8K4QUUfaVeargg&expires=1779581651|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Peru",15:00 Liga de Peru - UTC Cajamarca vs Sport Boys
+https://cdn6.zohanayaan.com:1686/hls/capligamax.m3u8?md5=OSq7zLWjpBT78dDo9LQCyQ&expires=1779581658|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Ecuador",16:30 Liga de Ecuador - Orense vs Universidad Catolica
+https://cdn5.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=MdlO9u4ZUlLgbF3sf3trvA&expires=1779581666|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Uruguay",16:30 Liga de Uruguay - Nacional vs Albion FC
+https://cdn7.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=Nfqqd7ZPmIMm7gXSlpwv_g&expires=1779581672|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Brasileirao",17:00 Brasileirao - Gremio vs Santos FC
+https://cdn3.zohanayaan.com:1686/hls/winsports.m3u8?md5=C2RB5hoyItVqgd4yXMad2A&expires=1779581680|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Peru",17:15 Liga de Peru - Cusco FC vs Atletico Grau
+https://cdn8.zohanayaan.com:1686/hls/capligamax.m3u8?md5=Alpq8WGL0xyJwRgeVUIdNQ&expires=1779581687|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Colombia",18:00 Liga de Colombia - Atletico Nacional vs Deportes Tolima
+https://cdn9.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=Hv6JUKs6nm9yqfLyRRxVXQ&expires=1779581694|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Chile",19:00 Liga de Chile - Union La Calera vs Palestino
+https://cdn8.zohanayaan.com:1686/hls/captntchil.m3u8?md5=LQFzx9nIAYkcORHxPCqHUw&expires=1779581701|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Ecuador",19:00 Liga de Ecuador - Deportivo Cuenca vs LDU Quito
+https://cdn6.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=VQ-ipUTtBP7Z-1ckp9n_Cg&expires=1779581709|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="NBA",19:00 NBA - Cleveland Cavaliers (0) vs (2) New York Knicks
+https://cdn8.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=ASwbBtrnu9GCLt7-XK7b3g&expires=1779581716|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga Expansion MX",20:00 Liga Expansion MX - Tepatitlan FC vs Club Jaiba Brava
+https://cdn9.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=EvPdmK98nG1A9qwL78Kl4g&expires=1779581723|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Colombia",20:30 Liga de Colombia - Atletico Junior vs Independiente Santa Fe
+https://cdn8.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=inzcxz_U0LEB_05Alb_gQg&expires=1779581731|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Peru",20:30 Liga de Peru - Alianza Lima vs Los Chankas
+https://cdn8.zohanayaan.com:1686/hls/capligamax.m3u8?md5=eDQoULREFCVMoz2po22JFg&expires=1779581738|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="MLS",21:30 MLS - LA Galaxy vs Houston Dynamo
+https://1vu989rlt6rp.15072669.net:8443/hls/2twhx.m3u8?s=farRxyLyvg7DOU5CDL6FYA&e=1779596146|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
