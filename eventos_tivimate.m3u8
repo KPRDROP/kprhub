@@ -1,13 +1,9 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Chile",17:00 Liga de Chile - Universidad Catolica vs Colo Colo
-https://cdn4.zohanayaan.com:1686/hls/captntchil.m3u8?md5=fqcF6N25O6eVvCVbKQlV6w&expires=1779753901|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="MLS",18:00 MLS - Inter Miami vs Philadelphia Union
-https://cdn3.zohanayaan.com:1686/hls/capodeportes2.m3u8?md5=90qLBxYTvPAnflFpbgKv_A&expires=1779753908|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Ecuador",18:10 Liga de Ecuador - Delfin vs Barcelona SC
-https://cdn8.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=_RWIg9MKckKtlbsaLpQ_SA&expires=1779753916|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="NBA",19:00 NBA - Oklahoma City Thunder (2) vs (1) San Antonio Spurs
-https://cdn10.zohanayaan.com:1686/hls/capodeportes3.m3u8?md5=8XQDUbGWW9o6wHaYz9MAAg&expires=1779753923|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="Liga MX",20:00 Liga MX - Pumas UNAM vs Cruz Azul
-https://cdn6.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=KKusLCIf2s2FrwcTwyAUnQ&expires=1779753930|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
-#EXTINF:-1 group-title="MLS",20:15 MLS - Los Angeles FC vs Seattle Sounders
-https://pr745.streamingtv339.com/global/mls4/index.m3u8?token=8a4c49e95afff9d11ac83082f1060a76586c4482-db-1779791738-1779737738&ip=172.202.100.50|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Brasileirao",18:00 Brasileirao - Coritiba vs Bahia
+https://doc1.streameasthd.net/global/premiere1/index.m3u8?token=db4fb58144ece0bd36eb930e0e772104a4b25a24-94-1779797308-1779743308&ip=135.232.232.33|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Ecuador",19:00 Liga de Ecuador - Aucas vs Manta FC
+https://cdn3.zohanayaan.com:1686/hls/wsmkmlfeed86.m3u8?md5=y9_qGiNlH_PiZ0btTQKsDA&expires=1779759516|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="NBA",19:00 NBA - Cleveland Cavaliers (0) vs (3) New York Knicks
+https://cdn1.zohanayaan.com:1686/hls/capodeportes.m3u8?md5=qmjaIbNtl8sFvIfDSBs8Lw&expires=1779759522|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
+#EXTINF:-1 group-title="Liga B de Colombia",20:00 Liga B de Colombia - Real Cartagena vs Envigado
+https://cdn9.zohanayaan.com:1686/hls/winsportsplus.m3u8?md5=UzTqEiCvXzrPbsN3bcP50g&expires=1779759529|referer=https://capo7play.com/|origin=https://capo7play.com|user-agent=Mozilla/5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/148.0.0.0%20Safari/537.36
