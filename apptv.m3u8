@@ -1,3 +1,9 @@
 #EXTM3U
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[MLB] Toronto Blue Jays vs Miami Marlins (APPTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[MLB] Toronto Blue Jays vs Miami Marlins (APPTV)
+https://chatgpt.hereisman.net/playlist/51247/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[MLB] Cleveland Guardians vs Washington Nationals (APPTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[MLB] Cleveland Guardians vs Washington Nationals (APPTV)
+https://chatgpt.hereisman.net/playlist/51249/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[MLB] Milwaukee Brewers vs St. Louis Cardinals (APPTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[MLB] Milwaukee Brewers vs St. Louis Cardinals (APPTV)
+https://chatgpt.hereisman.net/playlist/51251/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Conference League] Crystal Palace vs Rayo Vallecano (APPTV)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Conference League] Crystal Palace vs Rayo Vallecano (APPTV)
 https://cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.css|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
