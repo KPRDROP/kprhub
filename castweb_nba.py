@@ -72,7 +72,7 @@ def write_playlist_tivimate(streams: List[Dict], filename: str):
     Writes a second M3U playlist in TiviMate pipe format.
     """
     if not streams:
-        print("⏹️ No streams found to write to TiviMate playlist.")
+        print(" No streams found to write to TiviMate playlist.")
         return
 
     with open(filename, "w", encoding="utf-8") as f:
@@ -102,7 +102,7 @@ def write_playlist_tivimate(streams: List[Dict], filename: str):
 
             f.write(entry["url"] + pipe + "\n")
 
-    print(f"✅ TiviMate playlist saved: {filename}")
+    print(f" TiviMate playlist saved: {filename}")
 # --------------------------------------------------------------------------------
 
 def normalize_game_name(original_name: str) -> str:
@@ -154,7 +154,7 @@ async def find_stream_from_servers_on_page(context: BrowserContext, page_url: st
 
     def handle_request(request):
         if STREAM_PATTERN.search(request.url) and request.url not in candidate_urls:
-            print(f"    ✅ Captured potential stream: {request.url}")
+            print(f"     Captured potential stream: {request.url}")
             candidate_urls.append(request.url)
 
     page.on("request", handle_request)
@@ -168,12 +168,12 @@ async def find_stream_from_servers_on_page(context: BrowserContext, page_url: st
 
         for stream_url in reversed(candidate_urls):
             if await verify_stream_url(session, stream_url, headers=verification_headers):
-                print("      ✔️ Found valid stream on initial page load.")
+                print("       Found valid stream on initial page load.")
                 return stream_url
 
         iframe_locator = page.locator("div#player iframe, div.vplayer iframe, iframe.responsive-iframe").first
         if not await iframe_locator.count():
-            print("    ❌ Could not find the main video iframe on the page.")
+            print("     Could not find the main video iframe on the page.")
             return None
 
         print("    Found player iframe. Looking for links *inside* it.")
@@ -191,7 +191,7 @@ async def find_stream_from_servers_on_page(context: BrowserContext, page_url: st
         for i in range(count):
             link = server_links.nth(i)
             link_text = (await link.inner_text() or "Unknown Link").strip()
-            print(f"    ➡️ Trying Server Link #{i+1}: '{link_text}'")
+            print(f"     Trying Server Link #{i+1}: '{link_text}'")
             
             urls_before_click = set(candidate_urls)
             await link.click()
@@ -207,16 +207,16 @@ async def find_stream_from_servers_on_page(context: BrowserContext, page_url: st
                     print(f"      ✔️ Found valid stream after clicking '{link_text}'.")
                     return stream_url
             
-            print(f"      ❌ No new valid streams found for '{link_text}'.")
+            print(f"       No new valid streams found for '{link_text}'.")
 
     except Exception as e:
-        print(f"    ❌ An error occurred while processing {page_url}: {e}")
+        print(f"     An error occurred while processing {page_url}: {e}")
     finally:
         if not page.is_closed():
             page.remove_listener("request", handle_request)
             await page.close()
             
-    print(f"  ❌ All servers tried for {page_url}, but no valid stream was found.")
+    print(f"   All servers tried for {page_url}, but no valid stream was found.")
     return None
 
 
@@ -237,9 +237,9 @@ async def scrape_league(base_url: str, channel_urls: List[str], group_prefix: st
             print(f"  Waiting for game table '{game_row_selector}' to load...")
             try:
                 await page.wait_for_selector(game_row_selector, timeout=GAME_TABLE_WAIT_TIMEOUT)
-                print("  ✅ Game table found.")
+                print("   Game table found.")
             except Exception as e:
-                print(f"  ❌ Timed out waiting for game table on {base_url}. No games will be scraped. {e}")
+                print(f"   Timed out waiting for game table on {base_url}. No games will be scraped. {e}")
                 await page.close()
                 await browser.close()
                 return []
@@ -272,20 +272,20 @@ async def scrape_league(base_url: str, channel_urls: List[str], group_prefix: st
             print(f"  Found {len(game_links_info)} potential live game links.")
             
             for game in game_links_info:
-                print(f"  ➡️ Processing Game: {normalize_game_name(game['name'])}")
+                print(f"   Processing Game: {normalize_game_name(game['name'])}")
                 stream_url = await find_stream_from_servers_on_page(context, game["url"], base_url, session)
                 if stream_url:
                     found_streams[game["name"]] = (stream_url, "Live Games", game["logo"])
             
             for url in channel_urls:
                 slug = url.strip("/").split("/")[-1]
-                print(f"  ➡️ Processing Channel: {slug}")
+                print(f"   Processing Channel: {slug}")
                 stream_url = await find_stream_from_servers_on_page(context, url, base_url, session)
                 if stream_url:
                     found_streams[slug] = (stream_url, "24/7 Channels", None)
                     
         except Exception as e:
-            print(f"  ❌ A critical error occurred while scraping {group_prefix}: {e}")
+            print(f"   A critical error occurred while scraping {group_prefix}: {e}")
         finally:
             await browser.close()
 
@@ -311,14 +311,14 @@ async def scrape_nba_league(default_logo: str) -> List[Dict]:
                 response.raise_for_status()
                 html_content = await response.text()
         except aiohttp.ClientError as e:
-            print(f"  ❌ Error fetching NBA page: {e}")
+            print(f"   Error fetching NBA page: {e}")
             return []
             
         soup = BeautifulSoup(html_content, 'lxml')
         schedule_table = soup.find('table', class_='NBA_schedule_container')
         
         if not schedule_table:
-            print("  ❌ Could not find NBA schedule table (it may be loaded by JavaScript).")
+            print("   Could not find NBA schedule table (it may be loaded by JavaScript).")
             return []
             
         game_rows = schedule_table.find('tbody').find_all('tr')
@@ -349,13 +349,13 @@ async def scrape_nba_league(default_logo: str) -> List[Dict]:
                             "custom_headers": NBA_CUSTOM_HEADERS,
                         })
             except (AttributeError, IndexError) as e:
-                print(f"  ⚠️ Could not parse an NBA game row, skipping. Error: {e}")
+                print(f"   Could not parse an NBA game row, skipping. Error: {e}")
             
     return results
 
 def write_playlist(streams: List[Dict], filename: str):
     if not streams:
-        print("⏹️ No streams found to write to the playlist.")
+        print(" No streams found to write to the playlist.")
         return
         
     with open(filename, "w", encoding="utf-8") as f:
@@ -381,10 +381,10 @@ def write_playlist(streams: List[Dict], filename: str):
                 
             f.write(entry["url"] + "\n")
             
-    print(f"✅ Playlist with {len(streams)} streams saved successfully to {filename}!")
+    print(f" Playlist with {len(streams)} streams saved successfully to {filename}!")
 
 async def main():
-    print("🚀 Starting Sports Webcast Scraper...")
+    print(" Starting Sports Webcast Scraper...")
     NBA_DEFAULT_LOGO = "https://i.postimg.cc/B6WMnCRT/basketball-sport-logo-minimalist-style-600nw-2484656797.jpg"
     
     tasks = [
