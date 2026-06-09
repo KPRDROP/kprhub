@@ -59,7 +59,7 @@ def decode_base64_url(encoded_url: str) -> str:
     except:
         return encoded_url
 
-# ───────── SCRAPER ─────────
+# ───────── UPDATER ─────────
 def get_roja_events():
     """Extract ONLY Canal 1 links from the new rojadirecta.com.co structure"""
     events = []
@@ -426,7 +426,7 @@ def push_to_github(successful: int):
 # ───────── MAIN ─────────
 async def main_async():
     print("=" * 60)
-    print("ROJADIRECTA STREAM SCRAPER (Playwright)")
+    print("ROJADIRECTA STREAM UPDATER (Playwright)")
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"Time: {current_time}")
     print("=" * 60)
