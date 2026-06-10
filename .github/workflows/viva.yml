@@ -32,7 +32,7 @@ jobs:
 
       - name: Run VIVA updater
         run: |
-          python -c "from viva import main; import asyncio; asyncio.run(main())"
+          python -c "from viva.py import main; import asyncio; asyncio.run(main())"
 
       - name: Commit and push changes
         run: |
