@@ -1,9 +1,3 @@
 #EXTM3U
-#EXTINF:-1 group-title="LaLiga 2",14:00:00 LaLiga 2 - Malaga vs Las Palmas
-https://cdn4.zohanayaan.com:1686/hls/capocampeones2.m3u8?md5=HJQLOOtPRprJ-RPEfxZvxg&expires=1781203925|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Amistoso Internacional",14:45:00 Amistoso Internacional - Portugal vs Nigeria
-https://cdn3.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=Uv9jeyV6UI0b065WVZMeug&expires=1781203910|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Amistoso Internacional",15:00:00 Amistoso Internacional - Inglaterra vs Costa Rica
-https://cdn6.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=3a2dtmTbnJ140743jdWpDA&expires=1781203940|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="NBA",19:30:00 NBA - New York Knicks vs San Antonio Spurs
-https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=-mOi_LMO9xd72xvQPH_bDg&expires=1781203944|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Mundial",14:00:00 Copa Mundial - Mexico vs Sudafrica
+https://cdn10.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=0YPlUi10gtCOuc9Puch_aQ&expires=1781213589|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
