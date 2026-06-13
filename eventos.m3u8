@@ -1,11 +1,11 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Chile",19:00:00 Liga de Chile - Audax Italiano vs La Serena
+#EXTINF:-1 group-title="Copa Mundial",09:00:00 Copa Mundial - Catar vs Suiza
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/captntchil.m3u8?md5=-SAiJVjc6mOwjRNb2CoHQg&expires=1781344911
-#EXTINF:-1 group-title="Copa Mundial",20:00:00 Copa Mundial - Estados Unidos (USA) vs Paraguay
+https://cdn10.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=aACXZBz8VUsRFrve3563gA&expires=1781355384
+#EXTINF:-1 group-title="Liga de Chile",11:30:00 Liga de Chile - Coquimbo Unido VS O'Higgins
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=158NprE3mYtE2n_QqYw0sQ&expires=1781344901
+https://cdn6.zohanayaan.com:1686/hls/captntchil.m3u8?md5=8TFuau4Qz1bQzhUKqU5HTg&expires=1781355409
