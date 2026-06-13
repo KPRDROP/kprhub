@@ -1,16 +1,11 @@
 #EXTM3U
-#EXTINF:-1 group-title="Copa Mundial",14:00:00 Copa Mundial - Catar vs Suiza
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=CHdcos-prWXoSqbjMTqERA&expires=1781385596
-#EXTINF:-1 group-title="Liga de Chile",14:00:00 Liga de Chile - Everton CD vs Palestino
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/captntchil.m3u8?md5=VVu10lyhZ3SoHdcdvfbRtQ&expires=1781385617
 #EXTINF:-1 group-title="Liga de Chile",16:30:00 Liga de Chile - Colo Colo vs Cobresal
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/captntchil.m3u8?md5=VVu10lyhZ3SoHdcdvfbRtQ&expires=1781385617
+https://cdn4.zohanayaan.com:1686/hls/captntchil.m3u8?md5=_xi2dwQXq0SbDVouUYsP3g&expires=1781395231
+#EXTINF:-1 group-title="Copa Mundial",17:00:00 Copa Mundial - Brasil vs Marruecos
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=-fd5LcjaOwrqXi1LCc3d_A&expires=1781395257
