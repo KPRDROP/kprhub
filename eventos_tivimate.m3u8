@@ -1,5 +1,7 @@
 #EXTM3U
-#EXTINF:-1 group-title="Copa Mundial",09:00:00 Copa Mundial - Catar vs Suiza
-https://cdn9.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=RCoIML-3msLgW-E5AwN4ow&expires=1781360661|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Formula 1",09:00:00 Formula 1 - F1 Gran Premio de Cataluña, Clasificacion
+https://cdn8.zohanayaan.com:1686/hls/deportesplus5.m3u8?md5=0cNlECTWJmF-RxFMRQURaQ&expires=1781368644|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
 #EXTINF:-1 group-title="Liga de Chile",11:30:00 Liga de Chile - Coquimbo Unido VS O'Higgins
-https://cdn1.zohanayaan.com:1686/hls/captntchil.m3u8?md5=r8hvG6-ZphpYlhRGokpYkQ&expires=1781360668|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+https://cdn2.zohanayaan.com:1686/hls/captntchil.m3u8?md5=LfVlbABRaqUaa92AkptMYA&expires=1781368652|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Mundial",14:00:00 Copa Mundial - Catar vs Suiza
+https://cdn7.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=0WflK3h-5SqxlDXZdy3wQA&expires=1781368660|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
