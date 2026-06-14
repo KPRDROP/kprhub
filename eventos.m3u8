@@ -1,11 +1,26 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Chile",11:30:00 Liga de Chile - Deportes Concepcion vs Deportes Limache
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/captntchil.m3u8?md5=MU8H6LbXn9laeyiH9haRtw&expires=1781466976
 #EXTINF:-1 group-title="Copa Mundial",12:00:00 Copa Mundial - Alemania vs Curazao
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=Nb3L6P9Rx1DWy6HAyQ9iUw&expires=1781466989
+https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=yzA_NJnysVpFEPoC0zOMFw&expires=1781472249
+#EXTINF:-1 group-title="LaLiga 2",14:00:00 LaLiga 2 - Malaga vs Almeria
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn2.zohanayaan.com:1686/hls/deportesplus6.m3u8?md5=OuIbWpHtkeVMcS-FPQF5BQ&expires=1781472238
+#EXTINF:-1 group-title="Liga de Chile",14:00:00 Liga de Chile - Union La Calera vs Universidad de Chile
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/captntchil.m3u8?md5=RqNZt2mLAKjmIeIkR6HJfw&expires=1781472258
+#EXTINF:-1 group-title="Copa Mundial",15:00:00 Copa Mundial - Paises Bajos vs Japon
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=QgbXBYDOMgkQzYYc7jSfWg&expires=1781472269
+#EXTINF:-1 group-title="Liga de Chile",16:30:00 Liga de Chile - Universidad Catolica vs Universidad de Concepcion
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/captntchil.m3u8?md5=-rquVZmxtv9wd1rvVrezZQ&expires=1781472278
