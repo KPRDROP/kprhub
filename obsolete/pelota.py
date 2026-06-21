@@ -5,7 +5,6 @@ import re
 import time
 import os
 import asyncio
-import base64
 import json
 from datetime import datetime, timedelta
 from pathlib import Path
@@ -22,11 +21,12 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ───────── CONFIG ─────────
-ROJA_URL = "https://rojadirecta.com.co/"
+ROJA_URL = "https://www.rojadirectaenvivo.pl/"
+ROJA_BASE = "https://rojadirectablog.com"
 
 # Forced headers for all streams
-FORCED_REFERER = "https://capo8play.com/"
-FORCED_ORIGIN = "https://capo8play.com"
+FORCED_REFERER = "https://capo7play.com/"
+FORCED_ORIGIN = "https://capo7play.com"
 
 REPO_DIR = Path(__file__).parent
 EVENT_FILE = "eventos.m3u8"
@@ -36,13 +36,23 @@ MAX_EVENTS = 20
 STREAM_TIMEOUT = 30  # seconds per event
 
 # Default user agent
-DEFAULT_USER_AGENT = "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36"
+DEFAULT_USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36"
 
 EXCLUDED_LEAGUES = []
 
 # ───────── HELPERS ─────────
+def normalize(url, base=ROJA_BASE):
+    if not url or url.startswith('#'):
+        return ''
+    if url.startswith("//"):
+        return "https:" + url
+    if url.startswith("/"):
+        return base + url
+    if not url.startswith("http"):
+        return base + "/" + url
+    return url
+
 def parse_time(time_str):
-    """Parse time string to datetime object"""
     try:
         now = datetime.now()
         hour, minute = map(int, time_str.split(':'))
@@ -51,17 +61,9 @@ def parse_time(time_str):
     except:
         return None
 
-def decode_base64_url(encoded_url: str) -> str:
-    """Decode base64 encoded URL from the r= parameter"""
-    try:
-        decoded = base64.b64decode(encoded_url).decode('utf-8')
-        return decoded
-    except:
-        return encoded_url
-
-# ───────── UPDATER ─────────
+# ───────── SCRAPER ─────────
 def get_roja_events():
-    """Extract ONLY Canal 1 links from the new rojadirecta.com.co structure"""
+    """Extract ONLY first channel links (Canal 1) from each event"""
     events = []
     try:
         print(f"Fetching events from: {ROJA_URL}")
@@ -69,78 +71,47 @@ def get_roja_events():
         r = requests.get(ROJA_URL, timeout=15, headers=headers, verify=False)
         soup = BeautifulSoup(r.text, "html.parser")
 
-        # Find all match items
-        menu_items = soup.select("ul#menu > li.toggle-submenu")
+        menu_items = soup.select("ul.menu > li")
         print(f"Found {len(menu_items)} events on page")
         
         for li in menu_items:
-            # Get match info
-            match_item = li.select_one("div.match-item")
-            if not match_item:
+            t = li.find("span", class_="t")
+            if not t:
                 continue
-            
-            info_div = match_item.select_one("div.info")
-            if not info_div:
+            hora = t.text.strip()
+
+            link = li.find("a", recursive=False)
+            if not link:
                 continue
-            
-            # Get time
-            time_tag = info_div.find("time")
-            if not time_tag:
+
+            raw = link.text.strip()
+            if hora in raw:
+                raw = raw.replace(hora, "").strip()
+
+            if ":" not in raw:
                 continue
-            hora = time_tag.get("datetime", "").strip()
-            if not hora:
-                continue
-            
-            # Get event name
-            span = info_div.find("span")
-            if not span:
-                continue
-            event_text = span.text.strip()
-            
-            if ":" not in event_text:
-                continue
-            
-            # Split league and match
-            parts = event_text.split(":", 1)
+
+            parts = raw.split(":", 1)
             if len(parts) != 2:
                 continue
                 
-            liga = parts[0].strip()
-            partido = parts[1].strip()
-            
-            # Get ONLY Canal 1 link from submenu
-            submenu = li.select_one("ul.submenu")
-            if not submenu:
+            liga, partido = parts[0].strip(), parts[1].strip()
+
+            first_channel = li.select_one("ul > li.subitem1 > a")
+            if not first_channel:
                 continue
             
-            # Find the link with "Canal 1" text
-            canal1_link = None
-            for link_li in submenu.select("li"):
-                span_text = link_li.find("span")
-                if span_text and "Canal 1" in span_text.text:
-                    a_tag = link_li.find("a")
-                    if a_tag:
-                        canal1_link = a_tag.get("href", "")
-                        break
+            href = normalize(first_channel.get("href"))
+            channel_name = first_channel.text.strip()
             
-            if not canal1_link:
-                continue
-            
-            # Normalize URL
-            if canal1_link.startswith("/"):
-                canal1_link = "https://rojadirecta.com.co" + canal1_link
-            
-            if canal1_link:
-                event_time = parse_time(hora.replace(":", "").replace("-", ""))
-                if not event_time and ":" in hora:
-                    event_time = parse_time(hora)
-                
+            if href and "Canal 1" in channel_name:
+                event_time = parse_time(hora)
                 events.append({
                     'liga': liga,
                     'hora': hora,
                     'partido': partido,
-                    'channel': 'Canal 1',
-                    'url': canal1_link,
+                    'channel': channel_name,
+                    'url': href,
                     'time_obj': event_time
                 })
 
@@ -154,7 +125,7 @@ def get_roja_events():
 
 async def capture_stream(page: Page, url: str) -> str | None:
     """
-    Load the event page, navigate through iframes,
+    Load the event page, navigate through iframes to capo7play,
     click play, and capture the m3u8 URL from network requests.
     """
     captured_m3u8 = []
@@ -184,7 +155,7 @@ async def capture_stream(page: Page, url: str) -> str | None:
     page.on("response", handle_response)
     
     try:
-        # Load the event page
+        # Load the rojadirectablog event page
         print(f"  Loading: {url}")
         await page.goto(url, wait_until="domcontentloaded", timeout=30000)
         
@@ -192,14 +163,14 @@ async def capture_stream(page: Page, url: str) -> str | None:
         await asyncio.sleep(3)
         
         # Try to click play in all iframes
-        for attempt in range(10):
+        for attempt in range(8):
             try:
                 # Get all frames (including nested ones)
                 frames = page.frames
                 
                 for frame in frames:
                     try:
-                        # Try to click play buttons and start video
+                        # Try to click play buttons
                         await frame.evaluate("""
                             () => {
                                 // Play all videos
@@ -400,19 +371,32 @@ async def process_all_events(events_to_process: list) -> tuple[list, list, int]:
 
 # ───────── GIT PUSH ─────────
 def push_to_github(successful: int):
-    """Push generated files to GitHub repository."""
+    """Push generated files to GitHub repository.
+    When running in GitHub Actions, only writes files (workflow handles staging/push).
+    When running locally, does full commit and push.
+    """
     is_github_actions = os.getenv("GITHUB_ACTIONS") == "true"
     
     if is_github_actions:
+        # In GitHub Actions, just note that files are ready
+        # The workflow step will handle git operations
         print("Running in GitHub Actions - files ready for workflow to push")
     else:
+        # Running locally - do full commit and push
         try:
             repo = Repo(REPO_DIR)
             current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             
+            # Add files using string paths (not Path objects)
             repo.git.add(EVENT_FILE)
             repo.git.add(TIVIMATE_FILE)
             
+            # Add caches if they exist
+            caches_dir = REPO_DIR / "caches"
+            if caches_dir.exists():
+                repo.git.add("caches")
+            
+            # Check if there are changes
             if repo.is_dirty(untracked_files=True):
                 repo.index.commit(f"Update {current_time} - {successful} streams")
                 repo.remote("origin").push()
@@ -426,7 +410,7 @@ def push_to_github(successful: int):
 # ───────── MAIN ─────────
 async def main_async():
     print("=" * 60)
-    print("ROJADIRECTA STREAM UPDATER (Playwright)")
+    print("ROJADIRECTA STREAM SCRAPER (Playwright)")
     current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"Time: {current_time}")
     print("=" * 60)
