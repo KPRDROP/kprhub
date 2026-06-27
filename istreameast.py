@@ -13,8 +13,8 @@ from selectolax.parser import HTMLParser
 
 # ================= CONFIG =================
 
-BASE_URL = "https://istreameast.app"
-OUTPUT_FILE = "istreameast.m3u"
+BASE_URL = "https://thestreameast.top/"
+OUTPUT_FILE = "istreameast.m3u8"
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) "
@@ -224,7 +224,7 @@ async def main():
             )
 
     save_cache(cache)
-    log("istreameast.m3u saved")
+    log("istreameast.m3u8 saved")
 
 
 if __name__ == "__main__":
