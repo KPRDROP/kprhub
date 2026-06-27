@@ -1,16 +1,1 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Chile",16:30:00 Liga de Chile - Recoleta vs Colo Colo
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/capotntchile.m3u8?md5=FXQwGe8GGEH6J24xoHT29w&expires=1782006231
-#EXTINF:-1 group-title="Copa Mundial",19:00:00 Copa Mundial - Ecuador vs Curazao
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=_zIsSOgBW5r5XLHhERMEgQ&expires=1782006234
-#EXTINF:-1 group-title="UFC Fight Night",19:00:00 UFC Fight Night - Manel Kape vs Kyoji Horiguchi
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=XbiHeHoDfMk_If5KY7jolw&expires=1782006243

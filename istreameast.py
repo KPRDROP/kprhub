@@ -13,7 +13,7 @@ from selectolax.parser import HTMLParser
 
 # ================= CONFIG =================
 
-BASE_URL = "https://istreameast.app"
+BASE_URL = "https://thestreameast.top/"
 OUTPUT_FILE = "istreameast.m3u"
 
 USER_AGENT = (
