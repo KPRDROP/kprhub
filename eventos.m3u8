@@ -1,21 +1,26 @@
 #EXTM3U
+#EXTINF:-1 group-title="Formula 1",08:00:00 Formula 1 - F1 Gran Premio de Bélgica, Carrera
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn9.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=uSjJNdMJ3N4S_OkR13BhFQ&expires=1784477848
 #EXTINF:-1 group-title="Liga de Uruguay",08:00:00 Liga de Uruguay - Central Español vs Cerro Largo
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://wp.streamtp.sbs/global/disney2/index.m3u8?token=4711f2a178132e282b8636c785568dd13dc3c29a-5a-1784510060-1784456060&ip=40.76.181.214
+https://khala.skylivehd.com/global/disney1/index.m3u8?ip=172.182.213.3&token=269f3a87b3a464bad75f7f4478688951adeb9dcf-ac-1784515663-1784461663
 #EXTINF:-1 group-title="Liga de Peru",11:00:00 Liga de Peru - Los Chankas vs Sport Boys
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=06AK7WRHd-ZPNah_bY2yIA&expires=1784472268
+https://cdn4.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=qSBp0_I0Z3DpJ6QqlBUumg&expires=1784477870
 #EXTINF:-1 group-title="Liga de Uruguay",11:00:00 Liga de Uruguay - Cerro vs Racing Montevideo
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=-CzYNZZ8SQleEG8IJ0fMsg&expires=1784472275
+https://khala.skylivehd.com/global/disney7/index.m3u8?ip=172.182.213.3&token=ff9c8e4a9b6af4033b5bf4a582b2e1b53a76a656-8b-1784515677-1784461677
 #EXTINF:-1 group-title="Liga de Ecuador",11:45:00 Liga de Ecuador - Técnico Universitario vs Aucas
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=Sn2FqHv1xFNWIeXVHJ0BNA&expires=1784472283
+https://cdn5.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=KttYLJrxcnonMn6D3cOSYw&expires=1784477885
