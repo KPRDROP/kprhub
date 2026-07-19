@@ -1,42 +1,43 @@
-name: Strm Free Updater
+name: StrmFree Playlist Builder
 
 on:
   schedule:
-    # Run every hour
-    - cron: "0 */1 * * *"
-  workflow_dispatch:
+    - cron: '0 */2 * * *'  # Runs every 2 hours
+  workflow_dispatch:       # Allows manual triggering
 
 permissions:
   contents: write
 
 jobs:
-  update:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: '3.10'
 
       - name: Install dependencies
         run: |
-          pip install playwright selectolax httpx[http2] pytz
-          playwright install chromium
+          python -m pip install --upgrade pip
 
-      - name: Run StreamFree scraper
+      - name: Run playlist builder
         env:
-          STRM_FREE_M3U_URL: ${{ secrets.STRM_FREE_M3U_URL }}
+          STRM_FREE_API_URL: ${{ secrets.STRM_FREE_API_URL }}
         run: |
           python strmfree.py
 
-      - name: Commit & push if changed
+      - name: Commit and push changes
+        if: success()
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add strm_free_tivimate.m3u8
-          git diff --cached --quiet || git commit -m "Update StreamFree TiviMate playlist"
-          git push
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add strmfree_tivimate.m3u8
+          git diff --staged --quiet || git commit -m "Update StrmFree playlist - $(date -u '+%Y-%m-%d %H:%M:%S')"
+          git push origin main
