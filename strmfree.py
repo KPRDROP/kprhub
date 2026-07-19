@@ -39,8 +39,8 @@ def fetch_json(url: str) -> dict | None:
 
 def extract_m3u8_from_embed(embed_url: str) -> str | None:
     """
-    Fetch the embed page, extract the m3u8 URL from the iframe's src
-    or from the page's JavaScript/video source.
+    Fetch the embed page and extract the m3u8 URL.
+    Handles both direct iframe sources and JavaScript-loaded streams.
     """
     req = urllib.request.Request(embed_url, headers={"User-Agent": USER_AGENT_RAW})
     try:
@@ -51,15 +51,29 @@ def extract_m3u8_from_embed(embed_url: str) -> str | None:
         return None
 
     # Pattern 1: Look for iframe src that contains the m3u8
-    # Pattern: src="https://streamfree.top/live-cdn/.../index.m3u8?..."
+    # This handles cases where the m3u8 is directly in the iframe's src attribute.
     iframe_pattern = r'src="(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"'
     match = re.search(iframe_pattern, html)
     if match:
         return match.group(1)
 
-    # Pattern 2: Look for the m3u8 URL directly in the page source
+    # Pattern 2: Look for the m3u8 URL in the page's JavaScript or video source.
+    # This handles cases where the m3u8 is loaded dynamically.
     m3u8_pattern = r'(https://streamfree\.top/live-cdn/[^"\s]+\.m3u8[^"\s]*)'
     match = re.search(m3u8_pattern, html)
+    if match:
+        return match.group(1)
+
+    # Pattern 3: Look for a player setup script that might contain the stream URL.
+    # This is a fallback for more complex embedding scenarios.
+    player_pattern = r'player\.setup\s*\(\s*\{[^}]*file:\s*"([^"]+)"[^}]*\}\)'
+    match = re.search(player_pattern, html, re.DOTALL)
+    if match:
+        return match.group(1)
+
+    # Pattern 4: Look for a source URL in a video tag.
+    video_pattern = r'<video[^>]*>.*?<source[^>]+src="([^"]+\.m3u8[^"]*)"'
+    match = re.search(video_pattern, html, re.DOTALL)
     if match:
         return match.group(1)
 
@@ -81,8 +95,15 @@ def process_stream(stream: dict) -> tuple[str, str]:
     if not embed_url:
         return None, None
 
-    print(f"📡 Processing: {name} ({league})")
+    print(f" Processing: {name} ({league})")
     m3u8_url = extract_m3u8_from_embed(embed_url)
+
+    # If the first attempt fails, try again after a short delay
+    # This can help if the page needs time to load dynamic content.
+    if not m3u8_url:
+        print(f" Retrying {name} after delay...")
+        time.sleep(2)
+        m3u8_url = extract_m3u8_from_embed(embed_url)
 
     if not m3u8_url:
         print(f" No m3u8 found for {name}")
@@ -129,14 +150,14 @@ def main():
     output_lines = ["#EXTM3U"]
     processed_count = 0
 
-    # Process each stream (can be parallelized further if needed)
+    # Process each stream sequentially to avoid rate limiting
     for stream in all_streams:
         embed_url, entry = process_stream(stream)
         if entry:
             output_lines.append(entry)
             processed_count += 1
-        # Small delay to avoid hammering the server
-        time.sleep(0.3)
+        # Add a delay between requests to avoid being blocked
+        time.sleep(1)
 
     if processed_count == 0:
         raise RuntimeError("No M3U8 URLs captured")
