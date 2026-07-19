@@ -1,16 +1,21 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Ecuador",11:45:00 Liga de Ecuador - Técnico Universitario vs Aucas
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=FbG7FSVCVQJ_vVbpmzmE1Q&expires=1784507946
 #EXTINF:-1 group-title="Copa Mundial",14:00:00 Copa Mundial - España vs Argentina
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=Gv9CEkeDkRxUBQeQzsyfzA&expires=1784507946
+https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=FMhwxPlHaiT8NOTk56kKeA&expires=1784511811
 #EXTINF:-1 group-title="Liga de Ecuador",16:45:00 Liga de Ecuador - Guayaquil City vs Manta FC
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=qgZm6J37JkugMZ7JIMp0sA&expires=1784507961
+https://cdn8.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=ntOISD35qPOphmnpUSpYjQ&expires=1784511820
+#EXTINF:-1 group-title="Liga de Peru",19:00:00 Liga de Peru - Alianza Lima vs Sport Huancayo
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=ukmn1YCHw4CRrnRlGYkBEw&expires=1784511821
+#EXTINF:-1 group-title="Liga de Ecuador",19:15:00 Liga de Ecuador - Independiente del Valle vs Emelec
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=Hd-FrTIccSOlKvpFhv49dQ&expires=1784511835
