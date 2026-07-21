@@ -1,5 +1,19 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Peru",19:00:00 Liga de Peru - Alianza Lima vs Sport Huancayo
-https://cdn8.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=Qc2nulE9kc5zdwHOX2Nuvw&expires=1784654411|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Ecuador",19:15:00 Liga de Ecuador - Independiente del Valle vs Emelec
-https://cdn8.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=i-0aJcsqHjcmDXSV1-Jebw&expires=1784654418|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Colombia",16:00:00 Copa Colombia - Atlético Nacional vs Tigres FC
+https://cdn3.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=y5n7x6bNMkUIK_d1A7zHXA&expires=1784659866|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Ecuador",16:30:00 Liga de Ecuador - Libertad vs Delfín
+https://cdn4.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=0FFQD7Mwrz9x74FzHzflxA&expires=1784659874|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Sudamericana",17:00:00 Copa Sudamericana - Nacional (Uru) vs Tigre
+https://cdn5.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=T2oxEo4OTbRuYP-VvdBZ4w&expires=1784659881|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Brasileirao",17:30:00 Brasileirao - Atlético Mineiro vs Bahía
+https://cdn6.zohanayaan.com:1686/hls/deportesplus5.m3u8?md5=zZNdZCEK4fc0k0NJgpnRtQ&expires=1784659889|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Ecuador",19:00:00 Liga de Ecuador - Universidad Católica vs Barcelona SC
+https://cdn3.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=EU3YlSRZNAnF5TJ1Q-v6eg&expires=1784659896|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Sudamericana",19:30:00 Copa Sudamericana - Universidad Central vs Santos FC
+https://cdn1.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=39MzvkHfkkGiHCINpLwxlQ&expires=1784659904|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga MX",20:00:00 Liga MX - Cruz Azul vs Puebla
+https://cdn6.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=XlBdqnxpdV0AOohkei0ptg&expires=1784659912|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Colombia",20:30:00 Copa Colombia - América de Cali vs Real Cartagena
+https://cdn5.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=Zw_XHRIKCBvPn1PbpyxooQ&expires=1784659919|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga MX",22:05:00 Liga MX - Toluca vs Pumas UNAM
+https://cdn6.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=0nzSXOqdt1272bybhGIJOQ&expires=1784659927|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
