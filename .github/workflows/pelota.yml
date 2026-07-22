@@ -1,4 +1,4 @@
-name: Pelota Stream Updater
+name: Pelota Updater
 
 on:
   schedule:
@@ -64,7 +64,7 @@ jobs:
           playwright install chromium
           playwright install-deps chromium || true
       
-      - name: Run scraper
+      - name: Run updater
         run: |
           xvfb-run --auto-servernum --server-args='-screen 0 1920x1080x24' python pelota.py
       
