@@ -38,5 +38,5 @@ jobs:
           git config user.email "github-actions@github.com"
 
           git add pxl_vlc.m3u8 pxl_tivimate.m3u8
-          git diff --cached --quiet || git commit -m "📺 Update PixelSports playlists"
+          git diff --cached --quiet || git commit -m "Update PixelSports playlists"
           git push
