@@ -1,51 +1,21 @@
 #EXTM3U
-#EXTINF:-1 group-title="Brasileirao",16:30:00 Brasileirao - Corinthians vs Remo
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=a7BwSujuukrau8zeYd1G0w&expires=1784857551
-#EXTINF:-1 group-title="Brasileirao",16:30:00 Brasileirao - Botafogo vs Vitoria
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://m2.domain990.sbs/global/premiere2/index.m3u8?token=67d2fd9b7b8610ca8f97224477682035f641f301-bc-1784895359-1784841359&ip=13.83.162.1
-#EXTINF:-1 group-title="Liga de Argentina",16:30:00 Liga de Argentina - Belgrano vs Rosario Central
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capotntar.m3u8?md5=Musb4OvDQcL_op87J85u5g&expires=1784857561
-#EXTINF:-1 group-title="Liga de Argentina",16:30:00 Liga de Argentina - Sarmiento vs Argentinos Juniors
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/capoespnpremium.m3u8?md5=Lwqha3iLQOUepimA9G_8OQ&expires=1784857574
-#EXTINF:-1 group-title="Liga de Ecuador",16:30:00 Liga de Ecuador - Leones vs Guayaquil City FC
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=8lvd7mm8IddL7BhKcKwEKA&expires=1784857575
-#EXTINF:-1 group-title="Copa Sudamericana",17:00:00 Copa Sudamericana - Bolívar vs Gremio
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=MvPvkqhLdVmdVqHMLTxr0w&expires=1784857584
 #EXTINF:-1 group-title="Liga de Ecuador",19:00:00 Liga de Ecuador - Emelec vs Mushuc Runa
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=aDu3fdDoa5if_hWtsCPpzA&expires=1784857588
+https://cdn3.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=Ezz9iZQecwiqn-O19K6kyw&expires=1784863077
 #EXTINF:-1 group-title="Copa Sudamericana",19:30:00 Copa Sudamericana - Boca Juniors vs O'Higgins
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=lTJs1d5jWiQX5MnPQmwWsQ&expires=1784857604
+https://cdn3.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=D9wSzIaaVUs5IWCtHttGEg&expires=1784863088
 #EXTINF:-1 group-title="Copa Sudamericana",19:30:00 Copa Sudamericana - Independiente Santa Fe vs Caracas FC
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=ymn5bGCbOUeCURkag3Lc-Q&expires=1784857611
+https://cdn10.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=Zz-_73RcEMiiigpBFq0kNg&expires=1784863093
 #EXTINF:-1 group-title="Liga de Argentina",19:45:00 Liga de Argentina - Defensa y Justicia vs Aldosivi
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/capoespnpremium.m3u8?md5=wWd1L7zjLpfm_JnhTOYavA&expires=1784857610
+https://cdn5.zohanayaan.com:1686/hls/capoespnpremium.m3u8?md5=MGsP7sAMD0-WN5jxd1Aj3g&expires=1784863107
