@@ -1,21 +1,41 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Ecuador",14:00:00 Liga de Ecuador - Mushuc Runa vs Libertad
+#EXTINF:-1 group-title="Copa Sudamericana",17:00:00 Copa Sudamericana - Tigre vs Nacional (Uru)
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=_sewkszsaEunC55KixCX1w&expires=1785248296
-#EXTINF:-1 group-title="Liga de Ecuador",16:30:00 Liga de Ecuador - Guayaquil City vs Universidad Católica
+https://cdn1.zohanayaan.com:1686/hls/deportesplus5.m3u8?md5=25rDbbgpnuctnUYqQ1kNFQ&expires=1785257730
+#EXTINF:-1 group-title="Liga de Argentina",17:00:00 Liga de Argentina - Banfield vs Sarmiento Junín
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=_sewkszsaEunC55KixCX1w&expires=1785248296
-#EXTINF:-1 group-title="Liga de Chile",18:00:00 Liga de Chile - Unión La Calera vs Everton Viña del Mar
+https://cdn6.zohanayaan.com:1686/hls/capotntar.m3u8?md5=g4Eh1AD5K5lS91vEC-zFBg&expires=1785257737
+#EXTINF:-1 group-title="Liga de Argentina",17:00:00 Liga de Argentina - San Lorenzo vs Gimnasia Mendoza
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/capotntchile.m3u8?md5=WUsReJKPl4VCuTdCNTrRrw&expires=1785248310
-#EXTINF:-1 group-title="Liga de Ecuador",19:00:00 Liga de Ecuador - Deportivo Cuenca vs Emelec
+https://cdn6.zohanayaan.com:1686/hls/capoespnpremium.m3u8?md5=e9x9-64j91mldYCFCvLJGA&expires=1785257745
+#EXTINF:-1 group-title="Copa Colombia",18:15:00 Copa Colombia - Deportes Quindio vs Deportes Tolima
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=EdLlYLP1vmNIyGQyLrn9MQ&expires=1785248318
+https://cdn10.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=nRaWO38_bblMTa9d93BSNg&expires=1785257752
+#EXTINF:-1 group-title="Liga de Argentina",19:15:00 Liga de Argentina - Rosario Central vs Racing Club
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/capotntar.m3u8?md5=7wFDq1fvZ1j814D58JXTXg&expires=1785257760
+#EXTINF:-1 group-title="Liga de Argentina",19:15:00 Liga de Argentina - Argentinos Juniors vs Estudiantes de Río Cuarto
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/capoespnpremium.m3u8?md5=PEwMK3OZprTZQrbSkqbGwA&expires=1785257767
+#EXTINF:-1 group-title="Copa Sudamericana",19:30:00 Copa Sudamericana - Santos FC vs Universidad Central
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn10.zohanayaan.com:1686/hls/capodsports.m3u8?md5=8dTBV6GrH-0FeSOK09ad-w&expires=1785257775
+#EXTINF:-1 group-title="Copa Colombia",20:30:00 Copa Colombia - Tigres FC vs Atlético Nacional
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=WR3l7BFTese5NQVdrVUXSw&expires=1785257783
