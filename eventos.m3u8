@@ -1,41 +1,61 @@
 #EXTM3U
-#EXTINF:-1 group-title="Copa Sudamericana",17:00:00 Copa Sudamericana - Tigre vs Nacional (Uru)
+#EXTINF:-1 group-title="Liga de Argentina",12:30:00 Liga de Argentina - Barracas Central vs Aldosivi
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/deportesplus5.m3u8?md5=L29FF3JpT6PysSsb30j5yw&expires=1785335198
-#EXTINF:-1 group-title="Liga de Argentina",17:00:00 Liga de Argentina - Banfield vs Sarmiento Junín
+https://cdn3.zohanayaan.com:1686/hls/capoespnpremium.m3u8?md5=fxIC8bpzMlhG8sJBsnQFKw&expires=1785343062
+#EXTINF:-1 group-title="Amistoso",13:00:00 Amistoso - Real Betis vs Olympique Lyon
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/capotntar.m3u8?md5=XRxk-TSSj1gJ1KO351oLCw&expires=1785335205
-#EXTINF:-1 group-title="Liga de Argentina",17:00:00 Liga de Argentina - San Lorenzo vs Gimnasia Mendoza
+https://p2.domain761.sbs/global/disney2/index.m3u8?token=4f231a0feb5da5fb2255a0a806985a2abc007cf6-68-1785380869-1785326869&ip=145.132.102.102
+#EXTINF:-1 group-title="Liga de Argentina",15:00:00 Liga de Argentina - Defensa y Justicia vs Deportivo Riestra
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/capoespnpremium.m3u8?md5=UVD3bn142Btzwcjm7AXlmQ&expires=1785335213
-#EXTINF:-1 group-title="Copa Colombia",18:15:00 Copa Colombia - Deportes Quindio vs Deportes Tolima
+https://cdn8.zohanayaan.com:1686/hls/capotntar.m3u8?md5=eQu1MWXHccK4Ahf5TVUklA&expires=1785343077
+#EXTINF:-1 group-title="Brasileirao",17:30:00 Brasileirao - Internacional vs Flamengo
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=oi6f4b0tITwwQ23SYoYC1g&expires=1785335222
-#EXTINF:-1 group-title="Liga de Argentina",19:15:00 Liga de Argentina - Rosario Central vs Racing Club
+https://p2.domain761.sbs/global/amazon1/index.m3u8?token=d8d1485720c5578f5a0f99b201b4bb95567ef2fa-d5-1785380947-1785326947&ip=145.132.102.102
+#EXTINF:-1 group-title="Brasileirao",17:30:00 Brasileirao - Mirassol vs Remo
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/capotntar.m3u8?md5=EZ5zWYa_LhQ0pHvAX-LcLQ&expires=1785335231
-#EXTINF:-1 group-title="Liga de Argentina",19:15:00 Liga de Argentina - Argentinos Juniors vs Estudiantes de Río Cuarto
+https://p2.domain761.sbs/global/amazon1/index.m3u8?token=24a3603b699c562f065fe0e0e415ad199ad9fd17-27-1785380955-1785326955&ip=145.132.102.102
+#EXTINF:-1 group-title="Copa Colombia",17:30:00 Copa Colombia - Barranquilla vs Atlético Junior
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/capoespnpremium.m3u8?md5=iLklL0zy_E6p_izAo3BilQ&expires=1785335238
-#EXTINF:-1 group-title="Copa Sudamericana",19:30:00 Copa Sudamericana - Santos FC vs Universidad Central
+https://cdn9.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=xsO92Cj2CKPlPJHwQaoFxA&expires=1785343162
+#EXTINF:-1 group-title="Amistoso",18:30:00 Amistoso - Liverpool vs Wrexham
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capodsports.m3u8?md5=Gw9E5Yb0S0Np1SUqC93XsA&expires=1785335247
-#EXTINF:-1 group-title="Copa Colombia",20:30:00 Copa Colombia - Tigres FC vs Atlético Nacional
+https://cdn3.zohanayaan.com:1686/hls/deportesplus5.m3u8?md5=tlZKXclPj6jbg88akHDWhQ&expires=1785343170
+#EXTINF:-1 group-title="Brasileirao",19:30:00 Brasileirao - Vitoria vs Palmeiras
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=6xZDWu0PsoPy-I5D4Pki0w&expires=1785335247
+https://p1.domain761.sbs/global/amazon1/index.m3u8?token=b2a3ad78d1d0dd79950b6e3592d67722fc0993da-a7-1785380978-1785326978&ip=145.132.102.102
+#EXTINF:-1 group-title="Brasileirao",19:30:00 Brasileirao - Fluminense vs Bahía
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/capowin.m3u8?md5=m7Ya4x6olv8_w4GOXWNZWQ&expires=1785343186
+#EXTINF:-1 group-title="Copa Sudamericana",19:30:00 Copa Sudamericana - Red Bull Bragantino vs Sporting Cristal
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/capodsports.m3u8?md5=sU-1AZf6BBbef2kA5ThvCg&expires=1785343225
+#EXTINF:-1 group-title="Liga de Argentina",19:30:00 Liga de Argentina - Instituto  vs Platense
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/capotntar.m3u8?md5=gQLXUtyTolPH1fO0ThTxBw&expires=1785343233
+#EXTINF:-1 group-title="Copa Colombia",20:00:00 Copa Colombia - Real Cartagena vs América de Cali
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=bNQ6Hg4PpCXP2Ipp-cYUKA&expires=1785343272
