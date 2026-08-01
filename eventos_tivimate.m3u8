@@ -1,21 +1,9 @@
 #EXTM3U
-#EXTINF:-1 group-title="Amistoso",13:45:00 Amistoso - Birmingham City vs Barcelona
-https://cdn3.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=yVXE_mAs7uDwyPLDQEHcNQ&expires=1785576080|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Peru",15:00:00 Liga de Peru - Los Chankas vs Comerciantes Unidos
-https://cdn9.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=ZwzAiRWUdTTU2ZPc46gTUQ&expires=1785576088|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Uruguay",17:00:00 Liga de Uruguay - Montevideo City Torque vs Montevideo Wanderers
-https://p1.domain761.sbs/global/disney1/index.m3u8?token=01732d65ff272c49dee9d52e6136f5ef19b93be3-c3-1785613895-1785559895&ip=20.55.13.161|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="MLS",18:30:00 MLS - New York City FC vs Toronto FC
-https://p1.domain761.sbs/global/mls1/index.m3u8?token=88d87abf8487c3e0bf6df7dd3e47af123c38e17d-7b-1785613903-1785559903&ip=20.55.13.161|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Chile",19:00:00 Liga de Chile - Universidad de Concepción vs Audax Italiano
-https://cdn6.zohanayaan.com:1686/hls/capotntchile.m3u8?md5=Wp8XyPIJfwEoG6B8mKdimw&expires=1785576111|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Ecuador",19:00:00 Liga de Ecuador - Libertad vs Orense
-https://cdn6.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=EongGMWh-0l6bVrLvuQBhA&expires=1785576119|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga MX",20:00:00 Liga MX - Puebla vs Guadalajara Chivas
-https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=oqx4XOdz7kOz_7c-Ps7tXg&expires=1785576126|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Colombia",20:00:00 Liga de Colombia - Fortaleza CEIF vs Deportivo Pereira
-https://cdn1.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=Rv1sHyCInjrkPs_B_Of0SQ&expires=1785576134|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga MX",22:00:00 Liga MX - FC Juárez vs Pumas UNAM
-https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=Gu47TZ5E9mh0YXsVhgc0Dg&expires=1785576142|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga MX",22:00:00 Liga MX - Atlético San Luis vs Tijuana Xolos
-https://cdn5.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=7ILv2UyVUN_1_M7nOuJmfg&expires=1785576151|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Amistoso",04:45:00 Amistoso - Chelsea vs Tottenham Hotspur
+https://cdn4.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=VS2T1Kt5WLxKGGuIdc2fMA&expires=1785583773|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Amistoso",06:30:00 Amistoso - Manchester City vs Inter Milan
+https://cdn6.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=NsrFDp82XpUNQ5ApR5wcOg&expires=1785583788|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Amistoso",08:00:00 Amistoso - Manchester United vs Atlético Madrid
+https://cdn2.zohanayaan.com:1686/hls/deportesplus6.m3u8?md5=aR8aUwvf7qFfi5hsyWcsHA&expires=1785583796|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Uruguay",10:00:00 Liga de Uruguay - Albion FC vs Danubio
+https://p2.domain761.sbs/global/disney1/index.m3u8?token=b0411bb0176839d08d3d5678a201bad78dc2476e-9a-1785621604-1785567604&ip=13.83.98.83|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
