@@ -3,19 +3,49 @@
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=Bg6qvsLxeGebbiL_F-50Vg&expires=1785592676
+https://cdn4.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=mVWp8Lt6zbZKfbkXEO9meA&expires=1785596001
 #EXTINF:-1 group-title="Amistoso",06:30:00 Amistoso - Manchester City vs Inter Milan
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=Bg6qvsLxeGebbiL_F-50Vg&expires=1785592676
+https://cdn4.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=mVWp8Lt6zbZKfbkXEO9meA&expires=1785596001
 #EXTINF:-1 group-title="Amistoso",08:00:00 Amistoso - Manchester United vs Atlético Madrid
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/deportesplus6.m3u8?md5=KfUSTaNW_mFSrnKHTfoHng&expires=1785592692
+https://cdn6.zohanayaan.com:1686/hls/deportesplus6.m3u8?md5=p7cOSKzaz3GsjIX_PZfcbw&expires=1785596017
 #EXTINF:-1 group-title="Liga de Uruguay",10:00:00 Liga de Uruguay - Albion FC vs Danubio
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://p1.domain761.sbs/global/disney1/index.m3u8?token=16a7365145749752031a5f5f1a5aff58921d3a90-68-1785630500-1785576500&ip=172.184.211.81
+https://p1.domain761.sbs/global/disney1/index.m3u8?token=b277de8a7daa1b81c0722730cff7f2d237fdf366-dc-1785633825-1785579825&ip=20.171.20.50
+#EXTINF:-1 group-title="Amistoso",11:00:00 Amistoso - Real Madrid vs Fiorentina
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn10.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=p9sw3wHQgcJPab9RHrcrSg&expires=1785596033
+#EXTINF:-1 group-title="Liga de Chile",11:30:00 Liga de Chile - Cobresal vs Unión La Calera
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/capotntchile.m3u8?md5=45F7AiAkElgLm6pNmgaZYQ&expires=1785596040
+#EXTINF:-1 group-title="UFC Fight Night",12:00:00 UFC Fight Night - Uros Medic vs Daniel Rodríguez
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/deportesplus7.m3u8?md5=ESZmydnPJ-tcq7XpwZvt2g&expires=1785596049
+#EXTINF:-1 group-title="Amistoso",13:00:00 Amistoso - Girona vs Arsenal
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=SmrvF0Suas2uiqWclkfFCw&expires=1785596054
+#EXTINF:-1 group-title="Liga de Peru",13:00:00 Liga de Peru - FC Cajamarca vs Sport Huancayo
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn2.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=VD-OUoAG0f4ZJJerWYwoNA&expires=1785596065
+#EXTINF:-1 group-title="Liga de Uruguay",13:00:00 Liga de Uruguay - Deportivo Maldonado vs Juventud
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://p1.domain761.sbs/global/disney5/index.m3u8?token=f705ab9ab0e66d7ae8813f7d06e26db1602a8556-fd-1785633873-1785579873&ip=20.171.20.50
