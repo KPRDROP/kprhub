@@ -3,29 +3,89 @@
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=D_NiPXzc8_vF0HquKqEmgw&expires=1785712467
+https://cdn6.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=mc8Xc4qTvhot1fvN2SWKSQ&expires=1785716124
 #EXTINF:-1 group-title="Liga de Argentina",15:00:00 Liga de Argentina - Newell's Old Boys vs Boca Juniors
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=rz2wEW3V2PhAHNj-gwx6jQ&expires=1785712468
+https://cdn10.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=a9zTpnwEqOPCKBSUuqhmzA&expires=1785716129
 #EXTINF:-1 group-title="Liga de Ecuador",15:30:00 Liga de Ecuador - Macará vs Guayaquil City
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=xHCmI0UPscHhc_CqU3b4Nw&expires=1785712485
+https://cdn5.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=kpW02Q7oLmHGgazDP3WMhQ&expires=1785716140
 #EXTINF:-1 group-title="Liga de Peru",15:30:00 Liga de Peru - Deportivo Moquegua vs Melgar
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=O1dthnMblAST3JhW4-Sllw&expires=1785712493
+https://cdn4.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=fsiQUxGlanQNc7GkyNKqrQ&expires=1785716141
 #EXTINF:-1 group-title="Liga de Colombia",15:45:00 Liga de Colombia - Jaguares de Córdoba vs Atlético Nacional
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=xeYdX_NeBYrVDJj6mzuyAA&expires=1785712495
+https://cdn7.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=eBeQp3xfXu7umz5v8rg1iw&expires=1785716150
 #EXTINF:-1 group-title="Copa Do Brazil",16:00:00 Copa Do Brazil - Mirassol vs Gremio
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://p2.domain761.sbs/global/amazon1/index.m3u8?token=2f87d38fa1b0473a1e4b18017f780fe63caf7377-a3-1785750309-1785696309&ip=135.119.239.34
+https://p1.domain761.sbs/global/amazon1/index.m3u8?token=5579ef015924ddde50fd5962c884a67fa2901c2d-a3-1785753963-1785699963&ip=13.83.161.19
+#EXTINF:-1 group-title="Copa Do Brazil",16:30:00 Copa Do Brazil - Cruzeiro vs Chapecoense
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://p1.domain761.sbs/global/premiere1/index.m3u8?token=23376ebdf63977d5d14e0e59bbcb2c3d3a7c2361-7b-1785753970-1785699970&ip=13.83.161.19
+#EXTINF:-1 group-title="Liga de Chile",16:30:00 Liga de Chile - Universidad de Chile vs Huachipato
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/capotntchile.m3u8?md5=7it6mAzCNPy3gH8e4WLwjQ&expires=1785716178
+#EXTINF:-1 group-title="Liga de Uruguay",16:30:00 Liga de Uruguay - Nacional vs Progreso
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://p2.domain761.sbs/global/disney4/index.m3u8?token=d85a248a44c3ae401c1912986fb53c8878f8e2a4-96-1785753986-1785699986&ip=13.83.161.19
+#EXTINF:-1 group-title="Liga de Argentina",17:15:00 Liga de Argentina - River Plate vs Rosario Central
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=2RgoXS5yANam_M2LM_KrDA&expires=1785716189
+#EXTINF:-1 group-title="Copa Do Brazil",17:30:00 Copa Do Brazil - Internacional vs Cruzeiro
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/capodsports.m3u8?md5=JBEruiPGHQOZKXpC2w5Fmg&expires=1785716202
+#EXTINF:-1 group-title="Liga de Colombia",17:45:00 Liga de Colombia - América de Cali vs Boyacá Chicó
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=OCucUwKgV7skEfSMWbq3aA&expires=1785716201
+#EXTINF:-1 group-title="Liga MX",18:00:00 Liga MX - América vs Santos Laguna
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=ydS7c3BCHPhPHZaLhGOmDA&expires=1785716217
+#EXTINF:-1 group-title="Liga de Ecuador",18:10:00 Liga de Ecuador - Leones vs Barcelona SC
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=Lna_vPylwkF2kEfwLK4zrw&expires=1785716220
+#EXTINF:-1 group-title="Liga de Peru",18:30:00 Liga de Peru - Cienciano del Cusco vs Universitario
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=SxG2MUB_aCVGHrc4tJj5Eg&expires=1785716231
+#EXTINF:-1 group-title="Liga de Argentina",19:30:00 Liga de Argentina - Lanús vs Instituto (Córdoba)
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/capotntar.m3u8?md5=jAgXyTSJu8ZurqHahluXIA&expires=1785716237
+#EXTINF:-1 group-title="Liga de Colombia",20:00:00 Liga de Colombia - Independiente Santa Fe vs Once Caldas
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=2ayfd_KuWriaEMdzGOFLcw&expires=1785716251
+#EXTINF:-1 group-title="Liga MX",20:05:00 Liga MX - Toluca vs Necaxa
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=vJb6N33EMniNN1BK1mheQA&expires=1785716262
