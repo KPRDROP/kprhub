@@ -1,11 +1,16 @@
 #EXTM3U
-#EXTINF:-1 group-title="Amistoso",06:00:00 Amistoso - Juventus Turín vs Inter Milan
+#EXTINF:-1 group-title="Amistoso",12:00:00 Amistoso - Ferencvaros vs Real Madrid
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/capodsports.m3u8?md5=j7h9Vh_G4hZh25gGe6ntTw&expires=1786215510
-#EXTINF:-1 group-title="Amistoso",07:00:00 Amistoso - Chelsea vs AC Milan
+https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=6ZtlyECId7GI8d5pibo-GA&expires=1786217036
+#EXTINF:-1 group-title="Amistoso",13:00:00 Amistoso - Real Betis vs Bournemouth
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=-xlpfo6NS-JSxRC_a_hAUw&expires=1786215510
+https://cdn10.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=LJc_Npy0GiXaFad-ue98-w&expires=1786217049
+#EXTINF:-1 group-title="Amistoso",14:00:00 Amistoso - Barcelona vs Udinese / Nottingham Fores
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/deportesplus5.m3u8?md5=NaJeMsTa4fZYsSW5fuzrzw&expires=1786217057
