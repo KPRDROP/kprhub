@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import asyncio
 import re
 from urllib.parse import urljoin, quote_plus
@@ -11,9 +10,7 @@ from playwright.async_api import (
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 # ============================================================
-
 # CONFIG
-
 # ============================================================
 
 USER_AGENT = (
@@ -45,18 +42,14 @@ TEAM_DELAY_SECONDS = 1.0
 MAX_CONCURRENT = 4
 
 # ============================================================
-
 # LOGGING
-
 # ============================================================
 
 def log(*args):
     print(*args, flush=True)
 
 # ============================================================
-
 # HELPERS
-
 # ============================================================
 
 def clean_text(value: str) -> str:
@@ -123,9 +116,7 @@ def looks_like_stream(url: str) -> bool:
     return any(x in lowered for x in stream_hosts)
 
 # ============================================================
-
 # HOMEPAGE EVENT DISCOVERY
-
 # ============================================================
 
 async def fetch_events_via_playwright(playwright):
@@ -432,9 +423,7 @@ async def fetch_events_via_playwright(playwright):
     return list(events.values())
 
 # ============================================================
-
 # M3U8 EXTRACTION
-
 # ============================================================
 
 async def capture_m3u8_from_page(
@@ -1169,9 +1158,7 @@ def write_playlists(entries):
     )
 
 # ============================================================
-
 # PROCESS ONE TEAM
-
 # ============================================================
 
 async def process_event(
@@ -1217,9 +1204,7 @@ async def process_event(
         return None
 
 # ============================================================
-
 # MAIN
-
 # ============================================================
 
 async def main():
@@ -1348,9 +1333,7 @@ async def main():
         )
 
 # ============================================================
-
 # ENTRY POINT
-
 # ============================================================
 
 if __name__ == "__main__":
