@@ -6,7 +6,7 @@ import base64
 from urllib.parse import urljoin, quote_plus
 
 from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
-from selectolax.parser import HTMLParser
+from selectolax.lexbor import LexborHTMLParser as HTMLParser
 
 # -------------------------------------------------
 USER_AGENT = (
