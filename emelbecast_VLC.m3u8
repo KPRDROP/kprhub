@@ -1,13 +1,13 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Athletics vs Red Sox" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Oakland-Athletics.svg" group-title="MLB TEAM GAME",Athletics vs Red Sox
+#EXTINF:-1 tvg-chno="1" tvg-id="MLB.Baseball.Dummy.us" tvg-name="Detroit Tigers" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Detroit-Tigers.svg" group-title="MLB TEAM GAME",Detroit Tigers
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://webcast-origin.b-cdn.net/bcdn_token=3Hle2Ap2RCM56gUXb_QI_lSLzA2rqa9gG6AZBI3WYrA&token_path=%2Fplay%2FAtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhFiJlbd6ytge2-CGnrhvukE%2F&expires=1786260576/play/AtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhFiJlbd6ytge2-CGnrhvukE/120.m3u8
+https://webcast-origin.b-cdn.net/bcdn_token=6h1OJIdx0G039hjN7MM9Q3W3TSHXpKx7UIkRWF9sFgE&token_path=%2Fplay%2FAtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhHAQgLZzD41Qfp9-i-sFQbF%2F&expires=1786408721/play/AtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhHAQgLZzD41Qfp9-i-sFQbF/122.m3u8
 
-#EXTINF:-1 tvg-id="MLB.Baseball.Dummy.us" tvg-name="Dodgers vs Diamondbacks" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-Los-Angeles-Dodgers.svg" group-title="MLB TEAM GAME",Dodgers vs Diamondbacks
+#EXTINF:-1 tvg-chno="2" tvg-id="MLB.Baseball.Dummy.us" tvg-name="METS vs BRAVES" tvg-logo="https://mlbwebcast.com/wp-content/uploads/2023/02/Logo-New-York-Mets.svg" group-title="MLB TEAM GAME",METS vs BRAVES
 #EXTVLCOPT:http-referrer=https://mlbwebcast.com/
 #EXTVLCOPT:http-origin=https://mlbwebcast.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:146.0) Gecko/20100101 Firefox/146.0
-https://webcast-origin.b-cdn.net/bcdn_token=zBQ6olh6ljrwrVGAgpW4AluMgmsRcsBYFFXjTzjn2ho&token_path=%2Fplay%2FAtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhGBXflkCKfjRK07h-uFRsfC%2F&expires=1786261291/play/AtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhGBXflkCKfjRK07h-uFRsfC/134.m3u8
+https://webcast-origin.b-cdn.net/bcdn_token=Gw6BYx93vDeWVaqxN1kMMrRdKyjyiqnX_1zbuBCQO14&token_path=%2Fplay%2FAtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhHhPK4eaZswKqByclRPxZJv%2F&expires=1786408557/play/AtZ1azAZy6Iwi58XP64ADLesJLryilHoIej8sPT4yhHhPK4eaZswKqByclRPxZJv/129.m3u8
 
