@@ -1,9 +1,25 @@
 #EXTM3U
-#EXTINF:-1 group-title="Amistoso",11:15:00 Amistoso - Newcastle United vs Everton
-https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=MLSd2kY5B76biQ3doRHt0Q&expires=1786576369|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Amistoso",13:30:00 Amistoso - Leeds United vs Manchester United
-https://cdn5.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=KANK9yu_3W9nZw4MpJvyUg&expires=1786576376|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Amistoso",13:30:00 Amistoso - Arsenal vs Como
-https://cdn7.zohanayaan.com:1686/hls/capoespn2.m3u8?md5=7XTmTR1IL4EJu5eoMORa4Q&expires=1786576384|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Supercopa de la UEFA",14:00:00 Supercopa de la UEFA - Paris Saint-Germain vs Aston Villa
-https://cdn6.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=niyWvNdjErKyf1C1NpaFrA&expires=1786576386|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Libertadores",17:00:00 Copa Libertadores - Palmeiras vs Cerro Porteño
+https://cdn4.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=nfiVe5yHJaqMnS6GnswKTA&expires=1786579677|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Libertadores",17:00:00 Copa Libertadores - Platense vs Coquimbo Unido
+https://cdn7.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=gQjd_z1W37g63GTaXUy8zA&expires=1786579681|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Sudamericana",17:00:00 Copa Sudamericana - Tigre vs Montevideo City Torque
+https://cdn5.zohanayaan.com:1686/hls/deportesplus6.m3u8?md5=xcqf6RrNG7QwhiIkUFv9Hg&expires=1786579689|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Sudamericana",17:00:00 Copa Sudamericana - Bolívar vs Sao Paulo
+https://cdn7.zohanayaan.com:1686/hls/capoespn2.m3u8?md5=pAVgjHM93HgHLhOIEdBOwA&expires=1786579699|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Leagues Cup",18:30:00 Leagues Cup - Inter Miami vs León
+https://cdn10.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=at_ak9ZXYnNidYFIUvjvHg&expires=1786579707|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Leagues Cup",18:30:00 Leagues Cup - Orlando City SC vs Atlético San Luis
+https://p1.domain761.sbs/global/mls2/index.m3u8?token=5c6de59bc4961b7d0a83fd71138e866515b84653-7d-1786617514-1786563514&ip=20.55.223.209|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Leagues Cup",19:00:00 Leagues Cup - Monterrey Rayados vs Nashville SC
+https://cdn1.zohanayaan.com:1686/hls/capotudn.m3u8?md5=I_-m8Ly4BzBobpyvK42ABQ&expires=1786579722|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Libertadores",19:30:00 Copa Libertadores - Cruzeiro vs Platense
+https://cdn8.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=yzGNNjX_6n1egB6ybeid8w&expires=1786579729|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Leagues Cup",21:00:00 Leagues Cup - Toluca vs FC Dallas
+https://cdn2.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=Q2vVCWgqBvbl_HmIS8HpZw&expires=1786579737|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Leagues Cup",21:15:00 Leagues Cup - San Diego FC vs Puebla
+https://p2.domain761.sbs/global/mls5/index.m3u8?token=e88899fc7670a0bbad780f4013b61264e330ef37-4a-1786617544-1786563544&ip=20.55.223.209|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Leagues Cup",21:30:00 Leagues Cup - Seattle Sounders FC s Guadalajara Chivas
+https://cdn1.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=wt-ni7cjkxlwyhasktgFXg&expires=1786579748|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Leagues Cup",21:30:00 Leagues Cup - Los Ángeles FC vs Querétaro
+https://p1.domain761.sbs/global/mls7/index.m3u8?token=2e04970259230692f47512ecf06028d57ceea671-d8-1786617559-1786563559&ip=20.55.223.209|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
