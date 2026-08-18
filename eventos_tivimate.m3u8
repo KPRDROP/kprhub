@@ -1,15 +1,9 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Argentina",17:15:00 Liga de Argentina - Vélez Sarsfield vs Defensa y Justicia
-https://cdn3.zohanayaan.com:1686/hls/capotntar.m3u8?md5=35DuoS9TjmzSIPnRQrFC3w&expires=1787080557|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Brasileirao",18:00:00 Brasileirao - Internacional vs Remo
-https://p1.domain761.sbs/global/premiere1/index.m3u8?token=733c031efbf1a3074c976398b9d2cffa204b198d-9b-1787118365-1787064365&ip=134.33.70.56|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Ecuador",19:00:00 Liga de Ecuador - Macará vs Universidad Católica (Quito)
-https://cdn6.zohanayaan.com:1686/hls/deportesplus4.m3u8?md5=qegPz4Ivkyc23YQqyUtHww&expires=1787080572|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Argentina",19:30:00 Liga de Argentina - Gimnasia (Mendoza) vs Talleres (Córdoba)
-https://cdn2.zohanayaan.com:1686/hls/capoespnpremium.m3u8?md5=lsKidIoTBU2V1WebvRar0g&expires=1787080580|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Chile",19:30:00 Liga de Chile - Palestino vs Huachipato
-https://cdn1.zohanayaan.com:1686/hls/capotntchile.m3u8?md5=_bHQ-hch8vBvtjtcqFZMqA&expires=1787080587|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga MX",20:00:00 Liga MX - Necaxa vs León
-https://cdn3.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=PtyBBK8SF4DUmSMjZdnRDw&expires=1787080595|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga MX",22:00:00 Liga MX - Pachuca vs Puebla
-https://cdn3.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=PtyBBK8SF4DUmSMjZdnRDw&expires=1787080595|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="UEFA Champions League",14:00:00 UEFA Champions League - Fenerbahce vs Olympique Lyon
+https://cdn1.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=XqLw0XXOMFk3EKeqY-KzaA&expires=1787084356|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="UEFA Champions League",14:00:00 UEFA Champions League - Levski Sofia vs AEK Athens
+https://cdn5.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=hhpoyHSybDYOHb4vNAYZ_Q&expires=1787084363|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="UEFA Champions League",14:00:00 UEFA Champions League - Dinamo Zagreb vs Viking FK
+https://cdn6.zohanayaan.com:1686/hls/capoespn5.m3u8?md5=PWgBchVbkD9dE5vx72E3Rg&expires=1787084370|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Argentina",15:00:00 Copa Argentina - Deportivo Riestra vs Gimnasia La Plata
+https://cdn7.zohanayaan.com:1686/hls/capotyc.m3u8?md5=Ta7UG9cgXPDj0uK2A8-opA&expires=1787084378|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
