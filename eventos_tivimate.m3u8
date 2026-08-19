@@ -1,15 +1,13 @@
 #EXTM3U
-#EXTINF:-1 group-title="Copa Argentina",15:00:00 Copa Argentina - Deportivo Riestra vs Gimnasia La Plata
-https://cdn8.zohanayaan.com:1686/hls/capotyc.m3u8?md5=zsXUNxB12iTf0rPY_EpRmw&expires=1787168800|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa Libertadores",17:00:00 Copa Libertadores - Independiente Rivadavia vs Fluminense
-https://cdn6.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=mN3KZYx0Y0KNTdP_Q6PWxw&expires=1787168807|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa Sudamericana",17:00:00 Copa Sudamericana - Deportivo Recoleta vs Boca Juniors
-https://cdn7.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=5MfMr4ec9xR8jO-ln9wNXw&expires=1787168811|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa Argentina",19:15:00 Copa Argentina - Banfield vs Midland
-https://cdn3.zohanayaan.com:1686/hls/capotyc.m3u8?md5=4qsr_fKS6UN2vxr-j-BMYw&expires=1787168822|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa Libertadores",19:30:00 Copa Libertadores - Deportes Tolima vs Independiente del Valle
-https://cdn4.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=vQoRW8iIFLIgavYbtJAlIg&expires=1787168826|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa Libertadores",19:30:00 Copa Libertadores - Universidad Católica (Chi) vs Estudiantes de La Plata
-https://cdn3.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=qd5yFXcs6PZqWpTjcurKmA&expires=1787168837|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa Sudamericana",19:30:00 Copa Sudamericana - Sao Paulo vs Bolívar
-https://cdn3.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=qd5yFXcs6PZqWpTjcurKmA&expires=1787168837|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Trofeo Joan Gamper",13:00:00 Trofeo Joan Gamper - Barcelona vs Al Ahly
+https://cdn6.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=PhROXNGap0Lw8LjDh8C87g&expires=1787170693|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",14:00:00 LaLiga - Atlético Madrid vs Málaga
+https://cdn4.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=lbeleyCR6Xru3tD9qwjEIg&expires=1787170694|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="UEFA Champions League",14:00:00 UEFA Champions League - Celtic vs LASK Linz
+https://cdn3.zohanayaan.com:1686/hls/deportesplus3.m3u8?md5=xW9CZsjinFOVATWAIbuyVQ&expires=1787170711|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="UEFA Champions League",14:00:00 UEFA Champions League - Hapoel Be'er vs Sabah FK
+https://cdn10.zohanayaan.com:1686/hls/capoespn3.m3u8?md5=rrKGnPUBTv1b1W4ZP5aUuQ&expires=1787170720|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="UEFA Champions League",14:00:00 UEFA Champions League - NEC Nijmegen vs Bodo/Glimt
+https://cdn6.zohanayaan.com:1686/hls/capoespn2.m3u8?md5=1kW09LX63rmCWBB-EAHAeQ&expires=1787170727|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="UEFA Champions League",14:00:00 UEFA Champions League - Slovan Bratislava vs NK Celje
+https://cdn2.zohanayaan.com:1686/hls/capoespn5.m3u8?md5=3eF0oh8BcvkH6l2aP2o0GA&expires=1787170735|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
