@@ -1,11 +1,31 @@
 #EXTM3U
-#EXTINF:-1 group-title="Formula 1",05:30:00 Formula 1 - Gran Premio de Países Bajos, Practicas Libres
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/capof1.m3u8?md5=LZQh6qssBIL_sAx0TcOeMg&expires=1787331555
 #EXTINF:-1 group-title="Formula 1",09:30:00 Formula 1 - Gran Premio de Países Bajos, Clasificación Sprint
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/capof1.m3u8?md5=GClJb9rTYYSDNkGashD8Dg&expires=1787331565
+https://cdn8.zohanayaan.com:1686/hls/capof1.m3u8?md5=JGlEzqqAHw0e9uGd1K-zVw&expires=1787333365
+#EXTINF:-1 group-title="Saudí Pro League",11:00:00 Saudí Pro League - Al Riyadh vs Al Nassr
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=2ABgEbDsGnDyQriirppPWQ&expires=1787333367
+#EXTINF:-1 group-title="Liga de Peru",12:00:00 Liga de Peru - FC Cajamarca vs Atlético Grau
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn5.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=qI9M5wP40eOWzwzvgnNOHQ&expires=1787333380
+#EXTINF:-1 group-title="Liga de Argentina",12:30:00 Liga de Argentina - Aldosivi vs Unión (Santa Fe)
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/capotntar.m3u8?md5=MntmZKcECVqEcqpDj0QxsA&expires=1787333388
+#EXTINF:-1 group-title="Saudí Pro League",13:00:00 Saudí Pro League - Al Qadsiah vs Al Ittihad
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn10.zohanayaan.com:1686/hls/deportesplus5.m3u8?md5=w-QIFb89c1z9xuCVqHf4Tg&expires=1787333395
+#EXTINF:-1 group-title="Liga de Uruguay",13:30:00 Liga de Uruguay - Albion FC vs Boston River
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://p2.domain761.sbs/global/disney10/index.m3u8?token=63b9dc21f6694eb075b52e254534b2c280e3508d-fa-1787371203-1787317203&ip=20.118.221.167
