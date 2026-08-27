@@ -1,19 +1,17 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Colombia",16:00:00 Liga de Colombia - Boyacá Chicó FC vs Fortaleza CEIF
-https://cdn3.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=4pemCNYzWMmiJYpU7xg80g&expires=1787834486|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Chile",17:00:00 Liga de Chile - Coquimbo Unido vs Universidad Católica
-https://cdn9.zohanayaan.com:1686/hls/capotntchile.m3u8?md5=YkgMruWNQGi9ZOIV3l-oLA&expires=1787834493|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa de Argentina",17:15:00 Copa de Argentina - Aldosivi vs Independiente Rivadavia
-https://cdn2.zohanayaan.com:1686/hls/capotyc.m3u8?md5=PLyw0BzcIjU1XOOgGi557w&expires=1787834500|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Colombia",18:20:00 Liga de Colombia - América de Cali vs Atlético Junior
-https://cdn8.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=uy0HuiHJRwi7XwdL052MwA&expires=1787834501|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa Do Brazil",19:30:00 Copa Do Brazil - Palmeiras vs Santos FC
-https://cdn2.zohanayaan.com:1686/hls/capodsports2.m3u8?md5=44PgBkSsQP5x4RFh9vcu-g&expires=1787834516|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa Sudamericana",19:30:00 Copa Sudamericana - River Plate vs Independiente Santa Fe
-https://cdn9.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=UBsHLoSRGBFLLUx8dEC1iw&expires=1787834523|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Leagues Cup",19:30:00 Leagues Cup - Toluca vs Austin FC
-https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=RQ45qhQVheYTEV7dloMzNw&expires=1787834531|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Colombia",20:30:00 Liga de Colombia - Atlético Nacional vs Deportivo Cali
-https://cdn2.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=kyqG4Qxy0VaNdXUcam6mkA&expires=1787834538|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Leagues Cup",21:45:00 Leagues Cup - América vs Columbus Crew
-https://cdn2.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=p7gS5Ky4ndeafX3sffHzkw&expires=1787834545|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Carabao Cup",13:30:00 Carabao Cup - Chelsea vs Luton Town
+https://cdn1.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=dsLOUyDBe61SR1nkuoQGmA&expires=1787870991|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",13:30:00 LaLiga - Celta Vigo vs Osasuna
+https://cdn1.zohanayaan.com:1686/hls/capodsports2.m3u8?md5=sZQ1_yxDdOAt7TPQI23DzA&expires=1787871001|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Carabao Cup",14:00:00 Carabao Cup - Fulham vs AFC Wimbledon
+https://p2.domain761.sbs/global/paramount2/index.m3u8?token=7e88ef8d8fbda3388f0dac67b21573219d84b742-6d-1787908809-1787854809&ip=52.159.227.2|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",14:00:00 LaLiga - Barcelona vs Athletic Club
+https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=FDWv00icMeMzSTrx5HdZOg&expires=1787871015|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Argentina",17:00:00 Copa Argentina - Estudiantes LP vs Barracas Central
+https://cdn1.zohanayaan.com:1686/hls/capotyc.m3u8?md5=xQg-f7xLRjdkw5jtAGGkZA&expires=1787871024|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Colombia",18:10:00 Liga de Colombia - Llaneros FC vs Millonarios
+https://cdn4.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=kJ74JedoFK7VJDkJeo2MDw&expires=1787871059|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Copa Argentina",19:15:00 Copa Argentina - Platense vs Instituto
+https://cdn4.zohanayaan.com:1686/hls/capotyc.m3u8?md5=NS65oF_jymGIcP2GDuVzew&expires=1787871069|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Colombia",20:15:00 Liga de Colombia - Internacional de Bogotá vs Deportivo Pasto
+https://cdn1.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=FdIv6-nqx4a3-qh7j6HmJg&expires=1787871077|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
