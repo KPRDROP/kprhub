@@ -1,9 +1,25 @@
 #EXTM3U
-#EXTINF:-1 group-title="Copa Argentina",17:00:00 Copa Argentina - Estudiantes LP vs Barracas Central
-https://cdn7.zohanayaan.com:1686/hls/capotyc.m3u8?md5=pAJb0dGxx3cRnmU4WhcMog&expires=1787944055|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Colombia",18:10:00 Liga de Colombia - Llaneros FC vs Millonarios
-https://cdn7.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=a6IT1LPMor98-sUmifYFmw&expires=1787944093|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa Argentina",19:15:00 Copa Argentina - Platense vs Instituto
-https://cdn6.zohanayaan.com:1686/hls/capotyc.m3u8?md5=W0bIAS86DeYKNgRC80e3hg&expires=1787944100|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga de Colombia",20:15:00 Liga de Colombia - Internacional de Bogotá vs Deportivo Pasto
-https://cdn10.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=sMwnz6A3yJyB2kDYy9kgLw&expires=1787944108|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",12:00:00 LaLiga - Racing Santander vs Elche
+https://cdn4.zohanayaan.com:1686/hls/capoespndeportes.m3u8?md5=dzMEEavCH4LPIdqpW5Ijlw&expires=1787947579|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Saudí Pro League",13:00:00 Saudí Pro League - Al Nassr vs Al Taawoun
+https://cdn5.zohanayaan.com:1686/hls/capofoxdeportes.m3u8?md5=6Ftyciew9F_90hP2ho_hzw&expires=1787947589|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Bundesliga",13:30:00 Bundesliga - Bayern Munich vs Stuttgart
+https://cdn5.zohanayaan.com:1686/hls/capoespndeportes.m3u8?md5=G-syKup9zwJ7MntkYgEQzQ&expires=1787947590|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Ligue 1",13:45:00 Ligue 1 - Lille vs Paris Saint-Germain
+https://cdn6.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=lWQQFKmBq1DnSqNqsTA-vw&expires=1787947605|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Serie A",13:45:00 Serie A - AC Milan vs Venezia
+https://cdn5.zohanayaan.com:1686/hls/capouniverso.m3u8?md5=mEHwzCzzxLkvyOXNqGw6bA&expires=1787947613|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga 2",14:00:00 LaLiga 2 - Tenerife vs Sporting Gijón
+https://cdn5.zohanayaan.com:1686/hls/capohypermotion1.m3u8?md5=XYxE2-tRY52Je2GRIWgXcg&expires=1787947620|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Paraguay",14:00:00 Liga de Paraguay - Sportivo Luqueño vs Rubio Ñú
+https://khala.futlivehd.com/global/zapping_ec/index.m3u8?ip=135.119.95.49&token=e02a2ad77b77df85c8c4feeacce8135ad22e4394-f8-1787985428-1787931428|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Premier League",14:00:00 Premier League - Crystal Palace vs Manchester City
+https://cdn6.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=7zPY1eycsJEE53tbXSNq4w&expires=1787947635|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Primeira Liga",14:15:00 Primeira Liga - Rio Ave vs Sporting CP
+https://cdn1.zohanayaan.com:1686/hls/capodsports2.m3u8?md5=iDsG-WVAD03e5GUEDC15cg&expires=1787947642|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",14:30:00 LaLiga - Deportivo Alavés vs Villarreal
+https://cdn2.zohanayaan.com:1686/hls/capoespndeportes.m3u8?md5=mhhW9D4frwqlH0_FESiDGQ&expires=1787947648|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Peru",15:00:00 Liga de Peru - Comerciantes Unidos vs FC Cajamarca
+https://cdn3.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=YRUgXnoGiC8d0uvdsXs5xg&expires=1787947657|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Ecuador",15:30:00 Liga de Ecuador - Mushuc Runa vs Delfín
+https://khala.futlivehd.com/global/zapping_ec/index.m3u8?ip=135.119.95.49&token=0c13b72649f3b054c510a379209c7139a6392c3c-69-1787985465-1787931465|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
