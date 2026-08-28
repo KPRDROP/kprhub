@@ -1,41 +1,21 @@
 #EXTM3U
-#EXTINF:-1 group-title="Carabao Cup",13:30:00 Carabao Cup - Chelsea vs Luton Town
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=dsLOUyDBe61SR1nkuoQGmA&expires=1787870991
-#EXTINF:-1 group-title="LaLiga",13:30:00 LaLiga - Celta Vigo vs Osasuna
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/capodsports2.m3u8?md5=sZQ1_yxDdOAt7TPQI23DzA&expires=1787871001
-#EXTINF:-1 group-title="Carabao Cup",14:00:00 Carabao Cup - Fulham vs AFC Wimbledon
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://p2.domain761.sbs/global/paramount2/index.m3u8?token=7e88ef8d8fbda3388f0dac67b21573219d84b742-6d-1787908809-1787854809&ip=52.159.227.2
-#EXTINF:-1 group-title="LaLiga",14:00:00 LaLiga - Barcelona vs Athletic Club
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=FDWv00icMeMzSTrx5HdZOg&expires=1787871015
 #EXTINF:-1 group-title="Copa Argentina",17:00:00 Copa Argentina - Estudiantes LP vs Barracas Central
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/capotyc.m3u8?md5=xQg-f7xLRjdkw5jtAGGkZA&expires=1787871024
+https://cdn7.zohanayaan.com:1686/hls/capotyc.m3u8?md5=KBoDYdpyeephty7BXlNYUw&expires=1787900327
 #EXTINF:-1 group-title="Liga de Colombia",18:10:00 Liga de Colombia - Llaneros FC vs Millonarios
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=kJ74JedoFK7VJDkJeo2MDw&expires=1787871059
+https://cdn7.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=fS2LqlLuHafVK2iEcnu5-Q&expires=1787900365
 #EXTINF:-1 group-title="Copa Argentina",19:15:00 Copa Argentina - Platense vs Instituto
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/capotyc.m3u8?md5=NS65oF_jymGIcP2GDuVzew&expires=1787871069
+https://cdn2.zohanayaan.com:1686/hls/capotyc.m3u8?md5=nY5zq1EykaJ8nfwNrmUXAA&expires=1787900373
 #EXTINF:-1 group-title="Liga de Colombia",20:15:00 Liga de Colombia - Internacional de Bogotá vs Deportivo Pasto
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=FdIv6-nqx4a3-qh7j6HmJg&expires=1787871077
+https://cdn1.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=GPO32xZ4rtYdiBDJmEIVZA&expires=1787900380
