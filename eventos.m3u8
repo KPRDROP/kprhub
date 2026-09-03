@@ -1,41 +1,46 @@
 #EXTM3U
-#EXTINF:-1 group-title="DFB Pokal",13:45:00 DFB Pokal - VfL Osnabruck vs Bayern Munich
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn7.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=CkjB-B_AVHKfFdSqsfJUMg&expires=1788398664
-#EXTINF:-1 group-title="Liga de Ecuador",14:00:00 Liga de Ecuador - Macará vs Manta FC
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/capozapping.m3u8?md5=PgANlG32X_KwltAkH7BuTQ&expires=1788398668
-#EXTINF:-1 group-title="Liga de Paraguay",14:00:00 Liga de Paraguay - Nacional Asunción vs Libertad
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s2.envivoslatam99.sbs/global/fanatiz2/index.m3u8?token=0393592c2042a08cbc915acbec81ed45a7ace904-87-1788436479-1788382479&ip=20.3.221.184
-#EXTINF:-1 group-title="Liga de Paraguay",14:00:00 Liga de Paraguay - Sportivo Ameliano vs Sportivo Trinidense
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s2.envivoslatam99.sbs/global/fanatiz2/index.m3u8?token=3a25dd7f15d47fdaf5895910427e61f39689f750-a8-1788436486-1788382486&ip=20.3.221.184
-#EXTINF:-1 group-title="Liga de Ecuador",16:30:00 Liga de Ecuador - Deportivo Cuenca vs Guayaquil City
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn9.zohanayaan.com:1686/hls/capozapping.m3u8?md5=1b75nbSgY6rvfMZ6YAUEaA&expires=1788398686
-#EXTINF:-1 group-title="Liga de Paraguay",16:30:00 Liga de Paraguay - Club Olimpia vs Guaraní
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s1.envivoslatam99.sbs/global/fanatiz3/index.m3u8?token=28721f77c6f757441f39f95797525c5d922ad19d-80-1788436501-1788382501&ip=20.3.221.184
-#EXTINF:-1 group-title="Liga de Chile",17:00:00 Liga de Chile - Coquimbo Unido vs Universidad de Concepción
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/capotntchile.m3u8?md5=YMbjWfpbgMHQvkmWbdO4wQ&expires=1788398709
 #EXTINF:-1 group-title="Brasileirao",17:30:00 Brasileirao - Flamengo vs Mirassol
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s1.envivoslatam99.sbs/global/premiere1/index.m3u8?token=ab4796be090f8a9364cb475a3a903d35669c09fb-11-1788436516-1788382516&ip=20.3.221.184
+https://s2.envivoslatam99.sbs/global/premiere1/index.m3u8?token=3baa7c8533d53dfb7009e73f016abf56d9d6429d-fc-1788443052-1788389052&ip=20.189.181.70
+#EXTINF:-1 group-title="Liga de Ecuador",19:00:00 Liga de Ecuador - Barcelona SC vs Independiente del Valle
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/capozapping.m3u8?md5=jmn5VcHLNORY5SJWcIeYiw&expires=1788405253
+#EXTINF:-1 group-title="Copa Argentina",19:15:00 Copa Argentina - Velez Sarsfield vs Boca Juniors
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn1.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=5_OZPR-YQn80J0a_hVTOiQ&expires=1788405263
+#EXTINF:-1 group-title="Copa Do Brazil",19:30:00 Copa Do Brazil - Santos FC vs Palmeiras
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/capodsports.m3u8?md5=_dVC5pH-QvNRPLLDL2Mv7Q&expires=1788405270
+#EXTINF:-1 group-title="Copa Do Brazil",19:30:00 Copa Do Brazil - Vitória vs Vasco da Gama
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://s2.envivoslatam99.sbs/global/amazon1/index.m3u8?token=3140b88d044c0645256d41e390286533970633e3-49-1788443081-1788389081&ip=20.189.181.70
+#EXTINF:-1 group-title="Liga de Chile",19:30:00 Liga de Chile - Deportes Limache vs Ñublense
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn3.zohanayaan.com:1686/hls/capotntchile.m3u8?md5=IYlKCoYBRHIN7b0OA3W5RA&expires=1788405289
+#EXTINF:-1 group-title="Leagues Cup",20:00:00 Leagues Cup - Toluca vs León
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn8.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=ipxCHWYqcgXwxRkxPHECsA&expires=1788405289
+#EXTINF:-1 group-title="Liga de Colombia",20:25:00 Liga de Colombia - Independiente Santa Fe vs Millonarios
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=hjEnes69gfXokBXPQlFQlA&expires=1788405301
+#EXTINF:-1 group-title="Leagues Cup",22:30:00 Leagues Cup - America vs Monterrey Rayados
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=dv-myUaTEIQ2AImqzE2rtQ&expires=1788405309
