@@ -1,21 +1,51 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Colombia",20:30:00 Liga de Colombia - Atlético Junior vs Jaguares de Córdoba
+#EXTINF:-1 group-title="Eredivisie",07:30:00 Eredivisie - Heerenveen vs AZ Alkmaar
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/capowinplus.m3u8?md5=p75lxihsTZhGWIT6tFKmCg&expires=1788700107
-#EXTINF:-1 group-title="Liga de Peru",20:30:00 Liga de Peru - Universitario vs Comerciantes Unidos
+https://47.domhsd.com/global/espn2mx/index.m3u8?token=594e296affd98234518edacd1a821d5b944d91ee-eb-1788749155-1788695155&ip=20.169.93.17
+#EXTINF:-1 group-title="Liga de Paraguay",08:00:00 Liga de Paraguay - Sportivo Trinidense vs Club Olimpia
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn3.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=o-R6eEvsUxdzsM174Ol1tg&expires=1788700114
-#EXTINF:-1 group-title="MLS",20:30:00 MLS - LA Galaxy vs New England Revolution
+https://s1.envivoslatam99.sbs/global/fanatiz1/index.m3u8?token=ed8999b99715b4f3c59f5bdd8bc64a29aba47dcc-b0-1788749195-1788695195&ip=20.169.93.17
+#EXTINF:-1 group-title="Liga de Uruguay",08:00:00 Liga de Uruguay - Cerro vs Racing (Montevideo)
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s1.envivoslatam99.sbs/global/mls12/index.m3u8?token=9a1e1a5ba1026e6866bdf230e8352ab8ee8b18ce-87-1788737922-1788683922&ip=57.154.172.164
-#EXTINF:-1 group-title="MLS",20:30:00 MLS - Real Salt Lake vs Los Ángeles FC
+https://s1.envivoslatam99.sbs/global/disney7/index.m3u8?token=3f3d8e6d29a0b3d6ed2f155d493bf7f028658e8e-0a-1788749202-1788695202&ip=20.169.93.17
+#EXTINF:-1 group-title="Ligue 1",08:00:00 Ligue 1 - Troyes vs Strasbourg
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s1.envivoslatam99.sbs/global/mls11/index.m3u8?token=902996b6b410a3c25ba504e3f6673382e4e76bf7-c9-1788737929-1788683929&ip=57.154.172.164
+https://s2.envivoslatam99.sbs/global/foxone2/index.m3u8?token=53f2402d52c1bcf2236a91b63c46b00c203b98d1-58-1788749210-1788695210&ip=20.169.93.17
+#EXTINF:-1 group-title="Serie A",08:00:00 Serie A - Frosinone vs Venezia
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/capoespn4.m3u8?md5=cvBIPZGK4_WoSpJ5_s7M0Q&expires=1788711449
+#EXTINF:-1 group-title="Serie A",08:00:00 Serie A - Parma vs Monza
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://s1.envivoslatam99.sbs/global/espnmx/index.m3u8?token=c803dd7e2fa8a384510dbefc3197470b1c8ffdab-a9-1788749257-1788695257&ip=20.169.93.17
+#EXTINF:-1 group-title="Bundesliga",08:30:00 Bundesliga - Hamburg SV vs Mainz 05
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn6.zohanayaan.com:1686/hls/capouniverso.m3u8?md5=34nZB2X7QXgus9ZmQKcWEw&expires=1788711464
+#EXTINF:-1 group-title="Brasileirao",09:00:00 Brasileirao - Coritiba vs Mirassol
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://85.domhsd.com/global/premiere1/index.m3u8?token=91344e371d8df0b3ee348b964c9e0c63b4b86106-59-1788749272-1788695272&ip=20.169.93.17
+#EXTINF:-1 group-title="LaLiga",09:15:00 LaLiga - Valencia vs Barcelona
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn4.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=3RmZbrIBYeDJLTlwY3Gc0A&expires=1788711471
+#EXTINF:-1 group-title="LaLiga 2",09:15:00 LaLiga 2 - Real Oviedo vs Burgos
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/capohypermotion1.m3u8?md5=Hoky6zHATWU-lTFvx7cKKA&expires=1788711489
