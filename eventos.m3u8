@@ -1,11 +1,31 @@
 #EXTM3U
-#EXTINF:-1 group-title="UEFA Champions League",11:45:00 UEFA Champions League - AEK Athens vs LASK Linz
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=jtAoFK79kXh-WflllPjLng&expires=1788896408
 #EXTINF:-1 group-title="Saudí Pro League",13:00:00 Saudí Pro League - Al Qadsiah vs Al Ahli
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/capofoxdeportes.m3u8?md5=A_Eh-Pv-3ZFG7hapiGe4eA&expires=1788896422
+https://cdn2.zohanayaan.com:1686/hls/capofoxdeportes.m3u8?md5=Ja204Usl0Kfv25DfpRY--g&expires=1788906166
+#EXTINF:-1 group-title="Carabao Cup",13:45:00 Carabao Cup - AFC Bournemouth vs Lincoln City
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://s1.envivoslatam99.sbs/global/disney3/index.m3u8?token=4f7704c19eb3cd39d1a4d816e7850cb5bfcb5913-10-1788943976-1788889976&ip=48.217.227.249
+#EXTINF:-1 group-title="Carabao Cup",13:45:00 Carabao Cup - Crystal Palace vs Middlesbrough
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://s2.envivoslatam99.sbs/global/disney4/index.m3u8?token=1e4a824be384ccfdfd9addbdc8782a2ef3b5305b-df-1788943983-1788889983&ip=48.217.227.249
+#EXTINF:-1 group-title="Carabao Cup",13:45:00 Carabao Cup - Sunderland vs Hull City
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://s2.envivoslatam99.sbs/global/disney5/index.m3u8?token=e6fac9de512223bd3915cbd3dead3e9fdfb51c4d-29-1788943991-1788889991&ip=48.217.227.249
+#EXTINF:-1 group-title="Carabao Cup",14:00:00 Carabao Cup - Millwall vs Newcastle United
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://instreams.live/live/H97/index.m3u8?st=BYpldVUrQTrpVqyvapXpBw&e=1788909799
+#EXTINF:-1 group-title="UEFA Champions League",14:00:00 UEFA Champions League - Lille vs Real Betis
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/capoespn4.m3u8?md5=e8v81rQcXSSSIQjFud7IbQ&expires=1788906269
