@@ -1,3 +1,25 @@
 #EXTM3U
-#EXTINF:-1 group-title="Formula 1",10:00:00 Formula 1 - Gran Premio de España, Practicas Libres
-https://cdn1.zohanayaan.com:1686/hls/capof1.m3u8?md5=MaVN-dGkkzC8GzK9yB-iUA&expires=1789147151|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Super Lig de Turquía",12:00:00 Super Lig de Turquía - Besiktas vs Erzurum BB
+https://s2.envivoslatam99.sbs/global/disney3/index.m3u8?token=c572775129003621f6b9060c0cc066310e31632d-1c-1789197025-1789143025&ip=20.120.230.194|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Eredivisie",13:00:00 Eredivisie - AZ Alkmaar vs Willem II
+https://instreams.live/live/H98/index.m3u8?st=aX-iGYTKUROsJUUkx8-oxw&e=1789162833|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Saudí Pro League",13:00:00 Saudí Pro League - Al Ahli vs Al Hazem
+https://cdn8.zohanayaan.com:1686/hls/capofoxdeportes.m3u8?md5=nUakxdylr4dy0Y419l9lyQ&expires=1789159241|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Bundesliga",13:30:00 Bundesliga - Unión Berlin vs Schalke 04
+https://cdn1.zohanayaan.com:1686/hls/capouniverso.m3u8?md5=y5usG2zzaVzAp7XRJLVntQ&expires=1789159241|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Ligue 1",13:45:00 Ligue 1 - Stade Rennais vs Olympique Marseille
+https://instreams.pro/live/H69/index.m3u8?st=zM92OE7ztzB6YNVWpBoznQ&e=1789162855|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Serie A",13:45:00 Serie A - Venezia vs Fiorentina
+https://cdn2.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=0zVYDXyinJrmI_6storxig&expires=1789159269|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Championship",14:00:00 Championship - West Ham United vs Wrexham
+https://instreams.live/live/H93/index.m3u8?st=hq3MqeyKUdm-Cwg_z11DMQ&e=1789162877|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",14:00:00 LaLiga - Sevilla vs Valencia
+https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=Vyaa0Foc-450UR46ZiytiQ&expires=1789159281|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Paraguay",14:00:00 Liga de Paraguay - Sportivo Ameliano vs Sportivo San Lorenzo
+https://s2.envivoslatam99.sbs/global/fanatiz1/index.m3u8?token=49d1c6ae83a74a68d5ecf335ef0d1ccc700aa046-25-1789197096-1789143096&ip=20.120.230.194|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Argentina",15:00:00 Liga de Argentina - Newell's Old Boys vs Vélez Sarsfield
+https://cdn9.zohanayaan.com:1686/hls/capoespnpremium.m3u8?md5=AGzB_I02LKj7UxySNU-U3Q&expires=1789159303|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Peru",15:00:00 Liga de Peru - UTC Cajamarca vs Juan Pablo II
+https://cdn8.zohanayaan.com:1686/hls/capoliga1max.m3u8?md5=6xRUZ88xHLBA_dC26sIxHw&expires=1789159311|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Paraguay",16:30:00 Liga de Paraguay - 2 de Mayo vs Libertad
+https://s2.envivoslatam99.sbs/global/fanatiz6/index.m3u8?token=41b9847846d5724038be573e5ab01294d5a6f847-77-1789197119-1789143119&ip=20.120.230.194|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
