@@ -1,7 +1,29 @@
 #EXTM3U
-#EXTINF:-1 group-title="LaLiga",07:00:00 LaLiga - Racing Santander vs Deportivo Alaves
-https://cdn10.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=sDxOGJtYFcF1OfX0HgvqDw&expires=1789225905|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="LaLiga 2",07:00:00 LaLiga 2 - Andorra vs Real Sociedad B
-https://cdn5.zohanayaan.com:1686/hls/capohypermotion1.m3u8?md5=nxzjMxhZWahPHHj1aGK6Qw&expires=1789225922|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Serie A",08:00:00 Serie A - Genoa vs Frosinone
-https://cdn8.zohanayaan.com:1686/hls/capoespn4.m3u8?md5=RJAWxe6ICknHXm-eBmy9Bw&expires=1789225923|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Ligue 1",10:15:00 Ligue 1 - Strasbourg vs AS Monaco
+https://instreams.live/live/H69/index.m3u8?st=PVX4_0hizyYGvvnCctEgcw&e=1789241020|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Chile",10:30:00 Liga de Chile - Ñublense vs Everton CD
+https://cdn1.zohanayaan.com:1686/hls/capotntchile.m3u8?md5=6dnd74vWFiYT0wt0ePLS_Q&expires=1789237435|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Peru",10:30:00 Liga de Peru - Los Chankas vs FC Cajamarca
+https://instreams.live/live/H84/index.m3u8?st=AlNvwubvyRjAj1rJg8Ufgw&e=1789241043|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Uruguay",11:00:00 Liga de Uruguay - Racing (Montevideo) vs Boston River
+https://s1.envivoslatam99.sbs/global/disney19/index.m3u8?token=cf4f1816fec6440c0c6fcf51fa57804419432d52-f4-1789275257-1789221257&ip=172.184.209.178|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Serie A",11:00:00 Serie A - Lazio Roma vs AC Milan
+https://cdn5.zohanayaan.com:1686/hls/capoespn2.m3u8?md5=cltRSdK0Xuq3YM8A24ZHkA&expires=1789237464|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Super League Grecia",11:00:00 Super League Grecia - Olympiacos vs OFI Crete
+https://cdn2.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=yneMrX22REtR0pFLfZdDRg&expires=1789237468|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Bundesliga",11:30:00 Bundesliga - Cologne vs Werder Bremen
+https://cdn7.zohanayaan.com:1686/hls/capoespn5.m3u8?md5=OiRmtHFrtopY2CrYas4wBA&expires=1789237480|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",11:30:00 LaLiga - Athletic Club vs Elche
+https://cdn6.zohanayaan.com:1686/hls/capoespndeportes.m3u8?md5=ZWhBN1v-Sk-O2ExDJH6CFA&expires=1789237485|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga 2",11:30:00 LaLiga 2 - Granada vs Albacete
+https://cdn7.zohanayaan.com:1686/hls/capohypermotion1.m3u8?md5=3Rlctv2i34EZMyRe47Q9tA&expires=1789237493|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga 2",11:30:00 LaLiga 2 - Girona vs Castellón
+https://cdn2.zohanayaan.com:1686/hls/capohypermotion2.m3u8?md5=fqp-lyPWB9XjXjUSQa1nUA&expires=1789237502|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Premier League",11:30:00 Premier League - Tottenham Hotspur vs Everton
+https://cdn2.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=ha8CeKal5XErga3KJ0p3rA&expires=1789237508|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Primeira Liga Portugal",12:00:00 Primeira Liga Portugal - Casa Pia vs Porto
+https://instreams.pro/live/H94/index.m3u8?st=4tn52NI1LGrhf4jU3UIWEg&e=1789241118|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Argentina",12:45:00 Liga de Argentina - Independiente Rivadavia vs Aldosivi
+https://cdn1.zohanayaan.com:1686/hls/capotntar.m3u8?md5=phlPssX1PsOOUdl-B0ssbw&expires=1789237529|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Argentina",12:45:00 Liga de Argentina - Estudiantes de La Plata vs Platense
+https://cdn9.zohanayaan.com:1686/hls/capoespnpremium.m3u8?md5=mCmbDZUq8gSPPULh-45wzA&expires=1789237541|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
