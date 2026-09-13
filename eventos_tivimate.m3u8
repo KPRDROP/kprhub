@@ -1,7 +1,13 @@
 #EXTM3U
-#EXTINF:-1 group-title="MLS",21:30:00 MLS - LA Galaxy vs Seattle Sounders
-https://s1.envivoslatam99.sbs/global/mls6/index.m3u8?token=0216bf5596981cfb831f97593a98b083767e3e3e-d6-1789325471-1789271471&ip=20.55.214.114|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="MLS",21:30:00 MLS - San Jose Earthquakes vs Houston Dynamo
-https://s2.envivoslatam99.sbs/global/mls7/index.m3u8?token=88619ebd5373b25c8037db71e24065040f3dda6d-2f-1789325478-1789271478&ip=20.55.214.114|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Liga MX",22:15:00 Liga MX - Cruz Azul vs América
-https://cdn6.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=p-3EsUy7WGY_aKq5V68n_Q&expires=1789287686|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Championship",06:00:00 Championship - Sheffield United vs Wolverhampton Wanderers
+https://cdn1.zohanayaan.com:1686/hls/capoespn5.m3u8?md5=4Oy8IuNFNGM6ARNnPQ7Jyw&expires=1789308476|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",07:00:00 LaLiga - Celta Vigo vs Málaga
+https://cdn5.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=ywLjhG-RrUuXPirsMLV_Iw&expires=1789308483|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga 2",07:00:00 LaLiga 2 - Sporting Gijón vs Eldense
+https://cdn4.zohanayaan.com:1686/hls/capohypermotion1.m3u8?md5=GEfajsOQDLR-ll6plviNGQ&expires=1789308483|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Formula 1",08:00:00 Formula 1 - Gran Premio de España, Carrera
+https://cdn6.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=diusUCA7ZKCKpvugU4391w&expires=1789308493|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Premier League",08:00:00 Premier League - Coventry City vs Brighton & Hove Albion
+https://cdn4.zohanayaan.com:1686/hls/capoespn3.m3u8?md5=27c-7OlCa3SkLMdHh3z9pg&expires=1789308506|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Serie A",08:00:00 Serie A - Lecce vs Monza
+https://cdn9.zohanayaan.com:1686/hls/capouniverso.m3u8?md5=WnQU9a0Z-BwWsG2Bet6VBg&expires=1789308513|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
