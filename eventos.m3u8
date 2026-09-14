@@ -1,26 +1,41 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Argentina",19:30:00 Liga de Argentina - Huracán vs Racing Club
+#EXTINF:-1 group-title="AFC Champions League",11:00:00 AFC Champions League - Al Shamal vs Al Ittihad
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=6b93b9ddb3637fd1fbe310653fbd4305085601f0-69-1789436416-1789382416&ip=135.232.201.84
-#EXTINF:-1 group-title="Liga MX",20:00:00 Liga MX - Santos Laguna vs FC Juárez
+https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=7a7f48d356646ffae3aee3fea3671d07acb17e9d-eb-1789456481-1789402481&ip=64.236.145.70
+#EXTINF:-1 group-title="Serie A",11:30:00 Serie A - Torino vs AS Roma
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn4.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=hBnpZfSoQXuJtyAO8QcOhQ&expires=1789398624
-#EXTINF:-1 group-title="MLS",20:00:00 MLS - San Diego FC vs Philadelphia Union
+https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=87fee660f80ba9d05750858b7345814d72004804-d5-1789456489-1789402489&ip=64.236.145.70
+#EXTINF:-1 group-title="Serie A",11:30:00 Serie A - Como vs Parma
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=941188b99069c14dcb23783431b5f944e7256231-40-1789436431-1789382431&ip=135.232.201.84
-#EXTINF:-1 group-title="Liga MX",20:07:00 Liga MX - Guadalajara Chivas vs Pumas UNAM
+https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=f31cd5f9169db5158959b1cd5bdd849266b5d81e-02-1789456496-1789402496&ip=64.236.145.70
+#EXTINF:-1 group-title="Super Lig Turquia",12:00:00 Super Lig Turquia - Gaziantep FK vs Fenerbahce
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=C9I9Iy_7f4MSXtPnkUnj_A&expires=1789398638
-#EXTINF:-1 group-title="Liga de Colombia",20:15:00 Liga de Colombia - Cúcuta Deportivo vs Millonarios
+https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=177876d5b6c745ab5bcfb6f953cf61be5584624f-b3-1789456503-1789402503&ip=64.236.145.70
+#EXTINF:-1 group-title="LaLiga 2",13:30:00 LaLiga 2 - RC Celta Fortuna vs Eibar
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=e9d7d3e5cdd7dcae8e31471821d11549aa589c61-d0-1789436445-1789382445&ip=135.232.201.84
+https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=0e3dc78b1acde0287aa289a41adc5b052e045dd0-46-1789456511-1789402511&ip=64.236.145.70
+#EXTINF:-1 group-title="Serie A",13:45:00 Serie A - Inter Milan vs Udinese
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=1ce493611ed9d60f9e1cf3e7d3970872ece64a79-8a-1789456518-1789402518&ip=64.236.145.70
+#EXTINF:-1 group-title="LaLiga",14:00:00 LaLiga - Villarreal vs Real Betis
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=31c35fd3c3d91ea4e81770b4dd8857aa94537985-e3-1789456525-1789402525&ip=64.236.145.70
+#EXTINF:-1 group-title="Premier League",14:00:00 Premier League - Leeds United vs Newcastle United
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=1b01168212835a54d2263935d867c54ff67693d9-5b-1789456533-1789402533&ip=64.236.145.70
