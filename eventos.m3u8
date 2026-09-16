@@ -1,71 +1,61 @@
 #EXTM3U
-#EXTINF:-1 group-title="UEFA Europa League",11:45:00 UEFA Europa League - Omonia Nicosia vs Celta Vigo
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=jKhgO1usL5Jx_N-I7-wlJQ&expires=1789592227
-#EXTINF:-1 group-title="UEFA Europa League",11:45:00 UEFA Europa League - Ararat-Armenia vs Sparta Prague
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.live/live/H89/index.m3u8?st=lAErxv1jJGOg4ojrh6MZqw&e=1789595836
-#EXTINF:-1 group-title="LaLiga",12:00:00 LaLiga - Atlético Madrid vs Osasuna
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn8.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=t8IdHhXq9CBRNE14kdkfsQ&expires=1789592246
-#EXTINF:-1 group-title="LaLiga",12:00:00 LaLiga - Deportivo La Coruña vs Sevilla
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.pro/live/H90/index.m3u8?st=ol18HexGHv6hqxiC1bB0YQ&e=1789595858
 #EXTINF:-1 group-title="Carabao Cup League",13:45:00 Carabao Cup League - Everton vs Wolverhampton Wanderers
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.live/live/H99/index.m3u8?st=j9BHokWjyslYvF3flPnONg&e=1789595874
+https://instreams.pro/live/H99/index.m3u8?st=4uMJWZn3tFpy24ZHrv1GYg&e=1789606104
 #EXTINF:-1 group-title="Carabao Cup League",14:00:00 Carabao Cup League - Manchester United vs Brighton & Hove Albion
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn6.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=Wezllif0wXyx1SGAMad6cA&expires=1789592287
+https://cdn2.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=RZMGqf-0Z-x0pABBCgd57A&expires=1789602516
 #EXTINF:-1 group-title="Carabao Cup League",14:00:00 Carabao Cup League - Coventry City vs Aston Villa
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=c02afe422e655f267e1aa2ea7e8083a2c515b0d4-0a-1789630097-1789576097&ip=52.186.174.155
+https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=cd277a07aa983d87762470a746dbdadc3dd81479-64-1789640327-1789586327&ip=20.51.198.195
 #EXTINF:-1 group-title="UEFA Europa League",14:00:00 UEFA Europa League - AC Milan vs Benfica
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.live/live/H88/index.m3u8?st=_ZW-Kd_AxLpXlrwU1NWniA&e=1789595905
+https://instreams.live/live/H88/index.m3u8?st=FXfaBR9cyWukqkfstzZMTQ&e=1789606135
 #EXTINF:-1 group-title="UEFA Europa League",14:00:00 UEFA Europa League - Anderlecht vs Olympique Lyon
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.pro/live/H89/index.m3u8?st=LqTD8SomrPfA8_6ucam9rg&e=1789595920
+https://instreams.live/live/H89/index.m3u8?st=mNpIg6nSlvX64NYEukq22g&e=1789606151
 #EXTINF:-1 group-title="UEFA Europa League",14:00:00 UEFA Europa League - Bayer Leverkusen vs NK Celje
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.live/live/H90/index.m3u8?st=77z2Y7AR7XDKDnIFtWigNQ&e=1789595935
+https://instreams.pro/live/H90/index.m3u8?st=cKdxOVQQLtqhxpeE6eUoGQ&e=1789606167
 #EXTINF:-1 group-title="UEFA Europa League",14:00:00 UEFA Europa League - Olympiacos vs Jagiellonia Bialystok
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.pro/live/H68/index.m3u8?st=dUBjAE8AGeDmtHuFhkvj5w&e=1789595950
+https://instreams.pro/live/H68/index.m3u8?st=FQ6tJUKAws1X3ieJ_yGRqQ&e=1789606183
 #EXTINF:-1 group-title="UEFA Europa League",14:00:00 UEFA Europa League - Sunderland vs AZ Alkmaar
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.live/live/H93/index.m3u8?st=haSRAbWEC1KC230ApG-Frg&e=1789595966
+https://instreams.pro/live/H93/index.m3u8?st=28c8k5C2xV3uVkljX5vhdA&e=1789606200
 #EXTINF:-1 group-title="UEFA Europa League",14:00:00 UEFA Europa League - SK Sturm Graz vs Stade Rennais
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.pro/live/H166/index.m3u8?st=6kEUKiFIYoU_RP00K0qA1g&e=1789595982
+https://instreams.pro/live/H166/index.m3u8?st=Jg5m15MoH4cy2wIcjQ0fVw&e=1789606216
 #EXTINF:-1 group-title="UEFA Europa League",14:00:00 UEFA Europa League - Hapoel Be'er vs Dinamo Zagreb
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.live/live/H168/index.m3u8?st=J89KZACmLz0JkSpHov-qfQ&e=1789595998
+https://instreams.pro/live/H168/index.m3u8?st=G1vKvP8VnwK_XuuxItpj8w&e=1789606232
+#EXTINF:-1 group-title="LaLiga",14:30:00 LaLiga - Barcelona vs Racing Santander
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://cdn7.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=fysqzHG6rdyxyKC1Nsx1og&expires=1789602640
+#EXTINF:-1 group-title="LaLiga",14:30:00 LaLiga - Levante vs Athletic Club
+#EXTVLCOPT:http-referrer=https://capo8play.com/
+#EXTVLCOPT:http-origin=https://capo8play.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
+https://instreams.live/live/H94/index.m3u8?st=lqOEh8ATw3lIADIq6pjI1A&e=1789606255
