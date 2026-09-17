@@ -1,41 +1,21 @@
 #EXTM3U
-#EXTINF:-1 group-title="Copa Argentina",17:00:00 Copa Argentina - Independiente Rivadavia vs Atlético Tucumán
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=48ef704bc437ffedb3778cefd93cd2e88fc7ddb5-76-1789647955-1789593955&ip=64.236.135.128
-#EXTINF:-1 group-title="Copa Libertadores",17:00:00 Copa Libertadores - LDU Quito vs Palmeiras
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn2.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=AEROYFSnLawJfNbFcN29kw&expires=1789610163
-#EXTINF:-1 group-title="Copa Sudamericana",17:00:00 Copa Sudamericana - Atlético Mineiro vs Santoos FC
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn1.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=4FCFaH24GVaYx4mBhCg7zw&expires=1789610163
-#EXTINF:-1 group-title="Brasileirao",17:30:00 Brasileirao - Botafogo vs Gremio
-#EXTVLCOPT:http-referrer=https://capo8play.com/
-#EXTVLCOPT:http-origin=https://capo8play.com
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=898c518d5866c74873c10cac1fefdd711c7849b6-22-1789647977-1789593977&ip=64.236.135.128
 #EXTINF:-1 group-title="Liga de Colombia",18:15:00 Liga de Colombia - Once Caldas vs Deportes Tolima
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=b8adfdcb8f7002f9c842aa2cd0ff08373ab79b36-a7-1789647985-1789593985&ip=64.236.135.128
+https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=6f96a9af97a253ae27ddade262f38d6bf5166ace-b4-1789655153-1789601153&ip=40.75.131.150
 #EXTINF:-1 group-title="Campeones Cup",19:00:00 Campeones Cup - Inter Miami vs Cruz Azul
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=Jq8REDQ-Fx-D95xSYqVRCQ&expires=1789610183
+https://cdn4.zohanayaan.com:1686/hls/deportesplus.m3u8?md5=4Ls2hocgYeyU6On-RI44Hw&expires=1789617355
 #EXTINF:-1 group-title="Copa Libertadores",19:30:00 Copa Libertadores - Corinthians vs Estudiantes de La Plata
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://cdn10.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=5uQKlNvmwosGrScuJwvYSg&expires=1789610193
+https://cdn8.zohanayaan.com:1686/hls/deportesplus2.m3u8?md5=heHX323ag2fl3hVo83y9xg&expires=1789617368
 #EXTINF:-1 group-title="Liga de Colombia",20:20:00 Liga de Colombia - Internacional de Bogotá vs Atlético Nacional
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=7114d05a07d496b6b5dc4893e8c9ada552ab25f5-b2-1789648007-1789594007&ip=64.236.135.128
+https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=7a4133e99c663041fc0b8f4cd159c227dd3b202f-6f-1789655176-1789601176&ip=40.75.131.150
