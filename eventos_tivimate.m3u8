@@ -1,7 +1,19 @@
 #EXTM3U
-#EXTINF:-1 group-title="Liga de Colombia",19:00:00 Liga de Colombia - Atlético Bucaramanga vs Independiente Medellín
-https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=b70255ab4e0de613ac21e9f02bfa63ee43b9241e-69-1789797008-1789743008&ip=68.220.56.244|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa Libertadores",19:30:00 Copa Libertadores - Flamengo vs Independiente del Valle
-https://gr676m.l948728p57nx.net:8443/hls/vvatmfy2zaprg.m3u8?s=BCX6AvJgxhHU2xpnqZw92Q&e=1789773616|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
-#EXTINF:-1 group-title="Copa Sudamericana",19:30:00 Copa Sudamericana - Montevideo City Torque vs Cienciano del Cusco
-https://gr676m.l948728p57nx.net:8443/hls/bbpczdgm0xe1u.m3u8?s=ioUb2SpKeMKB4HWHjb2aSg&e=1789773623|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Bundesliga",13:30:00 Bundesliga - Bayern Munich vs Unión Berlín
+https://m71t4o.awqb0f40a9yo.net:8443/hls/vvatmfy2zaprg.m3u8?s=GWfqKSMOReQG4yzPrrgtQg&e=1789782399|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga 2",13:30:00 LaLiga 2 - Albacete vs Córdoba
+https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=3f86c9db2b65230b5c40ede8d891b3ee26361230-ba-1789805807-1789751807&ip=134.33.101.134|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Ligue 1",13:45:00 Ligue 1 - AS Monaco vs Lens
+https://instreams.pro/live/H90/index.m3u8?st=_xVqZpul2-HPhV_IVO54RQ&e=1789771615|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Serie A",13:45:00 Serie A - Monza vs Sassuolo
+https://instreams.live/live/H89/index.m3u8?st=c0QCmv4Ifj1DJ6ionhh1iw&e=1789771631|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Championship",14:00:00 Championship - Bristol City vs Watford
+https://instreams.pro/live/H98/index.m3u8?st=dV9TBYLaJkbEdYvUgBrnDg&e=1789771643|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="LaLiga",14:00:00 LaLiga - Espanyol vs Elche
+https://instreams.pro/live/H94/index.m3u8?st=SqizCpYqgIhQMYQ6mg281A&e=1789771656|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Paraguay",14:00:00 Liga de Paraguay - Sportivo Trinidense vs Guaraní
+https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=5f5ade1f6d6b92c3219f674b8b8a9c6d5170a4d2-e4-1789805872-1789751872&ip=134.33.101.134|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Premier League",14:00:00 Premier League - Brentford vs Chelsea
+https://m71t4o.awqb0f40a9yo.net:8443/hls/bbpczdgm0xe1u.m3u8?s=vsLu-qtjgyUJodUjAIdLiw&e=1789782479|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
+#EXTINF:-1 group-title="Liga de Peru",15:00:00 Liga de Peru - Alianza Atlético vs Comerciantes Unidos
+https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=18577b2f559d66c482bafdd628ee910b94df1f98-94-1789805887-1789751887&ip=134.33.101.134|referer=https://capo8play.com/|origin=https://capo8play.com|user-agent=Mozilla/5.0%20%28Linux%3B%20Android%2010%3B%20K%29%20AppleWebKit/537.36%20%28KHTML%2C%20like%20Gecko%29%20Chrome/138.0.0.0%20Mobile%20Safari/537.36
