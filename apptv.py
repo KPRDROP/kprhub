@@ -13,7 +13,7 @@ from selectolax.parser import HTMLParser
 
 # ================= CONFIG =================
 
-BASE_URL = "https://the-tv.app/"
+BASE_URL = "https://thetvapp.plus/"
 OUTPUT_FILE = "apptv.m3u8"
 
 USER_AGENT = (
