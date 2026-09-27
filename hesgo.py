@@ -73,11 +73,6 @@ def fetch_events():
 
 
 def extract_stream_url(stream_url):
-    """
-    Extract the base64 part from the stream URL.
-    Example input: https://livelive24.com/dlhd.html?url=aHR0cHM6Ly9wdWxsdHguY3FzeWN3LmNvbS9saXZlL2hkLWVuLTZNd2NxVkJIMldVdWs3RXYxQy5tM3U4P3R4U2VjcmV0PTE5MTQyNGQ5NmE4MDBmY2YzNzQ3NTAyNDJiYTlhMGRkJnR4VGltZT02QUJFNjhDQw
-    Example output: xmtv://aHR0cHM6Ly9wdWxsdHguY3FzeWN3LmNvbS9saXZlL2hkLWVuLTZNd2NxVkJIMldVdWs3RXYxQy5tM3U4P3R4U2VjcmV0PTE5MTQyNGQ5NmE4MDBmY2YzNzQ3NTAyNDJiYTlhMGRkJnR4VGltZT02QUJFNjhDQw
-    """
     if not stream_url:
         return None
     
@@ -258,10 +253,10 @@ def push_to_github(filename):
     response = requests.put(api_url, headers=headers, json=payload)
     
     if response.status_code in [200, 201]:
-        log(f"✓ Successfully pushed to GitHub")
+        log(f"Successfully pushed to GitHub")
         return response.json()
     else:
-        log(f"✗ GitHub push failed: {response.status_code}")
+        log(f"GitHub push failed: {response.status_code}")
         if response.text:
             log(f"  Response: {response.text[:200]}")
         return None
@@ -290,7 +285,7 @@ def print_statistics(entries):
 
 def main():
     log("=" * 60)
-    log("HesGoal TV Scraper - xmtv:// Playlist Generator")
+    log("HesGoal TV Updater - xmtv:// Playlist Generator")
     log("=" * 60)
     
     # Fetch events from API
