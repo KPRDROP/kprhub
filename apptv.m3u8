@@ -1,3 +1,5 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[AEW] AEWAEW All Out Chicago (APPTV)" tvg-logo="https://scdnmain.net/assets/tournament/iilZG5tajU0WGOTs.png" group-title="Live Events",[AEW] AEWAEW All Out Chicago (APPTV)
-https://chatgpt.hereisman.net/playlist/57202/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] NFLNFL Redzone (APPTV)" tvg-logo="https://scdnmain.net/assets/tournament/108947.png" group-title="Live Events",[NFL] NFLNFL Redzone (APPTV)
+https://chatgpt.hereisman.net/playlist/57247/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] NFLNFL Network (APPTV)" tvg-logo="https://scdnmain.net/assets/tournament/108947.png" group-title="Live Events",[NFL] NFLNFL Network (APPTV)
+https://chatgpt.hereisman.net/playlist/54923/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
