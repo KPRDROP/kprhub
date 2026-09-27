@@ -3,44 +3,44 @@
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s2.envivoslatam99.sbs/global/espn/index.m3u8?token=21925dbfd1ce1ba5a25e30fd9ffd028e254bad30-de-1790560298-1790506298&ip=172.208.152.213
+https://s3.envivoslatam99.sbs/global/espn/index.m3u8?token=0706c0b393bdaf07396757b21a6b22ff41874e9f-81-1790576471-1790522471&ip=20.189.186.2
 #EXTINF:-1 group-title="Liga de Paraguay",16:30:00 Liga de Paraguay - Nacional Asunción vs 2 de Mayo
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=2d7f3b130b0174351f3ed76c20be3fb59c9c1053-02-1790560306-1790506306&ip=172.208.152.213
+https://s3.envivoslatam99.sbs/global/espn/index.m3u8?token=8e9cb91d57848cbd25ee0dfc1a660f28cb009d1d-03-1790576479-1790522479&ip=20.189.186.2
 #EXTINF:-1 group-title="Liga de Argentina",17:00:00 Liga de Argentina - Central Córdoba (Santiago del Estero) vs Defensa y Justicia
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=ec54e664a7c6566ccba562770335d9b83ce91465-21-1790560313-1790506313&ip=172.208.152.213
+https://s3.envivoslatam99.sbs/global/espn/index.m3u8?token=d3919b0fac533431db63240f85cfa3ef5ec05b9c-0b-1790576487-1790522487&ip=20.189.186.2
 #EXTINF:-1 group-title="MLS",18:30:00 MLS - New York City FC vs Red Bull New York
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=4c927e860f11e1259d75630e06fb0b05be8af570-9f-1790560321-1790506321&ip=172.208.152.213
+https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=199f13d23f6ffe1cd263edb2d0868ece1bf420e2-3f-1790576494-1790522494&ip=20.189.186.2
 #EXTINF:-1 group-title="Liga de Argentina",19:15:00 Liga de Argentina - Racing Club vs Sarmiento (Junín)
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s3.envivoslatam99.sbs/global/espn/index.m3u8?token=b6d0231fb41d5695ac12d48ca6a684610c68aa37-27-1790560328-1790506328&ip=172.208.152.213
+https://s3.envivoslatam99.sbs/global/espn/index.m3u8?token=0c0174e89f8dd987ecd5c9b41fff97c207e6d843-d6-1790576502-1790522502&ip=20.189.186.2
 #EXTINF:-1 group-title="Liga de Ecuador",19:30:00 Liga de Ecuador - Aucas vs Macará
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s3.envivoslatam99.sbs/global/espn/index.m3u8?token=eb9d086c0d2e8f559beee6a27eb2caee418381b1-a3-1790560335-1790506335&ip=172.208.152.213
+https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=b9f19d4e5723c8b66b801778139602c9588111ee-5c-1790576509-1790522509&ip=20.189.186.2
 #EXTINF:-1 group-title="Liga MX",20:00:00 Liga MX - Puebla vs Atlante
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.live/live2/CA1/index.m3u8?st=V5_W8scisWc0kP4OEmjdgA&e=1790526143
+https://instreams.live/live2/CA1/index.m3u8?st=vu0BLBRvTO8JhAe44ajoaA&e=1790542317
 #EXTINF:-1 group-title="Liga de Peru",20:00:00 Liga de Peru - Alianza Lima vs ADT Tarma
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://s3.envivoslatam99.sbs/global/espn/index.m3u8?token=33df47ec9238b259cd6f117d996661db3d7b31e5-40-1790560352-1790506352&ip=172.208.152.213
+https://s1.envivoslatam99.sbs/global/espn/index.m3u8?token=74e0f775b40ade9de4addbe76bf0358cab0e6326-1c-1790576524-1790522524&ip=20.189.186.2
 #EXTINF:-1 group-title="Liga MX",22:00:00 Liga MX - FC Juárez vs Tigres UANL
 #EXTVLCOPT:http-referrer=https://capo8play.com/
 #EXTVLCOPT:http-origin=https://capo8play.com
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Mobile Safari/537.36
-https://instreams.pro/live2/CA2/index.m3u8?st=XXik7TkH_bi0HLb1V1V8kQ&e=1790526159
+https://instreams.pro/live2/CA2/index.m3u8?st=KZ8rVIivO9bB6SEmEufW_A&e=1790542332
