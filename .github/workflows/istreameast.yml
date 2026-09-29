@@ -1,9 +1,8 @@
 name: iStream Updater
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'
-  workflow_dispatch:
+  repository_dispatch:
+     types: [iStream_external_schedule]
 
 permissions:
   contents: write
@@ -26,7 +25,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install selectolax aiohttp
 
-      - name: Run iStreamEast scraper
+      - name: Run iStreamEast updater
         run: |
           echo "Starting iStreamEast scraper..."
           python istreameast.py
