@@ -1,9 +1,8 @@
 name: iStream Updater
 
 on:
-  repository_dispatch:
-     types: [iStream_external_schedule]
-
+  workflow_dispatch:
+  
 permissions:
   contents: write
 
@@ -27,7 +26,7 @@ jobs:
 
       - name: Run iStreamEast updater
         run: |
-          echo "Starting iStreamEast scraper..."
+          echo "Starting iStreamEast updater..."
           python istreameast.py
 
       - name: Commit & push changes
