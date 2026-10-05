@@ -8,7 +8,8 @@ import time
 from urllib.parse import quote_plus, urljoin
 
 import aiohttp
-from selectolax.parser import HTMLParser
+from selectolax.lexbor import LexborHTMLParser
+# from selectolax.parser import HTMLParser
 
 # ================= CONFIG =================
 
