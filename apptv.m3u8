@@ -1,7 +1,3 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Other] OtherBrandrisk 016 (APPTV)" tvg-logo="https://scdnmain.net/assets/tournament/yAVN7wS3cQWeitC7.png" group-title="Live Events",[Other] OtherBrandrisk 016 (APPTV)
-https://chatgpt.hereisman.net/playlist/58121/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Nascar] Nascar2026 Truck Playoff at Phoenix (APPTV)" tvg-logo="https://scdnmain.net/assets/tournament/NASCAR-logo.png" group-title="Live Events",[Nascar] Nascar2026 Truck Playoff at Phoenix (APPTV)
-https://chatgpt.hereisman.net/playlist/58104/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[PFL] PFLPFL Chicago: Carmouche vs. Bishop 2 (APPTV)" tvg-logo="https://scdnmain.net/assets/tournament/3347.png" group-title="Live Events",[PFL] PFLPFL Chicago: Carmouche vs. Bishop 2 (APPTV)
-https://chatgpt.hereisman.net/playlist/58101/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[CFB] CFBCollege GameDay (APPTV)" tvg-logo="https://scdnmain.net/assets/tournament/108948.png" group-title="Live Events",[CFB] CFBCollege GameDay (APPTV)
+https://chatgpt.hereisman.net/playlist/55418/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
