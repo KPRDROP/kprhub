@@ -1,12 +1,14 @@
 name: Apptv Updater
 
 on:
-  schedule:
-    - cron: '*/30 * * * *'
   workflow_dispatch:
 
 permissions:
   contents: write
+
+concurrency:
+  group: apptv-updater
+  cancel-in-progress: false
 
 jobs:
   scrape:
@@ -15,6 +17,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
 
       - name: Setup Python
         uses: actions/setup-python@v5
@@ -27,19 +32,29 @@ jobs:
           pip install selectolax aiohttp
           pip install brotli
 
-      - name: Run Apptv updater
+      - name:  Run Apptv updater
         run: |
           echo "Starting Apptv updater..."
           python apptv.py
 
       - name: Commit & push changes
         run: |
-          if [[ -n "$(git status --porcelain apptv.m3u8)" ]]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add apptv.m3u8
-            git commit -m "Update Apptv playlist"
-            git push
-          else
+          if [[ -z "$(git status --porcelain apptv.m3u8)" ]]; then
             echo "No changes to commit"
+            exit 0
           fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add apptv.m3u8
+          git commit -m "Update Apptv playlist"
+
+          # Sync with remote before pushing, in case another
+          # workflow run pushed in the meantime.
+          for i in 1 2 3 4 5; do
+            git pull --rebase --autostash origin main && \
+              git push origin HEAD:main && \
+              break
+            echo "Push attempt $i failed, retrying in 5s..."
+            sleep 5
+          done
