@@ -146,7 +146,6 @@ async def extract_stream(session, event_url):
         log("  Failed to fetch event page")
         return None
 
-    # Fast path: stream is directly embedded in the event page
     direct = _extract_from_html(html)
     if direct:
         log(f"   Found stream on event page: {direct[:90]}")
@@ -208,15 +207,20 @@ def _clean_title(text: str) -> str:
     return text
 
 
+def _is_event_href(href: str) -> bool:
+    """Return True if the href looks like a live event page."""
+    if not href:
+        return False
+    lower = href.lower()
+    return "/tv-live/" in lower or "/live/" in lower
+
+
 def _parse_event_node(node, base_url):
     href = node.attributes.get("href")
-    if not href:
+    if not href or not _is_event_href(href):
         return None
 
     full_url = urljoin(base_url, href)
-
-    if not ("/tv-live/" in full_url or "/live/" in full_url):
-        return None
 
     # ---- Sport category ----
     sport = node.attributes.get("data-sport")
@@ -230,6 +234,11 @@ def _parse_event_node(node, base_url):
 
     if not sport:
         m = re.search(r'/tv-live/([^/]+)/', full_url)
+        if m:
+            sport = m.group(1).upper()
+
+    if not sport:
+        m = re.search(r'/live/([^/]+)/', full_url)
         if m:
             sport = m.group(1).upper()
 
@@ -254,7 +263,6 @@ def _parse_event_node(node, base_url):
         name = _clean_title(matchup.text(strip=True))
 
     if not name:
-        # Fallback for the older markup (raw text after <span>).
         name = _clean_title(node.text(strip=True))
         if sport and name.upper().startswith(sport.upper()):
             name = name[len(sport):].strip()
@@ -281,12 +289,9 @@ async def get_events(session):
     events = []
     seen = set()
 
-    # Primary selector: the current site uses a.list-group-item
-    # with a data-sport attribute and a <span class="matchup">.
-    candidates = soup.css("a.list-group-item[data-sport]")
-    if not candidates:
-        # Fallback to the older selector if data-sport disappeared.
-        candidates = soup.css("a.list-group-item")
+    # Broad selector: any anchor whose href points to a live event.
+    # This catches the new markup regardless of the CSS class used.
+    candidates = soup.css("a[href]")
 
     for node in candidates:
         parsed = _parse_event_node(node, BASE_URL)
@@ -297,9 +302,7 @@ async def get_events(session):
             continue
         seen.add(key)
         events.append(parsed)
-        log(
-            f"Found event: {parsed['sport']} - {parsed['title']}"
-        )
+        log(f"Found event: {parsed['sport']} - {parsed['title']}")
 
     return events
 
