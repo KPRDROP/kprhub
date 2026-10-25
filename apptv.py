@@ -208,28 +208,27 @@ def _clean_title(text: str) -> str:
     return text
 
 
-def _parse_anchor(link, base_url):
-    href = link.attributes.get("href")
+def _parse_event_node(node, base_url):
+    href = node.attributes.get("href")
     if not href:
         return None
 
     full_url = urljoin(base_url, href)
 
-    # Only live/tv-live events
-    if not (
-        "/tv-live/" in full_url
-        or "/live/" in full_url
-    ):
+    if not ("/tv-live/" in full_url or "/live/" in full_url):
         return None
 
-    # Sport category
-    sport = None
-    strong = link.css_first("strong")
-    if strong:
-        sport = strong.text(strip=True)
+    # ---- Sport category ----
+    sport = node.attributes.get("data-sport")
+    if sport:
+        sport = sport.strip()
 
     if not sport:
-        # Derive from URL: /tv-live/{sport}/{...}
+        strong = node.css_first("strong")
+        if strong:
+            sport = strong.text(strip=True)
+
+    if not sport:
         m = re.search(r'/tv-live/([^/]+)/', full_url)
         if m:
             sport = m.group(1).upper()
@@ -237,9 +236,9 @@ def _parse_anchor(link, base_url):
     if not sport:
         sport = "Other"
 
-    # Sport logo
+    # ---- Sport logo ----
     logo = None
-    img = link.css_first("img")
+    img = node.css_first("img")
     if img:
         src = img.attributes.get("src")
         if src:
@@ -248,8 +247,18 @@ def _parse_anchor(link, base_url):
     if not logo:
         logo = DEFAULT_LOGO
 
-    # Event name: text after the closing </span> that contains the img
-    name = _clean_title(link.text(strip=True))
+    # ---- Event name ----
+    name = None
+    matchup = node.css_first("span.matchup")
+    if matchup:
+        name = _clean_title(matchup.text(strip=True))
+
+    if not name:
+        # Fallback for the older markup (raw text after <span>).
+        name = _clean_title(node.text(strip=True))
+        if sport and name.upper().startswith(sport.upper()):
+            name = name[len(sport):].strip()
+
     if not name or len(name) < 3:
         return None
 
@@ -272,8 +281,15 @@ async def get_events(session):
     events = []
     seen = set()
 
-    for link in soup.css("a.list-group-item"):
-        parsed = _parse_anchor(link, BASE_URL)
+    # Primary selector: the current site uses a.list-group-item
+    # with a data-sport attribute and a <span class="matchup">.
+    candidates = soup.css("a.list-group-item[data-sport]")
+    if not candidates:
+        # Fallback to the older selector if data-sport disappeared.
+        candidates = soup.css("a.list-group-item")
+
+    for node in candidates:
+        parsed = _parse_event_node(node, BASE_URL)
         if not parsed:
             continue
         key = parsed["url"]
@@ -303,7 +319,7 @@ async def main():
         log(f"\nFound {len(events)} total events")
 
         if not events:
-            log("No events found - check if website structure changed")
+            log("No events found; check if website structure changed")
             return
 
         entries = []
