@@ -289,8 +289,6 @@ async def get_events(session):
     events = []
     seen = set()
 
-    # Broad selector: any anchor whose href points to a live event.
-    # This catches the new markup regardless of the CSS class used.
     candidates = soup.css("a[href]")
 
     for node in candidates:
@@ -311,7 +309,7 @@ async def get_events(session):
 
 async def main():
     log("=" * 60)
-    log("TheTVApp Scraper Started")
+    log("TheTVApp Updater Started")
     log("=" * 60)
 
     cache = load_cache()
