@@ -1,6 +1,42 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] NFL Redzone (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] NFL Redzone (iSTRM)
-https://chatgpt.hereisman.net/playlist/59030/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+https://chatgpt.hereisman.net/playlist/59028/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Jacksonville Jaguars
+                vs Indianapolis Colts (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Jacksonville Jaguars
+                vs Indianapolis Colts (iSTRM)
+https://chatgpt.hereisman.net/playlist/59040/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NHL] Carolina Hurricanes
+                vs Winnipeg Jets (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NHL] Carolina Hurricanes
+                vs Winnipeg Jets (iSTRM)
+https://chatgpt.hereisman.net/playlist/59054/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Tampa Bay Buccaneers
+                vs Atlanta Falcons (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Tampa Bay Buccaneers
+                vs Atlanta Falcons (iSTRM)
+https://chatgpt.hereisman.net/playlist/59044/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Pittsburgh Steelers
+                vs Cleveland Browns (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Pittsburgh Steelers
+                vs Cleveland Browns (iSTRM)
+https://chatgpt.hereisman.net/playlist/59047/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] New York Jets
+                vs Las Vegas Raiders (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] New York Jets
+                vs Las Vegas Raiders (iSTRM)
+https://chatgpt.hereisman.net/playlist/59034/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Detroit Lions
+                vs Minnesota Vikings (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Detroit Lions
+                vs Minnesota Vikings (iSTRM)
+https://chatgpt.hereisman.net/playlist/59035/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Dallas Cowboys
+                vs Arizona Cardinals (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Dallas Cowboys
+                vs Arizona Cardinals (iSTRM)
+https://chatgpt.hereisman.net/playlist/59043/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Cincinnati Bengals
+                vs Tennessee Titans (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Cincinnati Bengals
+                vs Tennessee Titans (iSTRM)
+https://chatgpt.hereisman.net/playlist/59038/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Buffalo Bills
+                vs Baltimore Ravens (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Buffalo Bills
+                vs Baltimore Ravens (iSTRM)
+https://chatgpt.hereisman.net/playlist/59032/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[LaLiga] Elche
                 vs Valencia (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[LaLiga] Elche
                 vs Valencia (iSTRM)
@@ -19,39 +55,3 @@ https://chatgpt.hereisman.net/playlist/59050/load-playlist|referer=https://gooz.
 https://chatgpt.hereisman.net/playlist/59049/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Formula 1] Formula 1 2026 - Mexico GP (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Formula 1] Formula 1 2026 - Mexico GP (iSTRM)
 https://chatgpt.hereisman.net/playlist/58842/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NHL] Carolina Hurricanes
-                vs Winnipeg Jets (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NHL] Carolina Hurricanes
-                vs Winnipeg Jets (iSTRM)
-https://chatgpt.hereisman.net/playlist/59054/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Buffalo Bills
-                vs Baltimore Ravens (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Buffalo Bills
-                vs Baltimore Ravens (iSTRM)
-https://chatgpt.hereisman.net/playlist/59031/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Cincinnati Bengals
-                vs Tennessee Titans (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Cincinnati Bengals
-                vs Tennessee Titans (iSTRM)
-https://chatgpt.hereisman.net/playlist/59038/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Dallas Cowboys
-                vs Arizona Cardinals (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Dallas Cowboys
-                vs Arizona Cardinals (iSTRM)
-https://chatgpt.hereisman.net/playlist/59043/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Detroit Lions
-                vs Minnesota Vikings (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Detroit Lions
-                vs Minnesota Vikings (iSTRM)
-https://chatgpt.hereisman.net/playlist/59036/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Jacksonville Jaguars
-                vs Indianapolis Colts (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Jacksonville Jaguars
-                vs Indianapolis Colts (iSTRM)
-https://chatgpt.hereisman.net/playlist/59040/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] New York Jets
-                vs Las Vegas Raiders (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] New York Jets
-                vs Las Vegas Raiders (iSTRM)
-https://chatgpt.hereisman.net/playlist/59033/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Pittsburgh Steelers
-                vs Cleveland Browns (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Pittsburgh Steelers
-                vs Cleveland Browns (iSTRM)
-https://chatgpt.hereisman.net/playlist/59046/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Tampa Bay Buccaneers
-                vs Atlanta Falcons (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Tampa Bay Buccaneers
-                vs Atlanta Falcons (iSTRM)
-https://chatgpt.hereisman.net/playlist/59045/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
