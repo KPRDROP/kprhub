@@ -1,12 +1,16 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Formula 1] Formula 1 2026 - Mexico GP (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Formula 1] Formula 1 2026 - Mexico GP (iSTRM)
-https://chatgpt.hereisman.net/playlist/58842/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+https://chatgpt.hereisman.net/playlist/59070/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] NFL Redzone (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] NFL Redzone (iSTRM)
-https://chatgpt.hereisman.net/playlist/59029/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+https://chatgpt.hereisman.net/playlist/59030/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NBA] Orlando Magic
                 vs Boston Celtics (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NBA] Orlando Magic
                 vs Boston Celtics (iSTRM)
-https://chatgpt.hereisman.net/playlist/59073/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+https://chatgpt.hereisman.net/playlist/59080/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NWSL] Washington Spirit
+                vs Chicago Stars FC (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NWSL] Washington Spirit
+                vs Chicago Stars FC (iSTRM)
+https://chatgpt.hereisman.net/playlist/59097/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NWSL] NJ/NY Gotham FC
                 vs Utah Royals FC (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NWSL] NJ/NY Gotham FC
                 vs Utah Royals FC (iSTRM)
@@ -30,7 +34,7 @@ https://chatgpt.hereisman.net/playlist/59087/load-playlist|referer=https://gooz.
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Miami Dolphins
                 vs New England Patriots (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Miami Dolphins
                 vs New England Patriots (iSTRM)
-https://chatgpt.hereisman.net/playlist/59079/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+https://chatgpt.hereisman.net/playlist/59078/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Denver Broncos
                 vs Kansas City Chiefs (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Denver Broncos
                 vs Kansas City Chiefs (iSTRM)
@@ -42,7 +46,7 @@ https://chatgpt.hereisman.net/playlist/59077/load-playlist|referer=https://gooz.
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NHL] Philadelphia Flyers
                 vs Utah Mammoth (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NHL] Philadelphia Flyers
                 vs Utah Mammoth (iSTRM)
-https://chatgpt.hereisman.net/playlist/59082/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+https://chatgpt.hereisman.net/playlist/59081/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NHL] Washington Capitals
                 vs Minnesota Wild (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NHL] Washington Capitals
                 vs Minnesota Wild (iSTRM)
@@ -60,4 +64,4 @@ https://chatgpt.hereisman.net/playlist/59092/load-playlist|referer=https://gooz.
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[NFL] Washington Commanders
                 vs Philadelphia Eagles (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[NFL] Washington Commanders
                 vs Philadelphia Eagles (iSTRM)
-https://chatgpt.hereisman.net/playlist/59094/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+https://chatgpt.hereisman.net/playlist/59096/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
