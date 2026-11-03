@@ -49,11 +49,11 @@ def clean_text(text):
 def fetch_xml():
     """Fetch the schedule XML from Field59"""
     if not APAW_BASE_URL:
-        log("APAW_BASE_URL environment variable is not set")
+        log("ERROR: APAW_BASE_URL environment variable is not set")
         return None
-    
-    log(f"📡 Fetching: {APAW_BASE_URL}")
-    
+
+    log(f"Fetching: {APAW_BASE_URL}")
+
     try:
         headers = {
             'User-Agent': USER_AGENT,
@@ -62,43 +62,43 @@ def fetch_xml():
             'Referer': REFERER,
             'Origin': ORIGIN,
         }
-        
+
         response = requests.get(APAW_BASE_URL, timeout=30, headers=headers)
         response.raise_for_status()
-        
-        log(f"Fetched XML ({len(response.text)} bytes)")
+
+        log(f"OK: Fetched XML ({len(response.text)} bytes)")
         return response.text
-        
+
     except requests.RequestException as e:
-        log(f"Error fetching XML: {e}")
+        log(f"ERROR: Failed to fetch XML: {e}")
         return None
 
 
 def extract_all_instances(xml_content):
-  if not xml_content:
+    if not xml_content:
         return []
-    
+
     events = []
-    
+
     # Find all <instance>...</instance> blocks
     instance_blocks = re.findall(
         r'<instance>(.*?)</instance>',
         xml_content,
         re.DOTALL | re.IGNORECASE
     )
-    
-    log(f"  Found {len(instance_blocks)} <instance> block(s)")
-    
+
+    log(f"Found {len(instance_blocks)} <instance> block(s)")
+
     if not instance_blocks:
-        log("  No <instance> blocks found. Trying fallback...")
+        log("WARNING: No <instance> blocks found. Trying fallback...")
         # Fallback: try to find title/url pairs anywhere in XML
         titles = re.findall(r'<title>(.*?)</title>', xml_content, re.DOTALL | re.IGNORECASE)
         urls = re.findall(r'<url>(.*?)</url>', xml_content, re.DOTALL | re.IGNORECASE)
-        
+
         for i, (title_raw, url_raw) in enumerate(zip(titles, urls), 1):
             title = clean_text(title_raw)
             url = clean_text(url_raw)
-            
+
             if url and '.m3u8' in url:
                 events.append({
                     'title': title or f"WAPA Event {i}",
@@ -108,9 +108,9 @@ def extract_all_instances(xml_content):
                     'tag': TAG,
                     'group': GROUP_TITLE,
                 })
-        
+
         return events
-    
+
     # Process each <instance> block
     for idx, block in enumerate(instance_blocks, 1):
         # Extract <title> from block
@@ -120,7 +120,7 @@ def extract_all_instances(xml_content):
             re.DOTALL | re.IGNORECASE
         )
         title = clean_text(title_match.group(1)) if title_match else None
-        
+
         # Extract <url> from block
         url_match = re.search(
             r'<url>(.*?)</url>',
@@ -128,25 +128,25 @@ def extract_all_instances(xml_content):
             re.DOTALL | re.IGNORECASE
         )
         stream_url = clean_text(url_match.group(1)) if url_match else None
-        
+
         # Validate we have both title and URL
         if not title:
-            log(f"  Instance {idx}: no title, skipping")
+            log(f"WARNING: Instance {idx}: no title, skipping")
             continue
-        
+
         if not stream_url:
-            log(f"  Instance {idx} '{title}': no URL, skipping")
+            log(f"WARNING: Instance {idx} '{title}': no URL, skipping")
             continue
-        
+
         # Validate it's actually an m3u8 stream (not an image)
         if '.m3u8' not in stream_url:
-            log(f"  Instance {idx} '{title}': URL is not m3u8, skipping")
+            log(f"WARNING: Instance {idx} '{title}': URL is not m3u8, skipping")
             continue
-        
+
         if not stream_url.startswith('http'):
-            log(f"  Instance {idx} '{title}': invalid URL, skipping")
+            log(f"WARNING: Instance {idx} '{title}': invalid URL, skipping")
             continue
-        
+
         events.append({
             'title': title,
             'stream_url': stream_url,
@@ -155,20 +155,20 @@ def extract_all_instances(xml_content):
             'tag': TAG,
             'group': GROUP_TITLE,
         })
-        
-        log(f"  Instance {idx}: {title}")
+
+        log(f"OK: Instance {idx}: {title}")
         log(f"    Stream: {stream_url[:80]}...")
-    
+
     return events
 
 
 def save_vlc_playlist(events, output_file):
     """Save VLC playlist with EXTVLCOPT headers"""
     log(f"Saving VLC playlist: {output_file}")
-    
+
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
-        
+
         ch_no = 1
         for event in events:
             f.write(
@@ -184,18 +184,18 @@ def save_vlc_playlist(events, output_file):
             f.write(f'#EXTVLCOPT:http-user-agent={USER_AGENT}\n')
             f.write(f'{event["stream_url"]}\n\n')
             ch_no += 1
-    
-    log(f"VLC playlist saved with {ch_no - 1} stream(s)")
+
+    log(f"OK: VLC playlist saved with {ch_no - 1} stream(s)")
     return output_file
 
 
 def save_tivimate_playlist(events, output_file):
     """Save TiviMate playlist with pipe headers and encoded user agent"""
     log(f"Saving TiviMate playlist: {output_file}")
-    
+
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
-        
+
         ch_no = 1
         for event in events:
             url_with_headers = (
@@ -204,7 +204,7 @@ def save_tivimate_playlist(events, output_file):
                 f'|origin={ORIGIN}'
                 f'|user-agent={ENCODED_UA}'
             )
-            
+
             f.write(
                 f'#EXTINF:-1 tvg-chno="{ch_no}" '
                 f'tvg-id="{event["tvg_id"]}" '
@@ -215,38 +215,38 @@ def save_tivimate_playlist(events, output_file):
             )
             f.write(f'{url_with_headers}\n\n')
             ch_no += 1
-    
-    log(f"TiviMate playlist saved with {ch_no - 1} stream(s)")
+
+    log(f"OK: TiviMate playlist saved with {ch_no - 1} stream(s)")
     return output_file
 
 
 def push_to_github(filename):
     """Push file to GitHub using token"""
     if not GITHUB_TOKEN or not GITHUB_REPO:
-        log(f"No GitHub credentials found, skipping push of {filename}")
+        log(f"WARNING: No GitHub credentials found, skipping push of {filename}")
         return None
-    
+
     log(f"Pushing {filename} to GitHub...")
-    
+
     with open(filename, 'r', encoding='utf-8') as f:
         content = f.read()
-    
+
     content_base64 = base64.b64encode(content.encode('utf-8')).decode('utf-8')
-    
+
     api_url = f"https://api.github.com/repos/{GITHUB_REPO}/contents/{filename}"
     headers = {
         'Authorization': f'token {GITHUB_TOKEN}',
         'Accept': 'application/vnd.github.v3+json'
     }
-    
+
     sha = None
     try:
         response = requests.get(api_url, headers=headers)
         if response.status_code == 200:
             sha = response.json().get('sha')
-    except:
+    except Exception:
         pass
-    
+
     payload = {
         'message': f'Update {filename} - {datetime.now().strftime("%Y-%m-%d %H:%M:%S")}',
         'content': content_base64,
@@ -254,14 +254,14 @@ def push_to_github(filename):
     }
     if sha:
         payload['sha'] = sha
-    
+
     response = requests.put(api_url, headers=headers, json=payload)
-    
+
     if response.status_code in [200, 201]:
-        log(f"Pushed to GitHub: {GITHUB_REPO}/{filename}")
+        log(f"OK: Pushed to GitHub: {GITHUB_REPO}/{filename}")
         return response.json()
     else:
-        log(f"GitHub push failed for {filename}: {response.status_code}")
+        log(f"ERROR: GitHub push failed for {filename}: {response.status_code}")
         if response.text:
             log(f"  Response: {response.text[:200]}")
         return None
@@ -273,30 +273,34 @@ def main():
     log("=" * 60)
     log("WAPA Field59 Scraper - Playlist Generator")
     log("=" * 60)
-    
+
     xml_content = fetch_xml()
     if not xml_content:
-        log("Failed to fetch XML. Exiting.")
+        log("ERROR: Failed to fetch XML. Exiting.")
         return
-    
-    log("\nExtracting ALL instances from schedule...")
+
+    log("")
+    log("Extracting ALL instances from schedule...")
     events = extract_all_instances(xml_content)
-    
+
     if not events:
-        log("No valid events found. Exiting.")
+        log("ERROR: No valid events found. Exiting.")
         return
-    
-    log(f"\nTotal events extracted: {len(events)}")
-    
-    log("\nGenerating playlists...")
+
+    log(f"OK: Total events extracted: {len(events)}")
+
+    log("")
+    log("Generating playlists...")
     vlc_file = save_vlc_playlist(events, VLC_OUTPUT)
     tivimate_file = save_tivimate_playlist(events, TIVIMATE_OUTPUT)
-    
-    log("\nPushing to GitHub...")
+
+    log("")
+    log("Pushing to GitHub...")
     push_to_github(vlc_file)
     push_to_github(tivimate_file)
-    
-    log("\n" + "=" * 60)
+
+    log("")
+    log("=" * 60)
     log(f"Complete!")
     log(f"   VLC: {VLC_OUTPUT} ({len(events)} streams)")
     log(f"   TiviMate: {TIVIMATE_OUTPUT} ({len(events)} streams)")
