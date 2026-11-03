@@ -1,8 +1,4 @@
 #!/usr/bin/env python3
-"""
-WAPA Field59 Scraper - Fetches schedule XML from Field59 and generates VLC/TiviMate playlists
-"""
-
 import os
 import re
 import base64
@@ -36,23 +32,27 @@ def log(msg):
     print(msg, flush=True)
 
 
-def clean_cdata(text):
-    """Remove CDATA wrapper and clean whitespace"""
+def clean_text(text):
+    """Clean CDATA, whitespace, and XML artifacts from text"""
     if not text:
         return ""
     # Remove CDATA wrappers
     text = re.sub(r'<!\[CDATA\[', '', text)
     text = re.sub(r'\]\]>', '', text)
-    # Clean whitespace
-    text = text.strip()
-    # Remove any leftover angle brackets
-    text = text.replace('<', '').replace('>', '')
+    # Remove any XML tags
+    text = re.sub(r'<[^>]+>', '', text)
+    # Normalize whitespace (including newlines)
+    text = re.sub(r'\s+', ' ', text)
     return text.strip()
 
 
 def fetch_xml():
     """Fetch the schedule XML from Field59"""
-    log(f"Fetching: {APAW_BASE_URL}")
+    if not APAW_BASE_URL:
+        log("APAW_BASE_URL environment variable is not set")
+        return None
+    
+    log(f"📡 Fetching: {APAW_BASE_URL}")
     
     try:
         headers = {
@@ -74,91 +74,77 @@ def fetch_xml():
         return None
 
 
-def extract_all_events(xml_content):
-    """Extract ALL events from XML, ignoring begin/end times"""
-    if not xml_content:
+def extract_all_instances(xml_content):
+  if not xml_content:
         return []
     
     events = []
     
-    # Strategy 1: Find all <item> blocks (common RSS/XML structure)
-    item_blocks = re.findall(r'<item>(.*?)</item>', xml_content, re.DOTALL | re.IGNORECASE)
+    # Find all <instance>...</instance> blocks
+    instance_blocks = re.findall(
+        r'<instance>(.*?)</instance>',
+        xml_content,
+        re.DOTALL | re.IGNORECASE
+    )
     
-    # Strategy 2: If no <item> blocks, try <program> blocks
-    if not item_blocks:
-        item_blocks = re.findall(r'<program>(.*?)</program>', xml_content, re.DOTALL | re.IGNORECASE)
+    log(f"  Found {len(instance_blocks)} <instance> block(s)")
     
-    # Strategy 3: Try <entry> blocks
-    if not item_blocks:
-        item_blocks = re.findall(r'<entry>(.*?)</entry>', xml_content, re.DOTALL | re.IGNORECASE)
+    if not instance_blocks:
+        log("  No <instance> blocks found. Trying fallback...")
+        # Fallback: try to find title/url pairs anywhere in XML
+        titles = re.findall(r'<title>(.*?)</title>', xml_content, re.DOTALL | re.IGNORECASE)
+        urls = re.findall(r'<url>(.*?)</url>', xml_content, re.DOTALL | re.IGNORECASE)
+        
+        for i, (title_raw, url_raw) in enumerate(zip(titles, urls), 1):
+            title = clean_text(title_raw)
+            url = clean_text(url_raw)
+            
+            if url and '.m3u8' in url:
+                events.append({
+                    'title': title or f"WAPA Event {i}",
+                    'stream_url': url,
+                    'logo': LOGO,
+                    'tvg_id': TVG_ID,
+                    'tag': TAG,
+                    'group': GROUP_TITLE,
+                })
+        
+        return events
     
-    # Strategy 4: If no blocks found, treat entire XML as one block
-    if not item_blocks:
-        item_blocks = [xml_content]
-    
-    log(f"  Found {len(item_blocks)} event block(s)")
-    
-    for i, block in enumerate(item_blocks):
-        # Extract title (handles both plain and CDATA)
-        title = None
-        title_patterns = [
-            r'<title>\s*<!\[CDATA\[(.*?)\]\]>\s*</title>',
+    # Process each <instance> block
+    for idx, block in enumerate(instance_blocks, 1):
+        # Extract <title> from block
+        title_match = re.search(
             r'<title>(.*?)</title>',
-            r'<title\s+[^>]*>(.*?)</title>',
-        ]
-        for pattern in title_patterns:
-            match = re.search(pattern, block, re.DOTALL | re.IGNORECASE)
-            if match:
-                title = clean_cdata(match.group(1))
-                if title:
-                    break
+            block,
+            re.DOTALL | re.IGNORECASE
+        )
+        title = clean_text(title_match.group(1)) if title_match else None
         
-        # Skip if no title or title is generic
-        if not title or title.lower() in ['wapa en vivo', 'wapa', 'live']:
-            # Try to find title near <key> tag as fallback
-            key_match = re.search(r'<key>(.*?)</key>', block, re.DOTALL | re.IGNORECASE)
-            if key_match:
-                fallback_title = clean_cdata(key_match.group(1))
-                if fallback_title and fallback_title.lower() not in ['wapa en vivo', 'wapa', 'live']:
-                    title = fallback_title
-        
-        # If still no title, use default with index
-        if not title:
-            title = f"WAPA Event {i + 1}"
-        
-        # Extract stream URL - look for m3u8 links specifically
-        stream_url = None
-        url_patterns = [
-            r'<url>\s*<!\[CDATA\[(https?://[^\]]+\.m3u8[^\]]*)\]\]>\s*</url>',
-            r'<url>\s*(https?://[^<]+\.m3u8[^<]*)\s*</url>',
+        # Extract <url> from block
+        url_match = re.search(
             r'<url>(.*?)</url>',
-            r'<stream_url>(.*?)</stream_url>',
-            r'<stream>(.*?)</stream>',
-            r'<link>(.*?)</link>',
-        ]
+            block,
+            re.DOTALL | re.IGNORECASE
+        )
+        stream_url = clean_text(url_match.group(1)) if url_match else None
         
-        for pattern in url_patterns:
-            match = re.search(pattern, block, re.DOTALL | re.IGNORECASE)
-            if match:
-                potential_url = clean_cdata(match.group(1))
-                if '.m3u8' in potential_url and 'http' in potential_url:
-                    stream_url = potential_url
-                    break
-        
-        # Fallback: search for any m3u8 URL in the block
-        if not stream_url:
-            m3u8_match = re.search(r'(https?://[^\s<>"\']+\.m3u8[^\s<>"\']*)', block)
-            if m3u8_match:
-                stream_url = m3u8_match.group(1)
-        
-        # Skip if no valid stream URL
-        if not stream_url:
-            log(f"  Event '{title}' has no valid m3u8 stream")
+        # Validate we have both title and URL
+        if not title:
+            log(f"  Instance {idx}: no title, skipping")
             continue
         
-        # Skip if URL is actually an image (logo)
-        if any(ext in stream_url.lower() for ext in ['.png', '.jpg', '.jpeg', '.gif', '.svg']):
-            log(f"  Event '{title}' URL is an image, skipping: {stream_url[:60]}")
+        if not stream_url:
+            log(f"  Instance {idx} '{title}': no URL, skipping")
+            continue
+        
+        # Validate it's actually an m3u8 stream (not an image)
+        if '.m3u8' not in stream_url:
+            log(f"  Instance {idx} '{title}': URL is not m3u8, skipping")
+            continue
+        
+        if not stream_url.startswith('http'):
+            log(f"  Instance {idx} '{title}': invalid URL, skipping")
             continue
         
         events.append({
@@ -170,7 +156,7 @@ def extract_all_events(xml_content):
             'group': GROUP_TITLE,
         })
         
-        log(f"  Event {i + 1}: {title}")
+        log(f"  Instance {idx}: {title}")
         log(f"    Stream: {stream_url[:80]}...")
     
     return events
@@ -185,10 +171,14 @@ def save_vlc_playlist(events, output_file):
         
         ch_no = 1
         for event in events:
-            f.write(f'#EXTINF:-1 tvg-chno="{ch_no}" tvg-id="{event["tvg_id"]}" '
-                    f'tvg-name="{event["title"]} ({event["tag"]})" '
-                    f'tvg-logo="{event["logo"]}" '
-                    f'group-title="{event["group"]}",{event["title"]}\n')
+            f.write(
+                f'#EXTINF:-1 tvg-chno="{ch_no}" '
+                f'tvg-id="{event["tvg_id"]}" '
+                f'tvg-name="{event["title"]} ({event["tag"]})" '
+                f'tvg-logo="{event["logo"]}" '
+                f'group-title="{event["group"]}",'
+                f'{event["title"]}\n'
+            )
             f.write(f'#EXTVLCOPT:http-referrer={REFERER}\n')
             f.write(f'#EXTVLCOPT:http-origin={ORIGIN}\n')
             f.write(f'#EXTVLCOPT:http-user-agent={USER_AGENT}\n')
@@ -208,7 +198,6 @@ def save_tivimate_playlist(events, output_file):
         
         ch_no = 1
         for event in events:
-            # Build URL with TiviMate headers
             url_with_headers = (
                 f'{event["stream_url"]}'
                 f'|referer={REFERER}'
@@ -216,10 +205,14 @@ def save_tivimate_playlist(events, output_file):
                 f'|user-agent={ENCODED_UA}'
             )
             
-            f.write(f'#EXTINF:-1 tvg-chno="{ch_no}" tvg-id="{event["tvg_id"]}" '
-                    f'tvg-name="{event["title"]} ({event["tag"]})" '
-                    f'tvg-logo="{event["logo"]}" '
-                    f'group-title="{event["group"]}",{event["title"]}\n')
+            f.write(
+                f'#EXTINF:-1 tvg-chno="{ch_no}" '
+                f'tvg-id="{event["tvg_id"]}" '
+                f'tvg-name="{event["title"]} ({event["tag"]})" '
+                f'tvg-logo="{event["logo"]}" '
+                f'group-title="{event["group"]}",'
+                f'{event["title"]}\n'
+            )
             f.write(f'{url_with_headers}\n\n')
             ch_no += 1
     
@@ -230,7 +223,7 @@ def save_tivimate_playlist(events, output_file):
 def push_to_github(filename):
     """Push file to GitHub using token"""
     if not GITHUB_TOKEN or not GITHUB_REPO:
-        log("⚠ No GitHub credentials found, skipping push")
+        log(f"No GitHub credentials found, skipping push of {filename}")
         return None
     
     log(f"Pushing {filename} to GitHub...")
@@ -268,7 +261,7 @@ def push_to_github(filename):
         log(f"Pushed to GitHub: {GITHUB_REPO}/{filename}")
         return response.json()
     else:
-        log(f"GitHub push failed: {response.status_code}")
+        log(f"GitHub push failed for {filename}: {response.status_code}")
         if response.text:
             log(f"  Response: {response.text[:200]}")
         return None
@@ -286,8 +279,8 @@ def main():
         log("Failed to fetch XML. Exiting.")
         return
     
-    log("\nExtracting all events...")
-    events = extract_all_events(xml_content)
+    log("\nExtracting ALL instances from schedule...")
+    events = extract_all_instances(xml_content)
     
     if not events:
         log("No valid events found. Exiting.")
