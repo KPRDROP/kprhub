@@ -1,6 +1,7 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="<![CDATA[WAPA En Vivo]]> (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",<![CDATA[WAPA En Vivo]]>
+#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="9f91970fb55d5a5b1b18adeaf20fb8fd3f33e565 (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",9f91970fb55d5a5b1b18adeaf20fb8fd3f33e565
 #EXTVLCOPT:http-referrer=https://wapa.tv/
 #EXTVLCOPT:http-origin=https://wapa.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-<![CDATA[https://cdn.field59.com/WAPA/b02b85967138afe456fdd02b3a6f3a214f002d67_logo_wapatv_ott_custom.png]]>
+https://live.field59.com/t/1793696400_1fce24c9086fd189523d9eda1a94b8d63f25f1a7_1793715240/wapa/wapa1/playlist.m3u8
+
