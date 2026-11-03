@@ -12,26 +12,21 @@ from urllib.parse import quote_plus
 
 # ================= CONFIG =================
 
-# Base URL
 APAW_BASE_URL = os.getenv('APAW_BASE_URL')
 
-# Output files
 VLC_OUTPUT = "apaw_vlc.m3u8"
 TIVIMATE_OUTPUT = "apaw_tivimate.m3u8"
 
-# Headers
 REFERER = "https://wapa.tv/"
 ORIGIN = "https://wapa.tv"
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
 ENCODED_UA = quote_plus(USER_AGENT)
 
-# Metadata
 TAG = "WAPA-DT1"
 TVG_ID = "WAPADT1.pr"
 LOGO = "https://i.imgur.com/m5L6pyj.png"
 GROUP_TITLE = "Live Events"
 
-# GitHub config
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
 GITHUB_REPO = os.getenv('GITHUB_REPO')
 
@@ -39,6 +34,20 @@ GITHUB_REPO = os.getenv('GITHUB_REPO')
 
 def log(msg):
     print(msg, flush=True)
+
+
+def clean_cdata(text):
+    """Remove CDATA wrapper and clean whitespace"""
+    if not text:
+        return ""
+    # Remove CDATA wrappers
+    text = re.sub(r'<!\[CDATA\[', '', text)
+    text = re.sub(r'\]\]>', '', text)
+    # Clean whitespace
+    text = text.strip()
+    # Remove any leftover angle brackets
+    text = text.replace('<', '').replace('>', '')
+    return text.strip()
 
 
 def fetch_xml():
@@ -65,99 +74,163 @@ def fetch_xml():
         return None
 
 
-def extract_metadata(xml_content):
-    """Extract metadata from the XML content"""
+def extract_all_events(xml_content):
+    """Extract ALL events from XML, ignoring begin/end times"""
     if not xml_content:
-        return None
+        return []
     
-    # Extract title from <title>...</title>
-    title_match = re.search(r'<title>(.*?)</title>', xml_content, re.DOTALL)
-    title = title_match.group(1).strip() if title_match else None
+    events = []
     
-    # Extract stream URL from <url>...</url>
-    url_match = re.search(r'<url>(.*?)</url>', xml_content, re.DOTALL)
-    stream_url = url_match.group(1).strip() if url_match else None
+    # Strategy 1: Find all <item> blocks (common RSS/XML structure)
+    item_blocks = re.findall(r'<item>(.*?)</item>', xml_content, re.DOTALL | re.IGNORECASE)
     
-    # If not found, try CDATA wrapped patterns
-    if not title:
-        title_match = re.search(r'<title><!\[CDATA\[(.*?)\]\]></title>', xml_content, re.DOTALL)
-        title = title_match.group(1).strip() if title_match else None
+    # Strategy 2: If no <item> blocks, try <program> blocks
+    if not item_blocks:
+        item_blocks = re.findall(r'<program>(.*?)</program>', xml_content, re.DOTALL | re.IGNORECASE)
     
-    if not stream_url:
-        url_match = re.search(r'<url><!\[CDATA\[(.*?)\]\]></url>', xml_content, re.DOTALL)
-        stream_url = url_match.group(1).strip() if url_match else None
+    # Strategy 3: Try <entry> blocks
+    if not item_blocks:
+        item_blocks = re.findall(r'<entry>(.*?)</entry>', xml_content, re.DOTALL | re.IGNORECASE)
     
-    # Also try to find m3u8 directly as fallback
-    if not stream_url:
-        m3u8_match = re.search(r'(https?://[^\s<>"\']+\.m3u8[^\s<>"\']*)', xml_content)
-        if m3u8_match:
-            stream_url = m3u8_match.group(1)
+    # Strategy 4: If no blocks found, treat entire XML as one block
+    if not item_blocks:
+        item_blocks = [xml_content]
     
-    if not title:
-        log("No title found, using default")
-        title = "WAPA En Vivo"
+    log(f"  Found {len(item_blocks)} event block(s)")
     
-    if not stream_url:
-        log("No stream URL found in XML")
-        return None
+    for i, block in enumerate(item_blocks):
+        # Extract title (handles both plain and CDATA)
+        title = None
+        title_patterns = [
+            r'<title>\s*<!\[CDATA\[(.*?)\]\]>\s*</title>',
+            r'<title>(.*?)</title>',
+            r'<title\s+[^>]*>(.*?)</title>',
+        ]
+        for pattern in title_patterns:
+            match = re.search(pattern, block, re.DOTALL | re.IGNORECASE)
+            if match:
+                title = clean_cdata(match.group(1))
+                if title:
+                    break
+        
+        # Skip if no title or title is generic
+        if not title or title.lower() in ['wapa en vivo', 'wapa', 'live']:
+            # Try to find title near <key> tag as fallback
+            key_match = re.search(r'<key>(.*?)</key>', block, re.DOTALL | re.IGNORECASE)
+            if key_match:
+                fallback_title = clean_cdata(key_match.group(1))
+                if fallback_title and fallback_title.lower() not in ['wapa en vivo', 'wapa', 'live']:
+                    title = fallback_title
+        
+        # If still no title, use default with index
+        if not title:
+            title = f"WAPA Event {i + 1}"
+        
+        # Extract stream URL - look for m3u8 links specifically
+        stream_url = None
+        url_patterns = [
+            r'<url>\s*<!\[CDATA\[(https?://[^\]]+\.m3u8[^\]]*)\]\]>\s*</url>',
+            r'<url>\s*(https?://[^<]+\.m3u8[^<]*)\s*</url>',
+            r'<url>(.*?)</url>',
+            r'<stream_url>(.*?)</stream_url>',
+            r'<stream>(.*?)</stream>',
+            r'<link>(.*?)</link>',
+        ]
+        
+        for pattern in url_patterns:
+            match = re.search(pattern, block, re.DOTALL | re.IGNORECASE)
+            if match:
+                potential_url = clean_cdata(match.group(1))
+                if '.m3u8' in potential_url and 'http' in potential_url:
+                    stream_url = potential_url
+                    break
+        
+        # Fallback: search for any m3u8 URL in the block
+        if not stream_url:
+            m3u8_match = re.search(r'(https?://[^\s<>"\']+\.m3u8[^\s<>"\']*)', block)
+            if m3u8_match:
+                stream_url = m3u8_match.group(1)
+        
+        # Skip if no valid stream URL
+        if not stream_url:
+            log(f"  Event '{title}' has no valid m3u8 stream")
+            continue
+        
+        # Skip if URL is actually an image (logo)
+        if any(ext in stream_url.lower() for ext in ['.png', '.jpg', '.jpeg', '.gif', '.svg']):
+            log(f"  Event '{title}' URL is an image, skipping: {stream_url[:60]}")
+            continue
+        
+        events.append({
+            'title': title,
+            'stream_url': stream_url,
+            'logo': LOGO,
+            'tvg_id': TVG_ID,
+            'tag': TAG,
+            'group': GROUP_TITLE,
+        })
+        
+        log(f"  Event {i + 1}: {title}")
+        log(f"    Stream: {stream_url[:80]}...")
     
-    return {
-        'title': title,
-        'stream_url': stream_url,
-        'logo': LOGO,
-        'tvg_id': TVG_ID,
-        'tag': TAG,
-        'group': GROUP_TITLE,
-    }
+    return events
 
 
-def save_vlc_playlist(entry, output_file):
+def save_vlc_playlist(events, output_file):
     """Save VLC playlist with EXTVLCOPT headers"""
     log(f"Saving VLC playlist: {output_file}")
     
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
-        f.write(f'#EXTINF:-1 tvg-chno="1" tvg-id="{entry["tvg_id"]}" '
-                f'tvg-name="{entry["title"]} ({entry["tag"]})" '
-                f'tvg-logo="{entry["logo"]}" '
-                f'group-title="{entry["group"]}",{entry["title"]}\n')
-        f.write(f'#EXTVLCOPT:http-referrer={REFERER}\n')
-        f.write(f'#EXTVLCOPT:http-origin={ORIGIN}\n')
-        f.write(f'#EXTVLCOPT:http-user-agent={USER_AGENT}\n')
-        f.write(f'{entry["stream_url"]}\n')
+        
+        ch_no = 1
+        for event in events:
+            f.write(f'#EXTINF:-1 tvg-chno="{ch_no}" tvg-id="{event["tvg_id"]}" '
+                    f'tvg-name="{event["title"]} ({event["tag"]})" '
+                    f'tvg-logo="{event["logo"]}" '
+                    f'group-title="{event["group"]}",{event["title"]}\n')
+            f.write(f'#EXTVLCOPT:http-referrer={REFERER}\n')
+            f.write(f'#EXTVLCOPT:http-origin={ORIGIN}\n')
+            f.write(f'#EXTVLCOPT:http-user-agent={USER_AGENT}\n')
+            f.write(f'{event["stream_url"]}\n\n')
+            ch_no += 1
     
-    log(f"✓ VLC playlist saved")
+    log(f"VLC playlist saved with {ch_no - 1} stream(s)")
     return output_file
 
 
-def save_tivimate_playlist(entry, output_file):
+def save_tivimate_playlist(events, output_file):
     """Save TiviMate playlist with pipe headers and encoded user agent"""
     log(f"Saving TiviMate playlist: {output_file}")
     
-    # Build URL with TiviMate headers
-    url_with_headers = (
-        f'{entry["stream_url"]}'
-        f'|referer={REFERER}'
-        f'|origin={ORIGIN}'
-        f'|user-agent={ENCODED_UA}'
-    )
-    
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write("#EXTM3U\n")
-        f.write(f'#EXTINF:-1 tvg-chno="1" tvg-id="{entry["tvg_id"]}" '
-                f'tvg-name="{entry["title"]} ({entry["tag"]})" '
-                f'tvg-logo="{entry["logo"]}" '
-                f'group-title="{entry["group"]}",{entry["title"]}\n')
-        f.write(f'{url_with_headers}\n')
+        
+        ch_no = 1
+        for event in events:
+            # Build URL with TiviMate headers
+            url_with_headers = (
+                f'{event["stream_url"]}'
+                f'|referer={REFERER}'
+                f'|origin={ORIGIN}'
+                f'|user-agent={ENCODED_UA}'
+            )
+            
+            f.write(f'#EXTINF:-1 tvg-chno="{ch_no}" tvg-id="{event["tvg_id"]}" '
+                    f'tvg-name="{event["title"]} ({event["tag"]})" '
+                    f'tvg-logo="{event["logo"]}" '
+                    f'group-title="{event["group"]}",{event["title"]}\n')
+            f.write(f'{url_with_headers}\n\n')
+            ch_no += 1
     
-    log(f"✓ TiviMate playlist saved")
+    log(f"TiviMate playlist saved with {ch_no - 1} stream(s)")
     return output_file
 
 
 def push_to_github(filename):
     """Push file to GitHub using token"""
     if not GITHUB_TOKEN or not GITHUB_REPO:
-        log("No GitHub credentials found, skipping push")
+        log("⚠ No GitHub credentials found, skipping push")
         return None
     
     log(f"Pushing {filename} to GitHub...")
@@ -173,7 +246,6 @@ def push_to_github(filename):
         'Accept': 'application/vnd.github.v3+json'
     }
     
-    # Get existing file SHA
     sha = None
     try:
         response = requests.get(api_url, headers=headers)
@@ -193,10 +265,10 @@ def push_to_github(filename):
     response = requests.put(api_url, headers=headers, json=payload)
     
     if response.status_code in [200, 201]:
-        log(f"✓ Pushed to GitHub: {GITHUB_REPO}/{filename}")
+        log(f"Pushed to GitHub: {GITHUB_REPO}/{filename}")
         return response.json()
     else:
-        log(f"✗ GitHub push failed: {response.status_code}")
+        log(f"GitHub push failed: {response.status_code}")
         if response.text:
             log(f"  Response: {response.text[:200]}")
         return None
@@ -206,42 +278,35 @@ def push_to_github(filename):
 
 def main():
     log("=" * 60)
-    log("WAPA Field59 Updater - Playlist Generator")
+    log("WAPA Field59 Scraper - Playlist Generator")
     log("=" * 60)
     
-    # Fetch XML
     xml_content = fetch_xml()
     if not xml_content:
         log("Failed to fetch XML. Exiting.")
         return
     
-    # Extract metadata
-    log("\nExtracting metadata...")
-    entry = extract_metadata(xml_content)
+    log("\nExtracting all events...")
+    events = extract_all_events(xml_content)
     
-    if not entry:
-        log("No valid metadata found. Exiting.")
+    if not events:
+        log("No valid events found. Exiting.")
         return
     
-    log(f"✓ Event name: {entry['title']}")
-    log(f"✓ Stream URL: {entry['stream_url'][:80]}...")
-    log(f"✓ Logo: {entry['logo']}")
-    log(f"✓ TVG-ID: {entry['tvg_id']}")
+    log(f"\nTotal events extracted: {len(events)}")
     
-    # Generate playlists
     log("\nGenerating playlists...")
-    vlc_file = save_vlc_playlist(entry, VLC_OUTPUT)
-    tivimate_file = save_tivimate_playlist(entry, TIVIMATE_OUTPUT)
+    vlc_file = save_vlc_playlist(events, VLC_OUTPUT)
+    tivimate_file = save_tivimate_playlist(events, TIVIMATE_OUTPUT)
     
-    # Push to GitHub
     log("\nPushing to GitHub...")
     push_to_github(vlc_file)
     push_to_github(tivimate_file)
     
     log("\n" + "=" * 60)
     log(f"Complete!")
-    log(f"   VLC: {VLC_OUTPUT}")
-    log(f"   TiviMate: {TIVIMATE_OUTPUT}")
+    log(f"   VLC: {VLC_OUTPUT} ({len(events)} streams)")
+    log(f"   TiviMate: {TIVIMATE_OUTPUT} ({len(events)} streams)")
     log("=" * 60)
 
 
