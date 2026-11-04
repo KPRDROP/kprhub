@@ -1,37 +1,37 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
-#EXTVLCOPT:http-referrer=https://wapa.tv/
-#EXTVLCOPT:http-origin=https://wapa.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live.field59.com/t/1793746620_84285e77a40324e3279da49d7fc7259c99d4c940_1793754120/wapa/wapa1/playlist.m3u8
-
-#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
-#EXTVLCOPT:http-referrer=https://wapa.tv/
-#EXTVLCOPT:http-origin=https://wapa.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live.field59.com/t/1793761020_43f675ba10a0bbb701e2ef70e6f11ef9d160a359_1793763060/wapa/wapa1/playlist.m3u8
-
-#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
+#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
 #EXTVLCOPT:http-referrer=https://wapa.tv/
 #EXTVLCOPT:http-origin=https://wapa.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live.field59.com/t/1793782800_4707362c7a370c51c5feda3c05b70abdc1229e85_1793801640/wapa/wapa1/playlist.m3u8
 
-#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
+#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
 #EXTVLCOPT:http-referrer=https://wapa.tv/
 #EXTVLCOPT:http-origin=https://wapa.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live.field59.com/t/1793804280_dcabf64c84ba7b5271e40a55717ab4f58385b7cd_1793806260/wapa/wapa1/playlist.m3u8
 
-#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
+#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
 #EXTVLCOPT:http-referrer=https://wapa.tv/
 #EXTVLCOPT:http-origin=https://wapa.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live.field59.com/t/1793821860_8804ea89419efd529a4364fc88aca9ec83db51d5_1793828100/wapa/wapa1/playlist.m3u8
 
-#EXTINF:-1 tvg-chno="6" tvg-id="WAPADT1.pr" tvg-name="La Pro: Cangrejeros de Santurce vs. Leones de Ponce (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",La Pro: Cangrejeros de Santurce vs. Leones de Ponce
+#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="La Pro: Cangrejeros de Santurce vs. Leones de Ponce (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",La Pro: Cangrejeros de Santurce vs. Leones de Ponce
 #EXTVLCOPT:http-referrer=https://wapa.tv/
 #EXTVLCOPT:http-origin=https://wapa.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live.field59.com/t/1793744296_1be3fc64a1f84223e4cf9c2779ae8717ca2f0014_1793751496/wapa/wapa2/playlist.m3u8
+https://live.field59.com/t/1793765898_a187354e76f0118fbdbe3294202cf1b6ad85f472_1793773098/wapa/wapa2/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
+#EXTVLCOPT:http-referrer=https://wapa.tv/
+#EXTVLCOPT:http-origin=https://wapa.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live.field59.com/t/1793833020_52fbac8be8e39fa7133fb27c6215d608a87b409d_1793840520/wapa/wapa1/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="6" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
+#EXTVLCOPT:http-referrer=https://wapa.tv/
+#EXTVLCOPT:http-origin=https://wapa.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live.field59.com/t/1793847420_4854f114430ba34e652325ad64074d12b61bd732_1793849460/wapa/wapa1/playlist.m3u8
 
