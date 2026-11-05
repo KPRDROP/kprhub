@@ -1,33 +1,29 @@
 #EXTM3U
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Conference League] FC Midtjylland
-                vs AFC Ajax (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Conference League] FC Midtjylland
-                vs AFC Ajax (iSTRM)
-https://chatgpt.hereisman.net/playlist/59306/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Conference League] Atalanta
-                vs FC Kairat Almaty (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Conference League] Atalanta
-                vs FC Kairat Almaty (iSTRM)
-https://chatgpt.hereisman.net/playlist/59302/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Europa League] Crystal Palace
-                vs TSG Hoffenheim (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Europa League] Crystal Palace
-                vs TSG Hoffenheim (iSTRM)
-https://chatgpt.hereisman.net/playlist/59303/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Europa League] AC Sparta Praha
-                vs Bournemouth (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Europa League] AC Sparta Praha
-                vs Bournemouth (iSTRM)
-https://chatgpt.hereisman.net/playlist/59305/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Europa League] AC Milan
-                vs Ferencváros TC (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Europa League] AC Milan
-                vs Ferencváros TC (iSTRM)
-https://chatgpt.hereisman.net/playlist/59304/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Europa League] Celta Vigo
+                vs Royale Union Saint-Gilloise (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Europa League] Celta Vigo
+                vs Royale Union Saint-Gilloise (iSTRM)
+https://chatgpt.hereisman.net/playlist/59311/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Conference League] Getafe
+                vs Brighton & Hove Albion (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Conference League] Getafe
+                vs Brighton & Hove Albion (iSTRM)
+https://chatgpt.hereisman.net/playlist/59307/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Saudi Pro League] Al-Hazem
+                vs Al-Nassr (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Saudi Pro League] Al-Hazem
+                vs Al-Nassr (iSTRM)
+https://chatgpt.hereisman.net/playlist/59312/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Europa League] Benfica
                 vs Lech Poznań (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Europa League] Benfica
                 vs Lech Poznań (iSTRM)
 https://chatgpt.hereisman.net/playlist/59310/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Europa League] Bayer 04 Leverkusen
-                vs Olympique de Marseille (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Europa League] Bayer 04 Leverkusen
-                vs Olympique de Marseille (iSTRM)
-https://chatgpt.hereisman.net/playlist/59308/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Europa League] AZ Alkmaar
                 vs Juventus (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Europa League] AZ Alkmaar
                 vs Juventus (iSTRM)
 https://chatgpt.hereisman.net/playlist/59309/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Europa League] Bayer 04 Leverkusen
+                vs Olympique de Marseille (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Europa League] Bayer 04 Leverkusen
+                vs Olympique de Marseille (iSTRM)
+https://chatgpt.hereisman.net/playlist/59308/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[UEFA Europa League] Celtic
+                vs Beşiktaş JK (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[UEFA Europa League] Celtic
+                vs Beşiktaş JK (iSTRM)
+https://chatgpt.hereisman.net/playlist/59313/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
