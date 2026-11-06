@@ -1,25 +1,22 @@
 #EXTM3U
 #EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="San Juan Fall Championship: Campeonato de Tenis de Mesa (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",San Juan Fall Championship: Campeonato de Tenis de Mesa
-https://live.field59.com/t/1793909853_e4d199288c03573c3cfb1fbbd0ca72664c149a55_1793917053/wapa/wapa3/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+https://live.field59.com/t/1793932388_b31891fe85afa6a2dc341ec082c513033c649236_1793939588/wapa/wapa3/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
-https://live.field59.com/t/1793908260_f24f061ada15405ce3a1aa7ce99d52ec00cda6f8_1793914500/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="La Pro: Leones de Ponce vs. Cangrejeros de Santurce (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",La Pro: Leones de Ponce vs. Cangrejeros de Santurce
-https://live.field59.com/t/1793909853_fa36c7b284478bfd79e03825f9bc0a3c1c869ef7_1793917053/wapa/wapa2/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
-https://live.field59.com/t/1793919420_61fd0c82dc3e420d316e90dbff67a202a105d32c_1793926920/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
+#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
 https://live.field59.com/t/1793933820_42de5640112e34e374fb72cfebf45f3f4b832118_1793935860/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="6" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
+#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
 https://live.field59.com/t/1793955600_44f2ad3c62f4b79130a568bbe1c21785217e22ef_1793974440/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="7" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
+#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
 https://live.field59.com/t/1793977080_7fe6e9bfd8364b7e03cc8409f646711dbce4413d_1793979060/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="8" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
+#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
 https://live.field59.com/t/1793994660_05c0a1c6c18e888b3135d064646fbdf3625d8148_1794000900/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="6" tvg-id="WAPADT1.pr" tvg-name="La Pro: Senadores de San Juan vs. Gigantes de Carolina (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",La Pro: Senadores de San Juan vs. Gigantes de Carolina
+https://live.field59.com/t/1793932388_1471b2e8c4f79900a1c12040de1d3953ea714153_1793939588/wapa/wapa2/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="7" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
+https://live.field59.com/t/1794005820_2164a0cb40aee9f3f9b5c381e9a90bd46a540851_1794013320/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
