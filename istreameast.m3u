@@ -1,6 +1,26 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[CFB] College GameDay (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[CFB] College GameDay (iSTRM)
 https://chatgpt.hereisman.net/playlist/55418/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[WWE] Crown Jewel (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[WWE] Crown Jewel (iSTRM)
+https://chatgpt.hereisman.net/playlist/59450/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[LaLiga] Espanyol
+                vs Deportivo de A Coruña (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[LaLiga] Espanyol
+                vs Deportivo de A Coruña (iSTRM)
+https://chatgpt.hereisman.net/playlist/59446/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Boxing] Joshua Buatsi vs Willy Hutchinson (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Boxing] Joshua Buatsi vs Willy Hutchinson (iSTRM)
+https://chatgpt.hereisman.net/playlist/59448/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Premier League] Arsenal
+                vs Hull City (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Premier League] Arsenal
+                vs Hull City (iSTRM)
+https://chatgpt.hereisman.net/playlist/59444/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Premier League] Fulham
+                vs Newcastle United (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Premier League] Fulham
+                vs Newcastle United (iSTRM)
+https://chatgpt.hereisman.net/playlist/59445/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
+#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Bundesliga] Borussia Dortmund
+                vs SV 07 Elversberg (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Bundesliga] Borussia Dortmund
+                vs SV 07 Elversberg (iSTRM)
+https://chatgpt.hereisman.net/playlist/59447/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Bundesliga] 1. FSV Mainz 05
                 vs FC Bayern München (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Bundesliga] 1. FSV Mainz 05
                 vs FC Bayern München (iSTRM)
@@ -13,19 +33,7 @@ https://chatgpt.hereisman.net/playlist/59442/load-playlist|referer=https://gooz.
                 vs Frosinone (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Serie A] Cagliari
                 vs Frosinone (iSTRM)
 https://chatgpt.hereisman.net/playlist/59441/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[LaLiga] Málaga CF
-                vs Real Racing Club (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[LaLiga] Málaga CF
-                vs Real Racing Club (iSTRM)
-https://chatgpt.hereisman.net/playlist/59440/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Formula 1] Formula 1 2026 - Brazil GP (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Formula 1] Formula 1 2026 - Brazil GP (iSTRM)
 https://chatgpt.hereisman.net/playlist/59362/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
 #EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[MotoGP] MotoGP 2026 - Grand Prix of Qatar (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[MotoGP] MotoGP 2026 - Grand Prix of Qatar (iSTRM)
 https://chatgpt.hereisman.net/playlist/59363/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[Premier League] Fulham
-                vs Newcastle United (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[Premier League] Fulham
-                vs Newcastle United (iSTRM)
-https://chatgpt.hereisman.net/playlist/59445/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
-#EXTINF:-1 tvg-id="Live.Event.us" tvg-name="[LaLiga] Espanyol
-                vs Deportivo de A Coruña (iSTRM)" tvg-logo="https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png" group-title="Live Events",[LaLiga] Espanyol
-                vs Deportivo de A Coruña (iSTRM)
-https://chatgpt.hereisman.net/playlist/59446/load-playlist|referer=https://gooz.aapmains.net/|origin=https://gooz.aapmains.net|user-agent=Agent%3DMozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%3B+rv%3A146.0%29+Gecko%2F20100101+Firefox%2F146.0
