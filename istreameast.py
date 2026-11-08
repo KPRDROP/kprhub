@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import asyncio
 import base64
 import json
@@ -10,7 +9,6 @@ from urllib.parse import quote_plus, urljoin
 
 import aiohttp
 from selectolax.lexbor import LexborHTMLParser as HTMLParser
-# from selectolax.parser import HTMLParser
 
 # ================= CONFIG =================
 
@@ -39,6 +37,13 @@ DEFAULT_LOGO = "https://i.gyazo.com/4a5e9fa2525808ee4b65002b56d3450e.png"
 
 def log(msg):
     print(msg, flush=True)
+
+
+def clean_text(text):
+    """Collapse whitespace (newlines, tabs, multiple spaces) into single spaces."""
+    if not text:
+        return ""
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def load_cache():
@@ -83,16 +88,12 @@ async def extract_stream(session, event_url):
     if not iframe_src:
         return None
 
-    # FIX: handle relative iframe URLs
     iframe_src = urljoin(BASE_URL, iframe_src)
 
     iframe_html = await fetch(session, iframe_src)
     if not iframe_html:
         return None
 
-    # ================= PATTERNS =================
-
-    # 1. Old base64 pattern
     m = re.search(r'const\s+source\s*=\s*"([^"]+)"', iframe_html, re.I)
     if m:
         try:
@@ -102,17 +103,14 @@ async def extract_stream(session, event_url):
         except Exception:
             pass
 
-    # 2. New playlist pattern (IMPORTANT FIX)
     m = re.search(r'(https?://[^"\']+/playlist/\d+/load-playlist)', iframe_html)
     if m:
         return m.group(1)
 
-    # 3. Generic m3u8 fallback
     m = re.search(r'(https?://[^"\']+\.m3u8[^"\']*)', iframe_html)
     if m:
         return m.group(1)
 
-    # 4. Generic fallback (any http stream)
     m = re.search(r'(https?://[^"\']+)', iframe_html)
     if m:
         return m.group(1)
@@ -145,8 +143,11 @@ async def get_events(session):
         if not sport_el or not title_el:
             continue
 
-        sport = sport_el.text(strip=True)
-        title = title_el.text(strip=True)
+        sport = clean_text(sport_el.text(strip=True))
+        title = clean_text(title_el.text(strip=True))
+
+        if not sport or not title:
+            continue
 
         events.append({
             "sport": sport,
@@ -175,6 +176,7 @@ async def main():
 
         for i, ev in enumerate(events, 1):
             key = f"[{ev['sport']}] {ev['title']} ({TAG})"
+            key = clean_text(key)
 
             if key in cache and now - cache[key]["ts"] < CACHE_EXP:
                 entries.append(cache[key]["entry"])
@@ -211,11 +213,12 @@ async def main():
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("#EXTM3U\n")
         for e in entries:
+            safe_name = clean_text(e["name"])
             f.write(
                 f'#EXTINF:-1 tvg-id="{TVG_ID}" '
-                f'tvg-name="{e["name"]}" '
+                f'tvg-name="{safe_name}" '
                 f'tvg-logo="{e["logo"]}" '
-                f'group-title="Live Events",{e["name"]}\n'
+                f'group-title="Live Events",{safe_name}\n'
             )
             f.write(
                 f'{e["url"]}'
