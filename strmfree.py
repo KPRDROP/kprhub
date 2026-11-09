@@ -4,7 +4,7 @@ import json
 import time
 import urllib.request
 import urllib.parse
-from urllib.parse import quote
+from urllib.parse import quote, urlencode
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ================= CONFIG =================
@@ -25,99 +25,163 @@ CATEGORIES = [
     "baseball", "football", "racing", "tennis", "cricket"
 ]
 
+# Expanded time window (seconds relative to now)
+# Get events from 6 hours ago up to 2 hours in the future -> more events
+TIME_WINDOW_PAST_SEC = 6 * 3600
+TIME_WINDOW_FUTURE_SEC = 2 * 3600
 # ===========================================
 
+HEADERS = {
+    "User-Agent": USER_AGENT_RAW,
+    "Referer": BASE_URL,
+    "Accept": "application/json, text/plain, */*",
+}
+
+
+def _request(url: str, timeout: int = 30, extra_headers: dict | None = None) -> str | None:
+    """Fetch a URL and return text, or None on failure."""
+    hdrs = dict(HEADERS)
+    if extra_headers:
+        hdrs.update(extra_headers)
+    req = urllib.request.Request(url, headers=hdrs)
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.read().decode("utf-8", errors="replace")
+    except Exception as e:
+        print(f"  ! Request failed {url}: {e}")
+        return None
+
+
 def fetch_json(url: str) -> dict | None:
-    """Fetch JSON data from a URL with a timeout."""
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT_RAW})
+    text = _request(url)
+    if not text:
+        return None
     try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            return json.loads(r.read().decode("utf-8"))
+        return json.loads(text)
     except Exception as e:
-        print(f" Failed to fetch {url}: {e}")
+        print(f"  ! JSON parse failed {url}: {e}")
         return None
 
-def extract_m3u8_from_embed(embed_url: str) -> str | None:
+
+def get_stream_info(stream_key: str, category: str) -> str | None:
     """
-    Fetch the embed page and extract the m3u8 URL.
-    Handles both direct iframe sources and JavaScript-loaded streams.
+    Replicates the working flow from the original code:
+      1. api/stream-status/{stream_key} -> find available qualities
+      2. get-stream-key/{stream_key}    -> get server_name
+      3. embed/{category}/{stream_key}{num}?quality=..&category=.. -> HTML with _0x = {...};
+      4. Parse JSON, urlencode m3u_info[qual]
+      5. Build final m3u8 URL
     """
-    req = urllib.request.Request(embed_url, headers={"User-Agent": USER_AGENT_RAW})
+    sk = quote(stream_key)
+
+    # 1) stream status
+    status_url = f"{BASE_URL}/api/stream-status/{sk}"
+    status_text = _request(status_url)
+    if not status_text:
+        return None
     try:
-        with urllib.request.urlopen(req, timeout=30) as r:
-            html = r.read().decode("utf-8")
-    except Exception as e:
-        print(f" Failed to fetch embed {embed_url}: {e}")
+        quality_info = json.loads(status_text)
+    except Exception:
         return None
 
-    # Pattern 1: Look for iframe src that contains the m3u8
-    # This handles cases where the m3u8 is directly in the iframe's src attribute.
-    iframe_pattern = r'src="(https://streamfree\.top/live-cdn/[^"]+\.m3u8[^"]*)"'
-    match = re.search(iframe_pattern, html)
-    if match:
-        return match.group(1)
+    if not quality_info.get("available"):
+        print(f"  - Stream unavailable for {stream_key}")
+        return None
+    sources = quality_info.get("sources")
+    if not sources:
+        print(f"  - No sources for {stream_key}")
+        return None
 
-    # Pattern 2: Look for the m3u8 URL in the page's JavaScript or video source.
-    # This handles cases where the m3u8 is loaded dynamically.
-    m3u8_pattern = r'(https://streamfree\.top/live-cdn/[^"\s]+\.m3u8[^"\s]*)'
-    match = re.search(m3u8_pattern, html)
-    if match:
-        return match.group(1)
+    # Flatten quality sources
+    quality_sources = {
+        f"{quality}{source_num}": value
+        for source_num, source_data in sources.items()
+        for quality, value in source_data.get("qualities", {}).items()
+    }
 
-    # Pattern 3: Look for a player setup script that might contain the stream URL.
-    # This is a fallback for more complex embedding scenarios.
-    player_pattern = r'player\.setup\s*\(\s*\{[^}]*file:\s*"([^"]+)"[^}]*\}\)'
-    match = re.search(player_pattern, html, re.DOTALL)
-    if match:
-        return match.group(1)
+    # Sort by resolution (lowest first, same as original)
+    available_quals = sorted(
+        [q.split("p") for q, flag in quality_sources.items() if flag],
+        key=lambda x: int(x[-1]) if x[-1].isdigit() else 0,
+    )
+    if not available_quals:
+        print(f"  - No available qualities for {stream_key}")
+        return None
 
-    # Pattern 4: Look for a source URL in a video tag.
-    video_pattern = r'<video[^>]*>.*?<source[^>]+src="([^"]+\.m3u8[^"]*)"'
-    match = re.search(video_pattern, html, re.DOTALL)
-    if match:
-        return match.group(1)
+    qual = f"{available_quals[0][0]}p"
+    num = available_quals[0][-1]
+    num = "" if num == "1" else num
 
-    return None
+    # 2) server name
+    server_name = "cdn"
+    server_text = _request(f"{BASE_URL}/get-stream-key/{sk}")
+    if server_text:
+        try:
+            server_name = json.loads(server_text).get("server_name", "cdn")
+        except Exception:
+            pass
 
-def process_stream(stream: dict) -> tuple[str, str]:
-    """Process a single stream: get metadata and capture m3u8 URL."""
+    # 3) embed page
+    embed_url = (
+        f"{BASE_URL}/embed/{category}/{sk}{num}"
+        f"?{urlencode({'quality': qual, 'category': category})}"
+    )
+    embed_html = _request(embed_url, timeout=25)
+    if not embed_html:
+        return None
+
+    # 4) extract _0x = {...};
+    ptrn = re.compile(r"_0x\s+=\s+(.*?);", re.S)
+    match = ptrn.search(embed_html)
+    if not match:
+        print(f"  - Unable to find stream info for {stream_key}")
+        return None
+
+    try:
+        m3u_data = json.loads(match.group(1))
+        m3u_info = m3u_data[qual]
+    except Exception as e:
+        print(f"  - Failed to parse stream JSON for {stream_key}: {e}")
+        return None
+
+    query = urlencode(m3u_info)
+    final_url = f"{BASE_URL}/live-{server_name}/{sk}{qual}{num}/index.m3u8?{query}"
+    return final_url
+
+
+def process_stream(stream: dict) -> tuple[str | None, str | None]:
+    """Process one stream: get metadata, capture m3u8, build TiviMate entry."""
     name = stream.get("name", "Unknown Event")
     category = stream.get("category", "unknown")
     stream_key = stream.get("stream_key", "")
-    embed_url = stream.get("embed_url", "")
     thumbnail = stream.get("thumbnail_url", "")
     league = stream.get("league", category.capitalize())
 
-    # Construct the embed URL if missing
-    if not embed_url and stream_key and category:
-        embed_url = f"{BASE_URL}/embed/{category}/{stream_key}"
-
-    if not embed_url:
+    if not stream_key:
         return None, None
 
     print(f" Processing: {name} ({league})")
-    m3u8_url = extract_m3u8_from_embed(embed_url)
+    m3u8_url = get_stream_info(stream_key, category)
 
-    # If the first attempt fails, try again after a short delay
-    # This can help if the page needs time to load dynamic content.
     if not m3u8_url:
         print(f" Retrying {name} after delay...")
         time.sleep(2)
-        m3u8_url = extract_m3u8_from_embed(embed_url)
+        m3u8_url = get_stream_info(stream_key, category)
 
     if not m3u8_url:
         print(f" No m3u8 found for {name}")
         return None, None
 
-    # Prepare TiviMate entry
+    embed_ref = f"{BASE_URL}/embed/{category}/{quote(stream_key)}"
     entry = (
         f'#EXTINF:-1 tvg-id="{category}.{stream_key}" '
         f'tvg-name="[{league}] {name} | (STFREE)" '
         f'tvg-logo="{thumbnail}" '
         f'group-title="{league}",{name}\n'
-        f'{m3u8_url}|referer={embed_url}|origin={embed_url}|user-agent={USER_AGENT}'
+        f'{m3u8_url}|referer={BASE_URL}|origin={BASE_URL}|user-agent={USER_AGENT}'
     )
-    return embed_url, entry
+    return embed_ref, entry
+
 
 def main():
     if not SOURCE_URL:
@@ -126,13 +190,11 @@ def main():
     all_streams = []
     print("📡 Fetching streams from all categories...")
 
-    # Fetch all categories in parallel for speed
     with ThreadPoolExecutor(max_workers=5) as executor:
         future_to_category = {
             executor.submit(fetch_json, f"{BASE_URL}/api/v1/streams?category={cat}"): cat
             for cat in CATEGORIES
         }
-
         for future in as_completed(future_to_category):
             category = future_to_category[future]
             data = future.result()
@@ -146,27 +208,48 @@ def main():
     if not all_streams:
         raise RuntimeError("No streams found in any category")
 
-    print(f"\n Processing {len(all_streams)} streams to capture M3U8 URLs...")
+    # Expanded time filter to capture more events
+    now_ts = int(time.time())
+    lo = now_ts - TIME_WINDOW_PAST_SEC
+    hi = now_ts + TIME_WINDOW_FUTURE_SEC
+
+    filtered = []
+    for s in all_streams:
+        ts = s.get("match_timestamp")
+        if ts is None:
+            # include if no timestamp
+            filtered.append(s)
+            continue
+        try:
+            ts = int(ts)
+        except Exception:
+            filtered.append(s)
+            continue
+        if lo <= ts <= hi:
+            filtered.append(s)
+
+    print(f"\n Time filter kept {len(filtered)}/{len(all_streams)} streams "
+          f"(-{TIME_WINDOW_PAST_SEC//3600}h .. +{TIME_WINDOW_FUTURE_SEC//3600}h)")
+    print(f"\n Processing {len(filtered)} streams to capture M3U8 URLs...")
+
     output_lines = ["#EXTM3U"]
     processed_count = 0
 
-    # Process each stream sequentially to avoid rate limiting
-    for stream in all_streams:
+    for stream in filtered:
         embed_url, entry = process_stream(stream)
         if entry:
             output_lines.append(entry)
             processed_count += 1
-        # Add a delay between requests to avoid being blocked
         time.sleep(1)
 
     if processed_count == 0:
         raise RuntimeError("No M3U8 URLs captured")
 
-    # Write the playlist file
     with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
         f.write("\n".join(output_lines))
 
     print(f"\n Saved {OUTPUT_FILE} with {processed_count} entries")
+
 
 if __name__ == "__main__":
     main()
