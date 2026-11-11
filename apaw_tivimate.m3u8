@@ -1,19 +1,19 @@
 #EXTM3U
 #EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="La Pro: Criollos de Caguas vs. Indios de Mayagüez (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",La Pro: Criollos de Caguas vs. Indios de Mayagüez
-https://live.field59.com/t/1794339817_ba98f814e515d18828aa856b3b4b5fcf36808b3e_1794347017/wapa/wapa2/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+https://live.field59.com/t/1794383018_fb1a6c5776424cc3bc96019b3559f35d704f4dd3_1794390218/wapa/wapa2/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
-https://live.field59.com/t/1794340260_3e0900d54e40327de366132ddda2c42a3104b40a_1794346500/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
-https://live.field59.com/t/1794351420_cf59f79c5e067880f0d1bbe1127a0c5188b57a25_1794358920/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
-https://live.field59.com/t/1794365820_37a6e62b7e9e70b623c8f94f5e595f484e5b1cce_1794367860/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
+#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
 https://live.field59.com/t/1794387600_739c1d6c6449a487d2d07ce500a8d5ac409f811e_1794406440/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="6" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
+#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
 https://live.field59.com/t/1794409080_561ebbda3465bd31b651de40dfe6760e039e3f52_1794411060/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
+https://live.field59.com/t/1794426660_1cf5166c8b988b34f2b26bc847a68080650a2a89_1794432900/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
+https://live.field59.com/t/1794437820_5e109a305b849d254cf0834afcdca01b60dd0b92_1794445320/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="6" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
+https://live.field59.com/t/1794452220_ec70679b7e1e1b89ea38104d9a2d1dc9b0fb361c_1794454260/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
