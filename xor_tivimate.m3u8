@@ -1,59 +1,74 @@
 #EXTM3U
 
-#EXTINF:-1 tvg-chno="1" tvg-id="rs-northampton-town-vs-gillingham-a31eaa" tvg-name="Northampton Town vs Gillingham (XOR)" group-title="SOCCER", Northampton Town vs Gillingham - (XOR)
-https://admin2.formaturamaxi.com.br/gill.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="2" tvg-id="rs-leicester-city-vs-walsall-184154" tvg-name="Leicester City vs Walsall (XOR)" group-title="SOCCER", Leicester City vs Walsall - (XOR)
-https://admin2.formaturamaxi.com.br/wall.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="3" tvg-id="rs-western-michigan-vs-akron-86d8c3" tvg-name="Western Michigan vs Akron (XOR)" group-title="NFL", Western Michigan vs Akron - (XOR)
-https://admin2.formaturamaxi.com.br/ncaa.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="4" tvg-id="rs-kent-state-vs-bowling-green-af51ad" tvg-name="Kent State vs Bowling Green (XOR)" group-title="NFL", Kent State vs Bowling Green - (XOR)
-https://admin2.formaturamaxi.com.br/ncaa2.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="5" tvg-id="rs-colorado-avalanche-vs-toronto-maple-leaf-7c7a99" tvg-name="Colorado Avalanche vs Toronto Maple Leafs (XOR)" group-title="NHL", Colorado Avalanche vs Toronto Maple Leafs - (XOR)
-https://tedesco.formaturamaxi.com.br/nhl.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="6" tvg-id="rs-minnesota-wild-vs-montreal-canadiens-dc3be0" tvg-name="Minnesota Wild vs Montreal Canadiens (XOR)" group-title="NHL", Minnesota Wild vs Montreal Canadiens - (XOR)
-https://admin2.formaturamaxi.com.br/nhl2.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="7" tvg-id="rs-washington-capitals-vs-ottawa-senators-3716d5" tvg-name="Washington Capitals vs Ottawa Senators (XOR)" group-title="NHL", Washington Capitals vs Ottawa Senators - (XOR)
-https://tedesco.formaturamaxi.com.br/nhl3.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="8" tvg-id="rs-new-jersey-devils-vs-winnipeg-jets-6c1b5b" tvg-name="New Jersey Devils vs Winnipeg Jets (XOR)" group-title="NHL", New Jersey Devils vs Winnipeg Jets - (XOR)
-https://tedesco.formaturamaxi.com.br/nhl4.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="9" tvg-id="rs-milwaukee-bucks-vs-new-york-knicks-6ddeb1" tvg-name="Milwaukee Bucks vs New York Knicks (XOR)" group-title="NBA", Milwaukee Bucks vs New York Knicks - (XOR)
+#EXTINF:-1 tvg-chno="1" tvg-id="rs-washington-wizards-vs-indiana-pacers-375506" tvg-name="Washington Wizards vs Indiana Pacers (XOR)" group-title="NBA", Washington Wizards vs Indiana Pacers - (XOR)
 https://admin2.formaturamaxi.com.br/nba.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="10" tvg-id="rs-ohio-vs-miami-oh-d8697b" tvg-name="Ohio vs Miami (OH) (XOR)" group-title="NFL", Ohio vs Miami (OH) - (XOR)
-https://admin2.formaturamaxi.com.br/ncaa3.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="11" tvg-id="rs-wwe-nxt-cad399" tvg-name="WWE NXT (XOR)" group-title="FIGHTING", WWE NXT - (XOR)
-https://admin2.formaturamaxi.com.br/wwe.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="12" tvg-id="rs-boston-celtics-vs-philadelphia-76ers-4b39dd" tvg-name="Boston Celtics vs Philadelphia 76ers (XOR)" group-title="NBA", Boston Celtics vs Philadelphia 76ers - (XOR)
+#EXTINF:-1 tvg-chno="2" tvg-id="rs-cleveland-cavaliers-vs-new-york-knicks-8dcf3c" tvg-name="Cleveland Cavaliers vs New York Knicks (XOR)" group-title="NBA", Cleveland Cavaliers vs New York Knicks - (XOR)
 https://admin2.formaturamaxi.com.br/nba2.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="13" tvg-id="rs-boston-celtics-vs-philadelphia-76ers-4b39dd" tvg-name="Boston Celtics vs Philadelphia 76ers (XOR)" group-title="NBA", Boston Celtics vs Philadelphia 76ers - (XOR)
+#EXTINF:-1 tvg-chno="3" tvg-id="rs-cleveland-cavaliers-vs-new-york-knicks-8dcf3c" tvg-name="Cleveland Cavaliers vs New York Knicks (XOR)" group-title="NBA", Cleveland Cavaliers vs New York Knicks - (XOR)
 https://admin2.formaturamaxi.com.br/nbc.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="14" tvg-id="rs-wwe-nxt-cad399" tvg-name="WWE NXT (XOR)" group-title="OTHER", WWE NXT - (XOR)
-https://admin2.formaturamaxi.com.br/wwe.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="15" tvg-id="rs-los-angeles-clippers-vs-phoenix-suns-318bb7" tvg-name="Los Angeles Clippers vs Phoenix Suns (XOR)" group-title="NBA", Los Angeles Clippers vs Phoenix Suns - (XOR)
+#EXTINF:-1 tvg-chno="4" tvg-id="rs-boston-celtics-vs-toronto-raptors-597eb8" tvg-name="Boston Celtics vs Toronto Raptors (XOR)" group-title="NBA", Boston Celtics vs Toronto Raptors - (XOR)
 https://tedesco.formaturamaxi.com.br/nba3.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="16" tvg-id="rs-miami-heat-vs-utah-jazz-35adc9" tvg-name="Miami Heat vs Utah Jazz (XOR)" group-title="NBA", Miami Heat vs Utah Jazz - (XOR)
+#EXTINF:-1 tvg-chno="5" tvg-id="rs-tampa-bay-lightning-vs-buffalo-sabres-7afd69" tvg-name="Tampa Bay Lightning vs Buffalo Sabres (XOR)" group-title="NHL", Tampa Bay Lightning vs Buffalo Sabres - (XOR)
+https://tedesco.formaturamaxi.com.br/nhl.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="6" tvg-id="rs-buffalo-vs-ball-state-6c347d" tvg-name="Buffalo vs Ball State (XOR)" group-title="NFL", Buffalo vs Ball State - (XOR)
+https://admin2.formaturamaxi.com.br/ncaa.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="7" tvg-id="rs-sacramento-state-vs-central-michigan-28cabb" tvg-name="Sacramento State vs Central Michigan (XOR)" group-title="NFL", Sacramento State vs Central Michigan - (XOR)
+https://admin2.formaturamaxi.com.br/ncaa2.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="8" tvg-id="rs-massachusetts-vs-toledo-c65c75" tvg-name="Massachusetts vs Toledo (XOR)" group-title="NFL", Massachusetts vs Toledo - (XOR)
+https://admin2.formaturamaxi.com.br/ncaa3.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="9" tvg-id="rs-buffalo-vs-ball-state-6c347d" tvg-name="Buffalo vs Ball State (XOR)" group-title="NBA", Buffalo vs Ball State - (XOR)
+https://admin2.formaturamaxi.com.br/ncaa12.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="10" tvg-id="rs-buffalo-vs-ball-state-6c347d" tvg-name="Buffalo vs Ball State (XOR)" group-title="NBA", Buffalo vs Ball State - (XOR)
+https://tedesco.formaturamaxi.com.br/wnba.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="11" tvg-id="rs-sacramento-state-vs-central-michigan-28cabb" tvg-name="Sacramento State vs Central Michigan (XOR)" group-title="NBA", Sacramento State vs Central Michigan - (XOR)
+https://tedesco.formaturamaxi.com.br/wnba.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="12" tvg-id="rs-sacramento-state-vs-central-michigan-28cabb" tvg-name="Sacramento State vs Central Michigan (XOR)" group-title="NBA", Sacramento State vs Central Michigan - (XOR)
+https://admin2.formaturamaxi.com.br/f1.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="13" tvg-id="rs-massachusetts-vs-toledo-c65c75" tvg-name="Massachusetts vs Toledo (XOR)" group-title="NBA", Massachusetts vs Toledo - (XOR)
+https://tedesco.formaturamaxi.com.br/wnba3.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="14" tvg-id="rs-new-york-rangers-vs-calgary-flames-64b048" tvg-name="New York Rangers vs Calgary Flames (XOR)" group-title="NHL", New York Rangers vs Calgary Flames - (XOR)
+https://admin2.formaturamaxi.com.br/nhl2.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="15" tvg-id="rs-san-antonio-spurs-vs-chicago-bulls-7800b3" tvg-name="San Antonio Spurs vs Chicago Bulls (XOR)" group-title="NBA", San Antonio Spurs vs Chicago Bulls - (XOR)
 https://admin2.formaturamaxi.com.br/nba4.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="17" tvg-id="rs-orlando-magic-vs-sacramento-kings-5746f5" tvg-name="Orlando Magic vs Sacramento Kings (XOR)" group-title="NBA", Orlando Magic vs Sacramento Kings - (XOR)
+#EXTINF:-1 tvg-chno="16" tvg-id="rs-denver-nuggets-vs-memphis-grizzlies-8cd9e3" tvg-name="Denver Nuggets vs Memphis Grizzlies (XOR)" group-title="NBA", Denver Nuggets vs Memphis Grizzlies - (XOR)
 https://admin2.formaturamaxi.com.br/nba5.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="18" tvg-id="rs-oklahoma-city-thunder-vs-portland-trail--88c7d7" tvg-name="Oklahoma City Thunder vs Portland Trail Blazers (XOR)" group-title="NBA", Oklahoma City Thunder vs Portland Trail Blazers - (XOR)
-https://admin2.formaturamaxi.com.br/nba2.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-chno="17" tvg-id="rs-los-angeles-lakers-vs-milwaukee-bucks-9b7280" tvg-name="Los Angeles Lakers vs Milwaukee Bucks (XOR)" group-title="NBA", Los Angeles Lakers vs Milwaukee Bucks - (XOR)
+https://admin2.formaturamaxi.com.br/nba6.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="19" tvg-id="rs-oklahoma-city-thunder-vs-portland-trail--88c7d7" tvg-name="Oklahoma City Thunder vs Portland Trail Blazers (XOR)" group-title="NBA", Oklahoma City Thunder vs Portland Trail Blazers - (XOR)
-https://admin2.formaturamaxi.com.br/nbc.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+#EXTINF:-1 tvg-chno="18" tvg-id="rs-brooklyn-nets-vs-new-orleans-pelicans-3bccc7" tvg-name="Brooklyn Nets vs New Orleans Pelicans (XOR)" group-title="NBA", Brooklyn Nets vs New Orleans Pelicans - (XOR)
+https://admin2.formaturamaxi.com.br/nba7.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="19" tvg-id="rs-orlando-magic-vs-utah-jazz-d02c4c" tvg-name="Orlando Magic vs Utah Jazz (XOR)" group-title="NBA", Orlando Magic vs Utah Jazz - (XOR)
+https://tedesco.formaturamaxi.com.br/nba4.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="20" tvg-id="rs-philadelphia-flyers-vs-edmonton-oilers-a2bb70" tvg-name="Philadelphia Flyers vs Edmonton Oilers (XOR)" group-title="NHL", Philadelphia Flyers vs Edmonton Oilers - (XOR)
+https://tedesco.formaturamaxi.com.br/nhl3.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="21" tvg-id="rs-golden-state-warriors-vs-houston-rockets-235e6e" tvg-name="Golden State Warriors vs Houston Rockets (XOR)" group-title="NBA", Golden State Warriors vs Houston Rockets - (XOR)
+https://admin2.formaturamaxi.com.br/nba9.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="22" tvg-id="rs-golden-state-warriors-vs-houston-rockets-235e6e" tvg-name="Golden State Warriors vs Houston Rockets (XOR)" group-title="NBA", Golden State Warriors vs Houston Rockets - (XOR)
+https://admin2.formaturamaxi.com.br/lakers.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="23" tvg-id="rs-utah-mammoth-vs-vegas-golden-knights-48ecc2" tvg-name="Utah Mammoth vs Vegas Golden Knights (XOR)" group-title="NHL", Utah Mammoth vs Vegas Golden Knights - (XOR)
+https://tedesco.formaturamaxi.com.br/nhl4.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="24" tvg-id="rs-oklahoma-city-thunder-vs-portland-trail--88c7d7" tvg-name="Oklahoma City Thunder vs Portland Trail Blazers (XOR)" group-title="NBA", Oklahoma City Thunder vs Portland Trail Blazers - (XOR)
+https://admin2.formaturamaxi.com.br/nba10.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
