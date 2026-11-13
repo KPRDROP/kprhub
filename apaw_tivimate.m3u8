@@ -1,19 +1,16 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
-https://live.field59.com/t/1794513060_4e89e996fa822364d411f74bd6e4e5955c45f8d4_1794519300/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
-https://live.field59.com/t/1794524220_3ad9f6d27a8f5b5ef78a211e95802aab67dc8321_1794531720/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
+#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
 https://live.field59.com/t/1794538620_27dcc42efbd3c1d3cff42b990d7fb1f6a09b521f_1794540660/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
+#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
 https://live.field59.com/t/1794560400_631c54ca40860f98fa3507296c2939361e1cb299_1794579240/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
+#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
 https://live.field59.com/t/1794581880_1252245b4a2912e925125cfcaabba80ca50075df_1794583860/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="6" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
+#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
 https://live.field59.com/t/1794599460_eda086f01246b8dde3cbb0f3081f062f99e3f03b_1794605700/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
+https://live.field59.com/t/1794610620_8261e02336d476188cdf2a1cd3c2db9c1f8ccd45_1794618120/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
