@@ -46,6 +46,16 @@ def clean_text(text):
     return re.sub(r"\s+", " ", text).strip()
 
 
+def _js_unescape(s):
+    """Decode common JavaScript string escapes: \\/ -> /, \\uXXXX -> char."""
+    if not s:
+        return s
+    s = s.replace("\\/", "/")
+    s = re.sub(r"\\u([0-9a-fA-F]{4})",
+               lambda m: chr(int(m.group(1), 16)), s)
+    return s
+
+
 def load_cache():
     if not os.path.exists(CACHE_FILE):
         return {}
@@ -74,12 +84,11 @@ async def fetch(session, url):
 # ================= STREAM EXTRACTION =================
 
 async def extract_stream(session, event_url):
-    html = await fetch(session, event_url)
+   html = await fetch(session, event_url)
     if not html:
         return None
 
     soup = HTMLParser(html)
-
     iframe = soup.css_first("iframe")
     if not iframe:
         return None
@@ -89,31 +98,43 @@ async def extract_stream(session, event_url):
         return None
 
     iframe_src = urljoin(BASE_URL, iframe_src)
-
     iframe_html = await fetch(session, iframe_src)
     if not iframe_html:
         return None
 
-    m = re.search(r'const\s+source\s*=\s*"([^"]+)"', iframe_html, re.I)
+    # --- Path 1: const SOURCE = "https:\/\/...\playlist\/...\/load-playlist";
+    m = re.search(r'const\s+SOURCE\s*=\s*"([^"]+)"', iframe_html)
+    if m:
+        src = _js_unescape(m.group(1))
+        if src.startswith("http") and "w3.org" not in src:
+            return src
+
+    # --- Path 2: Clappr source: window.atob('base64...')
+    m = re.search(r"window\.atob\(\s*['\"]([^'\"]+)['\"]\s*\)", iframe_html)
     if m:
         try:
             decoded = base64.b64decode(m.group(1)).decode("utf-8")
-            if decoded.startswith("http"):
+            if decoded.startswith("http") and "w3.org" not in decoded:
                 return decoded
         except Exception:
             pass
 
-    m = re.search(r'(https?://[^"\']+/playlist/\d+/load-playlist)', iframe_html)
+    # --- Path 3: direct playlist URL (handles -multi suffix)
+    m = re.search(
+        r'(https?://[^"\'\s]+/playlist/\d+/load-playlist(?:-multi)?)',
+        iframe_html,
+    )
     if m:
-        return m.group(1)
+        url = _js_unescape(m.group(1))
+        if "w3.org" not in url:
+            return url
 
-    m = re.search(r'(https?://[^"\']+\.m3u8[^"\']*)', iframe_html)
+    # --- Path 4: direct .m3u8 URL
+    m = re.search(r'(https?://[^"\'\s]+\.m3u8[^"\'\s]*)', iframe_html)
     if m:
-        return m.group(1)
-
-    m = re.search(r'(https?://[^"\']+)', iframe_html)
-    if m:
-        return m.group(1)
+        url = _js_unescape(m.group(1))
+        if "w3.org" not in url:
+            return url
 
     return None
 
@@ -136,6 +157,8 @@ async def get_events(session):
         href = urljoin(BASE_URL, href)
 
         li = link.parent
+        if li is None:
+            continue
 
         sport_el = li.css_first(".f1-podium--rank")
         title_el = li.css_first("span.d-md-inline")
@@ -152,7 +175,7 @@ async def get_events(session):
         events.append({
             "sport": sport,
             "title": title,
-            "url": href
+            "url": href,
         })
 
     return events
@@ -199,7 +222,7 @@ async def main():
 
             cache[key] = {
                 "ts": now,
-                "entry": entry
+                "entry": entry,
             }
 
             entries.append(entry)
