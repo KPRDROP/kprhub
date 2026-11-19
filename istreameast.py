@@ -84,7 +84,7 @@ async def fetch(session, url):
 # ================= STREAM EXTRACTION =================
 
 async def extract_stream(session, event_url):
-   html = await fetch(session, event_url)
+    html = await fetch(session, event_url)
     if not html:
         return None
 
