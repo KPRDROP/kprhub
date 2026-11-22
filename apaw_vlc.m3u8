@@ -1,9 +1,9 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Fin de Semana (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Fin de Semana
+#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="La PRO: Cangrejeros vs Senadores (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",La PRO: Cangrejeros vs Senadores
 #EXTVLCOPT:http-referrer=https://wapa.tv/
 #EXTVLCOPT:http-origin=https://wapa.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live.field59.com/t/1795294560_d2fd03f8b64347fd882c20c928c7653056647ac8_1795298460/wapa/wapa1/playlist.m3u8
+https://live.field59.com/t/1795301940_80bf6209a7bbdc23f2b18b7060b31b6a290978b3_1795312800/wapa/wapa2/playlist.m3u8
 
 #EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Fin de Semana (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Fin de Semana
 #EXTVLCOPT:http-referrer=https://wapa.tv/
@@ -34,4 +34,10 @@ https://live.field59.com/t/1795348680_fe545b102f98ba99c4088af6683e4856b5dab79d_1
 #EXTVLCOPT:http-origin=https://wapa.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live.field59.com/t/1795380960_6a2262a9ba3329c9f91a3b8dc2bc939876f3cffc_1795384860/wapa/wapa1/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="7" tvg-id="WAPADT1.pr" tvg-name="Miss Universe 75th: Preliminary Live (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Miss Universe 75th: Preliminary Live
+#EXTVLCOPT:http-referrer=https://wapa.tv/
+#EXTVLCOPT:http-origin=https://wapa.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live.field59.com/t/1795384800_56fbbd51997960d28a95759ab492045c8f3f847c_1795402800/wapa/wapa1/playlist.m3u8
 
