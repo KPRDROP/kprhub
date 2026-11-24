@@ -1,16 +1,19 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
-https://live.field59.com/t/1795445880_9ac5b7c33ebfe75070ccd0e80aa69e8cb7ea1ed6_1795447860/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
-https://live.field59.com/t/1795463460_148e3d6e313c7eebe1bb8ef12563166c769aeda7_1795469700/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
-https://live.field59.com/t/1795474620_248a7ece9fa55cf0174a49af4c68c51c3094992c_1795482120/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
+#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
 https://live.field59.com/t/1795489020_4659ab7b070c2bdf8771d05bb2381b94faad2eb3_1795491060/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
+#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
 https://live.field59.com/t/1795510800_014a528f1950beaf6507f168eba6380ad0b458f8_1795529640/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
+https://live.field59.com/t/1795532280_990f23101e08ef55bb0636d5d49915db08459c67_1795534260/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
+https://live.field59.com/t/1795549860_64a75993629f3e427af44e09ba08e3cef05e18f1_1795556100/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
+https://live.field59.com/t/1795561020_d25b13971fc778eb41c1872fd73bf0934c0b6e9c_1795568520/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="6" tvg-id="WAPADT1.pr" tvg-name="Miss Universe 75th Live (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Miss Universe 75th Live
+https://live.field59.com/t/1795564800_87669c9a3e79650134c90f84f8e9a4a922ae0e60_1795582800/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
