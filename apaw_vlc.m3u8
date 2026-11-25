@@ -1,37 +1,31 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="Miss Universe 75th Live (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Miss Universe 75th Live
-#EXTVLCOPT:http-referrer=https://wapa.tv/
-#EXTVLCOPT:http-origin=https://wapa.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live.field59.com/t/1795564800_40ef7d6cb419520dad9850a7b45ffad07de9e64e_1795586400/wapa/wapa1/playlist.m3u8
-
-#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
-#EXTVLCOPT:http-referrer=https://wapa.tv/
-#EXTVLCOPT:http-origin=https://wapa.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live.field59.com/t/1795597200_d287c57c952eede314d09a25710d332254fa82c7_1795616040/wapa/wapa1/playlist.m3u8
-
-#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
-#EXTVLCOPT:http-referrer=https://wapa.tv/
-#EXTVLCOPT:http-origin=https://wapa.tv
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
-https://live.field59.com/t/1795618680_d7d5bea9f12dfddc3025fb17172734b95cea4eb7_1795620660/wapa/wapa1/playlist.m3u8
-
-#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
+#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
 #EXTVLCOPT:http-referrer=https://wapa.tv/
 #EXTVLCOPT:http-origin=https://wapa.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live.field59.com/t/1795636260_8d42a3da3c230a8512b3cbadabb4b95efd96aac7_1795642320/wapa/wapa1/playlist.m3u8
 
-#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
+#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
 #EXTVLCOPT:http-referrer=https://wapa.tv/
 #EXTVLCOPT:http-origin=https://wapa.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live.field59.com/t/1795647420_10b7f4eb14ea74579b9b3cd519ef986ca8db9163_1795654920/wapa/wapa1/playlist.m3u8
 
-#EXTINF:-1 tvg-chno="6" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
+#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
 #EXTVLCOPT:http-referrer=https://wapa.tv/
 #EXTVLCOPT:http-origin=https://wapa.tv
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
 https://live.field59.com/t/1795661880_23829c6f03cb22ab7dd2bd35b4f96f368f048c36_1795663860/wapa/wapa1/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
+#EXTVLCOPT:http-referrer=https://wapa.tv/
+#EXTVLCOPT:http-origin=https://wapa.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live.field59.com/t/1795683600_c61c4979c0836f8acd8c80984e5adb2ea55d9da3_1795702440/wapa/wapa1/playlist.m3u8
+
+#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
+#EXTVLCOPT:http-referrer=https://wapa.tv/
+#EXTVLCOPT:http-origin=https://wapa.tv
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36
+https://live.field59.com/t/1795705080_91afda8cc37323f25692d975893dd71b8285f1a3_1795707060/wapa/wapa1/playlist.m3u8
 
