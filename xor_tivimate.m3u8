@@ -70,31 +70,31 @@ https://admin.formaturamaxi.com.br/fana.m3u8|referer=https://roxiestreams.info/|
 https://admin.formaturamaxi.com.br/ncaa.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
 #EXTINF:-1 tvg-chno="24" tvg-id="rs-detroit-pistons-vs-orlando-magic-6a54be" tvg-name="Detroit Pistons vs Orlando Magic (XOR)" group-title="NBA", Detroit Pistons vs Orlando Magic - (XOR)
-https://admin2.formaturamaxi.com.br/nba.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+https://tedesco.formaturamaxi.com.br/nba.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
 #EXTINF:-1 tvg-chno="25" tvg-id="rs-boston-celtics-vs-washington-wizards-a283af" tvg-name="Boston Celtics vs Washington Wizards (XOR)" group-title="NBA", Boston Celtics vs Washington Wizards - (XOR)
-https://tedesco.formaturamaxi.com.br/nba2.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+https://admin2.formaturamaxi.com.br/nba2.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="26" tvg-id="rs-vegas-golden-knights-vs-edmonton-oilers-2cbb63" tvg-name="Vegas Golden Knights vs Edmonton Oilers (XOR)" group-title="NHL", Vegas Golden Knights vs Edmonton Oilers - (XOR)
+#EXTINF:-1 tvg-chno="26" tvg-id="rs-boston-celtics-vs-washington-wizards-a283af" tvg-name="Boston Celtics vs Washington Wizards (XOR)" group-title="NBA", Boston Celtics vs Washington Wizards - (XOR)
+https://admin2.formaturamaxi.com.br/main.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="27" tvg-id="rs-vegas-golden-knights-vs-edmonton-oilers-2cbb63" tvg-name="Vegas Golden Knights vs Edmonton Oilers (XOR)" group-title="NHL", Vegas Golden Knights vs Edmonton Oilers - (XOR)
 https://admin2.formaturamaxi.com.br/nhl.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="27" tvg-id="rs-wwe-nxt-cad399" tvg-name="WWE NXT (XOR)" group-title="FIGHTING", WWE NXT - (XOR)
-https://admin2.formaturamaxi.com.br/wwe.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
 #EXTINF:-1 tvg-chno="28" tvg-id="rs-wwe-nxt-cad399" tvg-name="WWE NXT (XOR)" group-title="FIGHTING", WWE NXT - (XOR)
 https://tedesco.formaturamaxi.com.br/wwe.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
 #EXTINF:-1 tvg-chno="29" tvg-id="rs-wwe-nxt-cad399" tvg-name="WWE NXT (XOR)" group-title="OTHER", WWE NXT - (XOR)
-https://admin2.formaturamaxi.com.br/wwe.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="30" tvg-id="rs-wwe-nxt-cad399" tvg-name="WWE NXT (XOR)" group-title="OTHER", WWE NXT - (XOR)
 https://tedesco.formaturamaxi.com.br/wwe.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
+#EXTINF:-1 tvg-chno="30" tvg-id="rs-dallas-mavericks-vs-denver-nuggets-11d8a6" tvg-name="Dallas Mavericks vs Denver Nuggets (XOR)" group-title="NBA", Dallas Mavericks vs Denver Nuggets - (XOR)
+https://tedesco.formaturamaxi.com.br/nba.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+
 #EXTINF:-1 tvg-chno="31" tvg-id="rs-dallas-mavericks-vs-denver-nuggets-11d8a6" tvg-name="Dallas Mavericks vs Denver Nuggets (XOR)" group-title="NBA", Dallas Mavericks vs Denver Nuggets - (XOR)
-https://admin2.formaturamaxi.com.br/nba3.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+https://admin2.formaturamaxi.com.br/main.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
 #EXTINF:-1 tvg-chno="32" tvg-id="rs-sj-earthquakes-vs-houston-dynamo-e879ab" tvg-name="SJ Earthquakes vs Houston Dynamo (XOR)" group-title="SOCCER", SJ Earthquakes vs Houston Dynamo - (XOR)
-https://admin2.formaturamaxi.com.br/foxonemx.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
+https://admin.formaturamaxi.com.br/fs1.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
 
 #EXTINF:-1 tvg-chno="33" tvg-id="rs-aew-0e60de" tvg-name="AEW (XOR)" group-title="FIGHTING", AEW - (XOR)
 https://admin2.formaturamaxi.com.br/aew.m3u8|referer=https://roxiestreams.info/|origin=https://roxiestreams.info|user-agent=Mozilla%2F5.0%20(Windows%20NT%2010.0%3B%20Win64%3B%20x64)%20AppleWebKit%2F537.36%20(KHTML%2C%20like%20Gecko)%20Chrome%2F111.0.0.0%20Safari%2F537.36
