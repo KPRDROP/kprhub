@@ -1,25 +1,22 @@
 #EXTM3U
-#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
-https://live.field59.com/t/1795683600_c61c4979c0836f8acd8c80984e5adb2ea55d9da3_1795702440/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
-https://live.field59.com/t/1795705080_91afda8cc37323f25692d975893dd71b8285f1a3_1795707060/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
-https://live.field59.com/t/1795722660_1118b4eeefeb5212ae01cce73743e6549c39ebfc_1795728720/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
-
-#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="FIBA World Cup Qualifiers: Canadá vs. Uruguay (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",FIBA World Cup Qualifiers: Canadá vs. Uruguay
+#EXTINF:-1 tvg-chno="1" tvg-id="WAPADT1.pr" tvg-name="FIBA World Cup Qualifiers: Canadá vs. Uruguay (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",FIBA World Cup Qualifiers: Canadá vs. Uruguay
 https://live.field59.com/t/1795730100_74c30037cdc975a68d07d46b7466363707d02563_1795740000/wapa/wapa2/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
+#EXTINF:-1 tvg-chno="2" tvg-id="WAPADT1.pr" tvg-name="Super Chef Celebrities (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",Super Chef Celebrities
 https://live.field59.com/t/1795733820_432b390936fff47fcc01609f3ede229240864c24_1795741320/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="6" tvg-id="WAPADT1.pr" tvg-name="FIBA World Cup Qualifiers: Puerto Rico vs. Panamá (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",FIBA World Cup Qualifiers: Puerto Rico vs. Panamá
+#EXTINF:-1 tvg-chno="3" tvg-id="WAPADT1.pr" tvg-name="FIBA World Cup Qualifiers: Puerto Rico vs. Panamá (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",FIBA World Cup Qualifiers: Puerto Rico vs. Panamá
 https://live.field59.com/t/1795742700_ab7836c3bedb846b9eb1e7117b3b021ada1ba3d6_1795751700/wapa/wapa2/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="7" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
+#EXTINF:-1 tvg-chno="4" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Nocturna (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Nocturna
 https://live.field59.com/t/1795748280_8432a78aeae6cdb7dc26feaaa917fb28e85a5a91_1795750260/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
-#EXTINF:-1 tvg-chno="8" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
+#EXTINF:-1 tvg-chno="5" tvg-id="WAPADT1.pr" tvg-name="NotiCentro al Amanecer (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro al Amanecer
 https://live.field59.com/t/1795770000_4f9180378917e137028545b007bbeb9145f4a436_1795788840/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="6" tvg-id="WAPADT1.pr" tvg-name="NotiCentro a las 11 am (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro a las 11 am
+https://live.field59.com/t/1795791480_f95c185cb01c2ba2859623d11ec93fb8093e8cbe_1795793460/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
+
+#EXTINF:-1 tvg-chno="7" tvg-id="WAPADT1.pr" tvg-name="NotiCentro Edición Estelar (WAPA-DT1)" tvg-logo="https://i.imgur.com/m5L6pyj.png" group-title="Live Events",NotiCentro Edición Estelar
+https://live.field59.com/t/1795809060_2bd6d6c7fd69ad196964fae78701ce86bf20a566_1795815120/wapa/wapa1/playlist.m3u8|referer=https://wapa.tv/|origin=https://wapa.tv|user-agent=Mozilla%2F5.0+%28Windows+NT+10.0%3B+Win64%3B+x64%29+AppleWebKit%2F537.36+%28KHTML%2C+like+Gecko%29+Chrome%2F131.0.0.0+Safari%2F537.36
 
